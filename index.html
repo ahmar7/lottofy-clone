@@ -4281,16 +4281,16 @@
         function () {
           $.ajaxSetup({ cache: true });
           $.getScript(
-            "https://www.lottofy.com/js/lottofy7main.js?update=202002061242",
+            "./js/script.js",
             function () {
               $.getScript(
-                "https://www.lottofy.com/js/foundation.min.js",
+                "./js/foundation.js",
                 function () {
                   Foundation.Abide.defaults.patterns["email"] =
                     /^\s*[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+\s*$/;
 
                   $.getScript(
-                    "https://www.lottofy.com/js/lottofy7common.js?update=202002061242",
+                    "./js/comon.js",
                     function () {
                       if (numsOfScriptsToLoad == 0) {
                         checkScriptsLoaded(0, 0);
