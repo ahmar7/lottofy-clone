@@ -1,0 +1,4427 @@
+<html
+  lang="en"
+  prefix="fb: https://www.facebook.com/2008/fbml"
+  class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"
+  ><head>
+    <title>Dashboard | Lottofy</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="apple-itunes-app" content="app-id=1541621788" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <link rel="canonical" href="https://www.lottofy.com/en/panel/" />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.lottofy.com/en/panel/" />
+    <link rel="alternate" hreflang="es" href="https://www.lottofy.com/panel/" />
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://www.lottofy.com/fr/panneau/" />
+    <link
+      rel="alternate"
+      hreflang="pt"
+      href="https://www.lottofy.com/pt/painel/" />
+    <link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://www.lottofy.com/br/painel/" />
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://www.lottofy.com/de/tafel/" />
+    <link
+      rel="alternate"
+      hreflang="it"
+      href="https://www.lottofy.com/it/pannello/" />
+    <link
+      rel="alternate"
+      hreflang="en-in"
+      href="https://www.lottofy.com/in/panel/" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://www.lottofy.com/en/panel/" />
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__en.js"
+      crossorigin="anonymous"
+      integrity="sha384-o1nfdUm9cV7Sx6HxXDsnady1EGmCBTwza/JTA6OSowyOK+wq0YF0+F9jejHVacaR"
+    ></script
+    ><script>
+      if (window.parent != window && window.frameElement != null) {
+        if (window.parent.location.host == "www.lottofy.com") {
+          window.parent.location.href = window.parent.location.href;
+          window.stop();
+        }
+      }
+    </script>
+    <meta name="theme-color" content="#15372e" />
+    <link rel="manifest" href="https://www.lottofy.com/gcm_lottofy.json" />
+    <link
+      rel="shortcut icon"
+      href="https://d2oamtuj38i9pe.cloudfront.net/images/lottofy/lottofy.ico" />
+    <link
+      rel="stylesheet"
+      href="./style.css"
+      type="text/css" />
+    <link
+      rel="stylesheet"
+      href="./header.css"
+      type="text/css" />
+    <script>
+      var core_queueLoader = function (options) {
+        this.mainQueue = new Array();
+      };
+      core_queueLoader.prototype.addToQueue = function (functionToAdd) {
+        this.mainQueue.push(functionToAdd);
+        return functionToAdd;
+      };
+      core_queueLoader.prototype.addFirstToQueue = function (functionToAdd) {
+        this.mainQueue.unshift(functionToAdd);
+      };
+      core_queueLoader.prototype.run = function (options) {
+        this.mainQueue.forEach(function (f, i) {
+          f();
+        });
+      };
+      core_queueLoader.prototype.showQueue = function (options) {
+        this.mainQueue.forEach(function (f, i) {
+          console.log(f);
+        });
+      };
+      core_queueLoader.prototype.clear = function (options) {
+        this.mainQueue = new Array();
+      };
+      core_queueLoader.prototype.waitForExistance = function (
+        objectToWaitFor,
+        callback,
+        interval,
+        timeout
+      ) {
+        if (typeof window["microseconds"] != "undefined") {
+          if (window["microseconds"] == window.performance.now()) {
+            window["microseconds"] = window["microseconds"] + 1;
+          } else {
+            window["microseconds"] = window.performance.now();
+          }
+        } else {
+          window["microseconds"] = window.performance.now();
+        }
+
+        var intervalID = "core_queueLoader_" + String(window["microseconds"]);
+        var intervalTime = 500;
+        var timeoutAttempts = 50;
+        if (typeof interval != "undefined") {
+          intervalTime = interval;
+        }
+        if (typeof timeout != "undefined") {
+          timeoutAttempts = timeout;
+        }
+        var currentAttemp = 0;
+        var status = true;
+        var countOfEvalizedInArray = 0;
+        window[intervalID] = setInterval(function () {
+          if (objectToWaitFor instanceof Array) {
+            countOfEvalizedInArray = 0;
+            for (i = 0; i < objectToWaitFor.length; i++) {
+              var objectEvalized = eval("typeof " + objectToWaitFor[i]);
+              if (objectEvalized != "undefined") {
+                countOfEvalizedInArray++;
+              }
+            }
+          } else {
+            var objectEvalized = eval("typeof " + objectToWaitFor);
+          }
+
+          if (objectToWaitFor instanceof Array) {
+            if (countOfEvalizedInArray == objectToWaitFor.length) {
+              clearInterval(window[intervalID]);
+              delete window[intervalID];
+              callback();
+              return;
+            } else {
+              currentAttemp++;
+            }
+          } else {
+            if (objectEvalized != "undefined") {
+              clearInterval(window[intervalID]);
+              delete window[intervalID];
+              callback();
+              return;
+            } else {
+              currentAttemp++;
+            }
+          }
+          if (currentAttemp == timeoutAttempts && timeoutAttempts != 0) {
+            clearInterval(window[intervalID]);
+            delete window[intervalID];
+            return;
+          }
+          console.log("waiting for ", objectToWaitFor, "...");
+        }, intervalTime);
+      };
+      core_queueLoader.prototype.logErrors = function (verboseOnly) {
+        window["lastErrorStack"] = false;
+        function sendErrorLog(verboseOnly, errorObj) {
+          var msg = "";
+          var stk = "";
+          var fil = "";
+          var lin = "";
+          var col = "";
+
+          if (typeof errorObj != "undefined") {
+            if (typeof errorObj.message != "undefined") {
+              msg = errorObj.message;
+            }
+            if (typeof errorObj.stack != "undefined") {
+              stk = errorObj.stack;
+            }
+            if (typeof errorObj.file != "undefined") {
+              fil = errorObj.file;
+            }
+            if (typeof errorObj.line != "undefined") {
+              lin = errorObj.line;
+            }
+            if (typeof errorObj.col != "undefined") {
+              col = errorObj.col;
+            }
+          }
+
+          if (verboseOnly) {
+            if (stk.length > 0) {
+              console.error(stk);
+            } else {
+              console.error(errorObj);
+            }
+          } else {
+            if (typeof errorObj != "undefined") {
+              if (window["lastErrorStack"] !== stk) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "/data/?action=logJS");
+                xhr.setRequestHeader("Content-Type", "application/json");
+                xhr.send(
+                  JSON.stringify({
+                    error: msg,
+                    file: fil,
+                    stack: stk,
+                    line: lin,
+                    col: col,
+                  })
+                );
+                if (stk.length > 0) {
+                  window["lastErrorStack"] = stk;
+                }
+              }
+            }
+          }
+        }
+        window.onerror = function (message, file, line, col, error) {
+          var errObj = {};
+          if (typeof message != "undefined" && message != null) {
+            errObj["message"] = message;
+          }
+          if (typeof file != "undefined" && file != null) {
+            errObj["file"] = file;
+          }
+          if (typeof line != "undefined" && line != null) {
+            errObj["line"] = line;
+          }
+          if (typeof col != "undefined" && col != null) {
+            errObj["col"] = col;
+          }
+          if (
+            typeof error != "undefined" &&
+            error != null &&
+            typeof error.stack != "undefined"
+          ) {
+            errObj["stack"] = error.stack;
+          }
+          if (verboseOnly) {
+            sendErrorLog(true, errObj);
+          } else {
+            sendErrorLog(false, errObj);
+          }
+        };
+        this.waitForExistance("$", function () {
+          var temp = jQuery.event.dispatch;
+
+          jQuery.event.dispatch = function () {
+            try {
+              temp.apply(this, arguments);
+            } catch (e) {
+              var errObj = {};
+              if (typeof e.message != "undefined" && e.message != null) {
+                errObj["message"] = e.message;
+              }
+              if (typeof e.stack != "undefined" && e.stack != null) {
+                errObj["stack"] = e.stack;
+              }
+              if (verboseOnly) {
+                sendErrorLog(true, errObj);
+              } else {
+                sendErrorLog(false, errObj);
+              }
+              return false;
+            }
+          };
+          $.readyException = function (e) {
+            var errObj = {};
+            if (typeof e.message != "undefined" && e.message != null) {
+              errObj["message"] = e.message;
+            }
+            if (typeof e.stack != "undefined" && e.stack != null) {
+              errObj["stack"] = e.stack;
+            }
+            if (verboseOnly) {
+              sendErrorLog(true, errObj);
+            } else {
+              sendErrorLog(false, errObj);
+            }
+            return false;
+          };
+        });
+      };
+    </script>
+    <script>
+      if (typeof postMessage != "undefined") {
+        window.parent.postMessage(
+          "https://www.lottofy.com/en/migracionLo/",
+          "*"
+        );
+      }
+
+      bamQueue = new core_queueLoader();
+
+      bamQueue.waitForExistance(
+        "loginProObject",
+        function () {
+          /********************/
+          /*	 LOGIN TOPBAR 	*/
+          /********************/
+          var ajaxOptions = {
+            submitBt: {
+              elem: "#loginForm [data-submit]",
+              holdMsg: "Accessing...",
+              enableOnSuccess: false,
+            },
+            statusMsg: {
+              elem: "#loginForm [data-status-msg]",
+              ok: "Accessing your account",
+            },
+          };
+          login = new loginProObject({
+            recoveryLinkURL: "https://www.lottofy.com/en/recover/",
+            ajaxObjParams: ajaxOptions,
+            recaptchaKey: "6LcOaMEUAAAAAJxUyFAkaQGMfUNpnh-ZjzIxeIKr",
+            onSuccess_callback: function (e) {
+              if (
+                typeof $zopim != "undefined" &&
+                typeof $zopim.livechat != "undefined"
+              ) {
+                $zopim.livechat.removeTags("loginError");
+              }
+            },
+            onFail_callback: function (e) {
+              if (
+                typeof $zopim != "undefined" &&
+                typeof $zopim.livechat != "undefined"
+              ) {
+                $zopim.livechat.addTags("loginError");
+              }
+            },
+            delayCallbackOnFail: 0,
+            autoRedirectOnSuccess: true,
+          });
+          $("[data-loginTrigger]").each(function () {
+            var classes = $(this).attr("class");
+            var parent = $(this).parent();
+            $(this).replaceWith(
+              "<button data-loginTrigger>" + $(this).html() + "</button>"
+            );
+            var elem = $(parent).find("[data-loginTrigger]");
+            $(elem)
+              .addClass(classes)
+              .on("click", function () {
+                login.open();
+              });
+          });
+
+          if (
+            getCookie("gcmEndpoint").length == 0 &&
+            typeof navigator.serviceWorker != "undefined"
+          ) {
+            setCookieEndpoint();
+          }
+
+          if (typeof navigator.serviceWorker != "undefined") {
+            notif_suscribe(false, {
+              unableToRegisterCallback: function (mode) {
+                $("#favStatus").attr(
+                  "data-reveal-params",
+                  '{ "mode":' + mode + "}"
+                );
+                bamQueue.waitForExistance(
+                  "core_reveal",
+                  function () {
+                    $("#favStatus").core_reveal("open");
+                  },
+                  1000
+                );
+              },
+              callbackOnRegistrationSuccess: function (data, mode) {},
+              webPushAPIkey:
+                "BNI0jGR28J7f3hEtkBRmabWS7J8tIIRH5iZ9kOgSyllKEIX4U51pLnLawkdJoMpAdxmjOB-unyH32mFsioVfL_Q",
+            });
+          }
+        },
+        1000,
+        0
+      );
+    </script>
+    <script>
+      window.___gcfg = { lang: "en-US" };
+    </script>
+    <script>
+      function setDefaultCookies(beforeCallback, doneCallback) {
+        if (typeof beforeCallback != "undefined") {
+          beforeCallback();
+        }
+        var scripts = [
+          {
+            url: "https://apis.google.com/js/platform.js",
+            params: ["defer", "async"],
+          },
+          {
+            url: "https://www.googletagmanager.com/gtag/js?id=G-T3T1BRH6GJ",
+            params: ["async"],
+          },
+        ];
+        var scriptsQueue = new Array();
+        scripts.forEach(function (value, key) {
+          scriptsQueue[key] = document.createElement("script");
+          scriptsQueue[key].src = value.url;
+          value.params.forEach(function (attrVal, attrKey) {
+            scriptsQueue[key].setAttribute(attrVal, "");
+          });
+          scriptsQueue[key].onload = function () {
+            console.log("Cargado: " + value.url);
+          };
+        });
+        scriptsQueue.forEach(function (value, key) {
+          document.head.appendChild(value);
+        });
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-T3T1BRH6GJ");
+        if (typeof doneCallback != "undefined") {
+          doneCallback();
+        }
+      }
+    </script>
+    <script>
+      setDefaultCookies();</script><script
+      src="https://apis.google.com/js/platform.js"
+      defer=""
+      async=""
+      gapi_processed="true"></script><script
+      src="https://www.googletagmanager.com/gtag/js?id=G-T3T1BRH6GJ"
+      async=""></script>
+    <style>
+      @keyframes sk-stretchdelay {
+        0%,
+        40%,
+        100% {
+          transform: scaleY(0.4);
+        }
+        20% {
+          transform: scaleY(1);
+        }
+      }
+    </style>
+    <script src="./js/lotto.js"></script
+    ><meta class="foundation-mq"
+  /></head>
+  <body class="" data-logged="18622" data-isloaded="">
+    <span data-watchdog="" class="show-for-small-only"></span
+    ><span data-watchdog="" class="show-for-medium-only"></span
+    ><span data-watchdog="" class="show-for-large"></span>
+    <header>
+      <div class="top-menu-curtain"></div>
+      <nav class="top-menu">
+        <div class="float-left">
+          <ul class="core_inline-list" data-mobilemenuarea="">
+            <li data-mobilemenu=""
+              ><button
+                aria-label="Main menu"
+                data-mobilegamesmenutoggle=""
+                type="button"
+                class="white"
+                ><span>MENU</span
+                ><i data-mobilemenuicon="" class="icon-slim-menu"
+                  >&nbsp;</i
+                ></button
+              ></li
+            >
+            <li data-logo=""
+              ><a
+                href="https://www.lottofy.com/en/"
+                class="logo"
+                title="Lottofy"
+                aria-label="Go to the main page"
+                ><i></i></a
+            ></li>
+            <li data-inlinegamesmenucontainer="">
+              <ul
+                class="core_inline-list show-for-large"
+                data-inlinegamesmenu=""
+              >
+                <li class="is-active" style="visibility: visible; top: 0px"
+                  ><a href="https://www.lottofy.com/en/">LOTTERY</a></li
+                >
+                <li data-menu-viewmore="" style="visibility: visible; top: 0px"
+                  ><a
+                    href="javascript:void(null)"
+                    class="icon-slim-chevron-right-outline float-right"
+                    data-toggle="overflown-gamesCategories"
+                    data-alignment="right"
+                    aria-controls="overflown-gamesCategories"
+                    data-is-focus="false"
+                    data-yeti-box="overflown-gamesCategories"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  ></a
+                ></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="float-right">
+          <ul class="core_inline-list">
+            <li data-userconfignotifications=""
+              ><button
+                class="icon-common-envelope"
+                data-alarm=""
+                data-open="myNotifications"
+                ><span class="badge" data-noticounter="">1</span></button
+              > </li
+            ><li data-usernotifications="">
+              <button
+                class="icon-common-bell after"
+                data-notifications=""
+                data-toggle="notifications"
+                aria-controls="notifications"
+                data-is-focus="false"
+                data-yeti-box="notifications"
+                aria-haspopup="true"
+                aria-expanded="false"
+              ></button> </li
+            ><li data-userdetail=""
+              ><a
+                href="https://www.lottofy.com/en/panel/"
+                data-hover=""
+                data-coretoggle="menu-user"
+                data-alignment="left"
+                ><img
+                  src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
+                  class="avatar"
+                  alt="My account"
+                /><span> My account</span></a
+              ></li
+            ><li data-vcdetail=""
+              ><a href="https://www.lottofy.com/en/balance/"
+                ><span>Balance: </span><strong>$0,00</strong></a
+              ></li
+            ><li id="purchaseSummary">
+              <span class="badge" id="mainCartCount">0</span>
+              <a
+                id="cartSummaryButton"
+                href="https://www.lottofy.com/en/purchase/"
+                class="icon-slim-shopping-cart"
+                data-coretoggle="cart"
+                data-hover=""
+                data-isfixed=""
+                data-alignment="right"
+                rel="nofollow"
+                title="Show shopping cart"
+                aria-label="Show shopping cart"
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tabs-content" data-tabs-content="gamingTabs">
+          <div class="tabs-panel is-active" id="gamblingModePanel1">
+            <div class="top-subMenu show-for-medium is-overflown">
+              <ul
+                class="core_inline-list small-text-left medium-text-center core_styleTop"
+                data-menu-games=""
+              >
+                <li
+                  data-nomenu=""
+                  data-gametype="superloto"
+                  style="top: 0px; visibility: visible"
+                  ><a
+                    href="https://www.lottofy.com/en/superlotto/"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><i class="icon-games-superloto fsuperloto"></i>
+                    <span>Superlotto</span
+                    ><span data-jackpot="">Play all</span></a
+                  ></li
+                ><li
+                  style="animation-delay: 0s; visibility: visible; top: 0px"
+                  data-gametype="euromillones"
+                  ><a
+                    href="https://www.lottofy.com/en/euromillions/"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><i class="icon-games-euromillones feuromillones"></i>
+                    <span>Euromillions</span><span data-jackpot="">$185,8M</span
+                    ><span data-date="">Today</span
+                    ><img
+                      data-country=""
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/eu.png"
+                      alt="eu" /></a></li
+                ><li
+                  style="animation-delay: 0.03s; visibility: visible; top: 0px"
+                  data-gametype="powerball"
+                  ><a
+                    href="https://www.lottofy.com/en/powerball/"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><i class="icon-games-powerball fpowerball"></i>
+                    <span>Powerball</span><span data-jackpot="">$365,0M</span
+                    ><img
+                      data-country=""
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/us.png"
+                      alt="us" /></a></li
+                ><li
+                  style="animation-delay: 0.06s; visibility: visible; top: 0px"
+                  data-gametype="megamillions"
+                  ><a
+                    href="https://www.lottofy.com/en/megamillions/"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><i class="icon-games-megamillions fmegamillions"></i>
+                    <span>Megamillions</span><span data-jackpot="">$328,0M</span
+                    ><img
+                      data-country=""
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/us.png"
+                      alt="us" /></a></li
+                ><li
+                  style="animation-delay: 0.09s; visibility: visible; top: 0px"
+                  data-gametype="superenalotto"
+                  ><a
+                    href="https://www.lottofy.com/en/superenalotto/"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    class=""
+                    ><i class="icon-games-superenalotto fsuperenalotto"></i>
+                    <span>Superenalotto</span
+                    ><span data-jackpot="">$242,1M</span
+                    ><span data-date="">Today</span
+                    ><img
+                      data-country=""
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png"
+                      alt="it" /></a></li
+                ><li
+                  style="animation-delay: 0.12s; visibility: visible; top: 0px"
+                  data-gametype="primitiva"
+                  ><a
+                    href="https://www.lottofy.com/en/primitiva/"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    class=""
+                    ><i class="icon-games-primitiva fprimitiva"></i>
+                    <span>La Primitiva</span><span data-jackpot="">$26,4M</span
+                    ><img
+                      data-country=""
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                      alt="es" /></a></li
+                ><li
+                  style="animation-delay: 0.15s; visibility: visible; top: 0px"
+                  data-gametype="lotto6aus49"
+                  ><a
+                    href="https://www.lottofy.com/en/lotto6aus49/"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><i class="icon-games-lotto6aus49 flotto6aus49"></i>
+                    <span>Lotto6aus49</span><span data-jackpot="">$5,3M</span
+                    ><img
+                      data-country=""
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png"
+                      alt="de" /></a></li
+                ><li
+                  style="animation-delay: 0.18s; visibility: visible; top: 0px"
+                  data-gametype="eurojackpot"
+                  ><a
+                    href="https://www.lottofy.com/en/eurojackpot/"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><i class="icon-games-eurojackpot feurojackpot"></i>
+                    <span>Eurojackpot</span><span data-jackpot="">$59,1M</span
+                    ><span data-date="">Today</span
+                    ><img
+                      data-country=""
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/eu.png"
+                      alt="eu" /></a></li
+                ><li
+                  style="animation-delay: 0.21s; visibility: visible; top: 0px"
+                  data-gametype="quiniela"
+                  ><a
+                    href="https://www.lottofy.com/en/quiniela/"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><i class="icon-games-quiniela fquiniela"></i>
+                    <span>Quiniela</span
+                    ><img
+                      data-country=""
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                      alt="es" /></a></li
+                ><li
+                  style="animation-delay: 0.24s; visibility: visible; top: 0px"
+                  data-gametype="bonoloto"
+                  ><a
+                    href="https://www.lottofy.com/en/bonoloto/"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><i class="icon-games-bonoloto fbonoloto"></i>
+                    <span>Bonoloto</span><span data-jackpot="">$3,8M</span
+                    ><span data-date="">Today</span
+                    ><img
+                      data-country=""
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                      alt="es" /></a></li
+                ><li
+                  style="animation-delay: 0.27s; visibility: visible; top: 0px"
+                  data-gametype="elgordo"
+                  ><a
+                    href="https://www.lottofy.com/en/elgordo/"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><i class="icon-games-elgordo felgordo"></i>
+                    <span>El Gordo</span><span data-jackpot="">$6,1M</span
+                    ><img
+                      data-country=""
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                      alt="es" /></a></li
+                ><li
+                  style="animation-delay: 0.3s; visibility: visible; top: 0px"
+                  data-gametype="loterianacional"
+                  ><a
+                    href="https://www.lottofy.com/en/nationallottery/play/"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><i class="icon-games-loterianacional floterianacional"></i>
+                    <span>National Lottery</span
+                    ><span data-jackpot="">$31.671,00</span
+                    ><img
+                      data-country=""
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                      alt="es" /></a></li
+                ><li
+                  style="animation-delay: 0.33s; visibility: visible; top: 0px"
+                  data-gametype="megasena"
+                  ><a
+                    href="https://www.lottofy.com/en/megasena/"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><i class="icon-games-megasena fmegasena"></i>
+                    <span>Mega-Sena</span><span data-jackpot="">$6,7M</span
+                    ><span data-date="">Today</span
+                    ><img
+                      data-country=""
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png"
+                      alt="br" /></a></li
+                ><li data-gametype="" style="visibility: visible; top: 0px"
+                  ><a
+                    href="javascript:void(null)"
+                    data-coretoggle="menu-clubs"
+                    data-hover=""
+                    data-alignment="left"
+                    ><i class="icon-games-club lightCoal"></i>
+                    <span>Syndicates ▾</span></a
+                  ></li
+                ><li
+                  data-menu-viewmore=""
+                  style="visibility: visible; top: 0px"
+                  class="is-active"
+                  ><a href="javascript:void(null)"
+                    ><i class="icon-common-plus3 lightCoal"></i>
+                    <span>Show more</span></a
+                  ></li
+                >
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        id="overflown-gamesCategories"
+        class="dropdown-pane menus-dropDown"
+        data-dropdown=""
+        data-position="bottom"
+        data-alignment="right"
+        aria-hidden="true"
+        data-yeti-box="overflown-gamesCategories"
+        data-resize="overflown-gamesCategories"
+        aria-labelledby="v1haq6-dd-anchor"
+        data-e="yckdo2-e"
+      >
+        <ul></ul>
+      </div>
+      <div
+        id="menu-gamesMode"
+        class="menus-dropDown is-hover"
+        data-coredropdown=""
+        style="position: absolute; top: 121.594px; left: 498.016px; right: auto"
+      >
+        <ul data-gametype="euromillones">
+          <li
+            ><a
+              href="https://www.lottofy.com/en/euromillions/play/"
+              class="icon-games-single"
+            >
+              Play <strong>EUROMILLIONS</strong></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/euromillions/fund/"
+              class="icon-games-fondo"
+            >
+              &nbsp;&nbsp;Euromillions <strong>FUND</strong>
+              <span><strong>56</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/euromillions/club/"
+              class="icon-games-club"
+            >
+              &nbsp;&nbsp;Euromillonarios <strong>SYNDICATE</strong>
+              <span><strong>80</strong> bets</span></a
+            ></li
+          >
+        </ul>
+        <ul data-gametype="powerball">
+          <li
+            ><a
+              href="https://www.lottofy.com/en/powerball/play/"
+              class="icon-games-single"
+            >
+              Play <strong>POWERBALL</strong></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/powerball/fund/"
+              class="icon-games-fondo"
+            >
+              &nbsp;&nbsp;Powerball <strong>FUND</strong>
+              <span><strong>1</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/powerball/club/"
+              class="icon-games-club"
+            >
+              &nbsp;&nbsp;Powerball <strong>SYNDICATE</strong>
+              <span><strong>120</strong> bets</span></a
+            ></li
+          >
+        </ul>
+        <ul data-gametype="megamillions">
+          <li
+            ><a
+              href="https://www.lottofy.com/en/megamillions/play/"
+              class="icon-games-single"
+            >
+              Play <strong>MEGAMILLIONS</strong></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/megamillions/fund/"
+              class="icon-games-fondo"
+            >
+              &nbsp;&nbsp;Megamillions <strong>FUND</strong>
+              <span><strong>5</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/megamillions/club/"
+              class="icon-games-club"
+            >
+              &nbsp;&nbsp;Megamillions <strong>SYNDICATE</strong>
+              <span><strong>120</strong> bets</span></a
+            ></li
+          >
+        </ul>
+        <ul data-gametype="superenalotto" class="">
+          <li
+            ><a
+              href="https://www.lottofy.com/en/superenalotto/play/"
+              class="icon-games-single"
+            >
+              Play <strong>SUPERENALOTTO</strong></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/superenalotto/fund/"
+              class="icon-games-fondo"
+            >
+              &nbsp;&nbsp;Superenalotto <strong>FUND</strong>
+              <span><strong>35</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/superenalotto/club/"
+              class="icon-games-club"
+            >
+              &nbsp;&nbsp;Superenalotto <strong>SYNDICATE</strong>
+              <span><strong>200</strong> bets</span></a
+            ></li
+          >
+        </ul>
+        <ul data-gametype="primitiva" class="is-active">
+          <li
+            ><a
+              href="https://www.lottofy.com/en/primitiva/play/"
+              class="icon-games-single"
+            >
+              Play <strong>LA PRIMITIVA</strong></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/primitiva/fund/"
+              class="icon-games-fondo"
+            >
+              &nbsp;&nbsp;La Primitiva <strong>FUND</strong>
+              <span><strong>19</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/primitiva/club/"
+              class="icon-games-club"
+            >
+              &nbsp;&nbsp;PrimiClub <strong>SYNDICATE</strong>
+              <span><strong>150</strong> bets</span></a
+            ></li
+          >
+        </ul>
+        <ul data-gametype="lotto6aus49">
+          <li
+            ><a
+              href="https://www.lottofy.com/en/lotto6aus49/play/"
+              class="icon-games-single"
+            >
+              Play <strong>LOTTO6AUS49</strong></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/lotto6aus49/fund/"
+              class="icon-games-fondo"
+            >
+              &nbsp;&nbsp;Lotto6aus49 <strong>FUND</strong>
+              <span><strong>6</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/lotto6aus49/club/"
+              class="icon-games-club"
+            >
+              &nbsp;&nbsp;Lotto6aus49 <strong>SYNDICATE</strong>
+              <span><strong>150</strong> bets</span></a
+            ></li
+          >
+        </ul>
+        <ul data-gametype="eurojackpot">
+          <li
+            ><a
+              href="https://www.lottofy.com/en/eurojackpot/play/"
+              class="icon-games-single"
+            >
+              Play <strong>EUROJACKPOT</strong></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/eurojackpot/fund/"
+              class="icon-games-fondo"
+            >
+              &nbsp;&nbsp;Eurojackpot <strong>FUND</strong>
+              <span><strong>5</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/eurojackpot/club/"
+              class="icon-games-club"
+            >
+              &nbsp;&nbsp;Eurojackpot <strong>SYNDICATE</strong>
+              <span><strong>100</strong> bets</span></a
+            ></li
+          >
+        </ul>
+        <ul data-gametype="quiniela">
+          <li
+            ><a
+              href="https://www.lottofy.com/en/quiniela/play/"
+              class="icon-games-single"
+            >
+              Play <strong>QUINIELA</strong></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/quiniela/fund/"
+              class="icon-games-fondo"
+            >
+              &nbsp;&nbsp;Quiniela <strong>FUND</strong>
+              <span><strong>3</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/quiniela/club/"
+              class="icon-games-club"
+            >
+              &nbsp;&nbsp;Quinieleros <strong>SYNDICATE</strong>
+            </a></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/quiniela/play/?file"
+              class="icon-slim-attachment"
+            >
+              &nbsp;&nbsp;Send File</a
+            ></li
+          >
+        </ul>
+        <ul data-gametype="bonoloto">
+          <li
+            ><a
+              href="https://www.lottofy.com/en/bonoloto/play/"
+              class="icon-games-single"
+            >
+              Play <strong>BONOLOTO</strong></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/bonoloto/fund/"
+              class="icon-games-fondo"
+            >
+              &nbsp;&nbsp;Bonoloto <strong>FUND</strong>
+              <span><strong>104</strong> bets</span></a
+            ></li
+          >
+        </ul>
+        <ul data-gametype="elgordo">
+          <li
+            ><a
+              href="https://www.lottofy.com/en/elgordo/play/"
+              class="icon-games-single"
+            >
+              Play <strong>EL GORDO</strong></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/elgordo/fund/"
+              class="icon-games-fondo"
+            >
+              &nbsp;&nbsp;El Gordo <strong>FUND</strong>
+              <span><strong>1</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/elgordo/club/"
+              class="icon-games-club"
+            >
+              &nbsp;&nbsp;Gordacos <strong>SYNDICATE</strong>
+              <span><strong>70</strong> bets</span></a
+            ></li
+          >
+        </ul>
+        <ul data-gametype="loterianacional">
+          <li
+            ><a
+              href="https://www.lottofy.com/en/nationallottery/play/"
+              class="icon-games-single"
+            >
+              Play <strong>NATIONAL LOTTERY</strong></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/nationallottery/fund/"
+              class="icon-games-fondo"
+            >
+              &nbsp;&nbsp;National Lottery <strong>FUND</strong>
+            </a></li
+          >
+        </ul>
+        <ul data-gametype="megasena">
+          <li
+            ><a
+              href="https://www.lottofy.com/en/megasena/play/"
+              class="icon-games-single"
+            >
+              Play <strong>MEGA-SENA</strong></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/megasena/fund/"
+              class="icon-games-fondo"
+            >
+              &nbsp;&nbsp;Mega-Sena <strong>FUND</strong>
+              <span><strong>3</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/megasena/club/"
+              class="icon-games-club"
+            >
+              &nbsp;&nbsp;Megasena <strong>SYNDICATE</strong>
+              <span><strong>280</strong> bets</span></a
+            ></li
+          >
+        </ul>
+      </div>
+      <div id="menu-clubs" class="menus-dropDown" data-coredropdown="">
+        <ul>
+          <li
+            ><a href="https://www.lottofy.com/en/euromillions/club/"
+              ><i class="icon-games-euromillones feuromillones"></i> Syndicate
+              Euromillonarios<span><strong>80</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="https://www.lottofy.com/en/elgordo/club/"
+              ><i class="icon-games-elgordo felgordo"></i> Syndicate
+              Gordacos<span><strong>70</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="https://www.lottofy.com/en/primitiva/club/"
+              ><i class="icon-games-primitiva fprimitiva"></i> Syndicate
+              PrimiClub<span><strong>150</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="https://www.lottofy.com/en/lotto6aus49/club/"
+              ><i class="icon-games-lotto6aus49 flotto6aus49"></i> Syndicate
+              Lotto6aus49<span><strong>150</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="https://www.lottofy.com/en/eurojackpot/club/"
+              ><i class="icon-games-eurojackpot feurojackpot"></i> Syndicate
+              Eurojackpot<span><strong>100</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="https://www.lottofy.com/en/powerball/club/"
+              ><i class="icon-games-powerball fpowerball"></i> Syndicate
+              Powerball<span><strong>120</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="https://www.lottofy.com/en/megamillions/club/"
+              ><i class="icon-games-megamillions fmegamillions"></i> Syndicate
+              Megamillions<span><strong>120</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="https://www.lottofy.com/en/superenalotto/club/"
+              ><i class="icon-games-superenalotto fsuperenalotto"></i> Syndicate
+              Superenalotto<span><strong>200</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="https://www.lottofy.com/en/megasena/club/"
+              ><i class="icon-games-megasena fmegasena"></i> Syndicate
+              Megasena<span><strong>280</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="https://www.lottofy.com/en/superlotto/"
+              ><i class="icon-games-superlotto fsuperlotto"></i> Syndicate
+              Superlotto<span><strong>640</strong> bets</span></a
+            ></li
+          >
+        </ul>
+      </div>
+      <div
+        id="menu-lang"
+        class="singlemode top-menu_dropdown dropdown-pane"
+        data-menu-lang=""
+        data-dropdown=""
+        aria-hidden="true"
+        data-yeti-box="menu-lang"
+        data-resize="menu-lang"
+        aria-labelledby="zr7obo-dd-anchor"
+        data-e="jax6hm-e"
+      >
+        <ul>
+          <li data-lang="ES"
+            ><button
+              type="button"
+              data-lang="ES"
+              data-url="https://www.lottofy.com/panel/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                alt="es"
+              />
+              ES</button
+            ></li
+          >
+          <li data-lang="EN"
+            ><button
+              type="button"
+              data-lang="EN"
+              data-url="https://www.lottofy.com/en/panel/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
+                alt="gb"
+              />
+              EN</button
+            ></li
+          >
+          <li data-lang="PT"
+            ><button
+              type="button"
+              data-lang="PT"
+              data-url="https://www.lottofy.com/pt/painel/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png"
+                alt="pt"
+              />
+              PT</button
+            ></li
+          >
+          <li data-lang="BR"
+            ><button
+              type="button"
+              data-lang="BR"
+              data-url="https://www.lottofy.com/br/painel/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png"
+                alt="br"
+              />
+              BR</button
+            ></li
+          >
+          <li data-lang="FR"
+            ><button
+              type="button"
+              data-lang="FR"
+              data-url="https://www.lottofy.com/fr/panneau/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png"
+                alt="fr"
+              />
+              FR</button
+            ></li
+          >
+          <li data-lang="IT"
+            ><button
+              type="button"
+              data-lang="IT"
+              data-url="https://www.lottofy.com/it/pannello/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png"
+                alt="it"
+              />
+              IT</button
+            ></li
+          >
+          <li data-lang="DE"
+            ><button
+              type="button"
+              data-lang="DE"
+              data-url="https://www.lottofy.com/de/tafel/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png"
+                alt="de"
+              />
+              DE</button
+            ></li
+          >
+          <li data-lang="IN"
+            ><button
+              type="button"
+              data-lang="IN"
+              data-url="https://www.lottofy.com/in/panel/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png"
+                alt="in"
+              />
+              IN</button
+            ></li
+          >
+        </ul>
+      </div>
+      <div id="menu-user" class="top-menu_dropdown" data-coredropdown="">
+        <ul>
+          <li
+            ><a
+              href="https://www.lottofy.com/en/panel/"
+              class="icon-common-User-2"
+            >
+              My account</a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/bets/"
+              class="icon-common-calendar2"
+              >Bets</a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/balance/"
+              class="icon-common-vcashpile"
+              >Balance</a
+            ></li
+          >
+          <li
+            ><a
+              href="https://www.lottofy.com/en/settings/"
+              class="icon-slim-cog-outline"
+            >
+              Configuration</a
+            ></li
+          >
+          <li
+            ><button type="button" data-open="closeSession"
+              ><small class="icon-slim-switch"> Logout</small></button
+            ></li
+          >
+        </ul>
+      </div>
+      <div
+        class="dropdown-pane"
+        id="notifications"
+        data-dropdown=""
+        data-auto-focus="true"
+        aria-hidden="true"
+        data-yeti-box="notifications"
+        data-resize="notifications"
+        aria-labelledby="j13jtd-dd-anchor"
+        data-e="h9w4q9-e"
+      >
+        <div class="text-center core_spaceBHalf">
+          <span class="white">Notifications</span>
+        </div>
+        <ul class="list" data-notificationdata="">
+          <li class="text-center">There are no notifications</li>
+        </ul>
+      </div>
+      <div id="cart" data-coredropdown="">
+        <div>
+          <div id="cartContent">
+            <div id="cartContentList">
+              <div>
+                <i class="icon-slim-shopping-cart"></i> The cart is empty
+              </div>
+            </div>
+            <div id="cartActions" class="">
+              <a
+                href="https://www.lottofy.com/en/purchase/"
+                class="button tiny radius bg_mint core_spaceBzero icon-slim-shopping-cart core_txtSize_sm1"
+                rel="nofollow"
+              >
+                Go to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <button
+            type="button"
+            data-dettach=""
+            class="icon-slim-media-eject"
+          ></button>
+        </div>
+        <span class="peek">▴</span>
+      </div>
+      <div class="row" style="position: relative">
+        <nav id="mobileMenu">
+          <div id="mobileGamesMenu" class="" style="display: none">
+            <button
+              aria-label="Main menu"
+              data-mobilegamesmenutoggle=""
+              type="button"
+              class="white"
+              ><span>MENU</span
+              ><i data-mobilemenuicon="" class="icon-slim-menu"
+                >&nbsp;</i
+              ></button
+            >
+            <div id="mobileGamesMenuArt">
+              <div class="text-center core_spaceBThin"
+                ><a href="https://www.lottofy.com/en/panel/"
+                  ><img
+                    src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
+                    class="avatar"
+                    alt="My account" /></a
+              ></div>
+              <div id="mobileVCashMenu" class="hide-for-large-up clearfix">
+                <div class="clearfix">
+                  <div class="float-left">Virtual Balance Available:</div>
+                  <div class="float-right"
+                    ><strong><small>$</small>0,00</strong></div
+                  >
+                </div>
+              </div>
+              <div class="text-center row collapse clearfix">
+                <div class="column small-5">
+                  <a
+                    class="core_full float-left core_spaceBzero button bg_blue"
+                    href="https://www.lottofy.com/en/balance/#add_cash"
+                    data-addbalance=""
+                    onclick="hideMobileMenu();$('[href=\'#add_cash\']').click()"
+                    ><strong>Add balance</strong></a
+                  >
+                </div>
+                <div class="column small-5">
+                  <a
+                    class="core_full float-right core_spaceBzero button bg_purpleRain"
+                    href="https://www.lottofy.com/en/balance/#withdraw_cash"
+                    data-withdrawbalance=""
+                    onclick="hideMobileMenu();$('[href=\'#withdraw_cash\']').click()"
+                    ><strong>Withdraw funds</strong></a
+                  >
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li data-sectionsmenu="" class="has-submenu is-opened">
+                <a href="javascript:void(null)"
+                  ><img
+                    src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
+                    class="avatar"
+                    alt="My account"
+                  />
+                  Hello @U055866!</a
+                >
+                <ul>
+                  <li
+                    ><a href="https://www.lottofy.com/en/panel/"
+                      ><i class="icon-common-User-2"></i> My
+                      <strong>Account</strong></a
+                    ></li
+                  >
+                  <li
+                    ><a href="https://www.lottofy.com/en/bets/"
+                      ><i class="icon-common-calendar2"></i> My
+                      <strong>Bets</strong></a
+                    ></li
+                  >
+                  <li
+                    ><a href="https://www.lottofy.com/en/balance/"
+                      ><i class="icon-common-vcashpile"></i> My<strong
+                        >Balance</strong
+                      ></a
+                    ></li
+                  >
+                  <li
+                    ><a href="https://www.lottofy.com/en/settings/" class=""
+                      ><i class="icon-slim-cog-outline"></i>
+                      <strong>Settings</strong></a
+                    ></li
+                  >
+                  <li
+                    ><a href="javascript:void(null)" data-open="closeSession"
+                      ><i class="icon-slim-switch"></i> Logout</a
+                    ></li
+                  >
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li class="has-submenu">
+                <a href="javascript:void(null)"
+                  ><i class="icon-games-lottery"></i> Lottery</a
+                >
+                <ul>
+                  <li class="has-submenu">
+                    <a href="javascript:void(null)" class="icon-games-club">
+                      Syndicates</a
+                    >
+                    <ul>
+                      <li
+                        ><a href="https://www.lottofy.com/en/euromillions/club/"
+                          ><i class="icon-games-club"></i> Euromillonarios
+                          <small>(80 apuestas)</small></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/elgordo/club/"
+                          ><i class="icon-games-club"></i> Gordacos
+                          <small>(70 apuestas)</small></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/primitiva/club/"
+                          ><i class="icon-games-club"></i> PrimiClub
+                          <small>(150 apuestas)</small></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/lotto6aus49/club/"
+                          ><i class="icon-games-club"></i> Lotto6aus49
+                          <small>(150 apuestas)</small></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/eurojackpot/club/"
+                          ><i class="icon-games-club"></i> Eurojackpot
+                          <small>(100 apuestas)</small></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/powerball/club/"
+                          ><i class="icon-games-club"></i> Powerball
+                          <small>(120 apuestas)</small></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/megamillions/club/"
+                          ><i class="icon-games-club"></i> Megamillions
+                          <small>(120 apuestas)</small></a
+                        ></li
+                      >
+                      <li
+                        ><a
+                          href="https://www.lottofy.com/en/superenalotto/club/"
+                          ><i class="icon-games-club"></i> Superenalotto
+                          <small>(200 apuestas)</small></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/megasena/club/"
+                          ><i class="icon-games-club"></i> Megasena
+                          <small>(280 apuestas)</small></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/superlotto/"
+                          ><i class="icon-games-club"></i> Superlotto
+                          <small>(640 apuestas)</small></a
+                        ></li
+                      >
+                    </ul>
+                  </li>
+                  <li
+                    ><a
+                      href="https://www.lottofy.com/en/superlotto/"
+                      class="icon-games-superlotto"
+                    >
+                      Superloto</a
+                    ></li
+                  >
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-euromillones"
+                    >
+                      Euromillions <span class="label">¡BOTE!</span
+                      ><span data-jackpot=""><small>$</small>185,8M</span></a
+                    >
+                    <ul>
+                      <li
+                        ><a href="https://www.lottofy.com/en/euromillions/play/"
+                          ><i class="icon-slim-arrow-right2"></i> Play
+                          <strong>EUROMILLIONS</strong></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/euromillions/fund/"
+                          ><i class="icon-slim-arrow-right2"></i> Euromillions
+                          <strong>FUND</strong> (56 bets)</a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/euromillions/club/"
+                          ><i class="icon-slim-arrow-right2"></i>
+                          Euromillonarios <strong>SYNDICATE</strong> (80
+                          bets)</a
+                        ></li
+                      >
+                    </ul>
+                  </li>
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-powerball"
+                    >
+                      Powerball <span class="label">¡BOTE!</span
+                      ><span data-jackpot=""><small>$</small>365,0M</span></a
+                    >
+                    <ul>
+                      <li
+                        ><a href="https://www.lottofy.com/en/powerball/play/"
+                          ><i class="icon-slim-arrow-right2"></i> Play
+                          <strong>POWERBALL</strong></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/powerball/fund/"
+                          ><i class="icon-slim-arrow-right2"></i> Powerball
+                          <strong>FUND</strong> (1 bets)</a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/powerball/club/"
+                          ><i class="icon-slim-arrow-right2"></i> Powerball
+                          <strong>SYNDICATE</strong> (120 bets)</a
+                        ></li
+                      >
+                    </ul>
+                  </li>
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-megamillions"
+                    >
+                      Megamillions <span class="label">¡BOTE!</span
+                      ><span data-jackpot=""><small>$</small>328,0M</span></a
+                    >
+                    <ul>
+                      <li
+                        ><a href="https://www.lottofy.com/en/megamillions/play/"
+                          ><i class="icon-slim-arrow-right2"></i> Play
+                          <strong>MEGAMILLIONS</strong></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/megamillions/fund/"
+                          ><i class="icon-slim-arrow-right2"></i> Megamillions
+                          <strong>FUND</strong> (5 bets)</a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/megamillions/club/"
+                          ><i class="icon-slim-arrow-right2"></i> Megamillions
+                          <strong>SYNDICATE</strong> (120 bets)</a
+                        ></li
+                      >
+                    </ul>
+                  </li>
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-superenalotto"
+                    >
+                      Superenalotto <span class="label">¡BOTE!</span
+                      ><span data-jackpot=""><small>$</small>242,1M</span></a
+                    >
+                    <ul>
+                      <li
+                        ><a
+                          href="https://www.lottofy.com/en/superenalotto/play/"
+                          ><i class="icon-slim-arrow-right2"></i> Play
+                          <strong>SUPERENALOTTO</strong></a
+                        ></li
+                      >
+                      <li
+                        ><a
+                          href="https://www.lottofy.com/en/superenalotto/fund/"
+                          ><i class="icon-slim-arrow-right2"></i> Superenalotto
+                          <strong>FUND</strong> (35 bets)</a
+                        ></li
+                      >
+                      <li
+                        ><a
+                          href="https://www.lottofy.com/en/superenalotto/club/"
+                          ><i class="icon-slim-arrow-right2"></i> Superenalotto
+                          <strong>SYNDICATE</strong> (200 bets)</a
+                        ></li
+                      >
+                    </ul>
+                  </li>
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-primitiva"
+                    >
+                      La Primitiva <span class="label">¡BOTE!</span
+                      ><span data-jackpot=""><small>$</small>26,4M</span></a
+                    >
+                    <ul>
+                      <li
+                        ><a href="https://www.lottofy.com/en/primitiva/play/"
+                          ><i class="icon-slim-arrow-right2"></i> Play
+                          <strong>LA PRIMITIVA</strong></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/primitiva/fund/"
+                          ><i class="icon-slim-arrow-right2"></i> La Primitiva
+                          <strong>FUND</strong> (19 bets)</a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/primitiva/club/"
+                          ><i class="icon-slim-arrow-right2"></i> PrimiClub
+                          <strong>SYNDICATE</strong> (150 bets)</a
+                        ></li
+                      >
+                    </ul>
+                  </li>
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-lotto6aus49"
+                    >
+                      Lotto6aus49 <span class="label">¡BOTE!</span
+                      ><span data-jackpot=""><small>$</small>5,3M</span></a
+                    >
+                    <ul>
+                      <li
+                        ><a href="https://www.lottofy.com/en/lotto6aus49/play/"
+                          ><i class="icon-slim-arrow-right2"></i> Play
+                          <strong>LOTTO6AUS49</strong></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/lotto6aus49/fund/"
+                          ><i class="icon-slim-arrow-right2"></i> Lotto6aus49
+                          <strong>FUND</strong> (6 bets)</a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/lotto6aus49/club/"
+                          ><i class="icon-slim-arrow-right2"></i> Lotto6aus49
+                          <strong>SYNDICATE</strong> (150 bets)</a
+                        ></li
+                      >
+                    </ul>
+                  </li>
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-eurojackpot"
+                    >
+                      Eurojackpot <span class="label">¡BOTE!</span
+                      ><span data-jackpot=""><small>$</small>59,1M</span></a
+                    >
+                    <ul>
+                      <li
+                        ><a href="https://www.lottofy.com/en/eurojackpot/play/"
+                          ><i class="icon-slim-arrow-right2"></i> Play
+                          <strong>EUROJACKPOT</strong></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/eurojackpot/fund/"
+                          ><i class="icon-slim-arrow-right2"></i> Eurojackpot
+                          <strong>FUND</strong> (5 bets)</a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/eurojackpot/club/"
+                          ><i class="icon-slim-arrow-right2"></i> Eurojackpot
+                          <strong>SYNDICATE</strong> (100 bets)</a
+                        ></li
+                      >
+                    </ul>
+                  </li>
+                  <li class="has-submenu">
+                    <a href="javascript:void(null)" class="icon-games-quiniela">
+                      Quiniela</a
+                    >
+                    <ul>
+                      <li
+                        ><a href="https://www.lottofy.com/en/quiniela/play/"
+                          ><i class="icon-slim-arrow-right2"></i> Play
+                          <strong>QUINIELA</strong></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/quiniela/fund/"
+                          ><i class="icon-slim-arrow-right2"></i> Quiniela
+                          <strong>FUND</strong> (3 bets)</a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/quiniela/club/"
+                          ><i class="icon-slim-arrow-right2"></i> Quinieleros
+                          <strong>SYNDICATE</strong></a
+                        ></li
+                      >
+                    </ul>
+                  </li>
+                  <li class="has-submenu">
+                    <a href="javascript:void(null)" class="icon-games-bonoloto">
+                      Bonoloto <span class="label">¡BOTE!</span
+                      ><span data-jackpot=""><small>$</small>3,8M</span></a
+                    >
+                    <ul>
+                      <li
+                        ><a href="https://www.lottofy.com/en/bonoloto/play/"
+                          ><i class="icon-slim-arrow-right2"></i> Play
+                          <strong>BONOLOTO</strong></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/bonoloto/fund/"
+                          ><i class="icon-slim-arrow-right2"></i> Bonoloto
+                          <strong>FUND</strong> (104 bets)</a
+                        ></li
+                      >
+                    </ul>
+                  </li>
+                  <li class="has-submenu">
+                    <a href="javascript:void(null)" class="icon-games-elgordo">
+                      El Gordo <span class="label">¡BOTE!</span
+                      ><span data-jackpot=""><small>$</small>6,1M</span></a
+                    >
+                    <ul>
+                      <li
+                        ><a href="https://www.lottofy.com/en/elgordo/play/"
+                          ><i class="icon-slim-arrow-right2"></i> Play
+                          <strong>EL GORDO</strong></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/elgordo/fund/"
+                          ><i class="icon-slim-arrow-right2"></i> El Gordo
+                          <strong>FUND</strong> (1 bets)</a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/elgordo/club/"
+                          ><i class="icon-slim-arrow-right2"></i> Gordacos
+                          <strong>SYNDICATE</strong> (70 bets)</a
+                        ></li
+                      >
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.lottofy.com/en/nationallottery/play/"
+                      class="icon-games-loterianacional"
+                    >
+                      National Lottery <span class="label">¡BOTE!</span
+                      ><span data-jackpot=""><small>$</small>31.671,00</span></a
+                    >
+                  </li>
+                  <li class="has-submenu">
+                    <a href="javascript:void(null)" class="icon-games-megasena">
+                      Mega-Sena <span class="label">¡BOTE!</span
+                      ><span data-jackpot=""><small>$</small>6,7M</span></a
+                    >
+                    <ul>
+                      <li
+                        ><a href="https://www.lottofy.com/en/megasena/play/"
+                          ><i class="icon-slim-arrow-right2"></i> Play
+                          <strong>MEGA-SENA</strong></a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/megasena/fund/"
+                          ><i class="icon-slim-arrow-right2"></i> Mega-Sena
+                          <strong>FUND</strong> (3 bets)</a
+                        ></li
+                      >
+                      <li
+                        ><a href="https://www.lottofy.com/en/megasena/club/"
+                          ><i class="icon-slim-arrow-right2"></i> Megasena
+                          <strong>SYNDICATE</strong> (280 bets)</a
+                        ></li
+                      >
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul data-globalactions="">
+              <li
+                ><a
+                  href="https://www.lottofy.com/en/helpdesk/"
+                  class="icon-common-bubble2"
+                >
+                  Support &amp; Helpdesk</a
+                ></li
+              >
+              <li class="has-submenu">
+                <a href="javascript:void(null)" class="icon-slim-world">
+                  Select your language
+                  <span class="label"
+                    ><img
+                      class="flag"
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
+                      alt="gb"
+                    />
+                    EN</span
+                  >
+                  <span class="label currency">USD</span>
+                </a>
+                <ul>
+                  <div
+                    id="menu-lang-mobile"
+                    class="core_panel core_paddingTzero"
+                    data-menu-lang=""
+                  >
+                    <fieldset class="core_thin radius">
+                      <legend
+                        class="core_spaceBzero core_txtSize_sm2 core_normal"
+                        >Language</legend
+                      >
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/panel/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                          alt="es"
+                        />
+                        ES</a
+                      >
+                      <a
+                        class="label is-active"
+                        href="https://www.lottofy.com/en/panel/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
+                          alt="gb"
+                        />
+                        EN</a
+                      >
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/pt/painel/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png"
+                          alt="pt"
+                        />
+                        PT</a
+                      >
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/br/painel/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png"
+                          alt="br"
+                        />
+                        BR</a
+                      >
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/fr/panneau/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png"
+                          alt="fr"
+                        />
+                        FR</a
+                      >
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/it/pannello/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png"
+                          alt="it"
+                        />
+                        IT</a
+                      >
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/de/tafel/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png"
+                          alt="de"
+                        />
+                        DE</a
+                      >
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/in/panel/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png"
+                          alt="in"
+                        />
+                        IN</a
+                      >
+                    </fieldset>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div> </header
+    ><script
+      src="//abp.smartadcheck.de/js/abpc.js?#ads/banner/ad/"
+      type="text/javascript"
+    ></script>
+    <div class="off-canvas-wrap">
+      <div
+        class="top-menu-gamesNav hide-for-medium animated"
+        data-top-menu-gamesnav=""
+      >
+        <ul
+          class="is-active"
+          data-tab-id="gamblingModePanel1"
+          data-num-items="13"
+          ><li data-nomenu="" data-gametype="superlotto"
+            ><a href="https://www.lottofy.com/en/superlotto/"
+              ><i class="icon-games-superlotto"></i><span>Superlotto</span></a
+            ></li
+          ><li style="animation-delay: 0s" data-gametype="euromillones"
+            ><button
+              ><i class="icon-games-euromillones"></i><span>Euromillions</span
+              ><span data-jackpot="" class="beuromillones"
+                ><small>$</small>185,8M</span
+              ><span data-date="" class="beuromillones">Today</span
+              ><img
+                data-country=""
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/eu.png"
+                alt="eu" /></button></li
+          ><li style="animation-delay: 0.03s" data-gametype="powerball"
+            ><button
+              ><i class="icon-games-powerball"></i><span>Powerball</span
+              ><span data-jackpot="" class="bpowerball"
+                ><small>$</small>365,0M</span
+              ><img
+                data-country=""
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/us.png"
+                alt="us" /></button></li
+          ><li style="animation-delay: 0.06s" data-gametype="megamillions"
+            ><button
+              ><i class="icon-games-megamillions"></i><span>Megamillions</span
+              ><span data-jackpot="" class="bmegamillions"
+                ><small>$</small>328,0M</span
+              ><img
+                data-country=""
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/us.png"
+                alt="us" /></button></li
+          ><li style="animation-delay: 0.09s" data-gametype="superenalotto"
+            ><button
+              ><i class="icon-games-superenalotto"></i><span>Superenalotto</span
+              ><span data-jackpot="" class="bsuperenalotto"
+                ><small>$</small>242,1M</span
+              ><span data-date="" class="bsuperenalotto">Today</span
+              ><img
+                data-country=""
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png"
+                alt="it" /></button></li
+          ><li style="animation-delay: 0.12s" data-gametype="primitiva"
+            ><button
+              ><i class="icon-games-primitiva"></i><span>La Primitiva</span
+              ><span data-jackpot="" class="bprimitiva"
+                ><small>$</small>26,4M</span
+              ><img
+                data-country=""
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                alt="es" /></button></li
+          ><li style="animation-delay: 0.15s" data-gametype="lotto6aus49"
+            ><button
+              ><i class="icon-games-lotto6aus49"></i><span>Lotto6aus49</span
+              ><span data-jackpot="" class="blotto6aus49"
+                ><small>$</small>5,3M</span
+              ><img
+                data-country=""
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png"
+                alt="de" /></button></li
+          ><li style="animation-delay: 0.18s" data-gametype="eurojackpot"
+            ><button
+              ><i class="icon-games-eurojackpot"></i><span>Eurojackpot</span
+              ><span data-jackpot="" class="beurojackpot"
+                ><small>$</small>59,1M</span
+              ><span data-date="" class="beurojackpot">Today</span
+              ><img
+                data-country=""
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/eu.png"
+                alt="eu" /></button></li
+          ><li style="animation-delay: 0.21s" data-gametype="quiniela"
+            ><button
+              ><i class="icon-games-quiniela"></i><span>Quiniela</span
+              ><img
+                data-country=""
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                alt="es" /></button></li
+          ><li style="animation-delay: 0.24s" data-gametype="bonoloto"
+            ><button
+              ><i class="icon-games-bonoloto"></i><span>Bonoloto</span
+              ><span data-jackpot="" class="bbonoloto"
+                ><small>$</small>3,8M</span
+              ><span data-date="" class="bbonoloto">Today</span
+              ><img
+                data-country=""
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                alt="es" /></button></li
+          ><li style="animation-delay: 0.27s" data-gametype="elgordo"
+            ><button
+              ><i class="icon-games-elgordo"></i><span>El Gordo</span
+              ><span data-jackpot="" class="belgordo"><small>$</small>6,1M</span
+              ><img
+                data-country=""
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                alt="es" /></button></li
+          ><li style="animation-delay: 0.3s" data-gametype="loterianacional"
+            ><button
+              ><i class="icon-games-loterianacional"></i
+              ><span>National Lottery</span
+              ><span data-jackpot="" class="bloterianacional"
+                ><small>$</small>31.671,00</span
+              ><img
+                data-country=""
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                alt="es" /></button></li
+          ><li style="animation-delay: 0.33s" data-gametype="megasena"
+            ><button
+              ><i class="icon-games-megasena"></i><span>Mega-Sena</span
+              ><span data-jackpot="" class="bmegasena"
+                ><small>$</small>6,7M</span
+              ><span data-date="" class="bmegasena">Today</span
+              ><img
+                data-country=""
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png"
+                alt="br" /></button></li
+        ></ul>
+      </div>
+      <div class="inner-wrap">
+        <div
+          class="callout text-center core_thin"
+          data-closable=""
+          data-alertsmarquee=""
+          data-priority="4"
+        >
+          <ul>
+            <li data-priority="4">
+              <span
+                >Your account has not yet been validated. A validation email was
+                sent to your email; please check it.
+                <a
+                  href="javascript:void(null)"
+                  onclick="sendValidateEmail($(this).parent(),$(this),{ validationMethod:'link'})"
+                  >Not received yet? Send it again</a
+                ></span
+              >
+            </li>
+          </ul>
+          <button
+            class="close-button"
+            aria-label="Dismiss alert"
+            type="button"
+            data-close=""
+          ></button>
+        </div>
+        <div id="superContainer">
+          <div id="panel_tabs_holder">
+            <div class="row">
+              <ul class="tabs mainTabs core_spaceBzero" id="panel_tabs">
+                <li class="tabs-title is-active"
+                  ><a
+                    href="https://www.lottofy.com/en/panel/"
+                    aria-selected="true"
+                    ><span class="show-for-small-only">Account</span
+                    ><span class="show-for-medium"
+                      ><i class="icon-common-User-2"></i>
+                      <strong>My account</strong></span
+                    ></a
+                  ></li
+                >
+                <li class="tabs-title"
+                  ><a href="https://www.lottofy.com/en/bets/"
+                    ><span class="show-for-small-only">Bets</span
+                    ><span class="show-for-medium"
+                      ><i class="icon-common-calendar2"></i>
+                      <strong>Bets</strong></span
+                    ></a
+                  ></li
+                >
+                <li class="tabs-title"
+                  ><a href="https://www.lottofy.com/en/balance/"
+                    ><span class="show-for-small-only">Balance</span
+                    ><span class="show-for-medium"
+                      ><i class="icon-common-vcashpile"></i>
+                      <strong>Balance</strong></span
+                    ></a
+                  ></li
+                >
+                <li class="tabs-title"
+                  ><a href="https://www.lottofy.com/en/settings/"
+                    ><span class="show-for-small-only">Settings</span
+                    ><span class="show-for-medium"
+                      ><i class="icon-common-cogs"></i>
+                      <strong>Settings</strong></span
+                    ></a
+                  ></li
+                >
+              </ul>
+            </div>
+          </div>
+          <div id="myPanel" class="myPanel">
+            <div id="infoPanel">
+              <div class="grid-container">
+                <div
+                  class="grid-x align-middle align-center large-align-justify"
+                >
+                  <div
+                    class="core_panel core_thin cell small-2 medium-2 large-2 large-order-2"
+                    ><button
+                      type="button"
+                      data-open="changePic"
+                      data-reveal-params='{ "pictureType":"avatar"}'
+                      data-reveal-source="changePic"
+                      ><img
+                        src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
+                        class="avatar" /></button
+                  ></div>
+                  <div
+                    class="core_panel core_thin cell shrink large-5 medium-shrink large-text-center large-order-1"
+                  >
+                    <button
+                      id="infoPanel_userName"
+                      type="button"
+                      data-open="changeNick"
+                      class="editable"
+                      >Welcome, @U055866</button
+                    >
+                    <div
+                      id="infoPanelStats"
+                      class="editable"
+                      data-open="profileModal"
+                      role="button"
+                      aria-pressed="false"
+                    >
+                      <p class="text-left" id="infoPanel_statsWin"
+                        >Rank: <strong>#9314</strong></p
+                      >
+                      <p class="text-right" id="infoPanel_statsEarn"
+                        >Earnings: <strong>$0,00</strong></p
+                      >
+                    </div>
+                  </div>
+                  <div class="cell small-12 large-5 medium-auto large-order-3">
+                    <div
+                      class="grid-x align-justify-middle text-center align-justify"
+                    >
+                      <div class="cell shrink medium-12">
+                        <p class="text-center" id="infoPanel_yourBalance"
+                          >Your balance<br /><span id="infoPanel_balance"
+                            >$0,00</span
+                          ></p
+                        >
+                      </div>
+                      <div class="cell small-8 medium-12">
+                        <div class="text-center"
+                          ><a
+                            class="button"
+                            href="https://www.lottofy.com/en/balance/#add_cash"
+                            data-addbalance=""
+                            ><strong>Add balance</strong></a
+                          ><a
+                            class="button"
+                            href="https://www.lottofy.com/en/balance/#withdraw_cash"
+                            data-withdrawbalance=""
+                            ><strong>Withdraw funds</strong></a
+                          ></div
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="summaryPanel" class="lightTheme">
+              <div id="summaryPanelBg"> <div></div> </div>
+              <div class="row">
+                <div class="column large-6">
+                  <div class="hide-for-large core_panel" id="sectionsNav">
+                    <div
+                      class="grid-x grid-margin-x align-stretch align-justif"
+                      data-summarynav=""
+                    >
+                      <div class="cell small-4"
+                        ><button
+                          type="button"
+                          data-open="localModals"
+                          onclick="$('#localModals').attr('data-source','data-yourbets-summary')"
+                          ><i class="icon-common-Shopping-Basket"></i>Bets
+                          summary</button
+                        ></div
+                      >
+                      <div class="cell small-4"
+                        ><button
+                          type="button"
+                          data-open="localModals"
+                          onclick="$('#localModals').attr('data-source','data-subscriptions-summary')"
+                          ><i class="icon-common-history"></i
+                          >Subscriptions</button
+                        ></div
+                      >
+                      <div class="cell small-4"
+                        ><button
+                          type="button"
+                          data-open="localModals"
+                          onclick="$('#localModals').attr('data-source','data-groups-summary')"
+                          ><i class="icon-games-groups"></i>Groups</button
+                        ></div
+                      >
+                    </div>
+                  </div>
+                  <div data-multiuse-modal="data-yourbets-summary">
+                    <div class="summaryPanel clearfix" data-yourbets-summary="">
+                      <div class="panelRow">
+                        <h2 data-title="" data-modal-header="" class="text-left"
+                          >Playing</h2
+                        >
+                        <ul
+                          class="tabs flatTabs text-center"
+                          data-tabs=""
+                          id="userBets"
+                          role="tablist"
+                          data-e="erxaug-e"
+                        >
+                          <li
+                            data-tabs-target="userBets_last"
+                            class="tabs-title"
+                            role="presentation"
+                            ><a
+                              href="#userBets_last"
+                              role="tab"
+                              aria-controls="userBets_last"
+                              aria-selected="false"
+                              id="userBets_last-label"
+                              tabindex="-1"
+                              >Previous week</a
+                            ></li
+                          ><li class="tabs-title is-active" role="presentation"
+                            ><a
+                              href="#userBets_this"
+                              aria-selected="true"
+                              role="tab"
+                              aria-controls="userBets_this"
+                              id="userBets_this-label"
+                              tabindex="0"
+                              >This week</a
+                            ></li
+                          ><li class="tabs-title" role="presentation"
+                            ><a
+                              data-tabs-target="userBets_next"
+                              href="#userBets_next"
+                              role="tab"
+                              aria-controls="userBets_next"
+                              aria-selected="false"
+                              id="userBets_next-label"
+                              tabindex="-1"
+                              >Next week</a
+                            ></li
+                          >
+                        </ul>
+                        <div class="tabs-content" data-tabs-content="userBets">
+                          <div
+                            class="tabs-panel text-center"
+                            id="userBets_last"
+                            role="tabpanel"
+                            aria-labelledby="userBets_last-label"
+                            aria-hidden="true"
+                          >
+                            <p data-subtitle="" class="text-center"
+                              ><strong>Week from 20/06 to 26/06</strong></p
+                            >
+                            <div
+                              data-defaultmsgs=""
+                              class="text-center smallDefaultMsgs"
+                            >
+                              <i class="icon-common-Shopping-Basket"></i>
+                              <p data-title=""
+                                >You currently have no bets for this week</p
+                              >
+                              <p
+                                >You have no recent bets to display here.
+                                Remember that you can access
+                                <a href="https://www.lottofy.com/en/bets/"
+                                  >"My Bets"</a
+                                >
+                                to consult all your bets, or you can make a
+                                purchase.</p
+                              >
+                            </div>
+                          </div>
+                          <div
+                            class="tabs-panel text-center is-active"
+                            id="userBets_this"
+                            role="tabpanel"
+                            aria-labelledby="userBets_this-label"
+                          >
+                            <p data-subtitle="" class="text-center"
+                              ><strong>Week from 27/06 to 03/07</strong></p
+                            >
+                            <div
+                              data-defaultmsgs=""
+                              class="text-center smallDefaultMsgs"
+                            >
+                              <i class="icon-common-Shopping-Basket"></i>
+                              <p data-title=""
+                                >You currently have no bets for this week</p
+                              >
+                              <p
+                                >You have no recent bets to display here.
+                                Remember that you can access
+                                <a href="https://www.lottofy.com/en/bets/"
+                                  >"My Bets"</a
+                                >
+                                to consult all your bets, or you can make a
+                                purchase.</p
+                              >
+                            </div>
+                          </div>
+                          <div
+                            class="tabs-panel text-center"
+                            id="userBets_next"
+                            role="tabpanel"
+                            aria-labelledby="userBets_next-label"
+                            aria-hidden="true"
+                          >
+                            <p data-subtitle="" class="text-center"
+                              ><strong>Week from 04/07 to 10/07</strong></p
+                            >
+                            <div
+                              data-defaultmsgs=""
+                              class="text-center smallDefaultMsgs"
+                            >
+                              <i class="icon-common-Shopping-Basket"></i>
+                              <p data-title=""
+                                >You currently have no bets for this week</p
+                              >
+                              <p
+                                >You have no recent bets to display here.
+                                Remember that you can access
+                                <a href="https://www.lottofy.com/en/bets/"
+                                  >"My Bets"</a
+                                >
+                                to consult all your bets, or you can make a
+                                purchase.</p
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-center core_spaceTHalf">
+                          <a
+                            href="https://www.lottofy.com/en/bets/"
+                            class="button"
+                            >View all</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-multiuse-modal="data-subscriptions-summary">
+                    <div class="summaryPanel" data-subscriptions-summary="">
+                      <div class="panelRow">
+                        <h2 data-title="" data-modal-header="" class="text-left"
+                          >Manage my <strong>automatic renewals</strong></h2
+                        >
+                        <div
+                          data-defaultmsgs=""
+                          class="text-center smallDefaultMsgs"
+                        >
+                          <i class="icon-common-history"></i>
+                          <p data-title=""
+                            >You currently don't have any subscription in your
+                            account</p
+                          >
+                          <p
+                            >Select the <strong>Auto-renew</strong> option for
+                            your favorite games and
+                            <strong>never miss a draw</strong>. On Monday of
+                            each week we will send you an email with the details
+                            of your subscription, and you will be charged with
+                            the selected payment method. From here you can
+                            manage all the available options</p
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-multiuse-modal="data-groups-summary">
+                    <div class="summaryPanel" data-groups-summary="">
+                      <div class="panelRow">
+                        <h2 data-title="" data-modal-header="" class="text-left"
+                          >Summary of my <strong>groups</strong></h2
+                        >
+                        <div
+                          data-defaultmsgs=""
+                          class="text-center smallDefaultMsgs"
+                        >
+                          <i class="icon-games-groups"></i>
+                          <p data-title=""
+                            >You do not currently participate in any group</p
+                          >
+                          <p
+                            >You can
+                            <a href="https://www.lottofy.com/en/group/create/"
+                              >create your own group</a
+                            >
+                            or join<a href="https://www.lottofy.com/en/groups/">
+                              a public group</a
+                            ></p
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column large-6">
+                  <div class="summaryPanel box" data-panel="validation">
+                    <h2 data-title="">Validate your account</h2>
+                    <div class="core_sans_serif">
+                      <p
+                        >Validate your account and access all
+                        <strong>Lottofy</strong> features</p
+                      >
+                      <button
+                        type="button"
+                        data-validatephone=""
+                        aria-controls="validatePhone"
+                        aria-haspopup="true"
+                        class="button tiny pill icon-slim-phone2"
+                      >
+                        Phone validation</button
+                      >
+                      <button
+                        type="button"
+                        data-validateemail=""
+                        data-open="validateEmail"
+                        aria-controls="validateEmail"
+                        aria-haspopup="true"
+                        class="button tiny pill icon-slim-mail"
+                      >
+                        Email validation</button
+                      >
+                    </div>
+                  </div>
+                  <div class="summaryPanel box loaded" data-panel="lotto">
+                    <h2 data-title="">Upcoming lottery draws</h2>
+                    <div
+                      class="frame horizontal pages"
+                      data-scroll="horizontal"
+                      style="height: 177px; overflow: hidden"
+                    >
+                      <ul
+                        class="slidee"
+                        style="
+                          transform: translateZ(0px) translateX(0px);
+                          width: 3168px;
+                        "
+                      >
+                        <li style="height: 177px; width: 528px">
+                          <div class="grid-x align-center-middle grid-margin-x">
+                            <div class="cell small-7 large-7">
+                              <div
+                                class="richBlock lottery"
+                                data-gametype="euromillones"
+                              >
+                                <div
+                                  class="richBlockContent"
+                                  style="
+                                    background-image: url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_150.jpg');
+                                  "
+                                >
+                                  <div class="richBlockBottomText">
+                                    <p data-drawdate="">TUESDAY</p>
+                                    <p
+                                      ><strong data-drawjackpot=""
+                                        ><small>Jackpot!:</small>
+                                        <small>$</small>242,1M</strong
+                                      ></p
+                                    >
+                                    <div
+                                      class="gamingModesContainer row collapse"
+                                    >
+                                      <div class="column small-6">
+                                        <a
+                                          class="gamingModes"
+                                          href="https://www.lottofy.com/en/superenalotto/fund/"
+                                          ><span>35 <small>BETS</small></span>
+                                          <strong>FUND</strong></a
+                                        >
+                                      </div>
+                                      <div class="column small-6">
+                                        <a
+                                          class="gamingModes"
+                                          href="https://www.lottofy.com/en/superenalotto/club/"
+                                          ><span>200 <small>BETS</small></span>
+                                          <strong>CLUB</strong></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cell small-5 large-5 text-center">
+                              <div data-timeremaining="24945"
+                                >06<small>h </small>55<small>m </small>05<small
+                                  >s</small
+                                ></div
+                              >
+                              <a
+                                class="button"
+                                href="https://www.lottofy.com/en/superenalotto/play/"
+                                >Play!</a
+                              >
+                              <button
+                                type="button"
+                                class="button bg_chlorophile"
+                                data-open="quickPicks"
+                                data-reveal-source="quickpicks"
+                                data-reveal-params='{ "game":150}'
+                                >Quick bet!</button
+                              >
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="core_spaceTThin core_spaceBThin icon-games-superenalotto"
+                              data-gamename=""
+                            >
+                              <strong>Superenalotto</strong
+                              ><span data-gametype="">Lottery</span></div
+                            >
+                          </div>
+                        </li>
+                        <li style="height: 177px; width: 528px">
+                          <div class="grid-x align-center-middle grid-margin-x">
+                            <div class="cell small-7 large-7">
+                              <div
+                                class="richBlock lottery"
+                                data-gametype="euromillones"
+                              >
+                                <div
+                                  class="richBlockContent"
+                                  style="
+                                    background-image: url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_93.jpg');
+                                  "
+                                >
+                                  <div class="richBlockBottomText">
+                                    <p data-drawdate="">TUESDAY</p>
+                                    <p
+                                      ><strong data-drawjackpot=""
+                                        ><small>Jackpot!:</small>
+                                        <small>$</small>59,1M</strong
+                                      ></p
+                                    >
+                                    <div
+                                      class="gamingModesContainer row collapse"
+                                    >
+                                      <div class="column small-6">
+                                        <a
+                                          class="gamingModes"
+                                          href="https://www.lottofy.com/en/eurojackpot/fund/"
+                                          ><span>5 <small>BETS</small></span>
+                                          <strong>FUND</strong></a
+                                        >
+                                      </div>
+                                      <div class="column small-6">
+                                        <a
+                                          class="gamingModes"
+                                          href="https://www.lottofy.com/en/eurojackpot/club/"
+                                          ><span>100 <small>BETS</small></span>
+                                          <strong>CLUB</strong></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cell small-5 large-5 text-center">
+                              <div data-timeremaining="25845"
+                                >07<small>h </small>10<small>m </small>05<small
+                                  >s</small
+                                ></div
+                              >
+                              <a
+                                class="button"
+                                href="https://www.lottofy.com/en/eurojackpot/play/"
+                                >Play!</a
+                              >
+                              <button
+                                type="button"
+                                class="button bg_chlorophile"
+                                data-open="quickPicks"
+                                data-reveal-source="quickpicks"
+                                data-reveal-params='{ "game":93}'
+                                >Quick bet!</button
+                              >
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="core_spaceTThin core_spaceBThin icon-games-eurojackpot"
+                              data-gamename=""
+                            >
+                              <strong>Eurojackpot</strong
+                              ><span data-gametype="">Lottery</span></div
+                            >
+                          </div>
+                        </li>
+                        <li style="height: 177px; width: 528px">
+                          <div class="grid-x align-center-middle grid-margin-x">
+                            <div class="cell small-7 large-7">
+                              <div
+                                class="richBlock lottery"
+                                data-gametype="euromillones"
+                              >
+                                <div
+                                  class="richBlockContent"
+                                  style="
+                                    background-image: url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_1.jpg');
+                                  "
+                                >
+                                  <div class="richBlockBottomText">
+                                    <p data-drawdate="">TUESDAY</p>
+                                    <p
+                                      ><strong data-drawjackpot=""
+                                        ><small>Jackpot!:</small>
+                                        <small>$</small>3,8M</strong
+                                      ></p
+                                    >
+                                    <div
+                                      class="gamingModesContainer row collapse"
+                                    >
+                                      <div class="column small-12">
+                                        <a
+                                          class="gamingModes"
+                                          href="https://www.lottofy.com/en/bonoloto/fund/"
+                                          ><span>104 <small>BETS</small></span>
+                                          <strong>FUND</strong></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cell small-5 large-5 text-center">
+                              <div data-timeremaining="28545"
+                                >07<small>h </small>55<small>m </small>05<small
+                                  >s</small
+                                ></div
+                              >
+                              <a
+                                class="button"
+                                href="https://www.lottofy.com/en/bonoloto/play/"
+                                >Play!</a
+                              >
+                              <button
+                                type="button"
+                                class="button bg_chlorophile"
+                                data-open="quickPicks"
+                                data-reveal-source="quickpicks"
+                                data-reveal-params='{ "game":1}'
+                                >Quick bet!</button
+                              >
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="core_spaceTThin core_spaceBThin icon-games-bonoloto"
+                              data-gamename=""
+                            >
+                              <strong>Bonoloto</strong
+                              ><span data-gametype="">Lottery</span></div
+                            >
+                          </div>
+                        </li>
+                        <li style="height: 177px; width: 528px">
+                          <div class="grid-x align-center-middle grid-margin-x">
+                            <div class="cell small-7 large-7">
+                              <div
+                                class="richBlock lottery"
+                                data-gametype="euromillones"
+                              >
+                                <div
+                                  class="richBlockContent"
+                                  style="
+                                    background-image: url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_4.jpg');
+                                  "
+                                >
+                                  <div class="richBlockBottomText">
+                                    <p data-drawdate="">TUESDAY</p>
+                                    <p
+                                      ><strong data-drawjackpot=""
+                                        ><small>Jackpot!:</small>
+                                        <small>$</small>185,8M</strong
+                                      ></p
+                                    >
+                                    <div
+                                      class="gamingModesContainer row collapse"
+                                    >
+                                      <div class="column small-6">
+                                        <a
+                                          class="gamingModes"
+                                          href="https://www.lottofy.com/en/euromillions/fund/"
+                                          ><span>56 <small>BETS</small></span>
+                                          <strong>FUND</strong></a
+                                        >
+                                      </div>
+                                      <div class="column small-6">
+                                        <a
+                                          class="gamingModes"
+                                          href="https://www.lottofy.com/en/euromillions/club/"
+                                          ><span>80 <small>BETS</small></span>
+                                          <strong>CLUB</strong></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cell small-5 large-5 text-center">
+                              <div data-timeremaining="28545"
+                                >07<small>h </small>55<small>m </small>05<small
+                                  >s</small
+                                ></div
+                              >
+                              <a
+                                class="button"
+                                href="https://www.lottofy.com/en/euromillions/play/"
+                                >Play!</a
+                              >
+                              <button
+                                type="button"
+                                class="button bg_chlorophile"
+                                data-open="quickPicks"
+                                data-reveal-source="quickpicks"
+                                data-reveal-params='{ "game":4}'
+                                >Quick bet!</button
+                              >
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="core_spaceTThin core_spaceBThin icon-games-euromillones"
+                              data-gamename=""
+                            >
+                              <strong>Euromillions</strong
+                              ><span data-gametype="">Lottery</span></div
+                            >
+                          </div>
+                        </li>
+                        <li style="height: 177px; width: 528px">
+                          <div class="grid-x align-center-middle grid-margin-x">
+                            <div class="cell small-7 large-7">
+                              <div
+                                class="richBlock lottery"
+                                data-gametype="euromillones"
+                              >
+                                <div
+                                  class="richBlockContent"
+                                  style="
+                                    background-image: url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_180.jpg');
+                                  "
+                                >
+                                  <div class="richBlockBottomText">
+                                    <p data-drawdate="">TUESDAY</p>
+                                    <p
+                                      ><strong data-drawjackpot=""
+                                        ><small>Jackpot!:</small>
+                                        <small>$</small>6,7M</strong
+                                      ></p
+                                    >
+                                    <div
+                                      class="gamingModesContainer row collapse"
+                                    >
+                                      <div class="column small-6">
+                                        <a
+                                          class="gamingModes"
+                                          href="https://www.lottofy.com/en/megasena/fund/"
+                                          ><span>3 <small>BETS</small></span>
+                                          <strong>FUND</strong></a
+                                        >
+                                      </div>
+                                      <div class="column small-6">
+                                        <a
+                                          class="gamingModes"
+                                          href="https://www.lottofy.com/en/megasena/club/"
+                                          ><span>280 <small>BETS</small></span>
+                                          <strong>CLUB</strong></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cell small-5 large-5 text-center">
+                              <div data-timeremaining="39345"
+                                >10<small>h </small>55<small>m </small>05<small
+                                  >s</small
+                                ></div
+                              >
+                              <a
+                                class="button"
+                                href="https://www.lottofy.com/en/megasena/play/"
+                                >Play!</a
+                              >
+                              <button
+                                type="button"
+                                class="button bg_chlorophile"
+                                data-open="quickPicks"
+                                data-reveal-source="quickpicks"
+                                data-reveal-params='{ "game":180}'
+                                >Quick bet!</button
+                              >
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="core_spaceTThin core_spaceBThin icon-games-megasena"
+                              data-gamename=""
+                            >
+                              <strong>Mega-Sena</strong
+                              ><span data-gametype="">Lottery</span></div
+                            >
+                          </div>
+                        </li>
+                        <li style="height: 177px; width: 528px">
+                          <div class="grid-x align-center-middle grid-margin-x">
+                            <div class="cell small-7 large-7">
+                              <div
+                                class="richBlock lottery"
+                                data-gametype="euromillones"
+                              >
+                                <div
+                                  class="richBlockContent"
+                                  style="
+                                    background-image: url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_121.jpg');
+                                  "
+                                >
+                                  <div class="richBlockBottomText">
+                                    <p data-drawdate="">WEDNESDAY</p>
+                                    <p
+                                      ><strong data-drawjackpot=""
+                                        ><small>Jackpot!:</small>
+                                        <small>$</small>328,0M</strong
+                                      ></p
+                                    >
+                                    <div
+                                      class="gamingModesContainer row collapse"
+                                    >
+                                      <div class="column small-6">
+                                        <a
+                                          class="gamingModes"
+                                          href="https://www.lottofy.com/en/megamillions/fund/"
+                                          ><span>5 <small>BETS</small></span>
+                                          <strong>FUND</strong></a
+                                        >
+                                      </div>
+                                      <div class="column small-6">
+                                        <a
+                                          class="gamingModes"
+                                          href="https://www.lottofy.com/en/megamillions/club/"
+                                          ><span>120 <small>BETS</small></span>
+                                          <strong>CLUB</strong></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cell small-5 large-5 text-center">
+                              <div data-timeremaining="53745"
+                                >14<small>h </small>55<small>m </small>05<small
+                                  >s</small
+                                ></div
+                              >
+                              <a
+                                class="button"
+                                href="https://www.lottofy.com/en/megamillions/play/"
+                                >Play!</a
+                              >
+                              <button
+                                type="button"
+                                class="button bg_chlorophile"
+                                data-open="quickPicks"
+                                data-reveal-source="quickpicks"
+                                data-reveal-params='{ "game":121}'
+                                >Quick bet!</button
+                              >
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="core_spaceTThin core_spaceBThin icon-games-megamillions"
+                              data-gamename=""
+                            >
+                              <strong>Megamillions</strong
+                              ><span data-gametype="">Lottery</span></div
+                            >
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="text-center scrollPagerContainer">
+                      <ul data-scrollpager=""
+                        ><li class="active"></li
+                        ><li class=""></li
+                        ><li class=""></li
+                        ><li class=""></li
+                        ><li class=""></li
+                        ><li class=""></li
+                      ></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reveal-overlay" style="display: none"
+            ><div
+              id="changePic"
+              class="reveal medium"
+              data-reveal=""
+              data-reveal-source="changePic"
+              aria-hidden="true"
+              role="dialog"
+              data-close-on-click="false"
+              style="display: none"
+            ></div
+          ></div>
+          <div class="reveal-overlay" style="display: none"
+            ><div
+              id="adjustPic"
+              class="reveal small"
+              data-reveal=""
+              data-reveal-source="adjustPic"
+              aria-hidden="true"
+              role="dialog"
+              data-close-on-click="false"
+              style="display: none"
+            ></div
+          ></div>
+          <div class="reveal-overlay" style="display: none"
+            ><div
+              id="profileModal"
+              data-reveal-source="profile"
+              class="reveal"
+              data-reveal=""
+              data-reveal-params='{ "myProfile":true}'
+              style="display: none"
+            ></div
+          ></div>
+          <script>
+            var transaccionesTipos = {
+              1: "Virtual Balance",
+            };
+            bamQueue.addToQueue(function () {
+              panelFilterScripts();
+              panelValidationScripts({
+                strings: {
+                  sending:
+                    "Sending an activation email to your account... Please wait",
+                },
+              });
+
+              var timerOptions = {
+                strings: {
+                  days: "d",
+                  hours: "h",
+                  minutes: "m",
+                  seconds: "s",
+                },
+              };
+              $("[data-timeRemaining]").each(function () {
+                var valueInSeconds = $(this).attr("data-timeRemaining");
+                setCountDown(valueInSeconds, $(this), timerOptions);
+              });
+            });
+
+            bamQueue.waitForExistance("$", function () {
+              $(".localModals").on("open.zf.reveal", function (e) {
+                var srcElem = "[" + $(e.target).attr("data-source") + "]";
+                var srcParent = $(srcElem).closest("[data-multiuse-modal]");
+                var title = $(srcElem)
+                  .find("[data-title][data-modal-header]")
+                  .html();
+                $(srcElem).appendTo(".localModals [data-inject]");
+                $(".localModals [data-modal-title] >*:first-child").html(title);
+              });
+              $(".localModals").on("closed.zf.reveal", function (e) {
+                var srcElem = $(
+                  '[data-multiuse-modal="' +
+                    $(e.target).attr("data-source") +
+                    '"]'
+                );
+                $(".localModals [data-inject] > *:first-child").appendTo(
+                  $(srcElem)
+                );
+              });
+
+              var script = document.createElement("script");
+              script.onload = function () {
+                var optionsFavs = {
+                  horizontal: 1,
+                  itemNav: "basic",
+                  speed: 300,
+                  smart: 1,
+                  mouseDragging: 1,
+                  releaseSwing: 1,
+                  elasticBounds: 1,
+                  touchDragging: 1,
+                  pagesBar: "[data-panel='favorites'] [data-scrollPager]", // Selector or DOM element for pages bar container.
+                  activatePageOn: "click", // Event used to activate page. Can be: click, mouseenter, ...
+                  // Page item generator.
+                  pageBuilder: function (index) {
+                    return "<li></li>";
+                  },
+                  cycleBy: "items",
+                };
+                var optionsCasino = {
+                  horizontal: 1,
+                  itemNav: "basic",
+                  speed: 300,
+                  smart: 1,
+                  mouseDragging: true,
+                  touchDragging: true,
+                  releaseSwing: 1,
+                  elasticBounds: 1,
+                  pagesBar: "[data-panel='casino'] [data-scrollPager]", // Selector or DOM element for pages bar container.
+                  activatePageOn: "click", // Event used to activate page. Can be: click, mouseenter, ...
+                  // Page item generator.
+                  pageBuilder: function (index) {
+                    return "<li></li>";
+                  },
+                  cycleBy: "pages", // Enable automatic cycling by 'items' or 'pages'.
+                  cycleInterval: 5000, // Delay between cycles in milliseconds.
+                  pauseOnHover: true, // Pause cycling when mouse hovers over the FRAME.
+                  startPaused: false, // Whether to start in paused sate.
+                };
+                var optionsLotto = {
+                  horizontal: 1,
+                  itemNav: "basic",
+                  speed: 300,
+                  smart: 1,
+                  mouseDragging: true,
+                  touchDragging: true,
+                  releaseSwing: 1,
+                  elasticBounds: 1,
+                  pagesBar: "[data-panel='lotto'] [data-scrollPager]", // Selector or DOM element for pages bar container.
+                  activatePageOn: "click", // Event used to activate page. Can be: click, mouseenter, ...
+                  // Page item generator.
+                  pageBuilder: function (index) {
+                    return "<li></li>";
+                  },
+                  cycleBy: "pages", // Enable automatic cycling by 'items' or 'pages'.
+                  cycleInterval: 5000, // Delay between cycles in milliseconds.
+                  pauseOnHover: true, // Pause cycling when mouse hovers over the FRAME.
+                  startPaused: false, // Whether to start in paused sate.
+                };
+
+                function launchScrollers(reload) {
+                  var reloading = false;
+                  if (typeof reload != "undefined" && reload) {
+                    reloading = true;
+                  }
+
+                  function setBoundaries() {
+                    $('[data-scroll="vertical"]').each(function () {
+                      var maxHeight = 0;
+                      $(this)
+                        .find(".slidee > li")
+                        .each(function () {
+                          if ($(this).outerHeight() > maxHeight) {
+                            maxHeight = Math.ceil($(this).outerHeight());
+                          }
+                        });
+                      var slideLi = $(this).find(".slidee > li");
+                      $(slideLi)
+                        .add($(slideLi).closest("[data-scroll]"))
+                        .css("height", maxHeight);
+                      $(this).closest("[data-panel]").addClass("loaded");
+                    });
+
+                    $('[data-scroll="horizontal"].pages').each(function () {
+                      var maxHeight = 0;
+                      var width = 0;
+                      $(this)
+                        .find(".slidee > li")
+                        .each(function () {
+                          if ($(this).outerHeight() > maxHeight) {
+                            maxHeight = Math.ceil($(this).outerHeight());
+                          }
+                          width = Math.floor($(this).outerWidth());
+                        });
+                      var slideLi = $(this).find(".slidee > li");
+                      $(slideLi)
+                        .add($(slideLi).closest("[data-scroll]"))
+                        .css("height", maxHeight);
+                      $(slideLi).css("width", width);
+                      $(this).closest("[data-panel]").addClass("loaded");
+                    });
+                  }
+                  function resetBoundaries() {
+                    $('[data-scroll="vertical"]').each(function () {
+                      $(this).closest("[data-panel]").removeClass("loaded");
+                      var slideLi = $(this).find(".slidee > li");
+                      $(slideLi)
+                        .add($(slideLi).closest("[data-scroll]"))
+                        .removeAttr("style");
+                    });
+                    $('[data-scroll="horizontal"].pages').each(function () {
+                      $(this).closest("[data-panel]").removeClass("loaded");
+                      var slideLi = $(this).find(".slidee > li");
+                      $(slideLi)
+                        .add($(slideLi).closest("[data-scroll]"))
+                        .removeAttr("style");
+                    });
+                  }
+
+                  $('[data-panel="favorites"] [data-scroll]').sly(false);
+                  $('[data-panel="casino"] [data-scroll]').sly(false);
+                  $('[data-panel="lotto"] [data-scroll]').sly(false);
+                  resetBoundaries();
+                  setBoundaries();
+                  $('[data-panel="favorites"] [data-scroll]').sly(optionsFavs);
+                  $('[data-panel="casino"] [data-scroll]').sly(optionsCasino);
+                  $('[data-panel="lotto"] [data-scroll]').sly(optionsLotto);
+                }
+                launchScrollers();
+                $(window).on("resize", function () {
+                  if (typeof scrollersTimer != "undefined") {
+                    clearInterval(scrollersTimer);
+                  }
+                  scrollersTimer = setTimeout(function () {
+                    launchScrollers();
+                  }, 300);
+                });
+              };
+              script.src =
+                "./js/main.js";
+              document.head.appendChild(script); //or something of the likes
+            });
+            function borrarAbono(id) {
+              if (
+                !confirm(
+                  "Are you sure you want to delete the selected subscription?"
+                )
+              )
+                return false;
+              myForm = new formeSubmit(false, "/data/?action=borrarAbono", {
+                statusMsg: {
+                  elem: $("[data-subscriptions-summary] [data-status-msg]"),
+                  ok: "Subscription succesfully eliminated!",
+                  ko: "Error trying to delete the subscription. Contact support",
+                },
+                extraFields: { id: id },
+                callbackOnSuccess: function () {
+                  var tBodyElement = $("[data-abono=" + id + "]").parent(
+                    "tbody"
+                  );
+                  $("[data-abono=" + id + "]").remove();
+                  if (tBodyElement.find("tr").length == 0) {
+                    location.reload();
+                  }
+                },
+              });
+            }
+
+            function renovarAbono(id) {
+              myForm = new formeSubmit(false, "/data/?action=renovarAbono", {
+                statusMsg: {
+                  elem: $("[data-subscriptions-summary] [data-status-msg]"),
+                },
+                extraFields: { id: id },
+                callbackOnSuccess: function () {
+                  location.reload();
+                },
+              });
+            }
+
+            function mostrarAbono(abonoID) {
+              $('[data-abonoDetailFor="' + abonoID + '"]').toggle();
+            }
+
+            function editarAbono(abonoId, currentMethod, methodsTypes) {
+              var elem = $("#abonoMethods");
+              $(elem).core_reveal("open", {
+                params: { current: currentMethod },
+              });
+              $(elem).data("callback", function () {
+                $(elem)
+                  .find("[data-submit]")
+                  .on("click", function () {
+                    var newMethod = $(elem)
+                      .find('[name="abonoPayMethod"]:checked')
+                      .val();
+                    var submitting = new formeSubmit(
+                      $(this).closest("form"),
+                      "/data/?action=abonoMetodoPago",
+                      {
+                        extraFields: {
+                          metodo: newMethod,
+                          abono: abonoId,
+                        },
+                        statusMsg: {
+                          countDownBeforeCallback: {
+                            seconds: 3,
+                            callback: function (e, formeObj) {
+                              $(elem).core_reveal("close");
+                            },
+                          },
+                        },
+                        callbackOnSuccess: function (e, formeObj) {
+                          var item = $(
+                            '[data-subscriptions-summary] tr[data-abono="' +
+                              abonoId +
+                              '"] [data-ptype]'
+                          );
+                          $(item).text(methodsTypes[newMethod]);
+                          $(item).attr("data-current", newMethod);
+                        },
+                      }
+                    );
+                  });
+              });
+            }
+            bamQueue.waitForExistance(
+              "setChildLimiter",
+              function () {
+                $("[data-abonodetailfor]").each(function () {
+                  var elem = $(this).find("ul");
+
+                  setChildLimiter($(elem), {
+                    strings: {
+                      remaining: "Show %1 remaning",
+                    },
+                  });
+                });
+              },
+              500
+            );
+          </script>
+        </div>
+        <footer class="hide-for-print">
+          <div id="sidebarMenus" class="is-active">
+            <button
+              type="button"
+              data-open="feedback"
+              id="feedbackBt"
+              class="icon-common-star-full"
+              ><span data-bttext="">Comment</span></button
+            >
+            <button type="button" id="chatBt" class="is-visible"
+              ><i class="icon-common-bubble2"></i
+              ><span data-bttext="">Chat</span></button
+            >
+          </div>
+          <div class="row small-collapse medium-uncollapse">
+            <div class="column medium-3">
+              <ul class="core_strong" id="footerMenu">
+                <li
+                  ><a href="https://www.lottofy.com/en/about/">ABOUT US</a></li
+                >
+                <li><a href="https://www.lottofy.com/en/blog/">BLOG</a></li>
+                <li
+                  ><a href="https://www.lottofy.com/en/prizes/"
+                    >PRIZES AND PAYMENTS</a
+                  ></li
+                >
+                <li
+                  ><a href="https://www.lottofy.com/en/privacy/">PRIVACY</a></li
+                >
+                <li
+                  ><a href="https://www.lottofy.com/en/tos/"
+                    >TERMS AND CONDITIONS</a
+                  ></li
+                >
+                <li><a href="https://www.lottofy.com/en/faq/">HELP</a></li>
+                <li><a href="https://www.lottofy.com/en/map/">SITEMAP</a></li>
+                <li
+                  ><a href="https://www.lottofy.com/en/cookies/">COOKIES</a></li
+                >
+                <li
+                  ><a href="https://www.lottofy.com/en/responsible-gaming/"
+                    >RESPONSIBLE GAME</a
+                  ></li
+                >
+                <li
+                  ><a
+                    href="https://www.clobetaffiliates.com/"
+                    target="_blank"
+                    onmousedown="function(e){}"
+                    onclick="function(e) {}"
+                    proxy_sl_clk="function(e) {}"
+                    proxy_sl_omd="function(e) {}"
+                    proxy_sl_href="https://www.clobetaffiliates.com/"
+                    >AFFILIATES</a
+                  ></li
+                >
+                <li
+                  ><a href="https://www.lottofy.com/en/helpdesk/"
+                    >CONTACT US</a
+                  ></li
+                >
+              </ul>
+            </div>
+            <div class="column medium-6" data-ingamedocs="">
+              <p data-title="">Need <strong>help</strong>?</p>
+              <div data-ingamesupport="">
+                <div class="row collapse">
+                  <div class="column small-2 medium-1 text-center">
+                    <i class="icon-slim-phone2"></i>
+                  </div>
+                  <div
+                    class="column small-10 medium-6 text-left core_spaceBThin"
+                  >
+                    <p
+                      ><strong
+                        ><a href="tel:+35627782748"
+                          ><small>(+356)</small> 27782748</a
+                        ></strong
+                      ></p
+                    >
+                    <p
+                      ><small
+                        >Monday-Friday 9.00-15.00 | 16.00-20.30<br />Saturday
+                        10.30-19.30</small
+                      ></p
+                    >
+                  </div>
+                  <div
+                    class="column small-10 medium-5 text-left medium-text-center"
+                  >
+                  </div>
+                </div>
+                <div class="row collapse">
+                  <div class="column small-2 medium-1 text-center">
+                    <i class="icon-slim-chat-3"></i>
+                  </div>
+                  <div class="column small-10 medium-11 text-left">
+                    <p><strong>Chat: </strong> <a data-chatstatus="">View</a></p
+                    ><p
+                      ><small
+                        >(available Monday-Friday 9.00-15.00 | 16.00-20.30<br />Saturday
+                        10.30-19.30)</small
+                      ></p
+                    >
+                  </div>
+                </div>
+                <div class="row collapse">
+                  <div class="column small-2 medium-1 text-center">
+                    <i class="icon-slim-mail"></i>
+                  </div>
+                  <div class="column small-10 medium-11 text-left">
+                    <p>support@lottofy.com</p>
+                  </div>
+                </div>
+              </div>
+              <div id="footerActions">
+                <div id="lang">
+                  <p><strong>Lottofy</strong> in your language</p>
+                  <button
+                    data-toggle="menu-lang"
+                    data-alignment="left"
+                    type="button"
+                    aria-controls="menu-lang"
+                    data-is-focus="false"
+                    data-yeti-box="menu-lang"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    ><img
+                      class="flag"
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
+                      alt="gb"
+                    />
+                    <strong>EN</strong> | USD
+                  </button>
+                </div>
+                <div id="social">
+                  <p><strong>Follow us</strong> in social networks</p>
+                  <ul class="core_inline-list">
+                    <li
+                      ><a
+                        href="https://twitter.com/lottofycom"
+                        class="icon-common-social-twitter"
+                        target="_blank"
+                        rel="noopener"
+                        title="Go to the Twitter account"
+                        aria-label="Go to the Twitter account"
+                      ></a
+                    ></li>
+                    <li
+                      ><a
+                        href="https://www.facebook.com/lottofycom/"
+                        class="icon-common-social-facebook"
+                        target="_blank"
+                        rel="noopener"
+                        title="Go to the Facebook account"
+                        aria-label="Go to the Facebook account"
+                      ></a
+                    ></li>
+                    <li
+                      ><a
+                        href="https://www.instagram.com/lottofy/"
+                        class="icon-common-instagram"
+                        target="_blank"
+                        rel="noopener"
+                        title="Go to Instagram account"
+                        aria-label="Go to Instagram account"
+                      ></a
+                    ></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="column medium-3 text-center">
+              <div id="footerTrust">
+                <div class="footerPilot">
+                  <a
+                    href="https://www.trustpilot.com/review/lottofy.com?languages=all&amp;stars=4&amp;stars=5"
+                    target="_blank"
+                    onmousedown="function(e) {}"
+                    onclick="function(e) {}"
+                    proxy_sl_clk="function(e) {}"
+                    proxy_sl_omd="function(e) {}"
+                    proxy_sl_href="https://www.trustpilot.com/review/lottofy.com?languages=all&amp;stars=4&amp;stars=5"
+                    ><img
+                      src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/trustpilotlogo.png"
+                      alt="TrustPilot"
+                  /></a>
+                </div>
+                <div class="footerCredit">
+                  <img
+                    src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/1.png"
+                    alt="Visa"
+                  /><img
+                    src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/2.png"
+                    alt="Master Card"
+                  /><img
+                    src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/10.png"
+                    alt="Dinner's Club"
+                  /><img
+                    src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/14.png"
+                    alt="Discover"
+                  /><img
+                    src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/12.png"
+                    alt="Skrill"
+                  /><img
+                    src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/25.png"
+                    alt="Neteller"
+                  /><img
+                    src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/21.png"
+                    alt="Direct Debit"
+                  /><img
+                    src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/cards/sofort.png"
+                    alt="Klarna"
+                  /><img
+                    src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/cards/interac.png?update=20220606"
+                    alt="Interac"
+                  />
+                </div>
+                <hr class="core_dotted" />
+                <div>
+                  <div class="text-center" id="footerApps">
+                    Download the <strong>APP</strong> on your smartphone:
+                    <div class="core_spaceTHalf">
+                      <a
+                        href="https://apps.apple.com/mt/app/lottofy/id1541621788"
+                        target="_blank"
+                        onmousedown="function(e) {}"
+                        onclick="function(e) {}"
+                        proxy_sl_clk="function(e) {}"
+                        proxy_sl_omd="function(e) {}"
+                        proxy_sl_href="https://apps.apple.com/mt/app/lottofy/id1541621788"
+                        ><img
+                          src="//d2oamtuj38i9pe.cloudfront.net/images/common/social/appapple.svg"
+                          alt="Lottery APP for iPhone and iPad"
+                      /></a>
+                      <a href="https://www.lottofy.com/en/app/android/"
+                        ><img
+                          src="//d2oamtuj38i9pe.cloudfront.net/images/common/social/appandroid.svg"
+                          alt="Lottery APP for Android"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row core_vAlign-for-medium core_spaceT">
+            <div class="column medium-9 core_spaceB" id="footerLegal">
+              <p class="text-center medium-text-left"
+                ><i class="icon-brands-lottofy"></i>
+                <strong
+                  >©
+                  <a
+                    href="https://www.clobet.com"
+                    target="_blank"
+                    onmousedown="function(e) {}"
+                    onclick="function(e) {}"
+                    proxy_sl_clk="function(e) {}"
+                    proxy_sl_omd="function(e) {}"
+                    proxy_sl_href="https://www.clobet.com/"
+                    >Clobet Limited</a
+                  >
+                  2022</strong
+                >
+                | V0.2147NL185</p
+              >
+              <p
+                >Clobet Limited is a Company of the European Community based in
+                Malta, registered address St. John Street, 89 VLT1165 - Valletta
+                - Malta, registration number C90546, and operating at
+                lottofy.com. Clobet Limited is regulated and licensed by the
+                Malta Gaming Authority, with license number MGA/B2C/762/2019,
+                issued on 02/10/2020.</p
+              >
+              <p class="icon-common-legal_age18">
+                You must be 18 years old or over to play or claim a prize.</p
+              >
+              <p>Gambling can be addictive. Please, play responsibly.</p>
+            </div>
+            <div class="column medium-3 text-center" id="footerEntities">
+              <a
+                href="https://authorisation.mga.org.mt/verification.aspx?lang=EN&amp;company=3e566cfe-4b05-40ee-a697-1ba36404e0ef&amp;details=1"
+                target="_blank"
+                onmousedown="function(e) {}"
+                onclick="function(e) {}"
+                proxy_sl_clk="function(e) {}"
+                proxy_sl_omd="function(e) {}"
+                proxy_sl_href="https://authorisation.mga.org.mt/verification.aspx?lang=EN&amp;company=3e566cfe-4b05-40ee-a697-1ba36404e0ef&amp;details=1"
+                ><img
+                  src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/mgalogo.png"
+                  alt="MGA"
+              /></a>
+              <a
+                href="https://www.begambleaware.org/"
+                target="_blank"
+                onmousedown="function(e) {}"
+                onclick="function(e) {}"
+                proxy_sl_clk="function(e) {}"
+                proxy_sl_omd="function(e) {}"
+                proxy_sl_href="https://www.begambleaware.org/"
+                ><img
+                  src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/gambleaware.png"
+                  alt="BeGambleAwareleaware"
+              /></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div id="fb-root"></div>
+    </div>
+    <script
+      src="./js/jquery.js"
+      defer=""
+    ></script>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        id="changePic"
+        class="reveal medium"
+        data-reveal=""
+        data-reveal-source="changePic"
+        aria-hidden="true"
+        role="dialog"
+        data-close-on-click="false"
+        style="display: none"
+      ></div
+    ></div>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        id="adjustPic"
+        class="reveal medium"
+        data-reveal=""
+        data-reveal-source="adjustPic"
+        aria-hidden="true"
+        role="dialog"
+        data-close-on-click="false"
+        style="display: none"
+      ></div
+    ></div>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        data-reveal-source="login"
+        id="loginModal"
+        class="reveal small"
+        data-reveal=""
+        data-close-on-click="false"
+        style="display: none"
+      ></div
+    ></div>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        data-reveal-source="subscribe"
+        id="subscribeModal"
+        class="reveal small core_paddingZero"
+        data-reveal=""
+        style="display: none"
+      ></div
+    ></div>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        data-reveal-source="help"
+        id="mainHelp"
+        class="reveal"
+        data-reveal=""
+        style="display: none"
+      ></div
+    ></div>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        data-reveal-source="profile"
+        id="profileModal"
+        class="reveal"
+        data-reveal=""
+        style="display: none"
+      ></div
+    ></div>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        data-reveal-source="browserAlert"
+        id="browserAlert"
+        class="reveal"
+        data-reveal=""
+        style="display: none"
+      ></div
+    ></div>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        data-reveal-source="sessionExpired"
+        id="sessionExpired"
+        class="reveal"
+        data-reveal=""
+        data-close-on-click="false"
+        data-close-on-esc="false"
+        style="display: none"
+      ></div
+    ></div>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        data-reveal-source="favStatus"
+        id="favStatus"
+        class="reveal"
+        data-reveal=""
+        style="display: none"
+      ></div
+    ></div>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        data-reveal-source="unsupported"
+        id="unsupportedModal"
+        class="reveal"
+        data-reveal=""
+        data-close-on-esc="false"
+        data-close-on-click="false"
+        style="display: none"
+      ></div
+    ></div>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        id="navMenuGameMode"
+        class="reveal"
+        data-reveal=""
+        data-v-offset="0"
+        style="display: none"
+      >
+        <div class="core_panel core_noPadding core_spaceBzero">
+          <div class="core_panel core_halfThin text-center" data-modal-title="">
+            <button
+              class="white right icon-slim-times-outline core_txtSize_2"
+              data-core_reveal-close=""
+              style="
+                margin-right: 0.2rem;
+                position: absolute;
+                right: 0px;
+                top: 0.2rem;
+              "
+              type="button"
+            ></button>
+            <div class="clearfix"></div>
+          </div>
+          <ul data-gamemodecontainer=""></ul>
+        </div> </div
+    ></div>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        id="feedback"
+        class="reveal"
+        data-reveal=""
+        data-reveal-source="feedback"
+        aria-hidden="true"
+        role="dialog"
+        data-close-on-click="false"
+        data-reveal-params='{ "callback":"customLabelEvents()"}'
+        style="display: none"
+      ></div
+    ></div>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        id="closeSession"
+        class="reveal"
+        data-reveal=""
+        data-reveal-source="closeSession"
+        aria-hidden="true"
+        role="dialog"
+        data-close-on-click="false"
+        style="display: none"
+      ></div
+    ></div>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        id="helpdesk"
+        class="reveal"
+        data-reveal=""
+        data-reveal-source="helpdesk"
+        aria-hidden="true"
+        role="dialog"
+        data-close-on-click="false"
+        style="display: none"
+      ></div
+    ></div>
+    <script>
+      bamQueue.addToQueue(function () {
+        if (!getCookie("timezone")) {
+          var tz = new Date().getTimezoneOffset();
+          var now = new Date();
+          var time = now.getTime();
+          time += 3600 * 1000;
+          now.setTime(time);
+          document.cookie =
+            "timezone=" +
+            tz / 60 +
+            "; expires=" +
+            now.toUTCString() +
+            "; path=/;domain=." +
+            getDomainName(window.location.hostname);
+          parseTimezone(tz);
+        }
+
+        $("#navMenuGameMode[data-reveal]").on("closeme.zf.reveal", function () {
+          var gameType = $(this).attr("data-gameType");
+          var optionseuromillones = {
+            modoIndividual: {
+              caption: "Play <strong>EUROMILLIONS</strong>",
+              url: "https://www.lottofy.com/en/euromillions/play/",
+              icon: "icon-games-single",
+            },
+            modoFondo: {
+              caption: "Euromillions <strong>FUND<\/strong>",
+              url: "https://www.lottofy.com/en/euromillions/fund/",
+              icon: "icon-games-fondo",
+              extraCaption: "<small>(<strong>56</strong> bets)</small>",
+            },
+            modoClub: {
+              caption: "Euromillonarios <strong>SYNDICATE<\/strong>",
+              url: "https://www.lottofy.com/en/euromillions/club/",
+              icon: "icon-games-club",
+              extraCaption: "<small>(80 bets)</small>",
+            },
+          };
+          if (gameType == "euromillones") {
+            $("[data-gameModeContainer]").html(
+              customizeGamesNav(optionseuromillones)
+            );
+          }
+          var optionspowerball = {
+            modoIndividual: {
+              caption: "Play <strong>POWERBALL</strong>",
+              url: "https://www.lottofy.com/en/powerball/play/",
+              icon: "icon-games-single",
+            },
+            modoFondo: {
+              caption: "Powerball <strong>FUND<\/strong>",
+              url: "https://www.lottofy.com/en/powerball/fund/",
+              icon: "icon-games-fondo",
+              extraCaption: "<small>(<strong>1</strong> bets)</small>",
+            },
+            modoClub: {
+              caption: "Powerball <strong>SYNDICATE<\/strong>",
+              url: "https://www.lottofy.com/en/powerball/club/",
+              icon: "icon-games-club",
+              extraCaption: "<small>(120 bets)</small>",
+            },
+          };
+          if (gameType == "powerball") {
+            $("[data-gameModeContainer]").html(
+              customizeGamesNav(optionspowerball)
+            );
+          }
+          var optionsmegamillions = {
+            modoIndividual: {
+              caption: "Play <strong>MEGAMILLIONS</strong>",
+              url: "https://www.lottofy.com/en/megamillions/play/",
+              icon: "icon-games-single",
+            },
+            modoFondo: {
+              caption: "Megamillions <strong>FUND<\/strong>",
+              url: "https://www.lottofy.com/en/megamillions/fund/",
+              icon: "icon-games-fondo",
+              extraCaption: "<small>(<strong>5</strong> bets)</small>",
+            },
+            modoClub: {
+              caption: "Megamillions <strong>SYNDICATE<\/strong>",
+              url: "https://www.lottofy.com/en/megamillions/club/",
+              icon: "icon-games-club",
+              extraCaption: "<small>(120 bets)</small>",
+            },
+          };
+          if (gameType == "megamillions") {
+            $("[data-gameModeContainer]").html(
+              customizeGamesNav(optionsmegamillions)
+            );
+          }
+          var optionssuperenalotto = {
+            modoIndividual: {
+              caption: "Play <strong>SUPERENALOTTO</strong>",
+              url: "https://www.lottofy.com/en/superenalotto/play/",
+              icon: "icon-games-single",
+            },
+            modoFondo: {
+              caption: "Superenalotto <strong>FUND<\/strong>",
+              url: "https://www.lottofy.com/en/superenalotto/fund/",
+              icon: "icon-games-fondo",
+              extraCaption: "<small>(<strong>35</strong> bets)</small>",
+            },
+            modoClub: {
+              caption: "Superenalotto <strong>SYNDICATE<\/strong>",
+              url: "https://www.lottofy.com/en/superenalotto/club/",
+              icon: "icon-games-club",
+              extraCaption: "<small>(200 bets)</small>",
+            },
+          };
+          if (gameType == "superenalotto") {
+            $("[data-gameModeContainer]").html(
+              customizeGamesNav(optionssuperenalotto)
+            );
+          }
+          var optionsprimitiva = {
+            modoIndividual: {
+              caption: "Play <strong>LA PRIMITIVA</strong>",
+              url: "https://www.lottofy.com/en/primitiva/play/",
+              icon: "icon-games-single",
+            },
+            modoFondo: {
+              caption: "La Primitiva <strong>FUND<\/strong>",
+              url: "https://www.lottofy.com/en/primitiva/fund/",
+              icon: "icon-games-fondo",
+              extraCaption: "<small>(<strong>19</strong> bets)</small>",
+            },
+            modoClub: {
+              caption: "PrimiClub <strong>SYNDICATE<\/strong>",
+              url: "https://www.lottofy.com/en/primitiva/club/",
+              icon: "icon-games-club",
+              extraCaption: "<small>(150 bets)</small>",
+            },
+          };
+          if (gameType == "primitiva") {
+            $("[data-gameModeContainer]").html(
+              customizeGamesNav(optionsprimitiva)
+            );
+          }
+          var optionslotto6aus49 = {
+            modoIndividual: {
+              caption: "Play <strong>LOTTO6AUS49</strong>",
+              url: "https://www.lottofy.com/en/lotto6aus49/play/",
+              icon: "icon-games-single",
+            },
+            modoFondo: {
+              caption: "Lotto6aus49 <strong>FUND<\/strong>",
+              url: "https://www.lottofy.com/en/lotto6aus49/fund/",
+              icon: "icon-games-fondo",
+              extraCaption: "<small>(<strong>6</strong> bets)</small>",
+            },
+            modoClub: {
+              caption: "Lotto6aus49 <strong>SYNDICATE<\/strong>",
+              url: "https://www.lottofy.com/en/lotto6aus49/club/",
+              icon: "icon-games-club",
+              extraCaption: "<small>(150 bets)</small>",
+            },
+          };
+          if (gameType == "lotto6aus49") {
+            $("[data-gameModeContainer]").html(
+              customizeGamesNav(optionslotto6aus49)
+            );
+          }
+          var optionseurojackpot = {
+            modoIndividual: {
+              caption: "Play <strong>EUROJACKPOT</strong>",
+              url: "https://www.lottofy.com/en/eurojackpot/play/",
+              icon: "icon-games-single",
+            },
+            modoFondo: {
+              caption: "Eurojackpot <strong>FUND<\/strong>",
+              url: "https://www.lottofy.com/en/eurojackpot/fund/",
+              icon: "icon-games-fondo",
+              extraCaption: "<small>(<strong>5</strong> bets)</small>",
+            },
+            modoClub: {
+              caption: "Eurojackpot <strong>SYNDICATE<\/strong>",
+              url: "https://www.lottofy.com/en/eurojackpot/club/",
+              icon: "icon-games-club",
+              extraCaption: "<small>(100 bets)</small>",
+            },
+          };
+          if (gameType == "eurojackpot") {
+            $("[data-gameModeContainer]").html(
+              customizeGamesNav(optionseurojackpot)
+            );
+          }
+          var optionsquiniela = {
+            modoIndividual: {
+              caption: "Play <strong>QUINIELA</strong>",
+              url: "https://www.lottofy.com/en/quiniela/play/",
+              icon: "icon-games-single",
+            },
+            modoFondo: {
+              caption: "Quiniela <strong>FUND<\/strong>",
+              url: "https://www.lottofy.com/en/quiniela/fund/",
+              icon: "icon-games-fondo",
+              extraCaption: "<small>(<strong>3</strong> bets)</small>",
+            },
+            modoClub: {
+              caption: "Quinieleros <strong>SYNDICATE<\/strong>",
+              url: "https://www.lottofy.com/en/quiniela/club/",
+              icon: "icon-games-club",
+              extraCaption: "",
+            },
+          };
+          if (gameType == "quiniela") {
+            $("[data-gameModeContainer]").html(
+              customizeGamesNav(optionsquiniela)
+            );
+          }
+          var optionsbonoloto = {
+            modoIndividual: {
+              caption: "Play <strong>BONOLOTO</strong>",
+              url: "https://www.lottofy.com/en/bonoloto/play/",
+              icon: "icon-games-single",
+            },
+            modoFondo: {
+              caption: "Bonoloto <strong>FUND<\/strong>",
+              url: "https://www.lottofy.com/en/bonoloto/fund/",
+              icon: "icon-games-fondo",
+              extraCaption: "<small>(<strong>104</strong> bets)</small>",
+            },
+          };
+          if (gameType == "bonoloto") {
+            $("[data-gameModeContainer]").html(
+              customizeGamesNav(optionsbonoloto)
+            );
+          }
+          var optionselgordo = {
+            modoIndividual: {
+              caption: "Play <strong>EL GORDO</strong>",
+              url: "https://www.lottofy.com/en/elgordo/play/",
+              icon: "icon-games-single",
+            },
+            modoFondo: {
+              caption: "El Gordo <strong>FUND<\/strong>",
+              url: "https://www.lottofy.com/en/elgordo/fund/",
+              icon: "icon-games-fondo",
+              extraCaption: "<small>(<strong>1</strong> bets)</small>",
+            },
+            modoClub: {
+              caption: "Gordacos <strong>SYNDICATE<\/strong>",
+              url: "https://www.lottofy.com/en/elgordo/club/",
+              icon: "icon-games-club",
+              extraCaption: "<small>(70 bets)</small>",
+            },
+          };
+          if (gameType == "elgordo") {
+            $("[data-gameModeContainer]").html(
+              customizeGamesNav(optionselgordo)
+            );
+          }
+          var optionsloterianacional = {
+            modoIndividual: {
+              caption: "Play <strong>NATIONAL LOTTERY</strong>",
+              url: "https://www.lottofy.com/en/nationallottery/play/",
+              icon: "icon-games-single",
+            },
+            modoFondo: {
+              caption: "National Lottery <strong>FUND<\/strong>",
+              url: "https://www.lottofy.com/en/nationallottery/fund/",
+              icon: "icon-games-fondo",
+              extraCaption: "<small>(<strong>0</strong> tenths)</small>",
+            },
+          };
+          if (gameType == "loterianacional") {
+            $("[data-gameModeContainer]").html(
+              customizeGamesNav(optionsloterianacional)
+            );
+          }
+          var optionsmegasena = {
+            modoIndividual: {
+              caption: "Play <strong>MEGA-SENA</strong>",
+              url: "https://www.lottofy.com/en/megasena/play/",
+              icon: "icon-games-single",
+            },
+            modoFondo: {
+              caption: "Mega-Sena <strong>FUND<\/strong>",
+              url: "https://www.lottofy.com/en/megasena/fund/",
+              icon: "icon-games-fondo",
+              extraCaption: "<small>(<strong>3</strong> bets)</small>",
+            },
+            modoClub: {
+              caption: "Megasena <strong>SYNDICATE<\/strong>",
+              url: "https://www.lottofy.com/en/megasena/club/",
+              icon: "icon-games-club",
+              extraCaption: "<small>(280 bets)</small>",
+            },
+          };
+          if (gameType == "megasena") {
+            $("[data-gameModeContainer]").html(
+              customizeGamesNav(optionsmegasena)
+            );
+          }
+        });
+      });
+
+      zopim = function () {
+        $zopim.livechat.setLanguage("en");
+        $zopim.livechat.setGreetings({
+          online: [
+            "Click here to chat",
+            "Leave a comment or a question, and one of our agents will attend you shortly",
+          ],
+          offline: [
+            "Leave a comment or a question, and one of our agents will attend you shortly",
+            "It is not possible to chat at this time. Leave a message with your comment or question, and we will respond during office hours (M-F 9.00h - 18.30h)",
+          ],
+          away: [
+            "Click here to chat",
+            "All agents are busy: leave a comment or a question and we will try to assist you",
+          ],
+        });
+        $zopim.livechat.bubble.setTitle("Any question?");
+        $zopim.livechat.bubble.setText("We are here!");
+        $zopim.livechat.setEmail("lotta2888@gmail.com");
+        $zopim.livechat.setName("Lotta");
+        $zopim.livechat.setNotes("ID: 18622");
+        $zopim.livechat.button.setOffsetHorizontalMobile(300000);
+        $zopim.livechat.theme.setColor("#008562");
+        $zopim.livechat.theme.reload();
+
+        $zopim.livechat.hideAll();
+
+        $zopim.livechat.setOnStatus(function (s) {
+          if (s == "online") {
+            $zopim.state = "online";
+            $("#chatBt").removeAttr("data-offline").attr("data-online", "");
+            $("[data-chatstatus]").html(
+              "<button onclick='$zopim.livechat.window.toggle()' class='white'><strong>Available</strong></button>"
+            );
+          } else {
+            $zopim.state = "offline";
+            $zopim.livechat.hideAll();
+            $("#chatBt").removeAttr("data-online").attr("data-offline", "");
+            $("[data-chatstatus]").html("Unavailable");
+          }
+        });
+
+        if ($zopim.livechat.isChatting()) {
+          $("#chatBt").addClass("is-active");
+        }
+
+        $zopim.livechat.setOnUnreadMsgs(function (s) {
+          if (s > 0) {
+            $("#chatBt").addClass("has-messages");
+            $("#chatBt [data-btText]").html(s);
+            $zopim.livechat.window.show();
+          }
+        });
+        $zopim.livechat.setOnChatStart(function () {
+          $("#chatBt").addClass("is-active");
+        });
+        $zopim.livechat.setOnChatEnd(function () {
+          $("#chatBt").removeClass("has-messages is-active");
+          $("#chatBt [data-btText]").html("Chat");
+        });
+      };
+
+      bamQueue.addToQueue(function () {
+        $("#chatBt")
+          .add("[data-chatstatus]")
+          .on("click", function () {
+            var options = {
+              strings: {
+                chat: "Chat",
+              },
+            };
+            invoqueChat("182gtfcJannWUkOaaZPtliY77dTkVnWR", options);
+          });
+
+        setTimeout(function () {
+          bamQueue.waitForExistance("core_reveal", function () {
+            if ($("[data-reveal].is-active").length == 0) {
+              $("#myNotifications").core_reveal("open");
+            }
+          });
+        }, 3000);
+      });
+    </script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register(
+          "https://www.lottofy.com/swoffline.js"
+        );
+      }
+    </script>
+    <script>
+      var scriptLoadedCount = 0;
+      var numsOfScriptsToLoad = 0; //15;
+      function checkScriptsLoaded(scriptsLoaded, numsOfExpectedScripts) {
+        if (scriptsLoaded == numsOfExpectedScripts) {
+          enableLoaderWatch();
+          $(document).ready(function () {
+            $(document).foundation();
+            mainStringifiedLaunches({
+              strings: {
+                remaining: "Show %1 remaning",
+              },
+            });
+            var currencySchemes = {
+              EUR: { simbolo: "\u20ac", modo: "2" },
+              USD: { simbolo: "$", modo: "1" },
+              BRL: { simbolo: "R$", modo: "1" },
+              CNY: { simbolo: "\u00a5", modo: "1" },
+              INR: { simbolo: "\u20b9", modo: "1" },
+              CAD: { simbolo: "C$", modo: "1" },
+              MXN: { simbolo: "M$", modo: "1" },
+              XOF: { simbolo: "CFA", modo: "1" },
+              CLP: { simbolo: "CLP$", modo: "1" },
+              COP: { simbolo: "COP$", modo: "1" },
+              NOK: { simbolo: "kr", modo: "1" },
+              PEN: { simbolo: "S\/", modo: "1" },
+              PHP: { simbolo: "\u20b1", modo: "1" },
+              ZAR: { simbolo: "R", modo: "1" },
+              CHF: { simbolo: "CHf", modo: "1" },
+              GBP: { simbolo: "\u00a3", modo: "1" },
+              NGN: { simbolo: "\u20a6", modo: "1" },
+            };
+            global_currency = new systemCurrency("USD", currencySchemes, {
+              strings: {
+                millones: "Millions",
+              },
+            });
+            bamQueue.run();
+            global_core_reveal = new core_reveal();
+
+            customModals();
+            bamQueue.waitForExistance("login", function () {
+              checkSessionStatus(30000, $("#sessionExpired"), login);
+            });
+            if (
+              GetIEVersion() > 0 &&
+              GetIEVersion() <= 11 &&
+              getCookie("outdatedBrowserAgreement") == ""
+            ) {
+              bamQueue.waitForExistance("core_reveal", function () {
+                $("#browserAlert").core_reveal("open");
+              });
+            }
+          });
+          $.getScript(
+            "https://www.lottofy.com/js/lottofy7postLoad.js?update=202002061242"
+          );
+        }
+      }
+      bamQueue.waitForExistance(
+        "$",
+        function () {
+          $.ajaxSetup({ cache: true });
+          $.getScript(
+            "https://www.lottofy.com/js/lottofy7main.js?update=202002061242",
+            function () {
+              $.getScript(
+                "https://www.lottofy.com/js/foundation.min.js",
+                function () {
+                  Foundation.Abide.defaults.patterns["email"] =
+                    /^\s*[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+\s*$/;
+
+                  $.getScript(
+                    "https://www.lottofy.com/js/lottofy7common.js?update=202002061242",
+                    function () {
+                      if (numsOfScriptsToLoad == 0) {
+                        checkScriptsLoaded(0, 0);
+                      }
+                    }
+                  );
+                }
+              );
+            }
+          );
+        },
+        500
+      );
+    </script>
+    <div class="reveal-overlay" style="display: none"
+      ><div
+        id="changeNick"
+        class="reveal small"
+        data-reveal=""
+        data-reveal-source="changeNick"
+        aria-hidden="true"
+        role="dialog"
+        data-close-on-click="false"
+        style="display: none"
+      ></div></div
+    ><div class="reveal-overlay" style="display: none"
+      ><div
+        id="validateEmail"
+        class="reveal small"
+        data-reveal=""
+        data-reveal-source="validateEmail"
+        aria-hidden="true"
+        role="dialog"
+        data-close-on-click="false"
+        data-reveal-params='{ "callback":"customLabelEvents()"}'
+        style="display: none"
+      ></div></div
+    ><div class="reveal-overlay" style="display: none"
+      ><div
+        id="validatePhone"
+        class="reveal small"
+        data-reveal=""
+        data-reveal-source="validatePhone"
+        aria-hidden="true"
+        role="dialog"
+        data-close-on-click="false"
+        data-reveal-params='{ "callback":"customLabelEvents()"}'
+        style="display: none"
+      ></div></div
+    ><div class="reveal-overlay" style="display: none"
+      ><div
+        id="configureAbono"
+        class="reveal small"
+        data-reveal=""
+        data-reveal-source="configureAbono"
+        aria-hidden="true"
+        role="dialog"
+        data-close-on-click="false"
+        style="display: none"
+      ></div></div
+    ><div class="reveal-overlay" style="display: none"
+      ><div
+        id="abonoMethods"
+        class="reveal small"
+        data-reveal=""
+        data-reveal-source="abonoMethods"
+        data-multiple-opened="true"
+        aria-hidden="true"
+        role="dialog"
+        data-close-on-click="false"
+        style="display: none"
+      ></div></div
+    ><div class="reveal-overlay" style="display: none"
+      ><div
+        id="localModals"
+        class="reveal localModals lightTheme"
+        data-reveal=""
+        data-source=""
+        style="display: none"
+        ><div class="core_panel core_noPadding core_spaceBzero">
+          <div
+            class="core_panel core_halfThin bg_coal text-center"
+            data-modal-title=""
+          >
+            <strong class="white core_smooth"></strong>
+            <button
+              class="white right icon-slim-times-outline core_txtSize_2"
+              data-core_reveal-close=""
+              style="
+                margin-right: 0.2rem;
+                position: absolute;
+                right: 0px;
+                top: 0.2rem;
+              "
+              type="button"
+            ></button>
+            <div class="clearfix"></div>
+          </div>
+          <hr class="core_spaceTzero core_spaceBzero" />
+          <div data-inject=""></div>
+        </div> </div></div
+    ><div class="reveal-overlay" style="display: none"
+      ><div
+        id="quickPicks"
+        data-reveal=""
+        data-reveal-source="quickpicks"
+        class="reveal"
+        style="display: none"
+      ></div></div
+    ><div class="reveal-overlay" style="display: none"
+      ><div
+        class="reveal"
+        data-reveal=""
+        data-reveal-source="callme"
+        id="callme"
+        style="display: none"
+      ></div></div
+    ><div
+      ><div
+        >Could not connect to the reCAPTCHA service. Please check your internet
+        connection and reload to get a reCAPTCHA challenge.</div
+      ></div
+    ><div class="reveal-overlay" style="display: none"
+      ><div
+        id="myNotifications"
+        class="reveal medium"
+        data-reveal=""
+        data-reveal-source="myNotifications"
+        aria-hidden="true"
+        role="dialog"
+        data-close-on-click="false"
+        style="display: none; z-index: 1000"
+      ></div></div></body
+></html>
