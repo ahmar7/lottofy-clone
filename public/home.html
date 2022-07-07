@@ -1,0 +1,740 @@
+<html lang="en" prefix="fb: https://www.facebook.com/2008/fbml" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head> <title>Online lottery, the biggest jackpots in the world | Lottofy</title> <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> <meta name="description" content="Play in the most important lotteries in the world: Euromillions, MegaMillions, Powerball, Eurojackpot and Superenalotto"> <meta name="apple-itunes-app" content="app-id=1541621788"> <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"> <link rel="canonical" href="https://www.lottofy.com/en/"> <script>
+				if (window.parent != window && window.frameElement != null) {
+			if(window.parent.location.host == "www.lottofy.com"){
+				window.parent.location.href = window.parent.location.href;
+				window.stop();
+			}
+		}
+	</script> <meta name="theme-color" content="#15372e"> <link rel="manifest" href="https://www.lottofy.com/gcm_lottofy.json"> <link rel="shortcut icon" href="https://d2oamtuj38i9pe.cloudfront.net/images/lottofy/lottofy.ico"> <link rel="preconnect" href="https://d2oamtuj38i9pe.cloudfront.net"> <link rel="stylesheet" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://www.lottofy.com/css/l/lottofy7glyphs.css?update=202002061248"> <link rel="stylesheet" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://www.lottofy.com/css/l/lottofy7.css?update=202002061248"> <link rel="stylesheet" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Roboto:900,300,400,500&amp;display=swap"> <link rel="stylesheet" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;display=swap"> <link rel="stylesheet" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:300,400,700&amp;display=swap"> <link rel="stylesheet" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,500&amp;display=swap"> <noscript> <link rel="stylesheet" href="https://www.lottofy.com/css/l/lottofy7glyphs.css?update=202002061248"> <link rel="stylesheet" href="https://www.lottofy.com/css/l/lottofy7.css?update=202002061248"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:900,300,400,500&display=swap"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:300,400,700&display=swap"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,500&display=swap"> </noscript> <link rel="stylesheet" media="screen" href="https://www.lottofy.com/css/l/headers_index.css?update=202002061248" type="text/css"> <script>
+class core_queueLoader {
+	constructor(){
+		this.mainQueue=new Array();
+	}
+	
+	addToQueue(functionToAdd){ this.mainQueue.push(functionToAdd); return functionToAdd;}
+	addFirstToQueue(functionToAdd){ this.mainQueue.unshift(functionToAdd) }
+	run(options){ this.mainQueue.forEach(function(f,i){ f()}) }
+	showQueue(options){ this.mainQueue.forEach(function(f,i){ console.log(f)}) }
+	clear(options){ this.mainQueue=new Array() }
+    loadScriptAsync(uri){
+	  return new Promise((resolve, reject) => {
+		var tag = document.createElement('script');
+		tag.src = uri;
+		tag.async = true;
+		tag.onload = () => {
+		  resolve();
+		};
+	  var firstScriptTag = document.getElementsByTagName('script')[0];
+	  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	});
+	}	
+	loadScript(uri,callbackOnLoad,options){
+		var callback = function(){};
+		var async = "defer"; // defer|async|sync
+		if(typeof callbackOnLoad != "undefined" && callbackOnLoad != null){
+			callback = callbackOnLoad;
+		}
+		var tag = document.createElement('script');
+		tag.src = uri;
+		switch(async){
+			case "defer":
+				tag.defer = true;
+			break;
+			case "async":
+				tag.async = true;
+			break;
+		}
+		tag.defer = true;
+		tag.onload = () => { callback(); }
+		tag.setAttribute('data-injected-script','');
+		var headElem = document.getElementsByTagName('head')[0].appendChild(tag);
+	
+	}
+	waitForExistance(objectToWaitFor,callback,interval,timeout){
+		if(typeof window["microseconds"] != "undefined"){
+			if(window["microseconds"] == window.performance.now()) {
+				window["microseconds"] = window["microseconds"] + 1
+			} else {
+				window["microseconds"] = window.performance.now()
+			}
+		}else{
+			window["microseconds"] = window.performance.now();
+		}
+		var intervalID="core_queueLoader_"+String(window["microseconds"]);
+		var intervalTime = 1000;
+		var timeoutAttempts = 5;
+		
+		if(typeof interval != "undefined"){ intervalTime=interval}
+		if(typeof timeout != "undefined"){ timeoutAttempts=timeout}
+		var currentAttemp = 0;
+		var status=true;
+		var countOfEvalizedInArray=0;
+		var i = 0;
+		window[intervalID]=setInterval(function(){
+			if(objectToWaitFor instanceof Array){
+				countOfEvalizedInArray=0;
+				for(i=0;i<objectToWaitFor.length;i++){
+					var objectEvalized = eval("typeof "+objectToWaitFor[i]);
+					if(objectEvalized != "undefined"){
+						countOfEvalizedInArray++;
+					}
+				}
+			}else{
+				var objectEvalized = eval("typeof "+objectToWaitFor);
+			}
+
+			if(objectToWaitFor instanceof Array){
+				if(countOfEvalizedInArray==objectToWaitFor.length){
+					clearInterval(window[intervalID]);
+					delete window[intervalID];
+					callback();
+					return;
+				}else{
+					currentAttemp++;
+				}
+			}else{
+				if(objectEvalized != "undefined"){
+					clearInterval(window[intervalID]);
+					delete window[intervalID];
+					callback();
+					return;
+				}else{
+					currentAttemp++;
+				}
+			}
+			if (currentAttemp==timeoutAttempts && timeoutAttempts!=0){
+				clearInterval(window[intervalID]);
+				delete window[intervalID];
+				return;
+			}
+			console.log('waiting for ',objectToWaitFor,"...");
+		},intervalTime);
+	}
+	logErrors(verboseOnly){
+		window["lastErrorStack"] = false;
+		function sendErrorLog(verboseOnly,errorObj){
+			var msg = "";
+			var stk = "";
+			var fil = "";
+			var lin = "";
+			var col = "";
+		
+			if(typeof errorObj != "undefined"){
+			
+				if(typeof errorObj.message != "undefined"){
+					msg = errorObj.message;
+				}
+				if(typeof errorObj.stack != "undefined"){
+					stk = errorObj.stack;
+				}
+				if(typeof errorObj.file != "undefined"){
+					fil = errorObj.file;
+				}
+				if(typeof errorObj.line != "undefined"){
+					lin = errorObj.line;
+				}
+				if(typeof errorObj.col != "undefined"){
+					col = errorObj.col;
+				}
+			}					
+			
+			if(verboseOnly){
+				if(stk.length > 0 ){
+					console.error(stk);							
+				}else{
+					console.error(errorObj);							
+				}
+			}else{
+				if(typeof errorObj != "undefined"){
+					if(window["lastErrorStack"] !== stk){
+						var xhr = new XMLHttpRequest();
+						xhr.open('POST', '/data/?action=logJS');
+						xhr.setRequestHeader('Content-Type', 'application/json');
+						xhr.send(JSON.stringify({
+							"error":msg,
+							"file":fil,
+							"stack":stk,
+							"line":lin,
+							"col":col
+						}));
+						if(stk.length > 0){
+							window["lastErrorStack"] = stk;
+						}
+					}
+				}
+			}
+		}
+		window.onerror = function(message,file,line,col,error){
+			var errObj = {}
+			if(typeof message != "undefined" && message != null){ errObj["message"] = message;}
+			if(typeof file != "undefined" && file != null){ errObj["file"] = file;}
+			if(typeof line != "undefined" && line != null){ errObj["line"] = line;}
+			if(typeof col != "undefined" && col != null){ errObj["col"] = col;}
+			if(typeof error != "undefined" && error != null && typeof error.stack != "undefined"){ errObj["stack"] = error.stack;}																		
+			if(verboseOnly){
+				sendErrorLog(true,errObj);
+			}else{
+				sendErrorLog(false,errObj);
+				
+			}
+		}			
+		this.waitForExistance('$',function(){
+	
+			var temp = jQuery.event.dispatch;
+
+			jQuery.event.dispatch = function () {
+			   try {
+			      temp.apply(this, arguments);
+			   } catch (e) {
+					var errObj = {}
+					if(typeof e.message != "undefined" && e.message != null){ errObj["message"] = e.message;}
+					if(typeof e.stack != "undefined" && e.stack != null){ errObj["stack"] = e.stack;}																		
+					if(verboseOnly){
+						sendErrorLog(true,errObj);							
+					}else{
+						sendErrorLog(false,errObj);
+					}	
+					return false;
+			   }
+			}
+			$.readyException = function(e){
+				var errObj = {}
+				if(typeof e.message != "undefined" && e.message != null){ errObj["message"] = e.message;}
+				if(typeof e.stack != "undefined" && e.stack != null){ errObj["stack"] = e.stack;}																		
+				if(verboseOnly){
+					sendErrorLog(true,errObj);							
+				}else{
+					sendErrorLog(false,errObj);
+				}	
+				return false;
+			}
+		})
+		
+		
+	}	
+}
+	
+</script> <script>
+					if(typeof postMessage !="undefined"){
+				window.parent.postMessage("dismiss",'*');
+			}
+		
+		bamQueue=new core_queueLoader();
+								var scriptLoadedCount=0;
+		var numsOfScriptsToLoad=0;//15;
+		function checkScriptsLoaded(scriptsLoaded,numsOfExpectedScripts){
+			if(scriptsLoaded==numsOfExpectedScripts && typeof $ != "undefined"){
+				$(document).ready(function(){
+					launchProjectInitiator();
+				})
+			}
+		}
+					window._mfq = window._mfq || [];
+			bamQueue.loadScript("//cdn.mouseflow.com/projects/68a4ae8f-ecb0-4aef-b9a2-02f80cad9fb7.js");
+				bamQueue.loadScript("https://www.lottofy.com/js/jquery-3.6.0.min.js",function(){
+			bamQueue.loadScript("https://www.lottofy.com/js/lottofy7main.js?update=202002061248",function(){
+				setFullVersionEnvironment(true);
+				bamQueue.loadScript("https://www.lottofy.com/js/foundation.min.js",function(){
+ 					
+						Foundation.Abide.defaults.patterns['email'] = /^\s*[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+\s*$/;
+						
+					bamQueue.loadScript("https://www.lottofy.com/js/lottofy7common.js?update=202002061248",function(){
+																														if (numsOfScriptsToLoad==0){
+							checkScriptsLoaded(0,0);
+						};
+					})
+					bamQueue.loadScript("https://www.lottofy.com/js/lottofy7postLoad.js?update=202002061248");
+				})
+			});
+		});
+
+		bamQueue.waitForExistance("loginProObject",function(){
+			/********************/
+			/*	 LOGIN TOPBAR 	*/
+			/********************/
+			var ajaxOptions={
+				submitBt:{
+					elem: "#loginForm [data-submit]",
+					holdMsg:"Accessing...",
+					enableOnSuccess: false
+				},
+				statusMsg: {
+					elem: "#loginForm [data-status-msg]",
+					ok: "Accessing your account",
+					hold: "...Wait..."
+				}
+			}
+			login=new loginProObject({
+				recoveryLinkURL:"https://www.lottofy.com/en/recover/",
+				ajaxObjParams:ajaxOptions,
+				recaptchaKey:"6LcOaMEUAAAAAJxUyFAkaQGMfUNpnh-ZjzIxeIKr",
+				onSuccess_callback:function(e){
+					if(typeof $zopim != "undefined" && typeof $zopim.livechat != "undefined") {
+						$zopim.livechat.removeTags('loginError');
+					}
+				},
+				onFail_callback:function(e){
+					if(typeof $zopim != "undefined" && typeof $zopim.livechat != "undefined") {
+						$zopim.livechat.addTags('loginError');
+					}
+				},
+				delayCallbackOnFail:0,
+								autoRedirectOnSuccess:true
+							});
+			$('[data-loginTrigger]').each(function(){
+				var classes = $(this).attr('class');
+				var parent = $(this).parent();
+				$(this).replaceWith("<button data-loginTrigger>"+$(this).html()+"</button>");
+				var elem = $(parent).find('[data-loginTrigger]');
+				$(elem).addClass(classes).on('click',function(){
+					login.open();
+				})
+			})
+
+							if(getCookie("gcmEndpoint").length == 0 && typeof navigator.serviceWorker!="undefined"){
+					setCookieEndpoint();
+				}
+
+				if(typeof navigator.serviceWorker!="undefined") {
+					notif_suscribe(false,{
+						unableToRegisterCallback: function(mode){
+							$('#favStatus').attr('data-reveal-params','{ "mode":'+mode+'}');
+							bamQueue.waitForExistance("core_reveal",function(){
+								$('#favStatus').core_reveal('open');
+							},1000)
+						},
+						callbackOnRegistrationSuccess: function(data,mode){
+						},
+						webPushAPIkey: "BNI0jGR28J7f3hEtkBRmabWS7J8tIIRH5iZ9kOgSyllKEIX4U51pLnLawkdJoMpAdxmjOB-unyH32mFsioVfL_Q"
+					})
+				}
+					},1000,0);
+
+	</script><script src="//cdn.mouseflow.com/projects/68a4ae8f-ecb0-4aef-b9a2-02f80cad9fb7.js" defer="" data-injected-script=""></script><script src="https://www.lottofy.com/js/jquery-3.6.0.min.js" defer="" data-injected-script=""></script> <script>window.___gcfg = { lang: 'en-US' };</script> <script>
+	function setDefaultCookies(beforeCallback,doneCallback){
+		if(typeof beforeCallback != "undefined"){
+			beforeCallback();
+		}		
+		var scripts = [
+			{
+				url:"https://apis.google.com/js/platform.js",
+				params:["defer","async"]
+			},
+			{	
+				url:"https://www.googletagmanager.com/gtag/js?id=G-T3T1BRH6GJ",
+				params:["async"]
+			}
+		]
+		var scriptsQueue = new Array();
+		scripts.forEach(function(value,key){
+			scriptsQueue[key] =  document.createElement('script');
+			scriptsQueue[key].src = value.url;
+			value.params.forEach(function(attrVal,attrKey){
+				scriptsQueue[key].setAttribute(attrVal,'');
+			})
+			scriptsQueue[key].onload = function(){
+				console.log("Cargado: " + value.url)
+			}
+		})
+		scriptsQueue.forEach(function(value,key){
+			document.head.appendChild(value);
+		})
+
+					window.dataLayer = window.dataLayer || [];
+			function gtag(){ dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-T3T1BRH6GJ');
+							if(typeof doneCallback != "undefined"){
+			doneCallback();
+		}
+	}
+</script> <script>setDefaultCookies()</script><script src="https://apis.google.com/js/platform.js" defer="" async="" gapi_processed="true"></script><script src="https://www.googletagmanager.com/gtag/js?id=G-T3T1BRH6GJ" async=""></script> <style>@keyframes sk-stretchdelay { 0%, 40%, 100% { transform: scaleY(0.4)} 20% { transform: scaleY(1.0) } }</style> <script src="https://www.lottofy.com/js/lottofy7main.js?update=202002061248" defer="" data-injected-script=""></script><script src="https://www.lottofy.com/js/foundation.min.js" defer="" data-injected-script=""></script><script src="https://www.lottofy.com/js/lottofy7common.js?update=202002061248" defer="" data-injected-script=""></script><script src="https://www.lottofy.com/js/lottofy7postLoad.js?update=202002061248" defer="" data-injected-script=""></script><meta class="foundation-mq"><style type="text/css">button.btn[data-v-5f0b9ba1]{display:inline-block;font-weight:300;line-height:1.25;text-align:center;white-space:nowrap;vertical-align:middle;user-select:none;border:1px solid transparent;cursor:pointer;letter-spacing:1px;transition:all .15s ease}button.btn.btn-sm[data-v-5f0b9ba1]{padding:.4rem .8rem;font-size:.8rem;border-radius:.2rem}button.btn.btn-primary[data-v-5f0b9ba1]{color:#fff;background-color:#45C8F1;border-color:#45C8F1}button.btn.btn-outline-primary[data-v-5f0b9ba1]{color:#45C8F1;background-color:transparent;border-color:#45C8F1}button.btn.btn-danger[data-v-5f0b9ba1]{color:#fff;background-color:#FF4949;border-color:#FF4949}.text-muted[data-v-5f0b9ba1]{color:#8492A6}.text-center[data-v-5f0b9ba1]{text-align:center}.drop-down-enter[data-v-5f0b9ba1],.drop-down-leave-to[data-v-5f0b9ba1]{transform:translateX(0) translateY(-20px);transition-timing-function:cubic-bezier(0.74, 0.04, 0.26, 1.05);opacity:0}.drop-down-enter-active[data-v-5f0b9ba1],.drop-down-leave-active[data-v-5f0b9ba1]{transition:all .15s}.move-left-enter[data-v-5f0b9ba1],.move-left-leave-to[data-v-5f0b9ba1]{transform:translateY(0) translateX(-80px);transition-timing-function:cubic-bezier(0.74, 0.04, 0.26, 1.05);opacity:0}.move-left-enter-active[data-v-5f0b9ba1],.move-left-leave-active[data-v-5f0b9ba1]{transition:all .15s}.no-tr[data-v-5f0b9ba1]{transition:none !important}.no-tr *[data-v-5f0b9ba1]{transition:none !important}.overlay[data-v-5f0b9ba1]{position:fixed;background:rgba(220,220,220,0.8);display:flex;align-items:center;justify-content:center;top:0;left:0;right:0;bottom:0;transition:all 0.2s ease;opacity:0;visibility:hidden}.overlay .modal[data-v-5f0b9ba1]{transition:all 0.2s ease;opacity:0;transform:scale(0.6);overflow:hidden}.overlay.show[data-v-5f0b9ba1]{opacity:1;visibility:visible}.overlay.show .modal[data-v-5f0b9ba1]{opacity:1;transform:scale(1)}.panel[data-v-5f0b9ba1]{padding:6px 10px;display:flex;width:100%;box-sizing:border-box;align-items:center;border-radius:4px;position:relative;border:1px solid #eaf7ff;background:#f7fcff;outline:none;transition:all 0.07s ease-in-out}.btn[data-v-5f0b9ba1]{cursor:pointer;box-sizing:border-box}.light-btn[data-v-5f0b9ba1]{padding:6px 10px;display:flex;width:100%;box-sizing:border-box;align-items:center;border-radius:4px;position:relative;border:1px solid #eaf7ff;background:#f7fcff;outline:none;cursor:pointer;transition:all 0.07s ease-in-out}.light-btn[data-v-5f0b9ba1]:hover{background:#e0f4ff;border-color:#8acfff}.shake[data-v-5f0b9ba1]{animation:shake-data-v-5f0b9ba1 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;transform:translate3d(0, 0, 0)}@keyframes shake-data-v-5f0b9ba1{10%,90%{transform:translate3d(-1px, 0, 0)}20%,80%{transform:translate3d(2px, 0, 0)}30%,50%,70%{transform:translate3d(-4px, 0, 0)}40%,60%{transform:translate3d(4px, 0, 0)}}.pulse[data-v-5f0b9ba1]{animation:pulse-data-v-5f0b9ba1 2s ease infinite}@keyframes pulse-data-v-5f0b9ba1{0%{opacity:.7}50%{opacity:.4}100%{opacity:.7}}.flash-once[data-v-5f0b9ba1]{animation:flash-once 3.5s ease 1}@keyframes fade-up-data-v-5f0b9ba1{0%{transform:translate3d(0, 10px, 0);opacity:0}100%{transform:translate3d(0, 0, 0);opacity:1}}.fade-in[data-v-5f0b9ba1]{animation:fade-in-data-v-5f0b9ba1 .3s ease-in-out}@keyframes fade-in-data-v-5f0b9ba1{0%{opacity:0}100%{opacity:1}}.spin[data-v-5f0b9ba1]{animation-name:spin-data-v-5f0b9ba1;animation-duration:2000ms;animation-iteration-count:infinite;animation-timing-function:linear}@keyframes spin-data-v-5f0b9ba1{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.bounceIn[data-v-5f0b9ba1]{animation-name:bounceIn-data-v-5f0b9ba1;transform-origin:center bottom;animation-duration:1s;animation-fill-mode:both;animation-iteration-count:1}@keyframes bounceIn-data-v-5f0b9ba1{0%,20%,40%,60%,80%,100%{-webkit-transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1);transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}0%{opacity:1;-webkit-transform:scale3d(0.8, 0.8, 0.8);transform:scale3d(0.8, 0.8, 0.8)}20%{-webkit-transform:scale3d(1.1, 1.1, 1.1);transform:scale3d(1.1, 1.1, 1.1)}40%{-webkit-transform:scale3d(0.9, 0.9, 0.9);transform:scale3d(0.9, 0.9, 0.9)}60%{opacity:1;-webkit-transform:scale3d(1.03, 1.03, 1.03);transform:scale3d(1.03, 1.03, 1.03)}80%{-webkit-transform:scale3d(0.97, 0.97, 0.97);transform:scale3d(0.97, 0.97, 0.97)}100%{opacity:1;-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}}@keyframes dots-data-v-5f0b9ba1{0%,20%{color:rgba(0,0,0,0);text-shadow:0.25em 0 0 rgba(0,0,0,0),0.5em 0 0 rgba(0,0,0,0)}40%{color:#8492A6;text-shadow:0.25em 0 0 rgba(0,0,0,0),0.5em 0 0 rgba(0,0,0,0)}60%{text-shadow:0.25em 0 0 #8492A6,0.5em 0 0 rgba(0,0,0,0)}80%,100%{text-shadow:.25em 0 0 #8492A6, .5em 0 0 #8492A6}}@keyframes recording-data-v-5f0b9ba1{0%{box-shadow:0px 0px 5px 0px rgba(173,0,0,0.3)}65%{box-shadow:0px 0px 5px 5px rgba(173,0,0,0.3)}90%{box-shadow:0px 0px 5px 5px rgba(173,0,0,0)}}body[data-v-5f0b9ba1]{margin:0;font-size:100%;color:#3C4858}a[data-v-5f0b9ba1]{text-decoration:none;color:#45C8F1}h1[data-v-5f0b9ba1],h2[data-v-5f0b9ba1],h3[data-v-5f0b9ba1],h4[data-v-5f0b9ba1]{margin-top:0}svg[data-v-5f0b9ba1]{outline:none}.container_selected_area[data-v-5f0b9ba1]{display:none;visibility:hidden;padding:0;position:fixed;top:0;left:0;right:0;bottom:0;z-index:2147483647}.container_selected_area.active[data-v-5f0b9ba1]{visibility:visible;display:block}.container_selected_area .label[data-v-5f0b9ba1]{font-family:"Didact Gothic Regular",sans-serif;font-size:22px;text-align:center;padding-top:15px}.container_selected_area .area[data-v-5f0b9ba1]{display:none;position:fixed;z-index:2147483647;border:1px solid #1e83ff;background:rgba(30,131,255,0.1);box-sizing:border-box}.container_selected_area .area.active[data-v-5f0b9ba1]{display:block;top:0;left:0}.hide[data-v-5f0b9ba1]{display:none}
+</style></head> <body class="" data-isloaded=""> <span data-watchdog="" class="show-for-small-only"></span><span data-watchdog="" class="show-for-medium-only"></span><span data-watchdog="" class="show-for-large"></span> <header> <div class="top-menu-curtain"></div> <nav class="top-menu"> <div class="float-left"> <ul class="core_inline-list" data-mobilemenuarea=""> <li data-mobilemenu=""><button aria-label="Main menu" data-mobilegamesmenutoggle="" type="button" class="white"><span>MENU</span><i data-mobilemenuicon="" class="icon-slim-menu">&nbsp;</i></button></li> <li data-logo=""><a href="https://www.lottofy.com/en/" class="logo" title="Lottofy" aria-label="Go to the main page"><i></i></a></li> <li data-inlinegamesmenucontainer=""> <ul class="core_inline-list show-for-large" data-inlinegamesmenu=""> <li class=" is-active " style="visibility: visible; top: 0px;"><a href="https://www.lottofy.com/en/">LOTTERY</a></li> <li data-menu-viewmore="" style="visibility: visible; top: 0px;"><a href="javascript:void(null)" class="icon-slim-chevron-right-outline float-right" data-toggle="overflown-gamesCategories" data-alignment="right" aria-controls="overflown-gamesCategories" data-is-focus="false" data-yeti-box="overflown-gamesCategories" aria-haspopup="true" aria-expanded="false"></a></li> </ul> </li> </ul> </div> <div class="float-right"> <ul class="core_inline-list"> <li data-langmenu=""><button data-toggle="menu-lang" data-alignment="left" type="button" aria-controls="menu-lang" data-is-focus="false" data-yeti-box="menu-lang" aria-haspopup="true" aria-expanded="false"> <span data-lang="EN">EN</span> | <span data-currency="USD">USD</span></button></li> <li data-usermenujoin=""><a href="https://www.lottofy.com/en/signup/"> Create your account</a></li> <li data-usermenulogin=""><button data-logintrigger="" class="icon-slim-unlocked"> Login</button></li> <li id="purchaseSummary"> <span class="badge" id="mainCartCount">0</span> <a id="cartSummaryButton" href="https://www.lottofy.com/en/purchase/" class="icon-slim-shopping-cart" data-coretoggle="cart" data-hover="" data-isfixed="" data-alignment="right" rel="nofollow" title="Show shopping cart" aria-label="Show shopping cart"></a> </li> </ul> </div> <div class="clearfix"></div> <div class="tabs-content" data-tabs-content="gamingTabs"> <div class="tabs-panel  is-active" id="gamblingModePanel1"> <div class="top-subMenu show-for-medium is-overflown"> <ul class="core_inline-list small-text-left medium-text-center core_styleTop" data-menu-games=""> <li data-nomenu="" data-gametype="superloto" style="top: 0px; visibility: visible;"><a href="https://www.lottofy.com/en/superlotto/" data-coretoggle="menu-gamesMode" data-hover="" data-alignment="left"><i class="icon-games-superloto fsuperloto"></i> <span>Superlotto</span><span data-jackpot="">Play all</span></a></li><li style="animation-delay: 0s; visibility: visible; top: 0px;" data-gametype="euromillones"><a href="https://www.lottofy.com/en/euromillions/" data-coretoggle="menu-gamesMode" data-hover="" data-alignment="left"><i class="icon-games-euromillones feuromillones"></i> <span>Euromillions</span><span data-jackpot="">$234,2M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/eu.png" alt="eu"></a></li><li style="animation-delay: 0.03s; visibility: visible; top: 0px;" data-gametype="powerball"><a href="https://www.lottofy.com/en/powerball/" data-coretoggle="menu-gamesMode" data-hover="" data-alignment="left"><i class="icon-games-powerball fpowerball"></i> <span>Powerball</span><span data-jackpot="">$48,0M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/us.png" alt="us"></a></li><li style="animation-delay: 0.06s; visibility: visible; top: 0px;" data-gametype="megamillions"><a href="https://www.lottofy.com/en/megamillions/" data-coretoggle="menu-gamesMode" data-hover="" data-alignment="left"><i class="icon-games-megamillions fmegamillions"></i> <span>Megamillions</span><span data-jackpot="">$400,0M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/us.png" alt="us"></a></li><li style="animation-delay: 0.09s; visibility: visible; top: 0px;" data-gametype="superenalotto"><a href="https://www.lottofy.com/en/superenalotto/" data-coretoggle="menu-gamesMode" data-hover="" data-alignment="left"><i class="icon-games-superenalotto fsuperenalotto"></i> <span>Superenalotto</span><span data-jackpot="">$238,2M</span><span data-date="">Today</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png" alt="it"></a></li><li style="animation-delay: 0.12s; visibility: visible; top: 0px;" data-gametype="primitiva"><a href="https://www.lottofy.com/en/primitiva/" data-coretoggle="menu-gamesMode" data-hover="" data-alignment="left"><i class="icon-games-primitiva fprimitiva"></i> <span>La Primitiva</span><span data-jackpot="">$30,6M</span><span data-date="">Today</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png" alt="es"></a></li><li style="animation-delay: 0.15s; visibility: visible; top: 0px;" data-gametype="lotto6aus49"><a href="https://www.lottofy.com/en/lotto6aus49/" data-coretoggle="menu-gamesMode" data-hover="" data-alignment="left"><i class="icon-games-lotto6aus49 flotto6aus49"></i> <span>Lotto6aus49</span><span data-jackpot="">$15,3M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png" alt="de"></a></li><li style="animation-delay: 0.18s; visibility: visible; top: 0px;" data-gametype="eurojackpot"><a href="https://www.lottofy.com/en/eurojackpot/" data-coretoggle="menu-gamesMode" data-hover="" data-alignment="left"><i class="icon-games-eurojackpot feurojackpot"></i> <span>Eurojackpot</span><span data-jackpot="">$83,5M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/eu.png" alt="eu"></a></li><li style="animation-delay: 0.21s; visibility: visible; top: 0px;" data-gametype="quiniela"><a href="https://www.lottofy.com/en/quiniela/" data-coretoggle="menu-gamesMode" data-hover="" data-alignment="left"><i class="icon-games-quiniela fquiniela"></i> <span>Quiniela</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png" alt="es"></a></li><li style="animation-delay: 0.24s; visibility: visible; top: 0px;" data-gametype="bonoloto"><a href="https://www.lottofy.com/en/bonoloto/" data-coretoggle="menu-gamesMode" data-hover="" data-alignment="left" class=""><i class="icon-games-bonoloto fbonoloto"></i> <span>Bonoloto</span><span data-jackpot="">$0,9M</span><span data-date="">Today</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png" alt="es"></a></li><li style="animation-delay: 0.27s; visibility: visible; top: 0px;" data-gametype="elgordo"><a href="https://www.lottofy.com/en/elgordo/" data-coretoggle="menu-gamesMode" data-hover="" data-alignment="left"><i class="icon-games-elgordo felgordo"></i> <span>El Gordo</span><span data-jackpot="">$6,4M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png" alt="es"></a></li><li style="animation-delay: 0.3s; visibility: visible; top: 0px;" data-gametype="loterianacional"><a href="https://www.lottofy.com/en/nationallottery/play/" data-coretoggle="menu-gamesMode" data-hover="" data-alignment="left"><i class="icon-games-loterianacional floterianacional"></i> <span>National Lottery</span><span data-jackpot="">$30.552,00</span><span data-date="">Today</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png" alt="es"></a></li><li style="animation-delay: 0.33s; visibility: visible; top: 0px;" data-gametype="megasena"><a href="https://www.lottofy.com/en/megasena/" data-coretoggle="menu-gamesMode" data-hover="" data-alignment="left"><i class="icon-games-megasena fmegasena"></i> <span>Mega-Sena</span><span data-jackpot="">$0,6M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png" alt="br"></a></li><li data-gametype="" style="visibility: visible; top: 0px;"><a href="javascript:void(null)" data-coretoggle="menu-clubs" data-hover="" data-alignment="left"><i class="icon-games-club lightCoal"></i> <span>Syndicates ▾</span></a></li><li data-menu-viewmore="" style="visibility: visible; top: 0px;" class="is-active"><a href="javascript:void(null)"><i class="icon-common-plus3 lightCoal"></i> <span>Show more</span></a></li> </ul> </div> </div> </div> </nav> <div id="overflown-gamesCategories" class="dropdown-pane menus-dropDown" data-dropdown="" data-position="bottom" data-alignment="right" aria-hidden="true" data-yeti-box="overflown-gamesCategories" data-resize="overflown-gamesCategories" aria-labelledby="zcf69b-dd-anchor" data-e="vw1t90-e" data-events="resize"> <ul></ul> </div> <div id="menu-gamesMode" class="menus-dropDown" data-coredropdown="" style="position: absolute; top: 121.594px; left: 843.578px; right: auto;"> <ul data-gametype="euromillones"> <li><a href="https://www.lottofy.com/en/euromillions/play/" class="icon-games-single"> Play <strong>EUROMILLIONS</strong></a></li> <li><a href="https://www.lottofy.com/en/euromillions/fund/" class="icon-games-fondo"> &nbsp;&nbsp;Euromillions <strong>FUND</strong> <span><strong>40</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/euromillions/club/" class="icon-games-club"> &nbsp;&nbsp;Euromillonarios <strong>SYNDICATE</strong> <span><strong>80</strong> bets</span></a></li> </ul> <ul data-gametype="powerball"> <li><a href="https://www.lottofy.com/en/powerball/play/" class="icon-games-single"> Play <strong>POWERBALL</strong></a></li> <li><a href="https://www.lottofy.com/en/powerball/fund/" class="icon-games-fondo"> &nbsp;&nbsp;Powerball <strong>FUND</strong> <span><strong>2</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/powerball/club/" class="icon-games-club"> &nbsp;&nbsp;Powerball <strong>SYNDICATE</strong> <span><strong>120</strong> bets</span></a></li> </ul> <ul data-gametype="megamillions"> <li><a href="https://www.lottofy.com/en/megamillions/play/" class="icon-games-single"> Play <strong>MEGAMILLIONS</strong></a></li> <li><a href="https://www.lottofy.com/en/megamillions/fund/" class="icon-games-fondo"> &nbsp;&nbsp;Megamillions <strong>FUND</strong> <span><strong>5</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/megamillions/club/" class="icon-games-club"> &nbsp;&nbsp;Megamillions <strong>SYNDICATE</strong> <span><strong>120</strong> bets</span></a></li> </ul> <ul data-gametype="superenalotto"> <li><a href="https://www.lottofy.com/en/superenalotto/play/" class="icon-games-single"> Play <strong>SUPERENALOTTO</strong></a></li> <li><a href="https://www.lottofy.com/en/superenalotto/fund/" class="icon-games-fondo"> &nbsp;&nbsp;Superenalotto <strong>FUND</strong> <span><strong>28</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/superenalotto/club/" class="icon-games-club"> &nbsp;&nbsp;Superenalotto <strong>SYNDICATE</strong> <span><strong>200</strong> bets</span></a></li> </ul> <ul data-gametype="primitiva"> <li><a href="https://www.lottofy.com/en/primitiva/play/" class="icon-games-single"> Play <strong>LA PRIMITIVA</strong></a></li> <li><a href="https://www.lottofy.com/en/primitiva/fund/" class="icon-games-fondo"> &nbsp;&nbsp;La Primitiva <strong>FUND</strong> <span><strong>23</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/primitiva/club/" class="icon-games-club"> &nbsp;&nbsp;PrimiClub <strong>SYNDICATE</strong> <span><strong>150</strong> bets</span></a></li> </ul> <ul data-gametype="lotto6aus49"> <li><a href="https://www.lottofy.com/en/lotto6aus49/play/" class="icon-games-single"> Play <strong>LOTTO6AUS49</strong></a></li> <li><a href="https://www.lottofy.com/en/lotto6aus49/fund/" class="icon-games-fondo"> &nbsp;&nbsp;Lotto6aus49 <strong>FUND</strong> <span><strong>2</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/lotto6aus49/club/" class="icon-games-club"> &nbsp;&nbsp;Lotto6aus49 <strong>SYNDICATE</strong> <span><strong>150</strong> bets</span></a></li> </ul> <ul data-gametype="eurojackpot"> <li><a href="https://www.lottofy.com/en/eurojackpot/play/" class="icon-games-single"> Play <strong>EUROJACKPOT</strong></a></li> <li><a href="https://www.lottofy.com/en/eurojackpot/fund/" class="icon-games-fondo"> &nbsp;&nbsp;Eurojackpot <strong>FUND</strong> <span><strong>10</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/eurojackpot/club/" class="icon-games-club"> &nbsp;&nbsp;Eurojackpot <strong>SYNDICATE</strong> <span><strong>100</strong> bets</span></a></li> </ul> <ul data-gametype="quiniela"> <li><a href="https://www.lottofy.com/en/quiniela/play/" class="icon-games-single"> Play <strong>QUINIELA</strong></a></li> <li><a href="https://www.lottofy.com/en/quiniela/fund/" class="icon-games-fondo"> &nbsp;&nbsp;Quiniela <strong>FUND</strong> <span><strong>70</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/quiniela/club/" class="icon-games-club"> &nbsp;&nbsp;Quinieleros <strong>SYNDICATE</strong> </a></li> <li><a href="https://www.lottofy.com/en/quiniela/play/?file" class="icon-slim-attachment"> &nbsp;&nbsp;Send File</a></li> </ul> <ul data-gametype="bonoloto" class="is-active"> <li><a href="https://www.lottofy.com/en/bonoloto/play/" class="icon-games-single"> Play <strong>BONOLOTO</strong></a></li> <li><a href="https://www.lottofy.com/en/bonoloto/fund/" class="icon-games-fondo"> &nbsp;&nbsp;Bonoloto <strong>FUND</strong> <span><strong>31</strong> bets</span></a></li> </ul> <ul data-gametype="elgordo"> <li><a href="https://www.lottofy.com/en/elgordo/play/" class="icon-games-single"> Play <strong>EL GORDO</strong></a></li> <li><a href="https://www.lottofy.com/en/elgordo/fund/" class="icon-games-fondo"> &nbsp;&nbsp;El Gordo <strong>FUND</strong> <span><strong>15</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/elgordo/club/" class="icon-games-club"> &nbsp;&nbsp;Gordacos <strong>SYNDICATE</strong> <span><strong>70</strong> bets</span></a></li> </ul> <ul data-gametype="loterianacional"> <li><a href="https://www.lottofy.com/en/nationallottery/play/" class="icon-games-single"> Play <strong>NATIONAL LOTTERY</strong></a></li> <li><a href="https://www.lottofy.com/en/nationallottery/fund/" class="icon-games-fondo"> &nbsp;&nbsp;National Lottery <strong>FUND</strong> </a></li> </ul> <ul data-gametype="megasena"> <li><a href="https://www.lottofy.com/en/megasena/play/" class="icon-games-single"> Play <strong>MEGA-SENA</strong></a></li> <li><a href="https://www.lottofy.com/en/megasena/fund/" class="icon-games-fondo"> &nbsp;&nbsp;Mega-Sena <strong>FUND</strong> <span><strong>2</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/megasena/club/" class="icon-games-club"> &nbsp;&nbsp;Megasena <strong>SYNDICATE</strong> <span><strong>280</strong> bets</span></a></li> </ul> </div> <div id="menu-clubs" class="menus-dropDown" data-coredropdown=""> <ul> <li><a href="https://www.lottofy.com/en/euromillions/club/"><i class="icon-games-euromillones feuromillones"></i> Syndicate Euromillonarios<span><strong>80</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/elgordo/club/"><i class="icon-games-elgordo felgordo"></i> Syndicate Gordacos<span><strong>70</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/primitiva/club/"><i class="icon-games-primitiva fprimitiva"></i> Syndicate PrimiClub<span><strong>150</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/lotto6aus49/club/"><i class="icon-games-lotto6aus49 flotto6aus49"></i> Syndicate Lotto6aus49<span><strong>150</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/eurojackpot/club/"><i class="icon-games-eurojackpot feurojackpot"></i> Syndicate Eurojackpot<span><strong>100</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/powerball/club/"><i class="icon-games-powerball fpowerball"></i> Syndicate Powerball<span><strong>120</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/megamillions/club/"><i class="icon-games-megamillions fmegamillions"></i> Syndicate Megamillions<span><strong>120</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/superenalotto/club/"><i class="icon-games-superenalotto fsuperenalotto"></i> Syndicate Superenalotto<span><strong>200</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/megasena/club/"><i class="icon-games-megasena fmegasena"></i> Syndicate Megasena<span><strong>280</strong> bets</span></a></li> <li><a href="https://www.lottofy.com/en/superlotto/"><i class="icon-games-superlotto fsuperlotto"></i> Syndicate Superlotto<span><strong>592</strong> bets</span></a></li> </ul> </div> <div id="menu-lang" class=" top-menu_dropdown dropdown-pane" data-menu-lang="" data-dropdown="" aria-hidden="true" data-yeti-box="menu-lang" data-resize="menu-lang" aria-labelledby="1rqaru-dd-anchor" data-e="0rvyy6-e" data-events="resize"> <p>Language</p> <ul> <li data-lang="ES"><button type="button" data-lang="ES" data-url="https://www.lottofy.com/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png" alt="es"> ES</button></li> <li data-lang="EN"><button type="button" class="is-active" data-lang="EN" data-url="https://www.lottofy.com/en/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png" alt="gb"> EN</button></li> <li data-lang="PT"><button type="button" data-lang="PT" data-url="https://www.lottofy.com/pt/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png" alt="pt"> PT</button></li> <li data-lang="BR"><button type="button" data-lang="BR" data-url="https://www.lottofy.com/br/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png" alt="br"> BR</button></li> <li data-lang="FR"><button type="button" data-lang="FR" data-url="https://www.lottofy.com/fr/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png" alt="fr"> FR</button></li> <li data-lang="IT"><button type="button" data-lang="IT" data-url="https://www.lottofy.com/it/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png" alt="it"> IT</button></li> <li data-lang="DE"><button type="button" data-lang="DE" data-url="https://www.lottofy.com/de/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png" alt="de"> DE</button></li> <li data-lang="IN"><button type="button" data-lang="IN" data-url="https://www.lottofy.com/in/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png" alt="in"> IN</button></li> </ul> <p>Currency</p> <div class="core_panel core_thin"> <select class="core_spaceBzero core_sans_serif core_txtSize_sm1"> <option value="eur">EUR</option> <option selected="" value="usd">USD</option> <option value="brl">BRL</option> <option value="cny">CNY</option> <option value="inr">INR</option> <option value="cad">CAD</option> <option value="mxn">MXN</option> <option value="xof">XOF</option> <option value="clp">CLP</option> <option value="cop">COP</option> <option value="nok">NOK</option> <option value="pen">PEN</option> <option value="php">PHP</option> <option value="zar">ZAR</option> <option value="chf">CHF</option> <option value="gbp">GBP</option> <option value="ngn">NGN</option> </select> </div> <div class="core_panel core_thin"> <button class="button" data-save-lang="" disabled="">Apply</button> </div> </div> <div id="cart" data-coredropdown=""> <div> <div id="cartContent"> <div id="cartContentList"> <div> <i class="icon-slim-shopping-cart"></i>
+		The cart is empty	</div> </div> <div id="cartActions" class=""> <a href="https://www.lottofy.com/en/purchase/" class="button tiny radius bg_mint core_spaceBzero icon-slim-shopping-cart core_txtSize_sm1" rel="nofollow"> Go to cart</a> </div> </div> </div> <div> <button type="button" data-dettach="" class="icon-slim-media-eject"></button> </div> <span class="peek">▴</span> </div> <div class="row" style="position: relative"> <nav id="mobileMenu"> <div id="mobileGamesMenu" class="" style="display: none;"> <button aria-label="Main menu" data-mobilegamesmenutoggle="" type="button" class="white"><span>MENU</span><i data-mobilemenuicon="" class="icon-slim-menu">&nbsp;</i></button> <div id="mobileGamesMenuArt"> <img src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif" class="avatar" alt="My account"> <div class="text-center core_spaceTThin "> <button data-logintrigger="" class="core_spaceBzero button round bg_blue"><strong>Login</strong></button> <a class="core_spaceBzero button round" href="https://www.lottofy.com/en/signup/"><strong>Create your account</strong></a> </div> </div> <ul> <li class="has-submenu is-opened"> <a href="javascript:void(null)"><i class="icon-games-lottery"></i> Lottery</a> <ul style="display:block"> <li class="has-submenu"> <a href="javascript:void(null)" class="icon-games-club"> Syndicates</a> <ul> <li><a href="https://www.lottofy.com/en/euromillions/club/"><i class="icon-games-club"></i> Euromillonarios <small>(80 apuestas)</small></a></li> <li><a href="https://www.lottofy.com/en/elgordo/club/"><i class="icon-games-club"></i> Gordacos <small>(70 apuestas)</small></a></li> <li><a href="https://www.lottofy.com/en/primitiva/club/"><i class="icon-games-club"></i> PrimiClub <small>(150 apuestas)</small></a></li> <li><a href="https://www.lottofy.com/en/lotto6aus49/club/"><i class="icon-games-club"></i> Lotto6aus49 <small>(150 apuestas)</small></a></li> <li><a href="https://www.lottofy.com/en/eurojackpot/club/"><i class="icon-games-club"></i> Eurojackpot <small>(100 apuestas)</small></a></li> <li><a href="https://www.lottofy.com/en/powerball/club/"><i class="icon-games-club"></i> Powerball <small>(120 apuestas)</small></a></li> <li><a href="https://www.lottofy.com/en/megamillions/club/"><i class="icon-games-club"></i> Megamillions <small>(120 apuestas)</small></a></li> <li><a href="https://www.lottofy.com/en/superenalotto/club/"><i class="icon-games-club"></i> Superenalotto <small>(200 apuestas)</small></a></li> <li><a href="https://www.lottofy.com/en/megasena/club/"><i class="icon-games-club"></i> Megasena <small>(280 apuestas)</small></a></li> <li><a href="https://www.lottofy.com/en/superlotto/"><i class="icon-games-club"></i> Superlotto <small>(592 apuestas)</small></a></li> </ul> </li> <li><a href="https://www.lottofy.com/en/superlotto/" class="icon-games-superlotto"> Superloto</a></li> <li class="has-submenu"> <a href="javascript:void(null)" class="icon-games-euromillones"> Euromillions <span class="label">¡BOTE!</span><span data-jackpot=""><small>$</small>234,2M</span></a> <ul> <li><a href="https://www.lottofy.com/en/euromillions/play/"><i class="icon-slim-arrow-right2"></i> Play <strong>EUROMILLIONS</strong></a></li> <li><a href="https://www.lottofy.com/en/euromillions/fund/"><i class="icon-slim-arrow-right2"></i> Euromillions <strong>FUND</strong> (40 bets)</a></li> <li><a href="https://www.lottofy.com/en/euromillions/club/"><i class="icon-slim-arrow-right2"></i> Euromillonarios <strong>SYNDICATE</strong> (80 bets)</a></li> </ul> </li> <li class="has-submenu"> <a href="javascript:void(null)" class="icon-games-powerball"> Powerball <span class="label">¡BOTE!</span><span data-jackpot=""><small>$</small>48,0M</span></a> <ul> <li><a href="https://www.lottofy.com/en/powerball/play/"><i class="icon-slim-arrow-right2"></i> Play <strong>POWERBALL</strong></a></li> <li><a href="https://www.lottofy.com/en/powerball/fund/"><i class="icon-slim-arrow-right2"></i> Powerball <strong>FUND</strong> (2 bets)</a></li> <li><a href="https://www.lottofy.com/en/powerball/club/"><i class="icon-slim-arrow-right2"></i> Powerball <strong>SYNDICATE</strong> (120 bets)</a></li> </ul> </li> <li class="has-submenu"> <a href="javascript:void(null)" class="icon-games-megamillions"> Megamillions <span class="label">¡BOTE!</span><span data-jackpot=""><small>$</small>400,0M</span></a> <ul> <li><a href="https://www.lottofy.com/en/megamillions/play/"><i class="icon-slim-arrow-right2"></i> Play <strong>MEGAMILLIONS</strong></a></li> <li><a href="https://www.lottofy.com/en/megamillions/fund/"><i class="icon-slim-arrow-right2"></i> Megamillions <strong>FUND</strong> (5 bets)</a></li> <li><a href="https://www.lottofy.com/en/megamillions/club/"><i class="icon-slim-arrow-right2"></i> Megamillions <strong>SYNDICATE</strong> (120 bets)</a></li> </ul> </li> <li class="has-submenu"> <a href="javascript:void(null)" class="icon-games-superenalotto"> Superenalotto <span class="label">¡BOTE!</span><span data-jackpot=""><small>$</small>238,2M</span></a> <ul> <li><a href="https://www.lottofy.com/en/superenalotto/play/"><i class="icon-slim-arrow-right2"></i> Play <strong>SUPERENALOTTO</strong></a></li> <li><a href="https://www.lottofy.com/en/superenalotto/fund/"><i class="icon-slim-arrow-right2"></i> Superenalotto <strong>FUND</strong> (28 bets)</a></li> <li><a href="https://www.lottofy.com/en/superenalotto/club/"><i class="icon-slim-arrow-right2"></i> Superenalotto <strong>SYNDICATE</strong> (200 bets)</a></li> </ul> </li> <li class="has-submenu"> <a href="javascript:void(null)" class="icon-games-primitiva"> La Primitiva <span class="label">¡BOTE!</span><span data-jackpot=""><small>$</small>30,6M</span></a> <ul> <li><a href="https://www.lottofy.com/en/primitiva/play/"><i class="icon-slim-arrow-right2"></i> Play <strong>LA PRIMITIVA</strong></a></li> <li><a href="https://www.lottofy.com/en/primitiva/fund/"><i class="icon-slim-arrow-right2"></i> La Primitiva <strong>FUND</strong> (23 bets)</a></li> <li><a href="https://www.lottofy.com/en/primitiva/club/"><i class="icon-slim-arrow-right2"></i> PrimiClub <strong>SYNDICATE</strong> (150 bets)</a></li> </ul> </li> <li class="has-submenu"> <a href="javascript:void(null)" class="icon-games-lotto6aus49"> Lotto6aus49 <span class="label">¡BOTE!</span><span data-jackpot=""><small>$</small>15,3M</span></a> <ul> <li><a href="https://www.lottofy.com/en/lotto6aus49/play/"><i class="icon-slim-arrow-right2"></i> Play <strong>LOTTO6AUS49</strong></a></li> <li><a href="https://www.lottofy.com/en/lotto6aus49/fund/"><i class="icon-slim-arrow-right2"></i> Lotto6aus49 <strong>FUND</strong> (2 bets)</a></li> <li><a href="https://www.lottofy.com/en/lotto6aus49/club/"><i class="icon-slim-arrow-right2"></i> Lotto6aus49 <strong>SYNDICATE</strong> (150 bets)</a></li> </ul> </li> <li class="has-submenu"> <a href="javascript:void(null)" class="icon-games-eurojackpot"> Eurojackpot <span class="label">¡BOTE!</span><span data-jackpot=""><small>$</small>83,5M</span></a> <ul> <li><a href="https://www.lottofy.com/en/eurojackpot/play/"><i class="icon-slim-arrow-right2"></i> Play <strong>EUROJACKPOT</strong></a></li> <li><a href="https://www.lottofy.com/en/eurojackpot/fund/"><i class="icon-slim-arrow-right2"></i> Eurojackpot <strong>FUND</strong> (10 bets)</a></li> <li><a href="https://www.lottofy.com/en/eurojackpot/club/"><i class="icon-slim-arrow-right2"></i> Eurojackpot <strong>SYNDICATE</strong> (100 bets)</a></li> </ul> </li> <li class="has-submenu"> <a href="javascript:void(null)" class="icon-games-quiniela"> Quiniela</a> <ul> <li><a href="https://www.lottofy.com/en/quiniela/play/"><i class="icon-slim-arrow-right2"></i> Play <strong>QUINIELA</strong></a></li> <li><a href="https://www.lottofy.com/en/quiniela/fund/"><i class="icon-slim-arrow-right2"></i> Quiniela <strong>FUND</strong> (70 bets)</a></li> <li><a href="https://www.lottofy.com/en/quiniela/club/"><i class="icon-slim-arrow-right2"></i> Quinieleros <strong>SYNDICATE</strong></a></li> </ul> </li> <li class="has-submenu"> <a href="javascript:void(null)" class="icon-games-bonoloto"> Bonoloto <span class="label">¡BOTE!</span><span data-jackpot=""><small>$</small>0,9M</span></a> <ul> <li><a href="https://www.lottofy.com/en/bonoloto/play/"><i class="icon-slim-arrow-right2"></i> Play <strong>BONOLOTO</strong></a></li> <li><a href="https://www.lottofy.com/en/bonoloto/fund/"><i class="icon-slim-arrow-right2"></i> Bonoloto <strong>FUND</strong> (31 bets)</a></li> </ul> </li> <li class="has-submenu"> <a href="javascript:void(null)" class="icon-games-elgordo"> El Gordo <span class="label">¡BOTE!</span><span data-jackpot=""><small>$</small>6,4M</span></a> <ul> <li><a href="https://www.lottofy.com/en/elgordo/play/"><i class="icon-slim-arrow-right2"></i> Play <strong>EL GORDO</strong></a></li> <li><a href="https://www.lottofy.com/en/elgordo/fund/"><i class="icon-slim-arrow-right2"></i> El Gordo <strong>FUND</strong> (15 bets)</a></li> <li><a href="https://www.lottofy.com/en/elgordo/club/"><i class="icon-slim-arrow-right2"></i> Gordacos <strong>SYNDICATE</strong> (70 bets)</a></li> </ul> </li> <li> <a href="https://www.lottofy.com/en/nationallottery/play/" class="icon-games-loterianacional"> National Lottery <span class="label">¡BOTE!</span><span data-jackpot=""><small>$</small>30.552,00</span></a> </li> <li class="has-submenu"> <a href="javascript:void(null)" class="icon-games-megasena"> Mega-Sena <span class="label">¡BOTE!</span><span data-jackpot=""><small>$</small>0,6M</span></a> <ul> <li><a href="https://www.lottofy.com/en/megasena/play/"><i class="icon-slim-arrow-right2"></i> Play <strong>MEGA-SENA</strong></a></li> <li><a href="https://www.lottofy.com/en/megasena/fund/"><i class="icon-slim-arrow-right2"></i> Mega-Sena <strong>FUND</strong> (2 bets)</a></li> <li><a href="https://www.lottofy.com/en/megasena/club/"><i class="icon-slim-arrow-right2"></i> Megasena <strong>SYNDICATE</strong> (280 bets)</a></li> </ul> </li> </ul> </li> </ul> <ul data-globalactions=""> <li><a href="https://www.lottofy.com/en/helpdesk/" class="icon-common-bubble2"> Support &amp; Helpdesk</a></li> <li class="has-submenu"> <a href="javascript:void(null)" class="icon-slim-world"> Select your language <span class="label"><img class="flag" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png" alt="gb"> EN</span> <span class="label currency">USD</span> </a> <ul> <li> <div id="menu-lang-mobile" class="core_panel core_paddingTzero" data-menu-lang=""> <fieldset class="core_thin radius"> <legend class="core_spaceBzero core_txtSize_sm2 core_normal">Language</legend> <button type="button" class="label" data-lang="ES" data-url="https://www.lottofy.com/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png" alt="es"> ES</button> <button type="button" class="label is-active" data-lang="EN" data-url="https://www.lottofy.com/en/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png" alt="gb"> EN</button> <button type="button" class="label" data-lang="PT" data-url="https://www.lottofy.com/pt/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png" alt="pt"> PT</button> <button type="button" class="label" data-lang="BR" data-url="https://www.lottofy.com/br/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png" alt="br"> BR</button> <button type="button" class="label" data-lang="FR" data-url="https://www.lottofy.com/fr/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png" alt="fr"> FR</button> <button type="button" class="label" data-lang="IT" data-url="https://www.lottofy.com/it/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png" alt="it"> IT</button> <button type="button" class="label" data-lang="DE" data-url="https://www.lottofy.com/de/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png" alt="de"> DE</button> <button type="button" class="label" data-lang="IN" data-url="https://www.lottofy.com/in/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png" alt="in"> IN</button> </fieldset> <fieldset class="core_thin radius"> <legend class="core_spaceBzero core_txtSize_sm2 core_normal">Currency</legend> <button type="button" class="label" data-curr="eur">EUR</button> <button type="button" class="label is-active" data-curr="usd">USD</button> <button type="button" class="label" data-curr="brl">BRL</button> <button type="button" class="label" data-curr="cny">CNY</button> <button type="button" class="label" data-curr="inr">INR</button> <button type="button" class="label" data-curr="cad">CAD</button> <button type="button" class="label" data-curr="mxn">MXN</button> <button type="button" class="label" data-curr="xof">XOF</button> <button type="button" class="label" data-curr="clp">CLP</button> <button type="button" class="label" data-curr="cop">COP</button> <button type="button" class="label" data-curr="nok">NOK</button> <button type="button" class="label" data-curr="pen">PEN</button> <button type="button" class="label" data-curr="php">PHP</button> <button type="button" class="label" data-curr="zar">ZAR</button> <button type="button" class="label" data-curr="chf">CHF</button> <button type="button" class="label" data-curr="gbp">GBP</button> <button type="button" class="label" data-curr="ngn">NGN</button> </fieldset> <button class="button core_full" data-save-lang="" disabled="">Apply</button> </div> </li> </ul> </li> </ul> </div> </nav> </div> </header><div id="scrnli_recorder_root"></div> <div class="off-canvas-wrap"> <div class="top-menu-gamesNav hide-for-medium animated" data-top-menu-gamesnav="" style=""> <ul class=" is-active " data-tab-id="gamblingModePanel1" data-num-items="13"><li data-nomenu="" data-gametype="superlotto"><a href="https://www.lottofy.com/en/superlotto/"><i class="icon-games-superlotto"></i><span>Superlotto</span></a></li><li style="animation-delay: 0s" data-gametype="euromillones"><button><i class="icon-games-euromillones"></i><span>Euromillions</span><span data-jackpot="" class="beuromillones"><small>$</small>234,2M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/eu.png" alt="eu"></button></li><li style="animation-delay: 0.03s" data-gametype="powerball"><button><i class="icon-games-powerball"></i><span>Powerball</span><span data-jackpot="" class="bpowerball"><small>$</small>48,0M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/us.png" alt="us"></button></li><li style="animation-delay: 0.06s" data-gametype="megamillions"><button><i class="icon-games-megamillions"></i><span>Megamillions</span><span data-jackpot="" class="bmegamillions"><small>$</small>400,0M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/us.png" alt="us"></button></li><li style="animation-delay: 0.09s" data-gametype="superenalotto"><button><i class="icon-games-superenalotto"></i><span>Superenalotto</span><span data-jackpot="" class="bsuperenalotto"><small>$</small>238,2M</span><span data-date="" class="bsuperenalotto">Today</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png" alt="it"></button></li><li style="animation-delay: 0.12s" data-gametype="primitiva"><button><i class="icon-games-primitiva"></i><span>La Primitiva</span><span data-jackpot="" class="bprimitiva"><small>$</small>30,6M</span><span data-date="" class="bprimitiva">Today</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png" alt="es"></button></li><li style="animation-delay: 0.15s" data-gametype="lotto6aus49"><button><i class="icon-games-lotto6aus49"></i><span>Lotto6aus49</span><span data-jackpot="" class="blotto6aus49"><small>$</small>15,3M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png" alt="de"></button></li><li style="animation-delay: 0.18s" data-gametype="eurojackpot"><button><i class="icon-games-eurojackpot"></i><span>Eurojackpot</span><span data-jackpot="" class="beurojackpot"><small>$</small>83,5M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/eu.png" alt="eu"></button></li><li style="animation-delay: 0.21s" data-gametype="quiniela"><button><i class="icon-games-quiniela"></i><span>Quiniela</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png" alt="es"></button></li><li style="animation-delay: 0.24s" data-gametype="bonoloto"><button><i class="icon-games-bonoloto"></i><span>Bonoloto</span><span data-jackpot="" class="bbonoloto"><small>$</small>0,9M</span><span data-date="" class="bbonoloto">Today</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png" alt="es"></button></li><li style="animation-delay: 0.27s" data-gametype="elgordo"><button><i class="icon-games-elgordo"></i><span>El Gordo</span><span data-jackpot="" class="belgordo"><small>$</small>6,4M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png" alt="es"></button></li><li style="animation-delay: 0.3s" data-gametype="loterianacional"><button><i class="icon-games-loterianacional"></i><span>National Lottery</span><span data-jackpot="" class="bloterianacional"><small>$</small>30.552,00</span><span data-date="" class="bloterianacional">Today</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png" alt="es"></button></li><li style="animation-delay: 0.33s" data-gametype="megasena"><button><i class="icon-games-megasena"></i><span>Mega-Sena</span><span data-jackpot="" class="bmegasena"><small>$</small>0,6M</span><img data-country="" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png" alt="br"></button></li></ul> </div> <div class="inner-wrap"> <div id="superContainer"> <div id="index" class="main"> <div id="recommendedGames"> <div id="mainFeaturedPanel"> <div class="row collapse"> <div class="column"> <div class="orbit" role="region" aria-label="Featured games" data-orbit="" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" data-timer-delay="10000" data-resize="rxauu9-orbit" id="rxauu9-orbit" data-e="nwlv9a-e" data-events="resize"> <nav class="orbit-bullets"> <button aria-label="Panel 1" class="" data-slide="0"></button> <button aria-label="Panel 2" data-slide="1" class=""><span class="show-for-sr"></span></button> <button aria-label="Panel 3" data-slide="2" class=""><span class="show-for-sr"></span></button> <button aria-label="Panel 4" data-slide="3" class="is-active"><span class="show-for-sr"></span><span class="show-for-sr"></span></button> </nav> <div class="orbit-wrapper"> <ul class="orbit-container" tabindex="0" style="height: 328px;"> <li class="orbit-slide" data-slide="0" style="display: none; position: relative;"> <div class="richBlock big"> <div class="richBlockContent lazy visible" style="background-color:#06629e;background-image: url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/big_150.jpg')"> <div class="richBlockShadower"></div> <div class="row core_vAlign-for-large"> <div class="column large-5"> <p class="richBlockSubtitle">Superenalotto</p> <p class="richBlockTitle">$238,2M</p> <p><small>Play <strong>YOUR BET</strong> or join the community:</small></p> <ul> <li><strong>Syndicate</strong> 200 bets</li> <li><strong>Fund</strong> 28 bets</li> </ul> </div> <div class="column large-7"> <div class="richBlockContentActions"> <p class="richBlockRemaining"> <span data-timeremaining="24191">06<small>h </small>42<small>m </small>17<small>s</small></span></p> <a href="https://www.lottofy.com/en/superenalotto/play/" class="button"><strong>Play</strong> <i class="icon-slim-shopping-cart"></i></a> <a href="https://www.lottofy.com/en/superenalotto/club/" class="button"><span><strong>Syndicate</strong><small>Playing 200 bets</small></span> <i class="icon-slim-shopping-cart"></i></a> <a href="https://www.lottofy.com/en/superenalotto/fund/" class="button"><span><strong>Fund</strong><small>Playing 28 bets</small></span> <i class="icon-slim-shopping-cart"></i></a> </div> </div> </div> </div> </div> </li> <li class="orbit-slide" style="position: relative; top: 0px; display: none;" data-slide="1"> <div class="richBlock big"> <div class="richBlockContent lazy visible" style="background-color:#06629e;background-image: url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/big_2.jpg')"> <div class="richBlockShadower"></div> <div class="row core_vAlign-for-large"> <div class="column large-5"> <p class="richBlockSubtitle">La Primitiva</p> <p class="richBlockTitle">$30,6M</p> <p><small>Play <strong>YOUR BET</strong> or join the community:</small></p> <ul> <li><strong>Syndicate</strong> 150 bets</li> <li><strong>Fund</strong> 23 bets</li> </ul> </div> <div class="column large-7"> <div class="richBlockContentActions"> <p class="richBlockRemaining"> <span data-timeremaining="27791">07<small>h </small>42<small>m </small>17<small>s</small></span></p> <a href="https://www.lottofy.com/en/primitiva/play/" class="button"><strong>Play</strong> <i class="icon-slim-shopping-cart"></i></a> <a href="https://www.lottofy.com/en/primitiva/club/" class="button"><span><strong>Syndicate</strong><small>Playing 150 bets</small></span> <i class="icon-slim-shopping-cart"></i></a> <a href="https://www.lottofy.com/en/primitiva/fund/" class="button"><span><strong>Fund</strong><small>Playing 23 bets</small></span> <i class="icon-slim-shopping-cart"></i></a> </div> </div> </div> </div> </div> </li> <li class="orbit-slide" style="position: relative; top: 0px; display: none;" data-slide="2"> <div class="richBlock big"> <div class="richBlockContent lazy visible" style="background-color:#06629e;background-image: url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/big_1.jpg')"> <div class="richBlockShadower"></div> <div class="row core_vAlign-for-large"> <div class="column large-5"> <p class="richBlockSubtitle">Bonoloto</p> <p class="richBlockTitle">$0,9M</p> <p><small>Play <strong>YOUR BET</strong> or join the community:</small></p> <ul> <li><strong>Fund</strong> 31 bets</li> </ul> </div> <div class="column large-7"> <div class="richBlockContentActions"> <p class="richBlockRemaining"> <span data-timeremaining="27791">07<small>h </small>42<small>m </small>17<small>s</small></span></p> <a href="https://www.lottofy.com/en/bonoloto/play/" class="button"><strong>Play</strong> <i class="icon-slim-shopping-cart"></i></a> <a href="https://www.lottofy.com/en/bonoloto/fund/" class="button"><span><strong>Fund</strong><small>Playing 31 bets</small></span> <i class="icon-slim-shopping-cart"></i></a> </div> </div> </div> </div> </div> </li> <li class="orbit-slide is-active" style="position: relative; top: 0px; display: block;" data-slide="3" aria-live="polite"> <div class="richBlock big"> <div class="richBlockContent lazy visible" style="background-color:#06629e;background-image: url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/big_6.jpg')"> <div class="richBlockShadower"></div> <div class="row core_vAlign-for-large"> <div class="column large-5"> <p class="richBlockSubtitle">National Lottery</p> <p class="richBlockTitle">$30.552,00</p> <p><small>Play <strong>YOUR BET</strong> or join the community:</small></p> <ul> <li><strong>Fund</strong> 0 bets</li> </ul> </div> <div class="column large-7"> <div class="richBlockContentActions"> <p class="richBlockRemaining"> <span data-timeremaining="25991">07<small>h </small>12<small>m </small>17<small>s</small></span></p> <a href="https://www.lottofy.com/en/nationallottery/play/" class="button"><strong>Play</strong> <i class="icon-slim-shopping-cart"></i></a> <a href="https://www.lottofy.com/en/nationallottery/fund/" class="button"><span><strong>Fund</strong></span> <i class="icon-slim-shopping-cart"></i></a> </div> </div> </div> </div> </div> </li> </ul> </div> </div> </div> </div> </div> <div class="row" id="lotterySection"> <div class="column"> <p data-title="">Lottery </p><div class="row collapse small-up-1 medium-up-3 large-up-4 mini-games-block"> <div class="column column-block text-center large-text-right"> <div class="richBlock lottery" data-gametype="euromillones"> <div class="richBlockHead"> <p>Euromillions</p> </div> <div class="richBlockContent beuromillones lazy visible" style="background-image:url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_4.jpg')"> <div class="richBlockBottomText"> <p data-drawdate="">FRIDAY</p> <p><strong data-drawjackpot=""><small>Jackpot!:</small> <small>$</small>234,2M</strong></p> <div class="gamingModesContainer"> <a class="gamingModes" href="https://www.lottofy.com/en/euromillions/fund/"><span>40 <small>BETS</small></span> <strong>FUND</strong></a> <a class="gamingModes" href="https://www.lottofy.com/en/euromillions/club/"><span>80 <small>BETS</small></span> <strong>CLUB</strong></a> </div> </div> </div> <div class="richBlockActions"> <div><p class="richBlockRemaining"><span data-timeremaining="114191">01<small>d </small>07<small>h </small>42<small>m </small>17<small>s</small></span></p></div> <div> <a class="button" href="https://www.lottofy.com/en/euromillions/play/"><strong>Play</strong></a> </div> </div> </div> </div> <div class="column column-block text-center large-text-right"> <div class="richBlock lottery" data-gametype="powerball"> <div class="richBlockHead"> <p>Powerball</p> </div> <div class="richBlockContent bpowerball lazy visible" style="background-image:url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_120.jpg')"> <div class="richBlockBottomText"> <p data-drawdate="">SUNDAY</p> <p><strong data-drawjackpot=""><small>Jackpot!:</small> <small>$</small>48,0M</strong></p> <div class="gamingModesContainer"> <a class="gamingModes" href="https://www.lottofy.com/en/powerball/fund/"><span>2 <small>BETS</small></span> <strong>FUND</strong></a> <a class="gamingModes" href="https://www.lottofy.com/en/powerball/club/"><span>120 <small>BETS</small></span> <strong>CLUB</strong></a> </div> </div> </div> <div class="richBlockActions"> <div><p class="richBlockRemaining"><span data-timeremaining="225791">02<small>d </small>14<small>h </small>42<small>m </small>17<small>s</small></span></p></div> <div> <a class="button" href="https://www.lottofy.com/en/powerball/play/"><strong>Play</strong></a> </div> </div> </div> </div> <div class="column column-block text-center large-text-right"> <div class="richBlock lottery" data-gametype="megamillions"> <div class="richBlockHead"> <p>Megamillions</p> </div> <div class="richBlockContent bmegamillions lazy visible" style="background-image:url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_121.jpg')"> <div class="richBlockBottomText"> <p data-drawdate="">SATURDAY</p> <p><strong data-drawjackpot=""><small>Jackpot!:</small> <small>$</small>400,0M</strong></p> <div class="gamingModesContainer"> <a class="gamingModes" href="https://www.lottofy.com/en/megamillions/fund/"><span>5 <small>BETS</small></span> <strong>FUND</strong></a> <a class="gamingModes" href="https://www.lottofy.com/en/megamillions/club/"><span>120 <small>BETS</small></span> <strong>CLUB</strong></a> </div> </div> </div> <div class="richBlockActions"> <div><p class="richBlockRemaining"><span data-timeremaining="139391">01<small>d </small>14<small>h </small>42<small>m </small>17<small>s</small></span></p></div> <div> <a class="button" href="https://www.lottofy.com/en/megamillions/play/"><strong>Play</strong></a> </div> </div> </div> </div> <div class="column column-block text-center large-text-right"> <div class="richBlock lottery" data-gametype="superenalotto"> <div class="richBlockHead"> <p>Superenalotto</p> </div> <div class="richBlockContent bsuperenalotto lazy visible" style="background-image:url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_150.jpg')"> <div class="richBlockBottomText"> <p data-drawdate="">THURSDAY</p> <p><strong data-drawjackpot=""><small>Jackpot!:</small> <small>$</small>238,2M</strong></p> <div class="gamingModesContainer"> <a class="gamingModes" href="https://www.lottofy.com/en/superenalotto/fund/"><span>28 <small>BETS</small></span> <strong>FUND</strong></a> <a class="gamingModes" href="https://www.lottofy.com/en/superenalotto/club/"><span>200 <small>BETS</small></span> <strong>CLUB</strong></a> </div> </div> </div> <div class="richBlockActions"> <div><p class="richBlockRemaining"><span data-timeremaining="24191">06<small>h </small>42<small>m </small>17<small>s</small></span></p></div> <div> <a class="button" href="https://www.lottofy.com/en/superenalotto/play/"><strong>Play</strong></a> </div> </div> </div> </div> <div class="column column-block text-center large-text-right"> <div class="richBlock lottery" data-gametype="primitiva"> <div class="richBlockHead"> <p>La Primitiva</p> </div> <div class="richBlockContent bprimitiva lazy visible" style="background-image:url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_2.jpg')"> <div class="richBlockBottomText"> <p data-drawdate="">THURSDAY</p> <p><strong data-drawjackpot=""><small>Jackpot!:</small> <small>$</small>30,6M</strong></p> <div class="gamingModesContainer"> <a class="gamingModes" href="https://www.lottofy.com/en/primitiva/fund/"><span>23 <small>BETS</small></span> <strong>FUND</strong></a> <a class="gamingModes" href="https://www.lottofy.com/en/primitiva/club/"><span>150 <small>BETS</small></span> <strong>CLUB</strong></a> </div> </div> </div> <div class="richBlockActions"> <div><p class="richBlockRemaining"><span data-timeremaining="27791">07<small>h </small>42<small>m </small>17<small>s</small></span></p></div> <div> <a class="button" href="https://www.lottofy.com/en/primitiva/play/"><strong>Play</strong></a> </div> </div> </div> </div> <div class="column column-block text-center large-text-right"> <div class="richBlock lottery" data-gametype="lotto6aus49"> <div class="richBlockHead"> <p>Lotto6aus49</p> </div> <div class="richBlockContent blotto6aus49 lazy visible" style="background-image:url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_90.jpg')"> <div class="richBlockBottomText"> <p data-drawdate="">SATURDAY</p> <p><strong data-drawjackpot=""><small>Jackpot!:</small> <small>$</small>15,3M</strong></p> <div class="gamingModesContainer"> <a class="gamingModes" href="https://www.lottofy.com/en/lotto6aus49/fund/"><span>2 <small>BETS</small></span> <strong>FUND</strong></a> <a class="gamingModes" href="https://www.lottofy.com/en/lotto6aus49/club/"><span>150 <small>BETS</small></span> <strong>CLUB</strong></a> </div> </div> </div> <div class="richBlockActions"> <div><p class="richBlockRemaining"><span data-timeremaining="195191">02<small>d </small>06<small>h </small>12<small>m </small>17<small>s</small></span></p></div> <div> <a class="button" href="https://www.lottofy.com/en/lotto6aus49/play/"><strong>Play</strong></a> </div> </div> </div> </div> <div class="column column-block text-center large-text-right"> <div class="richBlock lottery" data-gametype="eurojackpot"> <div class="richBlockHead"> <p>Eurojackpot</p> </div> <div class="richBlockContent beurojackpot lazy visible" style="background-image:url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_93.jpg')"> <div class="richBlockBottomText"> <p data-drawdate="">FRIDAY</p> <p><strong data-drawjackpot=""><small>Jackpot!:</small> <small>$</small>83,5M</strong></p> <div class="gamingModesContainer"> <a class="gamingModes" href="https://www.lottofy.com/en/eurojackpot/fund/"><span>10 <small>BETS</small></span> <strong>FUND</strong></a> <a class="gamingModes" href="https://www.lottofy.com/en/eurojackpot/club/"><span>100 <small>BETS</small></span> <strong>CLUB</strong></a> </div> </div> </div> <div class="richBlockActions"> <div><p class="richBlockRemaining"><span data-timeremaining="111491">01<small>d </small>06<small>h </small>57<small>m </small>17<small>s</small></span></p></div> <div> <a class="button" href="https://www.lottofy.com/en/eurojackpot/play/"><strong>Play</strong></a> </div> </div> </div> </div> <div class="column column-block text-center large-text-right"> <div class="richBlock lottery" data-gametype="quiniela"> <div class="richBlockHead"> <p>Quiniela</p> </div> <div class="richBlockContent bquiniela lazy visible" style="background-image:url('//d2oamtuj38i9pe.cloudfront.net/images/lottofy/index/1/small/small_5.jpg')"> <div class="richBlockBottomText"> <p data-drawdate="">SATURDAY</p> <p><strong>Play</strong></p> <div class="gamingModesContainer"> <a class="gamingModes" href="https://www.lottofy.com/en/quiniela/fund/"><span>70 <small>BETS</small></span> <strong>FUND</strong></a> <a class="gamingModes" href="https://www.lottofy.com/en/quiniela/club/"><span>?? <small>BETS</small></span> <strong>CLUB</strong></a> </div> </div> </div> <div class="richBlockActions"> <div><p class="richBlockRemaining"><span data-timeremaining="178691">02<small>d </small>01<small>h </small>37<small>m </small>17<small>s</small></span></p></div> <div> <a class="button" href="https://www.lottofy.com/en/quiniela/play/"><strong>Play</strong></a> </div> </div> </div> </div> </div> </div> </div> <div id="breakerSection"> <div class="row"> <div class="column text-center"> <div class="gameTitle"> <i class="icon-games-superlotto"></i> <strong><small>ALL the games, the WHOLE week</small>SUPERLOTTO</strong> </div> <div class="gameBets"> <span>592</span><small>bets</small> </div> <div class="gameJackpot"> <strong data-drawjackpot=""><small>Jackpot!:</small> Play all</strong> </div> <div class="gamePurchase"> <a class="button" href="https://www.lottofy.com/en/superlotto/"><strong>Play</strong></a> </div> </div> </div> </div> <div id="microgamingSection"> <div class="row xlarge-collapse small-uncollapse "> <div class="column  core_spaceT core_spaceB"> </div> </div> </div> </div> <div class="blackPanel"> <div class="row"> <h2 data-title="" class="core_spaceT core_spaceBzero "><strong>Lottofy in the media</strong></h2> <div class="micrositeSection white_color" data-mk-media=""> <div class="row collapse"> <div class="row collapse small-up-3 medium-up-4 large-up-7" id="mediaList"> <div class="column column-block"><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.infobae.com/inhouse/2021/04/26/jugar-gratis-a-las-loterias-del-mundo-esta-a-un-click-de-distancia/"><img src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/media/infobae.png" alt="Infobae logo"></a></div> <div class="column column-block"><a rel="nofollow noopener noreferrer" target="_blank" href="https://timesofmalta.com/articles/view/around-the-world-in-plenty-of-plays.862788"><img src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/media/timesofmalta.png" alt="Times Of Malta logo"></a></div> <div class="column column-block"><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.cronica.com.mx/notas-estas_son_las_caracteristicas_de_las_loterias_con_botes_mas_grandes_del_mundo-1181247-2021"><img src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/media/cronica.png" alt="Crónica Mexico logo"></a></div> <div class="column column-block"><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.askgamblers.com/online-casinos/reviews/lottofy-casino"><img src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/media/askgamblers.png" alt="Askgamblers logo"></a></div> <div class="column column-block"><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.publimetro.cl/cl/comercial/2021/06/17/los-juegos-de-azar-una-tentadora-forma-de-ganar-dinero.html"><img src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/media/publimetro.png" alt="Publimetro Chile logo"></a></div> <div class="column column-block"><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.newcasinos.com/reviews/lottofy/"><img src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/media/newcasinos.png" alt="NewCasinos logo"></a></div> <div class="column column-block"><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.mdzol.com/sociedad/2020/11/5/como-ganar-la-loteria-apuntar-al-mejor-bote-116694.html"><img src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/media/mdz.png" alt="MDZ logo"></a></div> </div> </div> </div> </div> </div> <div> <div class="row"> <h2 data-title="" class="core_spaceT"><strong>Real user reviews of lottofy</strong></h2> <div class="micrositeSection white_color" data-testimonials=""> <div class="row"> <div class="orbit" role="region" aria-label="Download the App and play quickly and safely" data-orbit="" data-resize="3asoqq-orbit" id="3asoqq-orbit" data-e="0oaan8-e" data-events="resize"> <div class="orbit-wrapper"> <div class="orbit-controls"> <button class="orbit-previous icon-slim-chevron-left" arial-label="Next"></button> <button class="orbit-next icon-slim-chevron-right" arial-label="Previous"></button> </div> <ul class="orbit-container" tabindex="0" style="height: 337.547px;"> <li class="is-active orbit-slide" data-slide="0"> <figure class="orbit-figure"> <div class="row small-up-2 medium-up-2 large-up-5" data-testimonials-list=""> <div class="column column-block"> <div data-prorate=""> <span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span> <p><small><strong><span data-ratetotalvotes="">5</span></strong> from <strong>5</strong></small></p> </div> <p data-text="">Lottofy is a very complete portal with many gaming options and the best thing is the prices, they are among the best I have seen when playing various bets. I recommend it 100%</p> <p data-author=""><small><strong>Mika GR</strong> - <i>2 Sep. 2021</i></small></p> <p data-source=""><small>Fuente: <strong>TrustPilot™</strong></small></p> </div> <div class="column column-block"> <div data-prorate=""> <span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span> <p><small><strong><span data-ratetotalvotes="">5</span></strong> from <strong>5</strong></small></p> </div> <p data-text="">Excellent website. Fast communication with the support team which gives confidence and they handled my earnings immediately.</p> <p data-author=""><small><strong>Michael Collins</strong> - <i>25 Aug. 2021</i></small></p> <p data-source=""><small>Fuente: <strong>TrustPilot™</strong></small></p> </div> <div class="column column-block"> <div data-prorate=""> <span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span> <span data-star="" class="empty"></span> <p><small><strong><span data-ratetotalvotes="">4</span></strong> from <strong>5</strong></small></p> </div> <p data-text="">Excellent customer service</p> <p data-author=""><small><strong>Aysha Rocker</strong> - <i>22 Aug. 2021</i></small></p> <p data-source=""><small>Fuente: <strong>TrustPilot™</strong></small></p> </div> <div class="column column-block"> <div data-prorate=""> <span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span> <p><small><strong><span data-ratetotalvotes="">5</span></strong> from <strong>5</strong></small></p> </div> <p data-text="">Estou precisando muito. ¿Quem não está? entrei agora esperando ter sorte para melhor investimento.</p> <p data-author=""><small><strong>Marcia Cristina Santos</strong> - <i>19 Apr. 2021</i></small></p> <p data-source=""><small>Fuente: <strong>TrustPilot™</strong></small></p> </div> <div class="column column-block"> <div data-prorate=""> <span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span><span data-star="" class="full"></span> <p><small><strong><span data-ratetotalvotes="">5</span></strong> from <strong>5</strong></small></p> </div> <p data-text="">Me parece bien, es fácil y todo parece en orden, ahora solo falta que me toquen unos millones</p> <p data-author=""><small><strong>Carlos Zapata</strong> - <i>13 Nov. 2020</i></small></p> <p data-source=""><small>Fuente: <strong>TrustPilot™</strong></small></p> </div> </div> </figure> </li> </ul> </div> </div> </div> </div> </div> </div> <div class="core_panel "> <div class="row"> <h2 data-title="" class="core_spaceB"><strong>The blog of Lottofy</strong></h2> <div data-latest-news=""> <ul data-latest-news="" class="row small-up-2 medium-up-4 large-up-4" data-equalizer="" data-resize="prrh2e-eq" data-mutate="avi12f-eq" data-e="6lt1rx-e" data-events="mutate"> <li class="column column-block"> <div> <div data-equalizer-watch="" style="height: 277px;"> <div class="banderola orange"><p>New!</p></div> <div data-ln-image="" class="lazy visible" style="background-image:url('https://d2dii1yqrc4zf3.cloudfront.net/lottofy/2022/fba0387662257563e1142943db96d3ff843716059e768aba46960204c77dd63b.jpg')"></div> <p data-ln-title=""><a href="https://www.lottofy.com/en/blog/la-primitiva-will-also-be-played-on-mondays-0486/">La Primitiva will also be played on Mondays</a></p> <p data-ln-subtitle="">A new draw in the La Primitiva lottery will be held every Monday starting next Monday, July 11, 2022.</p> </div> <ul data-ln-actions=""> <li><a href="https://www.lottofy.com/en/blog/la-primitiva-will-also-be-played-on-mondays-0486/" class="button">Read</a></li> </ul> </div> </li> <li class="column column-block"> <div> <div data-equalizer-watch="" style="height: 277px;"> <div data-ln-image="" class="lazy visible" style="background-image:url('https://d2dii1yqrc4zf3.cloudfront.net/lottofy/2022/ed760b8e41f7d18725acedb79b72a0740b79355c2813b296c444485f8c9652fa.jpg')"></div> <p data-ln-title=""><a href="https://www.lottofy.com/en/blog/an-indcoumentado-fights-to-collect-his-lottery-prize-0482/">An indcoumented man fights to collect his lottery prize</a></p> <p data-ln-subtitle="">An Algerian won 250,000 euros in a lottery and due to his illegal status, he cannot collect his prize.</p> </div> <ul data-ln-actions=""> <li><a href="https://www.lottofy.com/en/blog/an-indcoumentado-fights-to-collect-his-lottery-prize-0482/" class="button">Read</a></li> </ul> </div> </li> <li class="column column-block"> <div> <div data-equalizer-watch="" style="height: 277px;"> <div data-ln-image="" class="lazy visible" style="background-image:url('https://d2dii1yqrc4zf3.cloudfront.net/lottofy/2022/bea567a80dec52c77251d014c81d492ebef87e86293898123ced6da775cd89b6.jpg')"></div> <p data-ln-title=""><a href="https://www.lottofy.com/en/blog/the-adoptive-mother-who-won-the-megamillions-jackpot-and-started-her-own-film-production-company-0478/">The adoptive mother who won the MegaMillions jackpot and started her own film production company</a></p> <p data-ln-subtitle="">Cynthia Stafford, 53, won a hefty $112 million in California's Mega Millions jackpot in 2007.</p> </div> <ul data-ln-actions=""> <li><a href="https://www.lottofy.com/en/blog/the-adoptive-mother-who-won-the-megamillions-jackpot-and-started-her-own-film-production-company-0478/" class="button">Read</a></li> </ul> </div> </li> <li class="column column-block"> <div> <div data-equalizer-watch="" style="height: 277px;"> <div data-ln-image="" class="lazy visible" style="background-image:url('https://d2dii1yqrc4zf3.cloudfront.net/lottofy/2022/b046db8d410f4bebfd7f2118d9cda88aae46bf059865cb2432be448b48572ec0.jpg')"></div> <p data-ln-title=""><a href="https://www.lottofy.com/en/blog/powerball-246-million--the-largest-prize-in-2022-0464/">Powerball: $277million, the largest prize in 2022</a></p> <p data-ln-subtitle="">April started more power than ever, with no winners this week, the Powerball jackpot reached €246 million.</p> </div> <ul data-ln-actions=""> <li><a href="https://www.lottofy.com/en/blog/powerball-246-million--the-largest-prize-in-2022-0464/" class="button">Read</a></li> </ul> </div> </li> </ul> <ul data-ln-actions=""> <li><a href="https://www.lottofy.com/en/blog/" class="button">View more stories</a></li> </ul> </div> </div> </div> </div> <script>
+
+	bamQueue.addToQueue(function(){
+
+		var timerOptions = {
+			strings: {
+				days:"d",
+				hours:"h",
+				minutes:"m",
+				seconds:"s"
+			}
+		}
+		$('[data-timeRemaining]').each(function(){
+			var valueInSeconds = $(this).attr("data-timeRemaining")
+			setCountDown(valueInSeconds,$(this),timerOptions)
+		})
+
+	})
+
+</script> </div> <footer class="hide-for-print "> <div id="sidebarMenus" class="is-active"> <button type="button" data-open="feedback" id="feedbackBt" class="icon-common-star-full"><span data-bttext="">Comment</span></button> <button type="button" id="chatBt" class="is-visible"><i class="icon-common-bubble2"></i><span data-bttext="">Chat</span></button> </div> <div class="row small-collapse medium-uncollapse"> <div class="column medium-3"> <ul class="core_strong" id="footerMenu"> <li><a href="https://www.lottofy.com/en/about/">ABOUT US</a></li> <li><a href="https://www.lottofy.com/en/blog/">BLOG</a></li> <li><a href="https://www.lottofy.com/en/prizes/">PRIZES AND PAYMENTS</a></li> <li><a href="https://www.lottofy.com/en/privacy/">PRIVACY</a></li> <li><a href="https://www.lottofy.com/en/tos/">TERMS AND CONDITIONS</a></li> <li><a href="https://www.lottofy.com/en/faq/">HELP</a></li> <li><a href="https://www.lottofy.com/en/map/">SITEMAP</a></li> <li><a href="https://www.lottofy.com/en/cookies/">COOKIES</a></li> <li><a href="https://www.lottofy.com/en/responsible-gaming/">RESPONSIBLE GAME</a></li> <li><a href="https://www.clobetaffiliates.com/" target="_blank">AFFILIATES</a></li> <li><a href="https://www.lottofy.com/en/helpdesk/">CONTACT US</a></li> </ul> </div> <div class="column medium-6" data-ingamedocs=""> <p data-title="">Need <strong>help</strong>?</p> <div data-ingamesupport=""> <div class="row collapse"> <div class="column small-2 medium-1 text-center"> <i class="icon-slim-phone2"></i> </div> <div class="column small-10 medium-6 text-left core_spaceBThin"> <p><strong><a href="tel:+35627782748"><small>(+356)</small> 27782748</a></strong></p> <p><small>Monday-Friday 9.00-15.00 | 16.00-20.30<br>Saturday 10.30-19.30</small></p> </div> <div class="column small-10 medium-5 text-left medium-text-center"> </div> </div> <div class="row collapse"> <div class="column small-2 medium-1 text-center"> <i class="icon-slim-chat-3"></i> </div> <div class="column small-10 medium-11 text-left"> <p><strong>Chat: </strong> <button data-chatstatus="">View</button></p><p><small>(available Monday-Friday 9.00-15.00 | 16.00-20.30<br>Saturday 10.30-19.30)</small></p> </div> </div> <div class="row collapse"> <div class="column small-2 medium-1 text-center"> <i class="icon-slim-mail"></i> </div> <div class="column small-10 medium-11 text-left"> <p>support [at] lottofy.com</p> </div> </div> </div> <div id="footerActions"> <div id="lang"> <p><strong>Lottofy</strong> in your language</p> <button data-toggle="menu-lang" data-alignment="left" type="button" aria-controls="menu-lang" data-is-focus="false" data-yeti-box="menu-lang" aria-haspopup="true" aria-expanded="false"><img loading="lazy" class="flag" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png" alt="gb"> <strong>EN</strong> | USD
+						</button> </div> <div id="social"> <p><strong>Follow us</strong> in social networks</p> <ul class="core_inline-list"> <li><a href="https://twitter.com/lottofycom" class="icon-common-social-twitter" target="_blank" rel="noopener" title="Go to the Twitter account" aria-label="Go to the Twitter account"></a></li> <li><a href="https://www.facebook.com/lottofycom/" class="icon-common-social-facebook" target="_blank" rel="noopener" title="Go to the Facebook account" aria-label="Go to the Facebook account"></a></li> <li><a href="https://www.instagram.com/lottofy/" class="icon-common-instagram" target="_blank" rel="noopener" title="Go to Instagram account" aria-label="Go to Instagram account"></a></li> </ul> </div> </div> </div> <div class="column medium-3 text-center"> <div id="footerTrust"> <div class="footerPilot"> <a href="https://www.trustpilot.com/review/lottofy.com?languages=all&amp;stars=4&amp;stars=5" target="_blank"><img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/trustpilotlogo.png" alt="TrustPilot"></a> </div> <div class="footerCredit"> <img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/1.png" alt="Visa"><img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/2.png" alt="Master Card"><img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/10.png" alt="Dinner's Club"><img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/14.png" alt="Discover"><img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/12.png" alt="Skrill"><img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/25.png" alt="Neteller"><img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/lottofy/art/cards/21.png" alt="Direct Debit"><img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/cards/sofort.png" alt="Klarna"><img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/cards/interac.png?update=20220606" alt="Interac"> </div> <hr class="core_dotted"> <div> <div class="text-center" id="footerApps">
+						Download the <strong>APP</strong> on your smartphone:
+						<div class=" core_spaceTHalf"> <a href="https://apps.apple.com/mt/app/lottofy/id1541621788" target="_blank"><img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/common/social/appapple.svg" alt="Lottery APP for iPhone and iPad"></a> <a href="https://www.lottofy.com/en/app/android/"><img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/common/social/appandroid.svg" alt="Lottery APP for Android"></a> </div> </div> </div> </div> </div> </div> <hr> <div class="row core_vAlign-for-medium core_spaceT"> <div class="column medium-9 core_spaceB" id="footerLegal"> <p class="text-center medium-text-left"><i class="icon-brands-lottofy"></i> <strong>© <a href="https://www.clobet.com" target="_blank">Clobet Limited</a> 2022</strong> | V0.2069CA185</p> <p>Clobet Limited is a Company of the European Community based in Malta, registered address St. John Street, 89 VLT1165 - Valletta - Malta, registration number C90546, and operating at lottofy.com. Clobet Limited is regulated and licensed by the Malta Gaming Authority, with license number MGA/B2C/762/2019, issued on 02/10/2020.</p> <p class="icon-common-legal_age18"> You must be 18 years old or over to play or claim a prize.</p> <p>Gambling can be addictive. Please, play responsibly.</p> </div> <div class="column medium-3 text-center" id="footerEntities"> <a href="https://authorisation.mga.org.mt/verification.aspx?lang=EN&amp;company=3e566cfe-4b05-40ee-a697-1ba36404e0ef&amp;details=1" target="_blank"><img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/mgalogo.png" alt="MGA"></a> <a href="https://www.begambleaware.org/" target="_blank"><img loading="lazy" src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/gambleaware.png" alt="BeGambleAwareleaware"></a> </div> </div>  </footer> </div> <div id="fb-root"></div> </div> <div class="reveal-overlay"><div data-reveal-source="login" id="loginModal" class="reveal small" data-reveal="" data-close-on-click="false"></div></div> <div class="reveal-overlay"><div data-reveal-source="subscribe" id="subscribeModal" class="reveal small core_paddingZero" data-reveal=""></div></div> <div class="reveal-overlay"><div data-reveal-source="help" id="mainHelp" class="reveal" data-reveal=""></div></div> <div class="reveal-overlay"><div data-reveal-source="profile" id="profileModal" class="reveal" data-reveal=""></div></div> <div class="reveal-overlay"><div data-reveal-source="browserAlert" id="browserAlert" class="reveal" data-reveal=""></div></div> <div class="reveal-overlay"><div data-reveal-source="sessionExpired" id="sessionExpired" class="reveal" data-reveal="" data-close-on-click="false" data-close-on-esc="false"></div></div> <div class="reveal-overlay"><div data-reveal-source="favStatus" id="favStatus" class="reveal" data-reveal=""></div></div> <div class="reveal-overlay"><div data-reveal-source="unsupported" id="unsupportedModal" class="reveal" data-reveal="" data-close-on-esc="false" data-close-on-click="false"></div></div> <div class="reveal-overlay"><div id="navMenuGameMode" class="reveal" data-reveal="" data-v-offset="0"> <div class="core_panel core_noPadding core_spaceBzero"> <div class="core_panel core_halfThin text-center" data-modal-title=""> <button class="white right icon-slim-times-outline core_txtSize_2" data-core_reveal-close="" style="margin-right:0.2rem;position: absolute;right:0px;top:0.2rem" type="button"></button> <div class="clearfix"></div> </div> <ul data-gamemodecontainer=""></ul> </div> </div></div> <div class="reveal-overlay"><div id="feedback" class="reveal" data-reveal="" data-reveal-source="feedback" aria-hidden="true" role="dialog" data-close-on-click="false" data-reveal-params="{ &quot;callback&quot;:&quot;customLabelEvents()&quot;}"></div></div> <div class="reveal-overlay"><div id="closeSession" class="reveal" data-reveal="" data-reveal-source="closeSession" aria-hidden="true" role="dialog" data-close-on-click="false"></div></div> <div class="reveal-overlay"><div id="helpdesk" class="reveal" data-reveal="" data-reveal-source="helpdesk" aria-hidden="true" role="dialog" data-close-on-click="false"></div></div> <script>
+
+
+		bamQueue.addToQueue(function(){
+			if(!getCookie("timezone")) {
+				var tz = new Date().getTimezoneOffset();
+				var now = new Date();
+				var time = now.getTime();
+				time += 3600 * 1000;
+				now.setTime(time);
+				document.cookie = 'timezone=' + (tz/60) + '; expires=' + now.toUTCString() + '; path=/;domain=.'+getDomainName(window.location.hostname);
+				parseTimezone(tz);
+			}
+
+			$('#navMenuGameMode[data-reveal]').on('closeme.zf.reveal',function(){
+				var gameType=$(this).attr('data-gameType');
+									var optionseuromillones={
+						"modoIndividual":{
+											"caption":"Play <strong>EUROMILLIONS</strong>",
+											"url":"https://www.lottofy.com/en/euromillions/play/",
+											"icon":"icon-games-single",
+										}
+						,"modoFondo":	{
+											"caption":"Euromillions <strong>FUND<\/strong>",
+											"url":"https://www.lottofy.com/en/euromillions/fund/",
+											"icon":"icon-games-fondo",
+											"extraCaption":"<small>(<strong>40</strong> bets)</small>"
+										}
+												,"modoClub":		{
+												"caption":"Euromillonarios <strong>SYNDICATE<\/strong>",
+												"url":"https://www.lottofy.com/en/euromillions/club/",
+												"icon":"icon-games-club",
+												"extraCaption":"<small>(80 bets)</small>"
+											}
+																								}
+					if(gameType=="euromillones"){
+						$('[data-gameModeContainer]').html(customizeGamesNav(optionseuromillones));
+					}
+									var optionspowerball={
+						"modoIndividual":{
+											"caption":"Play <strong>POWERBALL</strong>",
+											"url":"https://www.lottofy.com/en/powerball/play/",
+											"icon":"icon-games-single",
+										}
+						,"modoFondo":	{
+											"caption":"Powerball <strong>FUND<\/strong>",
+											"url":"https://www.lottofy.com/en/powerball/fund/",
+											"icon":"icon-games-fondo",
+											"extraCaption":"<small>(<strong>2</strong> bets)</small>"
+										}
+												,"modoClub":		{
+												"caption":"Powerball <strong>SYNDICATE<\/strong>",
+												"url":"https://www.lottofy.com/en/powerball/club/",
+												"icon":"icon-games-club",
+												"extraCaption":"<small>(120 bets)</small>"
+											}
+																								}
+					if(gameType=="powerball"){
+						$('[data-gameModeContainer]').html(customizeGamesNav(optionspowerball));
+					}
+									var optionsmegamillions={
+						"modoIndividual":{
+											"caption":"Play <strong>MEGAMILLIONS</strong>",
+											"url":"https://www.lottofy.com/en/megamillions/play/",
+											"icon":"icon-games-single",
+										}
+						,"modoFondo":	{
+											"caption":"Megamillions <strong>FUND<\/strong>",
+											"url":"https://www.lottofy.com/en/megamillions/fund/",
+											"icon":"icon-games-fondo",
+											"extraCaption":"<small>(<strong>5</strong> bets)</small>"
+										}
+												,"modoClub":		{
+												"caption":"Megamillions <strong>SYNDICATE<\/strong>",
+												"url":"https://www.lottofy.com/en/megamillions/club/",
+												"icon":"icon-games-club",
+												"extraCaption":"<small>(120 bets)</small>"
+											}
+																								}
+					if(gameType=="megamillions"){
+						$('[data-gameModeContainer]').html(customizeGamesNav(optionsmegamillions));
+					}
+									var optionssuperenalotto={
+						"modoIndividual":{
+											"caption":"Play <strong>SUPERENALOTTO</strong>",
+											"url":"https://www.lottofy.com/en/superenalotto/play/",
+											"icon":"icon-games-single",
+										}
+						,"modoFondo":	{
+											"caption":"Superenalotto <strong>FUND<\/strong>",
+											"url":"https://www.lottofy.com/en/superenalotto/fund/",
+											"icon":"icon-games-fondo",
+											"extraCaption":"<small>(<strong>28</strong> bets)</small>"
+										}
+												,"modoClub":		{
+												"caption":"Superenalotto <strong>SYNDICATE<\/strong>",
+												"url":"https://www.lottofy.com/en/superenalotto/club/",
+												"icon":"icon-games-club",
+												"extraCaption":"<small>(200 bets)</small>"
+											}
+																								}
+					if(gameType=="superenalotto"){
+						$('[data-gameModeContainer]').html(customizeGamesNav(optionssuperenalotto));
+					}
+									var optionsprimitiva={
+						"modoIndividual":{
+											"caption":"Play <strong>LA PRIMITIVA</strong>",
+											"url":"https://www.lottofy.com/en/primitiva/play/",
+											"icon":"icon-games-single",
+										}
+						,"modoFondo":	{
+											"caption":"La Primitiva <strong>FUND<\/strong>",
+											"url":"https://www.lottofy.com/en/primitiva/fund/",
+											"icon":"icon-games-fondo",
+											"extraCaption":"<small>(<strong>23</strong> bets)</small>"
+										}
+												,"modoClub":		{
+												"caption":"PrimiClub <strong>SYNDICATE<\/strong>",
+												"url":"https://www.lottofy.com/en/primitiva/club/",
+												"icon":"icon-games-club",
+												"extraCaption":"<small>(150 bets)</small>"
+											}
+																								}
+					if(gameType=="primitiva"){
+						$('[data-gameModeContainer]').html(customizeGamesNav(optionsprimitiva));
+					}
+									var optionslotto6aus49={
+						"modoIndividual":{
+											"caption":"Play <strong>LOTTO6AUS49</strong>",
+											"url":"https://www.lottofy.com/en/lotto6aus49/play/",
+											"icon":"icon-games-single",
+										}
+						,"modoFondo":	{
+											"caption":"Lotto6aus49 <strong>FUND<\/strong>",
+											"url":"https://www.lottofy.com/en/lotto6aus49/fund/",
+											"icon":"icon-games-fondo",
+											"extraCaption":"<small>(<strong>2</strong> bets)</small>"
+										}
+												,"modoClub":		{
+												"caption":"Lotto6aus49 <strong>SYNDICATE<\/strong>",
+												"url":"https://www.lottofy.com/en/lotto6aus49/club/",
+												"icon":"icon-games-club",
+												"extraCaption":"<small>(150 bets)</small>"
+											}
+																								}
+					if(gameType=="lotto6aus49"){
+						$('[data-gameModeContainer]').html(customizeGamesNav(optionslotto6aus49));
+					}
+									var optionseurojackpot={
+						"modoIndividual":{
+											"caption":"Play <strong>EUROJACKPOT</strong>",
+											"url":"https://www.lottofy.com/en/eurojackpot/play/",
+											"icon":"icon-games-single",
+										}
+						,"modoFondo":	{
+											"caption":"Eurojackpot <strong>FUND<\/strong>",
+											"url":"https://www.lottofy.com/en/eurojackpot/fund/",
+											"icon":"icon-games-fondo",
+											"extraCaption":"<small>(<strong>10</strong> bets)</small>"
+										}
+												,"modoClub":		{
+												"caption":"Eurojackpot <strong>SYNDICATE<\/strong>",
+												"url":"https://www.lottofy.com/en/eurojackpot/club/",
+												"icon":"icon-games-club",
+												"extraCaption":"<small>(100 bets)</small>"
+											}
+																								}
+					if(gameType=="eurojackpot"){
+						$('[data-gameModeContainer]').html(customizeGamesNav(optionseurojackpot));
+					}
+									var optionsquiniela={
+						"modoIndividual":{
+											"caption":"Play <strong>QUINIELA</strong>",
+											"url":"https://www.lottofy.com/en/quiniela/play/",
+											"icon":"icon-games-single",
+										}
+						,"modoFondo":	{
+											"caption":"Quiniela <strong>FUND<\/strong>",
+											"url":"https://www.lottofy.com/en/quiniela/fund/",
+											"icon":"icon-games-fondo",
+											"extraCaption":"<small>(<strong>70</strong> bets)</small>"
+										}
+												,"modoClub":		{
+												"caption":"Quinieleros <strong>SYNDICATE<\/strong>",
+												"url":"https://www.lottofy.com/en/quiniela/club/",
+												"icon":"icon-games-club",
+												"extraCaption":""
+											}
+																								}
+					if(gameType=="quiniela"){
+						$('[data-gameModeContainer]').html(customizeGamesNav(optionsquiniela));
+					}
+									var optionsbonoloto={
+						"modoIndividual":{
+											"caption":"Play <strong>BONOLOTO</strong>",
+											"url":"https://www.lottofy.com/en/bonoloto/play/",
+											"icon":"icon-games-single",
+										}
+						,"modoFondo":	{
+											"caption":"Bonoloto <strong>FUND<\/strong>",
+											"url":"https://www.lottofy.com/en/bonoloto/fund/",
+											"icon":"icon-games-fondo",
+											"extraCaption":"<small>(<strong>31</strong> bets)</small>"
+										}
+																	}
+					if(gameType=="bonoloto"){
+						$('[data-gameModeContainer]').html(customizeGamesNav(optionsbonoloto));
+					}
+									var optionselgordo={
+						"modoIndividual":{
+											"caption":"Play <strong>EL GORDO</strong>",
+											"url":"https://www.lottofy.com/en/elgordo/play/",
+											"icon":"icon-games-single",
+										}
+						,"modoFondo":	{
+											"caption":"El Gordo <strong>FUND<\/strong>",
+											"url":"https://www.lottofy.com/en/elgordo/fund/",
+											"icon":"icon-games-fondo",
+											"extraCaption":"<small>(<strong>15</strong> bets)</small>"
+										}
+												,"modoClub":		{
+												"caption":"Gordacos <strong>SYNDICATE<\/strong>",
+												"url":"https://www.lottofy.com/en/elgordo/club/",
+												"icon":"icon-games-club",
+												"extraCaption":"<small>(70 bets)</small>"
+											}
+																								}
+					if(gameType=="elgordo"){
+						$('[data-gameModeContainer]').html(customizeGamesNav(optionselgordo));
+					}
+									var optionsloterianacional={
+						"modoIndividual":{
+											"caption":"Play <strong>NATIONAL LOTTERY</strong>",
+											"url":"https://www.lottofy.com/en/nationallottery/play/",
+											"icon":"icon-games-single",
+										}
+						,"modoFondo":	{
+											"caption":"National Lottery <strong>FUND<\/strong>",
+											"url":"https://www.lottofy.com/en/nationallottery/fund/",
+											"icon":"icon-games-fondo",
+											"extraCaption":"<small>(<strong>0</strong> tenths)</small>"
+										}
+																	}
+					if(gameType=="loterianacional"){
+						$('[data-gameModeContainer]').html(customizeGamesNav(optionsloterianacional));
+					}
+									var optionsmegasena={
+						"modoIndividual":{
+											"caption":"Play <strong>MEGA-SENA</strong>",
+											"url":"https://www.lottofy.com/en/megasena/play/",
+											"icon":"icon-games-single",
+										}
+						,"modoFondo":	{
+											"caption":"Mega-Sena <strong>FUND<\/strong>",
+											"url":"https://www.lottofy.com/en/megasena/fund/",
+											"icon":"icon-games-fondo",
+											"extraCaption":"<small>(<strong>2</strong> bets)</small>"
+										}
+												,"modoClub":		{
+												"caption":"Megasena <strong>SYNDICATE<\/strong>",
+												"url":"https://www.lottofy.com/en/megasena/club/",
+												"icon":"icon-games-club",
+												"extraCaption":"<small>(280 bets)</small>"
+											}
+																								}
+					if(gameType=="megasena"){
+						$('[data-gameModeContainer]').html(customizeGamesNav(optionsmegasena));
+					}
+				
+			})
+
+		})
+
+		zopim = function() {
+			
+$zopim.livechat.setLanguage('en');
+$zopim.livechat.setGreetings({
+    "online":  ["Click here to chat", "Leave a comment or a question, and one of our agents will attend you shortly"],
+    "offline": ["Leave a comment or a question, and one of our agents will attend you shortly", "It is not possible to chat at this time. Leave a message with your comment or question, and we will respond during office hours (M-F 9.00h - 18.30h)"],
+    "away":    ["Click here to chat", "All agents are busy: leave a comment or a question and we will try to assist you"]
+  });
+$zopim.livechat.bubble.setTitle('Any question?');
+$zopim.livechat.bubble.setText('We are here!');
+$zopim.livechat.button.setOffsetHorizontalMobile(300000);
+$zopim.livechat.theme.setColor('#008562');
+$zopim.livechat.theme.reload();
+
+$zopim.livechat.hideAll()
+
+$zopim.livechat.setOnStatus(function(s){
+	if(s=='online'){
+		$zopim.state="online"
+		$('#chatBt').removeAttr('data-offline').attr('data-online',"")
+		$('[data-chatstatus]').html("<button onclick='$zopim.livechat.window.toggle()' class='white'><strong>Available</strong></button>");
+
+	}else{
+		$zopim.state="offline"
+		$zopim.livechat.hideAll()
+		$('#chatBt').removeAttr('data-online').attr('data-offline',"")
+		$('[data-chatstatus]').html("Unavailable");
+	}
+});
+
+if($zopim.livechat.isChatting()){
+	$('#chatBt').addClass('is-active');
+}
+
+$zopim.livechat.setOnUnreadMsgs(function(s){
+	if(s>0){
+		$('#chatBt').addClass('has-messages');
+		$('#chatBt [data-btText]').html(s)
+		$zopim.livechat.window.show()
+	}
+})
+$zopim.livechat.setOnChatStart(function(){
+	$('#chatBt').addClass('is-active');
+})
+$zopim.livechat.setOnChatEnd(function(){
+	$('#chatBt').removeClass('has-messages is-active');
+	$('#chatBt [data-btText]').html('Chat');
+})		};
+
+		bamQueue.addToQueue(function(){
+			$('#chatBt').add('[data-chatstatus]').on('click',function(){
+				var options={
+								strings: {
+									chat: "Chat"
+								}
+							}
+				invoqueChat("182gtfcJannWUkOaaZPtliY77dTkVnWR",options);
+			});
+
+											})
+
+	</script> <script>
+		if ('serviceWorker' in navigator) { navigator.serviceWorker.register('https://www.lottofy.com/swoffline.js'); }
+	</script> <script>
+					
+
+		function launchProjectInitiator(scriptsLoaded,numsOfExpectedScripts){
+			enableLoaderWatch();
+			$(document).foundation();
+			mainStringifiedLaunches({
+				strings:{
+					remaining: "Show %1 remaning"
+				}
+			});
+			var currencySchemes = {"EUR":{"simbolo":"\u20ac","modo":"2"},"USD":{"simbolo":"$","modo":"1"},"BRL":{"simbolo":"R$","modo":"1"},"CNY":{"simbolo":"\u00a5","modo":"1"},"INR":{"simbolo":"\u20b9","modo":"1"},"CAD":{"simbolo":"C$","modo":"1"},"MXN":{"simbolo":"M$","modo":"1"},"XOF":{"simbolo":"CFA","modo":"1"},"CLP":{"simbolo":"CLP$","modo":"1"},"COP":{"simbolo":"COP$","modo":"1"},"NOK":{"simbolo":"kr","modo":"1"},"PEN":{"simbolo":"S\/","modo":"1"},"PHP":{"simbolo":"\u20b1","modo":"1"},"ZAR":{"simbolo":"R","modo":"1"},"CHF":{"simbolo":"CHf","modo":"1"},"GBP":{"simbolo":"\u00a3","modo":"1"},"NGN":{"simbolo":"\u20a6","modo":"1"}};
+			global_currency = new systemCurrency("USD",currencySchemes,{ 
+				strings: {
+					"millones": "Millions"
+				}
+			});						
+			bamQueue.run();
+			global_core_reveal=new core_reveal();
+
+			customModals();
+												if((GetIEVersion()>0 && GetIEVersion()<=11) && getCookie("outdatedBrowserAgreement") == ""){
+				bamQueue.waitForExistance("core_reveal",function(){
+					$('#browserAlert').core_reveal("open");
+				});
+			}
+								}
+
+
+</script>  <div class="reveal-overlay"><div class="reveal" data-reveal="" data-reveal-source="callme" id="callme"></div></div><iframe src="chrome-extension://iidlbfbakcgbmmbcpfbhmiknkdacikdm/audio-devices.html" allow="microphone" style="display: none;"></iframe><input type="file" id="" name="file" style="display: none;"><div data-v-5f0b9ba1="" class="container_selected_area" style="cursor: url(&quot;chrome-extension://iidlbfbakcgbmmbcpfbhmiknkdacikdm/assets/images/cursor-imagen.svg&quot;) 9 9, crosshair;"><div data-v-5f0b9ba1="" class="area"></div></div></body></html>
