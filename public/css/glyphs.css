@@ -1,0 +1,490 @@
+/*======================================================================
+//Module File: core_cg_games.css
+//======================================================================*/
+@font-face {
+    font-family: cg_games;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://cdn.inicium.com/pro/common/css/glyphs/cg_games.eot?3ueol0&update=20210604);
+    src: url(https://cdn.inicium.com/pro/common/css/glyphs/cg_games.eot?3ueol0&update=20210604#iefix) format("embedded-opentype"), url(https://cdn.inicium.com/pro/common/css/glyphs/cg_games.ttf?3ueol0&update=20210604) format("truetype"),
+        url(https://cdn.inicium.com/pro/common/css/glyphs/cg_games.woff?3ueol0&update=20210604) format("woff"), url(https://cdn.inicium.com/pro/common/css/glyphs/cg_games.svg?3ueol0&update=20210604#cg_games) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+[class*=" bamIcon-games-"].after:after,
+[class*=" bamIcon-games-"]:not(.after):before,
+[class*=" icon-games-"].after:after,
+[class*=" icon-games-"]:not(.after):before,
+[class^="bamIcon-games-"].after:after,
+[class^="bamIcon-games-"]:not(.after):before,
+[class^="icon-games-"].after:after,
+[class^="icon-games-"]:not(.after):before {
+    font-family: cg_games !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class*=" bamIcon-games-"].after:after,
+[class*=" bamIcon-games-"]:not(.after):before,
+[class*=" icon-games-"].after:after,
+[class*=" icon-games-"]:not(.after):before,
+[class^="bamIcon-games-"].after:after,
+[class^="bamIcon-games-"]:not(.after):before,
+[class^="icon-games-"].after:after,
+[class^="icon-games-"]:not(.after):before {
+    font-family: cg_games !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class*=" icon-"][class*="icon-games"],
+[class^="icon-"][class*="icon-games"] {
+    font-family: inherit !important;
+}
+
+.bamIcon-games-bonoloto.after:after,
+.bamIcon-games-bonoloto:not(.after):before,
+.icon-games-bonoloto.after:after,
+.icon-games-bonoloto:not(.after):before {
+    content: "\100";
+}
+
+.bamIcon-games-primitiva.after:after,
+.bamIcon-games-primitiva:not(.after):before,
+.icon-games-primitiva.after:after,
+.icon-games-primitiva:not(.after):before {
+    content: "\101";
+}
+
+.bamIcon-games-elgordo.after:after,
+.bamIcon-games-elgordo:not(.after):before,
+.icon-games-elgordo.after:after,
+.icon-games-elgordo:not(.after):before {
+    content: "\102";
+}
+
+.bamIcon-games-euromillions.after:after,
+.bamIcon-games-euromillions:not(.after):before,
+.bamIcon-games-euromillones.after:after,
+.bamIcon-games-euromillones:not(.after):before,
+.icon-games-euromillions.after:after,
+.icon-games-euromillions:not(.after):before,
+.icon-games-euromillones.after:after,
+.icon-games-euromillones:not(.after):before {
+    content: "\103";
+}
+
+.bamIcon-games-quiniela.after:after,
+.bamIcon-games-quiniela:not(.after):before,
+.icon-games-quiniela.after:after,
+.icon-games-quiniela:not(.after):before {
+    content: "\104";
+}
+
+.bamIcon-games-quinigol.after:after,
+.bamIcon-games-quinigol:not(.after):before,
+.icon-games-quinigol.after:after,
+.icon-games-quinigol:not(.after):before {
+    content: "\105";
+}
+
+.bamIcon-games-lototurf.after:after,
+.bamIcon-games-lototurf:not(.after):before,
+.icon-games-lototurf.after:after,
+.icon-games-lototurf:not(.after):before {
+    content: "\106";
+}
+
+.bamIcon-games-quintupleplus.after:after,
+.bamIcon-games-quintupleplus:not(.after):before,
+.icon-games-quintupleplus.after:after,
+.icon-games-quintupleplus:not(.after):before {
+    content: "\107";
+}
+
+.bamIcon-games-7-39.after:after,
+.bamIcon-games-7-39:not(.after):before,
+.bamIcon-games-siete.after:after,
+.bamIcon-games-siete39.after:after,
+.bamIcon-games-siete39:not(.after):before,
+.bamIcon-games-siete:not(.after):before,
+.icon-games-7-39.after:after,
+.icon-games-7-39:not(.after):before,
+.icon-games-siete.after:after,
+.icon-games-siete39.after:after,
+.icon-games-siete39:not(.after):before,
+.icon-games-siete:not(.after):before {
+    content: "\108";
+}
+
+.bamIcon-games-loteria-nacional.after:after,
+.bamIcon-games-loteria-nacional:not(.after):before,
+.bamIcon-games-loteria.after:after,
+.bamIcon-games-loteria:not(.after):before,
+.bamIcon-games-loterianacional.after:after,
+.bamIcon-games-loterianacional:not(.after):before,
+.icon-games-loteria-nacional.after:after,
+.icon-games-loteria-nacional:not(.after):before,
+.icon-games-loteria.after:after,
+.icon-games-loteria:not(.after):before,
+.icon-games-loterianacional.after:after,
+.icon-games-loterianacional:not(.after):before {
+    content: "\109";
+}
+
+.bamIcon-games-once.after:after,
+.bamIcon-games-once:not(.after):before,
+.icon-games-once.after:after,
+.icon-games-once:not(.after):before {
+    content: "\10a";
+}
+
+.bamIcon-games-eurojackpot.after:after,
+.bamIcon-games-eurojackpot:not(.after):before,
+.icon-games-eurojackpot.after:after,
+.icon-games-eurojackpot:not(.after):before {
+    content: "\10b";
+}
+
+.bamIcon-games-superonce.after:after,
+.bamIcon-games-superonce:not(.after):before,
+.icon-games-superonce.after:after,
+.icon-games-superonce:not(.after):before {
+    content: "\10c";
+}
+
+.bamIcon-games-loteria-de-navidad.after:after,
+.bamIcon-games-loteria-de-navidad:not(.after):before,
+.bamIcon-games-loteria-navidad.after:after,
+.bamIcon-games-loteria-navidad:not(.after):before,
+.bamIcon-games-loteriadenavidad.after:after,
+.bamIcon-games-loteriadenavidad:not(.after):before,
+.icon-games-loteria-de-navidad.after:after,
+.icon-games-loteria-de-navidad:not(.after):before,
+.icon-games-loteria-navidad.after:after,
+.icon-games-loteria-navidad:not(.after):before,
+.icon-games-loteriadenavidad.after:after,
+.icon-games-loteriadenavidad:not(.after):before {
+    content: "\10d";
+}
+
+.bamIcon-games-loteria-nino.after:after,
+.bamIcon-games-loteria-nino:not(.after):before,
+.bamIcon-games-loterianino.after:after,
+.bamIcon-games-loterianino:not(.after):before,
+.bamIcon-games-sorteo-el-niÃ±o.after:after,
+.bamIcon-games-sorteo-el-niÃ±o:not(.after):before,
+.bamIcon-games-sorteoelniÃ±o.after:after,
+.bamIcon-games-sorteoelniÃ±o:not(.after):before,
+.icon-games-loteria-nino.after:after,
+.icon-games-loteria-nino:not(.after):before,
+.icon-games-loterianino.after:after,
+.icon-games-loterianino:not(.after):before,
+.icon-games-sorteo-el-niÃ±o.after:after,
+.icon-games-sorteo-el-niÃ±o:not(.after):before,
+.icon-games-sorteoelniÃ±o.after:after,
+.icon-games-sorteoelniÃ±o:not(.after):before {
+    content: "\10e";
+}
+
+.bamIcon-games-logo.after:after,
+.bamIcon-games-logo:not(.after):before,
+.icon-games-logo.after:after,
+.icon-games-logo:not(.after):before {
+    content: "\10f";
+}
+
+.bamIcon-games-sorteo-cruz-roja.after:after,
+.bamIcon-games-sorteo-cruz-roja:not(.after):before,
+.bamIcon-games-sorteocruzroja.after:after,
+.bamIcon-games-sorteocruzroja:not(.after):before,
+.icon-games-sorteo-cruz-roja.after:after,
+.icon-games-sorteo-cruz-roja:not(.after):before,
+.icon-games-sorteocruzroja.after:after,
+.icon-games-sorteocruzroja:not(.after):before {
+    content: "\110";
+}
+
+.bamIcon-games-LottoZahlenLogo.after:after,
+.bamIcon-games-LottoZahlenLogo:not(.after):before,
+.icon-games-LottoZahlenLogo.after:after,
+.icon-games-LottoZahlenLogo:not(.after):before {
+    content: "\111";
+}
+
+.bamIcon-games-glucksspirale:before,
+.bamIcon-games-glucksspirale:not(.after):before,
+.icon-games-glucksspirale:before,
+.icon-games-glucksspirale:not(.after):before {
+    content: "\112";
+}
+
+.bamIcon-games-keno:before,
+.bamIcon-games-keno:not(.after):before,
+.icon-games-keno:before,
+.icon-games-keno:not(.after):before {
+    content: "\113";
+}
+
+.bamIcon-games-lotto-6aus49:before,
+.bamIcon-games-lotto-6aus49:not(.after):before,
+.bamIcon-games-lotto6aus49:before,
+.bamIcon-games-lotto6aus49:not(.after):before,
+.icon-games-lotto6aus49:before,
+.icon-games-lotto6aus49:not(.after):before {
+    content: "\114";
+}
+
+.bamIcon-games-spiel77:before,
+.bamIcon-games-spiel77:not(.after):before,
+.icon-games-spiel77:before,
+.icon-games-spiel77:not(.after):before {
+    content: "\115";
+}
+
+.bamIcon-games-super6:before,
+.bamIcon-games-super6:not(.after):before,
+.icon-games-super6:before,
+.icon-games-super6:not(.after):before {
+    content: "\116";
+}
+
+.bamIcon-games-lotto:before,
+.ibamIconcon-games-lotto:not(.after):before,
+.icon-games-lotto:before,
+.icon-games-lotto:not(.after):before {
+    content: "\117";
+}
+
+.bamIcon-games-thunderball:before,
+.bamIcon-games-thunderball:not(.after):before,
+.icon-games-thunderball:before,
+.icon-games-thunderball:not(.after):before {
+    content: "\118";
+}
+
+.bamIcon-games-set-for-life:before,
+.bamIcon-games-set-for-life:not(.after):before,
+.bamIcon-games-setforlife:before,
+.bamIcon-games-setforlife:not(.after):before,
+.icon-games-setforlife:before,
+.icon-games-setforlife:not(.after):before {
+    content: "\119";
+}
+
+.bamIcon-games-lotto-hotpicks:before,
+.bamIcon-games-lotto-hotpicks:not(.after):before,
+.bamIcon-games-lottohotpicks:before,
+.bamIcon-games-lottohotpicks:not(.after):before,
+.icon-games-lottohotpicks:before,
+.icon-games-lottohotpicks:not(.after):before {
+    content: "\11a";
+}
+
+.bamIcon-games-euromillions-hotpicks:before,
+.bamIcon-games-euromillions-hotpicks:not(.after):before,
+.bamIcon-games-euromillionshotpicks:before,
+.bamIcon-games-euromillionshotpicks:not(.after):before,
+.icon-games-euromillionshotpicks:before,
+.icon-games-euromillionshotpicks:not(.after):before {
+    content: "\11b";
+}
+
+.bamIcon-games-LotteryResultsLogo.after:after,
+.bamIcon-games-LotteryResultsLogo:not(.after):before,
+.icon-games-lotteryResultsLogo.after:after,
+.icon-games-lotteryResultsLogo:not(.after):before {
+    content: "\11c";
+}
+
+.bamIcon-games-powerball.after:after,
+.bamIcon-games-powerball:not(.after):before,
+.icon-games-powerball.after:after,
+.icon-games-powerball:not(.after):before {
+    content: "\11d";
+}
+
+.bamIcon-games-megamillions.after:after,
+.bamIcon-games-megamillions:not(.after):before,
+.icon-games-megamillions.after:after,
+.icon-games-megamillions:not(.after):before {
+    content: "\11e";
+}
+
+.bamIcon-games-superloto.after:after,
+.bamIcon-games-superloto:not(.after):before,
+.icon-games-superloto.after:after,
+.icon-games-superloto:not(.after):before {
+    content: "\11f";
+}
+
+.bamIcon-games-superlotto.after:after,
+.bamIcon-games-superlotto:not(.after):before,
+.icon-games-superlotto.after:after,
+.icon-games-superlotto:not(.after):before {
+    content: "\11f";
+}
+
+.icon-games-fondo.after:after,
+.icon-games-fondo:not(.after):before {
+    content: "\121";
+}
+
+.icon-games-club.after:after,
+.icon-games-club:not(.after):before {
+    content: "\120";
+}
+
+.icon-games-lottery.after:after,
+.icon-games-lottery:not(.after):before {
+    content: "\129";
+}
+
+.icon-games-slots.after:after,
+.icon-games-slots:not(.after):before {
+    content: "\13b";
+}
+
+.icon-games-slotgames.after:after,
+.icon-games-slotgames:not(.after):before {
+    content: "\13a";
+}
+
+.icon-games-progresivos.after:after,
+.icon-games-progresivos:not(.after):before {
+    content: "\13d";
+}
+
+.icon-games-progresivos2.after:after,
+.icon-games-progresivos2:not(.after):before {
+    content: "\13c";
+}
+
+.icon-games-rascas.after:after,
+.icon-games-rascas:not(.after):before {
+    content: "\130";
+}
+
+.icon-games-groups.after:after,
+.icon-games-groups:not(.after):before {
+    content: "\122";
+}
+
+.icon-games-single.after:after,
+.icon-games-single:not(.after):before {
+    content: "\123";
+}
+
+.bamIcon-games-superenalotto1.after:after,
+.bamIcon-games-superenalotto1:not(.after):before,
+.icon-games-superenalotto1.after:after,
+.icon-games-superenalotto1:not(.after):before {
+    content: "\124";
+}
+
+.bamIcon-games-superenalotto.after:after,
+.bamIcon-games-superenalotto:not(.after):before,
+.icon-games-superenalotto.after:after,
+.icon-games-superenalotto:not(.after):before {
+    content: "\127";
+}
+
+.bamIcon-games-mega-sena.after:after,
+.bamIcon-games-mega-sena:not(.after):before,
+.bamIcon-games-megasena.after:after,
+.bamIcon-games-megasena:not(.after):before,
+.icon-games-megasena.after:after,
+.icon-games-megasena:not(.after):before {
+    content: "\125";
+}
+
+.bamIcon-games-elige8.after:after,
+.bamIcon-games-elige8:not(.after):before,
+.icon-games-elige8.after:after,
+.icon-games-elige8:not(.after):before {
+    content: "\128";
+}
+
+.bamIcon-games-megafinde.after:after,
+.bamIcon-games-megafinde:not(.after):before,
+.icon-games-megafinde.after:after,
+.icon-games-megafinde:not(.after):before {
+    content: "\13e";
+}
+
+.bamIcon-games-casino.after:after,
+.bamIcon-games-casino:not(.after):before,
+.bamIcon-games-livecasino.after:after,
+.bamIcon-games-livecasino:not(.after):before,
+.icon-games-casino.after:after,
+.icon-games-casino:not(.after):before,
+.icon-games-livecasino.after:after,
+.icon-games-livecasino:not(.after):before {
+    content: "\13f";
+}
+
+.bamIcon-games-cartas.after:after,
+.bamIcon-games-cartas:not(.after):before,
+.icon-games-cartas.after:after,
+.icon-games-cartas:not(.after):before {
+    content: "\140";
+}
+
+.bamIcon-games-ruleta.after:after,
+.bamIcon-games-ruleta:not(.after):before,
+.icon-games-ruleta.after:after,
+.icon-games-ruleta:not(.after):before {
+    content: "\141";
+}
+
+
+
+/*======================================================================
+//Module File: core_lottofy-iconset.css
+//======================================================================*/
+@font-face {
+    font-family: "lottofy-iconset";
+    src: url("//cdn.inicium.com/pro/common/css/glyphs/lottofy-iconset.eot?jkiufr");
+    src: url("//cdn.inicium.com/pro/common/css/glyphs/lottofy-iconset.eot?jkiufr#iefix") format("embedded-opentype"),
+        url("//cdn.inicium.com/pro/common/css/glyphs/lottofy-iconset.ttf?jkiufr") format("truetype"),
+        url("//cdn.inicium.com/pro/common/css/glyphs/lottofy-iconset.woff?jkiufr") format("woff"),
+        url("//cdn.inicium.com/pro/common/css/glyphs/lottofy-iconset.svg?jkiufr#lottofy-iconset") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+[class^="icon-loto-"].after:after, [class*=" icon-loto-"].after:after, [class^="icon-loto-"]:not(.after):before, [class*=" icon-loto-"]:not(.after):before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "lottofy-iconset" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Lottofy-Logo.after:after, .icon-Lottofy-Logo:not(.after):before,
+.icon-brands-lottofy.after:after, .icon-brands-lottofy:not(.after):before {
+    content: "\21";
+    font-family: "lottofy-iconset" !important;
+}
