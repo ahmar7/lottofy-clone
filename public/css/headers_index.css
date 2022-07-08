@@ -11980,7 +11980,7 @@ body.setFixed .top-subMenu {
     position: fixed;
     top: 0;
     z-index: 10000;
-    height: 3.6rem;
+    height: 4.5rem;
     transition: height 0s linear;
     white-space: normal !important
 }
