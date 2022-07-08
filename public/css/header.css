@@ -565,12 +565,12 @@ h1.core_ellipsis, h2.core_ellipsis, h3.core_ellipsis, h4.core_ellipsis, h5.core_
 .pill {
     border: 1px solid rgba(0, 133, 98, 0.5) !important;
     background-color: rgba(0, 0, 0, 0) !important;
-    color: #008562 !important;
+    color: royalblue !important;
     margin: 2px
 }
 
 .pill.active {
-    background-color: #008562 !important;
+    background-color: royalblue !important;
     color: #fff !important
 }
 
@@ -580,7 +580,7 @@ h1.core_ellipsis, h2.core_ellipsis, h3.core_ellipsis, h4.core_ellipsis, h5.core_
 
 .pill:hover:not(.label) {
     transition: background-color 0.5s ease, color 0.5s ease;
-    background-color: #008562 !important;
+    background-color: royalblue !important;
     color: #fff !important
 }
 
@@ -597,7 +597,7 @@ h1.core_ellipsis, h2.core_ellipsis, h3.core_ellipsis, h4.core_ellipsis, h5.core_
 }
 
 .pill.label {
-    color: #008562 !important
+    color: royalblue !important
 }
 
 .pill.a.label:hover {
@@ -8383,7 +8383,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 }
 
 .tabs-title>a:focus, .tabs-title>a[aria-selected='true'] {
-    background: #008562;
+    background: royalblue;
     color: #fff
 }
 
@@ -9265,7 +9265,7 @@ a.thumbnail image {
 }
 
 .bgColor {
-    color: #008562 !important
+    color: royalblue !important
 }
 
 .disabledColor {
@@ -9399,7 +9399,7 @@ a.thumbnail image {
 }
 
 .bg_bgColor {
-    background-color: #008562 !important;
+    background-color: royalblue !important;
     color: #fff !important
 }
 
@@ -10303,7 +10303,7 @@ td {
 }
 
 .datepicker td.active.day, .datepicker td.active.year {
-    background: #008562 !important;
+    background: royalblue !important;
     color: white !important;
     font-weight: bold
 }
@@ -10324,7 +10324,7 @@ fieldset legend {
 }
 
 .switch.bgColor input:checked+label {
-    background: #008562 !important
+    background: royalblue !important
 }
 
 .switch-paddle::after {
@@ -10423,7 +10423,7 @@ button {
 }
 
 .richTabsMenu li a {
-    background: #008562 !important;
+    background: royalblue !important;
     color: #fff !important
 }
 
@@ -10588,7 +10588,7 @@ tr>*.spacer {
 }
 
 input:checked~.switch-paddle {
-    background-color: #008562 !important
+    background-color: royalblue !important
 }
 
 [data-social] button, [data-social] a {
@@ -10612,7 +10612,7 @@ input:checked~.switch-paddle {
 }
 
 [data-social] [data-shareService="default"] {
-    background-color: #008562
+    background-color: royalblue
 }
 
 .blur {
@@ -10745,7 +10745,7 @@ hr.whiteTrans3 {
     -moz-transition: color 0.3s;
     -o-transition: color 0.3s;
     transition: color 0.3s;
-    color: #008562 !important
+    color: royalblue !important
 }
 
 .top-subMenu li a, .top-subMenu li button {
@@ -11000,14 +11000,14 @@ hr.whiteTrans3 {
 [data-alertsMarquee] button:not([data-close]) {
     border: 1px solid rgba(0, 133, 98, 0.5) !important;
     background-color: rgba(0, 0, 0, 0) !important;
-    color: #008562 !important;
+    color: royalblue !important;
     margin: 2px;
     border-radius: 6px;
     padding: 0.4rem 0.5rem
 }
 
 [data-alertsMarquee] button:not([data-close]).active {
-    background-color: #008562 !important;
+    background-color: royalblue !important;
     color: #fff !important
 }
 
@@ -11017,7 +11017,7 @@ hr.whiteTrans3 {
 
 [data-alertsMarquee] button:not([data-close]):hover:not(.label) {
     transition: background-color 0.5s ease, color 0.5s ease;
-    background-color: #008562 !important;
+    background-color: royalblue !important;
     color: #fff !important
 }
 
@@ -11034,7 +11034,7 @@ hr.whiteTrans3 {
 }
 
 [data-alertsMarquee] button:not([data-close]).label {
-    color: #008562 !important
+    color: royalblue !important
 }
 
 [data-alertsMarquee] button:not([data-close]).a.label:hover {
@@ -11126,7 +11126,7 @@ hr.whiteTrans3 {
 }
 
 .top-menu {
-    background-color: #008562;
+    background-color: royalblue;
     z-index: 1000;
     width: 100%;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -11208,7 +11208,7 @@ hr.whiteTrans3 {
     border-radius: 5px;
     border-radius: 3px;
     background-color: white;
-    color: #008562;
+    color: royalblue;
     font-size: 0.85rem
 }
 
@@ -11310,7 +11310,7 @@ hr.whiteTrans3 {
     width: 100%;
     overflow: hidden;
     margin-top: -0.1rem;
-    border-bottom: 3px solid #008562
+    border-bottom: 3px solid royalblue
 }
 
 .top-menu-gamesNav li>* {
@@ -11651,7 +11651,7 @@ body[data-notopbar] .off-canvas-wrap {
     bottom: 3px;
     width: 100%;
     display: block;
-    background-color: #008562;
+    background-color: royalblue;
     color: white;
     font-weight: bold;
     display: block;
@@ -11887,7 +11887,7 @@ body.setFixed [data-menu-games] [data-date] {
 
 .top-menu_dropdown a:hover, .top-menu_dropdown li.is-active a, .top-menu_dropdown button.is-active {
     transition: background 0.1s linear;
-    background: #008562 !important
+    background: royalblue !important
 }
 
 [data-menu-lang].top-menu_dropdown {
@@ -11924,7 +11924,7 @@ body.setFixed [data-menu-games] [data-date] {
 }
 
 [data-menu-lang] .button {
-    background-color: #008562;
+    background-color: royalblue;
     color: white
 }
 
@@ -11948,7 +11948,7 @@ body.setFixed [data-menu-games] [data-date] {
 #mobileGamesMenu [data-menu-lang] fieldset a.label.is-active, #mobileGamesMenu [data-menu-lang] fieldset button.label.is-active {
     border-color: #006c4f;
     transition: background 0.1s linear;
-    background: #008562 !important;
+    background: royalblue !important;
     color: white !important
 }
 
@@ -11999,7 +11999,7 @@ body.setFixed [data-menu-games] a>span[data-jackpot] {
 
 body.setFixed .top-menu .logo {
     position: fixed;
-    color: #008562;
+    color: royalblue;
     left: 0.5rem;
     z-index: 10001;
     top: 0.3rem;
@@ -12236,7 +12236,7 @@ body.setFixed #cart {
 
 .menus-dropDown li:not([disabled]):hover a {
     transition: background-color 0.3s linear, color 0.1s linear;
-    background-color: #008562;
+    background-color: royalblue;
     color: #fff
 }
 
@@ -12283,7 +12283,7 @@ body[data-app] #notifications.is-active {
 }
 
 #notifications [data-loaderPro] .spinner * {
-    background-color: #008562
+    background-color: royalblue
 }
 
 #notifications button {
@@ -12303,7 +12303,7 @@ body[data-app] #notifications.is-active {
     left: -7px;
     font-size: 0.7rem;
     z-index: 1;
-    color: #008562;
+    color: royalblue;
     line-height: 1.1rem;
     animation-duration: 2s;
     animation-fill-mode: both;
@@ -12483,9 +12483,9 @@ button[data-notifications].hover {
     border-radius: 500px;
     width: 12px !important;
     height: 12px !important;
-    border: 1px solid #008562;
+    border: 1px solid royalblue;
     margin-top: 0px;
-    background-color: #008562
+    background-color: royalblue
 }
 
 #myConfig [data-notifyOptions] .slider, #myConfig [data-notifyOptions] .slider-fill {
@@ -12493,11 +12493,11 @@ button[data-notifications].hover {
 }
 
 #myConfig [data-notifyOptions] .slider-fill {
-    background-color: #008562
+    background-color: royalblue
 }
 
 #myConfig [data-notifyOptions] label.beautified.is-active>span {
-    background-color: #008562 !important;
+    background-color: royalblue !important;
     border-color: #00523c !important
 }
 
@@ -13309,7 +13309,7 @@ button[data-notifications].hover {
     position: absolute;
     right: 2px;
     top: 2px;
-    background-color: #008562 !important
+    background-color: royalblue !important
 }
 
 .top-menu #purchaseSummary #cartSummaryButton {
@@ -13856,9 +13856,9 @@ nav#mobileMenu.is-open {
 
 #mobileGamesMenu li .label {
     border-radius: 5px;
-    border: 1px solid #008562;
+    border: 1px solid royalblue;
     background-color: transparent !important;
-    color: #008562;
+    color: royalblue;
     margin: 2px;
     border-radius: 5px
 }
@@ -13874,7 +13874,7 @@ nav#mobileMenu.is-open {
 
 #mobileGamesMenu li [data-jackpot] {
     font-weight: bold;
-    color: #008562
+    color: royalblue
 }
 
 #mobileGamesMenu li>a, #mobileGamesMenu li>p {
@@ -14043,7 +14043,7 @@ nav#mobileMenu.is-open {
 }
 
 .sectionHeader:not(#miApuestaHeader)[data-gametype="grupo"] {
-    border-color: #008562
+    border-color: royalblue
 }
 
 .sectionHeader:not(#miApuestaHeader)[data-gametype="bonoloto"] {
@@ -14337,7 +14337,7 @@ nav#mobileMenu.is-open {
 }
 
 .beautifiedRadio.check.is-active:before {
-    color: #008562 !important
+    color: royalblue !important
 }
 
 .beautified input, .beautifiedRadio input {
@@ -14369,7 +14369,7 @@ nav#mobileMenu.is-open {
     animation-name: bounceIn;
     -webkit-animation-duration: 0.6s;
     animation-duration: 0.6s;
-    background-color: #008562;
+    background-color: royalblue;
     border-color: #006c4f !important;
     color: white
 }
@@ -14735,7 +14735,7 @@ body#main-mini {
 }
 
 [data-recaptchaDisclaimer] a {
-    color: #008562 !important;
+    color: royalblue !important;
     text-decoration: underline
 }
 
@@ -14803,7 +14803,7 @@ body[data-framed] #sidebarMenus {
 }
 
 #login #logo, #welcome #logo {
-    color: #008562;
+    color: royalblue;
     font-size: 4rem;
     margin-left: 20px;
     margin-top: 20px
@@ -14843,7 +14843,7 @@ body[data-framed] #sidebarMenus {
 }
 
 #login .validationBox [data-explanatoryBt] {
-    color: #008562 !important
+    color: royalblue !important
 }
 
 #login .validationBox [data-alternativeMethods] {
@@ -14892,7 +14892,7 @@ body[data-framed] #sidebarMenus {
 }
 
 #login .validationBox [data-alternativeMethods] button strong {
-    color: #008562 !important;
+    color: royalblue !important;
     display: inline-block;
     display: block;
     padding-top: 0.3rem
@@ -15174,8 +15174,8 @@ body[data-framed] #sidebarMenus {
     text-align: center !important;
     font-size: 0.85rem;
     font-weight: 500;
-    color: #008562;
-    border: 1px solid #008562;
+    color: royalblue;
+    border: 1px solid royalblue;
     border-radius: 5px;
     padding: 0.5rem 0.6rem
 }
@@ -15356,7 +15356,7 @@ body[data-framed] #sidebarMenus {
 [data-signupForm] [data-status-msg] a {
     display: block;
     text-decoration: underline;
-    color: #008562
+    color: royalblue
 }
 
 [data-signupForm] .disclaimer {
@@ -15635,13 +15635,13 @@ body[data-framed] #sidebarMenus {
 
 @media print, screen and (max-width: 39.99875em) {
     #login [data-disclaimer] *, #login [data-disclaimer] ul li+li:before {
-        color: #008562 !important;
+        color: royalblue !important;
         text-shadow: none
     }
 }
 
 #login.migrate #infoPanel p strong {
-    color: #008562
+    color: royalblue
 }
 
 #login.migrate #infoPanel p, #login.migrate #infoPanel ul li, #login.migrate #infoPanel h3 {
@@ -15668,7 +15668,7 @@ body[data-framed] #sidebarMenus {
     display: block;
     text-align: center;
     font-size: 3rem;
-    color: #008562
+    color: royalblue
 }
 
 #login.migrate #features p {
@@ -15700,7 +15700,7 @@ body[data-framed] #sidebarMenus {
     font-family: 'hispaloto-iconset' !important;
     position: absolute;
     font-size: 60rem;
-    color: #008562;
+    color: royalblue;
     opacity: 0.05;
     top: -4rem;
     line-height: 1em;
@@ -16147,7 +16147,7 @@ ul.list li>span strong, ul.list li a>span strong {
 }
 
 ul.list li>span small strong, ul.list li a>span small strong {
-    color: #008562
+    color: royalblue
 }
 
 ul.list li .avatar {
@@ -16283,7 +16283,7 @@ ul.list li span:nth-child(1), ul.list li a>span:nth-child(1) {
 }
 
 [data-reveal][data-reveal-source] [data-loaderPro] .spinner * {
-    background-color: #008562
+    background-color: royalblue
 }
 
 [data-reveal][data-reveal-source="betDetail"], [data-reveal][data-reveal-source="login"] {
@@ -16291,7 +16291,7 @@ ul.list li span:nth-child(1), ul.list li a>span:nth-child(1) {
 }
 
 [data-userDetailHeader] [data-userDetailInfo] {
-    background-color: #008562;
+    background-color: royalblue;
     color: white;
     padding-bottom: 0.5rem
 }
@@ -16886,7 +16886,7 @@ body:not([data-isloaded]) [data-addrem] {
     font-size: 5rem;
     z-index: 0;
     opacity: 0.2;
-    color: #008562
+    color: royalblue
 }
 
 [data-oneClickPurchase] .column-block>div>span, [data-oneClickPurchase] .column-block>div>span small {
@@ -16907,7 +16907,7 @@ body:not([data-isloaded]) [data-addrem] {
 }
 
 [data-oneClickPurchase] .column-block>div * {
-    color: #008562 !important
+    color: royalblue !important
 }
 
 [data-oneClickPurchase] .tabs li a {
@@ -16925,7 +16925,7 @@ body:not([data-isloaded]) [data-addrem] {
 
 [data-oneClickPurchase] .tabs li.is-active a {
     background-color: white;
-    color: #008562 !important
+    color: royalblue !important
 }
 
 [data-oneClickPurchase] .tabs-content {
@@ -17484,11 +17484,11 @@ ul.accordion {
     color: white;
     width: 100px;
     line-height: 30px;
-    background-color: rgba(0, 133, 98, 0.9) !important;
+    background-color: royalblue !important;
     text-align: center;
     font-weight: bold;
     border-radius: 10px 10px 0px 0px;
-    box-shadow: inset 0 -10px 30px rgba(0, 82, 60, 0.9), 0px 20px 15px rgba(0, 0, 0, 0.9)
+    /* box-shadow: inset 0 -10px 30px rgba(0, 82, 60, 0.9), 0px 20px 15px rgba(0, 0, 0, 0.9) */
 }
 
 #chatBt {
@@ -18060,7 +18060,7 @@ dl.numbersFlatVerticalV2 dd {
 }
 
 #lottoResultsModal [data-nav-leftbt]:hover, #lottoResultsModal [data-nav-rightbt]:hover {
-    color: #008562 !important
+    color: royalblue !important
 }
 
 #lottoResultsModal [data-nav-leftbt][disabled], #lottoResultsModal [data-nav-rightbt][disabled] {
@@ -18686,7 +18686,7 @@ ul.dropdown-pane li a:hover {
 
 .label.inverted {
     background-color: #fff;
-    color: #008562
+    color: royalblue
 }
 
 .form-error {
@@ -19745,7 +19745,7 @@ body.setFixed #screenplayId {
 [data-ingameTutorials] #sorteoEspecialLayout .prizesFeatures li {
     font-size: 1.9rem;
     letter-spacing: -0.08rem;
-    color: #008562
+    color: royalblue
 }
 
 [data-ingameTutorials] #sorteoEspecialLayout .prizesFeatures li strong {
@@ -19766,7 +19766,7 @@ body.setFixed #screenplayId {
     font-size: 1.8rem;
     margin-bottom: 0;
     border: none;
-    color: #008562
+    color: royalblue
 }
 
 [data-ingameTutorials] #sorteoEspecialLayout .prizesFeatures li:nth-child(1) strong:nth-child(2) {
@@ -19786,7 +19786,7 @@ body.setFixed #screenplayId {
 }
 
 [data-ingameTutorials] #sorteoEspecialLayout h3 strong {
-    color: #008562
+    color: royalblue
 }
 
 [data-ingameTutorials] #sorteoEspecialLayout .extraPrizesFeatures strong, [data-ingameTutorials] #sorteoEspecialLayout .extraPrizesFeatures small {
@@ -20538,7 +20538,7 @@ label[for="localUploadFile"] i, [data-uploadBt] i {
 }
 
 [data-proRate] [data-userRating] {
-    border: 1px solid #008562;
+    border: 1px solid royalblue;
     border-radius: 5px;
     margin-top: 0.5rem;
     padding: 0.3rem
@@ -20546,7 +20546,7 @@ label[for="localUploadFile"] i, [data-uploadBt] i {
 
 [data-proRate] [data-proRating] {
     display: block;
-    color: #008562
+    color: royalblue
 }
 
 [data-proRate] [data-proRating] label {
@@ -20571,9 +20571,9 @@ label[for="localUploadFile"] i, [data-uploadBt] i {
 }
 
 [data-proRate] [data-currentRating] {
-    border: 1px solid #008562;
+    border: 1px solid royalblue;
     border-radius: 5px;
-    background: #008562;
+    background: royalblue;
     color: white
 }
 
@@ -21417,7 +21417,7 @@ body:not([data-isloaded]) [data-payManager] {
     [data-payManager] [data-addrem] button {
         transition: background-color 0.3s, color 0.3s;
         opacity: 1;
-        background-color: #008562 !important;
+        background-color: royalblue !important;
         color: white;
         border-radius: 500px;
         height: 1.8rem;
@@ -21693,7 +21693,7 @@ body:not([data-isloaded]) [data-payManager] {
 }
 
 [data-payManager-methods] [data-info-area] [data-info-area-title] strong {
-    color: #008562
+    color: royalblue
 }
 
 [data-payManager-methods] [data-info-area] [data-info-area-message], [data-payManager-methods] .info-area-message {
@@ -22951,11 +22951,11 @@ table[data-mystoredpaymentmethods] input:checked~.switch-paddle::after {
 
 [data-payManager-methods].flat>li[data-method][data-status="1"].is-active>button {
     background-color: #fff;
-    color: #008562
+    color: royalblue
 }
 
 [data-payManager-methods].flat>li[data-method][data-status="1"].is-active>button [data-title] {
-    color: #008562 !important
+    color: royalblue !important
 }
 
 [data-payManager-methods].flat>li[data-method][data-status="1"].is-active [data-limits]>dd:not(.is-active) {
@@ -22967,7 +22967,7 @@ table[data-mystoredpaymentmethods] input:checked~.switch-paddle::after {
 }
 
 [data-payManager-methods].flat>li[data-method][data-status="0"].is-active>button [data-title] {
-    color: #008562 !important
+    color: royalblue !important
 }
 
 [data-payManager-methods].flat>li[data-method][data-status="2"].is-active>button {
@@ -22975,7 +22975,7 @@ table[data-mystoredpaymentmethods] input:checked~.switch-paddle::after {
 }
 
 [data-payManager-methods].flat>li[data-method][data-status="2"].is-active>button [data-title] {
-    color: #008562 !important
+    color: royalblue !important
 }
 
 [data-payManager-methods].flat>li[data-method][data-status="1"].is-active [data-limits]>dd:not(.is-active) {
@@ -23837,7 +23837,7 @@ table[data-mystoredpaymentmethods] input:checked~.switch-paddle::after {
 }
 
 #transferTypeContent form small {
-    color: #008562;
+    color: royalblue;
     display: inline-block;
     line-height: 1em
 }
@@ -24008,14 +24008,14 @@ table.cash_movements [data-ccard] {
 }
 
 table.cash_movements i[data-abono] {
-    color: #008562;
+    color: royalblue;
     vertical-align: middle
 }
 
 table.cash_movements span[data-abono] {
     border: 1px solid rgba(0, 133, 98, 0.5) !important;
     background-color: rgba(0, 0, 0, 0) !important;
-    color: #008562 !important;
+    color: royalblue !important;
     margin: 2px;
     font-size: 0.6rem;
     border-radius: 3px;
@@ -24025,7 +24025,7 @@ table.cash_movements span[data-abono] {
 }
 
 table.cash_movements span[data-abono].active {
-    background-color: #008562 !important;
+    background-color: royalblue !important;
     color: #fff !important
 }
 
@@ -24035,7 +24035,7 @@ table.cash_movements span[data-abono].active * {
 
 table.cash_movements span[data-abono]:hover:not(.label) {
     transition: background-color 0.5s ease, color 0.5s ease;
-    background-color: #008562 !important;
+    background-color: royalblue !important;
     color: #fff !important
 }
 
@@ -24052,7 +24052,7 @@ table.cash_movements span[data-abono].round {
 }
 
 table.cash_movements span[data-abono].label {
-    color: #008562 !important
+    color: royalblue !important
 }
 
 table.cash_movements span[data-abono].a.label:hover {
@@ -24277,7 +24277,7 @@ table.cash_movements tr>*:nth-child(4), table.cash_movements tr>*:nth-child(5) {
 [data-this-mark]:before {
     content: "●";
     font-size: 1.3rem;
-    color: #008562;
+    color: royalblue;
     text-shadow: 0px 0px 2px #00d29a
 }
 
@@ -25239,7 +25239,7 @@ div:not(.main-div) #myConfigOptions {
 }
 
 #myConfigOptions .tabs.flatTabs>li.is-active a {
-    border-bottom: 4px solid #008562
+    border-bottom: 4px solid royalblue
 }
 
 #myConfigOptions .tabs.flatTabs>li:not(.is-active) a:hover {
@@ -25251,7 +25251,7 @@ div:not(.main-div) #myConfigOptions {
 
 #myConfigOptions .tabs.flatTabs>li.is-active a:hover {
     background-color: transparent !important;
-    border-bottom: 4px solid #008562 !important
+    border-bottom: 4px solid royalblue !important
 }
 
 @media print, screen and (max-width: 39.99875em) {
@@ -26790,7 +26790,7 @@ div:not(.main-div) #myConfigOptions {
 }
 
 .myPanel h2:before {
-    color: #008562
+    color: royalblue
 }
 
 .myPanel [data-user-contents] {
@@ -26887,9 +26887,9 @@ div:not(.main-div) #myConfigOptions {
     margin: 0;
     background-color: transparent;
     box-shadow: none !important;
-    border: 1px solid #008562;
+    border: 1px solid royalblue;
     border-radius: 5px;
-    color: #008562;
+    color: royalblue;
     letter-spacing: -0.03em;
     font-size: 0.9rem
 }
@@ -27049,7 +27049,7 @@ div:not(.main-div) #myConfigOptions {
 }
 
 #myPanel.myPanel [data-actions]>*:before, .localModals [data-actions]>*:before {
-    color: #008562;
+    color: royalblue;
     font-size: 100%
 }
 
@@ -27728,7 +27728,7 @@ ul[data-periodGrid] li.wrong {
 }
 
 #validateStuff [data-docsItems] li i {
-    color: #008562
+    color: royalblue
 }
 
 @media print, screen and (min-width: 64em) {
@@ -29032,7 +29032,7 @@ body {
 .richBlock .richBlockActions .button {
     cursor: pointer;
     transition: background-color 0.4s;
-    background-color: #008562
+    background-color: royalblue
 }
 
 .richBlockActions>div p {
@@ -30126,11 +30126,11 @@ body {
 }
 
 #pep small {
-    color: #008562
+    color: royalblue
 }
 
 #pep small a {
-    color: #008562;
+    color: royalblue;
     line-height: 1.2em;
     text-decoration: underline
 }
@@ -30373,7 +30373,7 @@ body {
 
 @media print, screen and (max-width: 39.99875em) {
     #login.login [data-disclaimer] *, #login.login [data-disclaimer] ul li+li:before {
-        color: #008562 !important;
+        color: royalblue !important;
         text-shadow: none
     }
 
@@ -30478,8 +30478,8 @@ body:not([data-app]) .top-menu:before {
     width: 100%;
     content: "";
     opacity: 1;
-    background: #008562;
-    background: linear-gradient(180deg, #008562 0%, #005d45 100%)
+    background: royalblue;
+    background: linear-gradient(180deg, royalblue 0%, royalblue 0%)
 }
 
 @media print, screen and (min-width: 64em) {
@@ -30604,7 +30604,7 @@ html.fall body:not(.setFixed) .top-menu [data-logo] i, html.summer body:not(.set
 .top-subMenu[data-hidden], .top-menu-gamesNav [data-hidden] {
     overflow: hidden;
     height: 0px;
-    background-color: #008562;
+    background-color: royalblue;
     padding: 0
 }
 
@@ -30617,7 +30617,7 @@ html.fall body:not(.setFixed) .top-menu [data-logo] i, html.summer body:not(.set
 .top-subMenuPromo {
     height: 4.3rem;
     background-color: rgba(0, 133, 98, 0.95) !important;
-    background: linear-gradient(180deg, rgba(0, 103, 76, 0.95) 0%, #008562 100%) !important
+    background: linear-gradient(180deg, rgba(0, 103, 76, 0.95) 0%, royalblue 100%) !important
 }
 
 .top-subMenuPromo {
@@ -30665,7 +30665,7 @@ body[data-notShowingSubmenu].setFixed .top-menu .logo, body[data-notShowingSubme
 
 body[data-notShowingSubmenu].setFixed .top-menu #purchaseSummary .badge {
     background-color: white !important;
-    color: #008562 !important
+    color: royalblue !important
 }
 
 body[data-notShowingSubmenu].setFixed .top-subMenu[data-hidden] {
@@ -30855,7 +30855,7 @@ body.setFixed [data-menu-games] [data-gameImg] {
 }
 
 [data-inlineGamesMenu] li:not([data-menu-viewmore]).is-active a:before {
-    border-bottom: 8px solid #009f75;
+    border-bottom: 8px solid blue;
     color: #FFB800;
     content: "";
     position: absolute;
@@ -30967,9 +30967,9 @@ body.setFixed [data-menu-games] [data-gameImg] {
         min-width: 100px;
         overflow: hidden;
         border: none;
-        background: #008562;
+        background: royalblue;
         margin-top: 0;
-        background: linear-gradient(180deg, #005d45 0%, #008562 100%);
+        background: linear-gradient(180deg, #005d45 0%, royalblue 100%);
         border-radius: 0px 0px 9px 9px
     }
 
@@ -31288,8 +31288,8 @@ body[data-nocasino] [data-gamingTabs], body[data-nocasino] [data-sectionsNavigat
     }
 
     body [data-gamingtabs] {
-        background-color: #008562;
-        background: linear-gradient(180deg, #008562 0%, #006c4f 100%)
+        background-color: royalblue;
+        background: linear-gradient(180deg, royalblue 0%, #006c4f 100%)
     }
 
     body [data-gamingtabs] li {
@@ -31323,7 +31323,7 @@ body[data-app] [data-gamingtabs] .tabs-title a {
 
 body[data-app] [data-gamingtabs] {
     background-color: rgba(0, 133, 98, 0.9);
-    background: linear-gradient(180deg, #008562 0%, #006c4f 100%)
+    background: linear-gradient(180deg, royalblue 0%, #006c4f 100%)
 }
 
 body[data-app] [data-gamingtabs] li {
@@ -31392,7 +31392,7 @@ footer #footerMenu li {
 }
 
 footer #footerMenu li a {
-    color: #008562
+    color: royalblue
 }
 
 footer #footerTrust {
@@ -31644,7 +31644,7 @@ footer [data-disclaimer] ul li+li:before {
     font-size: 3.8rem;
     margin-bottom: 0.8rem;
     margin-top: 1rem;
-    color: #008562
+    color: royalblue
 }
 
 #unsupportedModal img {
@@ -31728,7 +31728,7 @@ footer [data-disclaimer] ul li+li:before {
 }
 
 [data-ingameSupport] a {
-    color: #008562 !important
+    color: royalblue !important
 }
 
 [data-ingameSupport] img {
@@ -31751,7 +31751,7 @@ footer [data-disclaimer] ul li+li:before {
 }
 
 [data-ingameSupport] [data-chatstatus] button {
-    color: #008562 !important
+    color: royalblue !important
 }
 
 [data-featuresBox] {
