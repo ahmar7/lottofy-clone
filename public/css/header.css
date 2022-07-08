@@ -10116,7 +10116,7 @@ a.bg_chewingGum:hover, button.bg_chewingGum:hover {
 }
 
 .beuromillones {
-    background-color: #06629e !important
+    background-color: white !important
 }
 
 .bprimitiva {
@@ -29057,7 +29057,8 @@ body {
 .richBlock.lottery .richBlockContent {
     width: 100%;
     height: 150px;
-    display: table
+    display: table;
+    background-size: contain;
 }
 
 @media print, screen and (max-width: 63.99875em) {
@@ -31558,7 +31559,7 @@ footer:not(.miniFooter) {
     font-size: 0.85rem;
     position: relative;
     z-index: 2;
-    border-top: 10px solid rgba(0, 133, 98, 0.6);
+    border-top: 10px solid royalblue;
     padding-top: 2rem !important;
     position: relative
 }
@@ -31812,7 +31813,7 @@ footer [data-disclaimer] ul li+li:before {
     }
 
     [data-featuresBox] [data-ingameSecurity] {
-        border-left: 10px solid rgba(0, 133, 98, 0.6)
+        border-left: 10px solid royalblue;
     }
 
     [data-featuresBox] [data-ingameSecurity] h3 {
