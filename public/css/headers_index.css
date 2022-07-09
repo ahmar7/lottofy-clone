@@ -13837,13 +13837,13 @@ nav#mobileMenu.is-open {
     content: ""
 }
 
-#mobileGamesMenu [class^="icon-"]:before, #mobileGamesMenu [class*=" icon-"]:before {
+/* #mobileGamesMenu [class^="icon-"]:before, #mobileGamesMenu [class*=" icon-"]:before {
     vertical-align: middle;
     font-size: 1rem;
     min-width: 32px;
     display: inline-block;
     text-align: center
-}
+} */
 
 #mobileGamesMenu li>ul>li a i[class^="icon-"]:before, #mobileGamesMenu li>ul>li a i[class*=" icon-"]:before {
     font-size: 1.2rem
