@@ -26,6 +26,8 @@
 .center-li {
   display: flex;
 }
+.center-li .abc {
+
 @media (max-width: 640px) {
   .center-li {
     display: inherit;
