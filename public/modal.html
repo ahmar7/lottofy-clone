@@ -1,4 +1,18 @@
-########## MODAL START #############
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+    <!-- ########## MODAL START ############# -->
 
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -19,7 +33,7 @@
     </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+            <button type="button" id="modalDismiss" onclick="switchModal()" class="btn btn-primary" data-dismiss="modal">Continue</button>
                <a class="btn btn-primary" id="download" href="javascript:void(0);" download="cropped.jpg" hidden="hidden">Download</a>
                
           </div>
@@ -27,12 +41,13 @@
       </div>
     </div>
 
-########## MODAL END #############
+<!-- ########## MODAL END ############# -->
 
 
-########## TABS ##################
+<!-- ########## TABS ################## -->
 
     <!-- Nav pills -->
+    <div id="third">
     <ul class="nav nav-pills" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" data-toggle="pill" href="#choosephoto">Choose Photo</a>
@@ -50,9 +65,119 @@
       Upload Your Photo
     </button>    
       </div>
+    </div>
+    </div>
+     <div id="positionphoto" class="container hide tab-pane fade">
+          <div class="row" id="actions">
 
-      <div id="positionphoto" class="container tab-pane fade">
+      <div class="col-md-12 docs-buttons">
+        <div class="row">
+   <img src="../../images/n1photo.png" alt="" width="200" height="50">
+        </div>
+          <div class="form-group">
+              <telerik:RadTextBox ID="item" runat="server" Skin="Bootstrap" Width="200px"></telerik:RadTextBox>
+                  <div class="row">
+   <img src="../../images/s5photo.png" alt="" width="200" height="50">
+        </div>
+                <div class="row">
+          <div class="btn-group">
+          <button type="button" class="btn btn-primary" data-method="zoom" data-option="-0.1" title="Zoom Out">
+            <span class="docs-tooltip" data-toggle="tooltip" title="Zoom Out">
+              <span class="fa fa-search-minus"></span>
+            </span>
+          </button>
+
+          <button type="button" class="btn btn-primary" data-method="zoom" data-option="0.1" title="Zoom In">
+            <span class="docs-tooltip" data-toggle="tooltip" title="Zoom In">
+              <span class="fa fa-search-plus"></span>
+            </span>
+          </button>
+        </div>
+                    </div>
+              <hr />
+                <div class="row">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary" data-method="move" data-option="-10" data-second-option="0" title="Move Left">
+            <span class="docs-tooltip" data-toggle="tooltip" title="Move Left">
+              <span class="fa fa-arrow-left"></span>
+            </span>
+          </button>
+          <button type="button" class="btn btn-primary" data-method="move" data-option="10" data-second-option="0" title="Move Right">
+            <span class="docs-tooltip" data-toggle="tooltip" title="Move Right">
+              <span class="fa fa-arrow-right"></span>
+            </span>
+          </button>
+          <button type="button" class="btn btn-primary" data-method="move" data-option="0" data-second-option="-10" title="Move Up">
+            <span class="docs-tooltip" data-toggle="tooltip" title="Move Up">
+              <span class="fa fa-arrow-up"></span>
+            </span>
+          </button>
+          <button type="button" class="btn btn-primary" data-method="move" data-option="0" data-second-option="10" title="Move Down">
+            <span class="docs-tooltip" data-toggle="tooltip" title="Move Down">
+              <span class="fa fa-arrow-down"></span>
+            </span>
+          </button>
+        </div>
+                    </div>
+              <hr />
+      <div class="row">
+          <img src="../../images/s4photo.png" alt="" width="200" height="50">
+               </div>
+          <div class="btn-group btn-group-crop">
+         
+           <div class="row">
+          <button type="button" class="btn btn-success" style="Width: 200px;border-radius: 15px;" data-method="getCroppedCanvas" data-option="{ &quot;width&quot;: <%= getcroppedcanvaswidth.Text %>, &quot;height&quot;: <%= getcroppedcanvasheight.Text %> }" >
+            <span class="docs-tooltip" data-toggle="tooltip" title="cropper.getCroppedCanvas({ width: <%= croppedcanvaswidth.Text %>, height: <%= croppedcanvasheight.Text %> })">Create Label</span>
+          </button></div>
+               <div class="form-group">
+                           
+                                </div>
+         
+        </div>
+        
+            <!-- Show the cropped image in modal -->
+        <div class="modal fade docs-cropped" id="getCroppedCanvasModal" role="dialog" aria-hidden="true" aria-labelledby="getCroppedCanvasTitle" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="getCroppedCanvasTitle">Cropped</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body"></div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a class="btn btn-primary" id="A1" href="javascript:void(0);" download="cropped.jpg">Download</a>
+                <textarea class="form-control" id="pData" placeholder=""></textarea>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.modal -->
+        
+     
+      </div><!-- /.docs-buttons -->
+
+      <div class="col-md-6 docs-toggles">
+  
+      
+
       </div>
+            
+    </div>
+
+  </div>
+ </div>
 
 
 
+</body>
+<script>
+    let switchModal=()=>{                
+        let second = document.getElementById("positionphoto")
+          
+second.classList.remove("hide")
+ 
+    }
+</script>
+</html>
