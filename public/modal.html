@@ -11,7 +11,7 @@
         display: none;
       }
     </style>
-    <!-- ########## MODAL START ############# -->
+   <!-- ########## MODAL START ############# -->
 
     <div
       class="modal fade"
@@ -73,15 +73,15 @@
         </div>
       </div>
     </div>
-
-    <!-- ########## MODAL END ############# -->
+<!-- ########## MODAL End ############# -->
 
     <!-- ########## TABS ################## -->
+ 
 
     <!-- Nav pills -->
     <div id="third">
       <ul class="nav nav-pills" role="tablist">
-        <li class="nav-item">
+        <li onclick="choosePhoto()" class="nav-item">
           <a
             class="nav-link active"
             id="photoPick"
@@ -90,7 +90,7 @@
             >Choose Photo</a
           >
         </li>
-        <li class="nav-item">
+        <li onclick="showDesign()" class="nav-item">
           <a
             class="nav-link"
             id="designLabel"
@@ -100,7 +100,6 @@
           >
         </li>
       </ul>
-
       <!-- Tab panes -->
       <div id="uploadSec" class="tab-content">
         <div id="choosephoto" class="container tab-pane active">
@@ -116,7 +115,9 @@
         </div>
       </div>
     </div>
-    <div id="positionphoto" class="container hide tab-pane fade">
+      <!-- Nav pills End -->
+          <!-- Start -->
+  <div id="positionphoto" class="container hide tab-pane fade">
       <div class="row" id="actions">
         <div class="col-md-12 docs-buttons">
           <div class="row">
@@ -274,7 +275,6 @@
               >
               <div class="form-group"> </div>
             </div>
-
             <!-- Show the cropped image in modal -->
             <div
               class="modal fade docs-cropped"
@@ -329,10 +329,12 @@
         </div>
       </div>
     </div>
+
+    <!-- ENd -->
   </body>
-  <script>
-    let switchModal = () => {
-      let second = document.getElementById("positionphoto");
+<script>
+      let switchModal = () => {
+          let second = document.getElementById("positionphoto");
       let first = document.getElementById("modal");
       let upload = document.getElementById("uploadSec");
       let photoPick = document.getElementById("photoPick");
@@ -344,6 +346,20 @@
       first.style.display = "none";
       second.style.opacity = 1;
       second.classList.remove("hide");
-    };
+      };
+      let showDesign=()=>{
+              let second = document.getElementById("positionphoto");
+                let upload = document.getElementById("uploadSec");
+               second.style.opacity = 1;
+                 second.classList.remove("hide");
+                   upload.style.display = "none";
+      }
+      let choosePhoto=()=>{
+          let second = document.getElementById("positionphoto");
+                let upload = document.getElementById("uploadSec");
+               second.style.opacity = 0;
+                 second.classList.add("hide");
+                   upload.style.display = "block";
+      }
   </script>
 </html>
