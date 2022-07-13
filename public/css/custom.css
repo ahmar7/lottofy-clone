@@ -1,25 +1,33 @@
 .nav-ico {
-    width: 150px;
+  width: 150px;
 }
 
 .nav-ico-3 {
-    width: 70px;
-    margin-top: -5px;
+  width: 70px;
+  margin-top: -5px;
 }
 
 .nav-ico-4 {
-    width: 80px;
+  width: 80px;
 }
 
 .nav-ico-5 {
-    width: 100px;
+  width: 100px;
 }
 
 .mbl-ico {
-    width: 100px;
-    margin-top: -5px;
+  width: 100px;
+  margin-top: -5px;
 }
 
 .d2 {
-    height: 40px;
+  height: 40px;
+}
+.center-li {
+  display: flex;
+}
+@media (max-width: 640px) {
+  .center-li {
+    display: inherit;
+  }
 }
