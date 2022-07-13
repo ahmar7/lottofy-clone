@@ -1839,11 +1839,17 @@ button#language-menu img {
   margin-top: 15px;
   display: flex;
 
-  justify-content: center;
+  justify-content: space-around;
   padding: 10px;
+}
+.new {
+  margin-top: -15px !important;
 }
 .result-ico {
   text-align: center;
+}
+.result-ico img {
+  width: 100px;
 }
 .top_balance_menu a {
   color: #0054a6;

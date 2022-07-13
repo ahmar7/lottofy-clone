@@ -1,420 +1,2637 @@
-<html lang="en" prefix="fb: https://www.facebook.com/2008/fbml" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head> <title>Create your account | Lottofy</title> <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> <meta name="description" content="Create your free account and start enjoying the best lottery in the world from your mobile, tablet or PC"> <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"> <link rel="canonical" href="https://www.lottofy.com/en/signup/"> <link rel="alternate" hreflang="en" href="https://www.lottofy.com/en/signup/"> <link rel="alternate" hreflang="es" href="https://www.lottofy.com/registro/"> <link rel="alternate" hreflang="fr" href="https://www.lottofy.com/fr/inscription/"> <link rel="alternate" hreflang="pt" href="https://www.lottofy.com/pt/registo/"> <link rel="alternate" hreflang="pt-br" href="https://www.lottofy.com/br/registo/"> <link rel="alternate" hreflang="de" href="https://www.lottofy.com/de/registrierung/"> <link rel="alternate" hreflang="it" href="https://www.lottofy.com/it/registrazione/"> <link rel="alternate" hreflang="en-in" href="https://www.lottofy.com/in/signup/"> <link rel="alternate" hreflang="x-default" href="https://www.lottofy.com/en/signup/"> <link rel="manifest" href="https://www.lottofy.com/gcm_lottofy.json"> <link rel="shortcut icon" href="https://d2oamtuj38i9pe.cloudfront.net/images/lottofy/lottofy.ico"> <link rel="preconnect" href="https://d2oamtuj38i9pe.cloudfront.net"> <link rel="stylesheet" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./css/glyphs.css"> <link rel="stylesheet" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./css/loto.css"> <link rel="stylesheet" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Roboto:900,300,400,500&amp;display=swap"> <link rel="stylesheet" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;display=swap"> <link rel="stylesheet" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:300,400,700&amp;display=swap"> <link rel="stylesheet" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,500&amp;display=swap"> <noscript> <link rel="stylesheet" href="./css/glyphs.css"> <link rel="stylesheet" href="./css/loto.css"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:900,300,400,500&display=swap"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:300,400,700&display=swap"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,500&display=swap"> </noscript> <link rel="stylesheet" href="./css/headers_index.css" type="text/css"> <script async="" charset="utf-8" src="https://v2.zopim.com/?182gtfcJannWUkOaaZPtliY77dTkVnWR" type="text/javascript"></script><script>
-class core_queueLoader {
-	constructor(){
-		this.mainQueue=new Array();
-	}
-	
-	addToQueue(functionToAdd){ this.mainQueue.push(functionToAdd); return functionToAdd;}
-	addFirstToQueue(functionToAdd){ this.mainQueue.unshift(functionToAdd) }
-	run(options){ this.mainQueue.forEach(function(f,i){ f()}) }
-	showQueue(options){ this.mainQueue.forEach(function(f,i){ console.log(f)}) }
-	clear(options){ this.mainQueue=new Array() }
-    loadScriptAsync(uri){
-	  return new Promise((resolve, reject) => {
-		var tag = document.createElement('script');
-		tag.src = uri;
-		tag.async = true;
-		tag.onload = () => {
-		  resolve();
-		};
-	  var firstScriptTag = document.getElementsByTagName('script')[0];
-	  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-	});
-	}	
-	loadScript(uri,callbackOnLoad,options){
-		var callback = function(){};
-		var async = "defer"; // defer|async|sync
-		if(typeof callbackOnLoad != "undefined" && callbackOnLoad != null){
-			callback = callbackOnLoad;
-		}
-		var tag = document.createElement('script');
-		tag.src = uri;
-		switch(async){
-			case "defer":
-				tag.defer = true;
-			break;
-			case "async":
-				tag.async = true;
-			break;
-		}
-		tag.defer = true;
-		tag.onload = () => { callback(); }
-		tag.setAttribute('data-injected-script','');
-		var headElem = document.getElementsByTagName('head')[0].appendChild(tag);
-	
-	}
-	waitForExistance(objectToWaitFor,callback,interval,timeout){
-		if(typeof window["microseconds"] != "undefined"){
-			if(window["microseconds"] == window.performance.now()) {
-				window["microseconds"] = window["microseconds"] + 1
-			} else {
-				window["microseconds"] = window.performance.now()
-			}
-		}else{
-			window["microseconds"] = window.performance.now();
-		}
-		var intervalID="core_queueLoader_"+String(window["microseconds"]);
-		var intervalTime = 1000;
-		var timeoutAttempts = 5;
-		
-		if(typeof interval != "undefined"){ intervalTime=interval}
-		if(typeof timeout != "undefined"){ timeoutAttempts=timeout}
-		var currentAttemp = 0;
-		var status=true;
-		var countOfEvalizedInArray=0;
-		var i = 0;
-		window[intervalID]=setInterval(function(){
-			if(objectToWaitFor instanceof Array){
-				countOfEvalizedInArray=0;
-				for(i=0;i<objectToWaitFor.length;i++){
-					var objectEvalized = eval("typeof "+objectToWaitFor[i]);
-					if(objectEvalized != "undefined"){
-						countOfEvalizedInArray++;
-					}
-				}
-			}else{
-				var objectEvalized = eval("typeof "+objectToWaitFor);
-			}
+<html
+  lang="en"
+  prefix="fb: https://www.facebook.com/2008/fbml"
+  class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"
+  ><head>
+    <title>Create your account | Lottofy</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta
+      name="description"
+      content="Create your free account and start enjoying the best lottery in the world from your mobile, tablet or PC"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <link rel="canonical" href="https://www.lottofy.com/en/signup/" />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.lottofy.com/en/signup/"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://www.lottofy.com/registro/"
+    />
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://www.lottofy.com/fr/inscription/"
+    />
+    <link
+      rel="alternate"
+      hreflang="pt"
+      href="https://www.lottofy.com/pt/registo/"
+    />
+    <link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://www.lottofy.com/br/registo/"
+    />
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://www.lottofy.com/de/registrierung/"
+    />
+    <link
+      rel="alternate"
+      hreflang="it"
+      href="https://www.lottofy.com/it/registrazione/"
+    />
+    <link
+      rel="alternate"
+      hreflang="en-in"
+      href="https://www.lottofy.com/in/signup/"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://www.lottofy.com/en/signup/"
+    />
+    <link rel="manifest" href="https://www.lottofy.com/gcm_lottofy.json" />
+    <link
+      rel="shortcut icon"
+      href="https://d2oamtuj38i9pe.cloudfront.net/images/lottofy/lottofy.ico"
+    />
+    <link rel="preconnect" href="https://d2oamtuj38i9pe.cloudfront.net" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="./css/glyphs.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="./css/loto.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css?family=Roboto:900,300,400,500&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:300,400,700&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,500&amp;display=swap"
+    />
+    <noscript>
+      <link rel="stylesheet" href="./css/glyphs.css" />
+      <link rel="stylesheet" href="./css/loto.css" />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:900,300,400,500&display=swap"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:300,400,700&display=swap"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,500&display=swap"
+      />
+    </noscript>
+    <link rel="stylesheet" href="./css/headers_index.css" type="text/css" />
+    <script
+      async=""
+      charset="utf-8"
+      src="https://v2.zopim.com/?182gtfcJannWUkOaaZPtliY77dTkVnWR"
+      type="text/javascript"
+    ></script
+    ><script>
+      class core_queueLoader {
+        constructor() {
+          this.mainQueue = new Array();
+        }
 
-			if(objectToWaitFor instanceof Array){
-				if(countOfEvalizedInArray==objectToWaitFor.length){
-					clearInterval(window[intervalID]);
-					delete window[intervalID];
-					callback();
-					return;
-				}else{
-					currentAttemp++;
-				}
-			}else{
-				if(objectEvalized != "undefined"){
-					clearInterval(window[intervalID]);
-					delete window[intervalID];
-					callback();
-					return;
-				}else{
-					currentAttemp++;
-				}
-			}
-			if (currentAttemp==timeoutAttempts && timeoutAttempts!=0){
-				clearInterval(window[intervalID]);
-				delete window[intervalID];
-				return;
-			}
-			console.log('waiting for ',objectToWaitFor,"...");
-		},intervalTime);
-	}
-	logErrors(verboseOnly){
-		window["lastErrorStack"] = false;
-		function sendErrorLog(verboseOnly,errorObj){
-			var msg = "";
-			var stk = "";
-			var fil = "";
-			var lin = "";
-			var col = "";
-		
-			if(typeof errorObj != "undefined"){
-			
-				if(typeof errorObj.message != "undefined"){
-					msg = errorObj.message;
-				}
-				if(typeof errorObj.stack != "undefined"){
-					stk = errorObj.stack;
-				}
-				if(typeof errorObj.file != "undefined"){
-					fil = errorObj.file;
-				}
-				if(typeof errorObj.line != "undefined"){
-					lin = errorObj.line;
-				}
-				if(typeof errorObj.col != "undefined"){
-					col = errorObj.col;
-				}
-			}					
-			
-			if(verboseOnly){
-				if(stk.length > 0 ){
-					console.error(stk);							
-				}else{
-					console.error(errorObj);							
-				}
-			}else{
-				if(typeof errorObj != "undefined"){
-					if(window["lastErrorStack"] !== stk){
-						var xhr = new XMLHttpRequest();
-						xhr.open('POST', '/data/?action=logJS');
-						xhr.setRequestHeader('Content-Type', 'application/json');
-						xhr.send(JSON.stringify({
-							"error":msg,
-							"file":fil,
-							"stack":stk,
-							"line":lin,
-							"col":col
-						}));
-						if(stk.length > 0){
-							window["lastErrorStack"] = stk;
-						}
-					}
-				}
-			}
-		}
-		window.onerror = function(message,file,line,col,error){
-			var errObj = {}
-			if(typeof message != "undefined" && message != null){ errObj["message"] = message;}
-			if(typeof file != "undefined" && file != null){ errObj["file"] = file;}
-			if(typeof line != "undefined" && line != null){ errObj["line"] = line;}
-			if(typeof col != "undefined" && col != null){ errObj["col"] = col;}
-			if(typeof error != "undefined" && error != null && typeof error.stack != "undefined"){ errObj["stack"] = error.stack;}																		
-			if(verboseOnly){
-				sendErrorLog(true,errObj);
-			}else{
-				sendErrorLog(false,errObj);
-				
-			}
-		}			
-		this.waitForExistance('$',function(){
-	
-			var temp = jQuery.event.dispatch;
+        addToQueue(functionToAdd) {
+          this.mainQueue.push(functionToAdd);
+          return functionToAdd;
+        }
+        addFirstToQueue(functionToAdd) {
+          this.mainQueue.unshift(functionToAdd);
+        }
+        run(options) {
+          this.mainQueue.forEach(function (f, i) {
+            f();
+          });
+        }
+        showQueue(options) {
+          this.mainQueue.forEach(function (f, i) {
+            console.log(f);
+          });
+        }
+        clear(options) {
+          this.mainQueue = new Array();
+        }
+        loadScriptAsync(uri) {
+          return new Promise((resolve, reject) => {
+            var tag = document.createElement("script");
+            tag.src = uri;
+            tag.async = true;
+            tag.onload = () => {
+              resolve();
+            };
+            var firstScriptTag = document.getElementsByTagName("script")[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          });
+        }
+        loadScript(uri, callbackOnLoad, options) {
+          var callback = function () {};
+          var async = "defer"; // defer|async|sync
+          if (typeof callbackOnLoad != "undefined" && callbackOnLoad != null) {
+            callback = callbackOnLoad;
+          }
+          var tag = document.createElement("script");
+          tag.src = uri;
+          switch (async) {
+            case "defer":
+              tag.defer = true;
+              break;
+            case "async":
+              tag.async = true;
+              break;
+          }
+          tag.defer = true;
+          tag.onload = () => {
+            callback();
+          };
+          tag.setAttribute("data-injected-script", "");
+          var headElem = document
+            .getElementsByTagName("head")[0]
+            .appendChild(tag);
+        }
+        waitForExistance(objectToWaitFor, callback, interval, timeout) {
+          if (typeof window["microseconds"] != "undefined") {
+            if (window["microseconds"] == window.performance.now()) {
+              window["microseconds"] = window["microseconds"] + 1;
+            } else {
+              window["microseconds"] = window.performance.now();
+            }
+          } else {
+            window["microseconds"] = window.performance.now();
+          }
+          var intervalID = "core_queueLoader_" + String(window["microseconds"]);
+          var intervalTime = 1000;
+          var timeoutAttempts = 5;
 
-			jQuery.event.dispatch = function () {
-			   try {
-			      temp.apply(this, arguments);
-			   } catch (e) {
-					var errObj = {}
-					if(typeof e.message != "undefined" && e.message != null){ errObj["message"] = e.message;}
-					if(typeof e.stack != "undefined" && e.stack != null){ errObj["stack"] = e.stack;}																		
-					if(verboseOnly){
-						sendErrorLog(true,errObj);							
-					}else{
-						sendErrorLog(false,errObj);
-					}	
-					return false;
-			   }
-			}
-			$.readyException = function(e){
-				var errObj = {}
-				if(typeof e.message != "undefined" && e.message != null){ errObj["message"] = e.message;}
-				if(typeof e.stack != "undefined" && e.stack != null){ errObj["stack"] = e.stack;}																		
-				if(verboseOnly){
-					sendErrorLog(true,errObj);							
-				}else{
-					sendErrorLog(false,errObj);
-				}	
-				return false;
-			}
-		})
-		
-		
-	}	
-}
-	
-</script> <script>
-		
-		bamQueue=new core_queueLoader()
-								var scriptLoadedCount=0;
-		var numsOfScriptsToLoad=0;//15;
-		
-		function checkScriptsLoaded(scriptsLoaded,numsOfExpectedScripts){
-			if(scriptsLoaded==numsOfExpectedScripts && typeof $ != "undefined"){
-				$(document).ready(function(){
-					launchProjectInitiator();
-				})
-			}
-		}
-					window._mfq = window._mfq || [];
-			bamQueue.loadScript("//cdn.mouseflow.com/projects/68a4ae8f-ecb0-4aef-b9a2-02f80cad9fb7.js");
-				bamQueue.loadScript("https://www.lottofy.com/js/jquery-3.6.0.min.js",function(){
-			bamQueue.loadScript("https://www.lottofy.com/js/lottofy7main.js?update=202002061248",function(){
-				setFullVersionEnvironment(false);
-				bamQueue.loadScript("https://www.lottofy.com/js/foundation.min.js",function(){
-					
-						Foundation.Abide.defaults.patterns['email'] = /^\s*[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+\s*$/;
-					
-					bamQueue.loadScript("https://www.lottofy.com/js/lottofy7common.js?update=202002061248",function(){
-												if (numsOfScriptsToLoad==0){
-							checkScriptsLoaded(0,0);
-						};
-					})
-					bamQueue.loadScript("https://www.lottofy.com/js/lottofy7postLoad.js?update=202002061248");
-				})
-			});
+          if (typeof interval != "undefined") {
+            intervalTime = interval;
+          }
+          if (typeof timeout != "undefined") {
+            timeoutAttempts = timeout;
+          }
+          var currentAttemp = 0;
+          var status = true;
+          var countOfEvalizedInArray = 0;
+          var i = 0;
+          window[intervalID] = setInterval(function () {
+            if (objectToWaitFor instanceof Array) {
+              countOfEvalizedInArray = 0;
+              for (i = 0; i < objectToWaitFor.length; i++) {
+                var objectEvalized = eval("typeof " + objectToWaitFor[i]);
+                if (objectEvalized != "undefined") {
+                  countOfEvalizedInArray++;
+                }
+              }
+            } else {
+              var objectEvalized = eval("typeof " + objectToWaitFor);
+            }
 
-		});
-	</script><script src="//cdn.mouseflow.com/projects/68a4ae8f-ecb0-4aef-b9a2-02f80cad9fb7.js" defer="" data-injected-script=""></script><script src="https://www.lottofy.com/js/jquery-3.6.0.min.js" defer="" data-injected-script=""></script> <script>window.___gcfg = { lang: 'en-US' };</script> <script>
-	function setDefaultCookies(beforeCallback,doneCallback){
-		if(typeof beforeCallback != "undefined"){
-			beforeCallback();
-		}		
-		var scripts = [
-			{
-				url:"https://apis.google.com/js/platform.js",
-				params:["defer","async"]
-			},
-			{	
-				url:"https://www.googletagmanager.com/gtag/js?id=G-T3T1BRH6GJ",
-				params:["async"]
-			}
-		]
-		var scriptsQueue = new Array();
-		scripts.forEach(function(value,key){
-			scriptsQueue[key] =  document.createElement('script');
-			scriptsQueue[key].src = value.url;
-			value.params.forEach(function(attrVal,attrKey){
-				scriptsQueue[key].setAttribute(attrVal,'');
-			})
-			scriptsQueue[key].onload = function(){
-				console.log("Cargado: " + value.url)
-			}
-		})
-		scriptsQueue.forEach(function(value,key){
-			document.head.appendChild(value);
-		})
+            if (objectToWaitFor instanceof Array) {
+              if (countOfEvalizedInArray == objectToWaitFor.length) {
+                clearInterval(window[intervalID]);
+                delete window[intervalID];
+                callback();
+                return;
+              } else {
+                currentAttemp++;
+              }
+            } else {
+              if (objectEvalized != "undefined") {
+                clearInterval(window[intervalID]);
+                delete window[intervalID];
+                callback();
+                return;
+              } else {
+                currentAttemp++;
+              }
+            }
+            if (currentAttemp == timeoutAttempts && timeoutAttempts != 0) {
+              clearInterval(window[intervalID]);
+              delete window[intervalID];
+              return;
+            }
+            console.log("waiting for ", objectToWaitFor, "...");
+          }, intervalTime);
+        }
+        logErrors(verboseOnly) {
+          window["lastErrorStack"] = false;
+          function sendErrorLog(verboseOnly, errorObj) {
+            var msg = "";
+            var stk = "";
+            var fil = "";
+            var lin = "";
+            var col = "";
 
-					window.dataLayer = window.dataLayer || [];
-			function gtag(){ dataLayer.push(arguments); }
-			gtag('js', new Date());
-			gtag('config', 'G-T3T1BRH6GJ');
-							if(typeof doneCallback != "undefined"){
-			doneCallback();
-		}
-	}
-</script> <script>setDefaultCookies()</script><script src="https://apis.google.com/js/platform.js" defer="" async="" gapi_processed="true"></script><script src="https://www.googletagmanager.com/gtag/js?id=G-T3T1BRH6GJ" async=""></script> <script src="https://www.lottofy.com/js/lottofy7main.js?update=202002061248" defer="" data-injected-script=""></script><script src="https://www.lottofy.com/js/foundation.min.js" defer="" data-injected-script=""></script><script src="https://www.lottofy.com/js/lottofy7common.js?update=202002061248" defer="" data-injected-script=""></script><script src="https://www.lottofy.com/js/lottofy7postLoad.js?update=202002061248" defer="" data-injected-script=""></script><meta class="foundation-mq"><style media="print" class="jx_ui_StyleSheet" __jx__id="___$_2" type="text/css">.zopim { display: none !important }</style><style type="text/css">button.btn[data-v-5f0b9ba1]{display:inline-block;font-weight:300;line-height:1.25;text-align:center;white-space:nowrap;vertical-align:middle;user-select:none;border:1px solid transparent;cursor:pointer;letter-spacing:1px;transition:all .15s ease}button.btn.btn-sm[data-v-5f0b9ba1]{padding:.4rem .8rem;font-size:.8rem;border-radius:.2rem}button.btn.btn-primary[data-v-5f0b9ba1]{color:#fff;background-color:#45C8F1;border-color:#45C8F1}button.btn.btn-outline-primary[data-v-5f0b9ba1]{color:#45C8F1;background-color:transparent;border-color:#45C8F1}button.btn.btn-danger[data-v-5f0b9ba1]{color:#fff;background-color:#FF4949;border-color:#FF4949}.text-muted[data-v-5f0b9ba1]{color:#8492A6}.text-center[data-v-5f0b9ba1]{text-align:center}.drop-down-enter[data-v-5f0b9ba1],.drop-down-leave-to[data-v-5f0b9ba1]{transform:translateX(0) translateY(-20px);transition-timing-function:cubic-bezier(0.74, 0.04, 0.26, 1.05);opacity:0}.drop-down-enter-active[data-v-5f0b9ba1],.drop-down-leave-active[data-v-5f0b9ba1]{transition:all .15s}.move-left-enter[data-v-5f0b9ba1],.move-left-leave-to[data-v-5f0b9ba1]{transform:translateY(0) translateX(-80px);transition-timing-function:cubic-bezier(0.74, 0.04, 0.26, 1.05);opacity:0}.move-left-enter-active[data-v-5f0b9ba1],.move-left-leave-active[data-v-5f0b9ba1]{transition:all .15s}.no-tr[data-v-5f0b9ba1]{transition:none !important}.no-tr *[data-v-5f0b9ba1]{transition:none !important}.overlay[data-v-5f0b9ba1]{position:fixed;background:rgba(220,220,220,0.8);display:flex;align-items:center;justify-content:center;top:0;left:0;right:0;bottom:0;transition:all 0.2s ease;opacity:0;visibility:hidden}.overlay .modal[data-v-5f0b9ba1]{transition:all 0.2s ease;opacity:0;transform:scale(0.6);overflow:hidden}.overlay.show[data-v-5f0b9ba1]{opacity:1;visibility:visible}.overlay.show .modal[data-v-5f0b9ba1]{opacity:1;transform:scale(1)}.panel[data-v-5f0b9ba1]{padding:6px 10px;display:flex;width:100%;box-sizing:border-box;align-items:center;border-radius:4px;position:relative;border:1px solid #eaf7ff;background:#f7fcff;outline:none;transition:all 0.07s ease-in-out}.btn[data-v-5f0b9ba1]{cursor:pointer;box-sizing:border-box}.light-btn[data-v-5f0b9ba1]{padding:6px 10px;display:flex;width:100%;box-sizing:border-box;align-items:center;border-radius:4px;position:relative;border:1px solid #eaf7ff;background:#f7fcff;outline:none;cursor:pointer;transition:all 0.07s ease-in-out}.light-btn[data-v-5f0b9ba1]:hover{background:#e0f4ff;border-color:#8acfff}.shake[data-v-5f0b9ba1]{animation:shake-data-v-5f0b9ba1 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;transform:translate3d(0, 0, 0)}@keyframes shake-data-v-5f0b9ba1{10%,90%{transform:translate3d(-1px, 0, 0)}20%,80%{transform:translate3d(2px, 0, 0)}30%,50%,70%{transform:translate3d(-4px, 0, 0)}40%,60%{transform:translate3d(4px, 0, 0)}}.pulse[data-v-5f0b9ba1]{animation:pulse-data-v-5f0b9ba1 2s ease infinite}@keyframes pulse-data-v-5f0b9ba1{0%{opacity:.7}50%{opacity:.4}100%{opacity:.7}}.flash-once[data-v-5f0b9ba1]{animation:flash-once 3.5s ease 1}@keyframes fade-up-data-v-5f0b9ba1{0%{transform:translate3d(0, 10px, 0);opacity:0}100%{transform:translate3d(0, 0, 0);opacity:1}}.fade-in[data-v-5f0b9ba1]{animation:fade-in-data-v-5f0b9ba1 .3s ease-in-out}@keyframes fade-in-data-v-5f0b9ba1{0%{opacity:0}100%{opacity:1}}.spin[data-v-5f0b9ba1]{animation-name:spin-data-v-5f0b9ba1;animation-duration:2000ms;animation-iteration-count:infinite;animation-timing-function:linear}@keyframes spin-data-v-5f0b9ba1{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.bounceIn[data-v-5f0b9ba1]{animation-name:bounceIn-data-v-5f0b9ba1;transform-origin:center bottom;animation-duration:1s;animation-fill-mode:both;animation-iteration-count:1}@keyframes bounceIn-data-v-5f0b9ba1{0%,20%,40%,60%,80%,100%{-webkit-transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1);transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}0%{opacity:1;-webkit-transform:scale3d(0.8, 0.8, 0.8);transform:scale3d(0.8, 0.8, 0.8)}20%{-webkit-transform:scale3d(1.1, 1.1, 1.1);transform:scale3d(1.1, 1.1, 1.1)}40%{-webkit-transform:scale3d(0.9, 0.9, 0.9);transform:scale3d(0.9, 0.9, 0.9)}60%{opacity:1;-webkit-transform:scale3d(1.03, 1.03, 1.03);transform:scale3d(1.03, 1.03, 1.03)}80%{-webkit-transform:scale3d(0.97, 0.97, 0.97);transform:scale3d(0.97, 0.97, 0.97)}100%{opacity:1;-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}}@keyframes dots-data-v-5f0b9ba1{0%,20%{color:rgba(0,0,0,0);text-shadow:0.25em 0 0 rgba(0,0,0,0),0.5em 0 0 rgba(0,0,0,0)}40%{color:#8492A6;text-shadow:0.25em 0 0 rgba(0,0,0,0),0.5em 0 0 rgba(0,0,0,0)}60%{text-shadow:0.25em 0 0 #8492A6,0.5em 0 0 rgba(0,0,0,0)}80%,100%{text-shadow:.25em 0 0 #8492A6, .5em 0 0 #8492A6}}@keyframes recording-data-v-5f0b9ba1{0%{box-shadow:0px 0px 5px 0px rgba(173,0,0,0.3)}65%{box-shadow:0px 0px 5px 5px rgba(173,0,0,0.3)}90%{box-shadow:0px 0px 5px 5px rgba(173,0,0,0)}}body[data-v-5f0b9ba1]{margin:0;font-size:100%;color:#3C4858}a[data-v-5f0b9ba1]{text-decoration:none;color:#45C8F1}h1[data-v-5f0b9ba1],h2[data-v-5f0b9ba1],h3[data-v-5f0b9ba1],h4[data-v-5f0b9ba1]{margin-top:0}svg[data-v-5f0b9ba1]{outline:none}.container_selected_area[data-v-5f0b9ba1]{display:none;visibility:hidden;padding:0;position:fixed;top:0;left:0;right:0;bottom:0;z-index:2147483647}.container_selected_area.active[data-v-5f0b9ba1]{visibility:visible;display:block}.container_selected_area .label[data-v-5f0b9ba1]{font-family:"Didact Gothic Regular",sans-serif;font-size:22px;text-align:center;padding-top:15px}.container_selected_area .area[data-v-5f0b9ba1]{display:none;position:fixed;z-index:2147483647;border:1px solid #1e83ff;background:rgba(30,131,255,0.1);box-sizing:border-box}.container_selected_area .area.active[data-v-5f0b9ba1]{display:block;top:0;left:0}.hide[data-v-5f0b9ba1]{display:none}
-</style></head> <body id="main-mini" class="clearfix" data-isloaded=""><div class="zopim" __jx__id="___$_76 ___$_76" data-test-id="ChatWidgetButton" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000002; width: 180px; height: 30px; right: 10px; bottom: 0px; display: none;"><iframe frameborder="0" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;" src="about:blank" data-test-id="ChatWidgetButton-iframe" title="Zendesk Chat widget button"></iframe></div><div class="zopim" __jx__id="___$_4 ___$_4" data-test-id="ChatWidgetWindow" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000001; right: 10px; bottom: 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; display: none; width: 350px; height: 450px; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 2px;"><iframe frameborder="0" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;" src="about:blank" data-test-id="ChatWidgetWindow-iframe" title="Zendesk Chat widget window"></iframe></div> <span data-watchdog="" class="show-for-small-only"></span><span data-watchdog="" class="show-for-medium-only"></span><span data-watchdog="" class="show-for-large"></span> <div class="main-mini-div clearfix"> <div id="login" class="register core_fullVerticalCentered"> <div class="bg"></div> <a href="https://www.lottofy.com/en/"><i class="animated fadeIn delay" id="logo"></i></a> <div> <div> <div class="core_vAlign-for-medium row collapse"> <div class="column small-12 medium-6 large-5 text-center"> <div class="registerBox "> <div class="core_panel core_halfThin core_sans_serif lightCoal text-left "> <a href="https://www.lottofy.com/en/login/" class="core_styleBlock text-center core_txtSize_sm2 core_spaceTThin blue icon-slim-arrow-back-outline" onclick="$('#registerStep2').fadeOut(function(){ $(this).removeClass('is-active');$('#registerStep1').fadeIn()})">Do you already have an account?<strong> <u> Click here</u></strong> and sign in with it</a> <form data-abide="" data-signupform="" novalidate="" id="signup-form-step1" data-e="645yuw-e"> <div id="registerStep1" class="registrationPanel is-active text-left"> <fieldset class="core_paddingBzero"> <label> <input name="CSRFtoken" type="hidden" value="1b022b4539d2f87932569332b40a5c0c"> <input tabindex="1" required="" maxlength="70" name="signup_email" type="email" placeholder="Email"> <span class="form-error">The email entered is incorrect</span> </label> <label> <div class="input-group"> <input tabindex="2" pattern=".{8,30}" maxlength="30" required="" id="signup_password" name="pw" type="password" class="radius" placeholder="Password"> <div class="input-group-button"> <button type="button" class="button icon-slim-eye" onclick="if ( $('#signup_password').attr('type') === 'password') { $('#signup_password').attr('type','text') } else { $('#signup_password').attr('type','password') }"> </button></div> </div> <span class="form-error" data-form-error-for="signup_password">Create a password with at least 8 characters</span> </label> </fieldset> <fieldset> <div data-baseform=""> <label> <input tabindex="3" maxlength="30" required="" name="signup_name" type="text" class="radius" placeholder="Name"> <span class="form-error">This field is required</span> </label> <label> <input tabindex="4" maxlength="70" required="" name="signup_lastname" type="text" class="radius" placeholder="Last Name"> <span class="form-error">This field is required</span> </label> <label> <input tabindex="5" maxlength="30" required="" name="id" type="text" class="radius" placeholder="National ID / Passport" pattern="alpha_numeric"> <span class="form-error">This field is required and may only contain letters and numbers</span> </label> <label>Birth date</label> <select tabindex="6" required="" data-bday="" id="bday_day" name="signup_bday_day"> <option selected="" value="">Day</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="10">10</option> <option value="11">11</option> <option value="12">12</option> <option value="13">13</option> <option value="14">14</option> <option value="15">15</option> <option value="16">16</option> <option value="17">17</option> <option value="18">18</option> <option value="19">19</option> <option value="20">20</option> <option value="21">21</option> <option value="22">22</option> <option value="23">23</option> <option value="24">24</option> <option value="25">25</option> <option value="26">26</option> <option value="27">27</option> <option value="28">28</option> <option value="29">29</option> <option value="30">30</option> <option value="31">31</option> </select> <select tabindex="7" required="" data-bday="" id="bday_month" name="signup_bday_month"> <option selected="" value="">Month</option> <option value="1">January</option> <option value="2">February</option> <option value="3">March</option> <option value="4">April</option> <option value="5">May</option> <option value="6">June</option> <option value="7">July</option> <option value="8">August</option> <option value="9">September</option> <option value="10">October</option> <option value="11">November</option> <option value="12">December</option> </select> <select tabindex="8" required="" data-bday="" id="bday_year" name="signup_bday_year"> <option value="" selected="">Year</option> <option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option><option value="1949">1949</option><option value="1948">1948</option><option value="1947">1947</option><option value="1946">1946</option><option value="1945">1945</option><option value="1944">1944</option><option value="1943">1943</option><option value="1942">1942</option><option value="1941">1941</option><option value="1940">1940</option><option value="1939">1939</option><option value="1938">1938</option><option value="1937">1937</option><option value="1936">1936</option><option value="1935">1935</option><option value="1934">1934</option><option value="1933">1933</option><option value="1932">1932</option><option value="1931">1931</option><option value="1930">1930</option><option value="1929">1929</option><option value="1928">1928</option><option value="1927">1927</option><option value="1926">1926</option><option value="1925">1925</option><option value="1924">1924</option><option value="1923">1923</option><option value="1922">1922</option><option value="1921">1921</option><option value="1920">1920</option><option value="1919">1919</option><option value="1918">1918</option><option value="1917">1917</option><option value="1916">1916</option><option value="1915">1915</option><option value="1914">1914</option><option value="1913">1913</option><option value="1912">1912</option><option value="1911">1911</option><option value="1910">1910</option><option value="1909">1909</option><option value="1908">1908</option><option value="1907">1907</option><option value="1906">1906</option><option value="1905">1905</option><option value="1904">1904</option><option value="1903">1903</option> </select> <span class="form-error" data-form-error-for="bday_day">It is necessary to indicate a day of birth</span> <span class="form-error" data-form-error-for="bday_month">It is necessary to indicate a month of birth</span> <span class="form-error" data-form-error-for="bday_year">It is necessary to indicate a year of birth</span> <label>Country where you live						<select tabindex="9" required="" name="country"> <option value="" selected="">Country</option> <option value="184">Abkhazia</option> <option value="63">Åland Islands</option> <option value="11">Algeria</option> <option value="4">Andorra</option> <option value="5">Angola</option> <option value="6">Anguilla</option> <option value="7">Antarctica</option> <option value="8">Antigua and Barbuda</option> <option value="12">Argentina</option> <option value="13">Armenia</option> <option value="14">Aruba</option> <option value="16">Austria</option> <option value="17">Azerbaijan</option> <option value="19">Bahrain</option> <option value="20">Bangladesh</option> <option value="26">Belarus</option> <option value="23">Belize</option> <option value="24">Benin</option> <option value="25">Bermuda</option> <option value="36">Bhutan</option> <option value="28">Bolivia</option> <option value="29">Bosnia and Herzegovina</option> <option value="218">Bouvet Island</option> <option value="31">Brazil</option> <option value="219">British Indian Ocean Territory</option> <option value="32">Brunei Darussalam</option> <option value="34">Burkina Faso</option> <option value="35">Burundi</option> <option value="39">Cameroon</option> <option value="40" selected="selected">Canada</option> <option value="37">Cape Verde</option> <option value="105">Caribbean Netherlands</option> <option value="187">Cayman Islands</option> <option value="128">Central African Republic</option> <option value="41">Chad</option> <option value="43">Chile</option> <option value="44">China</option> <option value="220">Christmas Island</option> <option value="188">Cocos (Keeling) Islands</option> <option value="46">Colombia</option> <option value="47">Comoros</option> <option value="48">Congo Democratic Republic</option> <option value="189">Congo Republic</option> <option value="190">Cook Islands</option> <option value="52">Costa Rica</option> <option value="51">Cote D'Ivoire</option> <option value="53">Croatia</option> <option value="54">Cuba</option> <option value="138">Curaçao</option> <option value="56">Djibouti</option> <option value="57">Dominica</option> <option value="129">Dominican Republic</option> <option value="58">Ecuador</option> <option value="59">Egypt</option> <option value="60">El Salvador</option> <option value="221">Equatorial Guinea</option> <option value="62">Eritrea</option> <option value="68">Estonia</option> <option value="69">Ethiopia</option> <option value="213">Falkland Islands (Malvinas)</option> <option value="191">Faroe Islands</option> <option value="70">Fiji</option> <option value="72">Finland</option> <option value="192">Gabon</option> <option value="193">Gambia</option> <option value="194">Georgia</option> <option value="3">Germany</option> <option value="195">Ghana</option> <option value="197">Greenland</option> <option value="226">Grenada</option> <option value="181">Guatemala</option> <option value="200">Guinea</option> <option value="228">Guinea-Bissau</option> <option value="201">Guyana</option> <option value="202">Haiti</option> <option value="229">Heard Island and Mcdonald Islands</option> <option value="203">Honduras</option> <option value="205">Hungary</option> <option value="209">Iceland</option> <option value="183">India</option> <option value="206">Indonesia</option> <option value="180">Ireland</option> <option value="185">Isle of Man</option> <option value="182">Japan</option> <option value="212">Jordan</option> <option value="74">Kazakhstan</option> <option value="75">Kenya</option> <option value="77">Kiribati</option> <option value="78">Kuwait</option> <option value="76">Kyrgyzstan</option> <option value="79">Lao People's Democratic Republic</option> <option value="81">Latvia</option> <option value="82">Lebanon</option> <option value="80">Lesotho</option> <option value="83">Liberia</option> <option value="84">Libyan Arab Jamahiriya</option> <option value="85">Liechtenstein</option> <option value="87">Luxembourg</option> <option value="230">Macao</option> <option value="89">Madagascar</option> <option value="91">Malawi</option> <option value="92">Maldives</option> <option value="93">Mali</option> <option value="94">Malta</option> <option value="231">Marshall Islands</option> <option value="96">Mauritania</option> <option value="233">Mayotte</option> <option value="98">Mexico</option> <option value="99">Micronesia</option> <option value="100">Moldova</option> <option value="101">Monaco</option> <option value="102">Mongolia</option> <option value="103">Montenegro</option> <option value="234">Montserrat</option> <option value="95">Morocco</option> <option value="104">Mozambique</option> <option value="186">Nagorno-Karabakh</option> <option value="106">Namibia</option> <option value="107">Nauru</option> <option value="108">Nepal</option> <option value="116">Netherlands</option> <option value="9">Netherlands Antilles</option> <option value="109">New Zealand</option> <option value="110">Nicaragua</option> <option value="111">Niger</option> <option value="112">Nigeria</option> <option value="113">Niue</option> <option value="236">Norfolk Island</option> <option value="88">North Macedonia</option> <option value="114">Norway</option> <option value="115">Oman</option> <option value="118">Palau</option> <option value="120">Papua New Guinea</option> <option value="121">Paraguay</option> <option value="122">Peru</option> <option value="71">Philippines</option> <option value="238">Pitcairn</option> <option value="124">Portugal</option> <option value="126">Qatar</option> <option value="131">Russian Federation</option> <option value="132">Rwanda</option> <option value="214">Saint Bartolomé</option> <option value="176">Saint Helena</option> <option value="134">Saint Kitts and Nevis</option> <option value="137">Saint Lucia</option> <option value="215">Saint Martin</option> <option value="216">Saint Pierre and Miquelon</option> <option value="136">Saint Vincent and the Grenadines</option> <option value="133">Samoa</option> <option value="135">San Marino</option> <option value="139">Sao Tome and Principe</option> <option value="10">Saudi Arabia</option> <option value="140">Senegal</option> <option value="141">Serbia and Montenegro</option> <option value="142">Seychelles</option> <option value="143">Sierra Leone</option> <option value="252">Sint Marten</option> <option value="240">Solomon Islands</option> <option value="146">Somalia</option> <option value="148">South Africa</option> <option value="241">South Georgia and the South Sandwich Islands</option> <option value="50">South Korea</option> <option value="253">South Sudan</option> <option value="147">Sri Lanka</option> <option value="152">Suriname</option> <option value="242">Svalbard and Jan Mayen</option> <option value="153">Swaziland</option> <option value="151">Switzerland</option> <option value="155">Taiwan</option> <option value="157">Tajikistan</option> <option value="156">Tanzania</option> <option value="154">Thailand</option> <option value="158">Timor-Leste</option> <option value="159">Togo</option> <option value="243">Tokelau</option> <option value="160">Tonga</option> <option value="161">Trinidad and Tobago</option> <option value="162">Tunisia</option> <option value="163">Turkmenistan</option> <option value="244">Turks and Caicos Islands</option> <option value="165">Tuvalu</option> <option value="166">Ukraine</option> <option value="61">United Arab Emirates</option> <option value="168">Uruguay</option> <option value="169">Uzbekistan</option> <option value="170">Vanuatu</option> <option value="171">Vatican City State</option> <option value="172">Venezuela</option> <option value="173">Viet Nam</option> <option value="248">Wallis and Futuna</option> <option value="174">Western Sahara</option> <option value="177">Zambia</option> <option value="178">Zimbabwe</option> You have to indicate a country </select> </label> <div class="checkboxesArea"> <label class="beautified core_spaceBHalf"><span></span><input tabindex="10" required="" id="terms" name="signup_terms" type="checkbox"> 
-															I accept the <a href="https://www.lottofy.com/en/privacy/" target="_blank"><strong><u>Privacy Policy</u></strong></a> and <a href="https://www.lottofy.com/en/tos/" target="_blank"><strong><u>Terms and Conditions</u></strong></a> </label> <span class="form-error" data-form-error-for="terms">You have to read and accept the conditions if you want to register</span> </div> </div> </fieldset> <div data-recaptcha="" data-key="6LcOaMEUAAAAAJxUyFAkaQGMfUNpnh-ZjzIxeIKr"><input type="hidden" data-recaptcharesponse="" name="g-recaptcha-response"></div> <div data-status-msg="" data-abide-error="" class="alert callout" style="display: none;"> <p><i class="icon-slim-warning-outline"></i> Uh! Oh! There are some mistakes in the form</p> </div> <button tabindex="11" data-submit="" type="submit" class="button radius bg_blue core_full"><strong>Continue</strong></button> <div class="disclaimer"> <p><strong>You must be legal age to access,</strong> also the usage of fake or incomplete data will fall into the cancelation and immediate closure of your account and the loss of all your prizes.</p> <p>Your country isn’t here? <a href="javascript:void(null)" title="Unavailable countries" data-open="mainHelp" data-reveal-source="help" data-reveal-params="{ &quot;helpTopic&quot;:&quot;forbidden_countries&quot;}">Unavailable countries</a></p> </div> </div> </form> <form data-abide="" data-signupform="" novalidate="" id="signup-form-step2" data-e="pijxri-e"> <div id="registerStep2" class="registrationPanel "> <fieldset class="core_paddingBzero"> <div class="row collapse"> <div class="column medium-4"> <label for="signup_phoneCountry">
-							Country code							<select tabindex="13" id="signup_phoneCountry" name="signup_phoneCountry" required=""> <option value="" selected="">Country</option> <option value="184">Abkhazia (+840)</option> <option value="1">Afghanistan (+93)</option> <option value="63">Åland Islands (+358)</option> <option value="2">Albania (+355)</option> <option value="11">Algeria (+213)</option> <option value="217">American Samoa (+1684)</option> <option value="4">Andorra (+376)</option> <option value="5">Angola (+244)</option> <option value="6">Anguilla (+1264)</option> <option value="8">Antigua and Barbuda (+1268)</option> <option value="12">Argentina (+54)</option> <option value="13">Armenia (+374)</option> <option value="14">Aruba (+297)</option> <option value="15">Australia (+61)</option> <option value="16">Austria (+43)</option> <option value="17">Azerbaijan (+994)</option> <option value="18">Bahamas (+1242)</option> <option value="19">Bahrain (+973)</option> <option value="20">Bangladesh (+880)</option> <option value="21">Barbados (+1246)</option> <option value="26">Belarus (+375)</option> <option value="22">Belgium (+32)</option> <option value="23">Belize (+501)</option> <option value="24">Benin (+229)</option> <option value="25">Bermuda (+1441)</option> <option value="36">Bhutan (+975)</option> <option value="28">Bolivia (+591)</option> <option value="29">Bosnia and Herzegovina (+387)</option> <option value="30">Botswana (+267)</option> <option value="31">Brazil (+55)</option> <option value="219">British Indian Ocean Territory (+246)</option> <option value="32">Brunei Darussalam (+673)</option> <option value="33">Bulgaria (+359)</option> <option value="34">Burkina Faso (+226)</option> <option value="35">Burundi (+257)</option> <option value="38">Cambodia (+855)</option> <option value="39">Cameroon (+237)</option> <option value="40" selected="selected">Canada (+1)</option> <option value="37">Cape Verde (+238)</option> <option value="105">Caribbean Netherlands (+599)</option> <option value="187">Cayman Islands (+1345)</option> <option value="128">Central African Republic (+236)</option> <option value="41">Chad (+235)</option> <option value="43">Chile (+56)</option> <option value="44">China (+86)</option> <option value="220">Christmas Island (+61)</option> <option value="188">Cocos (Keeling) Islands (+672)</option> <option value="46">Colombia (+57)</option> <option value="47">Comoros (+269)</option> <option value="48">Congo Democratic Republic (+243)</option> <option value="189">Congo Republic (+242)</option> <option value="190">Cook Islands (+682)</option> <option value="52">Costa Rica (+506)</option> <option value="51">Cote D'Ivoire (+225)</option> <option value="53">Croatia (+385)</option> <option value="54">Cuba (+53)</option> <option value="138">Curaçao (+599)</option> <option value="45">Cyprus (+357)</option> <option value="42">Czech Republic (+420)</option> <option value="55">Denmark (+45)</option> <option value="56">Djibouti (+253)</option> <option value="57">Dominica (+1767)</option> <option value="129">Dominican Republic (+1)</option> <option value="58">Ecuador (+593)</option> <option value="59">Egypt (+20)</option> <option value="60">El Salvador (+503)</option> <option value="221">Equatorial Guinea (+240)</option> <option value="62">Eritrea (+291)</option> <option value="68">Estonia (+372)</option> <option value="69">Ethiopia (+251)</option> <option value="213">Falkland Islands (Malvinas) (+500)</option> <option value="191">Faroe Islands (+298)</option> <option value="70">Fiji (+679)</option> <option value="72">Finland (+358)</option> <option value="73">France (+33)</option> <option value="222">French Guiana (+594)</option> <option value="223">French Polynesia (+689)</option> <option value="192">Gabon (+241)</option> <option value="193">Gambia (+220)</option> <option value="194">Georgia (+995)</option> <option value="3">Germany (+49)</option> <option value="195">Ghana (+233)</option> <option value="225">Gibraltar (+350)</option> <option value="196">Greece (+30)</option> <option value="197">Greenland (+299)</option> <option value="226">Grenada (+1473)</option> <option value="227">Guadeloupe (+590)</option> <option value="198">Guam (+1671)</option> <option value="181">Guatemala (+502)</option> <option value="199">Guernsey (+44)</option> <option value="200">Guinea (+224)</option> <option value="228">Guinea-Bissau (+245)</option> <option value="201">Guyana (+592)</option> <option value="202">Haiti (+509)</option> <option value="203">Honduras (+504)</option> <option value="204">Hong Kong (+852)</option> <option value="205">Hungary (+36)</option> <option value="209">Iceland (+354)</option> <option value="183">India (+91)</option> <option value="206">Indonesia (+62)</option> <option value="207">Iran (+98)</option> <option value="208">Iraq (+964)</option> <option value="180">Ireland (+353)</option> <option value="185">Isle of Man (+44)</option> <option value="210">Israel (+972)</option> <option value="179">Italy (+39)</option> <option value="211">Jamaica (+1876)</option> <option value="182">Japan (+81)</option> <option value="249">Jersey (+44)</option> <option value="212">Jordan (+962)</option> <option value="74">Kazakhstan (+7)</option> <option value="75">Kenya (+254)</option> <option value="77">Kiribati (+686)</option> <option value="78">Kuwait (+965)</option> <option value="76">Kyrgyzstan (+996)</option> <option value="79">Lao People's Democratic Republic (+856)</option> <option value="81">Latvia (+371)</option> <option value="82">Lebanon (+961)</option> <option value="80">Lesotho (+266)</option> <option value="83">Liberia (+231)</option> <option value="84">Libyan Arab Jamahiriya (+218)</option> <option value="85">Liechtenstein (+423)</option> <option value="86">Lithuania (+370)</option> <option value="87">Luxembourg (+352)</option> <option value="230">Macao (+853)</option> <option value="89">Madagascar (+261)</option> <option value="91">Malawi (+265)</option> <option value="90">Malaysia (+60)</option> <option value="92">Maldives (+960)</option> <option value="93">Mali (+223)</option> <option value="94">Malta (+356)</option> <option value="231">Marshall Islands (+692)</option> <option value="232">Martinique (+596)</option> <option value="96">Mauritania (+222)</option> <option value="97">Mauritius (+230)</option> <option value="233">Mayotte (+269)</option> <option value="98">Mexico (+52)</option> <option value="99">Micronesia (+691)</option> <option value="100">Moldova (+373)</option> <option value="101">Monaco (+377)</option> <option value="102">Mongolia (+976)</option> <option value="103">Montenegro (+382)</option> <option value="234">Montserrat (+1664)</option> <option value="95">Morocco (+212)</option> <option value="104">Mozambique (+258)</option> <option value="27">Myanmar (+95)</option> <option value="186">Nagorno-Karabakh (+357)</option> <option value="106">Namibia (+264)</option> <option value="107">Nauru (+674)</option> <option value="108">Nepal (+977)</option> <option value="116">Netherlands (+31)</option> <option value="9">Netherlands Antilles (+599)</option> <option value="235">New Caledonia (+687)</option> <option value="109">New Zealand (+64)</option> <option value="110">Nicaragua (+505)</option> <option value="111">Niger (+227)</option> <option value="112">Nigeria (+234)</option> <option value="113">Niue (+683)</option> <option value="236">Norfolk Island (+672)</option> <option value="49">North Korea (+850)</option> <option value="88">North Macedonia (+389)</option> <option value="237">Northern Mariana Islands (+1670)</option> <option value="114">Norway (+47)</option> <option value="115">Oman (+968)</option> <option value="250">Pakistan (+92)</option> <option value="118">Palau (+680)</option> <option value="117">PALESTINE (+970)</option> <option value="119">Panama (+507)</option> <option value="120">Papua New Guinea (+675)</option> <option value="121">Paraguay (+595)</option> <option value="122">Peru (+51)</option> <option value="71">Philippines (+63)</option> <option value="123">Poland (+48)</option> <option value="124">Portugal (+351)</option> <option value="125">Puerto Rico (+1787)</option> <option value="126">Qatar (+974)</option> <option value="239">Reunion (+262)</option> <option value="130">Romania (+40)</option> <option value="131">Russian Federation (+7)</option> <option value="132">Rwanda (+250)</option> <option value="214">Saint Bartolomé (+590)</option> <option value="176">Saint Helena (+290)</option> <option value="134">Saint Kitts and Nevis (+1869)</option> <option value="137">Saint Lucia (+1758)</option> <option value="215">Saint Martin (+599)</option> <option value="216">Saint Pierre and Miquelon (+508)</option> <option value="136">Saint Vincent and the Grenadines (+1784)</option> <option value="133">Samoa (+684)</option> <option value="135">San Marino (+378)</option> <option value="139">Sao Tome and Principe (+239)</option> <option value="10">Saudi Arabia (+966)</option> <option value="140">Senegal (+221)</option> <option value="251">Serbia (+381)</option> <option value="141">Serbia and Montenegro (+381)</option> <option value="142">Seychelles (+248)</option> <option value="143">Sierra Leone (+232)</option> <option value="144">Singapore (+65)</option> <option value="252">Sint Marten (+1721)</option> <option value="64">Slovakia (+421)</option> <option value="65">Slovenia (+386)</option> <option value="240">Solomon Islands (+677)</option> <option value="146">Somalia (+252)</option> <option value="148">South Africa (+27)</option> <option value="50">South Korea (+82)</option> <option value="253">South Sudan (+249)</option> <option value="66">Spain (+34)</option> <option value="147">Sri Lanka (+94)</option> <option value="149">Sudan (+249)</option> <option value="152">Suriname (+597)</option> <option value="242">Svalbard and Jan Mayen (+47)</option> <option value="153">Swaziland (+268)</option> <option value="150">Sweden (+46)</option> <option value="151">Switzerland (+41)</option> <option value="145">Syrian Arab Republic (+963)</option> <option value="155">Taiwan (+886)</option> <option value="157">Tajikistan (+992)</option> <option value="156">Tanzania (+255)</option> <option value="154">Thailand (+66)</option> <option value="158">Timor-Leste (+670)</option> <option value="159">Togo (+228)</option> <option value="243">Tokelau (+690)</option> <option value="160">Tonga (+676)</option> <option value="161">Trinidad and Tobago (+1868)</option> <option value="162">Tunisia (+216)</option> <option value="164">Turkey (+90)</option> <option value="163">Turkmenistan (+7370)</option> <option value="244">Turks and Caicos Islands (+1649)</option> <option value="165">Tuvalu (+688)</option> <option value="167">Uganda (+256)</option> <option value="166">Ukraine (+380)</option> <option value="61">United Arab Emirates (+971)</option> <option value="127">United Kingdom (+44)</option> <option value="67">United States (+1)</option> <option value="245">United States Minor Outlying Islands (+1)</option> <option value="168">Uruguay (+598)</option> <option value="169">Uzbekistan (+998)</option> <option value="170">Vanuatu (+678)</option> <option value="171">Vatican City State (+39)</option> <option value="172">Venezuela (+58)</option> <option value="173">Viet Nam (+84)</option> <option value="246">Virgin Islands, British (+1284)</option> <option value="247">Virgin Islands, U.s. (+1340)</option> <option value="248">Wallis and Futuna (+681)</option> <option value="174">Western Sahara (+212)</option> <option value="175">Yemen (+967)</option> <option value="177">Zambia (+260)</option> <option value="178">Zimbabwe (+263)</option> </select> <span class="form-error" data-form-error-for="signup_phoneCountry">Choose your prefix</span> </label> </div> <div class="column medium-8"> <label for="signup_phone">
-							Mobile phone							<input tabindex="14" id="signup_phone" name="signup_phone" maxlength="18" required="" type="number" placeholder="666666666"> <span class="form-error" data-form-error-for="signup_phone">The phone entered does not have the proper format</span> </label> </div> </div> <label> <input tabindex="15" maxlength="100" required="" name="signup_address" type="text" class="radius" placeholder="Enter your address"> <span class="form-error">This field is required</span> </label> <label> <input tabindex="16" maxlength="25" required="" name="signup_zip" type="text" class="radius" placeholder="Enter your postal code"> <span class="form-error">This field is required</span> </label> <label> <input tabindex="17" maxlength="45" required="" name="signup_city" type="text" class="radius" placeholder="Enter your city"> <span class="form-error">This field is required</span> </label> <label>Currency <small class="core_lh_1 alert">(<strong>YOU CANNOT</strong> modify it afterwards)</small> <select name="signup_currency" id="signup_currency"> <option value="EUR">EUR  -  €</option> <option value="USD" selected="">USD  -  $</option> <option value="BRL">BRL  -  R$</option> <option value="CNY">CNY  -  ¥</option> <option value="INR">INR  -  ₹</option> <option value="CAD">CAD  -  C$</option> <option value="MXN">MXN  -  M$</option> <option value="XOF">XOF  -  CFA</option> <option value="CLP">CLP  -  CLP$</option> <option value="COP">COP  -  COP$</option> <option value="NOK">NOK  -  kr</option> <option value="PEN">PEN  -  S/</option> <option value="PHP">PHP  -  ₱</option> <option value="ZAR">ZAR  -  R</option> <option value="CHF">CHF  -  CHf</option> <option value="GBP">GBP  -  £</option> <option value="NGN">NGN  -  ₦</option> </select> </label> <div class="checkboxesArea"> <label class="beautified core_spaceBHalf"><span></span><input tabindex="21" id="newsletter" name="signup_newsletter" type="checkbox"> Receive notifications for weekly jackpots</label> </div> <div class="pepArea"> <button type="button" data-pepsubmit=""><strong>Are you a <strong>PEP</strong>?</strong> <small>(Politically Exposed Person)</small></button> <div data-pepdetails=""> <img src="//d2oamtuj38i9pe.cloudfront.net/images/common/illustrations/pep1.png"> <p>You are a <strong>PEP</strong> (Politically Exposed Person) if you have been entrusted with prominent public functions, for example Heads of state or Heads of government, senior politicians, senior government, judicial or military officials, senior executives of state owned corporations, important political party officials, senior official of a major 'foreign' political party, etc.</p> <p>If you are a <strong>PEP</strong> or if your <strong>PEP</strong> changes overtime, you have to inform us in order to play at <strong>Lottofy</strong>.</p> <label>Are you a <strong>PEP</strong>?							<select tabindex="22" name="signup_pep" id="user_pep"> <option value="0" selected="">I’m not sure</option> <option value="2">No, I’m not a PEP</option> <option value="1">Yes, I’m a PEP</option> </select> </label> </div> </div> </fieldset> <div data-status-msg="" data-abide-error="" class="alert callout" style="display: none;"> <p><i class="icon-slim-warning-outline"></i> Uh! Oh! There are some mistakes in the form</p> </div> <div data-recaptcha="" data-key="6LcOaMEUAAAAAJxUyFAkaQGMfUNpnh-ZjzIxeIKr"><input type="hidden" data-recaptcharesponse="" name="g-recaptcha-response"></div> <button type="submit" data-submit="" class="button radius bg_bgColor core_full"><strong>Finish</strong></button> </div> </form> <p data-recaptchadisclaimer="">This site is protected by reCAPTCHA and Google's <a href="https://policies.google.com/privacy" target="_blank">privacy policy</a> and <a href="https://policies.google.com/terms" target="_blank">terms of service</a> apply.</p> <script>
+            if (typeof errorObj != "undefined") {
+              if (typeof errorObj.message != "undefined") {
+                msg = errorObj.message;
+              }
+              if (typeof errorObj.stack != "undefined") {
+                stk = errorObj.stack;
+              }
+              if (typeof errorObj.file != "undefined") {
+                fil = errorObj.file;
+              }
+              if (typeof errorObj.line != "undefined") {
+                lin = errorObj.line;
+              }
+              if (typeof errorObj.col != "undefined") {
+                col = errorObj.col;
+              }
+            }
 
-					bamQueue.addToQueue(function(){
-				var signUp = new signUpObject({
-					"onStep1Success_callback":function(e){
-						if(typeof e.pep != "undefined"){
-							$('.pepArea').remove();
-						}
-					},
-					"onStep2Success_callback":function(){
-						if(typeof $zopim != "undefined" && typeof $zopim.livechat != "undefined") {
-							$zopim.livechat.removeTags('signupError');
-						}
-					},
-					"onFail_callback":function(){
-						if(typeof $zopim != "undefined" && typeof $zopim.livechat != "undefined") {
-							$zopim.livechat.addTags('signupError');
-						}
-					},
-					"onValidatePhoneCode_callback":function(){
-						if(typeof $zopim != "undefined" && typeof $zopim.livechat != "undefined") {
-							$zopim.livechat.removeTags('signupError');
-						}
-					},
-					"onValidateMailCode_callback":function(){
-						if(typeof $zopim != "undefined" && typeof $zopim.livechat != "undefined") {
-							$zopim.livechat.removeTags('signupError');
-						}
-					},
-					"onValidatePhone_callback": function(){
-						if(typeof $zopim != "undefined" && typeof $zopim.livechat != "undefined") {
-							$zopim.livechat.removeTags('signupError');
-						}
-					},
-					"onValidateMail_callback": function(){
-						if(typeof $zopim != "undefined" && typeof $zopim.livechat != "undefined") {
-							$zopim.livechat.removeTags('signupError');
-						}
-					},
-					"strings": {
-						holdOn: "Wait...",
-						creating: "Creating your account...",
-						unknownError: "Unknown error"
-					},
-											"useSingleStep": false									});
-			})
-				bamQueue.addToQueue(function(){
-			setCookie("CSRFtoken",'1b022b4539d2f87932569332b40a5c0c',1);
-		});
+            if (verboseOnly) {
+              if (stk.length > 0) {
+                console.error(stk);
+              } else {
+                console.error(errorObj);
+              }
+            } else {
+              if (typeof errorObj != "undefined") {
+                if (window["lastErrorStack"] !== stk) {
+                  var xhr = new XMLHttpRequest();
+                  xhr.open("POST", "/data/?action=logJS");
+                  xhr.setRequestHeader("Content-Type", "application/json");
+                  xhr.send(
+                    JSON.stringify({
+                      error: msg,
+                      file: fil,
+                      stack: stk,
+                      line: lin,
+                      col: col,
+                    })
+                  );
+                  if (stk.length > 0) {
+                    window["lastErrorStack"] = stk;
+                  }
+                }
+              }
+            }
+          }
+          window.onerror = function (message, file, line, col, error) {
+            var errObj = {};
+            if (typeof message != "undefined" && message != null) {
+              errObj["message"] = message;
+            }
+            if (typeof file != "undefined" && file != null) {
+              errObj["file"] = file;
+            }
+            if (typeof line != "undefined" && line != null) {
+              errObj["line"] = line;
+            }
+            if (typeof col != "undefined" && col != null) {
+              errObj["col"] = col;
+            }
+            if (
+              typeof error != "undefined" &&
+              error != null &&
+              typeof error.stack != "undefined"
+            ) {
+              errObj["stack"] = error.stack;
+            }
+            if (verboseOnly) {
+              sendErrorLog(true, errObj);
+            } else {
+              sendErrorLog(false, errObj);
+            }
+          };
+          this.waitForExistance("$", function () {
+            var temp = jQuery.event.dispatch;
 
-	</script> </div> </div> </div> <div class="column small-12 medium-6 large-5 end" id="infoPanel"> <div class="core_panel"> <h1 class=" core_lh_1 core_strong">Join now</h1> <h2 class=" core_lh_1 core_light">and enter the club of those who win the lottery</h2> <ul class="coal core_sans_serif core_spaceT core_light"> <li class="icon-slim-input-checked"> You receive your results by email after each draw</li> <li class="icon-slim-input-checked"> You can join  <strong>Lotteries</strong> and <strong>Funds</strong> with hundreds of bets</li> <li class="icon-slim-input-checked"> You can play <strong>safely and with transparency</strong></li> <li class="icon-slim-input-checked"> You receive your prizes, instantly</li> </ul> </div> </div> </div> </div> </div> <footer class="miniFooter"> <div class="core_panel" data-disclaimer=""> <p>					2019-2022 © Clobet Limited | Registration number: C90546 | St. John Street, 89 VLT1165 - Valletta - Malta
-					</p> <ul> <li><a href="https://www.lottofy.com/en/about/">ABOUT US</a></li><li> <a class="white" href="https://www.lottofy.com/en/privacy/">PRIVACY</a></li><li> <a class="white" href="https://www.lottofy.com/en/tos/">TERMS AND CONDITIONS</a></li><li> <a class="white" href="https://www.lottofy.com/en/faq/">HELP</a></li><li> <a class="white" href="https://www.lottofy.com/en/responsible-gaming/">RESPONSIBLE GAME</a></li><li> <a class="white" href="https://www.lottofy.com/en/helpdesk/">CONTACT US</a></li> </ul> </div> </footer> </div> <script>
-	bamQueue.addToQueue(function(){
-		animatedCounters($('.counter'));
-	})
-</script> </div><div id="scrnli_recorder_root"></div> <div class="reveal-overlay"><div id="feedback" class="reveal" data-reveal="" data-reveal-source="feedback" aria-hidden="true" role="dialog" data-close-on-click="false" data-reveal-params="{ &quot;callback&quot;:&quot;customLabelEvents()&quot;}"></div></div> <div class="reveal-overlay"><div data-reveal-source="unsupported" id="unsupportedModal" class="reveal" data-reveal="" data-close-on-esc="false" data-close-on-click="false"></div></div> <div class="reveal-overlay"><div data-reveal-source="help" id="mainHelp" class="reveal" data-reveal=""></div></div> <div id="sidebarMenus" class="is-active"> <button type="button" data-open="feedback" id="feedbackBt" class="icon-common-star-full"><span data-bttext="">Comment</span></button> <button type="button" id="chatBt" class="is-visible" data-online=""><i class="icon-common-bubble2"></i><span data-bttext="">Chat</span></button> </div> <div id="menu-lang" class=" top-menu_dropdown dropdown-pane" data-menu-lang="" data-dropdown="" aria-hidden="true" data-yeti-box="menu-lang" data-resize="menu-lang" aria-labelledby="wo3q5y-dd-anchor" data-e="xhd8ee-e" data-events="resize"> <p>Language</p> <ul> <li data-lang="ES"><button type="button" data-lang="ES" data-url="https://www.lottofy.com/registro/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png" alt="es"> ES</button></li> <li data-lang="EN"><button type="button" class="is-active" data-lang="EN" data-url="https://www.lottofy.com/en/signup/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png" alt="gb"> EN</button></li> <li data-lang="PT"><button type="button" data-lang="PT" data-url="https://www.lottofy.com/pt/registo/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png" alt="pt"> PT</button></li> <li data-lang="BR"><button type="button" data-lang="BR" data-url="https://www.lottofy.com/br/registo/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png" alt="br"> BR</button></li> <li data-lang="FR"><button type="button" data-lang="FR" data-url="https://www.lottofy.com/fr/inscription/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png" alt="fr"> FR</button></li> <li data-lang="IT"><button type="button" data-lang="IT" data-url="https://www.lottofy.com/it/registrazione/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png" alt="it"> IT</button></li> <li data-lang="DE"><button type="button" data-lang="DE" data-url="https://www.lottofy.com/de/registrierung/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png" alt="de"> DE</button></li> <li data-lang="IN"><button type="button" data-lang="IN" data-url="https://www.lottofy.com/in/signup/?setlanguage=true"><img class="imgSize size10 core_styleMiddle round" src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png" alt="in"> IN</button></li> </ul> <p>Currency</p> <div class="core_panel core_thin"> <select class="core_spaceBzero core_sans_serif core_txtSize_sm1"> <option value="eur">EUR</option> <option selected="" value="usd">USD</option> <option value="brl">BRL</option> <option value="cny">CNY</option> <option value="inr">INR</option> <option value="cad">CAD</option> <option value="mxn">MXN</option> <option value="xof">XOF</option> <option value="clp">CLP</option> <option value="cop">COP</option> <option value="nok">NOK</option> <option value="pen">PEN</option> <option value="php">PHP</option> <option value="zar">ZAR</option> <option value="chf">CHF</option> <option value="gbp">GBP</option> <option value="ngn">NGN</option> </select> </div> <div class="core_panel core_thin"> <button class="button" data-save-lang="" disabled="">Apply</button> </div> </div> <script>
+            jQuery.event.dispatch = function () {
+              try {
+                temp.apply(this, arguments);
+              } catch (e) {
+                var errObj = {};
+                if (typeof e.message != "undefined" && e.message != null) {
+                  errObj["message"] = e.message;
+                }
+                if (typeof e.stack != "undefined" && e.stack != null) {
+                  errObj["stack"] = e.stack;
+                }
+                if (verboseOnly) {
+                  sendErrorLog(true, errObj);
+                } else {
+                  sendErrorLog(false, errObj);
+                }
+                return false;
+              }
+            };
+            $.readyException = function (e) {
+              var errObj = {};
+              if (typeof e.message != "undefined" && e.message != null) {
+                errObj["message"] = e.message;
+              }
+              if (typeof e.stack != "undefined" && e.stack != null) {
+                errObj["stack"] = e.stack;
+              }
+              if (verboseOnly) {
+                sendErrorLog(true, errObj);
+              } else {
+                sendErrorLog(false, errObj);
+              }
+              return false;
+            };
+          });
+        }
+      }
+    </script>
+    <script>
+      bamQueue = new core_queueLoader();
+      var scriptLoadedCount = 0;
+      var numsOfScriptsToLoad = 0; //15;
 
-		function launchProjectInitiator(scriptsLoaded,numsOfExpectedScripts){
-			enableLoaderWatch();
-			$(document).foundation();
-			bamQueue.run();
-			core_reveal=new core_reveal();
-			customModals();
-									if((GetIEVersion()>0 && GetIEVersion()<=11) && getCookie("outdatedBrowserAgreement") == ""){
-				$('#browserAlert').core_reveal("open");
-			}
-								}
+      function checkScriptsLoaded(scriptsLoaded, numsOfExpectedScripts) {
+        if (scriptsLoaded == numsOfExpectedScripts && typeof $ != "undefined") {
+          $(document).ready(function () {
+            launchProjectInitiator();
+          });
+        }
+      }
+      window._mfq = window._mfq || [];
+      bamQueue.loadScript(
+        "//cdn.mouseflow.com/projects/68a4ae8f-ecb0-4aef-b9a2-02f80cad9fb7.js"
+      );
+      bamQueue.loadScript(
+        "https://www.lottofy.com/js/jquery-3.6.0.min.js",
+        function () {
+          bamQueue.loadScript(
+            "https://www.lottofy.com/js/lottofy7main.js?update=202002061248",
+            function () {
+              setFullVersionEnvironment(false);
+              bamQueue.loadScript(
+                "https://www.lottofy.com/js/foundation.min.js",
+                function () {
+                  Foundation.Abide.defaults.patterns["email"] =
+                    /^\s*[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+\s*$/;
 
+                  bamQueue.loadScript(
+                    "https://www.lottofy.com/js/lottofy7common.js?update=202002061248",
+                    function () {
+                      if (numsOfScriptsToLoad == 0) {
+                        checkScriptsLoaded(0, 0);
+                      }
+                    }
+                  );
+                  bamQueue.loadScript(
+                    "https://www.lottofy.com/js/lottofy7postLoad.js?update=202002061248"
+                  );
+                }
+              );
+            }
+          );
+        }
+      );</script
+    ><script
+      src="//cdn.mouseflow.com/projects/68a4ae8f-ecb0-4aef-b9a2-02f80cad9fb7.js"
+      defer=""
+      data-injected-script=""
+    ></script
+    ><script
+      src="https://www.lottofy.com/js/jquery-3.6.0.min.js"
+      defer=""
+      data-injected-script=""
+    ></script>
+    <script>
+      window.___gcfg = { lang: "en-US" };
+    </script>
+    <script>
+      function setDefaultCookies(beforeCallback, doneCallback) {
+        if (typeof beforeCallback != "undefined") {
+          beforeCallback();
+        }
+        var scripts = [
+          {
+            url: "https://apis.google.com/js/platform.js",
+            params: ["defer", "async"],
+          },
+          {
+            url: "https://www.googletagmanager.com/gtag/js?id=G-T3T1BRH6GJ",
+            params: ["async"],
+          },
+        ];
+        var scriptsQueue = new Array();
+        scripts.forEach(function (value, key) {
+          scriptsQueue[key] = document.createElement("script");
+          scriptsQueue[key].src = value.url;
+          value.params.forEach(function (attrVal, attrKey) {
+            scriptsQueue[key].setAttribute(attrVal, "");
+          });
+          scriptsQueue[key].onload = function () {
+            console.log("Cargado: " + value.url);
+          };
+        });
+        scriptsQueue.forEach(function (value, key) {
+          document.head.appendChild(value);
+        });
 
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-T3T1BRH6GJ");
+        if (typeof doneCallback != "undefined") {
+          doneCallback();
+        }
+      }
+    </script>
+    <script>
+      setDefaultCookies();</script
+    ><script
+      src="https://apis.google.com/js/platform.js"
+      defer=""
+      async=""
+      gapi_processed="true"
+    ></script
+    ><script
+      src="https://www.googletagmanager.com/gtag/js?id=G-T3T1BRH6GJ"
+      async=""
+    ></script>
+    <script
+      src="https://www.lottofy.com/js/lottofy7main.js?update=202002061248"
+      defer=""
+      data-injected-script=""
+    ></script
+    ><script
+      src="https://www.lottofy.com/js/foundation.min.js"
+      defer=""
+      data-injected-script=""
+    ></script
+    ><script
+      src="https://www.lottofy.com/js/lottofy7common.js?update=202002061248"
+      defer=""
+      data-injected-script=""
+    ></script
+    ><script
+      src="https://www.lottofy.com/js/lottofy7postLoad.js?update=202002061248"
+      defer=""
+      data-injected-script=""
+    ></script
+    ><meta class="foundation-mq" /><style
+      media="print"
+      class="jx_ui_StyleSheet"
+      __jx__id="___$_2"
+      type="text/css"
+    >
+      .zopim {
+        display: none !important;
+      }</style
+    ><style type="text/css">
+      button.btn[data-v-5f0b9ba1] {
+        display: inline-block;
+        font-weight: 300;
+        line-height: 1.25;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        user-select: none;
+        border: 1px solid transparent;
+        cursor: pointer;
+        letter-spacing: 1px;
+        transition: all 0.15s ease;
+      }
+      button.btn.btn-sm[data-v-5f0b9ba1] {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        border-radius: 0.2rem;
+      }
+      button.btn.btn-primary[data-v-5f0b9ba1] {
+        color: #fff;
+        background-color: #45c8f1;
+        border-color: #45c8f1;
+      }
+      button.btn.btn-outline-primary[data-v-5f0b9ba1] {
+        color: #45c8f1;
+        background-color: transparent;
+        border-color: #45c8f1;
+      }
+      button.btn.btn-danger[data-v-5f0b9ba1] {
+        color: #fff;
+        background-color: #ff4949;
+        border-color: #ff4949;
+      }
+      .text-muted[data-v-5f0b9ba1] {
+        color: #8492a6;
+      }
+      .text-center[data-v-5f0b9ba1] {
+        text-align: center;
+      }
+      .drop-down-enter[data-v-5f0b9ba1],
+      .drop-down-leave-to[data-v-5f0b9ba1] {
+        transform: translateX(0) translateY(-20px);
+        transition-timing-function: cubic-bezier(0.74, 0.04, 0.26, 1.05);
+        opacity: 0;
+      }
+      .drop-down-enter-active[data-v-5f0b9ba1],
+      .drop-down-leave-active[data-v-5f0b9ba1] {
+        transition: all 0.15s;
+      }
+      .move-left-enter[data-v-5f0b9ba1],
+      .move-left-leave-to[data-v-5f0b9ba1] {
+        transform: translateY(0) translateX(-80px);
+        transition-timing-function: cubic-bezier(0.74, 0.04, 0.26, 1.05);
+        opacity: 0;
+      }
+      .move-left-enter-active[data-v-5f0b9ba1],
+      .move-left-leave-active[data-v-5f0b9ba1] {
+        transition: all 0.15s;
+      }
+      .no-tr[data-v-5f0b9ba1] {
+        transition: none !important;
+      }
+      .no-tr *[data-v-5f0b9ba1] {
+        transition: none !important;
+      }
+      .overlay[data-v-5f0b9ba1] {
+        position: fixed;
+        background: rgba(220, 220, 220, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: all 0.2s ease;
+        opacity: 0;
+        visibility: hidden;
+      }
+      .overlay .modal[data-v-5f0b9ba1] {
+        transition: all 0.2s ease;
+        opacity: 0;
+        transform: scale(0.6);
+        overflow: hidden;
+      }
+      .overlay.show[data-v-5f0b9ba1] {
+        opacity: 1;
+        visibility: visible;
+      }
+      .overlay.show .modal[data-v-5f0b9ba1] {
+        opacity: 1;
+        transform: scale(1);
+      }
+      .panel[data-v-5f0b9ba1] {
+        padding: 6px 10px;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+        border-radius: 4px;
+        position: relative;
+        border: 1px solid #eaf7ff;
+        background: #f7fcff;
+        outline: none;
+        transition: all 0.07s ease-in-out;
+      }
+      .btn[data-v-5f0b9ba1] {
+        cursor: pointer;
+        box-sizing: border-box;
+      }
+      .light-btn[data-v-5f0b9ba1] {
+        padding: 6px 10px;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+        border-radius: 4px;
+        position: relative;
+        border: 1px solid #eaf7ff;
+        background: #f7fcff;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.07s ease-in-out;
+      }
+      .light-btn[data-v-5f0b9ba1]:hover {
+        background: #e0f4ff;
+        border-color: #8acfff;
+      }
+      .shake[data-v-5f0b9ba1] {
+        animation: shake-data-v-5f0b9ba1 0.82s
+          cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+        transform: translate3d(0, 0, 0);
+      }
+      @keyframes shake-data-v-5f0b9ba1 {
+        10%,
+        90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+        20%,
+        80% {
+          transform: translate3d(2px, 0, 0);
+        }
+        30%,
+        50%,
+        70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+        40%,
+        60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+      .pulse[data-v-5f0b9ba1] {
+        animation: pulse-data-v-5f0b9ba1 2s ease infinite;
+      }
+      @keyframes pulse-data-v-5f0b9ba1 {
+        0% {
+          opacity: 0.7;
+        }
+        50% {
+          opacity: 0.4;
+        }
+        100% {
+          opacity: 0.7;
+        }
+      }
+      .flash-once[data-v-5f0b9ba1] {
+        animation: flash-once 3.5s ease 1;
+      }
+      @keyframes fade-up-data-v-5f0b9ba1 {
+        0% {
+          transform: translate3d(0, 10px, 0);
+          opacity: 0;
+        }
+        100% {
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+      }
+      .fade-in[data-v-5f0b9ba1] {
+        animation: fade-in-data-v-5f0b9ba1 0.3s ease-in-out;
+      }
+      @keyframes fade-in-data-v-5f0b9ba1 {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .spin[data-v-5f0b9ba1] {
+        animation-name: spin-data-v-5f0b9ba1;
+        animation-duration: 2000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes spin-data-v-5f0b9ba1 {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .bounceIn[data-v-5f0b9ba1] {
+        animation-name: bounceIn-data-v-5f0b9ba1;
+        transform-origin: center bottom;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+      }
+      @keyframes bounceIn-data-v-5f0b9ba1 {
+        0%,
+        20%,
+        40%,
+        60%,
+        80%,
+        100% {
+          -webkit-transition-timing-function: cubic-bezier(
+            0.215,
+            0.61,
+            0.355,
+            1
+          );
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        0% {
+          opacity: 1;
+          -webkit-transform: scale3d(0.8, 0.8, 0.8);
+          transform: scale3d(0.8, 0.8, 0.8);
+        }
+        20% {
+          -webkit-transform: scale3d(1.1, 1.1, 1.1);
+          transform: scale3d(1.1, 1.1, 1.1);
+        }
+        40% {
+          -webkit-transform: scale3d(0.9, 0.9, 0.9);
+          transform: scale3d(0.9, 0.9, 0.9);
+        }
+        60% {
+          opacity: 1;
+          -webkit-transform: scale3d(1.03, 1.03, 1.03);
+          transform: scale3d(1.03, 1.03, 1.03);
+        }
+        80% {
+          -webkit-transform: scale3d(0.97, 0.97, 0.97);
+          transform: scale3d(0.97, 0.97, 0.97);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+        }
+      }
+      @keyframes dots-data-v-5f0b9ba1 {
+        0%,
+        20% {
+          color: rgba(0, 0, 0, 0);
+          text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+        }
+        40% {
+          color: #8492a6;
+          text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+        }
+        60% {
+          text-shadow: 0.25em 0 0 #8492a6, 0.5em 0 0 rgba(0, 0, 0, 0);
+        }
+        80%,
+        100% {
+          text-shadow: 0.25em 0 0 #8492a6, 0.5em 0 0 #8492a6;
+        }
+      }
+      @keyframes recording-data-v-5f0b9ba1 {
+        0% {
+          box-shadow: 0px 0px 5px 0px rgba(173, 0, 0, 0.3);
+        }
+        65% {
+          box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0.3);
+        }
+        90% {
+          box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0);
+        }
+      }
+      body[data-v-5f0b9ba1] {
+        margin: 0;
+        font-size: 100%;
+        color: #3c4858;
+      }
+      a[data-v-5f0b9ba1] {
+        text-decoration: none;
+        color: #45c8f1;
+      }
+      h1[data-v-5f0b9ba1],
+      h2[data-v-5f0b9ba1],
+      h3[data-v-5f0b9ba1],
+      h4[data-v-5f0b9ba1] {
+        margin-top: 0;
+      }
+      svg[data-v-5f0b9ba1] {
+        outline: none;
+      }
+      .container_selected_area[data-v-5f0b9ba1] {
+        display: none;
+        visibility: hidden;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2147483647;
+      }
+      .container_selected_area.active[data-v-5f0b9ba1] {
+        visibility: visible;
+        display: block;
+      }
+      .container_selected_area .label[data-v-5f0b9ba1] {
+        font-family: "Didact Gothic Regular", sans-serif;
+        font-size: 22px;
+        text-align: center;
+        padding-top: 15px;
+      }
+      .container_selected_area .area[data-v-5f0b9ba1] {
+        display: none;
+        position: fixed;
+        z-index: 2147483647;
+        border: 1px solid #1e83ff;
+        background: rgba(30, 131, 255, 0.1);
+        box-sizing: border-box;
+      }
+      .container_selected_area .area.active[data-v-5f0b9ba1] {
+        display: block;
+        top: 0;
+        left: 0;
+      }
+      .hide[data-v-5f0b9ba1] {
+        display: none;
+      }
+    </style></head
+  >
+  <body id="main-mini" class="clearfix" data-isloaded=""
+    ><div
+      class="zopim"
+      __jx__id="___$_76 ___$_76"
+      data-test-id="ChatWidgetButton"
+      style="
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        border: 0px;
+        background: transparent;
+        overflow: hidden;
+        position: fixed;
+        z-index: 16000002;
+        width: 180px;
+        height: 30px;
+        right: 10px;
+        bottom: 0px;
+        display: none;
+      "
+      ><iframe
+        frameborder="0"
+        style="
+          background-color: transparent;
+          vertical-align: text-bottom;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          min-width: 100%;
+          min-height: 100%;
+          max-width: 100%;
+          max-height: 100%;
+          margin: 0px;
+          overflow: hidden;
+          display: block;
+        "
+        src="about:blank"
+        data-test-id="ChatWidgetButton-iframe"
+        title="Zendesk Chat widget button"
+      ></iframe></div
+    ><div
+      class="zopim"
+      __jx__id="___$_4 ___$_4"
+      data-test-id="ChatWidgetWindow"
+      style="
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        border: 0px;
+        background: transparent;
+        overflow: hidden;
+        position: fixed;
+        z-index: 16000001;
+        right: 10px;
+        bottom: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: none;
+        width: 350px;
+        height: 450px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 2px;
+      "
+      ><iframe
+        frameborder="0"
+        style="
+          background-color: transparent;
+          vertical-align: text-bottom;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          min-width: 100%;
+          min-height: 100%;
+          max-width: 100%;
+          max-height: 100%;
+          margin: 0px;
+          overflow: hidden;
+          display: block;
+        "
+        src="about:blank"
+        data-test-id="ChatWidgetWindow-iframe"
+        title="Zendesk Chat widget window"
+      ></iframe
+    ></div>
+    <span data-watchdog="" class="show-for-small-only"></span
+    ><span data-watchdog="" class="show-for-medium-only"></span
+    ><span data-watchdog="" class="show-for-large"></span>
+    <div class="main-mini-div clearfix">
+      <div id="login" class="register core_fullVerticalCentered">
+        <div class="bg"></div>
+        <a href="https://www.lottofy.com/en/"
+          ><i class="animated fadeIn delay" id="logo"></i
+        ></a>
+        <div>
+          <div>
+            <div class="core_vAlign-for-medium row collapse">
+              <div class="column small-12 medium-6 large-5 text-center">
+                <div class="registerBox">
+                  <div
+                    class="core_panel core_halfThin core_sans_serif lightCoal text-left"
+                  >
+                    <a
+                      href="https://www.lottofy.com/en/login/"
+                      class="core_styleBlock text-center core_txtSize_sm2 core_spaceTThin blue icon-slim-arrow-back-outline"
+                      onclick="$('#registerStep2').fadeOut(function(){ $(this).removeClass('is-active');$('#registerStep1').fadeIn()})"
+                      >Do you already have an account?<strong>
+                        <u> Click here</u></strong
+                      >
+                      and sign in with it</a
+                    >
+                    <form
+                      data-abide=""
+                      data-signupform=""
+                      novalidate=""
+                      id="signup-form-step1"
+                      data-e="645yuw-e"
+                    >
+                      <div
+                        id="registerStep1"
+                        class="registrationPanel is-active text-left"
+                      >
+                        <fieldset class="core_paddingBzero">
+                          <label>
+                            <input
+                              name="CSRFtoken"
+                              type="hidden"
+                              value="1b022b4539d2f87932569332b40a5c0c"
+                            />
+                            <input
+                              tabindex="1"
+                              required=""
+                              maxlength="70"
+                              name="signup_email"
+                              type="email"
+                              placeholder="Email"
+                            />
+                            <span class="form-error"
+                              >The email entered is incorrect</span
+                            >
+                          </label>
+                          <label>
+                            <div class="input-group">
+                              <input
+                                tabindex="2"
+                                pattern=".{8,30}"
+                                maxlength="30"
+                                required=""
+                                id="signup_password"
+                                name="pw"
+                                type="password"
+                                class="radius"
+                                placeholder="Password"
+                              />
+                              <div class="input-group-button">
+                                <button
+                                  type="button"
+                                  class="button icon-slim-eye"
+                                  onclick="if ( $('#signup_password').attr('type') === 'password') { $('#signup_password').attr('type','text') } else { $('#signup_password').attr('type','password') }"
+                                >
+                                </button
+                              ></div>
+                            </div>
+                            <span
+                              class="form-error"
+                              data-form-error-for="signup_password"
+                              >Create a password with at least 8
+                              characters</span
+                            >
+                          </label>
+                        </fieldset>
+                        <fieldset>
+                          <div data-baseform="">
+                            <label>
+                              <input
+                                tabindex="3"
+                                maxlength="30"
+                                required=""
+                                name="signup_name"
+                                type="text"
+                                class="radius"
+                                placeholder="Name"
+                              />
+                              <span class="form-error"
+                                >This field is required</span
+                              >
+                            </label>
+                            <label>
+                              <input
+                                tabindex="4"
+                                maxlength="70"
+                                required=""
+                                name="signup_lastname"
+                                type="text"
+                                class="radius"
+                                placeholder="Last Name"
+                              />
+                              <span class="form-error"
+                                >This field is required</span
+                              >
+                            </label>
+                            <label>
+                              <input
+                                tabindex="5"
+                                maxlength="30"
+                                required=""
+                                name="id"
+                                type="text"
+                                class="radius"
+                                placeholder="National ID / Passport"
+                                pattern="alpha_numeric"
+                              />
+                              <span class="form-error"
+                                >This field is required and may only contain
+                                letters and numbers</span
+                              >
+                            </label>
+                            <label>Birth date</label>
+                            <select
+                              tabindex="6"
+                              required=""
+                              data-bday=""
+                              id="bday_day"
+                              name="signup_bday_day"
+                            >
+                              <option selected="" value="">Day</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                              <option value="13">13</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                              <option value="21">21</option>
+                              <option value="22">22</option>
+                              <option value="23">23</option>
+                              <option value="24">24</option>
+                              <option value="25">25</option>
+                              <option value="26">26</option>
+                              <option value="27">27</option>
+                              <option value="28">28</option>
+                              <option value="29">29</option>
+                              <option value="30">30</option>
+                              <option value="31">31</option>
+                            </select>
+                            <select
+                              tabindex="7"
+                              required=""
+                              data-bday=""
+                              id="bday_month"
+                              name="signup_bday_month"
+                            >
+                              <option selected="" value="">Month</option>
+                              <option value="1">January</option>
+                              <option value="2">February</option>
+                              <option value="3">March</option>
+                              <option value="4">April</option>
+                              <option value="5">May</option>
+                              <option value="6">June</option>
+                              <option value="7">July</option>
+                              <option value="8">August</option>
+                              <option value="9">September</option>
+                              <option value="10">October</option>
+                              <option value="11">November</option>
+                              <option value="12">December</option>
+                            </select>
+                            <select
+                              tabindex="8"
+                              required=""
+                              data-bday=""
+                              id="bday_year"
+                              name="signup_bday_year"
+                            >
+                              <option value="" selected="">Year</option>
+                              <option value="2004">2004</option
+                              ><option value="2003">2003</option
+                              ><option value="2002">2002</option
+                              ><option value="2001">2001</option
+                              ><option value="2000">2000</option
+                              ><option value="1999">1999</option
+                              ><option value="1998">1998</option
+                              ><option value="1997">1997</option
+                              ><option value="1996">1996</option
+                              ><option value="1995">1995</option
+                              ><option value="1994">1994</option
+                              ><option value="1993">1993</option
+                              ><option value="1992">1992</option
+                              ><option value="1991">1991</option
+                              ><option value="1990">1990</option
+                              ><option value="1989">1989</option
+                              ><option value="1988">1988</option
+                              ><option value="1987">1987</option
+                              ><option value="1986">1986</option
+                              ><option value="1985">1985</option
+                              ><option value="1984">1984</option
+                              ><option value="1983">1983</option
+                              ><option value="1982">1982</option
+                              ><option value="1981">1981</option
+                              ><option value="1980">1980</option
+                              ><option value="1979">1979</option
+                              ><option value="1978">1978</option
+                              ><option value="1977">1977</option
+                              ><option value="1976">1976</option
+                              ><option value="1975">1975</option
+                              ><option value="1974">1974</option
+                              ><option value="1973">1973</option
+                              ><option value="1972">1972</option
+                              ><option value="1971">1971</option
+                              ><option value="1970">1970</option
+                              ><option value="1969">1969</option
+                              ><option value="1968">1968</option
+                              ><option value="1967">1967</option
+                              ><option value="1966">1966</option
+                              ><option value="1965">1965</option
+                              ><option value="1964">1964</option
+                              ><option value="1963">1963</option
+                              ><option value="1962">1962</option
+                              ><option value="1961">1961</option
+                              ><option value="1960">1960</option
+                              ><option value="1959">1959</option
+                              ><option value="1958">1958</option
+                              ><option value="1957">1957</option
+                              ><option value="1956">1956</option
+                              ><option value="1955">1955</option
+                              ><option value="1954">1954</option
+                              ><option value="1953">1953</option
+                              ><option value="1952">1952</option
+                              ><option value="1951">1951</option
+                              ><option value="1950">1950</option
+                              ><option value="1949">1949</option
+                              ><option value="1948">1948</option
+                              ><option value="1947">1947</option
+                              ><option value="1946">1946</option
+                              ><option value="1945">1945</option
+                              ><option value="1944">1944</option
+                              ><option value="1943">1943</option
+                              ><option value="1942">1942</option
+                              ><option value="1941">1941</option
+                              ><option value="1940">1940</option
+                              ><option value="1939">1939</option
+                              ><option value="1938">1938</option
+                              ><option value="1937">1937</option
+                              ><option value="1936">1936</option
+                              ><option value="1935">1935</option
+                              ><option value="1934">1934</option
+                              ><option value="1933">1933</option
+                              ><option value="1932">1932</option
+                              ><option value="1931">1931</option
+                              ><option value="1930">1930</option
+                              ><option value="1929">1929</option
+                              ><option value="1928">1928</option
+                              ><option value="1927">1927</option
+                              ><option value="1926">1926</option
+                              ><option value="1925">1925</option
+                              ><option value="1924">1924</option
+                              ><option value="1923">1923</option
+                              ><option value="1922">1922</option
+                              ><option value="1921">1921</option
+                              ><option value="1920">1920</option
+                              ><option value="1919">1919</option
+                              ><option value="1918">1918</option
+                              ><option value="1917">1917</option
+                              ><option value="1916">1916</option
+                              ><option value="1915">1915</option
+                              ><option value="1914">1914</option
+                              ><option value="1913">1913</option
+                              ><option value="1912">1912</option
+                              ><option value="1911">1911</option
+                              ><option value="1910">1910</option
+                              ><option value="1909">1909</option
+                              ><option value="1908">1908</option
+                              ><option value="1907">1907</option
+                              ><option value="1906">1906</option
+                              ><option value="1905">1905</option
+                              ><option value="1904">1904</option
+                              ><option value="1903">1903</option>
+                            </select>
+                            <span
+                              class="form-error"
+                              data-form-error-for="bday_day"
+                              >It is necessary to indicate a day of birth</span
+                            >
+                            <span
+                              class="form-error"
+                              data-form-error-for="bday_month"
+                              >It is necessary to indicate a month of
+                              birth</span
+                            >
+                            <span
+                              class="form-error"
+                              data-form-error-for="bday_year"
+                              >It is necessary to indicate a year of birth</span
+                            >
+                            <label
+                              >Country where you live
+                              <select tabindex="9" required="" name="country">
+                                <option value="" selected="">Country</option>
+                                <option value="184">Abkhazia</option>
+                                <option value="63">Åland Islands</option>
+                                <option value="11">Algeria</option>
+                                <option value="4">Andorra</option>
+                                <option value="5">Angola</option>
+                                <option value="6">Anguilla</option>
+                                <option value="7">Antarctica</option>
+                                <option value="8">Antigua and Barbuda</option>
+                                <option value="12">Argentina</option>
+                                <option value="13">Armenia</option>
+                                <option value="14">Aruba</option>
+                                <option value="16">Austria</option>
+                                <option value="17">Azerbaijan</option>
+                                <option value="19">Bahrain</option>
+                                <option value="20">Bangladesh</option>
+                                <option value="26">Belarus</option>
+                                <option value="23">Belize</option>
+                                <option value="24">Benin</option>
+                                <option value="25">Bermuda</option>
+                                <option value="36">Bhutan</option>
+                                <option value="28">Bolivia</option>
+                                <option value="29"
+                                  >Bosnia and Herzegovina</option
+                                >
+                                <option value="218">Bouvet Island</option>
+                                <option value="31">Brazil</option>
+                                <option value="219"
+                                  >British Indian Ocean Territory</option
+                                >
+                                <option value="32">Brunei Darussalam</option>
+                                <option value="34">Burkina Faso</option>
+                                <option value="35">Burundi</option>
+                                <option value="39">Cameroon</option>
+                                <option value="40" selected="selected"
+                                  >Canada</option
+                                >
+                                <option value="37">Cape Verde</option>
+                                <option value="105"
+                                  >Caribbean Netherlands</option
+                                >
+                                <option value="187">Cayman Islands</option>
+                                <option value="128"
+                                  >Central African Republic</option
+                                >
+                                <option value="41">Chad</option>
+                                <option value="43">Chile</option>
+                                <option value="44">China</option>
+                                <option value="220">Christmas Island</option>
+                                <option value="188"
+                                  >Cocos (Keeling) Islands</option
+                                >
+                                <option value="46">Colombia</option>
+                                <option value="47">Comoros</option>
+                                <option value="48"
+                                  >Congo Democratic Republic</option
+                                >
+                                <option value="189">Congo Republic</option>
+                                <option value="190">Cook Islands</option>
+                                <option value="52">Costa Rica</option>
+                                <option value="51">Cote D'Ivoire</option>
+                                <option value="53">Croatia</option>
+                                <option value="54">Cuba</option>
+                                <option value="138">Curaçao</option>
+                                <option value="56">Djibouti</option>
+                                <option value="57">Dominica</option>
+                                <option value="129">Dominican Republic</option>
+                                <option value="58">Ecuador</option>
+                                <option value="59">Egypt</option>
+                                <option value="60">El Salvador</option>
+                                <option value="221">Equatorial Guinea</option>
+                                <option value="62">Eritrea</option>
+                                <option value="68">Estonia</option>
+                                <option value="69">Ethiopia</option>
+                                <option value="213"
+                                  >Falkland Islands (Malvinas)</option
+                                >
+                                <option value="191">Faroe Islands</option>
+                                <option value="70">Fiji</option>
+                                <option value="72">Finland</option>
+                                <option value="192">Gabon</option>
+                                <option value="193">Gambia</option>
+                                <option value="194">Georgia</option>
+                                <option value="3">Germany</option>
+                                <option value="195">Ghana</option>
+                                <option value="197">Greenland</option>
+                                <option value="226">Grenada</option>
+                                <option value="181">Guatemala</option>
+                                <option value="200">Guinea</option>
+                                <option value="228">Guinea-Bissau</option>
+                                <option value="201">Guyana</option>
+                                <option value="202">Haiti</option>
+                                <option value="229"
+                                  >Heard Island and Mcdonald Islands</option
+                                >
+                                <option value="203">Honduras</option>
+                                <option value="205">Hungary</option>
+                                <option value="209">Iceland</option>
+                                <option value="183">India</option>
+                                <option value="206">Indonesia</option>
+                                <option value="180">Ireland</option>
+                                <option value="185">Isle of Man</option>
+                                <option value="182">Japan</option>
+                                <option value="212">Jordan</option>
+                                <option value="74">Kazakhstan</option>
+                                <option value="75">Kenya</option>
+                                <option value="77">Kiribati</option>
+                                <option value="78">Kuwait</option>
+                                <option value="76">Kyrgyzstan</option>
+                                <option value="79"
+                                  >Lao People's Democratic Republic</option
+                                >
+                                <option value="81">Latvia</option>
+                                <option value="82">Lebanon</option>
+                                <option value="80">Lesotho</option>
+                                <option value="83">Liberia</option>
+                                <option value="84"
+                                  >Libyan Arab Jamahiriya</option
+                                >
+                                <option value="85">Liechtenstein</option>
+                                <option value="87">Luxembourg</option>
+                                <option value="230">Macao</option>
+                                <option value="89">Madagascar</option>
+                                <option value="91">Malawi</option>
+                                <option value="92">Maldives</option>
+                                <option value="93">Mali</option>
+                                <option value="94">Malta</option>
+                                <option value="231">Marshall Islands</option>
+                                <option value="96">Mauritania</option>
+                                <option value="233">Mayotte</option>
+                                <option value="98">Mexico</option>
+                                <option value="99">Micronesia</option>
+                                <option value="100">Moldova</option>
+                                <option value="101">Monaco</option>
+                                <option value="102">Mongolia</option>
+                                <option value="103">Montenegro</option>
+                                <option value="234">Montserrat</option>
+                                <option value="95">Morocco</option>
+                                <option value="104">Mozambique</option>
+                                <option value="186">Nagorno-Karabakh</option>
+                                <option value="106">Namibia</option>
+                                <option value="107">Nauru</option>
+                                <option value="108">Nepal</option>
+                                <option value="116">Netherlands</option>
+                                <option value="9">Netherlands Antilles</option>
+                                <option value="109">New Zealand</option>
+                                <option value="110">Nicaragua</option>
+                                <option value="111">Niger</option>
+                                <option value="112">Nigeria</option>
+                                <option value="113">Niue</option>
+                                <option value="236">Norfolk Island</option>
+                                <option value="88">North Macedonia</option>
+                                <option value="114">Norway</option>
+                                <option value="115">Oman</option>
+                                <option value="118">Palau</option>
+                                <option value="120">Papua New Guinea</option>
+                                <option value="121">Paraguay</option>
+                                <option value="122">Peru</option>
+                                <option value="71">Philippines</option>
+                                <option value="238">Pitcairn</option>
+                                <option value="124">Portugal</option>
+                                <option value="126">Qatar</option>
+                                <option value="131">Russian Federation</option>
+                                <option value="132">Rwanda</option>
+                                <option value="214">Saint Bartolomé</option>
+                                <option value="176">Saint Helena</option>
+                                <option value="134"
+                                  >Saint Kitts and Nevis</option
+                                >
+                                <option value="137">Saint Lucia</option>
+                                <option value="215">Saint Martin</option>
+                                <option value="216"
+                                  >Saint Pierre and Miquelon</option
+                                >
+                                <option value="136"
+                                  >Saint Vincent and the Grenadines</option
+                                >
+                                <option value="133">Samoa</option>
+                                <option value="135">San Marino</option>
+                                <option value="139"
+                                  >Sao Tome and Principe</option
+                                >
+                                <option value="10">Saudi Arabia</option>
+                                <option value="140">Senegal</option>
+                                <option value="141"
+                                  >Serbia and Montenegro</option
+                                >
+                                <option value="142">Seychelles</option>
+                                <option value="143">Sierra Leone</option>
+                                <option value="252">Sint Marten</option>
+                                <option value="240">Solomon Islands</option>
+                                <option value="146">Somalia</option>
+                                <option value="148">South Africa</option>
+                                <option value="241"
+                                  >South Georgia and the South Sandwich
+                                  Islands</option
+                                >
+                                <option value="50">South Korea</option>
+                                <option value="253">South Sudan</option>
+                                <option value="147">Sri Lanka</option>
+                                <option value="152">Suriname</option>
+                                <option value="242"
+                                  >Svalbard and Jan Mayen</option
+                                >
+                                <option value="153">Swaziland</option>
+                                <option value="151">Switzerland</option>
+                                <option value="155">Taiwan</option>
+                                <option value="157">Tajikistan</option>
+                                <option value="156">Tanzania</option>
+                                <option value="154">Thailand</option>
+                                <option value="158">Timor-Leste</option>
+                                <option value="159">Togo</option>
+                                <option value="243">Tokelau</option>
+                                <option value="160">Tonga</option>
+                                <option value="161">Trinidad and Tobago</option>
+                                <option value="162">Tunisia</option>
+                                <option value="163">Turkmenistan</option>
+                                <option value="244"
+                                  >Turks and Caicos Islands</option
+                                >
+                                <option value="165">Tuvalu</option>
+                                <option value="166">Ukraine</option>
+                                <option value="61">United Arab Emirates</option>
+                                <option value="168">Uruguay</option>
+                                <option value="169">Uzbekistan</option>
+                                <option value="170">Vanuatu</option>
+                                <option value="171">Vatican City State</option>
+                                <option value="172">Venezuela</option>
+                                <option value="173">Viet Nam</option>
+                                <option value="248">Wallis and Futuna</option>
+                                <option value="174">Western Sahara</option>
+                                <option value="177">Zambia</option>
+                                <option value="178">Zimbabwe</option>
+                                You have to indicate a country
+                              </select>
+                            </label>
+                            <div class="checkboxesArea">
+                              <label class="beautified core_spaceBHalf"
+                                ><span></span
+                                ><input
+                                  tabindex="10"
+                                  required=""
+                                  id="terms"
+                                  name="signup_terms"
+                                  type="checkbox"
+                                />
+                                I accept the
+                                <a
+                                  href="https://www.lottofy.com/en/privacy/"
+                                  target="_blank"
+                                  ><strong><u>Privacy Policy</u></strong></a
+                                >
+                                and
+                                <a
+                                  href="https://www.lottofy.com/en/tos/"
+                                  target="_blank"
+                                  ><strong
+                                    ><u>Terms and Conditions</u></strong
+                                  ></a
+                                >
+                              </label>
+                              <span
+                                class="form-error"
+                                data-form-error-for="terms"
+                                >You have to read and accept the conditions if
+                                you want to register</span
+                              >
+                            </div>
+                          </div>
+                        </fieldset>
+                        <div
+                          data-recaptcha=""
+                          data-key="6LcOaMEUAAAAAJxUyFAkaQGMfUNpnh-ZjzIxeIKr"
+                          ><input
+                            type="hidden"
+                            data-recaptcharesponse=""
+                            name="g-recaptcha-response"
+                        /></div>
+                        <div
+                          data-status-msg=""
+                          data-abide-error=""
+                          class="alert callout"
+                          style="display: none"
+                        >
+                          <p
+                            ><i class="icon-slim-warning-outline"></i> Uh! Oh!
+                            There are some mistakes in the form</p
+                          >
+                        </div>
+                        <button
+                          tabindex="11"
+                          data-submit=""
+                          type="submit"
+                          class="button radius bg_blue core_full"
+                          ><strong>Continue</strong></button
+                        >
+                        <div class="disclaimer">
+                          <p
+                            ><strong>You must be legal age to access,</strong>
+                            also the usage of fake or incomplete data will fall
+                            into the cancelation and immediate closure of your
+                            account and the loss of all your prizes.</p
+                          >
+                          <p
+                            >Your country isn’t here?
+                            <a
+                              href="javascript:void(null)"
+                              title="Unavailable countries"
+                              data-open="mainHelp"
+                              data-reveal-source="help"
+                              data-reveal-params='{ "helpTopic":"forbidden_countries"}'
+                              >Unavailable countries</a
+                            ></p
+                          >
+                        </div>
+                      </div>
+                    </form>
+                    <form
+                      data-abide=""
+                      data-signupform=""
+                      novalidate=""
+                      id="signup-form-step2"
+                      data-e="pijxri-e"
+                    >
+                      <div id="registerStep2" class="registrationPanel">
+                        <fieldset class="core_paddingBzero">
+                          <div class="row collapse">
+                            <div class="column medium-4">
+                              <label for="signup_phoneCountry">
+                                Country code
+                                <select
+                                  tabindex="13"
+                                  id="signup_phoneCountry"
+                                  name="signup_phoneCountry"
+                                  required=""
+                                >
+                                  <option value="" selected="">Country</option>
+                                  <option value="184">Abkhazia (+840)</option>
+                                  <option value="1">Afghanistan (+93)</option>
+                                  <option value="63"
+                                    >Åland Islands (+358)</option
+                                  >
+                                  <option value="2">Albania (+355)</option>
+                                  <option value="11">Algeria (+213)</option>
+                                  <option value="217"
+                                    >American Samoa (+1684)</option
+                                  >
+                                  <option value="4">Andorra (+376)</option>
+                                  <option value="5">Angola (+244)</option>
+                                  <option value="6">Anguilla (+1264)</option>
+                                  <option value="8"
+                                    >Antigua and Barbuda (+1268)</option
+                                  >
+                                  <option value="12">Argentina (+54)</option>
+                                  <option value="13">Armenia (+374)</option>
+                                  <option value="14">Aruba (+297)</option>
+                                  <option value="15">Australia (+61)</option>
+                                  <option value="16">Austria (+43)</option>
+                                  <option value="17">Azerbaijan (+994)</option>
+                                  <option value="18">Bahamas (+1242)</option>
+                                  <option value="19">Bahrain (+973)</option>
+                                  <option value="20">Bangladesh (+880)</option>
+                                  <option value="21">Barbados (+1246)</option>
+                                  <option value="26">Belarus (+375)</option>
+                                  <option value="22">Belgium (+32)</option>
+                                  <option value="23">Belize (+501)</option>
+                                  <option value="24">Benin (+229)</option>
+                                  <option value="25">Bermuda (+1441)</option>
+                                  <option value="36">Bhutan (+975)</option>
+                                  <option value="28">Bolivia (+591)</option>
+                                  <option value="29"
+                                    >Bosnia and Herzegovina (+387)</option
+                                  >
+                                  <option value="30">Botswana (+267)</option>
+                                  <option value="31">Brazil (+55)</option>
+                                  <option value="219"
+                                    >British Indian Ocean Territory
+                                    (+246)</option
+                                  >
+                                  <option value="32"
+                                    >Brunei Darussalam (+673)</option
+                                  >
+                                  <option value="33">Bulgaria (+359)</option>
+                                  <option value="34"
+                                    >Burkina Faso (+226)</option
+                                  >
+                                  <option value="35">Burundi (+257)</option>
+                                  <option value="38">Cambodia (+855)</option>
+                                  <option value="39">Cameroon (+237)</option>
+                                  <option value="40" selected="selected"
+                                    >Canada (+1)</option
+                                  >
+                                  <option value="37">Cape Verde (+238)</option>
+                                  <option value="105"
+                                    >Caribbean Netherlands (+599)</option
+                                  >
+                                  <option value="187"
+                                    >Cayman Islands (+1345)</option
+                                  >
+                                  <option value="128"
+                                    >Central African Republic (+236)</option
+                                  >
+                                  <option value="41">Chad (+235)</option>
+                                  <option value="43">Chile (+56)</option>
+                                  <option value="44">China (+86)</option>
+                                  <option value="220"
+                                    >Christmas Island (+61)</option
+                                  >
+                                  <option value="188"
+                                    >Cocos (Keeling) Islands (+672)</option
+                                  >
+                                  <option value="46">Colombia (+57)</option>
+                                  <option value="47">Comoros (+269)</option>
+                                  <option value="48"
+                                    >Congo Democratic Republic (+243)</option
+                                  >
+                                  <option value="189"
+                                    >Congo Republic (+242)</option
+                                  >
+                                  <option value="190"
+                                    >Cook Islands (+682)</option
+                                  >
+                                  <option value="52">Costa Rica (+506)</option>
+                                  <option value="51"
+                                    >Cote D'Ivoire (+225)</option
+                                  >
+                                  <option value="53">Croatia (+385)</option>
+                                  <option value="54">Cuba (+53)</option>
+                                  <option value="138">Curaçao (+599)</option>
+                                  <option value="45">Cyprus (+357)</option>
+                                  <option value="42"
+                                    >Czech Republic (+420)</option
+                                  >
+                                  <option value="55">Denmark (+45)</option>
+                                  <option value="56">Djibouti (+253)</option>
+                                  <option value="57">Dominica (+1767)</option>
+                                  <option value="129"
+                                    >Dominican Republic (+1)</option
+                                  >
+                                  <option value="58">Ecuador (+593)</option>
+                                  <option value="59">Egypt (+20)</option>
+                                  <option value="60">El Salvador (+503)</option>
+                                  <option value="221"
+                                    >Equatorial Guinea (+240)</option
+                                  >
+                                  <option value="62">Eritrea (+291)</option>
+                                  <option value="68">Estonia (+372)</option>
+                                  <option value="69">Ethiopia (+251)</option>
+                                  <option value="213"
+                                    >Falkland Islands (Malvinas) (+500)</option
+                                  >
+                                  <option value="191"
+                                    >Faroe Islands (+298)</option
+                                  >
+                                  <option value="70">Fiji (+679)</option>
+                                  <option value="72">Finland (+358)</option>
+                                  <option value="73">France (+33)</option>
+                                  <option value="222"
+                                    >French Guiana (+594)</option
+                                  >
+                                  <option value="223"
+                                    >French Polynesia (+689)</option
+                                  >
+                                  <option value="192">Gabon (+241)</option>
+                                  <option value="193">Gambia (+220)</option>
+                                  <option value="194">Georgia (+995)</option>
+                                  <option value="3">Germany (+49)</option>
+                                  <option value="195">Ghana (+233)</option>
+                                  <option value="225">Gibraltar (+350)</option>
+                                  <option value="196">Greece (+30)</option>
+                                  <option value="197">Greenland (+299)</option>
+                                  <option value="226">Grenada (+1473)</option>
+                                  <option value="227">Guadeloupe (+590)</option>
+                                  <option value="198">Guam (+1671)</option>
+                                  <option value="181">Guatemala (+502)</option>
+                                  <option value="199">Guernsey (+44)</option>
+                                  <option value="200">Guinea (+224)</option>
+                                  <option value="228"
+                                    >Guinea-Bissau (+245)</option
+                                  >
+                                  <option value="201">Guyana (+592)</option>
+                                  <option value="202">Haiti (+509)</option>
+                                  <option value="203">Honduras (+504)</option>
+                                  <option value="204">Hong Kong (+852)</option>
+                                  <option value="205">Hungary (+36)</option>
+                                  <option value="209">Iceland (+354)</option>
+                                  <option value="183">India (+91)</option>
+                                  <option value="206">Indonesia (+62)</option>
+                                  <option value="207">Iran (+98)</option>
+                                  <option value="208">Iraq (+964)</option>
+                                  <option value="180">Ireland (+353)</option>
+                                  <option value="185">Isle of Man (+44)</option>
+                                  <option value="210">Israel (+972)</option>
+                                  <option value="179">Italy (+39)</option>
+                                  <option value="211">Jamaica (+1876)</option>
+                                  <option value="182">Japan (+81)</option>
+                                  <option value="249">Jersey (+44)</option>
+                                  <option value="212">Jordan (+962)</option>
+                                  <option value="74">Kazakhstan (+7)</option>
+                                  <option value="75">Kenya (+254)</option>
+                                  <option value="77">Kiribati (+686)</option>
+                                  <option value="78">Kuwait (+965)</option>
+                                  <option value="76">Kyrgyzstan (+996)</option>
+                                  <option value="79"
+                                    >Lao People's Democratic Republic
+                                    (+856)</option
+                                  >
+                                  <option value="81">Latvia (+371)</option>
+                                  <option value="82">Lebanon (+961)</option>
+                                  <option value="80">Lesotho (+266)</option>
+                                  <option value="83">Liberia (+231)</option>
+                                  <option value="84"
+                                    >Libyan Arab Jamahiriya (+218)</option
+                                  >
+                                  <option value="85"
+                                    >Liechtenstein (+423)</option
+                                  >
+                                  <option value="86">Lithuania (+370)</option>
+                                  <option value="87">Luxembourg (+352)</option>
+                                  <option value="230">Macao (+853)</option>
+                                  <option value="89">Madagascar (+261)</option>
+                                  <option value="91">Malawi (+265)</option>
+                                  <option value="90">Malaysia (+60)</option>
+                                  <option value="92">Maldives (+960)</option>
+                                  <option value="93">Mali (+223)</option>
+                                  <option value="94">Malta (+356)</option>
+                                  <option value="231"
+                                    >Marshall Islands (+692)</option
+                                  >
+                                  <option value="232">Martinique (+596)</option>
+                                  <option value="96">Mauritania (+222)</option>
+                                  <option value="97">Mauritius (+230)</option>
+                                  <option value="233">Mayotte (+269)</option>
+                                  <option value="98">Mexico (+52)</option>
+                                  <option value="99">Micronesia (+691)</option>
+                                  <option value="100">Moldova (+373)</option>
+                                  <option value="101">Monaco (+377)</option>
+                                  <option value="102">Mongolia (+976)</option>
+                                  <option value="103">Montenegro (+382)</option>
+                                  <option value="234"
+                                    >Montserrat (+1664)</option
+                                  >
+                                  <option value="95">Morocco (+212)</option>
+                                  <option value="104">Mozambique (+258)</option>
+                                  <option value="27">Myanmar (+95)</option>
+                                  <option value="186"
+                                    >Nagorno-Karabakh (+357)</option
+                                  >
+                                  <option value="106">Namibia (+264)</option>
+                                  <option value="107">Nauru (+674)</option>
+                                  <option value="108">Nepal (+977)</option>
+                                  <option value="116">Netherlands (+31)</option>
+                                  <option value="9"
+                                    >Netherlands Antilles (+599)</option
+                                  >
+                                  <option value="235"
+                                    >New Caledonia (+687)</option
+                                  >
+                                  <option value="109">New Zealand (+64)</option>
+                                  <option value="110">Nicaragua (+505)</option>
+                                  <option value="111">Niger (+227)</option>
+                                  <option value="112">Nigeria (+234)</option>
+                                  <option value="113">Niue (+683)</option>
+                                  <option value="236"
+                                    >Norfolk Island (+672)</option
+                                  >
+                                  <option value="49">North Korea (+850)</option>
+                                  <option value="88"
+                                    >North Macedonia (+389)</option
+                                  >
+                                  <option value="237"
+                                    >Northern Mariana Islands (+1670)</option
+                                  >
+                                  <option value="114">Norway (+47)</option>
+                                  <option value="115">Oman (+968)</option>
+                                  <option value="250">Pakistan (+92)</option>
+                                  <option value="118">Palau (+680)</option>
+                                  <option value="117">PALESTINE (+970)</option>
+                                  <option value="119">Panama (+507)</option>
+                                  <option value="120"
+                                    >Papua New Guinea (+675)</option
+                                  >
+                                  <option value="121">Paraguay (+595)</option>
+                                  <option value="122">Peru (+51)</option>
+                                  <option value="71">Philippines (+63)</option>
+                                  <option value="123">Poland (+48)</option>
+                                  <option value="124">Portugal (+351)</option>
+                                  <option value="125"
+                                    >Puerto Rico (+1787)</option
+                                  >
+                                  <option value="126">Qatar (+974)</option>
+                                  <option value="239">Reunion (+262)</option>
+                                  <option value="130">Romania (+40)</option>
+                                  <option value="131"
+                                    >Russian Federation (+7)</option
+                                  >
+                                  <option value="132">Rwanda (+250)</option>
+                                  <option value="214"
+                                    >Saint Bartolomé (+590)</option
+                                  >
+                                  <option value="176"
+                                    >Saint Helena (+290)</option
+                                  >
+                                  <option value="134"
+                                    >Saint Kitts and Nevis (+1869)</option
+                                  >
+                                  <option value="137"
+                                    >Saint Lucia (+1758)</option
+                                  >
+                                  <option value="215"
+                                    >Saint Martin (+599)</option
+                                  >
+                                  <option value="216"
+                                    >Saint Pierre and Miquelon (+508)</option
+                                  >
+                                  <option value="136"
+                                    >Saint Vincent and the Grenadines
+                                    (+1784)</option
+                                  >
+                                  <option value="133">Samoa (+684)</option>
+                                  <option value="135">San Marino (+378)</option>
+                                  <option value="139"
+                                    >Sao Tome and Principe (+239)</option
+                                  >
+                                  <option value="10"
+                                    >Saudi Arabia (+966)</option
+                                  >
+                                  <option value="140">Senegal (+221)</option>
+                                  <option value="251">Serbia (+381)</option>
+                                  <option value="141"
+                                    >Serbia and Montenegro (+381)</option
+                                  >
+                                  <option value="142">Seychelles (+248)</option>
+                                  <option value="143"
+                                    >Sierra Leone (+232)</option
+                                  >
+                                  <option value="144">Singapore (+65)</option>
+                                  <option value="252"
+                                    >Sint Marten (+1721)</option
+                                  >
+                                  <option value="64">Slovakia (+421)</option>
+                                  <option value="65">Slovenia (+386)</option>
+                                  <option value="240"
+                                    >Solomon Islands (+677)</option
+                                  >
+                                  <option value="146">Somalia (+252)</option>
+                                  <option value="148"
+                                    >South Africa (+27)</option
+                                  >
+                                  <option value="50">South Korea (+82)</option>
+                                  <option value="253"
+                                    >South Sudan (+249)</option
+                                  >
+                                  <option value="66">Spain (+34)</option>
+                                  <option value="147">Sri Lanka (+94)</option>
+                                  <option value="149">Sudan (+249)</option>
+                                  <option value="152">Suriname (+597)</option>
+                                  <option value="242"
+                                    >Svalbard and Jan Mayen (+47)</option
+                                  >
+                                  <option value="153">Swaziland (+268)</option>
+                                  <option value="150">Sweden (+46)</option>
+                                  <option value="151">Switzerland (+41)</option>
+                                  <option value="145"
+                                    >Syrian Arab Republic (+963)</option
+                                  >
+                                  <option value="155">Taiwan (+886)</option>
+                                  <option value="157">Tajikistan (+992)</option>
+                                  <option value="156">Tanzania (+255)</option>
+                                  <option value="154">Thailand (+66)</option>
+                                  <option value="158"
+                                    >Timor-Leste (+670)</option
+                                  >
+                                  <option value="159">Togo (+228)</option>
+                                  <option value="243">Tokelau (+690)</option>
+                                  <option value="160">Tonga (+676)</option>
+                                  <option value="161"
+                                    >Trinidad and Tobago (+1868)</option
+                                  >
+                                  <option value="162">Tunisia (+216)</option>
+                                  <option value="164">Turkey (+90)</option>
+                                  <option value="163"
+                                    >Turkmenistan (+7370)</option
+                                  >
+                                  <option value="244"
+                                    >Turks and Caicos Islands (+1649)</option
+                                  >
+                                  <option value="165">Tuvalu (+688)</option>
+                                  <option value="167">Uganda (+256)</option>
+                                  <option value="166">Ukraine (+380)</option>
+                                  <option value="61"
+                                    >United Arab Emirates (+971)</option
+                                  >
+                                  <option value="127"
+                                    >United Kingdom (+44)</option
+                                  >
+                                  <option value="67">United States (+1)</option>
+                                  <option value="245"
+                                    >United States Minor Outlying Islands
+                                    (+1)</option
+                                  >
+                                  <option value="168">Uruguay (+598)</option>
+                                  <option value="169">Uzbekistan (+998)</option>
+                                  <option value="170">Vanuatu (+678)</option>
+                                  <option value="171"
+                                    >Vatican City State (+39)</option
+                                  >
+                                  <option value="172">Venezuela (+58)</option>
+                                  <option value="173">Viet Nam (+84)</option>
+                                  <option value="246"
+                                    >Virgin Islands, British (+1284)</option
+                                  >
+                                  <option value="247"
+                                    >Virgin Islands, U.s. (+1340)</option
+                                  >
+                                  <option value="248"
+                                    >Wallis and Futuna (+681)</option
+                                  >
+                                  <option value="174"
+                                    >Western Sahara (+212)</option
+                                  >
+                                  <option value="175">Yemen (+967)</option>
+                                  <option value="177">Zambia (+260)</option>
+                                  <option value="178">Zimbabwe (+263)</option>
+                                </select>
+                                <span
+                                  class="form-error"
+                                  data-form-error-for="signup_phoneCountry"
+                                  >Choose your prefix</span
+                                >
+                              </label>
+                            </div>
+                            <div class="column medium-8">
+                              <label for="signup_phone">
+                                Mobile phone
+                                <input
+                                  tabindex="14"
+                                  id="signup_phone"
+                                  name="signup_phone"
+                                  maxlength="18"
+                                  required=""
+                                  type="number"
+                                  placeholder="666666666"
+                                />
+                                <span
+                                  class="form-error"
+                                  data-form-error-for="signup_phone"
+                                  >The phone entered does not have the proper
+                                  format</span
+                                >
+                              </label>
+                            </div>
+                          </div>
+                          <label>
+                            <input
+                              tabindex="15"
+                              maxlength="100"
+                              required=""
+                              name="signup_address"
+                              type="text"
+                              class="radius"
+                              placeholder="Enter your address"
+                            />
+                            <span class="form-error"
+                              >This field is required</span
+                            >
+                          </label>
+                          <label>
+                            <input
+                              tabindex="16"
+                              maxlength="25"
+                              required=""
+                              name="signup_zip"
+                              type="text"
+                              class="radius"
+                              placeholder="Enter your postal code"
+                            />
+                            <span class="form-error"
+                              >This field is required</span
+                            >
+                          </label>
+                          <label>
+                            <input
+                              tabindex="17"
+                              maxlength="45"
+                              required=""
+                              name="signup_city"
+                              type="text"
+                              class="radius"
+                              placeholder="Enter your city"
+                            />
+                            <span class="form-error"
+                              >This field is required</span
+                            >
+                          </label>
+                          <label
+                            >Currency
+                            <small class="core_lh_1 alert"
+                              >(<strong>YOU CANNOT</strong> modify it
+                              afterwards)</small
+                            >
+                            <select name="signup_currency" id="signup_currency">
+                              <option value="EUR">EUR - €</option>
+                              <option value="USD" selected="">USD - $</option>
+                              <option value="BRL">BRL - R$</option>
+                              <option value="CNY">CNY - ¥</option>
+                              <option value="INR">INR - ₹</option>
+                              <option value="CAD">CAD - C$</option>
+                              <option value="MXN">MXN - M$</option>
+                              <option value="XOF">XOF - CFA</option>
+                              <option value="CLP">CLP - CLP$</option>
+                              <option value="COP">COP - COP$</option>
+                              <option value="NOK">NOK - kr</option>
+                              <option value="PEN">PEN - S/</option>
+                              <option value="PHP">PHP - ₱</option>
+                              <option value="ZAR">ZAR - R</option>
+                              <option value="CHF">CHF - CHf</option>
+                              <option value="GBP">GBP - £</option>
+                              <option value="NGN">NGN - ₦</option>
+                            </select>
+                          </label>
+                          <div class="checkboxesArea">
+                            <label class="beautified core_spaceBHalf"
+                              ><span></span
+                              ><input
+                                tabindex="21"
+                                id="newsletter"
+                                name="signup_newsletter"
+                                type="checkbox"
+                              />
+                              Receive notifications for weekly jackpots</label
+                            >
+                          </div>
+                          <div class="pepArea">
+                            <button type="button" data-pepsubmit=""
+                              ><strong>Are you a <strong>PEP</strong>?</strong>
+                              <small
+                                >(Politically Exposed Person)</small
+                              ></button
+                            >
+                            <div data-pepdetails="">
+                              <img
+                                src="//d2oamtuj38i9pe.cloudfront.net/images/common/illustrations/pep1.png"
+                              />
+                              <p
+                                >You are a <strong>PEP</strong> (Politically
+                                Exposed Person) if you have been entrusted with
+                                prominent public functions, for example Heads of
+                                state or Heads of government, senior
+                                politicians, senior government, judicial or
+                                military officials, senior executives of state
+                                owned corporations, important political party
+                                officials, senior official of a major 'foreign'
+                                political party, etc.</p
+                              >
+                              <p
+                                >If you are a <strong>PEP</strong> or if your
+                                <strong>PEP</strong> changes overtime, you have
+                                to inform us in order to play at
+                                <strong>Lottofy</strong>.</p
+                              >
+                              <label
+                                >Are you a <strong>PEP</strong>?
+                                <select
+                                  tabindex="22"
+                                  name="signup_pep"
+                                  id="user_pep"
+                                >
+                                  <option value="0" selected=""
+                                    >I’m not sure</option
+                                  >
+                                  <option value="2">No, I’m not a PEP</option>
+                                  <option value="1">Yes, I’m a PEP</option>
+                                </select>
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                        <div
+                          data-status-msg=""
+                          data-abide-error=""
+                          class="alert callout"
+                          style="display: none"
+                        >
+                          <p
+                            ><i class="icon-slim-warning-outline"></i> Uh! Oh!
+                            There are some mistakes in the form</p
+                          >
+                        </div>
+                        <div
+                          data-recaptcha=""
+                          data-key="6LcOaMEUAAAAAJxUyFAkaQGMfUNpnh-ZjzIxeIKr"
+                          ><input
+                            type="hidden"
+                            data-recaptcharesponse=""
+                            name="g-recaptcha-response"
+                        /></div>
+                        <button
+                          type="submit"
+                          data-submit=""
+                          class="button radius bg_bgColor core_full"
+                          ><strong>Finish</strong></button
+                        >
+                      </div>
+                    </form>
+                    <p data-recaptchadisclaimer=""
+                      >This site is protected by reCAPTCHA and Google's
+                      <a
+                        href="https://policies.google.com/privacy"
+                        target="_blank"
+                        >privacy policy</a
+                      >
+                      and
+                      <a
+                        href="https://policies.google.com/terms"
+                        target="_blank"
+                        >terms of service</a
+                      >
+                      apply.</p
+                    >
+                    <script>
+                      bamQueue.addToQueue(function () {
+                        var signUp = new signUpObject({
+                          onStep1Success_callback: function (e) {
+                            if (typeof e.pep != "undefined") {
+                              $(".pepArea").remove();
+                            }
+                          },
+                          onStep2Success_callback: function () {
+                            if (
+                              typeof $zopim != "undefined" &&
+                              typeof $zopim.livechat != "undefined"
+                            ) {
+                              $zopim.livechat.removeTags("signupError");
+                            }
+                          },
+                          onFail_callback: function () {
+                            if (
+                              typeof $zopim != "undefined" &&
+                              typeof $zopim.livechat != "undefined"
+                            ) {
+                              $zopim.livechat.addTags("signupError");
+                            }
+                          },
+                          onValidatePhoneCode_callback: function () {
+                            if (
+                              typeof $zopim != "undefined" &&
+                              typeof $zopim.livechat != "undefined"
+                            ) {
+                              $zopim.livechat.removeTags("signupError");
+                            }
+                          },
+                          onValidateMailCode_callback: function () {
+                            if (
+                              typeof $zopim != "undefined" &&
+                              typeof $zopim.livechat != "undefined"
+                            ) {
+                              $zopim.livechat.removeTags("signupError");
+                            }
+                          },
+                          onValidatePhone_callback: function () {
+                            if (
+                              typeof $zopim != "undefined" &&
+                              typeof $zopim.livechat != "undefined"
+                            ) {
+                              $zopim.livechat.removeTags("signupError");
+                            }
+                          },
+                          onValidateMail_callback: function () {
+                            if (
+                              typeof $zopim != "undefined" &&
+                              typeof $zopim.livechat != "undefined"
+                            ) {
+                              $zopim.livechat.removeTags("signupError");
+                            }
+                          },
+                          strings: {
+                            holdOn: "Wait...",
+                            creating: "Creating your account...",
+                            unknownError: "Unknown error",
+                          },
+                          useSingleStep: false,
+                        });
+                      });
+                      bamQueue.addToQueue(function () {
+                        setCookie(
+                          "CSRFtoken",
+                          "1b022b4539d2f87932569332b40a5c0c",
+                          1
+                        );
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+              <div class="column small-12 medium-6 large-5 end" id="infoPanel">
+                <div class="core_panel">
+                  <h1 class="core_lh_1 core_strong">Join now</h1>
+                  <h2 class="core_lh_1 core_light"
+                    >and enter the club of those who win the lottery</h2
+                  >
+                  <ul class="coal core_sans_serif core_spaceT core_light">
+                    <li class="icon-slim-input-checked">
+                      You receive your results by email after each draw</li
+                    >
+                    <li class="icon-slim-input-checked">
+                      You can join <strong>Lotteries</strong> and
+                      <strong>Funds</strong> with hundreds of bets</li
+                    >
+                    <li class="icon-slim-input-checked">
+                      You can play
+                      <strong>safely and with transparency</strong></li
+                    >
+                    <li class="icon-slim-input-checked">
+                      You receive your prizes, instantly</li
+                    >
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="miniFooter">
+          <div class="core_panel" data-disclaimer="">
+            <p>
+              2019-2022 © Clobet Limited | Registration number: C90546 | St.
+              John Street, 89 VLT1165 - Valletta - Malta
+            </p>
+            <ul>
+              <li><a href="https://www.lottofy.com/en/about/">ABOUT US</a></li
+              ><li>
+                <a class="white" href="https://www.lottofy.com/en/privacy/"
+                  >PRIVACY</a
+                ></li
+              ><li>
+                <a class="white" href="https://www.lottofy.com/en/tos/"
+                  >TERMS AND CONDITIONS</a
+                ></li
+              ><li>
+                <a class="white" href="https://www.lottofy.com/en/faq/"
+                  >HELP</a
+                ></li
+              ><li>
+                <a
+                  class="white"
+                  href="https://www.lottofy.com/en/responsible-gaming/"
+                  >RESPONSIBLE GAME</a
+                ></li
+              ><li>
+                <a class="white" href="https://www.lottofy.com/en/helpdesk/"
+                  >CONTACT US</a
+                ></li
+              >
+            </ul>
+          </div>
+        </footer>
+      </div>
+      <script>
+        bamQueue.addToQueue(function () {
+          animatedCounters($(".counter"));
+        });
+      </script> </div
+    ><div id="scrnli_recorder_root"></div>
+    <div class="reveal-overlay"
+      ><div
+        id="feedback"
+        class="reveal"
+        data-reveal=""
+        data-reveal-source="feedback"
+        aria-hidden="true"
+        role="dialog"
+        data-close-on-click="false"
+        data-reveal-params='{ "callback":"customLabelEvents()"}'
+      ></div
+    ></div>
+    <div class="reveal-overlay"
+      ><div
+        data-reveal-source="unsupported"
+        id="unsupportedModal"
+        class="reveal"
+        data-reveal=""
+        data-close-on-esc="false"
+        data-close-on-click="false"
+      ></div
+    ></div>
+    <div class="reveal-overlay"
+      ><div
+        data-reveal-source="help"
+        id="mainHelp"
+        class="reveal"
+        data-reveal=""
+      ></div
+    ></div>
+    <div id="sidebarMenus" class="is-active">
+      <button
+        type="button"
+        data-open="feedback"
+        id="feedbackBt"
+        class="icon-common-star-full"
+        ><span data-bttext="">Comment</span></button
+      >
+      <button type="button" id="chatBt" class="is-visible" data-online=""
+        ><i class="icon-common-bubble2"></i
+        ><span data-bttext="">Chat</span></button
+      >
+    </div>
+    <div
+      id="menu-lang"
+      class="top-menu_dropdown dropdown-pane"
+      data-menu-lang=""
+      data-dropdown=""
+      aria-hidden="true"
+      data-yeti-box="menu-lang"
+      data-resize="menu-lang"
+      aria-labelledby="wo3q5y-dd-anchor"
+      data-e="xhd8ee-e"
+      data-events="resize"
+    >
+      <p>Language</p>
+      <ul>
+        <li data-lang="ES"
+          ><button
+            type="button"
+            data-lang="ES"
+            data-url="https://www.lottofy.com/registro/?setlanguage=true"
+            ><img
+              class="imgSize size10 core_styleMiddle round"
+              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+              alt="es"
+            />
+            ES</button
+          ></li
+        >
+        <li data-lang="EN"
+          ><button
+            type="button"
+            class="is-active"
+            data-lang="EN"
+            data-url="https://www.lottofy.com/en/signup/?setlanguage=true"
+            ><img
+              class="imgSize size10 core_styleMiddle round"
+              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
+              alt="gb"
+            />
+            EN</button
+          ></li
+        >
+        <li data-lang="PT"
+          ><button
+            type="button"
+            data-lang="PT"
+            data-url="https://www.lottofy.com/pt/registo/?setlanguage=true"
+            ><img
+              class="imgSize size10 core_styleMiddle round"
+              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png"
+              alt="pt"
+            />
+            PT</button
+          ></li
+        >
+        <li data-lang="BR"
+          ><button
+            type="button"
+            data-lang="BR"
+            data-url="https://www.lottofy.com/br/registo/?setlanguage=true"
+            ><img
+              class="imgSize size10 core_styleMiddle round"
+              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png"
+              alt="br"
+            />
+            BR</button
+          ></li
+        >
+        <li data-lang="FR"
+          ><button
+            type="button"
+            data-lang="FR"
+            data-url="https://www.lottofy.com/fr/inscription/?setlanguage=true"
+            ><img
+              class="imgSize size10 core_styleMiddle round"
+              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png"
+              alt="fr"
+            />
+            FR</button
+          ></li
+        >
+        <li data-lang="IT"
+          ><button
+            type="button"
+            data-lang="IT"
+            data-url="https://www.lottofy.com/it/registrazione/?setlanguage=true"
+            ><img
+              class="imgSize size10 core_styleMiddle round"
+              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png"
+              alt="it"
+            />
+            IT</button
+          ></li
+        >
+        <li data-lang="DE"
+          ><button
+            type="button"
+            data-lang="DE"
+            data-url="https://www.lottofy.com/de/registrierung/?setlanguage=true"
+            ><img
+              class="imgSize size10 core_styleMiddle round"
+              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png"
+              alt="de"
+            />
+            DE</button
+          ></li
+        >
+        <li data-lang="IN"
+          ><button
+            type="button"
+            data-lang="IN"
+            data-url="https://www.lottofy.com/in/signup/?setlanguage=true"
+            ><img
+              class="imgSize size10 core_styleMiddle round"
+              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png"
+              alt="in"
+            />
+            IN</button
+          ></li
+        >
+      </ul>
+      <p>Currency</p>
+      <div class="core_panel core_thin">
+        <select class="core_spaceBzero core_sans_serif core_txtSize_sm1">
+          <option value="eur">EUR</option>
+          <option selected="" value="usd">USD</option>
+          <option value="brl">BRL</option>
+          <option value="cny">CNY</option>
+          <option value="inr">INR</option>
+          <option value="cad">CAD</option>
+          <option value="mxn">MXN</option>
+          <option value="xof">XOF</option>
+          <option value="clp">CLP</option>
+          <option value="cop">COP</option>
+          <option value="nok">NOK</option>
+          <option value="pen">PEN</option>
+          <option value="php">PHP</option>
+          <option value="zar">ZAR</option>
+          <option value="chf">CHF</option>
+          <option value="gbp">GBP</option>
+          <option value="ngn">NGN</option>
+        </select>
+      </div>
+      <div class="core_panel core_thin">
+        <button class="button" data-save-lang="" disabled="">Apply</button>
+      </div>
+    </div>
+    <script>
+      function launchProjectInitiator(scriptsLoaded, numsOfExpectedScripts) {
+        enableLoaderWatch();
+        $(document).foundation();
+        bamQueue.run();
+        core_reveal = new core_reveal();
+        customModals();
+        if (
+          GetIEVersion() > 0 &&
+          GetIEVersion() <= 11 &&
+          getCookie("outdatedBrowserAgreement") == ""
+        ) {
+          $("#browserAlert").core_reveal("open");
+        }
+      }
 
-		 			zopim = function() {
-				
-$zopim.livechat.setLanguage('en');
-$zopim.livechat.setGreetings({
-    "online":  ["Click here to chat", "Leave a comment or a question, and one of our agents will attend you shortly"],
-    "offline": ["Leave a comment or a question, and one of our agents will attend you shortly", "It is not possible to chat at this time. Leave a message with your comment or question, and we will respond during office hours (M-F 9.00h - 18.30h)"],
-    "away":    ["Click here to chat", "All agents are busy: leave a comment or a question and we will try to assist you"]
-  });
-$zopim.livechat.bubble.setTitle('Any question?');
-$zopim.livechat.bubble.setText('We are here!');
-$zopim.livechat.button.setOffsetHorizontalMobile(300000);
-$zopim.livechat.theme.setColor('#008562');
-$zopim.livechat.theme.reload();
+      zopim = function () {
+        $zopim.livechat.setLanguage("en");
+        $zopim.livechat.setGreetings({
+          online: [
+            "Click here to chat",
+            "Leave a comment or a question, and one of our agents will attend you shortly",
+          ],
+          offline: [
+            "Leave a comment or a question, and one of our agents will attend you shortly",
+            "It is not possible to chat at this time. Leave a message with your comment or question, and we will respond during office hours (M-F 9.00h - 18.30h)",
+          ],
+          away: [
+            "Click here to chat",
+            "All agents are busy: leave a comment or a question and we will try to assist you",
+          ],
+        });
+        $zopim.livechat.bubble.setTitle("Any question?");
+        $zopim.livechat.bubble.setText("We are here!");
+        $zopim.livechat.button.setOffsetHorizontalMobile(300000);
+        $zopim.livechat.theme.setColor("#008562");
+        $zopim.livechat.theme.reload();
 
-$zopim.livechat.hideAll()
+        $zopim.livechat.hideAll();
 
-$zopim.livechat.setOnStatus(function(s){
-	if(s=='online'){
-		$zopim.state="online"
-		$('#chatBt').removeAttr('data-offline').attr('data-online',"")
-		$('[data-chatstatus]').html("<button onclick='$zopim.livechat.window.toggle()' class='white'><strong>Available</strong></button>");
+        $zopim.livechat.setOnStatus(function (s) {
+          if (s == "online") {
+            $zopim.state = "online";
+            $("#chatBt").removeAttr("data-offline").attr("data-online", "");
+            $("[data-chatstatus]").html(
+              "<button onclick='$zopim.livechat.window.toggle()' class='white'><strong>Available</strong></button>"
+            );
+          } else {
+            $zopim.state = "offline";
+            $zopim.livechat.hideAll();
+            $("#chatBt").removeAttr("data-online").attr("data-offline", "");
+            $("[data-chatstatus]").html("Unavailable");
+          }
+        });
 
-	}else{
-		$zopim.state="offline"
-		$zopim.livechat.hideAll()
-		$('#chatBt').removeAttr('data-online').attr('data-offline',"")
-		$('[data-chatstatus]').html("Unavailable");
-	}
-});
+        if ($zopim.livechat.isChatting()) {
+          $("#chatBt").addClass("is-active");
+        }
 
-if($zopim.livechat.isChatting()){
-	$('#chatBt').addClass('is-active');
-}
+        $zopim.livechat.setOnUnreadMsgs(function (s) {
+          if (s > 0) {
+            $("#chatBt").addClass("has-messages");
+            $("#chatBt [data-btText]").html(s);
+            $zopim.livechat.window.show();
+          }
+        });
+        $zopim.livechat.setOnChatStart(function () {
+          $("#chatBt").addClass("is-active");
+        });
+        $zopim.livechat.setOnChatEnd(function () {
+          $("#chatBt").removeClass("has-messages is-active");
+          $("#chatBt [data-btText]").html("Chat");
+        });
+      };
 
-$zopim.livechat.setOnUnreadMsgs(function(s){
-	if(s>0){
-		$('#chatBt').addClass('has-messages');
-		$('#chatBt [data-btText]').html(s)
-		$zopim.livechat.window.show()
-	}
-})
-$zopim.livechat.setOnChatStart(function(){
-	$('#chatBt').addClass('is-active');
-})
-$zopim.livechat.setOnChatEnd(function(){
-	$('#chatBt').removeClass('has-messages is-active');
-	$('#chatBt [data-btText]').html('Chat');
-})			};
-
-			bamQueue.addToQueue(function(){
-				$('#chatBt').on('click',function(){
-					var options={
-									strings: {
-										chat: "Chat"
-									}
-								}
-					invoqueChat("182gtfcJannWUkOaaZPtliY77dTkVnWR",options);
-				});
-													var options={
-						strings: {
-							chat: "Chat"
-						},
-						loadWithoutOpenChat: true
-					}
-					invoqueChat("182gtfcJannWUkOaaZPtliY77dTkVnWR",options);
-							})
-				</script>  <iframe src="chrome-extension://iidlbfbakcgbmmbcpfbhmiknkdacikdm/audio-devices.html" allow="microphone" style="display: none;"></iframe><input type="file" id="" name="file" style="display: none;"><div data-v-5f0b9ba1="" class="container_selected_area" style="cursor: url(&quot;chrome-extension://iidlbfbakcgbmmbcpfbhmiknkdacikdm/assets/images/cursor-imagen.svg&quot;) 9 9, crosshair;"><div data-v-5f0b9ba1="" class="area"></div></div></body></html>
+      bamQueue.addToQueue(function () {
+        $("#chatBt").on("click", function () {
+          var options = {
+            strings: {
+              chat: "Chat",
+            },
+          };
+          invoqueChat("182gtfcJannWUkOaaZPtliY77dTkVnWR", options);
+        });
+        var options = {
+          strings: {
+            chat: "Chat",
+          },
+          loadWithoutOpenChat: true,
+        };
+        invoqueChat("182gtfcJannWUkOaaZPtliY77dTkVnWR", options);
+      });
+    </script>
+    <iframe
+      src="chrome-extension://iidlbfbakcgbmmbcpfbhmiknkdacikdm/audio-devices.html"
+      allow="microphone"
+      style="display: none"
+    ></iframe
+    ><input type="file" id="" name="file" style="display: none" /><div
+      data-v-5f0b9ba1=""
+      class="container_selected_area"
+      style="
+        cursor: url('chrome-extension://iidlbfbakcgbmmbcpfbhmiknkdacikdm/assets/images/cursor-imagen.svg')
+            9 9,
+          crosshair;
+      "
+      ><div data-v-5f0b9ba1="" class="area"></div></div></body
+></html>
