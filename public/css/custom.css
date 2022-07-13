@@ -23,12 +23,3 @@
 .d2 {
   height: 40px;
 }
-.center-li {
-  display: flex;
-}
-
-@media (max-width: 640px) {
-  .center-li {
-    display: inherit;
-  }
-}

@@ -1,3 +1,13 @@
+.center-li {
+  display: flex;
+}
+
+@media (max-width: 640px) {
+  .center-li {
+    display: inherit;
+  }
+}
+
 .core_inlineBlock {
     display: inline-block;
     vertical-align: top
