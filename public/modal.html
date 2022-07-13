@@ -1,0 +1,58 @@
+########## MODAL START #############
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Upload and Size Photo</h5>
+                     </div>
+          <div class="modal-body">
+            <div class="img-container">
+           <img id="Img1" src="../../images/preview1.jpg" alt="Picture">
+            </div>
+              <div class="btn-group">
+
+          <label class="btn btn-success btn-upload" for="inputImage" title="Upload Image">
+            <input type="file" class="sr-only" id="inputImage" name="file" accept="image/*">
+            <span class="docs-tooltip" data-toggle="tooltip" title="Upload Image">Upload Photo</span>
+                    </label>
+    </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+               <a class="btn btn-primary" id="download" href="javascript:void(0);" download="cropped.jpg" hidden="hidden">Download</a>
+               
+          </div>
+        </div>
+      </div>
+    </div>
+
+########## MODAL END #############
+
+
+########## TABS ##################
+
+    <!-- Nav pills -->
+    <ul class="nav nav-pills" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="pill" href="#choosephoto">Choose Photo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#positionphoto">Design Label</a>
+      </li>
+         
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="choosephoto" class="container tab-pane active">
+      <button type="button" class="btn btn-primary" data-target="#modal" data-toggle="modal" style="Width: 220px;">
+      Upload Your Photo
+    </button>    
+      </div>
+
+      <div id="positionphoto" class="container tab-pane fade">
+      </div>
+
+
+
