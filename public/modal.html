@@ -10,6 +10,7 @@
     <style>
         .hide{
             display: none;
+            opacity: 1 !important;
         }
     </style>
     <!-- ########## MODAL START ############# -->
@@ -175,7 +176,8 @@
 <script>
     let switchModal=()=>{                
         let second = document.getElementById("positionphoto")
-          
+          let first = document.getElementById("modal")
+          first.style.display ="none"
 second.classList.remove("hide")
  
     }
