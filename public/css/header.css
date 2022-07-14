@@ -35338,3 +35338,36 @@ footer [data-disclaimer] ul li + li:before {
     display: inline-block;
   }
 }
+.nav-ico {
+  height: 68px;
+}
+.dl {
+  margin-top: -4px;
+}
+.nav-ico-3 {
+  height: 69px;
+  margin-top: -4px;
+}
+.nav-ico- {
+  width: 62px;
+  margin-top: -4px;
+}
+
+.nav-ico-4 {
+  width: 80px;
+}
+
+.nav-ico-5 {
+  height: 67px;
+  margin-top: -3px;
+}
+
+.mbl-ico {
+  width: 100px;
+  margin-top: -23px;
+}
+
+.d2 {
+  margin-top: -25px;
+  height: 49;
+}
