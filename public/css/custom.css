@@ -1,12 +1,16 @@
 .nav-ico {
-  width: 150px;
+  height: 68px;
 }
 .dl {
-  margin-top: 7px;
+  margin-top: -4px;
 }
 .nav-ico-3 {
-  width: 70px;
-  margin-top: -5px;
+  height: 69px;
+  margin-top: -4px;
+}
+.nav-ico- {
+  width: 62px;
+  margin-top: -4px;
 }
 
 .nav-ico-4 {
@@ -14,7 +18,8 @@
 }
 
 .nav-ico-5 {
-  width: 100px;
+  height: 67px;
+  margin-top: -3px;
 }
 
 .mbl-ico {
