@@ -1535,43 +1535,780 @@ body.swal2-no-backdrop .swal2-shown {
 
 
 </script>
-<div class="t-header">
-<div class="header-top">
-<div class="header-top-wrap_inner">
-<div href="#" style="cursor:pointer" onclick="callReportAndClearBet('Betting3D')"><i class="fas fa-arrow-left" aria-hidden="true"></i></div>
-<span style="font-size:20px;">Thai 2D3D</span>
-<div class="bell">
-<i style="font-size:30px;" class="far fa-bell" onclick="callReport('Notification')" aria-hidden="true"></i>
-<span class="dot" id="notification-span">0</span>
-</div>
-</div>
-</div>
-</div>
+ <header>
+      <div class="top-menu-curtain"></div>
+      <nav class="top-menu">
+        <div class="float-left">
+          <ul class="core_inline-list" data-mobilemenuarea="">
+            <li data-mobilemenu=""
+              ><button
+                aria-label="Main menu"
+                data-mobilegamesmenutoggle=""
+                type="button"
+                class="white"
+                ><span>MENU</span
+                ><i data-mobilemenuicon="" class="icon-slim-menu"
+                  >&nbsp;</i
+                ></button
+              ></li
+            >
+            <li data-logo=""
+              ><a
+                href="/en/"
+                class="logo"
+                title="Lottofy"
+                aria-label="Go to the main page"
+                ><i></i></a
+            ></li>
+            <li data-inlinegamesmenucontainer="">
+              <ul
+                class="core_inline-list show-for-large"
+                data-inlinegamesmenu=""
+              >
+                <li class="is-active" style="visibility: visible; top: 0px"
+                  ><a href="/en/">LOTTERY</a></li
+                >
+                <li data-menu-viewmore="" style="visibility: visible; top: 0px"
+                  ><a
+                    href="javascript:void(null)"
+                    class="icon-slim-chevron-right-outline float-right"
+                    data-toggle="overflown-gamesCategories"
+                    data-alignment="right"
+                    aria-controls="overflown-gamesCategories"
+                    data-is-focus="false"
+                    data-yeti-box="overflown-gamesCategories"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  ></a
+                ></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+       <div class="float-right">
+          <ul class="core_inline-list">
+           <li data-userdetail=""
+              ><a
+                href="../account.html"
+                data-hover=""
+                data-coretoggle="menu-user"
+                data-alignment="left"
+                ><img
+                  src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
+                  class="avatar"
+                  alt="My account"
+                /><span> My account</span></a
+              ></li
+            ><li data-vcdetail=""
+              ><a href="../balance.html"
+                ><span>Balance: </span><strong>0,00€</strong></a
+              ></li
+            >
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tabs-content" data-tabs-content="gamingTabs">
+          <div class="tabs-panel is-active" id="gamblingModePanel1">
+            <div class="top-subMenu show-for-medium is-overflown">
+              <ul
+                class="core_inline-list small-text-left medium-text-center core_styleTop"
+                data-menu-games=""
+              >
+                <li
+                  data-nomenu=""
+                  data-gametype="superloto"
+                  style="top: 0px; visibility: visible"
+                  ><a
+                    href="../2D/2d.html"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    >
+					<img class="nav-ico dl" src="../assets/2dlogonew.png"/>
+                  </a
+                  ></li
+                ><li
+                  style="animation-delay: 0s; visibility: visible; top: 0px"
+                  data-gametype="euromillones"
+                  ><a
+                    href="../3D/3d.html"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><img  class="nav-ico dl" src="../assets/3dlogonew.png"/></a></li
+                ><li
+                  style="animation-delay: 0.03s; visibility: visible; top: 0px"
+                  data-gametype="powerball"
+                  ><a
+                    href="./magnum/magnum.html"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><img  class="nav-ico-3" src="../assets/magnum-icon.png"/></a></li
+                ><li
+                  style="animation-delay: 0.06s; visibility: visible; top: 0px"
+                  data-gametype="megamillions"
+                  ><a
+                    href="./damacai/2damacai.html"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><img  class="nav-ico-4" src="../assets/damacai.jpg"/></a></li
+                ><li
+                  style="animation-delay: 0.09s; visibility: visible; top: 0px"
+                  data-gametype="superenalotto"
+                  ><a
+                    href="./4d/4d.html"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><img  class="nav-ico-" src="../assets/toto4d.png"/></a></li
+                ><li
+                  style="animation-delay: 0.12s; visibility: visible; top: 0px"
+                  data-gametype="primitiva"
+                  ><a
+                    href="./5d/5d.html"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><img  class="nav-ico-" src="../assets/toto-5d-2.png"/></a></li
+                ><li
+                  style="animation-delay: 0.15s; visibility: visible; top: 0px"
+                  data-gametype="lotto6aus49"
+                  ><a
+                    href="./6d/6d.html"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><img  class="nav-ico-" src="../assets/toto-6d.png"/></a></li
+                ><li
+                  style="animation-delay: 0.18s; visibility: visible; top: 0px"
+                  data-gametype="eurojackpot"
+                  ><a
+                    href="./9mp/pmp.html"
+                    data-coretoggle="menu-gamesMode"
+                    data-hover=""
+                    data-alignment="left"
+                    ><img  class="nav-ico-5" src="../assets/pmp-3-3d.png"/></a></li
+                >
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+       
+   
+      <div id="menu-clubs" class="menus-dropDown" data-coredropdown="">
+        <ul>
+          <li
+            ><a href="/en/euromillions/club/"
+              ><i class="icon-games-euromillones feuromillones"></i> Syndicate
+              Euromillonarios<span><strong>80</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="/en/elgordo/club/"
+              ><i class="icon-games-elgordo felgordo"></i> Syndicate
+              Gordacos<span><strong>70</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="./5d/5d.htmlclub/"
+              ><i class="icon-games-primitiva fprimitiva"></i> Syndicate
+              PrimiClub<span><strong>150</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="/en/lotto6aus49/club/"
+              ><i class="icon-games-lotto6aus49 flotto6aus49"></i> Syndicate
+              Lotto6aus49<span><strong>150</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="./9mp/pmp.htmlclub/"
+              ><i class="icon-games-eurojackpot feurojackpot"></i> Syndicate
+              Eurojackpot<span><strong>100</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="/en/powerball/club/"
+              ><i class="icon-games-powerball fpowerball"></i> Syndicate
+              Powerball<span><strong>120</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="/en/megamillions/club/"
+              ><i class="icon-games-megamillions fmegamillions"></i> Syndicate
+              Megamillions<span><strong>120</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="./4d/4d.htmlclub/"
+              ><i class="icon-games-superenalotto fsuperenalotto"></i> Syndicate
+              Superenalotto<span><strong>200</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="/en/megasena/club/"
+              ><i class="icon-games-megasena fmegasena"></i> Syndicate
+              Megasena<span><strong>280</strong> bets</span></a
+            ></li
+          >
+          <li
+            ><a href="/en/superlotto/"
+              ><i class="icon-games-superlotto fsuperlotto"></i> Syndicate
+              Superlotto<span><strong>592</strong> bets</span></a
+            ></li
+          >
+        </ul>
+      </div>
+      <div
+        id="menu-lang"
+        class="top-menu_dropdown dropdown-pane"
+        data-menu-lang=""
+        data-dropdown=""
+        aria-hidden="true"
+        data-yeti-box="menu-lang"
+        data-resize="menu-lang"
+        aria-labelledby="1rqaru-dd-anchor"
+        data-e="0rvyy6-e"
+        data-events="resize"
+      >
+        <p>Language</p>
+        <ul>
+          <li data-lang="ES"
+            ><button type="button" data-lang="ES" data-url="/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                alt="es"
+              />
+              ES</button
+            ></li
+          >
+          <li data-lang="EN"
+            ><button
+              type="button"
+              class="is-active"
+              data-lang="EN"
+              data-url="/en/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
+                alt="gb"
+              />
+              EN</button
+            ></li
+          >
+          <li data-lang="PT"
+            ><button
+              type="button"
+              data-lang="PT"
+              data-url="/pt/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png"
+                alt="pt"
+              />
+              PT</button
+            ></li
+          >
+          <li data-lang="BR"
+            ><button
+              type="button"
+              data-lang="BR"
+              data-url="/br/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png"
+                alt="br"
+              />
+              BR</button
+            ></li
+          >
+          <li data-lang="FR"
+            ><button
+              type="button"
+              data-lang="FR"
+              data-url="/fr/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png"
+                alt="fr"
+              />
+              FR</button
+            ></li
+          >
+          <li data-lang="IT"
+            ><button
+              type="button"
+              data-lang="IT"
+              data-url="/it/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png"
+                alt="it"
+              />
+              IT</button
+            ></li
+          >
+          <li data-lang="DE"
+            ><button
+              type="button"
+              data-lang="DE"
+              data-url="/de/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png"
+                alt="de"
+              />
+              DE</button
+            ></li
+          >
+          <li data-lang="IN"
+            ><button
+              type="button"
+              data-lang="IN"
+              data-url="/in/?setlanguage=true"
+              ><img
+                class="imgSize size10 core_styleMiddle round"
+                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png"
+                alt="in"
+              />
+              IN</button
+            ></li
+          >
+        </ul>
+        <p>Currency</p>
+        <div class="core_panel core_thin">
+          <select class="core_spaceBzero core_sans_serif core_txtSize_sm1">
+            <option value="eur">EUR</option>
+            <option selected="" value="usd">USD</option>
+            <option value="brl">BRL</option>
+            <option value="cny">CNY</option>
+            <option value="inr">INR</option>
+            <option value="cad">CAD</option>
+            <option value="mxn">MXN</option>
+            <option value="xof">XOF</option>
+            <option value="clp">CLP</option>
+            <option value="cop">COP</option>
+            <option value="nok">NOK</option>
+            <option value="pen">PEN</option>
+            <option value="php">PHP</option>
+            <option value="zar">ZAR</option>
+            <option value="chf">CHF</option>
+            <option value="gbp">GBP</option>
+            <option value="ngn">NGN</option>
+          </select>
+        </div>
+        <div class="core_panel core_thin">
+          <button class="button" data-save-lang="" disabled="">Apply</button>
+        </div>
+      </div>
+      <div id="cart" data-coredropdown="">
+        <div>
+          <div id="cartContent">
+            <div id="cartContentList">
+              <div>
+                <i class="icon-slim-shopping-cart"></i> The cart is empty
+              </div>
+            </div>
+            <div id="cartActions" class="">
+              <a
+                href="/en/purchase/"
+                class="button tiny radius bg_mint core_spaceBzero icon-slim-shopping-cart core_txtSize_sm1"
+                rel="nofollow"
+              >
+                Go to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <button
+            type="button"
+            data-dettach=""
+            class="icon-slim-media-eject"
+          ></button>
+        </div>
+        <span class="peek">▴</span>
+      </div>
+      <div class="row" style="position: relative">
+        <nav id="mobileMenu">
+          <div id="mobileGamesMenu" class="" style="display: none">
+            <button
+              aria-label="Main menu"
+              data-mobilegamesmenutoggle=""
+              type="button"
+              class="white"
+              ><span>MENU</span
+              ><i data-mobilemenuicon="" class="icon-slim-menu"
+                >&nbsp;</i
+              ></button
+            >
+            <div id="mobileGamesMenuArt">
+              <img
+                src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
+                class="avatar"
+                alt="My account"
+              />
+              <div class="text-center core_spaceTThin">
+                <button
+                  data-logintrigger=""
+                  class="core_spaceBzero button round bg_blue"
+                  ><strong>Login</strong></button
+                >
+                <a class="core_spaceBzero button round" href="./signup.html"
+                  ><strong>Create your account</strong></a
+                >
+              </div>
+            </div>
+            <ul>
+              <li class="has-submenu is-opened">
+                <a href="javascript:void(null)"
+                  ><i class="icon-games-lottery"></i> Lottery</a
+                >
+                <ul style="display: block">
+               
+                   
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-euromillones"
+                    >
+                      2D lottery</a
+                    >
+                     
+                  </li>
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-powerball"
+                    >
+                     3D lottery</a
+                    >
+                    
+                  </li>
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-megamillions"
+                    >
+                      Mangnum</a
+                    >
+                   
+                  </li>
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-superenalotto"
+                    >
+                      Da ma cai</a
+                    >
+                   
+                  </li>
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-primitiva"
+                    >
+                  Toto Malaysia</a
+                    >
+                   
+                  </li>
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-lotto6aus49"
+                    >
+                       5D Toto</a
+                    >
+                    <!-- <ul>
+                      <li
+                        ><a href="/en/lotto6aus49/play/"
+                          ><i class="icon-slim-arrow-right2"></i> Play
+                          <strong>LOTTO6AUS49</strong></a
+                        ></li
+                      >
+                      <li
+                        ><a href="/en/lotto6aus49/fund/"
+                          ><i class="icon-slim-arrow-right2"></i> Lotto6aus49
+                          <strong>FUND</strong> (2 bets)</a
+                        ></li
+                      >
+                      
+                    </ul> -->
+                  </li>
+                  <li class="has-submenu">
+                    <a
+                      href="javascript:void(null)"
+                      class="icon-games-eurojackpot"
+                    >
+                      6D Toto</a
+                    >
+                 
+                  </li>
+                  <li class="has-submenu">
+                    <a href="javascript:void(null)" class="icon-games-quiniela">
+                     3+3D bonus</a
+                    >
+         
+                  </li>
+                  
+                </ul>
+              </li>
+            </ul>
+            <ul data-globalactions="">
+              <li
+                ><a href="./contact.html" class="icon-common-bubble2">
+                  Support &amp; Helpdesk</a
+                ></li
+              >
+              <li class="has-submenu">
+                <a href="javascript:void(null)" class="icon-slim-world">
+                  Select your language
+                  <span class="label"
+                    ><img
+                      class="flag"
+                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
+                      alt="gb"
+                    />
+                    EN</span
+                  >
+                  <span class="label currency">USD</span>
+                </a>
+                <ul>
+                  <li>
+                    <div
+                      id="menu-lang-mobile"
+                      class="core_panel core_paddingTzero"
+                      data-menu-lang=""
+                    >
+                      <fieldset class="core_thin radius">
+                        <legend
+                          class="core_spaceBzero core_txtSize_sm2 core_normal"
+                          >Language</legend
+                        >
+                        <button
+                          type="button"
+                          class="label"
+                          data-lang="ES"
+                          data-url="/?setlanguage=true"
+                          ><img
+                            class="imgSize size10 core_styleMiddle round"
+                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                            alt="es"
+                          />
+                          ES</button
+                        >
+                        <button
+                          type="button"
+                          class="label is-active"
+                          data-lang="EN"
+                          data-url="/en/?setlanguage=true"
+                          ><img
+                            class="imgSize size10 core_styleMiddle round"
+                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
+                            alt="gb"
+                          />
+                          EN</button
+                        >
+                        <button
+                          type="button"
+                          class="label"
+                          data-lang="PT"
+                          data-url="/pt/?setlanguage=true"
+                          ><img
+                            class="imgSize size10 core_styleMiddle round"
+                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png"
+                            alt="pt"
+                          />
+                          PT</button
+                        >
+                        <button
+                          type="button"
+                          class="label"
+                          data-lang="BR"
+                          data-url="/br/?setlanguage=true"
+                          ><img
+                            class="imgSize size10 core_styleMiddle round"
+                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png"
+                            alt="br"
+                          />
+                          BR</button
+                        >
+                        <button
+                          type="button"
+                          class="label"
+                          data-lang="FR"
+                          data-url="/fr/?setlanguage=true"
+                          ><img
+                            class="imgSize size10 core_styleMiddle round"
+                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png"
+                            alt="fr"
+                          />
+                          FR</button
+                        >
+                        <button
+                          type="button"
+                          class="label"
+                          data-lang="IT"
+                          data-url="/it/?setlanguage=true"
+                          ><img
+                            class="imgSize size10 core_styleMiddle round"
+                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png"
+                            alt="it"
+                          />
+                          IT</button
+                        >
+                        <button
+                          type="button"
+                          class="label"
+                          data-lang="DE"
+                          data-url="/de/?setlanguage=true"
+                          ><img
+                            class="imgSize size10 core_styleMiddle round"
+                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png"
+                            alt="de"
+                          />
+                          DE</button
+                        >
+                        <button
+                          type="button"
+                          class="label"
+                          data-lang="IN"
+                          data-url="/in/?setlanguage=true"
+                          ><img
+                            class="imgSize size10 core_styleMiddle round"
+                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png"
+                            alt="in"
+                          />
+                          IN</button
+                        >
+                      </fieldset>
+                      <fieldset class="core_thin radius">
+                        <legend
+                          class="core_spaceBzero core_txtSize_sm2 core_normal"
+                          >Currency</legend
+                        >
+                        <button type="button" class="label" data-curr="eur"
+                          >EUR</button
+                        >
+                        <button
+                          type="button"
+                          class="label is-active"
+                          data-curr="usd"
+                          >USD</button
+                        >
+                        <button type="button" class="label" data-curr="brl"
+                          >BRL</button
+                        >
+                        <button type="button" class="label" data-curr="cny"
+                          >CNY</button
+                        >
+                        <button type="button" class="label" data-curr="inr"
+                          >INR</button
+                        >
+                        <button type="button" class="label" data-curr="cad"
+                          >CAD</button
+                        >
+                        <button type="button" class="label" data-curr="mxn"
+                          >MXN</button
+                        >
+                        <button type="button" class="label" data-curr="xof"
+                          >XOF</button
+                        >
+                        <button type="button" class="label" data-curr="clp"
+                          >CLP</button
+                        >
+                        <button type="button" class="label" data-curr="cop"
+                          >COP</button
+                        >
+                        <button type="button" class="label" data-curr="nok"
+                          >NOK</button
+                        >
+                        <button type="button" class="label" data-curr="pen"
+                          >PEN</button
+                        >
+                        <button type="button" class="label" data-curr="php"
+                          >PHP</button
+                        >
+                        <button type="button" class="label" data-curr="zar"
+                          >ZAR</button
+                        >
+                        <button type="button" class="label" data-curr="chf"
+                          >CHF</button
+                        >
+                        <button type="button" class="label" data-curr="gbp"
+                          >GBP</button
+                        >
+                        <button type="button" class="label" data-curr="ngn"
+                          >NGN</button
+                        >
+                      </fieldset>
+                      <button
+                        class="button core_full"
+                        data-save-lang=""
+                        disabled=""
+                        >Apply</button
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div> </header
+    > 
+     <div class="off-canvas-wrap">
+       <div
+        class="top-menu-gamesNav hide-for-medium animated"
+        data-top-menu-gamesnav=""
+        style=""
+      >
+        <ul
+          class="is-active"
+          data-tab-id="gamblingModePanel1"
+          data-num-items="13"
+          ><li style="animation-delay: 0.03s" data-gametype="powerball"
+            ><button    onclick="window.location.href='../2D/2d.html';"
+              ><img class="mbl-ico d2" src="../assets/2dlogonew.png"/></button></li
+          ><li style="animation-delay: 0.06s" data-gametype="megamillions"
+            ><button
+              ><img class="mbl-ico d2" src="../assets/3dlogonew.png"/></button></li
+          ><li style="animation-delay: 0.09s" data-gametype="superenalotto"
+            ><button
+              ><img class="mbl-ico" src="../assets/magnum-icon.png"/></button></li
+          ><li style="animation-delay: 0.12s" data-gametype="primitiva"
+            ><button
+              ><img class="mbl-ico" src="../assets/damacai.jpg"/></button></li
+          ><li style="animation-delay: 0.15s" data-gametype="lotto6aus49"
+            ><button
+              ><img class="mbl-ico" src="../assets/toto4d.png"/></button></li
+          ><li style="animation-delay: 0.18s" data-gametype="eurojackpot"
+            ><button
+              ><img class="mbl-ico" src="../assets/toto-5d-2.png"/></button></li
+          ><li style="animation-delay: 0.21s" data-gametype="quiniela"
+            ><button
+              ><img class="mbl-ico" src="../assets/toto-6d.png"/></button></li
+          ><li style="animation-delay: 0.24s" data-gametype="bonoloto"
+            ><button
+              ><img class="mbl-ico" src="../assets/pmp-3-3d.png"/></button></li
+          >   </ul>
+      </div>
+      
+      <div id="fb-root"></div>
+    </div>
+<div class="t-body" style="min-height:calc(100vh); background-color: #FFF;">
 <div class="body_main">
-<div class="sticky-top" style="top: 65px;">
+<div class="sticky-top" style="top: 0px;">
 <div class="d-header-top col-12">
 <div class="twodbet_input">
-<div class="twobetbtn" style="text-align: center;" id="select-counter">0</div>
+<div class="twobetbtn" style="text-align: center; margin-top: -18px;" id="select-counter">0</div>
 <input type="text" id="bet_amount" inputmode="numeric" class="form-control twobetinput" style=" min-width: 70%;" placeholder="Bet Amount (Minimum 100 Ks)">
 </div>
-<div class="top_balance_wrap">
-<div>
-<div>
-<i class="fas fa-wallet mr-2" aria-hidden="true"></i>Balance
-</div>
-<div>
-<span id="member_balance" style="font-weight:bolder">2,679,213</span>
-<span class="member_currency">Ks</span>
-</div>
-</div>
-<div>
-<div>
-<i class="far fa-clock mr-2" aria-hidden="true"></i><span id="bet-close-span">Bet Close </span>
-</div>
-<div id="bet-close-time">
-</div>
-</div>
-</div>
+ 
 <script>
 
     var x;
@@ -1672,7 +2409,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">Tin</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/000-498.png?20220715162556">
+<img src="./img/000-498.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-000" class="bet_pic_bottom_spec input-number">000</div>
@@ -1682,7 +2419,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">dragon</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/001-545.png?20220715162556">
+<img src="./img/001-545.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-001" class="bet_pic_bottom_spec input-number">001</div>
@@ -1692,7 +2429,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">Lens</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/002-503.png?20220715162556">
+<img src="./img/002-503.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-002" class="bet_pic_bottom_spec input-number">002</div>
@@ -1702,7 +2439,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">swordman</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/003-416.png?20220715162556">
+<img src="./img/003-416.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-003" class="bet_pic_bottom_spec input-number">003</div>
@@ -1712,7 +2449,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">Dinasour</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/004-515.png?20220715162556">
+<img src="./img/004-515.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-004" class="bet_pic_bottom_spec input-number">004</div>
@@ -1722,7 +2459,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">Vulture</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/006-541.png?20220715162556">
+<img src="./img/006-541.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-006" class="bet_pic_bottom_spec input-number">006</div>
@@ -1732,7 +2469,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">Tiger's Head</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/007-508.png?20220715162556">
+<img src="./img/007-508.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-007" class="bet_pic_bottom_spec input-number">007</div>
@@ -1742,7 +2479,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">Paper</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/008-507.png?20220715162556">
+<img src="./img/008-507.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-008" class="bet_pic_bottom_spec input-number">008</div>
@@ -1752,7 +2489,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">Talented person</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/009-537.png?20220715162556">
+<img src="./img/009-537.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-009" class="bet_pic_bottom_spec input-number">009</div>
@@ -1762,7 +2499,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">cuckoo</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/010-532.png?20220715162556">
+<img src="./img/010-532.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-010" class="bet_pic_bottom_spec input-number">010</div>
@@ -1772,7 +2509,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">bird</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/014-546.png?20220715162556">
+<img src="./img/014-546.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-014" class="bet_pic_bottom_spec input-number">014</div>
@@ -1782,7 +2519,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">Horses </div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/015-504.png?20220715162556">
+<img src="./img/015-504.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-015" class="bet_pic_bottom_spec input-number">015</div>
@@ -1792,7 +2529,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">cow</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/017-538.png?20220715162556">
+<img src="./img/017-538.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-017" class="bet_pic_bottom_spec input-number">017</div>
@@ -1802,7 +2539,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">Lahu people</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/018-528.png?20220715162556">
+<img src="./img/018-528.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-018" class="bet_pic_bottom_spec input-number">018</div>
@@ -1812,7 +2549,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">crow</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/020-522.png?20220715162556">
+<img src="./img/020-522.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-020" class="bet_pic_bottom_spec input-number">020</div>
@@ -1822,7 +2559,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">bird</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/022-520.png?20220715162556">
+<img src="./img/022-520.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-022" class="bet_pic_bottom_spec input-number">022</div>
@@ -1832,7 +2569,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">piggy</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/023-534.png?20220715162556">
+<img src="./img/023-534.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-023" class="bet_pic_bottom_spec input-number">023</div>
@@ -1842,7 +2579,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">police</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/025-535.png?20220715162556">
+<img src="./img/025-535.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-025" class="bet_pic_bottom_spec input-number">025</div>
@@ -1852,7 +2589,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">spider</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/038-517.png?20220715162556">
+<img src="./img/038-517.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-038" class="bet_pic_bottom_spec input-number">038</div>
@@ -1862,7 +2599,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">leopard</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/059-587.png?20220715162556">
+<img src="./img/059-587.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-059" class="bet_pic_bottom_spec input-number">059</div>
@@ -1872,7 +2609,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">Duck</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/062-569.png?20220715162556">
+<img src="./img/062-569.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-062" class="bet_pic_bottom_spec input-number">062</div>
@@ -1882,7 +2619,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">Bat</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/078-568.png?20220715162556">
+<img src="./img/078-568.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-078" class="bet_pic_bottom_spec input-number">078</div>
@@ -1892,7 +2629,7 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="bet_pic_wrap">
 <div class="bet_pic_top">Earth</div>
 <div>
-<img src="/Content/ThaiImages/DreamNo/102-603.png?20220715162556">
+<img src="./img/102-603.png">
 </div>
 <div class="bet_pic_bottom">
 <div id="bet-input-102" class="bet_pic_bottom_spec input-number">102</div>
@@ -1902,6 +2639,8 @@ body.swal2-no-backdrop .swal2-shown {
 </div>
 </div>
 </div>
+</div>
+
 <div class="modal modal-center fade" id="modal" data-backdrop="static" data-keyboard="false">
 <div class="modal-dialog modal-dialog-centered rounded" role="document">
 <div class="modal-content">
