@@ -2422,8 +2422,8 @@ body.swal2-no-backdrop .swal2-shown {
 <div class="threebet_wrap" id="insert-box"></div>
 </div>
 <div class="threebet_wrap_btn">
-<button id="hotnumber-show" onclick="callHotNumberReport('HotNumberShow')" class="threebetbtn">Hot Number</button>
-<button onclick="callReportAndClearBet('QuickSelect3D')" class="threebetbtn">Quick Select</button>
+<button id="hotnumber-show" onclick="window.location.href='./hotnumber.html';" class="threebetbtn">Hot Number</button>
+<button onclick="window.location.href='quickselect.html';"class="threebetbtn">Quick Select</button>
 <button id="round-select" class="threebetbtn">Round</button>
 <button id="select-input" class="threebetbtn">Select</button>
 </div>
@@ -2700,8 +2700,8 @@ body.swal2-no-backdrop .swal2-shown {
         if (finalBetList != '') {
             localStorage.setItem('placebetdetail', JSON.stringify(finalBetList));
             localStorage.setItem('lastcallsite', 'Betting3D');
-            reportName = "PreBet"
-            var url = "/TH2D3D/" + reportName + "?AccessToken=" + token + "&Language=" + language;
+            reportName = ""
+            var url = "./betlist.html" + reportName + "?AccessToken=" + token + "&Language=" + language;
             window.location = url;
 
         } else {
