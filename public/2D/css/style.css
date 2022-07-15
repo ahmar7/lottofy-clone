@@ -4993,3 +4993,6 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
     transform: rotate(360deg);
   }
 }
+.table thead th {
+  text-align: center !important;
+}
