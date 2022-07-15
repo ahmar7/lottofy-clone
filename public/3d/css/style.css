@@ -16,7 +16,11 @@ body {
   /*max-width: 90%;*/
   background-color: #f4f4f4;
 }
-
+@media (max-width: 600px) {
+  .t-body {
+    max-width: 100%;
+  }
+}
 .swal2-popup.swal2-toast {
   flex-direction: row;
   align-items: center;

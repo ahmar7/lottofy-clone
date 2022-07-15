@@ -2,10 +2,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
-<link rel="stylesheet" href="../css/headers_index.css">
-    <link rel="stylesheet" href="../css/custom.css">
-<script src="/Scripts/jquery-3.3.1.min.js"></script>
-<script src="/Scripts/umd/popper.min.js"></script>
+ <link rel="stylesheet" href="../css/headers_index.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+<script src="./js/jquery.js"></script>
+<script src="./js/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
@@ -1298,8 +1298,7 @@ body.swal2-no-backdrop .swal2-shown {
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-<script src="https://kit.fontawesome.com/53de1ed1cd.js" crossorigin="anonymous"></script> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+<script src="https://kit.fontawesome.com/53de1ed1cd.js" crossorigin="anonymous"></script> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.2/css/swiper.css">
@@ -1536,20 +1535,15 @@ body.swal2-no-backdrop .swal2-shown {
 
 
 </script><style>
-    .fa-stack.small {
-        font-size: 0.6em;
-        color: red;
-    }
 
-    i {
-        vertical-align: middle;
+    @media only screen and (max-width: 600px) {
+        input::placeholder {
+            font-size: small;
+        }
     }
-
-    .tablerow-icon{
-        color:#0054a6;
-    }
+    
 </style>
-   <header>
+ <header>
       <div class="top-menu-curtain"></div>
       <nav class="top-menu">
         <div class="float-left">
@@ -1599,7 +1593,7 @@ body.swal2-no-backdrop .swal2-shown {
             </li>
           </ul>
         </div>
-     <div class="float-right">
+       <div class="float-right">
           <ul class="core_inline-list">
            <li data-userdetail=""
               ><a
@@ -1633,7 +1627,7 @@ body.swal2-no-backdrop .swal2-shown {
                   data-gametype="superloto"
                   style="top: 0px; visibility: visible"
                   ><a
-                    href="./2d.html"
+                    href="../2D/2d.html"
                     data-coretoggle="menu-gamesMode"
                     data-hover=""
                     data-alignment="left"
@@ -2314,429 +2308,416 @@ body.swal2-no-backdrop .swal2-shown {
       
       <div id="fb-root"></div>
     </div>
-    <div class="t-body">
+<div class="t-body" style="min-height:calc(100vh); background-color: #FFF;">
 <div class="body_main">
-<div class="list-display-text">
-List of Bet
+<div class="sticky-top" style="top:0px; background-color: #f4f4f4">
+<div class="twodbet_input">
+<img src="../assets/3dlogonew.png" alt="">
 </div>
-<table id="table_listbet" class="table">
-<thead>
-<tr>
-<th>No.</th>
-<th>Number</th>
-<th>Amount</th>
-<th>edit/delete</th>
-</tr>
-</thead>
-<tbody><tr><td scope="col">1</td><td scope="col" id="betNumber-1">03</td><td scope="col" id="betType-1">234 </td><td scope="col" class="flex-center-10" id="row_delete-1"><i class="fas fa-pen tablerow-icon" onclick="rowEdit(1)" aria-hidden="true"></i><span class="fa-stack small" onclick="rowDelete(1)"><i class="fa-solid fa-trash fa-stack-2x"></i><i class="fa-solid fa-close fa-stack-1x fa-inverse"></i></span></td></tr><tr><td scope="col">2</td><td scope="col" id="betNumber-2">04</td><td scope="col" id="betType-2">234  </td><td scope="col" class="flex-center-10" id="row_delete-2"><i class="fas fa-pen tablerow-icon" onclick="rowEdit(2)" aria-hidden="true"></i><span class="fa-stack small" onclick="rowDelete(2)"><i class="fa-solid fa-trash fa-stack-2x"></i><i class="fa-solid fa-close fa-stack-1x fa-inverse"></i></span></td></tr></tbody>
-<tfoot>
-<tr>
-<td colspan="2">Total Amount</td>
-<td><span id="table-total-amount">468</span>  </td>
-<td></td>
-</tr>
-</tfoot>
-</table>
-<div style="text-align:center;display: flex;justify-content: center;">
-
-</div>
-</div>
+<div class="twodbet_input">
+<button onclick="window.location.href='./dreambook.html';" style="margin-top: -15px;" class="twobetbtn"> DreamBook</button>
+<input type="text" pattern="\d*" inputmode="numeric" id="bet_amount" class="form-control twobetinput" style=" min-width: 70%;" placeholder="Bet Amount (Minimum 100 Ks)">
 </div>
  
+<script>
+
+    var x;
+    var countDownDate = 0;
+    var serverDate = 0;
+    var curGame = localStorage.getItem('currentBet');
+    $("document").ready(function () {
+
+        countDownDraw();
+
+    });
+
+    function countDownDraw(gameDraw) {
+        // Retrieve again
+        if (curGame == null || curGame == undefined) {
+            curGame = localStorage.getItem('currentBet');
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "../THGame/GetGameDrawCountDown",
+            data: {
+                "AccessToken": token,
+                "GameCode": curGame,
+                "GameDrawNo": gameDraw
+            },
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'token': window.token
+            },
+            success: function (data) {
+
+                if (data.CountDownDate != null) {
+
+                    countDownDate = new Date(data.CountDownDate).getTime();
+
+                    serverDate = new Date(data.ServerDate).getTime();
+
+                    showBetCloseTime(countDownDate);
+                }
+            }
+        });
+    }
+
+    // Update the count down every 1 second
+    function betCloseTimer() {
+        // Get today's date and time
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - serverDate;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        var dayString = days > 0 ? days + " days " : "";
+        document.getElementById("bet-close-time").innerHTML = dayString + hours.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }) + ":"
+            + minutes.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }) + ":" + seconds.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
+
+        serverDate += 1000;
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("bet-close-time").innerHTML = "";
+            document.getElementById("bet-close-span").innerHTML = "Bet Closed";
+
+            // Popup Select Time Section
+            $("#section-select")[0].innerText = "Section Select";
+            loadSectionTime();
+            $("#modal").modal("show");
+
+        }
+    }
+
+    function showBetCloseTime(countdown) {
+        var now = new Date()
+        countDownDate = countdown;
+
+        if (x) {
+            clearInterval(x);
+        }
+        x = setInterval(betCloseTimer, 1000);
+    }
+
+</script>
+</div>
+<div class="bodytwobet bodythreebet">
+<div>
+<input id="number3d" type="text" pattern="\d*" maxlength="3" inputmode="numeric" class="form-control twobetinput" placeholder="Enter 3D Number (3 digits)">
+<div class="text-right"><span id="number3d_remain">0/3</span></div>
+<div id="ticker" class="threedbet_roll_wrap">
+<div class="rotator" style="opacity: 1;"><div style=""><div class="quota">8</div><div class="quota">9</div><div class="quota">0</div><div class="quota">1</div><div class="quota">2</div><div class="quota">3</div><div class="quota">4</div><div class="quota">5</div><div class="quota">6</div><div class="quota">7</div></div></div>
+<div class="rotator" style="opacity: 1;"><div style=""><div class="quota">8</div><div class="quota">9</div><div class="quota">0</div><div class="quota">1</div><div class="quota">2</div><div class="quota">3</div><div class="quota">4</div><div class="quota">5</div><div class="quota">6</div><div class="quota">7</div></div></div>
+<div class="rotator" style="opacity: 1;"><div style=""><div class="quota">8</div><div class="quota">9</div><div class="quota">0</div><div class="quota">1</div><div class="quota">2</div><div class="quota">3</div><div class="quota">4</div><div class="quota">5</div><div class="quota">6</div><div class="quota">7</div></div></div>
+<div id="result">000</div>
+</div>
+<div class="threebet_wrap" id="insert-box"></div>
+</div>
+<div class="threebet_wrap_btn">
+<button id="hotnumber-show" onclick="callHotNumberReport('HotNumberShow')" class="threebetbtn">Hot Number</button>
+<button onclick="callReportAndClearBet('QuickSelect3D')" class="threebetbtn">Quick Select</button>
+<button id="round-select" class="threebetbtn">Round</button>
+<button id="select-input" class="threebetbtn">Select</button>
+</div>
+</div>
+</div>
+</div>
+
+
 <div class="t-footer">
 <section class="menu-btm-twodbet">
 <div class="container-fluid">
 <div class="twodbet_footer">
- <button onclick="window.location.href='./bet.html';"   class="twobetbtn2">Reselect</button>
-<button onclick="window.location.href='./betconfirm.html';" class="twobetbtn">Bet</button>
+<button id="btn_clr" class="twobetbtn2">Clean</button>
+<button id="btn_add" class="twobetbtn">Bet</button>
 </div>
 </div>
 </section>
 </div>
-<div class="modal modal-center fade" id="modal" data-backdrop="static" data-keyboard="false">
-<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-<div class="modal-content">
-<div class="modal-header border-0">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">×</span>
-</button>
-</div>
-<div class="modal-body">
-<div>
-<p>Number</p>
-<p id="modal-number"></p>
-</div>
-<div>
-<label>New Amount</label>
-<input type="number" id="renew-amount" inputmode="numeric">
-<span id="modal-message" style="color:red;"></span>
-</div>
-<br>
-<div class="d-flex justify-content-center">
-<button id="modal-submit" class="twobetbtn"> submit</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="modal modal-center hide" id="numberMaxBetModal" data-backdrop="static" data-keyboard="false">
-<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-<div class="modal-content">
-<div class="modal-header border-0">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">×</span>
-</button>
-</div>
-<div class="modal-body">
-<div id="numberMaxBetBody"></div>
-</div>
-<div class="modal-footer border-0">
-<div class="row">
-<div class="col red-text">
-is/are available numbers and amount. Please try to reduce the bet "amount", or delete the "number".
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="./js/wheeler.js"></script>
+<div class="modal modal-center fade" id="modal" data-backdrop="static" data-keyboard="false"></div>
 <script>
-    
-    var cdetail = localStorage.getItem('placebetdetail');
-    var betdata = JSON.parse(decodeURIComponent(cdetail));
+
     var token = "";
     var language = "";
     var gameCode = "";
-    var currencyCode = "";
-    var gcurRow = 0;
-    var numberMaxAmountDict = {}
-    var confirmNumberMaxAmountDict = localStorage.getItem('confirmNumberMaxAmountDict');
+    var globalInsertList = [];
 
     $("document").ready(function () {
+        localStorage.setItem('currentBet', '3DTHAI');
+
         token = getUrlVars().AccessToken;
         language = getUrlVars().Language;
+        gameCode = getUrlVars().GameCode;
 
+        //Only load storage when reloadbetdetail = true, else clean all the betdetail
+        var rsdetail = localStorage.getItem('reloadbetdetail');
 
-        GetMemberProfile();
-        tableInsert();
-
-        if (confirmNumberMaxAmountDict != '' && confirmNumberMaxAmountDict != null) {
-            numberMaxAmountDict = JSON.parse(confirmNumberMaxAmountDict);
-            checkIsOverMaxBet();
-            localStorage.setItem('confirmNumberMaxAmountDict', '');
+        if (rsdetail != 'true') {
+            cleanBet();
+            localStorage.setItem('selectbet', '');
+            localStorage.setItem('reloadbetdetail', "");
         }
 
-        validateRiskNumberMaxBetAmount();
-    });
-    $("#btn_add").click(function (e) {
+        var cdetail = localStorage.getItem('placebetdetail')
 
-        //PlaceBet();
-        checkRiskNumberMaxBetAmount();
-    });
-    $("#btn_res").click(function (e) {
-        localStorage.setItem('reloadbetdetail', "true");
-        callLastPage();
-    });
+        if (cdetail != '' && cdetail != undefined) {
+            var betdata = JSON.parse(decodeURIComponent(cdetail));
+            for (var index = 0; index < betdata.length; index++) {
+                var obj = betdata[index];
+                if (obj.BetType != "SINGLE_3D") continue;
+                var esp = document.createElement("span");
+                document.getElementById("insert-box").appendChild(esp);
+                esp.classList.add('threedbox')
+                esp.classList.add('selected')
+                esp.onclick = function () { $(this).toggleClass("selected");}
+                esp.innerHTML = obj.BetData;
+                globalInsertList.push(obj.BetData)
+            }
+            $("#bet_amount").val(betdata[0].BetAmount)
 
+        }
+
+        var cselectdetail = localStorage.getItem('selectbet')
+        if (cselectdetail != '' && cselectdetail != undefined) {
+            var numbers = JSON.parse(decodeURIComponent(cselectdetail));
+            for (var index = 0; index < numbers.length; index++) {
+                var n = numbers[index];
+                var number = ('000' + n).substr(-3)
+                if (globalInsertList.includes(number) == false) {
+                    var esp = document.createElement("span");
+                    document.getElementById("insert-box").appendChild(esp);
+                    esp.classList.add('threedbox')
+                    esp.classList.add('selected')
+                    esp.onclick = function () { $(this).toggleClass("selected"); }
+                    esp.innerHTML = number;
+                    globalInsertList.push(number)
+                }
+            }
+        }
+        localStorage.setItem('selectbet', '');
+
+        GetMemberProfile();
+        $("#btn_clr").click(function (e) {
+            cleanBet();
+        });
+        $("#btn_add").click(function (e) {
+
+            placeNewBet();
+        });
+
+    });
     window.addEventListener("pageshow", function (event) {
         var historyTraversal = event.persisted ||
             (typeof window.performance != "undefined" &&
                 window.performance.navigation.type === 2);
         if (historyTraversal) {
+            // Handle page restore.
             window.location.reload();
         }
     });
 
-    function tableInsert() {
-        var digitFormatA = '000'
-        var digitFormatB = -3
-        if (localStorage.getItem('lastcallsite') == "Betting2D") {
-            digitFormatA = '00'
-            digitFormatB = -2
-        }
-
-        if (betdata != null) {
-            var totalAmount = 0;
-            var rowCount = 1;
-            for (var index = 0; index < betdata.length; index++) {
-                var obj = betdata[index];
-                totalAmount += Number(obj.BetAmount);
-                var recordHtml = '<tr><td scope="col" >' + rowCount + '</td>' +
-                    '<td scope="col"  id="betNumber-' + rowCount + '">' + (digitFormatA + parseInt(obj.BetData)).substr(digitFormatB) + '</td>' +
-                    '<td scope="col"  id="betType-' + rowCount + '">' + numberWithCommas(obj.BetAmount) + ' <span class="member_currency"></span></td>' +
-                    '<td scope="col" class="flex-center-10" id="row_delete-' + rowCount + '">' +
-                    '<i class="fas fa-pen tablerow-icon" onclick="rowEdit(' + rowCount + ')"></i>' +
-                    '<span class="fa-stack small" onclick="rowDelete(' + rowCount + ')"><i class="fa-solid fa-trash fa-stack-2x"></i><i class="fa-solid fa-close fa-stack-1x fa-inverse"></i></span>'+
-                    '</tr>';
-
-                $("#table_listbet tbody").append(recordHtml);
-
-                rowCount += 1;
-            }
-
-            $("#table-total-amount")[0].innerText = numberWithCommas(totalAmount);
-        }
-    }
-
-    function rowDelete(curRow) {
-        var digitFormatA = '000'
-        var digitFormatB = -3
-        if (localStorage.getItem('lastcallsite') == "Betting2D") {
-            digitFormatA = '00'
-            digitFormatB = -2
-        }
-
-        var totalAmount = 0;
-        let newTableQuery = "";
-        var rowCount = 1;
-        var rowCnt = $('#table_listbet tbody tr').length;
-
-        $('#table_listbet tbody tr').each(function (index, tr) {
-            if (index + 1 != curRow) {
-
-                if (rowCnt != 1) {
-                    obj = betdata[index]
-                    totalAmount += Number(obj.BetAmount)
-                    var recordHtml = '<tr class="' + tr.className + '"><td scope="col" >' + rowCount + '</td>' +
-                        '<td scope="col"  id="betNumber-' + rowCount + '">' + (digitFormatA + parseInt(obj.BetData)).substr(digitFormatB) + '</td>' +
-                        '<td scope="col"  id="betType-' + rowCount + '">' + numberWithCommas(obj.BetAmount) +
-                        ' <span class="member_currency">' + currencyCode + '</span></td>' +
-                        '<td scope="col" class="flex-center-10" id="row_delete-' + rowCount + '">' +
-                        '<i class="fas fa-pen tablerow-icon" onclick="rowEdit(' + rowCount + ')"></i>' +
-                        '<span class="fa-stack small" onclick="rowDelete(' + rowCount + ')"><i class="fa-solid fa-trash fa-stack-2x"></i><i class="fa-solid fa-close fa-stack-1x fa-inverse"></i></span>' +
-                        '</tr>';
-
-                    newTableQuery += recordHtml;
-                    rowCount += 1;
-                }
-                
-            }
-        });
-        betdata.splice(curRow - 1, 1)
-        $("#table_listbet > tbody").empty();
-        $("#table_listbet tbody").append(newTableQuery);
-        $("#table-total-amount")[0].innerText = totalAmount;
-    }
-
-    function rowEdit(curRow) {
-        var obj = betdata[curRow-1];
-        gcurRow = curRow-1;
-        $("#modal-number")[0].innerText = obj.BetData;
-
-        $("#modal").modal("show");
-
-    }
-
-    $("#modal-submit").click(function (e) {
-        var newAmount = $("#renew-amount").val();
-        if (newAmount < 100) {
-            $("#modal-message")[0].innerText = "Minimum Bet Amount 100"
-        } else {
-            betdata[gcurRow].BetAmount = newAmount
-            $("#renew-amount").val('');
-            $("#table_listbet > tbody").empty();
-            tableInsert();
-            $("#modal").modal("hide");
-            $("#modal-message")[0].innerText = ''
-        }
-        checkIsOverMaxBet()
+    $("#number3d").on('input', function () {
+        var number = $("#number3d").val()
+        var count = number.toString().length;
+        $("#number3d_remain").text(count + "/3")
     });
 
-    function PlaceBet() {
-        localStorage.setItem('placebetdetail', JSON.stringify(betdata));
-        localStorage.setItem('confirmbetdetail', JSON.stringify(betdata));
-        reportName = "ConfirmBet"
-        var url = "./bet.html" + reportName + "?AccessToken=" + token + "&Language=" + language;
-        window.location = url;
-    }
+    $("#select-input").on("click", function (e) {
+        $("#number3d_remain").text(0 + "/3")
 
-    function GetMemberProfile() {
-        $.ajax({
-            type: "POST",
-            url: "./bet.html",
-            data: {
-                "AccessToken": token
-            },
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'token': window.token
-            },
-            success: function (data) {
-                
-                if (data.Balance != null) {
-                    $('#member_name').html(data.DisplayName);
-                    $('#member_balance').html(numberWithCommas(data.Balance));
-                    $('.member_currency').html(data.CurrencyCode);
-                    $('#member_phone').html(data.PhoneNumber);
-                    currencyCode = data.CurrencyCode;
-                }
-            }
-        });
-    }
-
-    function formatBetNumber(value) {
-        var digitFormatA = '000'
-        var digitFormatB = -3
-        if (localStorage.getItem('lastcallsite') == "Betting2D") {
-            digitFormatA = '00'
-            digitFormatB = -2
-        }
-        return (digitFormatA + parseInt(value)).substr(digitFormatB)
-    }
-
-    function checkIsOverMaxBet() {
-        var isOver = false;
-        for (let index = 0; index < betdata.length; index++) {
-            obj = betdata[index]
-
-            var maxBet = Number(numberMaxAmountDict[formatBetNumber(obj.BetData)])
-            var myBet = Number(obj.BetAmount)
-            if (myBet > maxBet) {
-                isOver = true;
-                $("#table_listbet > tbody > tr td:contains('" + formatBetNumber(obj.BetData) +"')").each(function () {
-                    $(this).parent()[0].classList.add("red-text")
+        var number = $("#number3d").val()
+        if (number != "") {
+            if (number.length < 3) {
+                Swal.fire({
+                    icon: 'error',
+                    text: "Minimum bet number is 3 number of digits"
                 });
             } else {
-                $("#table_listbet > tbody > tr td:contains('" + formatBetNumber(obj.BetData) + "')").each(function () {
-                    $(this).parent()[0].classList.remove("red-text")
+                if (globalInsertList.includes(number) == false) {
+                    var esp = document.createElement("span");
+                    document.getElementById("insert-box").appendChild(esp);
+                    esp.classList.add('threedbox')
+                    esp.classList.add('selected')
+                    esp.onclick = function () { $(this).toggleClass("selected"); }
+                    esp.innerHTML = number;
+                    globalInsertList.push(number)
+                    $("#number3d").val('')
+                }
+            }
+
+        } else {
+
+            number = $("#result")[0].innerText;
+
+            if (number != "") {
+                if (globalInsertList.includes(number) == false) {
+
+                    var esp = document.createElement("span");
+                    document.getElementById("insert-box").appendChild(esp);
+                    esp.classList.add('threedbox')
+                    esp.classList.add('selected')
+                    esp.onclick = function () { $(this).toggleClass("selected"); }
+                    esp.innerHTML = number;
+                    globalInsertList.push(number)
+                    $("#number3d").val('')
+                }
+            }
+        }
+
+    });
+
+    $('#bet_amount').on('input', function () {
+        $("#bet_amount").val(numberWithCommas($("#bet_amount").val()))
+    });
+
+    $("#round-select").on("click", function (e) {
+        $("#number3d_remain").text(0 + "/3")
+
+        var number = $("#result")[0].innerText;
+        var numberTyping = $("#number3d").val()
+        if (numberTyping != "") {
+            if (numberTyping.length == 3) {
+                number = numberTyping;
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    text: "Minimum bet number is 3 number of digits"
+                });
+                return;
+            }
+        }
+
+        var roundlist = getPermutation(number) 
+
+        for (var num of roundlist) {
+            if (num != "") {
+                if (globalInsertList.includes(num) == false) {
+                    var esp = document.createElement("span");
+                    document.getElementById("insert-box").appendChild(esp);
+                    esp.classList.add('threedbox')
+                    esp.classList.add('selected')
+                    esp.onclick = function () { $(this).toggleClass("selected"); }
+                    esp.innerHTML = num;
+                    globalInsertList.push(num)
+                    $("#number3d").val('')
+                }
+
+            }
+        }
+
+
+    });
+
+    function getPermutation(string) {
+
+        var results = [];
+
+        if (string.length === 1) {
+            results.push(string);
+            return results;
+        }
+
+        for (var i = 0; i < string.length; i++) {
+            var firstChar = string[i];
+            var charsLeft = string.substring(0, i) + string.substring(i + 1);
+            var innerPermutations = getPermutation(charsLeft);
+            for (var j = 0; j < innerPermutations.length; j++) {
+                results.push(firstChar + innerPermutations[j]);
+            }
+        }
+        return results;
+    }
+
+    $("#hotnumber-show").click(function () {
+        $.ajax({
+            type: "GET",
+            url: "/TH2D3D/HotNumberShow",
+            datatype: "json",
+            success: function (data) {
+                $("#modal").html(data);
+                $("#modal").modal("show");
+            }
+        });
+    })
+
+    function cleanBet() {
+        //Clean Local Storage
+        cleanBetFromStorage()
+        $("#number3d").val('')
+        $("#bet_amount").val("");
+
+        var numbers = $('.threedbox');
+
+        var list = document.getElementById("insert-box");
+        for (var i = 0; i < numbers.length + 1; i++) {
+            if (list.childNodes[0] == undefined) continue
+            list.removeChild(list.childNodes[0]);
+        }
+        globalInsertList = []
+    }
+
+    function placeNewBet() {
+        token = getUrlVars().AccessToken;
+        gameCode = getUrlVars().GameCode;
+        language = getUrlVars().Language;
+
+        //declare variables
+        var finalBetList = []
+        var now = new Date()
+        var betAmount = parseBalance($("#bet_amount").val())
+        var productCode = "3DTHAI"
+
+
+        var numbers = $('.threedbox.selected');
+
+        $.each(numbers, function (i, d) {
+            if (betAmount >= 100) {
+                var bet = {
+                    'BetData': d.innerText,
+                    'BetType': "SINGLE_3D",
+                    'Multiple': 1,
+                    'BetAmount': betAmount,
+                    'Date': now.toDateString().substr(4) + " " + now.toLocaleTimeString(),
+                    'ProductCode': productCode,
+                };
+
+                finalBetList.push(bet);
+            }
+        });
+
+        if (finalBetList != '') {
+            localStorage.setItem('placebetdetail', JSON.stringify(finalBetList));
+            localStorage.setItem('lastcallsite', 'Betting3D');
+            reportName = "PreBet"
+            var url = "/TH2D3D/" + reportName + "?AccessToken=" + token + "&Language=" + language;
+            window.location = url;
+
+        } else {
+            if (betAmount.length == 0 || betAmount > 0 && betAmount < 100) {
+                Swal.fire({
+                    icon: 'error',
+                    text: "Minimum Bet Amount 100"
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    text: "Bet Details incorect."
                 });
             }
         }
-        return isOver;
-    }
 
-    function checkRiskNumberMaxBetAmount() {
-        //alert("checkRiskNumberMaxBetAmount")
-        var GameCode = "3DTHAI"
-        if (localStorage.getItem('lastcallsite') == "Betting2D") {
-            GameCode = "2DTHAI"
-        }
-
-        var BetNumbers = []
-        var Section = "";
-        var GameDraw = "";
-        for (let index = 0; index < betdata.length; index++) {
-            obj = betdata[index]
-            BetNumbers.push(formatBetNumber(obj.BetData))
-            Section = obj.Section
-            GameDraw = obj.GameDrawNo
-        }
-        
-        $.ajax({
-            type: "POST",
-            url: "./bet.html",
-            data: {
-                "AccessToken": token,
-                "GameCode": GameCode,
-                "BetNumbers": BetNumbers,
-                "GameDrawNo": GameDraw,
-                "Section": Section,
-            },
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'token': window.token
-            },
-            success: function (data) {
-                //alert(JSON.stringify(data))
-                if (data.ErrorCode != "0") {
-                    Swal.fire({
-                        icon: 'error',
-                        text: data.ErrorMessage
-                    });
-                }
-                else {
-                    numberMaxAmountDict = data.NumberMaxAmountDict;
-                    var isOver = checkIsOverMaxBet()
-                    if (isOver === true) {
-                        var contentHtml = '';
-
-                        //Only display exceed limit
-                        var filter = []
-                        for (let index = 0; index < betdata.length; index += 1) {
-                            if (betdata[index].BetAmount > (numberMaxAmountDict[formatBetNumber(betdata[index].BetData)])) {
-                                filter.push(betdata[index])
-                            }
-                        }
-
-                        const chunkSize = 2;
-                        for (let index = 0; index < filter.length; index += chunkSize) {
-                            const chunk = filter.slice(index, index + chunkSize);
-
-                            contentHtml += '<div class="row">'
-                            contentHtml += '<div class="col-6 text-center">' + formatBetNumber(chunk[0].BetData) + " = " + numberWithCommas(numberMaxAmountDict[formatBetNumber(chunk[0].BetData)]) + " " + currencyCode + '</div>'
-                            if (chunk.length > 1) {
-                                contentHtml += '<div class="col-6 text-center">' + formatBetNumber(chunk[1].BetData) + " = " + numberWithCommas(numberMaxAmountDict[formatBetNumber(chunk[1].BetData)]) + " " + currencyCode + '</div>'
-                            }
-                            contentHtml += '</div>'
-                        }
-
-                        $("#numberMaxBetBody").empty();
-                        $("#numberMaxBetBody").append(contentHtml);
-                        $("#numberMaxBetModal").modal("show"); 
-                    } else {
-                        PlaceBet();
-                    }
-                } 
-
-                //if (data.Balance != null) {
-                //    $('#member_name').html(data.DisplayName);
-                //    $('#member_balance').html(data.Balance);
-                //    $('.member_currency').html(data.CurrencyCode);
-                //    $('#member_phone').html(data.PhoneNumber);
-                //    currencyCode = data.CurrencyCode;
-                //}
-
-                //PlaceBet();
-            }
-        });
-    }
-
-    function validateRiskNumberMaxBetAmount() {
-        //alert("checkRiskNumberMaxBetAmount")
-        var GameCode = "3DTHAI"
-        if (localStorage.getItem('lastcallsite') == "Betting2D") {
-            GameCode = "2DTHAI"
-        }
-
-        var BetNumbers = []
-        var Section = "";
-        var GameDraw = "";
-        for (let index = 0; index < betdata.length; index++) {
-            obj = betdata[index]
-            BetNumbers.push(formatBetNumber(obj.BetData))
-            Section = obj.Section;
-            GameDraw = obj.GameDrawNo;
-        }
-
-        $.ajax({
-            type: "POST",
-            url: "./bet.html",
-            data: {
-                "AccessToken": token,
-                "GameCode": GameCode,
-                "GameDrawNo": GameDraw,
-                "BetNumbers": BetNumbers,
-                "Section": Section,
-            },
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'token': window.token
-            },
-            success: function (data) {
-                //alert(JSON.stringify(data))
-                if (data.ErrorCode != "0") {
-                    Swal.fire({
-                        icon: 'error',
-                        text: data.ErrorMessage
-                    });
-                }
-                else {
-                    numberMaxAmountDict = data.NumberMaxAmountDict;
-                    var isOver = checkIsOverMaxBet()
-                }
-            }
-        });
     }
 
     function getUrlVars() {
@@ -2749,21 +2730,29 @@ is/are available numbers and amount. Please try to reduce the bet "amount", or d
     }
 
     function callReport(reportName) {
-        localStorage.setItem('reloadbetdetail', "true");
-        var url = "./bet.html" + reportName + "?AccessToken=" + token + "&Language=" + language;
+        token = getUrlVars().AccessToken;
+        language = getUrlVars().Language;
+        localStorage.setItem('lastcallsite', 'Betting3D')
+        var url = "/TH2D3D/" + reportName + "?AccessToken=" + token + "&Language=" + language;
         window.location = url;
     }
 
-    function backToPrev() {
-        localStorage.setItem('reloadbetdetail', "true");
-        callLastPage();
+    function callReportAndClearBet(reportName) {
+        cleanBetFromStorage()
+        callReport(reportName)
     }
 
-    function callLastPage() {
+    function callHotNumberReport(reportName) {
+        var finalSelectList = []
 
-        reportName = localStorage.getItem('lastcallsite');
-        var url = "./bet.html" + reportName + "?AccessToken=" + token + "&Language=" + language;
-        window.location = url;
+        var numbers = $('.threedbox.selected');
+        $.each(numbers, function (i, d) {
+            finalSelectList.push(Number(d.innerText));
+        });
+
+        localStorage.setItem('selectbet', JSON.stringify(finalSelectList));
+
+        callReport(reportName);
     }
 
     function cleanBetFromStorage() {
@@ -2773,8 +2762,33 @@ is/are available numbers and amount. Please try to reduce the bet "amount", or d
         localStorage.setItem('selectedgroup', "");
         localStorage.setItem('confirmbetdetail', "");
     }
+
+
+    function GetMemberProfile() {
+        $.ajax({
+            type: "POST",
+            url: "../THGame/GetMemberProfile",
+            data: {
+                "AccessToken": token
+            },
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'token': window.token
+            },
+            success: function (data) {
+
+                if (data.Balance != null) {
+                    $('#member_balance').html(numberWithCommas(data.Balance));
+                    $('.member_currency').html(data.CurrencyCode);
+                    $('#bet_amount').attr("placeholder", "Bet Amount (Minimum 100 " + data.CurrencyCode + ")");
+                }
+            }
+        });
+    }
+
+
 </script>
-</div>
+</div><div id="scrnli_recorder_root"></div>
 
 
 <script>
@@ -2786,4 +2800,4 @@ is/are available numbers and amount. Please try to reduce the bet "amount", or d
         x = x.replace(/[^\d\.\-]/g, ""); // You might also include + if you want them to be able to type it
         return parseFloat(x);
     }
-</script><div id="scrnli_recorder_root"></div><iframe src="chrome-extension://ijejnggjjphlenbhmjhhgcdpehhacaal/audio-devices.html" allow="microphone" style="display: none;"></iframe><input type="file" id="" name="file" style="display: none;"><div data-v-5f0b9ba1="" class="container_selected_area" style="cursor: url(&quot;chrome-extension://ijejnggjjphlenbhmjhhgcdpehhacaal/assets/images/cursor-imagen.svg&quot;) 9 9, crosshair;"><div data-v-5f0b9ba1="" class="area"></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+</script><iframe src="chrome-extension://ijejnggjjphlenbhmjhhgcdpehhacaal/audio-devices.html" allow="microphone" style="display: none;"></iframe><input type="file" id="" name="file" style="display: none;"><div data-v-5f0b9ba1="" class="container_selected_area" style="cursor: url(&quot;chrome-extension://ijejnggjjphlenbhmjhhgcdpehhacaal/assets/images/cursor-imagen.svg&quot;) 9 9, crosshair;"><div data-v-5f0b9ba1="" class="area"></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
