@@ -1443,11 +1443,6 @@ img {
   max-width: 100%;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 2px;
-}
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f100;

@@ -988,11 +988,9 @@
               ><a href="./signup.html"> Create your account</a></li
             >
             <li data-usermenulogin=""
-              ><a href="./account.html"
-                ><button data-logintrigger="" class="icon-slim-unlocked">
+              > <button onclick="openLogin()" data-logintrigger="" class="icon-slim-unlocked">
                   Login</button
-                ></a
-              ></li
+                > </li
             >
         
           </ul>
@@ -1663,7 +1661,7 @@
         
           ><li style="animation-delay: 0.03s" data-gametype="powerball"
             ><button
-              ><img class="mbl-ico d2" src="./assets/2dlogonew.png"/></button></li
+              ><img class="mbl-ico d2"  src="./assets/2dlogonew.png"/></button></li
           ><li style="animation-delay: 0.06s" 
             ><button
               ><img class="mbl-ico d2" src="./assets/3dlogonew.png"/></button></li
@@ -2873,15 +2871,63 @@
       </div>
       <div id="fb-root"></div>
     </div>
-    <div class="reveal-overlay"
-      ><div
-        data-reveal-source="login"
-        id="loginModal"
-        class="reveal small"
-        data-reveal=""
-        data-close-on-click="false"
-      ></div
-    ></div>
+   <div class="reveal-overlay" id="data_rev" style="display: none;"><div id="loginModal" class="reveal small is-active" style="display: block; z-index: 1000;"><div class="core_panel core_noPadding core_spaceBzero">
+	<div class="core_panel core_halfThin bg_coal text-center" data-modal-title="">
+		<strong class="white core_smooth">Login</strong>
+		<button class="white right icon-slim-times-outline core_txtSize_2" onclick="hideLogin()" data-core_reveal-close="" style="margin-right:0.2rem;position: absolute;right:0px;top:0.2rem" type="button"></button>
+		<div class="clearfix"></div>
+	</div>
+	<hr class="core_spaceTzero core_spaceBzero">
+			<div class="core_panel">
+									
+		
+	<form novalidate="" data-abide="" class="text-left" data-loginform="" id="loginForm" method="post" autocomplete="off" data-e="h3gqez-e">
+		<label>Email / ID / Passport			<input name="CSRFtoken" type="hidden" value="58e265fa0841544efc865fd408c8b1d7">
+			<input name="login_email" type="text" class="radius" placeholder="mi@mail.com" required="" autocomplete="off">
+			<span class="form-error">You must indicate the User, ID or passport with which you registered</span>
+		</label>
+		<label>Password			<input name="login_password" type="password" class="radius" maxlength="30" required="" placeholder="Password" autocomplete="off">
+			<span class="form-error">Enter a password to access your account</span>
+		</label>
+		<button class="button radius bg_bgColor core_full" data-submit="" type="submit"><strong><a href="./account.html">Sign in with your account</a> </strong></button>
+		<div class="row collapse">
+			<div class="column small-12 medium-6 text-center medium-text-left">
+							</div>
+			<div class="column small-12 medium-6 text-center medium-text-right">
+								<small><a href="https://www.lottofy.com/en/recover/"><u>Forgot your password?</u></a></small>
+			</div>
+		</div>
+		<div data-status-msg="" data-abide-error="" class="alert callout" style="display: none;">
+			<p><i class="icon-slim-warning-outline"></i> Uh! Oh! There are some mistakes in the form</p>
+		</div>
+				<p data-recaptchadisclaimer="">This site is protected by reCAPTCHA and Google's <a href="https://policies.google.com/privacy" target="_blank">privacy policy</a> and <a href="https://policies.google.com/terms" target="_blank">terms of service</a> apply.</p>
+			</form>
+		<div data-announcement="loginWithApp">
+		<div class="row collapse">
+			<div class="column small-4 medium-3 show-for-medium">
+				&nbsp;
+			</div>
+			<div class="column small-8 medium-9" data-announcement-content="">
+				<p>Use your fingerprint to access</p>
+				<p>Download the official <strong>Lottofy</strong> app and log in in a second with your fingerprint or facial recognition. Plus, get <strong>notifications</strong> of your prizes - you can be a millionaire anytime!</p>
+				<div class="text-center">
+					<a href="https://apps.apple.com/mt/app/lottofy/id1541621788" target="_blank"><img src="//cdn.inicium.com/images/common/social/appapple_trans.svg" alt="Lottery APP for iPhone and iPad"></a>					<a href="https://www.lottofy.com/en/app/android/"><img src="//cdn.inicium.com/images/common/social/appandroid_trans.svg" alt="Lottery APP for Android"></a>				</div>
+			</div>
+		</div>
+	</div>
+		<div class="reveal-overlay"><div class="reveal" id="recoverModal" data-reveal="" data-reveal-source="recoverModal"></div></div>
+ 
+			<div class="animated fadeInUp" data-signup="" id="register">
+			<hr class="core_dotted">
+			<p class="text-center core_spaceBzero core_lh_1">- Do not have an account yet? -</p>
+			<p class="text-center blue"><small>What are you waiting for? <strong>Millions of euros</strong> are waiting for you</small></p>
+			<div class="text-center"><a href="./signup.html" class="button radius bg_lightCoal white" data-signuplink=""><strong>Create your account</strong></a></div>
+		</div>
+	</div>
+
+</div>
+
+</div></div>
     <div class="reveal-overlay"
       ><div
         data-reveal-source="subscribe"
@@ -3352,7 +3398,9 @@
           });
         }
       }
+    
     </script>
+    <script src="./js/custom.js"></script>
     <div class="reveal-overlay"
       ><div
         class="reveal"

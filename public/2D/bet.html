@@ -3279,34 +3279,25 @@
             </li>
           </ul>
         </div>
-        <div class="float-right">
+     <div class="float-right">
           <ul class="core_inline-list">
-            <li data-langmenu=""
-              ><button
-                data-toggle="menu-lang"
+           <li data-userdetail=""
+              ><a
+                href="../account.html"
+                data-hover=""
+                data-coretoggle="menu-user"
                 data-alignment="left"
-                type="button"
-                aria-controls="menu-lang"
-                data-is-focus="false"
-                data-yeti-box="menu-lang"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <span data-lang="EN">EN</span> |
-                <span data-currency="USD">USD</span></button
+                ><img
+                  src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
+                  class="avatar"
+                  alt="My account"
+                /><span> My account</span></a
+              ></li
+            ><li data-vcdetail=""
+              ><a href="../balance.html"
+                ><span>Balance: </span><strong>0,00€</strong></a
               ></li
             >
-            <li data-usermenujoin=""
-              ><a href="./signup.html"> Create your account</a></li
-            >
-            <li data-usermenulogin=""
-              ><a href="./account.html"
-                ><button data-logintrigger="" class="icon-slim-unlocked">
-                  Login</button
-                ></a
-              ></li
-            >
-        
           </ul>
         </div>
         <div class="clearfix"></div>
@@ -3322,7 +3313,7 @@
                   data-gametype="superloto"
                   style="top: 0px; visibility: visible"
                   ><a
-                    href="./2D/2d.html"
+                    href="./2d.html"
                     data-coretoggle="menu-gamesMode"
                     data-hover=""
                     data-alignment="left"
@@ -4041,18 +4032,7 @@
               </div>
               <div>
                 <div class="top_balance_wrap">
-                  <div>
-                    <div>
-                      <i class="fas fa-wallet mr-2" aria-hidden="true"></i
-                      >Balance
-                    </div>
-                    <div>
-                      <span id="member_balance" style="font-weight: bolder"
-                        >2,704,089</span
-                      >
-                      <span class="member_currency">Ks</span>
-                    </div>
-                  </div>
+                   
                   <div>
                     <div>
                       <i class="far fa-clock mr-2" aria-hidden="true"></i
@@ -4887,7 +4867,7 @@
           <div class="container-fluid">
             <div class="twodbet_footer">
               <button id="btn_clr" class="twobetbtn2">Clean</button>
-              <button id="btn_add" class="twobetbtn">Bet</button>
+          <button id="btn_add" class="twobetbtn">Bet</button>
             </div>
           </div>
         </section>
@@ -5339,9 +5319,9 @@
               JSON.stringify(finalBetList)
             );
             localStorage.setItem("lastcallsite", "Betting2D");
-            reportName = "PreBet";
+            reportName = "";
             var url =
-              "./betlist.html/" +
+              "./betlist.html" +
               reportName +
               "?AccessToken=" +
               token +
