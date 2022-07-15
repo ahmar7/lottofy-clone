@@ -4996,3 +4996,6 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
 .table thead th {
   text-align: center !important;
 }
+.modal_flow {
+  overflow: auto !important;
+}

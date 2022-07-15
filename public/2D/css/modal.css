@@ -61,3 +61,6 @@
 .mt {
   margin-top: 100px;
 }
+.modal_flow {
+  overflow-y: auto !important;
+}
