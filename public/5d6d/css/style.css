@@ -2158,12 +2158,13 @@ button#language-menu img {
 
 .twodbet_input {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   /*padding: 10px;*/
   padding: 10px 5% 10px 5%;
   column-gap: 5px;
 }
+
 .twodbet_input_2 {
   display: flex;
   justify-content: flex-start;
@@ -2171,6 +2172,10 @@ button#language-menu img {
   /*padding: 10px;*/
   padding: 10px 5% 10px 5%;
   column-gap: 5px;
+}
+.d5 img {
+  width: 55px;
+  height: 50px;
 }
 .d4 {
   display: flex;

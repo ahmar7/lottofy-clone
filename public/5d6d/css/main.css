@@ -1,0 +1,1057 @@
+@import url("../cmslib.css");
+
+table {
+font-size: 0.8rem; /*1rem = 16px*/
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+border:1px solid #ff0000;
+}
+
+.navbar {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#deefff+0,98bede+100;Blue+3D+%2310 */
+background: rgb(222,239,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(222,239,255,1) 0%, rgba(152,190,222,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#98bede',GradientType=0 ); /* IE6-9 */
+}
+
+html {}
+body { }
+
+
+
+body.cmsview{   padding-top: 100px;}
+.navbar-brand img {width:90px; top:-15px; position:relative;}
+.navbar .navbar-left {  width:auto 100%; min-width:80%;}
+#b4201fd8660b4887c81ad090114886a9 img {width:150px; top:-5px; position:relative;}
+.cms-control {}
+.cms-control li {padding:1px;}
+
+main { display:block; width:100%; min-height:70vh;}
+
+footer.footer { padding-top:10px; }
+footer.footer .container {padding-top:10px; padding-top:10px; border-top:1px solid #C0C0C0;}
+
+.page-sysconf .panel-group .panel-heading .panel-title a { display:block; text-decoration:none; }
+
+.auto-max-width {max-width:100%;}
+#pageslist { font-size:14px; color:#0080C0; padding:10px 10px 0px 10px; background:#E8F3FF; border:1px solid #BFDEFF; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;  }
+#pageslist a,
+#pageslist a:visited { color:#0080C0; text-decoration:none;}
+#pageslist a:hover { color:#0080FF;}
+
+.nav-page { font-size:12px; padding:5px 3px; background:#efefef; -webkit-border-radius: 5px; -moz-border-radius: 5px;border-radius: 5px;  -webkit-box-shadow: inset 0px 0px 30px -5px rgba(0,0,0,0.14);
+-moz-box-shadow: inset 0px 0px 30px -5px rgba(0,0,0,0.14);
+box-shadow: inset 0px 0px 30px -5px rgba(0,0,0,0.14);}
+.nav-page a,
+.nav-page a:visited{ text-decoration:none;}
+.nav-page a:hover{ text-decoration:none;}
+.nav-page li::after{ content: ' \00BB'; }
+.nav-page li:last-child::after{ content: ''; }
+
+.albumlist .list-group-item{ max-width:25%; float:left; text-align:center;}
+.albumlist .list-group-item a,
+.albumlist .list-group-item a:visited
+.albumlist .list-group-item a:hover {text-decoration:none;}
+
+.modindex li { border:2px solid #CFCFCF; width:120px; height:120px; float:left; margin:10px; -webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px; -webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out; position:relative;}
+.modindex li:focus { border:2px solid #0A3981;}
+.modindex li:hover{ border:2px solid #0080FF; background:#efefef; }
+.modindex li a {text-decoration:none;  display:block; width:100%; height:100%; text-align:center; z-index:1; -webkit-transition:all .4s ease-in-out;transition:all .3s ease-in-out;padding:15px 5px; color:#aaaaaa;}
+.modindex li a:focus {color:#0A3981;}
+.modindex li a:visited,
+.modindex li a:hover { color:#0080FF;}
+.modindex li a:before{
+    content: '';
+    position:absolute;
+    left: 0;
+    top: 0;
+    display:block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.1;
+    background:url(imgs/logo.png)  no-repeat;
+    background-size: 350px;
+		z-index:0;
+
+}
+.modindex li a:hover:before{ }
+
+.classifiedbox {}
+.classifiedbox > li {margin:10px; border:1px solid #888888; width:360px; height:350px; overflow:scroll;}
+.classifiedbox > li ul {list-style:none; padding-left:20px; width:100%;}
+.classifiedbox  li label {font-weight:normal; white-space:nowrap; }
+
+.page-betrec .tblresult thead,
+.page-strikerec .tblresult thead { background:#DFEFFF; }
+.page-betrec .tblresult tfoot,
+.page-strikerec .tblresult tfoot { background:#DFEFFF; font-weight:bold;}
+
+.tblresult .col-total { font-weight:bold; }
+.tblresult td.userid{
+	max-width:120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tblresult td.mobile{
+	max-width:120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tblresult td a,
+.tblresult td a:visited{
+	color:#0080FF;
+	text-decoration:underline;
+}
+
+
+.tblmaxstrike input[type=text]{
+	min-width:80px;
+}
+
+.page-betform-web .table > tbody > tr > td,
+.page-betform-compact .table > tbody > tr > td { padding: 5px; }
+
+table .overflow-x-hidden { overflow-x:hidden;}
+
+#odddspackage table {}
+#odddspackage table thead { background:#DFEFFF;}
+#odddspackage table tr td:first-child { background:#DFEFFF; font-weight:bold;}
+#odddspackage table td{ min-width:70px;}
+#odddspackage table td input {padding:2px; height:20px;}
+#odddspackage table tfoot { background:#DFEFFF;}
+
+.page-drawresult .drawresult li {float:left;}
+.page-drawresult .drawresult .result { display:block; width:300px; border:1px solid #888; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; margin:10px 0px; padding:15px; }
+.page-drawresult .drawresult .result h4 {}
+.page-drawresult .drawresult .result h6 {}
+
+.rptwinlose .table>thead {background:#70A5F5;}
+.rptwinlose .table>tfoot {background:#E1ECFD;}
+
+.tblresult .table>thead {background:#70A5F5;}
+.tblresult .table>tfoot {background:#E1ECFD;}
+
+.tblresult .table-hover tbody tr:hover td { background:rgba(112, 165, 246, 0.2);}
+
+.tblresult .table>tbody>tr>td,
+.tblresult .table>tbody>tr>th,
+.tblresult .table>tfoot>tr>td,
+.tblresult .table>tfoot>tr>th,
+.tblresult .table>thead>tr>td,
+.tblresult .table>thead>tr>th,
+.rptwinlose .table>tbody>tr>td,
+.rptwinlose .table>tbody>tr>th,
+.rptwinlose .table>tfoot>tr>td,
+.rptwinlose .table>tfoot>tr>th,
+.rptwinlose .table>thead>tr>td,
+.rptwinlose .table>thead>tr>th {
+    padding: 3px 6px;
+}
+
+.rptwinlose .table>thead>tr>th.gap,
+.rptwinlose .table>tbody>tr>td.gap,
+.rptwinlose .table>tfoot>tr>td.gap { border-left:2px dashed #70A5F5;}
+
+.rptwinlose .table>tbody>tr>td.col-mpts { background:rgba(181, 85, 255, 0.1); font-weight:bold; }
+.rptwinlose .table>tbody>tr>td.col-mpts2 { background:rgba(181, 246, 94, 0.3); font-weight:bold; }
+.rptwinlose .table>tbody>tr>td.col-mpts3 { background:rgba(255, 128, 0, 0.1);  font-weight:bold;}
+.rptwinlose .table>tbody>tr>td.col-mptsturnover { background:rgba(181, 85, 255, 0.1); font-weight:bold; }
+.rptwinlose .table>tbody>tr>td.col-net { background:rgba(255, 255, 128, 0.2);  font-weight:bold;}
+
+.rptwinlose .table>tfoot tr:first-child td { border-top:2px solid #70A5F5;}
+.rptwinlose .table>tfoot>tr>td.col-mpts { background:rgba(181, 85, 255, 0.3); font-weight:bold; }
+.rptwinlose .table>tfoot>tr>td.col-mpts2 { background:rgba(181, 246, 94, 0.5); font-weight:bold; }
+.rptwinlose .table>tfoot>tr>td.col-mpts3 { background:rgba(255, 128, 0, 0.3);  font-weight:bold;}
+
+
+.rptwinlose .table-hover tbody tr:hover td { background:rgba(112, 165, 246, 0.2);}
+.rptwinlose .table-hover>tbody>tr:hover>td.col-mpts { background:rgba(181, 85, 255, 0.5); font-weight:bold; }
+.rptwinlose .table-hover>tbody>tr:hover>td.col-mpts2 { background:rgba(181, 246, 94, 0.7); font-weight:bold; }
+.rptwinlose .table-hover>tbody>tr:hover>td.col-mpts3 { background:rgba(255, 128, 0, 0.5);  font-weight:bold;}
+.rptwinlose .table-hover>tbody>tr:hover>td.col-mptsturnover { background:rgba(181, 85, 255, 0.5); font-weight:bold; }
+.rptwinlose .table-hover>tbody>tr:hover>td.col-net { background:rgba(255, 255, 128, 0.7);  font-weight:bold;}
+.rptwinlose .table-hover tfoot tr:hover td { background:rgba(112, 165, 246, 0.5);}
+
+.rptwinlose .table-hover>tfoot>tr:hover>td.col-mpts { background:rgba(181, 85, 255, 0.7); font-weight:bold; }
+.rptwinlose .table-hover>tfoot>tr:hover>td.col-mpts2 { background:rgba(181, 246, 94, 0.8); font-weight:bold; }
+.rptwinlose .table-hover>tfoot>tr:hover>td.col-mpts3 { background:rgba(255, 128, 0, 0.7);  font-weight:bold;}
+
+.rptwinlose .table td.currencynum a,
+.rptwinlose .table td.currencynum a:visited{
+	color:#0080FF;
+	text-decoration:underline;
+}
+
+.page-betform-web table#betform-2D tr td input[type=text],
+.page-betform-web table#betform-3D tr td input[type=text],
+.page-betform-web table#betform-4D tr td input[type=text],
+.page-betform-web table#betform-5D tr td input[type=text],
+.page-betform-web table#betform-6D tr td input[type=text],
+.page-betform-compact table#betform-2D tr td input[type=text],
+.page-betform-compact table#betform-3D tr td input[type=text],
+.page-betform-compact table#betform-4D tr td input[type=text],
+.page-betform-compact table#betform-5D tr td input[type=text],
+.page-betform-compact table#betform-6D tr td input[type=text] { min-width:40px;}
+
+.table#betform-3D .form-control,
+.table#betform-4D .form-control,
+.table#betform-5D .form-control,
+.table#betform-6D .form-control {
+	text-align:center;
+	height:24px;
+	padding:2px 2px;
+}
+
+.checkbox-M .toggle-group label.btn-info {
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-M .toggle-group label.btn-info:before {
+		content: "";
+    float: left;
+    width: 45px;
+    height: 41px;
+    margin: -10px -20px -10px -18px;
+    background:url('../lotto.png') 5px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-M .toggle-group label.btn-default {
+    opacity: .1;
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-M .toggle-group label.btn-default:before {
+		content: "";
+    float: left;
+    width: 45px;
+    height: 41px;
+    margin: -10px -22px -10px -14px;
+    background:url('../lotto.png') 7px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-P .toggle-group label.btn-info {
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-P .toggle-group label.btn-info:before {
+		content: "";
+    float: left;
+    width: 45px;
+    height: 41px;
+    margin: -10px -20px -10px -18px;
+    background:url('../lotto.png') -34px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-P .toggle-group label.btn-default {
+    opacity: .1;
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-P .toggle-group label.btn-default:before {
+		content: "";
+    float: left;
+    width: 42px;
+    height: 41px;
+    margin: -10px -22px -10px -14px;
+    background:url('../lotto.png') -36px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-T .toggle-group label.btn-info {
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-T .toggle-group label.btn-info:before {
+		content: "";
+    float: left;
+    width: 42px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -77px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-T .toggle-group label.btn-default {
+    opacity: .1;
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-T .toggle-group label.btn-default:before {
+		content: "";
+    float: left;
+    width: 43px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -75px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-S .toggle-group label.btn-info {
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-S .toggle-group label.btn-info:before {
+		content: "";
+    float: left;
+    width: 43px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -117px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-S .toggle-group label.btn-default {
+    opacity: .1;
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-S .toggle-group label.btn-default:before {
+		content: "";
+    float: left;
+    width: 43px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -116px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-B .toggle-group label.btn-info {
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-B .toggle-group label.btn-info:before {
+		content: "";
+    float: left;
+    width: 41px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -158px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-B .toggle-group label.btn-default {
+    opacity: .1;
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-B .toggle-group label.btn-default:before {
+		content: "";
+    float: left;
+    width: 43px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -156px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-K .toggle-group label.btn-info {
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-K .toggle-group label.btn-info:before {
+		content: "";
+    float: left;
+    width: 42px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -197px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-K .toggle-group label.btn-default {
+    opacity: .1;
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-K .toggle-group label.btn-default:before {
+		content: "";
+    float: left;
+    width: 43px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -195px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-W .toggle-group label.btn-info {
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-W .toggle-group label.btn-info:before {
+		content: "";
+    float: left;
+    width: 42px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -236px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-W .toggle-group label.btn-default {
+    opacity: .1;
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-W .toggle-group label.btn-default:before {
+		content: "";
+    float: left;
+    width: 43px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -234px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-H .toggle-group label.btn-info {
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-H .toggle-group label.btn-info:before {
+		content: "";
+    float: left;
+    width: 42px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -276px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-H .toggle-group label.btn-default {
+    opacity: .1;
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-H .toggle-group label.btn-default:before {
+		content: "";
+    float: left;
+    width: 43px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -274px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-N .toggle-group label.btn-info {
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-N .toggle-group label.btn-info:before {
+		content: "";
+    float: left;
+    width: 42px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -316px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-N .toggle-group label.btn-default {
+    opacity: .1;
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-N .toggle-group label.btn-default:before {
+		content: "";
+    float: left;
+    width: 43px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -314px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-L .toggle-group label.btn-info {
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-L .toggle-group label.btn-info:before {
+		content: "";
+    float: left;
+    width: 43px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -356px 3px;
+    background-size: 700px 90px;
+}
+
+.checkbox-L .toggle-group label.btn-default {
+    opacity: .1;
+    color:rgba(255,255,255,0);
+}
+
+.checkbox-L .toggle-group label.btn-default:before {
+		content: "";
+    float: left;
+    width: 43px;
+    height: 41px;
+    margin: -10px -17px -10px -14px;
+    background:url('../lotto.png') -354px 3px;
+    background-size: 700px 90px;
+}
+
+
+
+
+.checkbox-G .toggle-group label.btn-info {
+  color:rgba(255,255,255,0);
+}
+
+.checkbox-G .toggle-group label.btn-info:before {
+  content: "";
+  float: left;
+  width: 43px;
+  height: 41px;
+  margin: -10px -17px -10px -14px;
+  background:url('../lotto.png') -394px 3px;
+  background-size: 700px 90px;
+}
+
+.checkbox-G .toggle-group label.btn-default {
+  opacity: .1;
+  color:rgba(255,255,255,0);
+}
+
+.checkbox-G .toggle-group label.btn-default:before {
+  content: "";
+  float: left;
+  width: 43px;
+  height: 41px;
+  margin: -10px -17px -10px -14px;
+  background:url('../lotto.png') -394px 3px;
+  background-size: 700px 90px;
+}
+
+
+/*Magnum*/
+.tblclass tr#M td:nth-child(1):before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -7px 10px -4px 0px;
+  background:url('../lotto.png') -2px 3px;
+  background-size: 600px 80px;
+}
+.tblclass tr#M td { background: rgba(251,254,160,0.3); font-weight: bold;}
+
+/*PMP*/
+.tblclass tr#P td:nth-child(1):before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -7px 10px -4px 0px;
+  background:url('../lotto.png') -36px 3px;
+  background-size: 600px 80px;
+}
+.tblclass tr#P td { background: rgba(255,32,191,0.3); font-weight: bold;}
+
+/*ToTo*/
+.tblclass tr#T td:nth-child(1):before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -7px 10px -4px 0px;
+  background:url('../lotto.png') -70px 2px;
+  background-size: 600px 80px;
+}
+.tblclass tr#T td { background: rgba(255,80,9,0.3); font-weight: bold;}
+
+/*Singapore*/
+.tblclass tr#S td:nth-child(1):before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -6px 10px -4px 0px;
+  background:url('../lotto.png') -104px 1px;
+  background-size: 600px 80px;
+}
+.tblclass tr#S td { background: rgba(160,254,235,0.3); font-weight: bold;}
+
+/*Sabah*/
+.tblclass tr#B td:nth-child(1):before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -6px 10px -4px 0px;
+  background:url('../lotto.png') -139px 1px;
+  background-size: 600px 80px;
+}
+.tblclass tr#B td { background: rgba(255,174,174,0.3); font-weight: bold;}
+
+/*Sandakan*/
+.tblclass tr#K td:nth-child(1):before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -6px 10px -4px 0px;
+  background:url('../lotto.png') -172px 1px;
+  background-size: 600px 80px;
+}
+.tblclass tr#K td { background: rgba(94,255,106,0.3); font-weight: bold;}
+
+/*Sarawak*/
+.tblclass tr#W td:nth-child(1):before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -6px 10px -4px 0px;
+  background:url('../lotto.png') -206px 1px;
+  background-size: 600px 80px;
+}
+.tblclass tr#W td { background: rgba(0,135,12,0.3); font-weight: bold;}
+
+/*GDLotto*/
+.tblclass tr#H td:nth-child(1):before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -6px 10px -4px 0px;
+  background:url('../lotto.png') -240px 1px;
+  background-size: 600px 80px;
+}
+
+.tblclass tr#H td { background:rgba(255,135,35,0.4); font-weight: bold;}
+
+/*Perdana*/
+.tblclass tr#N td:nth-child(1):before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -6px 10px -4px 0px;
+  background:url('../lotto.png') -273px 1px;
+  background-size: 600px 80px;
+}
+.tblclass tr#N td { background:rgba(192,192,192,0.3); font-weight: bold;}
+
+/*Lucky*/
+.tblclass tr#L td:nth-child(1):before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -6px 10px -4px 0px;
+  background:url('../lotto.png') -309px 1px;
+  background-size: 600px 80px;
+}
+.tblclass tr#L td { background:rgba(255,220,111,0.5); font-weight: bold;}
+
+
+/*Good4D*/
+.tblclass tr#G td:nth-child(1):before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -6px 10px -4px 0px;
+  background:url('../lotto.png') -342px 1px;
+  background-size: 600px 80px;
+}
+.tblclass tr#G td { background:rgba(114, 111, 255, 0.5); font-weight: bold;}
+
+/*5D*/
+.tblclass tr#D5D td:nth-child(1):before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -7px 10px -4px 0px;
+  background:url('../lotto.png') -2px -31px;
+  background-size: 600px 80px;
+}
+
+.tblclass tr#D5D td { background:rgba(255,80,9,0.3); font-weight: bold;}
+
+/*6D*/
+.tblclass tr#D6D td:nth-child(1):before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -7px 10px -4px 0px;
+  background:url('../lotto.png') -36px -31px;
+  background-size: 600px 80px;
+}
+.tblclass tr#D6D td { background:rgba(255,80,9,0.3); font-weight: bold;}
+
+/*Bottom Table*/
+/*4D*/
+.page-betform-web .table#betform-4D .c-index,
+.page-betform-compact .table#betform-4D .c-index{ background:rgba(13,145,243,0.3);}
+
+.page-betform-web .table#betform-4D .c-number,
+.page-betform-compact .table#betform-4D .c-number{ background:rgba(13,145,243,0.6);}
+
+.page-betform-web .table#betform-4D .c-type,
+.page-betform-compact .table#betform-4D .c-type{ background:rgb(240, 249, 255);}
+
+.page-betform-web .table#betform-4D .c-total,
+.page-betform-compact .table#betform-4D .c-total{ background:rgb(255, 242, 224); width:160px; min-width:60px; text-align:right;}
+
+.page-betform-web .table#betform-4D .c-B,
+.page-betform-compact .table#betform-4D .c-B { background:rgba(192,192,192,0.9);}
+
+.page-betform-web .table#betform-4D .c-S,
+.page-betform-compact .table#betform-4D .c-S { background:rgba(192,192,192,0.8);}
+
+.page-betform-web .table#betform-4D .c-SA,
+.page-betform-compact .table#betform-4D .c-SA { background:rgba(192,192,192,0.7);}
+
+.page-betform-web .table#betform-4D .c-A,
+.page-betform-compact .table#betform-4D .c-A { background:rgba(192,192,192,0.6);}
+
+.page-betform-web .table#betform-4D .c-ABC,
+.page-betform-compact .table#betform-4D .c-ABC { background:rgba(192,192,192,0.5);}
+
+.page-betform-web .table#betform-4D .c-SB{ background:rgba(192,192,192,0.4);}
+
+.page-betform-web .table#betform-4D .c-SC{ background:rgba(192,192,192,0.3);}
+
+.page-betform-web .table#betform-4D .c-SD{ background:rgba(192,192,192,0.2);}
+
+.page-betform-web .table#betform-4D .c-SE{ background:rgba(192,192,192,0.1);}
+
+/*3D*/
+.page-betform-web .table#betform-3D .c-index,
+.page-betform-compact .table#betform-3D .c-index{ background:rgba(255,152,0,0.3);}
+
+.page-betform-web .table#betform-3D .c-number,
+.page-betform-compact .table#betform-3D .c-number{ background:rgba(255,152,0,0.6);}
+
+.page-betform-web .table#betform-3D .c-type,
+.page-betform-compact .table#betform-3D .c-type{ background:rgb(240, 249, 255);}
+
+.page-betform-web .table#betform-3D .c-total,
+.page-betform-compact .table#betform-3D .c-total{ background:rgb(255, 242, 224);  width:160px; min-width:60px; text-align:right;}
+
+.page-betform-web .table#betform-3D .c-A,
+.page-betform-compact .table#betform-3D .c-A { background:rgba(192,192,192,0.7);}
+
+.page-betform-web .table#betform-3D .c-B,
+.page-betform-compact .table#betform-3D .c-B { background:rgba(192,192,192,0.6);}
+
+.page-betform-web .table#betform-3D .c-C,
+.page-betform-compact .table#betform-3D .c-C { background:rgba(192,192,192,0.5);}
+
+.page-betform-web .table#betform-3D .c-D { background:rgba(192,192,192,0.4);}
+
+.page-betform-web .table#betform-3D .c-E { background:rgba(192,192,192,0.3);}
+
+.page-betform-web .table#betform-3D .c-ABC { background:rgba(192,192,192,0.2);}
+.page-betform-compact .table#betform-3D .c-ABC { background:rgba(192,192,192,0.4);}
+
+.page-betform-web .table#betform-3D .c-AE { background:rgba(192,192,192,0.1);}
+.page-betform-compact .table#betform-3D .c-AE { background:rgba(192,192,192,0.3);}
+
+/*5D*/
+.page-betform-web .table#betform-5D .c-index,
+.page-betform-compact .table#betform-5D .c-index{ background:rgba(157,22,178,0.3);}
+
+.page-betform-web .table#betform-5D .c-number,
+.page-betform-compact .table#betform-5D .c-number{ background:rgba(157,22,178,0.6);}
+
+.page-betform-web .table#betform-5D .c-type,
+.page-betform-compact .table#betform-5D .c-type{ background:rgb(240, 249, 255);}
+
+.page-betform-web .table#betform-5D .c-total,
+.page-betform-compact .table#betform-5D .c-total{ background:rgb(255, 242, 224);  width:160px; min-width:60px; text-align:right;}
+
+.page-betform-web .table#betform-5D .c-B,
+.page-betform-compact .table#betform-5D .c-B { background:rgba(192,192,192,0.2);}
+
+/*6D*/
+.page-betform-web .table#betform-6D .c-index,
+.page-betform-compact .table#betform-6D .c-index{ background:rgba(94,124,139,0.3);}
+
+.page-betform-web .table#betform-6D .c-number,
+.page-betform-compact .table#betform-6D .c-number{ background:rgba(94,124,139,0.6); }
+
+.page-betform-web .table#betform-6D .c-type,
+.page-betform-compact .table#betform-6D .c-type{ background:rgb(240, 249, 255); }
+
+.page-betform-web .table#betform-6D .c-total,
+.page-betform-compact .table#betform-6D .c-total{ background:rgb(255, 242, 224);  width:160px; min-width:60px; text-align:center;}
+
+.page-betform-web .table#betform-6D .c-B,
+.page-betform-compact .table#betform-6D .c-B { background:rgba(192,192,192,0.2);}
+
+/*Class*/
+.page-betform-web .table#betform-3D .c-cM,
+.page-betform-compact .table#betform-3D .c-cM,
+.page-betform-web .table#betform-4D .c-cM,
+.page-betform-compact .table#betform-4D .c-cM { background:rgba(251,254,160,0.3);}
+
+.page-betform-web .table#betform-3D .c-cP,
+.page-betform-compact .table#betform-3D .c-cP,
+.page-betform-web .table#betform-4D .c-cP,
+.page-betform-compact .table#betform-4D .c-cP { background:rgba(255,32,191,0.3);}
+
+.page-betform-web .table#betform-3D .c-cT,
+.page-betform-compact .table#betform-3D .c-cT,
+.page-betform-web .table#betform-4D .c-cT,
+.page-betform-compact .table#betform-4D .c-cT,
+.page-betform-web .table#betform-5D .c-cT,
+.page-betform-compact .table#betform-5D .c-cT,
+.page-betform-web .table#betform-6D .c-cT,
+.page-betform-compact .table#betform-6D .c-cT { background:rgba(255,80,9,0.3);}
+
+.page-betform-web .table#betform-3D .c-cS,
+.page-betform-compact .table#betform-3D .c-cS,
+.page-betform-web .table#betform-4D .c-cS,
+.page-betform-compact .table#betform-4D .c-cS { background:rgba(160,254,235,0.3);}
+
+.page-betform-web .table#betform-3D .c-cB,
+.page-betform-compact .table#betform-3D .c-cB,
+.page-betform-web .table#betform-4D .c-cB,
+.page-betform-compact .table#betform-4D .c-cB { background:rgba(255,174,174,0.3);}
+
+.page-betform-web .table#betform-3D .c-cK,
+.page-betform-compact .table#betform-3D .c-cK,
+.page-betform-web .table#betform-4D .c-cK,
+.page-betform-compact .table#betform-4D .c-cK { background:rgba(94,255,106,0.3);}
+
+.page-betform-web .table#betform-3D .c-cW,
+.page-betform-compact .table#betform-3D .c-cW,
+.page-betform-web .table#betform-4D .c-cW,
+.page-betform-compact .table#betform-4D .c-cW { background:rgba(0,135,12,0.3);}
+
+.page-betform-web .table#betform-3D .c-cH,
+.page-betform-compact .table#betform-3D .c-cH,
+.page-betform-web .table#betform-4D .c-cH,
+.page-betform-compact .table#betform-4D .c-cH { background:rgba(255,135,35,0.4);}
+
+.page-betform-web .table#betform-3D .c-cN,
+.page-betform-compact .table#betform-3D .c-cN,
+.page-betform-web .table#betform-4D .c-cN,
+.page-betform-compact .table#betform-4D .c-cN { background:rgba(192,192,192,0.3);}
+
+.page-betform-web .table#betform-3D .c-cL,
+.page-betform-compact .table#betform-3D .c-cL,
+.page-betform-web .table#betform-4D .c-cL,
+.page-betform-compact .table#betform-4D .c-cL { background:rgba(255,220,111,0.5); }
+
+.page-drawresult .drawresult li .result h4{font-weight: bold;}
+.page-drawresult .drawresult li .result .row h6 {font-weight: bold;}
+
+.page-drawresult .drawresult li.lottoM .result {background: rgba(251,254,160,0.3);}
+.page-drawresult .drawresult li.lottoM .result:before {
+  content: "";
+  float: left;
+  width: 42px;
+  height: 40px;
+  margin-left: 30px;
+  margin-right: -100px;
+  background:url('../lotto.png') 4px 3px;
+  background-size: 700px 100px;
+}
+
+.page-drawresult .drawresult li.lottoP .result {background: rgba(255,32,191,0.3);}
+.page-drawresult .drawresult li.lottoP .result:before {
+  content: "";
+  float: left;
+  width: 41px;
+  height: 40px;
+  margin-left: 60px;
+  margin-right: -100px;
+  background:url('../lotto.png') -39px 3px;
+  background-size: 700px 100px;
+}
+
+.page-drawresult .drawresult li.lottoT .result {background: rgba(255,80,9,0.3);}
+.page-drawresult .drawresult li.lottoT .result:before {
+  content: "";
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: 55px;
+  margin-right: -100px;
+  background:url('../lotto.png') -79px 3px;
+  background-size: 700px 100px;
+}
+
+.page-drawresult .drawresult li.lottoS .result {background: rgba(160,254,235,0.3);}
+.page-drawresult .drawresult li.lottoS .result:before {
+  content: "";
+  float: left;
+  width: 41px;
+  height: 40px;
+  margin-left: 25px;
+  margin-right: -100px;
+  background:url('../lotto.png') -119px 3px;
+  background-size: 700px 100px;
+}
+
+.page-drawresult .drawresult li.lottoB .result {background: rgba(255,174,174,0.3);}
+.page-drawresult .drawresult li.lottoB .result:before {
+  content: "";
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: 45px;
+  margin-right: -100px;
+  background:url('../lotto.png') -159px 3px;
+  background-size: 700px 100px;
+}
+
+.page-drawresult .drawresult li.lottoK .result {background: rgba(94,255,106,0.3);}
+.page-drawresult .drawresult li.lottoK .result:before {
+  content: "";
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: 25px;
+  margin-right: -100px;
+  background:url('../lotto.png') -198px 3px;
+  background-size: 700px 100px;
+}
+
+.page-drawresult .drawresult li.lottoW .result {background: rgba(0,135,12,0.3);}
+.page-drawresult .drawresult li.lottoW .result:before {
+  content: "";
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  margin-right: -100px;
+  background:url('../lotto.png') -238px 3px;
+  background-size: 700px 100px;
+}
+
+.page-drawresult .drawresult li.lottoH .result {background: rgba(255,135,35,0.4);}
+.page-drawresult .drawresult li.lottoH .result:before {
+  content: "";
+  float: left;
+  width: 41px;
+  height: 40px;
+  margin-left: 15px;
+  margin-right: -100px;
+  background:url('../lotto.png') -285px 3px;
+  background-size: 720px 100px;
+}
+
+.page-drawresult .drawresult li.lottoN .result {background: rgba(192,192,192,0.3);}
+.page-drawresult .drawresult li.lottoN .result:before {
+  content: "";
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: 45px;
+  margin-right: -100px;
+  background:url('../lotto.png') -317px 3px;
+  background-size: 700px 100px;
+}
+
+.page-drawresult .drawresult li.lottoL .result {background: rgba(255,220,111,0.5);}
+.page-drawresult .drawresult li.lottoL .result:before {
+  content: "";
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: 45px;
+  margin-right: -100px;
+  background:url('../lotto.png') -357px 3px;
+  background-size: 700px 100px;
+}
+
+
+.page-drawresult .drawresult li.lottoG .result {background: rgba(111, 149, 255, 0.5);}
+.page-drawresult .drawresult li.lottoG .result:before {
+  content: "";
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: 45px;
+  margin-right: -100px;
+  background:url('../lotto.png') -397px 3px;
+  background-size: 700px 100px;
+}
+
+.page-drawresult .drawresult li.lotto5D .result {background: rgba(255,80,9,0.3);}
+.page-drawresult .drawresult li.lotto5D .result:before {
+  content: "";
+  float: left;
+  width: 42px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: -100px;
+  background:url('../lotto.png') 3px -39px;
+  background-size: 700px 100px;
+}
+
+.page-drawresult .drawresult li.lotto6D .result {background: rgba(255,80,9,0.3);}
+.page-drawresult .drawresult li.lotto6D .result:before {
+  content: "";
+  float: left;
+  width: 42px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: -100px;
+  background:url('../lotto.png') -38px -38px;
+  background-size: 700px 100px;
+}
+
+.page-betform-compact .nav li.lotto2D a,.page-betform-web .nav li.lotto2D a{  background:#fff588; opacity: .5; }
+.page-betform-compact .nav li.lotto3D a,.page-betform-web .nav li.lotto3D a{  background:#ffd963; opacity: .5; }
+.page-betform-compact .nav li.lotto4D a,.page-betform-web .nav li.lotto4D a{  background:#5dbaff; opacity: .5; }
+.page-betform-compact .nav li.lotto5D a,.page-betform-web .nav li.lotto5D a{  background:#b48ef1; opacity: .5; }
+.page-betform-compact .nav li.lotto6D a,.page-betform-web .nav li.lotto6D a{  background:#a5bdc9; opacity: .5; }
+.page-betform-compact .nav li.lottoBSOE a,.page-betform-web .nav li.lottoBSOE a{  background:#7fda82; opacity: .5; }
+
+.page-betform-compact .nav li.lotto2D.active a,.page-betform-web .nav li.lotto2D.active a{  opacity: 1; font-weight:bold; }
+.page-betform-compact .nav li.lotto3D.active a,.page-betform-web .nav li.lotto3D.active a{   opacity: 1; font-weight:bold; }
+.page-betform-compact .nav li.lotto4D.active a,.page-betform-web .nav li.lotto4D.active a{   opacity: 1; font-weight:bold; }
+.page-betform-compact .nav li.lotto5D.active a,.page-betform-web .nav li.lotto5D.active a{   opacity: 1; font-weight:bold; }
+.page-betform-compact .nav li.lotto6D.active a,.page-betform-web .nav li.lotto6D.active a{   opacity: 1; font-weight:bold; }
+.page-betform-compact .nav li.lottoBSOE.active a,.page-betform-web .nav li.lottoBSOE.active a{ opacity: 1; font-weight:bold; }
+
+@media all
+and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2)
+and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2)
+and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1)
+and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2)
+and (max-width: 1024px), only screen and (min-resolution: 192dpi)
+and (max-width: 1024px), only screen and (min-resolution: 2dppx)
+and (max-width: 1024px) {
+	.page-rptshareholder .container-fluid { min-width: 1024px; }
+
+	.navbar-brand img {width:50px; top:-15px; position:relative;}
+	/*body.cmsview{   padding-top: 60px; }*/
+	.modindex li { border:2px solid #CFCFCF; width:103px; height:103px; float:left; margin:5px; -webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px; -webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out; position:relative;}
+	.modindex .fa {font-size:30px;}
+	.modindex li a { padding:0px 2px; font-size:11px;}
+
+  .page-betform-web table#betform-3D tr:nth-child(1) th:nth-child(10) { min-width: 110px; }
+  .page-betform-web table#betform-3D tr:nth-child(1) td:nth-child(10) { min-width: 110px; }
+
+  .page-betform-web table#betform-4D tr:nth-child(1) th:nth-child(12) { min-width: 110px; }
+  .page-betform-web table#betform-4D tr:nth-child(1) td:nth-child(12) { min-width: 110px; }
+
+  .page-betform-compact table#betform-3D tr:nth-child(1) th:nth-child(8) { min-width: 110px; }
+  .page-betform-compact table#betform-3D tr:nth-child(1) td:nth-child(8) { min-width: 110px; }
+
+  .page-betform-compact table#betform-4D tr:nth-child(1) th:nth-child(8) { min-width: 110px; }
+  .page-betform-compact table#betform-4D tr:nth-child(1) td:nth-child(8) { min-width: 110px; }
+
+	div, iframe {
+  -webkit-overflow-scrolling: touch;
+	}
+
+}
