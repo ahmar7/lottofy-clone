@@ -5107,3 +5107,25 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
   /*max-width: 90%;*/
   background-color: #f4f4f4;
 }
+.mobile-view {
+  display: none;
+}
+
+.mbl-head {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .tbl-margin {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
+  }
+}
