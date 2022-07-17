@@ -2164,6 +2164,14 @@ button#language-menu img {
   padding: 10px 5% 10px 5%;
   column-gap: 5px;
 }
+.twodbet_input_2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /*padding: 10px;*/
+  padding: 10px 5% 10px 5%;
+  column-gap: 5px;
+}
 .d4 {
   display: flex;
   justify-content: space-around;
@@ -2180,6 +2188,9 @@ button#language-menu img {
   width: 120px;
 }
 .twodbet_input img {
+  width: 60px;
+}
+.twodbet_input_2 img {
   width: 60px;
 }
 .twodbet_container {
@@ -5083,4 +5094,16 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
 }
 .dates td {
   background-color: yellow;
+}
+.t-body-2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  font-size: 14px;
+
+  color: #191919;
+
+  /*max-width: 90%;*/
+  background-color: #f4f4f4;
 }
