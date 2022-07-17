@@ -1607,6 +1607,11 @@ button#language-menu img {
   padding-top: 20px;
   padding-bottom: 68px;
 }
+.body_main_2 {
+  /*padding-top: 44px;*/
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
 
 .home_top {
   background: linear-gradient(
@@ -5023,4 +5028,59 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
 }
 .modal_flow {
   overflow: auto !important;
+}
+.tbl-margin {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+@media (max-width: 600px) {
+  .tbl-margin {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.table-head th label,
+.table-head th {
+  color: royalblue;
+}
+.main-head {
+  text-align: center;
+  color: royalblue;
+}
+.main-head th {
+  text-align: center;
+}
+.top-mar {
+  margin-top: 20px;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+.bg-blue {
+  background-color: blue;
+}
+.bg-red {
+  background-color: red;
+}
+.day-row {
+  background-color: royalblue;
+  color: white;
+}
+.day-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.tbl {
+  width: 550px;
+}
+.tbl th {
+  border: 1px solid rgb(214, 214, 214);
+}
+.tbl th,
+.tbl td {
+  text-align: center;
+}
+.dates td {
+  background-color: yellow;
 }

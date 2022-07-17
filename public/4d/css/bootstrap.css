@@ -2534,6 +2534,7 @@ table th[class*="col-"] {
 .table-responsive {
   min-height: 0.01%;
   overflow-x: auto;
+
 }
 @media screen and (max-width: 767px) {
   .table-responsive {
