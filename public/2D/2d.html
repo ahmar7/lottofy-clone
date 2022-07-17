@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-    <link rel="stylesheet" href="../css/headers_index.css">
-    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/headers_index.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
     <script src="/Scripts/jquery-3.3.1.min.js"></script>
     <script src="/Scripts/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
@@ -25,10 +25,10 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/sweetalert2@9"
     ></script>
-  
+
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
-   
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
@@ -41,8 +41,8 @@
     <script
       src="https://kit.fontawesome.com/53de1ed1cd.js"
       crossorigin="anonymous"
-    ></script><style media="all" id="fa-v4-font-face">
-        
+    ></script
+    ><style media="all" id="fa-v4-font-face">
       /*!
 
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
@@ -126,8 +126,9 @@
           U+f20c, U+f219, U+f230, U+f24a, U+f250, U+f278, U+f27b, U+f283, U+f28c,
           U+f28e, U+f29b-f29c, U+f2b7, U+f2ba, U+f2bc, U+f2be, U+f2c0, U+f2c3,
           U+f2d3-f2d4;
-      }</style>
-      
+      }
+    </style>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
@@ -177,25 +178,460 @@
 
     <link rel="stylesheet" href="./css/modal.css" />
     <link rel="stylesheet" href="./css/style.css" />
-   </head
-  >
+  </head>
   <body data-new-gr-c-s-check-loaded="14.1068.0" data-gr-ext-installed="">
     <div id="loader-wrapper" style="display: none">
       <div id="loader"></div>
     </div>
     <div class="wrapper">
-       <style>
+      <style>
         .sect-set:nth-last-child() {
           color: gold;
         }
       </style>
-       <header>
-      <div class="top-menu-curtain"></div>
-      <nav class="top-menu">
-        <div class="float-left">
-          <ul class="core_inline-list" data-mobilemenuarea="">
-            <li data-mobilemenu=""
+      <header>
+        <div class="top-menu-curtain"></div>
+        <nav class="top-menu">
+          <div class="float-left">
+            <ul class="core_inline-list" data-mobilemenuarea="">
+              <li data-mobilemenu=""
+                ><button
+                  aria-label="Main menu"
+                  data-mobilegamesmenutoggle=""
+                  type="button"
+                  class="white"
+                  ><span>MENU</span
+                  ><i data-mobilemenuicon="" class="icon-slim-menu"
+                    >&nbsp;</i
+                  ></button
+                ></li
+              >
+              <li data-logo=""
+                ><a
+                  href="/en/"
+                  class="logo"
+                  title="Lottofy"
+                  aria-label="Go to the main page"
+                  ><i></i></a
+              ></li>
+              <li data-inlinegamesmenucontainer="">
+                <ul
+                  class="core_inline-list show-for-large"
+                  data-inlinegamesmenu=""
+                >
+                  <li class="is-active" style="visibility: visible; top: 0px"
+                    ><a href="/en/">LOTTERY</a></li
+                  >
+                  <li
+                    data-menu-viewmore=""
+                    style="visibility: visible; top: 0px"
+                    ><a
+                      href="javascript:void(null)"
+                      class="icon-slim-chevron-right-outline float-right"
+                      data-toggle="overflown-gamesCategories"
+                      data-alignment="right"
+                      aria-controls="overflown-gamesCategories"
+                      data-is-focus="false"
+                      data-yeti-box="overflown-gamesCategories"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    ></a
+                  ></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="float-right">
+            <ul class="core_inline-list">
+              <li data-userdetail=""
+                ><a
+                  href="../account.html"
+                  data-hover=""
+                  data-coretoggle="menu-user"
+                  data-alignment="left"
+                  ><img
+                    src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
+                    class="avatar"
+                    alt="My account"
+                  /><span> My account</span></a
+                ></li
+              ><li data-vcdetail=""
+                ><a href="../balance.html"
+                  ><span>Balance: </span><strong>0,00€</strong></a
+                ></li
+              >
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+          <div class="tabs-content" data-tabs-content="gamingTabs">
+            <div class="tabs-panel is-active" id="gamblingModePanel1">
+              <div class="top-subMenu show-for-medium is-overflown">
+                <ul
+                  class="core_inline-list small-text-left medium-text-center core_styleTop"
+                  data-menu-games=""
+                >
+                  <li
+                    data-nomenu=""
+                    data-gametype="superloto"
+                    style="top: 0px; visibility: visible"
+                    ><a
+                      href=""
+                      data-coretoggle="menu-gamesMode"
+                      data-hover=""
+                      data-alignment="left"
+                    >
+                      <img
+                        class="nav-ico dl"
+                        src="../assets/2dlogonew.png"
+                      /> </a></li
+                  ><li
+                    style="animation-delay: 0s; visibility: visible; top: 0px"
+                    data-gametype="euromillones"
+                    ><a
+                      href="../3d/3d.html"
+                      data-coretoggle="menu-gamesMode"
+                      data-hover=""
+                      data-alignment="left"
+                      ><img
+                        class="nav-ico dl"
+                        src="../assets/3dlogonew.png" /></a></li
+                  ><li
+                    style="
+                      animation-delay: 0.03s;
+                      visibility: visible;
+                      top: 0px;
+                    "
+                    data-gametype="powerball"
+                    ><a
+                      href="../4d/4d.html"
+                      data-coretoggle="menu-gamesMode"
+                      data-hover=""
+                      data-alignment="left"
+                      ><img
+                        class="nav-ico-3"
+                        src="../assets/magnum-icon.png" /></a></li
+                  ><li
+                    style="
+                      animation-delay: 0.06s;
+                      visibility: visible;
+                      top: 0px;
+                    "
+                    data-gametype="megamillions"
+                    ><a
+                      href="../4d/4d.html"
+                      data-coretoggle="menu-gamesMode"
+                      data-hover=""
+                      data-alignment="left"
+                      ><img
+                        class="nav-ico-4"
+                        src="../assets/damacai.jpg" /></a></li
+                  ><li
+                    style="
+                      animation-delay: 0.09s;
+                      visibility: visible;
+                      top: 0px;
+                    "
+                    data-gametype="superenalotto"
+                    ><a
+                      href="../4d/4d.html"
+                      data-coretoggle="menu-gamesMode"
+                      data-hover=""
+                      data-alignment="left"
+                      ><img
+                        class="nav-ico-"
+                        src="../assets/toto4d.png" /></a></li
+                  ><li
+                    style="
+                      animation-delay: 0.12s;
+                      visibility: visible;
+                      top: 0px;
+                    "
+                    data-gametype="primitiva"
+                    ><a
+                      href="../5d6d/5d6d.html"
+                      data-coretoggle="menu-gamesMode"
+                      data-hover=""
+                      data-alignment="left"
+                      ><img
+                        class="nav-ico-"
+                        src="../assets/toto-5d-2.png" /></a></li
+                  ><li
+                    style="
+                      animation-delay: 0.15s;
+                      visibility: visible;
+                      top: 0px;
+                    "
+                    data-gametype="lotto6aus49"
+                    ><a
+                      href="../5d6d/5d6d.html"
+                      data-coretoggle="menu-gamesMode"
+                      data-hover=""
+                      data-alignment="left"
+                      ><img
+                        class="nav-ico-"
+                        src="../assets/toto-6d.png" /></a></li
+                  ><li
+                    style="
+                      animation-delay: 0.18s;
+                      visibility: visible;
+                      top: 0px;
+                    "
+                    data-gametype="eurojackpot"
+                    ><a
+                      href="../5d6d/5d6d.html"
+                      data-coretoggle="menu-gamesMode"
+                      data-hover=""
+                      data-alignment="left"
+                      ><img class="nav-ico-5" src="../assets/pmp-3-3d.png" /></a
+                  ></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div id="menu-clubs" class="menus-dropDown" data-coredropdown="">
+          <ul>
+            <li
+              ><a href="/en/euromillions/club/"
+                ><i class="icon-games-euromillones feuromillones"></i> Syndicate
+                Euromillonarios<span><strong>80</strong> bets</span></a
+              ></li
+            >
+            <li
+              ><a href="/en/elgordo/club/"
+                ><i class="icon-games-elgordo felgordo"></i> Syndicate
+                Gordacos<span><strong>70</strong> bets</span></a
+              ></li
+            >
+            <li
+              ><a href="./5d/5d.htmlclub/"
+                ><i class="icon-games-primitiva fprimitiva"></i> Syndicate
+                PrimiClub<span><strong>150</strong> bets</span></a
+              ></li
+            >
+            <li
+              ><a href="/en/lotto6aus49/club/"
+                ><i class="icon-games-lotto6aus49 flotto6aus49"></i> Syndicate
+                Lotto6aus49<span><strong>150</strong> bets</span></a
+              ></li
+            >
+            <li
+              ><a href="./9mp/pmp.htmlclub/"
+                ><i class="icon-games-eurojackpot feurojackpot"></i> Syndicate
+                Eurojackpot<span><strong>100</strong> bets</span></a
+              ></li
+            >
+            <li
+              ><a href="/en/powerball/club/"
+                ><i class="icon-games-powerball fpowerball"></i> Syndicate
+                Powerball<span><strong>120</strong> bets</span></a
+              ></li
+            >
+            <li
+              ><a href="/en/megamillions/club/"
+                ><i class="icon-games-megamillions fmegamillions"></i> Syndicate
+                Megamillions<span><strong>120</strong> bets</span></a
+              ></li
+            >
+            <li
+              ><a href="./4d/4d.htmlclub/"
+                ><i class="icon-games-superenalotto fsuperenalotto"></i>
+                Syndicate Superenalotto<span><strong>200</strong> bets</span></a
+              ></li
+            >
+            <li
+              ><a href="/en/megasena/club/"
+                ><i class="icon-games-megasena fmegasena"></i> Syndicate
+                Megasena<span><strong>280</strong> bets</span></a
+              ></li
+            >
+            <li
+              ><a href="/en/superlotto/"
+                ><i class="icon-games-superlotto fsuperlotto"></i> Syndicate
+                Superlotto<span><strong>592</strong> bets</span></a
+              ></li
+            >
+          </ul>
+        </div>
+        <div
+          id="menu-lang"
+          class="top-menu_dropdown dropdown-pane"
+          data-menu-lang=""
+          data-dropdown=""
+          aria-hidden="true"
+          data-yeti-box="menu-lang"
+          data-resize="menu-lang"
+          aria-labelledby="1rqaru-dd-anchor"
+          data-e="0rvyy6-e"
+          data-events="resize"
+        >
+          <p>Language</p>
+          <ul>
+            <li data-lang="ES"
               ><button
+                type="button"
+                data-lang="ES"
+                data-url="/?setlanguage=true"
+                ><img
+                  class="imgSize size10 core_styleMiddle round"
+                  src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                  alt="es"
+                />
+                ES</button
+              ></li
+            >
+            <li data-lang="EN"
+              ><button
+                type="button"
+                class="is-active"
+                data-lang="EN"
+                data-url="/en/?setlanguage=true"
+                ><img
+                  class="imgSize size10 core_styleMiddle round"
+                  src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
+                  alt="gb"
+                />
+                EN</button
+              ></li
+            >
+            <li data-lang="PT"
+              ><button
+                type="button"
+                data-lang="PT"
+                data-url="/pt/?setlanguage=true"
+                ><img
+                  class="imgSize size10 core_styleMiddle round"
+                  src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png"
+                  alt="pt"
+                />
+                PT</button
+              ></li
+            >
+            <li data-lang="BR"
+              ><button
+                type="button"
+                data-lang="BR"
+                data-url="/br/?setlanguage=true"
+                ><img
+                  class="imgSize size10 core_styleMiddle round"
+                  src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png"
+                  alt="br"
+                />
+                BR</button
+              ></li
+            >
+            <li data-lang="FR"
+              ><button
+                type="button"
+                data-lang="FR"
+                data-url="/fr/?setlanguage=true"
+                ><img
+                  class="imgSize size10 core_styleMiddle round"
+                  src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png"
+                  alt="fr"
+                />
+                FR</button
+              ></li
+            >
+            <li data-lang="IT"
+              ><button
+                type="button"
+                data-lang="IT"
+                data-url="/it/?setlanguage=true"
+                ><img
+                  class="imgSize size10 core_styleMiddle round"
+                  src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png"
+                  alt="it"
+                />
+                IT</button
+              ></li
+            >
+            <li data-lang="DE"
+              ><button
+                type="button"
+                data-lang="DE"
+                data-url="/de/?setlanguage=true"
+                ><img
+                  class="imgSize size10 core_styleMiddle round"
+                  src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png"
+                  alt="de"
+                />
+                DE</button
+              ></li
+            >
+            <li data-lang="IN"
+              ><button
+                type="button"
+                data-lang="IN"
+                data-url="/in/?setlanguage=true"
+                ><img
+                  class="imgSize size10 core_styleMiddle round"
+                  src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png"
+                  alt="in"
+                />
+                IN</button
+              ></li
+            >
+          </ul>
+          <p>Currency</p>
+          <div class="core_panel core_thin">
+            <select class="core_spaceBzero core_sans_serif core_txtSize_sm1">
+              <option value="eur">EUR</option>
+              <option selected="" value="usd">USD</option>
+              <option value="brl">BRL</option>
+              <option value="cny">CNY</option>
+              <option value="inr">INR</option>
+              <option value="cad">CAD</option>
+              <option value="mxn">MXN</option>
+              <option value="xof">XOF</option>
+              <option value="clp">CLP</option>
+              <option value="cop">COP</option>
+              <option value="nok">NOK</option>
+              <option value="pen">PEN</option>
+              <option value="php">PHP</option>
+              <option value="zar">ZAR</option>
+              <option value="chf">CHF</option>
+              <option value="gbp">GBP</option>
+              <option value="ngn">NGN</option>
+            </select>
+          </div>
+          <div class="core_panel core_thin">
+            <button class="button" data-save-lang="" disabled="">Apply</button>
+          </div>
+        </div>
+        <div id="cart" data-coredropdown="">
+          <div>
+            <div id="cartContent">
+              <div id="cartContentList">
+                <div>
+                  <i class="icon-slim-shopping-cart"></i> The cart is empty
+                </div>
+              </div>
+              <div id="cartActions" class="">
+                <a
+                  href="/en/purchase/"
+                  class="button tiny radius bg_mint core_spaceBzero icon-slim-shopping-cart core_txtSize_sm1"
+                  rel="nofollow"
+                >
+                  Go to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <button
+              type="button"
+              data-dettach=""
+              class="icon-slim-media-eject"
+            ></button>
+          </div>
+          <span class="peek">▴</span>
+        </div>
+        <div class="row" style="position: relative">
+          <nav id="mobileMenu">
+            <div id="mobileGamesMenu" class="" style="display: none">
+              <button
                 aria-label="Main menu"
                 data-mobilegamesmenutoggle=""
                 type="button"
@@ -204,480 +640,78 @@
                 ><i data-mobilemenuicon="" class="icon-slim-menu"
                   >&nbsp;</i
                 ></button
-              ></li
-            >
-            <li data-logo=""
-              ><a
-                href="/en/"
-                class="logo"
-                title="Lottofy"
-                aria-label="Go to the main page"
-                ><i></i></a
-            ></li>
-            <li data-inlinegamesmenucontainer="">
-              <ul
-                class="core_inline-list show-for-large"
-                data-inlinegamesmenu=""
               >
-                <li class="is-active" style="visibility: visible; top: 0px"
-                  ><a href="/en/">LOTTERY</a></li
-                >
-                <li data-menu-viewmore="" style="visibility: visible; top: 0px"
-                  ><a
-                    href="javascript:void(null)"
-                    class="icon-slim-chevron-right-outline float-right"
-                    data-toggle="overflown-gamesCategories"
-                    data-alignment="right"
-                    aria-controls="overflown-gamesCategories"
-                    data-is-focus="false"
-                    data-yeti-box="overflown-gamesCategories"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  ></a
-                ></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      <div class="float-right">
-          <ul class="core_inline-list">
-           <li data-userdetail=""
-              ><a
-                href="../account.html"
-                data-hover=""
-                data-coretoggle="menu-user"
-                data-alignment="left"
-                ><img
+              <div id="mobileGamesMenuArt">
+                <img
                   src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
                   class="avatar"
                   alt="My account"
-                /><span> My account</span></a
-              ></li
-            ><li data-vcdetail=""
-              ><a href="../balance.html"
-                ><span>Balance: </span><strong>0,00€</strong></a
-              ></li
-            >
-          </ul>
-        </div>
-        <div class="clearfix"></div>
-        <div class="tabs-content" data-tabs-content="gamingTabs">
-          <div class="tabs-panel is-active" id="gamblingModePanel1">
-            <div class="top-subMenu show-for-medium is-overflown">
-              <ul
-                class="core_inline-list small-text-left medium-text-center core_styleTop"
-                data-menu-games=""
-              >
-                <li
-                  data-nomenu=""
-                  data-gametype="superloto"
-                  style="top: 0px; visibility: visible"
-                  ><a
-                    href=""
-                    data-coretoggle="menu-gamesMode"
-                    data-hover=""
-                    data-alignment="left"
-                    >
-					<img class="nav-ico dl" src="../assets/2dlogonew.png"/>
-                  </a
-                  ></li
-                ><li
-                  style="animation-delay: 0s; visibility: visible; top: 0px"
-                  data-gametype="euromillones"
-                  ><a
-                    href="../3D/3d.html"
-                    data-coretoggle="menu-gamesMode"
-                    data-hover=""
-                    data-alignment="left"
-                    ><img  class="nav-ico dl" src="../assets/3dlogonew.png"/></a></li
-                ><li
-                  style="animation-delay: 0.03s; visibility: visible; top: 0px"
-                  data-gametype="powerball"
-                  ><a
-                    href="./magnum/magnum.html"
-                    data-coretoggle="menu-gamesMode"
-                    data-hover=""
-                    data-alignment="left"
-                    ><img  class="nav-ico-3" src="../assets/magnum-icon.png"/></a></li
-                ><li
-                  style="animation-delay: 0.06s; visibility: visible; top: 0px"
-                  data-gametype="megamillions"
-                  ><a
-                    href="./damacai/2damacai.html"
-                    data-coretoggle="menu-gamesMode"
-                    data-hover=""
-                    data-alignment="left"
-                    ><img  class="nav-ico-4" src="../assets/damacai.jpg"/></a></li
-                ><li
-                  style="animation-delay: 0.09s; visibility: visible; top: 0px"
-                  data-gametype="superenalotto"
-                  ><a
-                    href="./4d/4d.html"
-                    data-coretoggle="menu-gamesMode"
-                    data-hover=""
-                    data-alignment="left"
-                    ><img  class="nav-ico-" src="../assets/toto4d.png"/></a></li
-                ><li
-                  style="animation-delay: 0.12s; visibility: visible; top: 0px"
-                  data-gametype="primitiva"
-                  ><a
-                    href="./5d/5d.html"
-                    data-coretoggle="menu-gamesMode"
-                    data-hover=""
-                    data-alignment="left"
-                    ><img  class="nav-ico-" src="../assets/toto-5d-2.png"/></a></li
-                ><li
-                  style="animation-delay: 0.15s; visibility: visible; top: 0px"
-                  data-gametype="lotto6aus49"
-                  ><a
-                    href="./6d/6d.html"
-                    data-coretoggle="menu-gamesMode"
-                    data-hover=""
-                    data-alignment="left"
-                    ><img  class="nav-ico-" src="../assets/toto-6d.png"/></a></li
-                ><li
-                  style="animation-delay: 0.18s; visibility: visible; top: 0px"
-                  data-gametype="eurojackpot"
-                  ><a
-                    href="./9mp/pmp.html"
-                    data-coretoggle="menu-gamesMode"
-                    data-hover=""
-                    data-alignment="left"
-                    ><img  class="nav-ico-5" src="../assets/pmp-3-3d.png"/></a></li
-                >
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-       
-   
-      <div id="menu-clubs" class="menus-dropDown" data-coredropdown="">
-        <ul>
-          <li
-            ><a href="/en/euromillions/club/"
-              ><i class="icon-games-euromillones feuromillones"></i> Syndicate
-              Euromillonarios<span><strong>80</strong> bets</span></a
-            ></li
-          >
-          <li
-            ><a href="/en/elgordo/club/"
-              ><i class="icon-games-elgordo felgordo"></i> Syndicate
-              Gordacos<span><strong>70</strong> bets</span></a
-            ></li
-          >
-          <li
-            ><a href="./5d/5d.htmlclub/"
-              ><i class="icon-games-primitiva fprimitiva"></i> Syndicate
-              PrimiClub<span><strong>150</strong> bets</span></a
-            ></li
-          >
-          <li
-            ><a href="/en/lotto6aus49/club/"
-              ><i class="icon-games-lotto6aus49 flotto6aus49"></i> Syndicate
-              Lotto6aus49<span><strong>150</strong> bets</span></a
-            ></li
-          >
-          <li
-            ><a href="./9mp/pmp.htmlclub/"
-              ><i class="icon-games-eurojackpot feurojackpot"></i> Syndicate
-              Eurojackpot<span><strong>100</strong> bets</span></a
-            ></li
-          >
-          <li
-            ><a href="/en/powerball/club/"
-              ><i class="icon-games-powerball fpowerball"></i> Syndicate
-              Powerball<span><strong>120</strong> bets</span></a
-            ></li
-          >
-          <li
-            ><a href="/en/megamillions/club/"
-              ><i class="icon-games-megamillions fmegamillions"></i> Syndicate
-              Megamillions<span><strong>120</strong> bets</span></a
-            ></li
-          >
-          <li
-            ><a href="./4d/4d.htmlclub/"
-              ><i class="icon-games-superenalotto fsuperenalotto"></i> Syndicate
-              Superenalotto<span><strong>200</strong> bets</span></a
-            ></li
-          >
-          <li
-            ><a href="/en/megasena/club/"
-              ><i class="icon-games-megasena fmegasena"></i> Syndicate
-              Megasena<span><strong>280</strong> bets</span></a
-            ></li
-          >
-          <li
-            ><a href="/en/superlotto/"
-              ><i class="icon-games-superlotto fsuperlotto"></i> Syndicate
-              Superlotto<span><strong>592</strong> bets</span></a
-            ></li
-          >
-        </ul>
-      </div>
-      <div
-        id="menu-lang"
-        class="top-menu_dropdown dropdown-pane"
-        data-menu-lang=""
-        data-dropdown=""
-        aria-hidden="true"
-        data-yeti-box="menu-lang"
-        data-resize="menu-lang"
-        aria-labelledby="1rqaru-dd-anchor"
-        data-e="0rvyy6-e"
-        data-events="resize"
-      >
-        <p>Language</p>
-        <ul>
-          <li data-lang="ES"
-            ><button type="button" data-lang="ES" data-url="/?setlanguage=true"
-              ><img
-                class="imgSize size10 core_styleMiddle round"
-                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
-                alt="es"
-              />
-              ES</button
-            ></li
-          >
-          <li data-lang="EN"
-            ><button
-              type="button"
-              class="is-active"
-              data-lang="EN"
-              data-url="/en/?setlanguage=true"
-              ><img
-                class="imgSize size10 core_styleMiddle round"
-                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
-                alt="gb"
-              />
-              EN</button
-            ></li
-          >
-          <li data-lang="PT"
-            ><button
-              type="button"
-              data-lang="PT"
-              data-url="/pt/?setlanguage=true"
-              ><img
-                class="imgSize size10 core_styleMiddle round"
-                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png"
-                alt="pt"
-              />
-              PT</button
-            ></li
-          >
-          <li data-lang="BR"
-            ><button
-              type="button"
-              data-lang="BR"
-              data-url="/br/?setlanguage=true"
-              ><img
-                class="imgSize size10 core_styleMiddle round"
-                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png"
-                alt="br"
-              />
-              BR</button
-            ></li
-          >
-          <li data-lang="FR"
-            ><button
-              type="button"
-              data-lang="FR"
-              data-url="/fr/?setlanguage=true"
-              ><img
-                class="imgSize size10 core_styleMiddle round"
-                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png"
-                alt="fr"
-              />
-              FR</button
-            ></li
-          >
-          <li data-lang="IT"
-            ><button
-              type="button"
-              data-lang="IT"
-              data-url="/it/?setlanguage=true"
-              ><img
-                class="imgSize size10 core_styleMiddle round"
-                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png"
-                alt="it"
-              />
-              IT</button
-            ></li
-          >
-          <li data-lang="DE"
-            ><button
-              type="button"
-              data-lang="DE"
-              data-url="/de/?setlanguage=true"
-              ><img
-                class="imgSize size10 core_styleMiddle round"
-                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png"
-                alt="de"
-              />
-              DE</button
-            ></li
-          >
-          <li data-lang="IN"
-            ><button
-              type="button"
-              data-lang="IN"
-              data-url="/in/?setlanguage=true"
-              ><img
-                class="imgSize size10 core_styleMiddle round"
-                src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png"
-                alt="in"
-              />
-              IN</button
-            ></li
-          >
-        </ul>
-        <p>Currency</p>
-        <div class="core_panel core_thin">
-          <select class="core_spaceBzero core_sans_serif core_txtSize_sm1">
-            <option value="eur">EUR</option>
-            <option selected="" value="usd">USD</option>
-            <option value="brl">BRL</option>
-            <option value="cny">CNY</option>
-            <option value="inr">INR</option>
-            <option value="cad">CAD</option>
-            <option value="mxn">MXN</option>
-            <option value="xof">XOF</option>
-            <option value="clp">CLP</option>
-            <option value="cop">COP</option>
-            <option value="nok">NOK</option>
-            <option value="pen">PEN</option>
-            <option value="php">PHP</option>
-            <option value="zar">ZAR</option>
-            <option value="chf">CHF</option>
-            <option value="gbp">GBP</option>
-            <option value="ngn">NGN</option>
-          </select>
-        </div>
-        <div class="core_panel core_thin">
-          <button class="button" data-save-lang="" disabled="">Apply</button>
-        </div>
-      </div>
-      <div id="cart" data-coredropdown="">
-        <div>
-          <div id="cartContent">
-            <div id="cartContentList">
-              <div>
-                <i class="icon-slim-shopping-cart"></i> The cart is empty
+                />
+                <div class="text-center core_spaceTThin">
+                  <button
+                    data-logintrigger=""
+                    class="core_spaceBzero button round bg_blue"
+                    ><strong>Login</strong></button
+                  >
+                  <a class="core_spaceBzero button round" href="./signup.html"
+                    ><strong>Create your account</strong></a
+                  >
+                </div>
               </div>
-            </div>
-            <div id="cartActions" class="">
-              <a
-                href="/en/purchase/"
-                class="button tiny radius bg_mint core_spaceBzero icon-slim-shopping-cart core_txtSize_sm1"
-                rel="nofollow"
-              >
-                Go to cart</a
-              >
-            </div>
-          </div>
-        </div>
-        <div>
-          <button
-            type="button"
-            data-dettach=""
-            class="icon-slim-media-eject"
-          ></button>
-        </div>
-        <span class="peek">▴</span>
-      </div>
-      <div class="row" style="position: relative">
-        <nav id="mobileMenu">
-          <div id="mobileGamesMenu" class="" style="display: none">
-            <button
-              aria-label="Main menu"
-              data-mobilegamesmenutoggle=""
-              type="button"
-              class="white"
-              ><span>MENU</span
-              ><i data-mobilemenuicon="" class="icon-slim-menu"
-                >&nbsp;</i
-              ></button
-            >
-            <div id="mobileGamesMenuArt">
-              <img
-                src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
-                class="avatar"
-                alt="My account"
-              />
-              <div class="text-center core_spaceTThin">
-                <button
-                  data-logintrigger=""
-                  class="core_spaceBzero button round bg_blue"
-                  ><strong>Login</strong></button
-                >
-                <a class="core_spaceBzero button round" href="./signup.html"
-                  ><strong>Create your account</strong></a
-                >
-              </div>
-            </div>
-            <ul>
-              <li class="has-submenu is-opened">
-                <a href="javascript:void(null)"
-                  ><i class="icon-games-lottery"></i> Lottery</a
-                >
-                <ul style="display: block">
-               
-                   
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-euromillones"
-                    >
-                      2D lottery</a
-                    >
-                     
-                  </li>
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-powerball"
-                    >
-                     3D lottery</a
-                    >
-                    
-                  </li>
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-megamillions"
-                    >
-                      Mangnum</a
-                    >
-                   
-                  </li>
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-superenalotto"
-                    >
-                      Da ma cai</a
-                    >
-                   
-                  </li>
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-primitiva"
-                    >
-                  Toto Malaysia</a
-                    >
-                   
-                  </li>
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-lotto6aus49"
-                    >
-                       5D Toto</a
-                    >
-                    <!-- <ul>
+              <ul>
+                <li class="has-submenu is-opened">
+                  <a href="javascript:void(null)"
+                    ><i class="icon-games-lottery"></i> Lottery</a
+                  >
+                  <ul style="display: block">
+                    <li class="has-submenu">
+                      <a
+                        href="javascript:void(null)"
+                        class="icon-games-euromillones"
+                      >
+                        2D lottery</a
+                      >
+                    </li>
+                    <li class="has-submenu">
+                      <a
+                        href="javascript:void(null)"
+                        class="icon-games-powerball"
+                      >
+                        3D lottery</a
+                      >
+                    </li>
+                    <li class="has-submenu">
+                      <a
+                        href="javascript:void(null)"
+                        class="icon-games-megamillions"
+                      >
+                        Mangnum</a
+                      >
+                    </li>
+                    <li class="has-submenu">
+                      <a
+                        href="javascript:void(null)"
+                        class="icon-games-superenalotto"
+                      >
+                        Da ma cai</a
+                      >
+                    </li>
+                    <li class="has-submenu">
+                      <a
+                        href="javascript:void(null)"
+                        class="icon-games-primitiva"
+                      >
+                        Toto Malaysia</a
+                      >
+                    </li>
+                    <li class="has-submenu">
+                      <a
+                        href="javascript:void(null)"
+                        class="icon-games-lotto6aus49"
+                      >
+                        5D Toto</a
+                      >
+                      <!-- <ul>
                       <li
                         ><a href="/en/lotto6aus49/play/"
                           ><i class="icon-slim-arrow-right2"></i> Play
@@ -692,284 +726,294 @@
                       >
                       
                     </ul> -->
-                  </li>
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-eurojackpot"
-                    >
-                      6D Toto</a
-                    >
-                 
-                  </li>
-                  <li class="has-submenu">
-                    <a href="javascript:void(null)" class="icon-games-quiniela">
-                     3+3D bonus</a
-                    >
-         
-                  </li>
-                  
-                </ul>
-              </li>
-            </ul>
-            <ul data-globalactions="">
-              <li
-                ><a href="./contact.html" class="icon-common-bubble2">
-                  Support &amp; Helpdesk</a
-                ></li
-              >
-              <li class="has-submenu">
-                <a href="javascript:void(null)" class="icon-slim-world">
-                  Select your language
-                  <span class="label"
-                    ><img
-                      class="flag"
-                      src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
-                      alt="gb"
-                    />
-                    EN</span
-                  >
-                  <span class="label currency">USD</span>
-                </a>
-                <ul>
-                  <li>
-                    <div
-                      id="menu-lang-mobile"
-                      class="core_panel core_paddingTzero"
-                      data-menu-lang=""
-                    >
-                      <fieldset class="core_thin radius">
-                        <legend
-                          class="core_spaceBzero core_txtSize_sm2 core_normal"
-                          >Language</legend
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="ES"
-                          data-url="/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
-                            alt="es"
-                          />
-                          ES</button
-                        >
-                        <button
-                          type="button"
-                          class="label is-active"
-                          data-lang="EN"
-                          data-url="/en/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
-                            alt="gb"
-                          />
-                          EN</button
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="PT"
-                          data-url="/pt/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png"
-                            alt="pt"
-                          />
-                          PT</button
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="BR"
-                          data-url="/br/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png"
-                            alt="br"
-                          />
-                          BR</button
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="FR"
-                          data-url="/fr/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png"
-                            alt="fr"
-                          />
-                          FR</button
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="IT"
-                          data-url="/it/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png"
-                            alt="it"
-                          />
-                          IT</button
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="DE"
-                          data-url="/de/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png"
-                            alt="de"
-                          />
-                          DE</button
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="IN"
-                          data-url="/in/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png"
-                            alt="in"
-                          />
-                          IN</button
-                        >
-                      </fieldset>
-                      <fieldset class="core_thin radius">
-                        <legend
-                          class="core_spaceBzero core_txtSize_sm2 core_normal"
-                          >Currency</legend
-                        >
-                        <button type="button" class="label" data-curr="eur"
-                          >EUR</button
-                        >
-                        <button
-                          type="button"
-                          class="label is-active"
-                          data-curr="usd"
-                          >USD</button
-                        >
-                        <button type="button" class="label" data-curr="brl"
-                          >BRL</button
-                        >
-                        <button type="button" class="label" data-curr="cny"
-                          >CNY</button
-                        >
-                        <button type="button" class="label" data-curr="inr"
-                          >INR</button
-                        >
-                        <button type="button" class="label" data-curr="cad"
-                          >CAD</button
-                        >
-                        <button type="button" class="label" data-curr="mxn"
-                          >MXN</button
-                        >
-                        <button type="button" class="label" data-curr="xof"
-                          >XOF</button
-                        >
-                        <button type="button" class="label" data-curr="clp"
-                          >CLP</button
-                        >
-                        <button type="button" class="label" data-curr="cop"
-                          >COP</button
-                        >
-                        <button type="button" class="label" data-curr="nok"
-                          >NOK</button
-                        >
-                        <button type="button" class="label" data-curr="pen"
-                          >PEN</button
-                        >
-                        <button type="button" class="label" data-curr="php"
-                          >PHP</button
-                        >
-                        <button type="button" class="label" data-curr="zar"
-                          >ZAR</button
-                        >
-                        <button type="button" class="label" data-curr="chf"
-                          >CHF</button
-                        >
-                        <button type="button" class="label" data-curr="gbp"
-                          >GBP</button
-                        >
-                        <button type="button" class="label" data-curr="ngn"
-                          >NGN</button
-                        >
-                      </fieldset>
-                      <button
-                        class="button core_full"
-                        data-save-lang=""
-                        disabled=""
-                        >Apply</button
+                    </li>
+                    <li class="has-submenu">
+                      <a
+                        href="javascript:void(null)"
+                        class="icon-games-eurojackpot"
                       >
-                    </div>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div> </header
-    > 
-     <div class="off-canvas-wrap">
-       <div
-        class="top-menu-gamesNav hide-for-medium animated"
-        data-top-menu-gamesnav=""
-        style=""
-      >
-        <ul
-          class="is-active"
-          data-tab-id="gamblingModePanel1"
-          data-num-items="13"
-          ><li style="animation-delay: 0.03s" data-gametype="powerball"
-            ><button
-              ><img class="mbl-ico d2" src="../assets/2dlogonew.png"/></button></li
-          ><li style="animation-delay: 0.06s" data-gametype="megamillions"
-            ><button
-              ><img class="mbl-ico d2" src="../assets/3dlogonew.png"/></button></li
-          ><li style="animation-delay: 0.09s" data-gametype="superenalotto"
-            ><button
-              ><img class="mbl-ico" src="../assets/magnum-icon.png"/></button></li
-          ><li style="animation-delay: 0.12s" data-gametype="primitiva"
-            ><button
-              ><img class="mbl-ico" src="../assets/damacai.jpg"/></button></li
-          ><li style="animation-delay: 0.15s" data-gametype="lotto6aus49"
-            ><button
-              ><img class="mbl-ico" src="../assets/toto4d.png"/></button></li
-          ><li style="animation-delay: 0.18s" data-gametype="eurojackpot"
-            ><button
-              ><img class="mbl-ico" src="../assets/toto-5d-2.png"/></button></li
-          ><li style="animation-delay: 0.21s" data-gametype="quiniela"
-            ><button
-              ><img class="mbl-ico" src="../assets/toto-6d.png"/></button></li
-          ><li style="animation-delay: 0.24s" data-gametype="bonoloto"
-            ><button
-              ><img class="mbl-ico d2" src="../assets/pmp-3-3d.png"/></button></li
-          >   </ul>
+                        6D Toto</a
+                      >
+                    </li>
+                    <li class="has-submenu">
+                      <a
+                        href="javascript:void(null)"
+                        class="icon-games-quiniela"
+                      >
+                        3+3D bonus</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul data-globalactions="">
+                <li
+                  ><a href="./contact.html" class="icon-common-bubble2">
+                    Support &amp; Helpdesk</a
+                  ></li
+                >
+                <li class="has-submenu">
+                  <a href="javascript:void(null)" class="icon-slim-world">
+                    Select your language
+                    <span class="label"
+                      ><img
+                        class="flag"
+                        src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
+                        alt="gb"
+                      />
+                      EN</span
+                    >
+                    <span class="label currency">USD</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <div
+                        id="menu-lang-mobile"
+                        class="core_panel core_paddingTzero"
+                        data-menu-lang=""
+                      >
+                        <fieldset class="core_thin radius">
+                          <legend
+                            class="core_spaceBzero core_txtSize_sm2 core_normal"
+                            >Language</legend
+                          >
+                          <button
+                            type="button"
+                            class="label"
+                            data-lang="ES"
+                            data-url="/?setlanguage=true"
+                            ><img
+                              class="imgSize size10 core_styleMiddle round"
+                              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                              alt="es"
+                            />
+                            ES</button
+                          >
+                          <button
+                            type="button"
+                            class="label is-active"
+                            data-lang="EN"
+                            data-url="/en/?setlanguage=true"
+                            ><img
+                              class="imgSize size10 core_styleMiddle round"
+                              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
+                              alt="gb"
+                            />
+                            EN</button
+                          >
+                          <button
+                            type="button"
+                            class="label"
+                            data-lang="PT"
+                            data-url="/pt/?setlanguage=true"
+                            ><img
+                              class="imgSize size10 core_styleMiddle round"
+                              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png"
+                              alt="pt"
+                            />
+                            PT</button
+                          >
+                          <button
+                            type="button"
+                            class="label"
+                            data-lang="BR"
+                            data-url="/br/?setlanguage=true"
+                            ><img
+                              class="imgSize size10 core_styleMiddle round"
+                              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png"
+                              alt="br"
+                            />
+                            BR</button
+                          >
+                          <button
+                            type="button"
+                            class="label"
+                            data-lang="FR"
+                            data-url="/fr/?setlanguage=true"
+                            ><img
+                              class="imgSize size10 core_styleMiddle round"
+                              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png"
+                              alt="fr"
+                            />
+                            FR</button
+                          >
+                          <button
+                            type="button"
+                            class="label"
+                            data-lang="IT"
+                            data-url="/it/?setlanguage=true"
+                            ><img
+                              class="imgSize size10 core_styleMiddle round"
+                              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png"
+                              alt="it"
+                            />
+                            IT</button
+                          >
+                          <button
+                            type="button"
+                            class="label"
+                            data-lang="DE"
+                            data-url="/de/?setlanguage=true"
+                            ><img
+                              class="imgSize size10 core_styleMiddle round"
+                              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png"
+                              alt="de"
+                            />
+                            DE</button
+                          >
+                          <button
+                            type="button"
+                            class="label"
+                            data-lang="IN"
+                            data-url="/in/?setlanguage=true"
+                            ><img
+                              class="imgSize size10 core_styleMiddle round"
+                              src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png"
+                              alt="in"
+                            />
+                            IN</button
+                          >
+                        </fieldset>
+                        <fieldset class="core_thin radius">
+                          <legend
+                            class="core_spaceBzero core_txtSize_sm2 core_normal"
+                            >Currency</legend
+                          >
+                          <button type="button" class="label" data-curr="eur"
+                            >EUR</button
+                          >
+                          <button
+                            type="button"
+                            class="label is-active"
+                            data-curr="usd"
+                            >USD</button
+                          >
+                          <button type="button" class="label" data-curr="brl"
+                            >BRL</button
+                          >
+                          <button type="button" class="label" data-curr="cny"
+                            >CNY</button
+                          >
+                          <button type="button" class="label" data-curr="inr"
+                            >INR</button
+                          >
+                          <button type="button" class="label" data-curr="cad"
+                            >CAD</button
+                          >
+                          <button type="button" class="label" data-curr="mxn"
+                            >MXN</button
+                          >
+                          <button type="button" class="label" data-curr="xof"
+                            >XOF</button
+                          >
+                          <button type="button" class="label" data-curr="clp"
+                            >CLP</button
+                          >
+                          <button type="button" class="label" data-curr="cop"
+                            >COP</button
+                          >
+                          <button type="button" class="label" data-curr="nok"
+                            >NOK</button
+                          >
+                          <button type="button" class="label" data-curr="pen"
+                            >PEN</button
+                          >
+                          <button type="button" class="label" data-curr="php"
+                            >PHP</button
+                          >
+                          <button type="button" class="label" data-curr="zar"
+                            >ZAR</button
+                          >
+                          <button type="button" class="label" data-curr="chf"
+                            >CHF</button
+                          >
+                          <button type="button" class="label" data-curr="gbp"
+                            >GBP</button
+                          >
+                          <button type="button" class="label" data-curr="ngn"
+                            >NGN</button
+                          >
+                        </fieldset>
+                        <button
+                          class="button core_full"
+                          data-save-lang=""
+                          disabled=""
+                          >Apply</button
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="off-canvas-wrap">
+        <div
+          class="top-menu-gamesNav hide-for-medium animated"
+          data-top-menu-gamesnav=""
+          style=""
+        >
+          <ul
+            class="is-active"
+            data-tab-id="gamblingModePanel1"
+            data-num-items="13"
+            ><li style="animation-delay: 0.03s" data-gametype="powerball"
+              ><button
+                ><img
+                  class="mbl-ico d2"
+                  src="../assets/2dlogonew.png" /></button></li
+            ><li style="animation-delay: 0.06s" data-gametype="megamillions"
+              ><button onclick="window.location.href='../3d/3d.html';"
+                ><img
+                  class="mbl-ico d2"
+                  src="../assets/3dlogonew.png" /></button></li
+            ><li style="animation-delay: 0.09s" data-gametype="superenalotto"
+              ><button onclick="window.location.href='../4d/4d.html';"
+                ><img
+                  class="mbl-ico"
+                  src="../assets/magnum-icon.png" /></button></li
+            ><li style="animation-delay: 0.12s" data-gametype="primitiva"
+              ><button onclick="window.location.href='../4d/4d.html';"
+                ><img
+                  class="mbl-ico"
+                  src="../assets/damacai.jpg" /></button></li
+            ><li style="animation-delay: 0.15s" data-gametype="lotto6aus49"
+              ><button onclick="window.location.href='../4d/4d.html';"
+                ><img class="mbl-ico" src="../assets/toto4d.png" /></button></li
+            ><li style="animation-delay: 0.18s" data-gametype="eurojackpot"
+              ><button onclick="window.location.href='../5d6d/5d6d.html';"
+                ><img
+                  class="mbl-ico"
+                  src="../assets/toto-5d-2.png" /></button></li
+            ><li style="animation-delay: 0.21s" data-gametype="quiniela"
+              ><button onclick="window.location.href='../5d6d/5d6d.html';"
+                ><img
+                  class="mbl-ico"
+                  src="../assets/toto-6d.png" /></button></li
+            ><li style="animation-delay: 0.24s" data-gametype="bonoloto"
+              ><button onclick="window.location.href='../5d6d/5d6d.html';"
+                ><img class="mbl-ico d2" src="../assets/pmp-3-3d.png" /></button
+            ></li>
+          </ul>
+        </div>
+
+        <div id="fb-root"></div>
       </div>
-      
-      <div id="fb-root"></div>
-    </div>
       <div class="t-body">
         <div class="body_main">
-           
-        
           <div class="top_balance_menu">
-             
-           <a href="#"  class="result-ico" >
-<div> </div>
-<div><img src="../assets/2dlogonew.png" alt=""></div>
-</a>
-            <a href="./result.html" class="result-ico"  >
+            <a href="#" class="result-ico">
+              <div> </div>
+              <div><img src="../assets/2dlogonew.png" alt="" /></div>
+            </a>
+            <a href="./result.html" class="result-ico">
               <div><i class="far fa-file-alt" aria-hidden="true"></i></div>
               <div>Result </div>
             </a>
           </div>
-          
+
           <div class="refresh_time">
             <span class="refresh_icon"
               ><i class="fas fa-history mr-2" aria-hidden="true"></i
@@ -1059,7 +1103,7 @@
             </div>
           </div>
           <div class="d_result_wrap_top">
-         <div
+            <div
               class="d_result_wrap gameDraw drawSection-1 incomplete"
               data-value="2022/07/13_1"
             >
@@ -1079,7 +1123,7 @@
                 </div>
               </div>
             </div>
-             <div
+            <div
               class="d_result_wrap gameDraw drawSection-1 incomplete"
               data-value="2022/07/13_1"
             >
@@ -1098,21 +1142,21 @@
                   <div class="d_result_font sect-result">--</div>
                 </div>
               </div>
-            </div>    
-        </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="t-footer">
         <section class="menu-btm-bet">
           <div class="container-fluid">
             <div class="buttonbet_wrap">
-             <a href="./bet.html"> <button id="btn_add" class="bet_btn betbtn">Bet</button></a>
+              <a href="./bet.html">
+                <button id="btn_add" class="bet_btn betbtn">Bet</button></a
+              >
             </div>
           </div>
         </section>
       </div>
-     
     </div>
-
-     </body
-  > </html>
+  </body>
+</html>
