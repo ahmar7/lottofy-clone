@@ -5186,3 +5186,11 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
     width: 100px;
   }
 }
+.bg-tblblue td {
+  color: white;
+  background-color: rgb(47, 0, 255);
+}
+.bg-tblred td {
+  color: white;
+  background-color: red;
+}

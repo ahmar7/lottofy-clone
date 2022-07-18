@@ -15,23 +15,54 @@ body {
   width: 50px;
 }
 .tbl-outer {
-  border: 1px solid lightgray;
   width: 350px;
-  padding: 0px 0px 0px 0;
+  padding: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
+
   margin-left: 10px;
   margin-right: 10px;
 }
 .row-prize td {
-  border: 1px solid lightgray;
+  border: 1px solid rgb(0, 0, 0);
+}
+th,
+tr {
+  border: 1px solid rgb(0, 0, 0);
 }
 
 tbody th,
 tbody td {
+  font-weight: normal;
+  color: df7a51;
   padding: 0.2rem 0.1rem 0.3rem !important;
+  background-color: #505462 !important;
+}
+.bg-yellow td {
+  border: none;
+  padding: 12px !important;
+  background: linear-gradient(
+    180deg,
+    rgba(250, 199, 12, 1) 0%,
+    rgba(254, 220, 1, 1) 100%
+  ) !important;
+}
+.special-prize {
+  font-size: 23px;
+  font-weight: bolder;
+  color: yellow !important;
+}
+.color-white {
+  color: white !important;
+}
+.color-two {
+  color: #fac70c;
 }
 table {
   margin: 0 !important;
   padding: 0px;
+}
+.bgnum td {
+  padding: 3px !important;
+  color: black;
 }
