@@ -4661,3 +4661,11 @@
     format("truetype");
 }
 
+.main-beticons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bet-icon {
+  width: 100px;
+}
