@@ -12465,8 +12465,10 @@ hr.whiteTrans3 {
   color: royalblue;
   font-size: 0.85rem;
 }
-.top-menu [data-userMenuLogin] button {
-  margin-top: 12px !important;
+@media (max-width: 639px) {
+  .top-menu [data-userMenuLogin] button {
+    margin-top: 12px !important;
+  }
 }
 .top-menu [data-userMenuLogin] button:before,
 .top-menu [data-userMenuJoin] button:before {

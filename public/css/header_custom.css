@@ -1,0 +1,9 @@
+.main-beticons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bet-icon {
+  width: 120px;
+  height: 70px;
+}
