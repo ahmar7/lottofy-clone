@@ -23,71 +23,7 @@
 <div id="loader"></div>
 </div>
 <div class="wrapper">
-<script>
-
-    $(function () {
-
-        var dateUtcNow = new Date().toISOString();
-
-        $.ajax({
-            type: "POST",
-            global: false,
-            url: "../THGame/GetMemberNotification",
-            data: {
-                "AccessToken": token,
-                "StartDate": dateUtcNow
-            },
-            datatype: "json",
-            success: function (data) {
-
-                $("#notification-span").html(data.NotificationAmount)
-
-                if (data.NotificationAmount > 0) {
-                    $(".notification-drop").show();
-                    $(".btn__badge").html(data.NotificationAmount);
-                }
-                else {
-                    $(".notification-drop").hide();
-                }
-            }
-        });
-
-        showNotification(dateUtcNow);
-    });
-
-    function showNotification(dateUtcNow) {
-
-        console.log("Notification");
-
-        window.setInterval(function () {
-            $.ajax({
-                type: "POST",
-                global: false,
-                url: "../THGame/GetMemberNotification",
-                data: {
-                    "AccessToken": token,
-                    "StartDate": dateUtcNow
-                },
-                datatype: "json",
-                success: function (data) {
-
-                    $("#notification-span").html(data.NotificationAmount)
-
-                    if (data.NotificationAmount > 0) {
-                        $(".notification-drop").show();
-                        $(".btn__badge").html(data.NotificationAmount);
-                    }
-                    else {
-                        $(".notification-drop").hide();
-                    }
-                }
-            });
-        }, 15000);
-
-    }
-
-
-</script>
+ 
 <header>
       <div class="top-menu-curtain"></div>
       <nav class="top-menu">
