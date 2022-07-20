@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
+.top-menu-gamesNav ul {
+  padding-top: 2px !important;
+}
 .modal {
   background: #00000096;
 }

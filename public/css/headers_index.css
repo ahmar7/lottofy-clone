@@ -13461,9 +13461,8 @@ body[data-app][data-debug] [data-mobileMenuArea] {
     margin-right: 0;
   }
   .top-menu-gamesNav li img {
-    
     height: 52px;
-}
+  }
 }
 
 @media print, screen and (max-width: 39.99875em) {
