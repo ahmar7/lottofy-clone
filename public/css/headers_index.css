@@ -13169,10 +13169,6 @@ body.setFixed [data-menu-games] [data-date] {
     animation-fill-mode: both;
     animation-name: bounceIn;
   }
-
-  body .top-subMenu.is-overflown {
-    padding-right: 6.3rem;
-  }
 }
 
 .top-menu_dropdown {
@@ -23401,7 +23397,7 @@ body {
 }
 
 .sectionHeader:not(#miApuestaHeader)[data-gametype="powerball"] {
-  background-color: #c98820;
+  background-color: #ffff31;
   border-bottom: 5px solid rgba(255, 255, 255, 0.5);
 }
 

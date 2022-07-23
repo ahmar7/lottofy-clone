@@ -13,6 +13,11 @@
 .modal.left.fade.in .modal-dialog {
   left: 0;
 }
+.swal2-styled {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
 
 .modal.left .modal-dialog {
   position: fixed;
@@ -735,4 +740,20 @@ svg[data-v-5f0b9ba1] {
 }
 .hide[data-v-5f0b9ba1] {
   display: none;
+}
+.main-bg {
+  display: flex;
+  justify-content: space-between;
+}
+.playgam .row {
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+.playgam .row::after,
+.playgam .row::before {
+  display: none !important;
+}
+.playgam .clearfix::after,
+.playgam .clearfix::before {
+  display: none !important;
 }
