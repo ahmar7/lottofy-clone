@@ -13469,10 +13469,6 @@ body[data-app][data-debug] [data-mobileMenuArea] {
     margin: 0 !important;
     left: 0 !important;
   }
-
-  .top-menu [data-userDetail] {
-    display: none;
-  }
 }
 
 body.setFixed #cart {
@@ -14825,8 +14821,7 @@ body .top-menu [data-vcDetail] span {
   }
 
   body[data-app] .top-menu #supportPreview,
-  body[data-app] .top-menu #userPreview,
-  body[data-app] .top-menu [data-vcDetail] span {
+  body[data-app] .top-menu #userPreview {
     display: none !important;
   }
 
@@ -14905,8 +14900,7 @@ body .top-menu [data-vcDetail] span {
   }
 
   .top-menu #supportPreview,
-  .top-menu #userPreview,
-  .top-menu [data-vcDetail] span {
+  .top-menu #userPreview {
     display: none !important;
   }
 
@@ -14973,9 +14967,7 @@ body .top-menu [data-vcDetail] span {
     padding-top: 3rem;
   }
 
-  .top-menu [data-vcDetail],
-  .top-menu [data-langMenu],
-  .top-menu [data-userDetail] a span {
+  .top-menu [data-langMenu] {
     display: none;
   }
 
