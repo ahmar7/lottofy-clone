@@ -1475,7 +1475,7 @@ select {
   position: fixed;
   top: 0;
   width: 100%;
-  max-width: 768px;
+  max-width: 867px;
   z-index: 99;
   background: linear-gradient(
     90deg,
@@ -1518,7 +1518,7 @@ select {
 }
 
 .d-header-top {
-  max-width: 768px;
+  max-width: 867px;
   width: 100%;
   background-color: #f4f4f4;
 }
@@ -1896,7 +1896,7 @@ button#language-menu img {
 }
 
 .d_result_font {
-  color: #ffd75f;
+  color: black;
 }
 
 .result_date {
@@ -1983,15 +1983,15 @@ button#language-menu img {
 
 .d_resultpage_wrap_3d {
   text-align: center;
-  background-color: #f8f8f8;
-  color: #0054a6;
+  background-color: white;
+  color: black;
   margin: 10px 5px 5px 5px;
   border-radius: 15px;
   padding: 6px 0px 6px 0px;
-  border-bottom: 1px solid #d8d9da;
+  border-bottom: 1px solid #000000;
   width: 100%;
   border: 1px solid;
-  box-shadow: 0px 3px 4px -1px #699dcf;
+  /* box-shadow: 0px 3px 4px -1px #699dcf; */
 }
 
 .d_sectionpage_wrap {
@@ -2209,7 +2209,7 @@ button#language-menu img {
 
 .twobetbtn2 {
   padding: 10px;
-  color: #dc3545;
+  color: black;
   /*background-color: transparent;*/
   background-color: white;
   border-radius: 5px;
@@ -2290,7 +2290,7 @@ input.twobetinput {
 .twobet_wrap_box.selected,
 .bet_wrap_box.selected,
 .input-number.selected {
-  background-color: rgba(34, 83, 162, 1);
+  background-color: #ffb800;
   color: white;
 }
 
@@ -3178,11 +3178,11 @@ threedbet_roll_wrap:nth-child(1) {
 
 .betbtn {
   padding: 10px;
-  color: #2456a6;
+  color: #000000;
   border-radius: 5px;
   background-color: white;
   border-radius: 5px;
-  border: 1px solid #2456a6;
+  border: 1px solid black;
   min-width: 150px;
 }
 

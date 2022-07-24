@@ -23397,7 +23397,7 @@ body {
 }
 
 .sectionHeader:not(#miApuestaHeader)[data-gametype="powerball"] {
-  background-color: #ffff31;
+  background-color: #c98820;
   border-bottom: 5px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -24737,6 +24737,7 @@ html.summer body:not(.setFixed) .top-menu [data-logo] i {
 
 .top-subMenu {
   height: 4.4rem;
+  transition: all 0.3s ease;
 }
 
 .top-subMenu[data-hidden],

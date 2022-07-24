@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../css/game.css" />
     <link rel="stylesheet" href="../css/headers_index.css" />
     <link rel="stylesheet" href="../css/custom.css" />
-    <script src="/Scripts/jquery-3.3.1.min.js"></script>
-    <script src="/Scripts/umd/popper.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -264,7 +264,7 @@
           <div class="clearfix"></div>
           <div class="tabs-content" data-tabs-content="gamingTabs">
             <div class="tabs-panel is-active" id="gamblingModePanel1">
-              <div class="top-subMenu show-for-medium is-overflown">
+              <div id="strip2" class="top-subMenu show-for-medium is-overflown">
                 <ul
                   class="core_inline-list small-text-left medium-text-center core_styleTop"
                   data-menu-games=""
@@ -950,11 +950,12 @@
       </header>
       <div class="off-canvas-wrap">
         <div
+         id="strip2"
           class="top-menu-gamesNav hide-for-medium animated"
           data-top-menu-gamesnav=""
           style=""
         >
-          <ul
+          <ul  id="strip2"
             class="is-active"
             data-tab-id="gamblingModePanel1"
             data-num-items="13"
@@ -1021,11 +1022,10 @@
             </div>
             <div class="alignRight">
                           <div class="float-right" data-jackpotanouncer=""
-              ><span data-jackpot="" class="hide-for-small-only"
-                >116.500.000<small>€</small></span
-              ><span data-jackpot="" class="show-for-small-only"
-                >116,5M<small>€</small></span
-              ><span><strong>Result</strong></span></div
+              > <a href="./result.html" class="result-ico">
+              <div><i class="far fa-file-alt" aria-hidden="true"></i></div>
+              <div>Result </div>
+            </a></div
             >
             <div></div>
             </div>
@@ -1041,10 +1041,7 @@
               <div> </div>
               <div><img src="../assets/2dlogonew.png" alt="" /></div>
             </a>
-            <a href="./result.html" class="result-ico">
-              <div><i class="far fa-file-alt" aria-hidden="true"></i></div>
-              <div>Result </div>
-            </a>
+           
           </div>
 
           <div class="refresh_time">
@@ -1192,4 +1189,22 @@
       </div>
     </div>
   </body>
+  <script>
+    
+window.addEventListener("scroll", function () {
+    let header = this.document.querySelector("#strip2");
+  
+ header.classList.toggle("sticky", window.scrollY > 50);
+
+    // var value = header.offsetTop;
+    //             if(window.pageYOffset > 50){
+    //                  header.classList.add("sticky");
+    //                 console.log("sticky");
+    //             }else {
+    //                  header.classList.remove("sticky");
+
+    //                 console.log("nonsticky");
+    //             }
+});
+</script>
 </html>
