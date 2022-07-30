@@ -263,6 +263,40 @@
                   ></li>
                 </ul>
               </div>
+              <div class="sectionHeader playgam" data-gametype="powerball">
+           
+          <div class="row main-bg clearfix">
+            <div class="alignLeft">
+            <div  class="float-left ">
+                            <i data-game-icon="" class="sectionIcon icon-games-powerball"></i>
+            </div>
+            <div class="float-left ">
+              <h1 data-gamename="">5D TOTOT + 6D TOTO + Damacai 6D</h1>
+              <span data-drawdate=""
+                >Sunday, 24 jul 03:00
+                <span data-timelimit="">
+                  -
+                  <span data-countdown=""
+                    >11<small>h </small>48<small>m </small>30<small
+                      >s</small
+                    ></span
+                  ></span
+                ></span
+              >
+            </div>
+            </div>
+            <div class="alignRight">
+                          <div class="float-right" data-jackpotanouncer=""
+              > <a href="./result.html" class="result-ico">
+              <div><i class="far fa-file-alt" aria-hidden="true"></i></div>
+              <div>Result </div>
+            </a></div
+            >
+            <div></div>
+            </div>
+
+          </div>
+        </div>
             </div>
           </div>
         </nav>
@@ -879,90 +913,63 @@
         <div id="fb-root"></div>
       </div>
       <div class="-body">
-        <div class="body_main_2" align="center">
-          <div class="twodbet_input d5 " style="background-color: white">
-            <div class="mbl-move"
-              ><img
-                style="margin-left: 15px"
-                src="../assets/toto-5d-2.png"
-                alt=""
-              />
-              <img
-                style="margin-left: 15px"
-                src="../assets/toto-6d.png"
-                alt=""
-              />
-              <img
-                style="margin-left: 15px"
-                src="../assets/pmp-3-3d.png"
-                alt=""
-              />
-            </div>
-
-            <div class="move-top">
-              <a href="./result.html" class="result-ico">
-                <div><i class="far fa-file-alt" aria-hidden="true"></i></div>
-                <div>Result </div>
-              </a></div
-            >
-          </div>
-        </div>
-        <br>
-        <div class="desktop-view">
-                    <div class=day-main>
-        <table class="tbl">
-          <tr class="day-row">
-            <th >Draw Date</th>
-                <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-            <th>Sat</th>
-            <th>Sun</th>
         
-          </tr>
-          <tr class="dates">
-            <td><img style="width: 40px;" src="../assets/toto-5d-2.png" alt=""></td>
-            <td>26-06-2022</td>
-            <td>-</td>
-            <td>-</td>
-            <td>28-06-2022</td>
-            <td>29-06-2022</td>
-            <td>30-06-2022</td>
-            <td>-</td>
-          </tr>
-          <tr class="dates bg-tblblue">
-              <td><img style="width: 40px;" src="../assets/toto-6d.png" alt=""></td>
-            <td>26-06-2022</td>
-            <td>-</td>
-            <td>-</td>
-            <td>28-06-2022</td>
-            <td>29-06-2022</td>
-            <td>30-06-2022</td>
-            <td>-</td>
-          </tr>
-          <tr class="dates bg-tblred">
-              <td><img style="width: 40px;" src="../assets/pmp-3-3d.png" alt=""></td>
-            <td>26-06-2022</td>
-            <td>-</td>
-            <td>-</td>
-            <td>28-06-2022</td>
-            <td>29-06-2022</td>
-            <td>30-06-2022</td>
-            <td>-</td>
-          </tr>
+        <br>
+        <div id="dayMain" class=day-main>
+<table class="tbl">
+<tr class="day-row">
+<th >Draw Date</th>
+    <th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
+<th>Sun</th>
 
-        </table>
+</tr>
+<tr class="dates">
+<td><img style="width: 40px;" src="../assets/toto-5d-2.png" alt=""></td>
+<td>26-06-2022</td>
+<td>-</td>
+<td>-</td>
+<td>28-06-2022</td>
+<td>29-06-2022</td>
+<td>30-06-2022</td>
+<td>-</td>
+</tr>
+<tr class="dates bg-tblblue">
+  <td><img style="width: 40px;" src="../assets/toto-6d.png" alt=""></td>
+<td>26-06-2022</td>
+<td>-</td>
+<td>-</td>
+<td>28-06-2022</td>
+<td>29-06-2022</td>
+<td>30-06-2022</td>
+<td>-</td>
+</tr>
+<tr class="dates bg-tblred">
+  <td><img style="width: 40px;" src="../assets/pmp-3-3d.png" alt=""></td>
+<td>26-06-2022</td>
+<td>-</td>
+<td>-</td>
+<td>28-06-2022</td>
+<td>29-06-2022</td>
+<td>30-06-2022</td>
+<td>-</td>
+</tr>
 
-        </div>
+</table>
+
+</div>
+        <div class="desktop-view  ">
         <br>
         <form
         
           name="betform"
           id="betform"
-          method="POST"
-          class="form-horizontal betform"
+         action="./betconfirm.html"
+          class="form-horizontal hide-it betform"
           role="form"
           data-toggle="validator"
           novalidate="true"
@@ -6197,14 +6204,19 @@
           </div>
           <p> <input type="hidden" name="totalSUMx" id="totalSUMx" /> </p>
           <p></p>
+          <div align="right" class="form-inline">
+           <div class="twodbet_footer">
+             <button   class="twobetbtn">Bet</button>
+           </div>
+         </div>
         </form>
-         <div align="right" class="form-inline">
+         <div align="right" id="btnToggle" class="form-inline">
           <div class="twodbet_footer">
-            <button id="btn_add"  onclick="window.location.href='./betconfirm.html';"   class="twobetbtn">Bet</button>
+            <button id="btn_add"  onclick="toggleFrom()"   class="twobetbtn">Bet</button>
           </div>
         </div>
         </div>
- <div class="mobile-view">
+ <div id="mbl_view" class="mobile-view hide-it">
   <div class="mbl-head">
     <input type="text" placeholder="Username">
     <input type="text" placeholder="MYR">
@@ -6231,11 +6243,30 @@
     <div><input type="text"></div>
     <div><input type="text"></div>
     <br>
-    <div><button onclick="window.location.href='./betsuccess.html';" class="submit-btn-2">Submit Bet</button></div>
+    <div><button  onclick="window.location.href='./betsuccess.html';"  class="submit-btn-2">Submit Bet</button></div>
   </div>
- </div>
+</div>
+<div class="mobile-view" id="btn_2"><button onclick="toggleBet()" class="submit-btn-2 ">Bet</button></div>
        
       </div>
     </div>
   </body>
+  <script>
+    let toggleFrom=()=>{
+      let betform = document.getElementById('betform')
+      let btn = document.getElementById("btnToggle")
+let dayMain = document.getElementById("dayMain")
+betform.classList.remove('hide-it')
+btn.classList.add('hide-it')
+dayMain.classList.add('hide-it')
+}
+let toggleBet=()=>{
+  let  mbl_view = document.getElementById('mbl_view')
+  let dayMain = document.getElementById("dayMain")
+let btn = document.getElementById("btn_2")
+mbl_view.classList.remove("hide-it")
+      btn.classList.add('hide-it')
+      dayMain.classList.add('hide-it')
+    }
+  </script>
 </html>
