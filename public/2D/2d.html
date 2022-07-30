@@ -1228,7 +1228,7 @@ window.addEventListener("scroll", function () {
                      right.classList.add("zero")
                      header.classList.add("sticky");
                      console.log("sticky");
-                    }else {
+                    }else if(window.pageYOffset < 50) {
                       header.classList.remove("sticky");
                       logo.classList.remove("zero")
 right.classList.remove("zero") 

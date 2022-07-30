@@ -802,7 +802,7 @@ svg[data-v-5f0b9ba1] {
 .first-div {
   position: relative;
   left: -400px;
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
   width: 18%;
   /* display: none; */
   margin: 0 !important;

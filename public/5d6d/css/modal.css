@@ -70,3 +70,11 @@
 .modal_flow {
   overflow-y: auto !important;
 }
+@media (max-width: 600px) {
+  .mbl-move {
+    margin-left: -10px;
+  }
+  .move-top {
+    margin-top: 8px;
+  }
+}
