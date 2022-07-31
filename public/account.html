@@ -16,6 +16,7 @@
       href="https://www.lottofy.com/en/panel/" />
     <link rel="alternate" hreflang="es" href="https://www.lottofy.com/panel/" />
     <link rel="stylesheet" href="./css/custom.css" />
+
     <link
       rel="alternate"
       hreflang="fr"
@@ -117,7 +118,7 @@
     <link
       rel="stylesheet"
       media="screen"
-      href="./css/header.css"
+      href="./css/headers_index.css"
       type="text/css" />
     <script>
       class core_queueLoader {
@@ -563,17 +564,13 @@
       }
     </script>
     <script>
-      setDefaultCookies();</script
-    ><script
+      setDefaultCookies();</script><script
       src="https://apis.google.com/js/platform.js"
       defer=""
       async=""
-      gapi_processed="true"
-    ></script
-    ><script
+      gapi_processed="true"></script><script
       src="https://www.googletagmanager.com/gtag/js?id=G-T3T1BRH6GJ"
-      async=""
-    ></script>
+      async=""></script>
     <style>
       @keyframes sk-stretchdelay {
         0%,
@@ -589,24 +586,16 @@
     <script
       src="https://www.lottofy.com/js/lottofy7main.js?update=202002061248"
       defer=""
-      data-injected-script=""
-    ></script
-    ><script
+      data-injected-script=""></script><script
       src="https://www.lottofy.com/js/foundation.min.js"
       defer=""
-      data-injected-script=""
-    ></script
-    ><script
+      data-injected-script=""></script><script
       src="https://www.lottofy.com/js/lottofy7common.js?update=202002061248"
       defer=""
-      data-injected-script=""
-    ></script
-    ><script
+      data-injected-script=""></script><script
       src="https://www.lottofy.com/js/lottofy7postLoad.js?update=202002061248"
       defer=""
-      data-injected-script=""
-    ></script
-    ><meta class="foundation-mq" /><style type="text/css">
+      data-injected-script=""></script><meta class="foundation-mq" /><style type="text/css">
       button.btn[data-v-5f0b9ba1] {
         display: inline-block;
         font-weight: 300;
@@ -944,9 +933,7 @@
       }
       .hide[data-v-5f0b9ba1] {
         display: none;
-      }</style
-    ><script src="https://www.lottofy.com/js/lottofy7sly.js?update=202002061248"></script
-  ></head>
+      }</style><script src="https://www.lottofy.com/js/lottofy7sly.js?update=202002061248"></script></head>
   <body class="" data-logged="18622" data-isloaded="">
     <span data-watchdog="" class="show-for-small-only"></span
     ><span data-watchdog="" class="show-for-medium-only"></span
@@ -968,13 +955,11 @@
                 ></button
               ></li
             >
-            <li data-logo=""
+            <li id="remove-up" data-logo=""
               ><a
-                href="/en/"
-                class="logo"
-                title="Lottofy"
-                aria-label="Go to the main page"
-                ><i></i></a
+                href="./index.html"
+                class="logo log"  
+                ><img src="./assets/logo/GalaxyLotto_Logo.png" alt=""></a
             ></li>
             <li data-inlinegamesmenucontainer="">
               <ul
@@ -1001,11 +986,11 @@
             </li>
           </ul>
         </div>
-        <div class="float-right">
-          <ul class="core_inline-list">
+      <div class="float-right">
+          <ul class="core_inline-list top-maa">
            <li data-userdetail=""
               ><a
-                href="#"
+                href="./account.html"
                 data-hover=""
                 data-coretoggle="menu-user"
                 data-alignment="left"
@@ -1026,6 +1011,21 @@
         <div class="tabs-content" data-tabs-content="gamingTabs">
           <div class="tabs-panel is-active" id="gamblingModePanel1">
             <div class="top-subMenu show-for-medium is-overflown">
+                <div class="main-ban">
+                <div id="left-logo" class="first-div">
+                    <ul style="list-style: none; margin-left: 0!important;">
+                      <li style="display: inline"
+                        ><a
+                          href="./index.html"
+                          class="logo"
+                          title="Lottofy"
+                          aria-label="Go to the main page"
+                          ><img
+                            src="./assets/logo/GalaxyLotto_Logo.png"
+                          
+                            alt="" /></a
+                      ></li> </ul
+                  ></div> 
              <ul
                 class="core_inline-list small-text-left medium-text-center core_styleTop"
                 data-menu-games=""
@@ -1108,7 +1108,30 @@
                     ><img  class="nav-ico-5" src="./assets/pmp-3-3d.png"/></a></li
                 >
               </ul>
+                
+              <div id="menu-right"  class="float-right balance2 ">
+             <ul class="core_inline-list">
+              <li data-userdetail=""
+                 ><a
+                   href="./account.html"
+                   data-hover=""
+                   data-coretoggle="menu-user"
+                   data-alignment="left"
+                   ><img
+                     src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
+                     class="avatar"
+                     alt="My account"
+                   /><span> My account</span></a
+                 ></li
+               ><li data-vcdetail=""
+                 ><a href="./balance.html"
+                   ><span>Balance: </span><strong>0,00€</strong></a
+                 ></li
+               >
+             </ul>
+           </div>
             </div>
+          </div>
           </div>
         </div>
       </nav>
@@ -3761,5 +3784,55 @@
         role="dialog"
         data-close-on-click="false"
         style="display: none; z-index: 1000"
-      ></div></div></body
+      ></div></div>
+      <script>
+        window.addEventListener("scroll", function () {
+ 
+  let right = this.document.querySelector("#menu-right");
+  let logo = this.document.querySelector("#remove-up");
+ 
+  if (window.pageYOffset > 80) {
+ 
+      right.classList.add("zero")
+      logo.classList.add("hide-it")
+    console.log("sticky");
+  } else if (window.pageYOffset < 20) {
+     
+    right.classList.remove("zero");
+    logo.classList.remove("hide-it");
+    console.log("nonsticky");
+  }
+});
+
+      </script>
+<!-- 
+      <script>
+    window.addEventListener("scroll", function () {
+            let header = this.document.querySelector("#menu-right");
+            let bar = this.document.querySelector("#nav_Bar");
+            let strip = this.document.querySelector("#strip");
+            let bod = document.querySelector('#accordion_body')
+            let stick = this.document.querySelector("#sec_bar");
+            // bar.classList.toggle('removeBar', window.scrollY >0)
+            header.classList.remove("hide-it", window.scrollY > 0);
+            stick.classList.toggle("stic", window.scrollY > 0);
+            bod.classList.toggle('main-bod', window.scrollY>0)
+            strip.classList.toggle('strip-2-mar', window.scrollY>0)
+
+        });
+    window.addEventListener("scroll", function () {
+            let header = this.document.querySelector("#strip2");
+            let bar = this.document.querySelector("#nav_Bar");
+            let strip = this.document.querySelector("#strip");
+            let bod = document.querySelector('#accordion_body')
+            let stick = this.document.querySelector("#sec_bar");
+            // bar.classList.toggle('removeBar', window.scrollY >0)
+            header.classList.toggle("sticky", window.scrollY > 0);
+            stick.classList.toggle("stic", window.scrollY > 0);
+            bod.classList.toggle('main-bod', window.scrollY>0)
+            strip.classList.toggle('strip-2-mar', window.scrollY>0)
+
+        });
+</script> -->
+      </body
 ></html>

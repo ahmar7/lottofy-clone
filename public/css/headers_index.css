@@ -27768,3 +27768,20 @@ ul[data-latest-news] [data-ln-subTitle] {
 .banderola.orange {
   background-color: #ff4900;
 }
+.log img {
+  margin-top: 0px;
+  height: 60px !important;
+  width: 130px !important;
+}
+/* @media (max-width: 450px) {
+  .log img {
+    margin-top: 0px;
+    height: 53px !important;
+    width: 85px !important;
+  }
+} */
+@media (max-width: 600px) {
+  .log img {
+    display: none;
+  }
+}

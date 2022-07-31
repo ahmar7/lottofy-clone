@@ -1133,13 +1133,11 @@
                 ></button
               ></li
             >
-            <li data-logo=""
+            <li id="remove-up" data-logo=""
               ><a
-                href="/en/"
-                class="logo"
-                title="Lottofy"
-                aria-label="Go to the main page"
-                ><i></i></a
+                href="./index.html"
+                class="logo log"  
+                ><img src="./assets/logo/GalaxyLotto_Logo.png" alt=""></a
             ></li>
             <li data-inlinegamesmenucontainer="">
               <ul
@@ -3283,7 +3281,23 @@
         data-reveal=""
         data-reveal-source="callme"
         id="callme"
-      ></div></div></body
+      ></div></div><script>    window.addEventListener("scroll", function () {
+ 
+  let right = this.document.querySelector("#menu-right");
+  let logo = this.document.querySelector("#remove-up");
+ 
+  if (window.pageYOffset > 80) {
+ 
+      right.classList.add("zero")
+      logo.classList.add("hide-it")
+    console.log("sticky");
+  } else if (window.pageYOffset < 20) {
+     
+    right.classList.remove("zero");
+    logo.classList.remove("hide-it");
+    console.log("nonsticky");
+  }
+});</script></body
   ><grammarly-desktop-integration
     data-grammarly-shadow-root="true"
   ></grammarly-desktop-integration
