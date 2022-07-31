@@ -111,7 +111,7 @@
 }
 .first-div {
   position: relative;
-  left: -400px;
+  left: -1200px;
   transition: all 0.5s ease;
   width: 220px;
   /* display: none; */
@@ -121,7 +121,7 @@
 .balance2 {
   /* display: none; */
   position: relative;
-  right: -400px;
+  right: -1200px;
 }
 .balance2 li {
   margin-top: 10px !important;
@@ -246,4 +246,94 @@ body.setFixed .top-subMenu {
   .top-maa {
     margin-top: 2px !important;
   }
+}
+.index-ul {
+  display: flex;
+  flex-direction: row;
+}
+.top-m {
+  margin-top: 8px !important;
+}
+
+.right-join [data-userMenuLogin] a,
+.right-join [data-userMenuJoin] a {
+  position: relative;
+  display: inline-block;
+  padding: 0.33333rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: default;
+  border: 1px solid rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+  color: rgb(0, 0, 0) !important;
+  margin: 2px;
+  border-radius: 5px;
+  border-radius: 3px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+.right-join [data-userMenuLogin] a.active,
+.right-join [data-userMenuJoin] a.active {
+  background-color: rgb(0, 0, 0) !important;
+  color: #ffffff !important;
+}
+
+.right-join [data-userMenuLogin] a.active *,
+.right-join [data-userMenuJoin] a.active * {
+  color: #323537 !important;
+}
+
+.right-join [data-userMenuLogin] a:hover:not(.label),
+.right-join [data-userMenuJoin] a:hover:not(.label) {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  background-color: #fff !important;
+  color: #323537 !important;
+}
+
+.right-join [data-userMenuLogin] a:hover:not(.label) *,
+.right-join [data-userMenuJoin] a:hover:not(.label) * {
+  color: #323537 !important;
+}
+
+.right-join [data-userMenuLogin] a.radius,
+.right-join [data-userMenuJoin] a.radius {
+  border-radius: 5px;
+}
+
+.right-join [data-userMenuLogin] a.round,
+.right-join [data-userMenuJoin] a.round {
+  border-radius: 100px;
+}
+
+.right-join [data-userMenuLogin] a.label,
+.right-join [data-userMenuJoin] a.label {
+  color: #fff !important;
+}
+
+.right-join [data-userMenuLogin] a.a.label:hover,
+.right-join [data-userMenuJoin] a.a.label:hover {
+  color: #323537 !important;
+}
+.right-join [data-userMenuLogin] button,
+.right-join [data-userMenuJoin] button {
+  display: inline-block;
+  padding: 0.33333rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: default;
+  border-radius: 5px;
+  border-radius: 3px;
+  background-color: black !important;
+  color: white !important;
+  font-size: 0.85rem;
+}
+
+.right-join {
+  margin-top: 11px !important;
 }

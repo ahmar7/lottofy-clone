@@ -12467,7 +12467,7 @@ hr.whiteTrans3 {
 }
 @media (max-width: 639px) {
   .top-menu [data-userMenuLogin] button {
-    margin-top: 12px !important;
+    margin-top: 3px !important;
   }
 }
 .top-menu [data-userMenuLogin] button:before,
@@ -12485,9 +12485,9 @@ hr.whiteTrans3 {
   line-height: 1;
   white-space: nowrap;
   cursor: default;
-  border: 1px solid rgba(255, 255, 255, 0.5) !important;
-  background-color: rgba(0, 0, 0, 0) !important;
-  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
   margin: 2px;
   border-radius: 5px;
   border-radius: 3px;
@@ -12498,25 +12498,25 @@ hr.whiteTrans3 {
 
 .top-menu [data-userMenuLogin] a.active,
 .top-menu [data-userMenuJoin] a.active {
-  background-color: #fff !important;
-  color: #323537 !important;
+  background-color: #fff;
+  color: #323537;
 }
 
 .top-menu [data-userMenuLogin] a.active *,
 .top-menu [data-userMenuJoin] a.active * {
-  color: #323537 !important;
+  color: #323537;
 }
 
 .top-menu [data-userMenuLogin] a:hover:not(.label),
 .top-menu [data-userMenuJoin] a:hover:not(.label) {
   transition: background-color 0.5s ease, color 0.5s ease;
-  background-color: #fff !important;
-  color: #323537 !important;
+  background-color: #fff;
+  color: #323537;
 }
 
 .top-menu [data-userMenuLogin] a:hover:not(.label) *,
 .top-menu [data-userMenuJoin] a:hover:not(.label) * {
-  color: #323537 !important;
+  color: #323537;
 }
 
 .top-menu [data-userMenuLogin] a.radius,
@@ -12531,12 +12531,12 @@ hr.whiteTrans3 {
 
 .top-menu [data-userMenuLogin] a.label,
 .top-menu [data-userMenuJoin] a.label {
-  color: #fff !important;
+  color: #fff;
 }
 
 .top-menu [data-userMenuLogin] a.a.label:hover,
 .top-menu [data-userMenuJoin] a.a.label:hover {
-  color: #323537 !important;
+  color: #323537;
 }
 
 .top-menu [data-mobileMenu] {

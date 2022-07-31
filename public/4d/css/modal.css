@@ -326,7 +326,7 @@
 }
 .first-div {
   position: relative;
-  left: -400px;
+    left: -1200px;
   transition: all 0.5s ease;
   width: 220px;
   /* display: none; */
@@ -336,7 +336,7 @@
 .balance2 {
   /* display: none; */
   position: relative;
-  right: -400px;
+   right: -1200px;
 }
 .balance2 li {
   margin-top: 10px !important;
@@ -346,4 +346,12 @@
 .zero {
   left: 0;
   display: inline !important;
+}
+.float-right .core_inline-list {
+  margin-top: 8px !important;
+}
+@media (max-width: 600px) {
+  .float-right .core_inline-list {
+    margin-top: 0 !important;
+  }
 }
