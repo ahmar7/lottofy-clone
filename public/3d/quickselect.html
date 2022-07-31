@@ -4,6 +4,7 @@
 <title></title>
 <link rel="stylesheet" href="../css/headers_index.css">
     <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="./css/headersticky.css">
 <script src="./js/jquery.js"></script>
 <script src="./js/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
@@ -96,131 +97,179 @@
           </ul>
         </div>
         <div class="clearfix"></div>
-        <div class="tabs-content" data-tabs-content="gamingTabs">
-          <div class="tabs-panel is-active" id="gamblingModePanel1">
-            <div class="top-subMenu show-for-medium is-overflown">
-             <ul
-                  class="core_inline-list small-text-left medium-text-center core_styleTop"
-                  data-menu-games=""
-                >
-                  <li
-                    data-nomenu=""
-                    data-gametype="superloto"
-                    style="top: 0px; visibility: visible"
-                    ><a
-                      href="../2D/2d.html"
-                      data-coretoggle="menu-gamesMode"
-                      data-hover=""
-                      data-alignment="left"
+       <div class="tabs-content" data-tabs-content="gamingTabs">
+            <div class="tabs-panel is-active" id="gamblingModePanel1">
+              <div id="strip2" class="top-subMenu show-for-medium is-overflown">
+                <div class="main-ban">
+                  <div id="left-logo" class="first-div">
+                    <ul style="list-style: none; margin-left: 0!important;">
+                      <li style="display: inline"
+                        ><a
+                          href="../index.html"
+                          class="logo"
+                          title="Lottofy"
+                          aria-label="Go to the main page"
+                          ><img
+                            src="../assets/logo/GalaxyLotto_Logo.png"
+                          
+                            alt="" /></a
+                      ></li> </ul
+                  ></div>
+                  <div>
+                    <ul 
+                      class=" core_inline-list1 core_inline-list small-text-left medium-text-center core_styleTop"
+                      data-menu-games=""
                     >
-                      <img
-                        class="nav-ico dl"
-                        src="../assets/2dlogonew.png"
-                      /> </a></li
-                  ><li
-                    style="animation-delay: 0s; visibility: visible; top: 0px"
-                    data-gametype="euromillones"
-                    ><a
-                      href="#"
-                      data-coretoggle="menu-gamesMode"
-                      data-hover=""
-                      data-alignment="left"
-                      ><img
-                        class="nav-ico dl"
-                        src="../assets/3dlogonew.png" /></a></li
-                  ><li
-                    style="
-                      animation-delay: 0.03s;
-                      visibility: visible;
-                      top: 0px;
-                    "
-                    data-gametype="powerball"
-                    ><a
-                      href="../4d/4d.html"
-                      data-coretoggle="menu-gamesMode"
-                      data-hover=""
-                      data-alignment="left"
-                      ><img
-                        class="nav-ico-3"
-                        src="../assets/magnum-icon.png" /></a></li
-                  ><li
-                    style="
-                      animation-delay: 0.06s;
-                      visibility: visible;
-                      top: 0px;
-                    "
-                    data-gametype="megamillions"
-                    ><a
-                      href="../4d/4d.html"
-                      data-coretoggle="menu-gamesMode"
-                      data-hover=""
-                      data-alignment="left"
-                      ><img
-                        class="nav-ico-4"
-                        src="../assets/damacai.jpg" /></a></li
-                  ><li
-                    style="
-                      animation-delay: 0.09s;
-                      visibility: visible;
-                      top: 0px;
-                    "
-                    data-gametype="superenalotto"
-                    ><a
-                      href="../4d/4d.html"
-                      data-coretoggle="menu-gamesMode"
-                      data-hover=""
-                      data-alignment="left"
-                      ><img
-                        class="nav-ico-"
-                        src="../assets/toto4d.png" /></a></li
-                  ><li
-                    style="
-                      animation-delay: 0.12s;
-                      visibility: visible;
-                      top: 0px;
-                    "
-                    data-gametype="primitiva"
-                    ><a
-                      href="../5d6d/5d6d.html"
-                      data-coretoggle="menu-gamesMode"
-                      data-hover=""
-                      data-alignment="left"
-                      ><img
-                        class="nav-ico-"
-                        src="../assets/toto-5d-2.png" /></a></li
-                  ><li
-                    style="
-                      animation-delay: 0.15s;
-                      visibility: visible;
-                      top: 0px;
-                    "
-                    data-gametype="lotto6aus49"
-                    ><a
-                      href="../5d6d/5d6d.html"
-                      data-coretoggle="menu-gamesMode"
-                      data-hover=""
-                      data-alignment="left"
-                      ><img
-                        class="nav-ico-"
-                        src="../assets/toto-6d.png" /></a></li
-                  ><li
-                    style="
-                      animation-delay: 0.18s;
-                      visibility: visible;
-                      top: 0px;
-                    "
-                    data-gametype="eurojackpot"
-                    ><a
-                      href="../5d6d/5d6d.html"
-                      data-coretoggle="menu-gamesMode"
-                      data-hover=""
-                      data-alignment="left"
-                      ><img class="nav-ico-5" src="../assets/pmp-3-3d.png" /></a
-                  ></li>
-                </ul>
+                      <li
+                        data-nomenu=""
+                        data-gametype="superloto"
+                        style="top: 0px; visibility: visible"
+                        ><a
+                          href="../2D/2d.html"
+                          data-coretoggle="menu-gamesMode"
+                          data-hover=""
+                          data-alignment="left"
+                        >
+                          <img
+                            class="nav-ico dl"
+                            src="../assets/2dlogonew.png"
+                          /> </a></li
+                      ><li
+                        style="
+                          animation-delay: 0s;
+                          visibility: visible;
+                          top: 0px;
+                        "
+                        data-gametype="euromillones"
+                        ><a
+                          href="#"
+                          data-coretoggle="menu-gamesMode"
+                          data-hover=""
+                          data-alignment="left"
+                          ><img
+                            class="nav-ico dl"
+                            src="../assets/3dlogonew.png" /></a></li
+                      ><li
+                        style="
+                          animation-delay: 0.03s;
+                          visibility: visible;
+                          top: 0px;
+                        "
+                        data-gametype="powerball"
+                        ><a
+                          href="../4d/4d.html"
+                          data-coretoggle="menu-gamesMode"
+                          data-hover=""
+                          data-alignment="left"
+                          ><img
+                            class="nav-ico-3"
+                            src="../assets/magnum-icon.png" /></a></li
+                      ><li
+                        style="
+                          animation-delay: 0.06s;
+                          visibility: visible;
+                          top: 0px;
+                        "
+                        data-gametype="megamillions"
+                        ><a
+                          href="../4d/4d.html"
+                          data-coretoggle="menu-gamesMode"
+                          data-hover=""
+                          data-alignment="left"
+                          ><img
+                            class="nav-ico-4"
+                            src="../assets/damacai.jpg" /></a></li
+                      ><li
+                        style="
+                          animation-delay: 0.09s;
+                          visibility: visible;
+                          top: 0px;
+                        "
+                        data-gametype="superenalotto"
+                        ><a
+                          href="../4d/4d.html"
+                          data-coretoggle="menu-gamesMode"
+                          data-hover=""
+                          data-alignment="left"
+                          ><img
+                            class="nav-ico-"
+                            src="../assets/toto4d.png" /></a></li
+                      ><li
+                        style="
+                          animation-delay: 0.12s;
+                          visibility: visible;
+                          top: 0px;
+                        "
+                        data-gametype="primitiva"
+                        ><a
+                          href="../5d6d/5d6d.html"
+                          data-coretoggle="menu-gamesMode"
+                          data-hover=""
+                          data-alignment="left"
+                          ><img
+                            class="nav-ico-"
+                            src="../assets/toto-5d-2.png" /></a></li
+                      ><li
+                        style="
+                          animation-delay: 0.15s;
+                          visibility: visible;
+                          top: 0px;
+                        "
+                        data-gametype="lotto6aus49"
+                        ><a
+                          href="../5d6d/5d6d.html"
+                          data-coretoggle="menu-gamesMode"
+                          data-hover=""
+                          data-alignment="left"
+                          ><img
+                            class="nav-ico-"
+                            src="../assets/toto-6d.png" /></a></li
+                      ><li
+                        style="
+                          animation-delay: 0.18s;
+                          visibility: visible;
+                          top: 0px;
+                        "
+                        data-gametype="eurojackpot"
+                        ><a
+                          href="../5d6d/5d6d.html"
+                          data-coretoggle="menu-gamesMode"
+                          data-hover=""
+                          data-alignment="left"
+                          ><img
+                            class="nav-ico-5"
+                            src="../assets/pmp-3-3d.png" /></a
+                      ></li> </ul
+                  ></div>
+                  <div>
+                    <ul
+                      id="right-item"
+                      style="list-style: none"
+                      class="core_inline-list1 core_inline-list balance2"
+                    >
+                      <li data-userdetail=""
+                        ><a  class="right-ac"
+                          href="../account.html"
+                          data-hover=""
+                          data-coretoggle="menu-user"
+                          data-alignment="left"
+                          ><img
+                            src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
+                            class="avatar scol"
+                            alt="My account"
+                          /><span> My account</span></a
+                        ></li
+                      ><li data-vcdetail=""
+                        ><a class="right-ac" href="../balance.html"
+                          ><span>Balance: </span><strong>0,00€</strong></a
+                        ></li
+                      >
+                    </ul></div
+                  >
+                </div>
+              </div>
             </div>
           </div>
-        </div>
       </nav>
        
    
@@ -1235,6 +1284,7 @@ Number 100
 </script>
 </div><div id="scrnli_recorder_root"></div>
 
+<script src="./js/headersticky.js"></script>
 
 <script>
     function numberWithCommas(x) {

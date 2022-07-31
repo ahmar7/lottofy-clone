@@ -4992,3 +4992,9 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
 .modal_flow {
   overflow: auto !important;
 }
+.sticky-top {
+  position: -webkit-sticky;
+  /* position: sticky; */
+  top: 0;
+  z-index: 0 !important;
+}
