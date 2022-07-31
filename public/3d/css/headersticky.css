@@ -1,0 +1,99 @@
+.first-div img {
+  margin-top: -2px;
+  height: 70px;
+  width: 130px;
+}
+
+.scol {
+  min-width: 30px !important;
+  max-width: 30px !important;
+}
+.right-ac {
+  font-size: 0.7rem !important;
+  text-shadow: none !important;
+}
+.core_inline-list1 {
+  margin-left: 10px !important;
+}
+
+.main-bg {
+  display: flex;
+  justify-content: space-between;
+}
+.playgam .row {
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+.playgam .row::after,
+.playgam .row::before {
+  display: none !important;
+}
+.playgam .clearfix::after,
+.playgam .clearfix::before {
+  display: none !important;
+}
+.alignRight {
+  display: flex !important;
+  align-items: center;
+  margin-right: 20px;
+}
+.result-ico i {
+  color: white !important;
+  font-size: 20px;
+}
+.result-ico div {
+  color: white !important;
+  font-size: 20px;
+}
+@media (max-width: 640px) {
+  .result-ico i {
+    font-size: 14px;
+  }
+  .result-ico div {
+    font-size: 14px;
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease;
+  z-index: 999999;
+}
+@media (max-width: 640px) {
+  .sticky2 {
+    position: fixed;
+    top: 0;
+    transition: all 0.3s ease;
+    z-index: 999999;
+  }
+}
+.main-ban {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  text-align: center;
+  justify-content: center;
+}
+.first-div {
+  position: relative;
+  left: -400px;
+  transition: all 0.5s ease;
+  width: 220px;
+  /* display: none; */
+  margin: 0 !important;
+  text-align: left;
+}
+.balance2 {
+  /* display: none; */
+  position: relative;
+  right: -400px;
+}
+.balance2 li {
+  margin-top: 10px !important;
+  display: inline;
+}
+
+.zero {
+  left: 0;
+  display: inline !important;
+}

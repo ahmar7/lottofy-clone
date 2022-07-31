@@ -156,7 +156,7 @@ UL.core_inline-list > LI {
 }
 
 UL.core_inline-list {
-  margin-left: 0 !important;
+  margin-left: 0;
 }
 
 UL.core_inlineBlock.inline-list > li > * {
