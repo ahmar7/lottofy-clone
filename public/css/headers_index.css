@@ -27773,6 +27773,11 @@ ul[data-latest-news] [data-ln-subTitle] {
   height: 60px !important;
   width: 130px !important;
 }
+.logb img {
+  margin-top: 0px;
+  height: 60px !important;
+  width: 130px !important;
+}
 /* @media (max-width: 450px) {
   .log img {
     margin-top: 0px;

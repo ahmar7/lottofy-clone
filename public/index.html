@@ -995,21 +995,25 @@
           </ul>
         </div>
         <div class="clearfix"></div>
-        <div class="tabs-content" data-tabs-content="gamingTabs">
+          <div class="tabs-content" data-tabs-content="gamingTabs">
           <div class="tabs-panel is-active" id="gamblingModePanel1">
-            <div class=" show-for-medium is-overflown">
-              <!-- Custom area -->
-              <!-- <div class="main-beticons">
-                <div ><img class="bet-icon" src="./assets/2dlogonew.png" alt=""></div>
-                <div ><img class="bet-icon" src="./assets/3dlogonew.png" alt=""></div>
-                <div ><img class="bet-icon" src="./assets/magnum-icon2.png" alt=""></div>
-                <div ><img class="bet-icon" src="./assets/Toto_Sports-logo-3F6FCA1194-seeklogo.com.png" alt=""></div>
-                <div ><img class="bet-icon" src="./assets/toto-5d-2.png" alt=""></div>
-                <div ><img class="bet-icon" src="./assets/toto-6d.png" alt=""></div>
-                <div ><img class="bet-icon" src="./assets/pmp-3-3d.png" alt=""></div>
-              </div> -->
-              <!-- Custom area -->
-              <ul
+            <div class="top-subMenu show-for-medium is-overflown">
+                <div class="main-ban">
+                <div id="left-logo" class="first-div">
+                    <ul style="list-style: none; margin-left: 0!important;">
+                      <li style="display: inline"
+                        ><a
+                          href="./index.html"
+                          class="logo"
+                          title="Lottofy"
+                          aria-label="Go to the main page"
+                          ><img
+                            src="./assets/logo/GalaxyLotto_Logo.png"
+                          
+                            alt="" /></a
+                      ></li> </ul
+                  ></div> 
+             <ul
                 class="core_inline-list small-text-left medium-text-center core_styleTop"
                 data-menu-games=""
               >
@@ -1091,7 +1095,30 @@
                     ><img  class="nav-ico-5" src="./assets/pmp-3-3d.png"/></a></li
                 >
               </ul>
+                
+              <div id="menu-right"  class="float-right balance2 ">
+             <ul class="core_inline-list">
+              <li data-userdetail=""
+                 ><a
+                   href="./account.html"
+                   data-hover=""
+                   data-coretoggle="menu-user"
+                   data-alignment="left"
+                   ><img
+                     src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
+                     class="avatar"
+                     alt="My account"
+                   /><span> My account</span></a
+                 ></li
+               ><li data-vcdetail=""
+                 ><a href="./balance.html"
+                   ><span>Balance: </span><strong>0,00€</strong></a
+                 ></li
+               >
+             </ul>
+           </div>
             </div>
+          </div>
           </div>
         </div>
       </nav>
@@ -2798,7 +2825,11 @@
           <div class="row core_vAlign-for-medium core_spaceT">
             <div class="column medium-9 core_spaceB" id="footerLegal">
               <p class="text-center medium-text-left"
-                ><i class="icon-brands-lottofy"></i>
+                ><a
+                href="./index.html"
+                class="logo logb"  
+                ><img src="./assets/logo/GalaxyLotto_Logo.png" alt=""></a
+            > 
                 <strong
                   >©
                   <a href="https://www.clobet.com" target="_blank"
@@ -3371,6 +3402,23 @@
       }
     
     </script>
+    <script>    window.addEventListener("scroll", function () {
+ 
+  let right = this.document.querySelector("#menu-right");
+  let logo = this.document.querySelector("#remove-up");
+ 
+  if (window.pageYOffset > 80) {
+ 
+      right.classList.add("zero")
+      logo.classList.add("hide-it")
+    console.log("sticky");
+  } else if (window.pageYOffset < 20) {
+     
+    right.classList.remove("zero");
+    logo.classList.remove("hide-it");
+    console.log("nonsticky");
+  }
+});</script>
     <script src="./js/custom.js"></script>
     <div class="reveal-overlay"
       ><div
