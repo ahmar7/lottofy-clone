@@ -801,7 +801,7 @@ svg[data-v-5f0b9ba1] {
 }
 .first-div {
   position: relative;
-  left: -1200px;
+  left: -2000px;
   transition: all 0.3s ease;
   width: 220px;
   /* display: none; */
@@ -811,7 +811,7 @@ svg[data-v-5f0b9ba1] {
 .balance2 {
   /* display: none; */
   position: relative;
-  right: -1200px;
+  right: -2000px;
 }
 .balance2 li {
   margin-top: 10px !important;
