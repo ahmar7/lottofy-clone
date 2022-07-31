@@ -14,7 +14,7 @@
 }
 
 .core_styleBlock {
-  display: block !important;
+  display: flex !important;
 }
 
 .core_thin {

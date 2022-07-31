@@ -3863,7 +3863,7 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
 }
 .first-div {
   position: relative;
-  left: -2000px;
+  left: -4000px;
   transition: all 0.5s ease;
   width: 220px;
   /* display: none; */
@@ -3873,7 +3873,7 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
 .balance2 {
   /* display: none; */
   position: relative;
-  right: -2000px;
+  right: -4000px;
 }
 .balance2 li {
   margin-top: 10px !important;

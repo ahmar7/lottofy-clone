@@ -111,7 +111,7 @@
 }
 .first-div {
   position: relative;
-  left: -2000px;
+  left: -4000px;
   transition: all 0.5s ease;
   width: 220px;
   /* display: none; */
@@ -121,7 +121,7 @@
 .balance2 {
   /* display: none; */
   position: relative;
-  right: -2000px;
+  right: -4000px;
 }
 .balance2 li {
   margin-top: 10px !important;
@@ -210,7 +210,7 @@
 }
 .first-div {
   position: relative;
-  left: -400px;
+  left: -4000px;
   transition: all 0.5s ease;
   width: 220px;
   /* display: none; */
@@ -220,7 +220,7 @@
 .balance2 {
   /* display: none; */
   position: relative;
-  right: -400px;
+  right: -4000px;
 }
 .balance2 li {
   margin-top: 10px !important;
