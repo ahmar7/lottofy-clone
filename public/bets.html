@@ -4,23 +4,13 @@
   class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"
   ><head>
     <title>Configuration Lottofy</title>
-    
-    <link rel="stylesheet" href="./css/headers_panel.css">
+     
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="apple-itunes-app" content="app-id=1541621788" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <link rel="canonical" href="/en/settings/" />
-    <link rel="alternate" hreflang="en" href="/en/settings/" />
-    <link rel="alternate" hreflang="es" href="/config/" />
-    <link rel="alternate" hreflang="fr" href="/fr/config/" />
-    <link rel="alternate" hreflang="pt" href="/pt/config/" />
-    <link rel="alternate" hreflang="pt-br" href="/br/config/" />
-    <link rel="alternate" hreflang="de" href="/de/config/" />
-    <link rel="alternate" hreflang="it" href="/it/config/" />
-    <link rel="alternate" hreflang="en-in" href="/in/settings/" />
-    <link rel="alternate" hreflang="x-default" href="/en/settings/" />
+    <link rel="stylesheet" href="./2D/css/style.css">
     <script>
       if (window.parent != window && window.frameElement != null) {
         if (window.parent.location.host == "www.lottofy.com") {
@@ -1727,951 +1717,279 @@
         <div id="superContainer">
           <div id="panel_tabs_holder">
             <div class="row">
-              <ul class="tabs mainTabs core_spaceBzero" id="panel_tabs">
-                <li class="tabs-title"
-                  ><a href="./account.html"
-                    ><span class="show-for-small-only">Account</span
-                    ><span class="show-for-medium"
-                      ><i class="icon-common-User-2"></i>
-                      <strong>My account</strong></span
-                    ></a
-                  ></li
-                >
-                <li class="tabs-title"
-                  ><a href="./bets.html"
-                    ><span class="show-for-small-only">Bets</span
-                    ><span class="show-for-medium"
-                      ><i class="icon-common-calendar2"></i>
-                      <strong>Bets</strong></span
-                    ></a
-                  ></li
-                >
-                <li class="tabs-title"
-                  ><a href="./balance.html"
-                    ><span class="show-for-small-only">Balance</span
-                    ><span class="show-for-medium"
-                      ><i class="icon-common-vcashpile"></i>
-                      <strong>Balance</strong></span
-                    ></a
-                  ></li
-                >
-                <li class="tabs-title is-active"
-                  ><a href="./settings.html" aria-selected="true"
-                    ><span class="show-for-small-only">Settings</span
-                    ><span class="show-for-medium"
-                      ><i class="icon-common-cogs"></i>
-                      <strong>Settings</strong></span
-                    ></a
-                  ></li
-                >
-              </ul>
-            </div>
+              <div class="body_main">
+         
+          <div class="bets-section">
+            <div class="list-display-text"> 2D </div>
+          <table id="table_listbet" class="table">
+            <thead>
+              <tr>
+                <th>Date/Time</th>
+                <th>Number</th>
+                <th>Amount</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody
+              >
+              <tr
+                ><td scope="col">20-06-2022 11:45PM</td><td scope="col" id="betNumber-1">18</td
+                ><td scope="col" id="betType-1">234 </td
+                ><td scope="col" class="flex-center-10" id="row_delete-1"
+                  ><i
+                    class="fas fa-pen tablerow-icon"
+                    onclick="rowEdit(1)"
+                    aria-hidden="true"
+                  ></i
+                  ><span class="fa-stack small" onclick="rowDelete(1)"
+                    ><i class="fa-solid fa-trash fa-stack-2x"></i
+                    ><i
+                      class="fa-solid fa-close fa-stack-1x fa-inverse"
+                    ></i></span></td></tr
+              >
+              <tr><td scope="col">22-06-2022 11:45PM</td><td scope="col" id="betNumber-2">04</td
+                ><td scope="col" id="betType-2">234 </td
+                ><td scope="col" class="flex-center-10" id="row_delete-2"
+                  ><i
+                    class="fas fa-pen tablerow-icon"
+                    onclick="rowEdit(2)"
+                    aria-hidden="true"
+                  ></i
+                  ><span class="fa-stack small" onclick="rowDelete(2)"
+                    ><i class="fa-solid fa-trash fa-stack-2x"></i
+                    ><i
+                      class="fa-solid fa-close fa-stack-1x fa-inverse"
+                    ></i></span></td></tr>
+              <tr><td scope="col">23-06-2022 11:45PM</td><td scope="col" id="betNumber-2">03</td
+                ><td scope="col" id="betType-2">234 </td
+                ><td scope="col" class="flex-center-10" id="row_delete-2"
+                  ><i
+                    class="fas fa-pen tablerow-icon"
+                    onclick="rowEdit(2)"
+                    aria-hidden="true"
+                  ></i
+                  ><span class="fa-stack small" onclick="rowDelete(2)"
+                    ><i class="fa-solid fa-trash fa-stack-2x"></i
+                    ><i
+                      class="fa-solid fa-close fa-stack-1x fa-inverse"
+                    ></i></span></td></tr>
+              <tr><td scope="col">25-06-2022 11:45PM</td><td scope="col" id="betNumber-2">06</td
+                ><td scope="col" id="betType-2">234 </td
+                ><td scope="col" class="flex-center-10" id="row_delete-2"
+                  ><i
+                    class="fas fa-pen tablerow-icon"
+                    onclick="rowEdit(2)"
+                    aria-hidden="true"
+                  ></i
+                  ><span class="fa-stack small" onclick="rowDelete(2)"
+                    ><i class="fa-solid fa-trash fa-stack-2x"></i
+                    ><i
+                      class="fa-solid fa-close fa-stack-1x fa-inverse"
+                    ></i></span></td></tr>
+               
+          </tbody>
+            <tfoot>
+              <tr>
+                <td style="text-align: center;">Total Amount</td>
+                <td style="text-align: center;" colspan="2"><span id="table-total-amount">468</span> </td>
+                
+              </tr>
+            </tfoot>
+          </table></div>
+          <div class="bets-section">
+            <div class="list-display-text"> 3D </div>
+          <table id="table_listbet" class="table">
+            <thead>
+              <tr>
+                <th>Date/Time</th>
+                <th>Number</th>
+                <th>Amount</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody
+              >
+              <tr
+                ><td scope="col">20-06-2022 11:45PM</td><td scope="col" id="betNumber-1">18</td
+                ><td scope="col" id="betType-1">234 </td
+                ><td scope="col" class="flex-center-10" id="row_delete-1"
+                  ><i
+                    class="fas fa-pen tablerow-icon"
+                    onclick="rowEdit(1)"
+                    aria-hidden="true"
+                  ></i
+                  ><span class="fa-stack small" onclick="rowDelete(1)"
+                    ><i class="fa-solid fa-trash fa-stack-2x"></i
+                    ><i
+                      class="fa-solid fa-close fa-stack-1x fa-inverse"
+                    ></i></span></td></tr
+              >
+              <tr><td scope="col">22-06-2022 11:45PM</td><td scope="col" id="betNumber-2">04</td
+                ><td scope="col" id="betType-2">234 </td
+                ><td scope="col" class="flex-center-10" id="row_delete-2"
+                  ><i
+                    class="fas fa-pen tablerow-icon"
+                    onclick="rowEdit(2)"
+                    aria-hidden="true"
+                  ></i
+                  ><span class="fa-stack small" onclick="rowDelete(2)"
+                    ><i class="fa-solid fa-trash fa-stack-2x"></i
+                    ><i
+                      class="fa-solid fa-close fa-stack-1x fa-inverse"
+                    ></i></span></td></tr>
+              <tr><td scope="col">23-06-2022 11:45PM</td><td scope="col" id="betNumber-2">03</td
+                ><td scope="col" id="betType-2">234 </td
+                ><td scope="col" class="flex-center-10" id="row_delete-2"
+                  ><i
+                    class="fas fa-pen tablerow-icon"
+                    onclick="rowEdit(2)"
+                    aria-hidden="true"
+                  ></i
+                  ><span class="fa-stack small" onclick="rowDelete(2)"
+                    ><i class="fa-solid fa-trash fa-stack-2x"></i
+                    ><i
+                      class="fa-solid fa-close fa-stack-1x fa-inverse"
+                    ></i></span></td></tr>
+              <tr><td scope="col">25-06-2022 11:45PM</td><td scope="col" id="betNumber-2">06</td
+                ><td scope="col" id="betType-2">234 </td
+                ><td scope="col" class="flex-center-10" id="row_delete-2"
+                  ><i
+                    class="fas fa-pen tablerow-icon"
+                    onclick="rowEdit(2)"
+                    aria-hidden="true"
+                  ></i
+                  ><span class="fa-stack small" onclick="rowDelete(2)"
+                    ><i class="fa-solid fa-trash fa-stack-2x"></i
+                    ><i
+                      class="fa-solid fa-close fa-stack-1x fa-inverse"
+                    ></i></span></td></tr>
+               
+          </tbody>
+            <tfoot>
+              <tr>
+                <td style="text-align: center;">Total Amount</td>
+                <td style="text-align: center;" colspan="2"><span id="table-total-amount">468</span> </td>
+                
+              </tr>
+            </tfoot>
+          </table></div>
+          <div class="bets-section">
+            <div class="list-display-text"> 4D </div>
+         <table id="table_listbet" class="table">
+          <thead>
+            <tr>
+              <th>Date/Time</th>
+              <th>DrawDate</th>
+              <th>B/S/SA/A/ABC</th>
+              <th>Number</th>
+              <th>Class</th>
+              <th>Amount</th>
+              <th>Result</th>
+            
+            </tr>
+          </thead>
+           <tbody>
+            <tr><td scope="col">22-jan-2022 17:54:02</td><td scope="col" id="betNumber-1">26-Jun-2022</td><td scope="col" id="odds-1"> <span class="gameOdds">B</span></td>
+              <td scope="col" id="betType-1">020 </td>
+              <td scope="col" id="betType-1">M </td>
+              <td scope="col" id="betType-1">100 </td>
+              <td scope="col" id="betType-1"></td>
+             
+              </tr>
+            <tr><td scope="col">22-jan-2022 17:54:02</td><td scope="col" id="betNumber-1">26-Jun-2022</td><td scope="col" id="odds-1"> <span class="gameOdds">SA</span></td>
+              <td scope="col" id="betType-1">100 </td>
+              <td scope="col" id="betType-1">P </td>
+              <td scope="col" id="betType-1">100 </td>
+              <td scope="col" id="betType-1"></td>
+              
+              </tr>
+            <tr><td scope="col">22-jan-2022 17:54:02</td><td scope="col" id="betNumber-1">26-Jun-2022</td><td scope="col" id="odds-1"> <span class="gameOdds">ABC</span></td>
+              <td scope="col" id="betType-1">200 </td>
+              <td scope="col" id="betType-1">T </td>
+              <td scope="col" id="betType-1">100 </td>
+              <td scope="col" id="betType-1"></td>
+               
+              </tr>
+            <tr><td scope="col">22-jan-2022 17:54:02</td><td scope="col" id="betNumber-1">26-Jun-2022</td><td scope="col" id="odds-1"> <span class="gameOdds">A</span></td>
+              <td scope="col" id="betType-1">120 </td>
+              <td scope="col" id="betType-1">M </td>
+              <td scope="col" id="betType-1">100 </td>
+              <td scope="col" id="betType-1"></td>
+             
+              </tr>
+            
+            </tbody>
+          <tfoot>
+             <tr>
+                <td style="text-align: center;">Total Amount</td>
+                <td style="text-align: right;" colspan="5"><span id="table-total-amount">400</span> </td>
+                
+              </tr>
+          </tfoot>
+        </table></div>
+          <div class="bets-section">
+            <div class="list-display-text"> 5D/6D </div>
+         <table id="table_listbet" class="table">
+          <thead>
+            <tr>
+              <th>Date/Time</th>
+              <th>DrawDate</th>
+              <th>B/S/SA/A/ABC</th>
+              <th>Number</th>
+              <th>Class</th>
+              <th>Amount</th>
+              <th>Result</th>
+            
+            </tr>
+          </thead>
+           <tbody>
+            <tr><td scope="col">22-jan-2022 17:54:02</td><td scope="col" id="betNumber-1">26-Jun-2022</td><td scope="col" id="odds-1"> <span class="gameOdds">B</span></td>
+              <td scope="col" id="betType-1">020 </td>
+              <td scope="col" id="betType-1">M </td>
+              <td scope="col" id="betType-1">100 </td>
+              <td scope="col" id="betType-1"></td>
+             
+              </tr>
+            <tr><td scope="col">22-jan-2022 17:54:02</td><td scope="col" id="betNumber-1">26-Jun-2022</td><td scope="col" id="odds-1"> <span class="gameOdds">SA</span></td>
+              <td scope="col" id="betType-1">100 </td>
+              <td scope="col" id="betType-1">P </td>
+              <td scope="col" id="betType-1">100 </td>
+              <td scope="col" id="betType-1"></td>
+              
+              </tr>
+            <tr><td scope="col">22-jan-2022 17:54:02</td><td scope="col" id="betNumber-1">26-Jun-2022</td><td scope="col" id="odds-1"> <span class="gameOdds">ABC</span></td>
+              <td scope="col" id="betType-1">200 </td>
+              <td scope="col" id="betType-1">T </td>
+              <td scope="col" id="betType-1">100 </td>
+              <td scope="col" id="betType-1"></td>
+               
+              </tr>
+            <tr><td scope="col">22-jan-2022 17:54:02</td><td scope="col" id="betNumber-1">26-Jun-2022</td><td scope="col" id="odds-1"> <span class="gameOdds">A</span></td>
+              <td scope="col" id="betType-1">120 </td>
+              <td scope="col" id="betType-1">M </td>
+              <td scope="col" id="betType-1">100 </td>
+              <td scope="col" id="betType-1"></td>
+             
+              </tr>
+            
+            </tbody>
+          <tfoot>
+             <tr>
+                <td style="text-align: center;">Total Amount</td>
+                <td style="text-align: right;" colspan="5"><span id="table-total-amount">400</span> </td>
+                
+              </tr>
+          </tfoot>
+        </table></div>
+          <div
+            style="text-align: center; display: flex; justify-content: center"
+          >
           </div>
-          <div class="main-div row small-collapse medium-uncollapse">
-            <div class="small-12 columns">
-              <div class="row collapse">
-                <div id="myConfigOptions">
-                  <ul
-                    class="tabs flatTabs core_styleBlock"
-                    data-num-tabs="4"
-                    id="myConfigTabs"
-                    role="tablist"
-                  >
-                    <li class="tabs-title is-active" role="presentation"
-                      ><a href="./settings.html" aria-selected="true" role="tab"
-                        >Configuration</a
-                      ></li
-                    ><li class="tabs-title" role="presentation"
-                      ><a href="./notifications.html" role="tab"
-                        >Notifications</a
-                      ></li
-                    >
-                    <li class="tabs-title" role="presentation"
-                      ><a href="./documents.html" role="tab">Documents</a></li
-                    >
-                    <li class="tabs-title" role="presentation"
-                      ><a href="./control.html" role="tab">Self-control</a></li
-                    >
-                  </ul>
-                </div>
-                <div id="myConfig" class="core_spaceTHalf">
-                  <form
-                    id="configForm"
-                    data-abide=""
-                    novalidate=""
-                    data-e="v6uh5c-e"
-                  >
-                    <div class="row">
-                      <div class="column small-12 medium-6 large-4">
-                        <fieldset>
-                          <legend>Access data</legend>
-                          <label
-                            >ID/NIF/Passport
-                            <input
-                              name="idpassport"
-                              maxlength="30"
-                              type="text"
-                              value="900101881222"
-                              readonly="true"
-                              pattern="alpha_numeric"
-                            />
-                            <span class="form-error"
-                              >This field is required and may only contain
-                              letters and numbers</span
-                            >
-                          </label>
-                          <label
-                            >Email
-                            <input
-                              type="text"
-                              value="lotta2888@gmail.com"
-                              placeholder="mi@email.com"
-                              required=""
-                              name="email"
-                              data-config-form=""
-                            />
-                            <span class="form-error"
-                              >This field is required</span
-                            >
-                          </label>
-                          <label
-                            >Current password
-                            <small>(only if you want to change it)</small>
-                            <div class="input-group">
-                              <input
-                                type="password"
-                                maxlength="20"
-                                name="password"
-                                id="configPassword"
-                                data-config-form=""
-                              />
-                              <div class="input-group-button">
-                                <button
-                                  tabindex="-1"
-                                  type="button"
-                                  class="button icon-slim-eye"
-                                  onclick="if ( $('#configForm #configPassword').attr('type') === 'password') { $('#configForm #configPassword').attr('type','text') } else { $('#configForm #configPassword').attr('type','password') }"
-                                >
-                                </button
-                              ></div>
-                            </div>
-                            <span
-                              class="form-error"
-                              data-form-error-for="configPassword"
-                              >The password is incorrect</span
-                            >
-                          </label>
-                          <label
-                            >NEW password <small>(optional)</small>
-                            <div class="input-group">
-                              <input
-                                type="password"
-                                maxlength="20"
-                                name="newPassword"
-                                id="configNewPassword"
-                                data-config-form=""
-                              />
-                              <div class="input-group-button">
-                                <button
-                                  tabindex="-1"
-                                  type="button"
-                                  class="button icon-slim-eye"
-                                  onclick="if ( $('#configForm #configNewPassword').attr('type') === 'password') { $('#configForm #configNewPassword').attr('type','text') } else { $('#configForm #configNewPassword').attr('type','password') }"
-                                >
-                                </button
-                              ></div>
-                            </div>
-                            <span
-                              class="form-error"
-                              data-form-error-for="configNewPassword"
-                              >This field is required</span
-                            >
-                          </label>
-                        </fieldset>
-                        <fieldset>
-                          <legend><strong>PEP</strong> condition</legend>
-                          <p
-                            >You are a <strong>PEP</strong> (Politically Exposed
-                            Person) if you have been entrusted with prominent
-                            public functions, for example Heads of state or
-                            Heads of government, senior politicians, senior
-                            government, judicial or military officials, senior
-                            executives of state owned corporations, important
-                            political party officials, senior official of a
-                            major 'foreign' political party, etc.</p
-                          >
-                          <p
-                            >If you are a <strong>PEP</strong> or if your
-                            <strong>PEP</strong> changes overtime, you have to
-                            inform us in order to play at
-                            <strong>Lottofy</strong>.</p
-                          >
-                          <p
-                            >If you are not sure about your
-                            <strong>PEP</strong> condition, please contact us
-                            and we will help you.</p
-                          >
-                          <label
-                            >Are you a <strong>PEP</strong>?
-                            <select
-                              name="user_pep"
-                              id="user_pep"
-                              required=""
-                              data-config-form=""
-                            >
-                              <option value="0" selected=""
-                                >I’m not sure</option
-                              >
-                              <option value="2">No, I’m not a PEP</option>
-                              <option value="1">Yes, I’m a PEP</option>
-                            </select>
-                            <span class="form-error"
-                              >This field is required</span
-                            >
-                          </label>
-                        </fieldset>
-                      </div>
-                      <div
-                        class="column small-12 medium-6 large-4"
-                        data-gameplayoptions=""
-                      >
-                        <fieldset>
-                          <legend>Personal Information</legend>
-                          <label
-                            >Name
-                            <input
-                              type="text"
-                              value="Lotta"
-                              required=""
-                              name="nombre"
-                              pattern="[A-Za-z]{2,50}"
-                              data-config-form=""
-                            />
-                            <span class="form-error"
-                              >This field is required, only letters and
-                              spaces</span
-                            >
-                          </label>
-                          <label
-                            >Last Name
-                            <input
-                              type="text"
-                              value="Li"
-                              required=""
-                              name="apellidos"
-                              pattern="[A-Za-z]{2,80}"
-                              data-config-form=""
-                            />
-                            <span class="form-error"
-                              >This field is required, only letters and
-                              spaces</span
-                            >
-                          </label>
-                          <label
-                            >Address
-                            <input
-                              required=""
-                              type="text"
-                              value="1-88, Kita-ku, Osaka, Osaka"
-                              placeholder="Add address"
-                              name="direccion"
-                              data-config-form=""
-                          /></label>
-                          <label
-                            >Zip code
-                            <input
-                              required=""
-                              type="text"
-                              value="531-0076"
-                              placeholder="28080"
-                              maxlength="6"
-                              name="cod_postal"
-                              data-config-form=""
-                          /></label>
-                          <label
-                            >City
-                            <input
-                              required=""
-                              type="text"
-                              value="Osaka"
-                              placeholder="Add city"
-                              maxlength="30"
-                              name="ciudad"
-                              data-config-form=""
-                          /></label>
-                          <label
-                            >Province or state
-                            <input
-                              required=""
-                              type="text"
-                              value=""
-                              placeholder="Add province or state"
-                              maxlength="30"
-                              name="provincia"
-                              data-config-form=""
-                          /></label>
-                          <div class="row collapse">
-                            <div class="column medium-4">
-                              <label>
-                                Country code
-                                <select
-                                  name="telefono_pais"
-                                  required=""
-                                  data-config-form=""
-                                >
-                                  <option value="" selected="">Country</option>
-                                  <option value="184">Abkhazia (+840)</option>
-                                  <option value="1">Afghanistan (+93)</option>
-                                  <option value="63"
-                                    >Åland Islands (+358)</option
-                                  >
-                                  <option value="2">Albania (+355)</option>
-                                  <option value="11">Algeria (+213)</option>
-                                  <option value="217"
-                                    >American Samoa (+1684)</option
-                                  >
-                                  <option value="4">Andorra (+376)</option>
-                                  <option value="5">Angola (+244)</option>
-                                  <option value="6">Anguilla (+1264)</option>
-                                  <option value="8"
-                                    >Antigua and Barbuda (+1268)</option
-                                  >
-                                  <option value="12">Argentina (+54)</option>
-                                  <option value="13">Armenia (+374)</option>
-                                  <option value="14">Aruba (+297)</option>
-                                  <option value="15">Australia (+61)</option>
-                                  <option value="16">Austria (+43)</option>
-                                  <option value="17">Azerbaijan (+994)</option>
-                                  <option value="18">Bahamas (+1242)</option>
-                                  <option value="19">Bahrain (+973)</option>
-                                  <option value="20">Bangladesh (+880)</option>
-                                  <option value="21">Barbados (+1246)</option>
-                                  <option value="26">Belarus (+375)</option>
-                                  <option value="22">Belgium (+32)</option>
-                                  <option value="23">Belize (+501)</option>
-                                  <option value="24">Benin (+229)</option>
-                                  <option value="25">Bermuda (+1441)</option>
-                                  <option value="36">Bhutan (+975)</option>
-                                  <option value="28">Bolivia (+591)</option>
-                                  <option value="29"
-                                    >Bosnia and Herzegovina (+387)</option
-                                  >
-                                  <option value="30">Botswana (+267)</option>
-                                  <option value="31">Brazil (+55)</option>
-                                  <option value="219"
-                                    >British Indian Ocean Territory
-                                    (+246)</option
-                                  >
-                                  <option value="32"
-                                    >Brunei Darussalam (+673)</option
-                                  >
-                                  <option value="33">Bulgaria (+359)</option>
-                                  <option value="34"
-                                    >Burkina Faso (+226)</option
-                                  >
-                                  <option value="35">Burundi (+257)</option>
-                                  <option value="38">Cambodia (+855)</option>
-                                  <option value="39">Cameroon (+237)</option>
-                                  <option value="40">Canada (+1)</option>
-                                  <option value="37">Cape Verde (+238)</option>
-                                  <option value="105"
-                                    >Caribbean Netherlands (+599)</option
-                                  >
-                                  <option value="187"
-                                    >Cayman Islands (+1345)</option
-                                  >
-                                  <option value="128"
-                                    >Central African Republic (+236)</option
-                                  >
-                                  <option value="41">Chad (+235)</option>
-                                  <option value="43">Chile (+56)</option>
-                                  <option value="44">China (+86)</option>
-                                  <option value="220"
-                                    >Christmas Island (+61)</option
-                                  >
-                                  <option value="188"
-                                    >Cocos (Keeling) Islands (+672)</option
-                                  >
-                                  <option value="46">Colombia (+57)</option>
-                                  <option value="47">Comoros (+269)</option>
-                                  <option value="48"
-                                    >Congo Democratic Republic (+243)</option
-                                  >
-                                  <option value="189"
-                                    >Congo Republic (+242)</option
-                                  >
-                                  <option value="190"
-                                    >Cook Islands (+682)</option
-                                  >
-                                  <option value="52">Costa Rica (+506)</option>
-                                  <option value="51"
-                                    >Cote D'Ivoire (+225)</option
-                                  >
-                                  <option value="53">Croatia (+385)</option>
-                                  <option value="54">Cuba (+53)</option>
-                                  <option value="138">Curaçao (+599)</option>
-                                  <option value="45">Cyprus (+357)</option>
-                                  <option value="42"
-                                    >Czech Republic (+420)</option
-                                  >
-                                  <option value="55">Denmark (+45)</option>
-                                  <option value="56">Djibouti (+253)</option>
-                                  <option value="57">Dominica (+1767)</option>
-                                  <option value="129"
-                                    >Dominican Republic (+1)</option
-                                  >
-                                  <option value="58">Ecuador (+593)</option>
-                                  <option value="59">Egypt (+20)</option>
-                                  <option value="60">El Salvador (+503)</option>
-                                  <option value="221"
-                                    >Equatorial Guinea (+240)</option
-                                  >
-                                  <option value="62">Eritrea (+291)</option>
-                                  <option value="68">Estonia (+372)</option>
-                                  <option value="69">Ethiopia (+251)</option>
-                                  <option value="213"
-                                    >Falkland Islands (Malvinas) (+500)</option
-                                  >
-                                  <option value="191"
-                                    >Faroe Islands (+298)</option
-                                  >
-                                  <option value="70">Fiji (+679)</option>
-                                  <option value="72">Finland (+358)</option>
-                                  <option value="73">France (+33)</option>
-                                  <option value="222"
-                                    >French Guiana (+594)</option
-                                  >
-                                  <option value="223"
-                                    >French Polynesia (+689)</option
-                                  >
-                                  <option value="192">Gabon (+241)</option>
-                                  <option value="193">Gambia (+220)</option>
-                                  <option value="194">Georgia (+995)</option>
-                                  <option value="3">Germany (+49)</option>
-                                  <option value="195">Ghana (+233)</option>
-                                  <option value="225">Gibraltar (+350)</option>
-                                  <option value="196">Greece (+30)</option>
-                                  <option value="197">Greenland (+299)</option>
-                                  <option value="226">Grenada (+1473)</option>
-                                  <option value="227">Guadeloupe (+590)</option>
-                                  <option value="198">Guam (+1671)</option>
-                                  <option value="181">Guatemala (+502)</option>
-                                  <option value="199">Guernsey (+44)</option>
-                                  <option value="200">Guinea (+224)</option>
-                                  <option value="228"
-                                    >Guinea-Bissau (+245)</option
-                                  >
-                                  <option value="201">Guyana (+592)</option>
-                                  <option value="202">Haiti (+509)</option>
-                                  <option value="203">Honduras (+504)</option>
-                                  <option value="204">Hong Kong (+852)</option>
-                                  <option value="205">Hungary (+36)</option>
-                                  <option value="209">Iceland (+354)</option>
-                                  <option value="183">India (+91)</option>
-                                  <option value="206">Indonesia (+62)</option>
-                                  <option value="207">Iran (+98)</option>
-                                  <option value="208">Iraq (+964)</option>
-                                  <option value="180">Ireland (+353)</option>
-                                  <option value="185">Isle of Man (+44)</option>
-                                  <option value="210">Israel (+972)</option>
-                                  <option value="179">Italy (+39)</option>
-                                  <option value="211">Jamaica (+1876)</option>
-                                  <option value="182" selected="selected"
-                                    >Japan (+81)</option
-                                  >
-                                  <option value="249">Jersey (+44)</option>
-                                  <option value="212">Jordan (+962)</option>
-                                  <option value="74">Kazakhstan (+7)</option>
-                                  <option value="75">Kenya (+254)</option>
-                                  <option value="77">Kiribati (+686)</option>
-                                  <option value="78">Kuwait (+965)</option>
-                                  <option value="76">Kyrgyzstan (+996)</option>
-                                  <option value="79"
-                                    >Lao People's Democratic Republic
-                                    (+856)</option
-                                  >
-                                  <option value="81">Latvia (+371)</option>
-                                  <option value="82">Lebanon (+961)</option>
-                                  <option value="80">Lesotho (+266)</option>
-                                  <option value="83">Liberia (+231)</option>
-                                  <option value="84"
-                                    >Libyan Arab Jamahiriya (+218)</option
-                                  >
-                                  <option value="85"
-                                    >Liechtenstein (+423)</option
-                                  >
-                                  <option value="86">Lithuania (+370)</option>
-                                  <option value="87">Luxembourg (+352)</option>
-                                  <option value="230">Macao (+853)</option>
-                                  <option value="89">Madagascar (+261)</option>
-                                  <option value="91">Malawi (+265)</option>
-                                  <option value="90">Malaysia (+60)</option>
-                                  <option value="92">Maldives (+960)</option>
-                                  <option value="93">Mali (+223)</option>
-                                  <option value="94">Malta (+356)</option>
-                                  <option value="231"
-                                    >Marshall Islands (+692)</option
-                                  >
-                                  <option value="232">Martinique (+596)</option>
-                                  <option value="96">Mauritania (+222)</option>
-                                  <option value="97">Mauritius (+230)</option>
-                                  <option value="233">Mayotte (+269)</option>
-                                  <option value="98">Mexico (+52)</option>
-                                  <option value="99">Micronesia (+691)</option>
-                                  <option value="100">Moldova (+373)</option>
-                                  <option value="101">Monaco (+377)</option>
-                                  <option value="102">Mongolia (+976)</option>
-                                  <option value="103">Montenegro (+382)</option>
-                                  <option value="234"
-                                    >Montserrat (+1664)</option
-                                  >
-                                  <option value="95">Morocco (+212)</option>
-                                  <option value="104">Mozambique (+258)</option>
-                                  <option value="27">Myanmar (+95)</option>
-                                  <option value="186"
-                                    >Nagorno-Karabakh (+357)</option
-                                  >
-                                  <option value="106">Namibia (+264)</option>
-                                  <option value="107">Nauru (+674)</option>
-                                  <option value="108">Nepal (+977)</option>
-                                  <option value="116">Netherlands (+31)</option>
-                                  <option value="9"
-                                    >Netherlands Antilles (+599)</option
-                                  >
-                                  <option value="235"
-                                    >New Caledonia (+687)</option
-                                  >
-                                  <option value="109">New Zealand (+64)</option>
-                                  <option value="110">Nicaragua (+505)</option>
-                                  <option value="111">Niger (+227)</option>
-                                  <option value="112">Nigeria (+234)</option>
-                                  <option value="113">Niue (+683)</option>
-                                  <option value="236"
-                                    >Norfolk Island (+672)</option
-                                  >
-                                  <option value="49">North Korea (+850)</option>
-                                  <option value="88"
-                                    >North Macedonia (+389)</option
-                                  >
-                                  <option value="237"
-                                    >Northern Mariana Islands (+1670)</option
-                                  >
-                                  <option value="114">Norway (+47)</option>
-                                  <option value="115">Oman (+968)</option>
-                                  <option value="250">Pakistan (+92)</option>
-                                  <option value="118">Palau (+680)</option>
-                                  <option value="117">PALESTINE (+970)</option>
-                                  <option value="119">Panama (+507)</option>
-                                  <option value="120"
-                                    >Papua New Guinea (+675)</option
-                                  >
-                                  <option value="121">Paraguay (+595)</option>
-                                  <option value="122">Peru (+51)</option>
-                                  <option value="71">Philippines (+63)</option>
-                                  <option value="123">Poland (+48)</option>
-                                  <option value="124">Portugal (+351)</option>
-                                  <option value="125"
-                                    >Puerto Rico (+1787)</option
-                                  >
-                                  <option value="126">Qatar (+974)</option>
-                                  <option value="239">Reunion (+262)</option>
-                                  <option value="130">Romania (+40)</option>
-                                  <option value="131"
-                                    >Russian Federation (+7)</option
-                                  >
-                                  <option value="132">Rwanda (+250)</option>
-                                  <option value="214"
-                                    >Saint Bartolomé (+590)</option
-                                  >
-                                  <option value="176"
-                                    >Saint Helena (+290)</option
-                                  >
-                                  <option value="134"
-                                    >Saint Kitts and Nevis (+1869)</option
-                                  >
-                                  <option value="137"
-                                    >Saint Lucia (+1758)</option
-                                  >
-                                  <option value="215"
-                                    >Saint Martin (+599)</option
-                                  >
-                                  <option value="216"
-                                    >Saint Pierre and Miquelon (+508)</option
-                                  >
-                                  <option value="136"
-                                    >Saint Vincent and the Grenadines
-                                    (+1784)</option
-                                  >
-                                  <option value="133">Samoa (+684)</option>
-                                  <option value="135">San Marino (+378)</option>
-                                  <option value="139"
-                                    >Sao Tome and Principe (+239)</option
-                                  >
-                                  <option value="10"
-                                    >Saudi Arabia (+966)</option
-                                  >
-                                  <option value="140">Senegal (+221)</option>
-                                  <option value="251">Serbia (+381)</option>
-                                  <option value="141"
-                                    >Serbia and Montenegro (+381)</option
-                                  >
-                                  <option value="142">Seychelles (+248)</option>
-                                  <option value="143"
-                                    >Sierra Leone (+232)</option
-                                  >
-                                  <option value="144">Singapore (+65)</option>
-                                  <option value="252"
-                                    >Sint Marten (+1721)</option
-                                  >
-                                  <option value="64">Slovakia (+421)</option>
-                                  <option value="65">Slovenia (+386)</option>
-                                  <option value="240"
-                                    >Solomon Islands (+677)</option
-                                  >
-                                  <option value="146">Somalia (+252)</option>
-                                  <option value="148"
-                                    >South Africa (+27)</option
-                                  >
-                                  <option value="50">South Korea (+82)</option>
-                                  <option value="253"
-                                    >South Sudan (+249)</option
-                                  >
-                                  <option value="66">Spain (+34)</option>
-                                  <option value="147">Sri Lanka (+94)</option>
-                                  <option value="149">Sudan (+249)</option>
-                                  <option value="152">Suriname (+597)</option>
-                                  <option value="242"
-                                    >Svalbard and Jan Mayen (+47)</option
-                                  >
-                                  <option value="153">Swaziland (+268)</option>
-                                  <option value="150">Sweden (+46)</option>
-                                  <option value="151">Switzerland (+41)</option>
-                                  <option value="145"
-                                    >Syrian Arab Republic (+963)</option
-                                  >
-                                  <option value="155">Taiwan (+886)</option>
-                                  <option value="157">Tajikistan (+992)</option>
-                                  <option value="156">Tanzania (+255)</option>
-                                  <option value="154">Thailand (+66)</option>
-                                  <option value="158"
-                                    >Timor-Leste (+670)</option
-                                  >
-                                  <option value="159">Togo (+228)</option>
-                                  <option value="243">Tokelau (+690)</option>
-                                  <option value="160">Tonga (+676)</option>
-                                  <option value="161"
-                                    >Trinidad and Tobago (+1868)</option
-                                  >
-                                  <option value="162">Tunisia (+216)</option>
-                                  <option value="164">Turkey (+90)</option>
-                                  <option value="163"
-                                    >Turkmenistan (+7370)</option
-                                  >
-                                  <option value="244"
-                                    >Turks and Caicos Islands (+1649)</option
-                                  >
-                                  <option value="165">Tuvalu (+688)</option>
-                                  <option value="167">Uganda (+256)</option>
-                                  <option value="166">Ukraine (+380)</option>
-                                  <option value="61"
-                                    >United Arab Emirates (+971)</option
-                                  >
-                                  <option value="127"
-                                    >United Kingdom (+44)</option
-                                  >
-                                  <option value="67">United States (+1)</option>
-                                  <option value="245"
-                                    >United States Minor Outlying Islands
-                                    (+1)</option
-                                  >
-                                  <option value="168">Uruguay (+598)</option>
-                                  <option value="169">Uzbekistan (+998)</option>
-                                  <option value="170">Vanuatu (+678)</option>
-                                  <option value="171"
-                                    >Vatican City State (+39)</option
-                                  >
-                                  <option value="172">Venezuela (+58)</option>
-                                  <option value="173">Viet Nam (+84)</option>
-                                  <option value="246"
-                                    >Virgin Islands, British (+1284)</option
-                                  >
-                                  <option value="247"
-                                    >Virgin Islands, U.s. (+1340)</option
-                                  >
-                                  <option value="248"
-                                    >Wallis and Futuna (+681)</option
-                                  >
-                                  <option value="174"
-                                    >Western Sahara (+212)</option
-                                  >
-                                  <option value="175">Yemen (+967)</option>
-                                  <option value="177">Zambia (+260)</option>
-                                  <option value="178">Zimbabwe (+263)</option>
-                                </select>
-                              </label>
-                            </div>
-                            <div class="column medium-8">
-                              <label
-                                >Mobile phone<input
-                                  name="telefono"
-                                  maxlength="18"
-                                  required=""
-                                  type="number"
-                                  placeholder="XXX XXX XXX"
-                                  value="758917412"
-                                  data-config-form=""
-                              /></label>
-                            </div>
-                          </div>
-                          <label
-                            >Gender
-                            <select name="genero" data-config-form="">
-                              <option selected="">Gender</option>
-                              <option value="1">Male</option>
-                              <option value="2">Female</option>
-                            </select>
-                          </label>
-                          <label data-config-form=""
-                            >Country
-                            <select
-                              class="core_spaceBzero"
-                              name="pais"
-                              disabled=""
-                            >
-                              <option value="182" selected="selected"
-                                >Japan</option
-                              >
-                            </select>
-                          </label>
-                        </fieldset>
-                      </div>
-                      <div
-                        class="column small-12 medium-12 large-4"
-                        data-emailoptions=""
-                      >
-                        <fieldset>
-                          <legend>Your currency</legend>
-                          <label>
-                            <p class="icon-slim-lock"
-                              >Your currency has already been set and cannot be
-                              changed.</p
-                            >
-                            Your currency
-                            <select
-                              data-current="USD"
-                              name="currency"
-                              data-config-form=""
-                              disabled="disabled"
-                            >
-                              <option value="USD">USD</option>
-                            </select>
-                          </label>
-                        </fieldset>
-                        <fieldset data-paymentmethodscontainer="">
-                          <legend>Your payment methods</legend>
-                          <p
-                            >These are the methods you have previously used to
-                            purchase or withdraw your prizes. They will be shown
-                            here once you mark the
-                            <strong>remind</strong> option when performing one
-                            on these operations.</p
-                          >
-                          <p
-                            >Do you want to add your card? Make a deposit in
-                            your <strong>Virtual Balance</strong> and
-                            check<strong> "Remember</strong>" before paying.
-                            <a
-                              href="/en/balance/#add_cash"
-                              class="button"
-                              data-addvirtualcash=""
-                              >Add Virtual Balance</a
-                            ></p
-                          >
-                          <p
-                            ><img
-                              src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/switch_icon.png"
-                            />
-                            You can mark the methods that you want to use to
-                            purchase your
-                            automatic<strong>subscriptions</strong>.</p
-                          >
-                          <p
-                            ><img
-                              src="//d2oamtuj38i9pe.cloudfront.net/images/common/art/move_item.png"
-                            />
-                            Drag and order, so if a method can’t be used to pay
-                            your <strong>subscriptions</strong>, we will try
-                            with the next one in your list, so no draw will be
-                            missed.</p
-                          >
-                          <table
-                            data-mystoredpaymentmethods=""
-                            class="core_spaceBzero"
-                          >
-                            <tbody class="ui-sortable"></tbody>
-                            <tfoot>
-                              <tr>
-                                <th
-                                  ><i class="icon-slim-arrow-right-thick"></i
-                                ></th>
-                                <th colspan="4"
-                                  >Use for purchasing subscriptions<br /><small
-                                    >(The ones above are used first)</small
-                                  ></th
-                                >
-                              </tr>
-                            </tfoot>
-                          </table>
-                          <div
-                            data-status-msg=""
-                            style="display: none"
-                            class="callout"
-                          ></div>
-                        </fieldset>
-                        <button
-                          class="core_sans_serif core_txtSize_sm2 text-center icon-common-blocked core_spaceBzero disabledColor"
-                          data-open="closeAccount"
-                          type="button"
-                        >
-                          Close account</button
-                        >
-                      </div>
-                    </div>
-                    <div class="text-center medium-text-right">
-                      <div
-                        data-status-msg=""
-                        data-abide-error=""
-                        class="text-right callout alert"
-                        id="configStatus"
-                      >
-                        <p
-                          ><i class="icon-slim-warning-outline"></i> There are
-                          some errors in the form</p
-                        >
-                      </div>
-                      <hr />
-                      <button
-                        data-button-guardar=""
-                        class="radius bg_mint button"
-                        type="submit"
-                        data-submit=""
-                        id="configFormSubmit"
-                        disabled=""
-                        ><strong>Save changes</strong></button
-                      >
-                    </div>
-                  </form>
-                </div>
-                <script>
-                  bamQueue.addToQueue(function () {
-                    var configOptions = function () {
-                      this.changes = false;
-                      this.texts = Array();
-                      this.checkboxesAndRadios = Array();
-                      this.selects = Array();
-                    };
-
-                    myConfigOptions = new configOptions();
-
-                    $("select:not([data-atributo-tarjeta])").on(
-                      "change",
-                      function () {
-                        myConfigOptions.selects[$(this).attr("name")] =
-                          $(this).val();
-                      }
-                    );
-
-                    $("input[type='text']").on("input", function () {
-                      myConfigOptions.texts[$(this).attr("name")] =
-                        $(this).val();
-                    });
-
-                    $("input[type='radio'], input[type='checkbox']").on(
-                      "change",
-                      function () {
-                        myConfigOptions.checkboxesAndRadios[
-                          $(this).attr("name")
-                        ] = $(this).val();
-                      }
-                    );
-
-                    $(window).bind("beforeunload", function () {
-                      if (myConfigOptions.changes) {
-                        return "There are changes made without saving. Are you sure you want to leave this page?";
-                      }
-                    });
-
-                    $("[data-config-form]").bind("keyup change", function () {
-                      $("[data-button-guardar]").prop("disabled", false);
-                      myConfigOptions.changes = true;
-                    });
-
-                    $("#configForm").on("formvalid.zf.abide", function () {
-                      if (myConfigOptions.changes) {
-                        var ajaxOptions = {
-                          submitBt: {
-                            holdMsg: "One momento...",
-                            enableOnSuccess: true,
-                            elem: $("[data-button-guardar]"),
-                          },
-                          statusMsg: {
-                            elem: $("[data-status-msg]#configStatus"),
-                            ok: "Updated configuration",
-                            ko: "There are some errors in the form",
-                          },
-                          callbackOnSuccess: function (data) {
-                            myConfigOptions.changes = false;
-                            $("[data-button-guardar]").prop("disabled", true);
-                          },
-                          callbackOnFail: function (e) {
-                            if (typeof e.error != "undefined") {
-                              $("[data-status-msg]#configStatus").html(e.error);
-                            }
-                          },
-                        };
-                        myForm = new formeSubmit(
-                          $("#configForm"),
-                          "/data/?action=settings",
-                          ajaxOptions
-                        );
-                        myConfigOptions.changes = false;
-                      }
-                    });
-
-                    var allPayAndWithdrawalMethods = new paymentsStorage({
-                      strings: {
-                        expiration: "Expiration date",
-                        withdrawals: "Withdraws",
-                        payments: "Payments",
-                      },
-                      storedPaymentsObj: [],
-                    });
-                    var paymentMethodsArray = new Array();
-                    var libraryMngmntPagos = new manageLibrariesConfig(
-                      $("[data-paymentMethodsContainer]"),
-                      allPayAndWithdrawalMethods,
-                      {
-                        selectablePaymentMethods: paymentMethodsArray,
-                        strings: {
-                          confirmDeletion:
-                            "Are you sure that you want to remove this payment/prize withdrawal method? You can add it again checking the remind option when performing a payment/prize withdrawal operation.",
-                          saving: "Saving… wait",
-                        },
-                      }
-                    );
-
-                    $('[data-reveal-source="virtualCash"]').data(
-                      "callback",
-                      function () {
-                        $(window).unbind("beforeunload");
-                      }
-                    );
-                  });
-                </script>
-              </div>
+        </div>
             </div>
           </div>
         </div>
+         
         <footer class="hide-for-print">
           <div id="sidebarMenus" class="is-active">
             <button

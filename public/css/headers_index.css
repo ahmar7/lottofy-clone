@@ -12388,8 +12388,11 @@ hr.whiteTrans3 {
   min-width: 35px;
   border-radius: 500px;
   margin-right: 5px;
+  margin-top: -5px;
 }
-
+.top-menu .avatar2 {
+  margin-top: -1px !important;
+}
 .top-menu a,
 .top-menu button {
   color: white;
@@ -12467,7 +12470,7 @@ hr.whiteTrans3 {
 }
 @media (max-width: 639px) {
   .top-menu [data-userMenuLogin] button {
-    margin-top: 3px !important;
+    margin-top: 12px !important;
   }
 }
 .top-menu [data-userMenuLogin] button:before,
@@ -15260,7 +15263,7 @@ nav#mobileMenu.is-open {
   padding-right: 2.5rem;
 }
 
-#mobileGamesMenu li.has-submenu > a:after {
+#mobileGamesMenu li.has-lot > a:after {
   font-family: icomoon-slim;
   transition: transform 0.3s;
   content: "\b3";
@@ -27768,23 +27771,70 @@ ul[data-latest-news] [data-ln-subTitle] {
 .banderola.orange {
   background-color: #ff4900;
 }
+.mbl-logo {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .desk-logo {
+    display: none;
+  }
+  .mbl-logo {
+    display: inline-block !important;
+    margin-top: -7px !important;
+  }
+  .index-mbl {
+    margin-top: -3px !important;
+  }
+}
+.log2 img {
+  margin-top: 0px;
+  height: 60px !important;
+  width: 130px !important;
+}
+@media (max-width: 475px) {
+  .mbl-logo {
+    display: inline-block !important;
+    margin-top: -0px !important;
+  }
+  .log2 img {
+    margin-top: 0px;
+    height: 53px !important;
+    width: 85px !important;
+  }
+}
+@media (max-width: 430px) {
+  .mbl-logo {
+    margin-left: -20px !important;
+  }
+}
+@media (max-width: 400px) {
+  .log2 img {
+    height: 53px !important;
+    width: 67px !important;
+  }
+  .float-left .core_inline-list {
+    width: 120px !important;
+  }
+}
 .log img {
   margin-top: 0px;
   height: 60px !important;
   width: 130px !important;
+}
+@media (max-width: 1024px) {
+  .float-right .core_inline-list {
+    margin-top: -1px !important;
+  }
+  .log img {
+    margin-top: -4px;
+  }
 }
 .logb img {
   margin-top: 0px;
   height: 60px !important;
   width: 130px !important;
 }
-/* @media (max-width: 450px) {
-  .log img {
-    margin-top: 0px;
-    height: 53px !important;
-    width: 85px !important;
-  }
-} */
 @media (max-width: 600px) {
   .log img {
     display: none;

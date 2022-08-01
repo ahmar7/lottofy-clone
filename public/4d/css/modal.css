@@ -265,6 +265,9 @@
 .core_inline-list1 {
   margin-left: 10px !important;
 }
+.hide[data-v-5f0b9ba1] {
+  display: none;
+}
 
 .main-bg {
   display: flex;
@@ -349,6 +352,10 @@
 }
 .float-right .core_inline-list {
   margin-top: 8px !important;
+}@media (max-width:1024px) {
+  .float-right .core_inline-list {
+    margin-top: -1px !important;
+}
 }
 @media (max-width: 600px) {
   .float-right .core_inline-list {

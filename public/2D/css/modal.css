@@ -825,6 +825,11 @@ svg[data-v-5f0b9ba1] {
 .float-right .core_inline-list {
   margin-top: 8px !important;
 }
+@media (max-width:1024px) {
+  .float-right .core_inline-list {
+    margin-top: -1px !important;
+}
+}
 @media (max-width: 600px) {
   .float-right .core_inline-list {
     margin-top: 0 !important;
