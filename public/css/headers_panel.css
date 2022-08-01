@@ -465,11 +465,11 @@ h5.core_ellipsis {
 .pill {
   border: 1px solid rgba(0, 133, 98, 0.5) !important;
   background-color: rgba(0, 0, 0, 0) !important;
-  color: #008562 !important;
+  color: royalblue !important;
   margin: 2px;
 }
 .pill.active {
-  background-color: #008562 !important;
+  background-color: royalblue !important;
   color: #fff !important;
 }
 .pill.active * {
@@ -477,7 +477,7 @@ h5.core_ellipsis {
 }
 .pill:hover:not(.label) {
   transition: background-color 0.5s ease, color 0.5s ease;
-  background-color: #008562 !important;
+  background-color: royalblue !important;
   color: #fff !important;
 }
 .pill:hover:not(.label) * {
@@ -490,7 +490,7 @@ h5.core_ellipsis {
   border-radius: 100px;
 }
 .pill.label {
-  color: #008562 !important;
+  color: royalblue !important;
 }
 .pill.a.label:hover {
   color: #fff !important;
@@ -7758,7 +7758,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 }
 .tabs-title > a:focus,
 .tabs-title > a[aria-selected="true"] {
-  background: #008562;
+  background: royalblue;
   color: #fff;
 }
 .tabs-content {
@@ -8546,7 +8546,7 @@ a.thumbnail image {
   color: #767676;
 }
 .bgColor {
-  color: #008562 !important;
+  color: royalblue !important;
 }
 .disabledColor {
   color: #aaa !important;
@@ -8603,7 +8603,7 @@ a.thumbnail image {
   color: #e7146a !important;
 }
 .pineGreen {
-  color: #32ae5d !important;
+  color: royalblue !important;
 }
 .purpleRain {
   color: #431a7f !important;
@@ -8649,7 +8649,7 @@ a.thumbnail image {
   color: #df0c00;
 }
 .bg_bgColor {
-  background-color: #008562 !important;
+  background-color: royalblue !important;
   color: #fff !important;
 }
 .bg_darkBgColor {
@@ -8661,11 +8661,11 @@ a.thumbnail image {
   color: white !important;
 }
 .bg_pine {
-  background-color: #32ae5d !important;
+  background-color: royalblue !important;
   color: white !important;
 }
 .bg_chlorophile {
-  background-color: #32ae5d !important;
+  background-color: royalblue !important;
   color: white !important;
 }
 .bg_eggYellow {
@@ -9409,7 +9409,7 @@ td {
 }
 .datepicker td.active.day,
 .datepicker td.active.year {
-  background: #008562 !important;
+  background: royalblue !important;
   color: white !important;
   font-weight: bold;
 }
@@ -9426,7 +9426,7 @@ fieldset legend {
   display: none;
 }
 .switch.bgColor input:checked + label {
-  background: #008562 !important;
+  background: royalblue !important;
 }
 .switch-paddle::after {
   border-radius: 3px;
@@ -9510,7 +9510,7 @@ button {
   color: #fff !important;
 }
 .richTabsMenu li a {
-  background: #008562 !important;
+  background: royalblue !important;
   color: #fff !important;
 }
 .richTabsMenu li + li {
@@ -9646,7 +9646,7 @@ tr > *.spacer {
   color: white !important;
 }
 input:checked ~ .switch-paddle {
-  background-color: #008562 !important;
+  background-color: royalblue !important;
 }
 [data-social] button,
 [data-social] a {
@@ -9666,7 +9666,7 @@ input:checked ~ .switch-paddle {
   background-color: #2a9e0d;
 }
 [data-social] [data-shareService="default"] {
-  background-color: #008562;
+  background-color: royalblue;
 }
 .blur {
   backdrop-filter: blur(4px);
@@ -9783,7 +9783,7 @@ hr.whiteTrans3 {
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
-  color: #008562 !important;
+  color: royalblue !important;
 }
 .top-subMenu li a,
 .top-subMenu li button {
@@ -10009,13 +10009,13 @@ hr.whiteTrans3 {
 [data-alertsMarquee] button:not([data-close]) {
   border: 1px solid rgba(0, 133, 98, 0.5) !important;
   background-color: rgba(0, 0, 0, 0) !important;
-  color: #008562 !important;
+  color: royalblue !important;
   margin: 2px;
   border-radius: 6px;
   padding: 0.4rem 0.5rem;
 }
 [data-alertsMarquee] button:not([data-close]).active {
-  background-color: #008562 !important;
+  background-color: royalblue !important;
   color: #fff !important;
 }
 [data-alertsMarquee] button:not([data-close]).active * {
@@ -10023,7 +10023,7 @@ hr.whiteTrans3 {
 }
 [data-alertsMarquee] button:not([data-close]):hover:not(.label) {
   transition: background-color 0.5s ease, color 0.5s ease;
-  background-color: #008562 !important;
+  background-color: royalblue !important;
   color: #fff !important;
 }
 [data-alertsMarquee] button:not([data-close]):hover:not(.label) * {
@@ -10036,7 +10036,7 @@ hr.whiteTrans3 {
   border-radius: 100px;
 }
 [data-alertsMarquee] button:not([data-close]).label {
-  color: #008562 !important;
+  color: royalblue !important;
 }
 [data-alertsMarquee] button:not([data-close]).a.label:hover {
   color: #fff !important;
@@ -10118,7 +10118,7 @@ hr.whiteTrans3 {
   box-shadow: 0px 0px 1px rgba(50, 53, 55, 0.6);
 }
 .top-menu {
-  background-color: #008562;
+  background-color: royalblue;
   z-index: 1000;
   width: 100%;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -10193,7 +10193,7 @@ hr.whiteTrans3 {
   border-radius: 5px;
   border-radius: 3px;
   background-color: white;
-  color: #008562;
+  color: royalblue;
   font-size: 0.85rem;
 }
 .top-menu [data-userMenuLogin] button:before,
@@ -10289,7 +10289,7 @@ hr.whiteTrans3 {
   width: 100%;
   overflow: hidden;
   margin-top: -0.1rem;
-  border-bottom: 3px solid #008562;
+  border-bottom: 3px solid royalblue;
 }
 .top-menu-gamesNav li > * {
   color: #323537;
@@ -10608,7 +10608,7 @@ body[data-notopbar] .off-canvas-wrap {
   bottom: 3px;
   width: 100%;
   display: block;
-  background-color: #008562;
+  background-color: royalblue;
   color: white;
   font-weight: bold;
   display: block;
@@ -10812,7 +10812,7 @@ body.setFixed [data-menu-games] [data-date] {
 .top-menu_dropdown li.is-active a,
 .top-menu_dropdown button.is-active {
   transition: background 0.1s linear;
-  background: #008562 !important;
+  background: royalblue !important;
 }
 [data-menu-lang].top-menu_dropdown {
   max-width: 210px;
@@ -10843,7 +10843,7 @@ body.setFixed [data-menu-games] [data-date] {
   margin-top: 2px;
 }
 [data-menu-lang] .button {
-  background-color: #008562;
+  background-color: royalblue;
   color: white;
 }
 [data-menu-lang] select,
@@ -10865,7 +10865,7 @@ body.setFixed [data-menu-games] [data-date] {
 #mobileGamesMenu [data-menu-lang] fieldset button.label.is-active {
   border-color: #006c4f;
   transition: background 0.1s linear;
-  background: #008562 !important;
+  background: royalblue !important;
   color: white !important;
 }
 #mobileGamesMenu [data-menu-lang] fieldset a.label:not(.is-active):hover,
@@ -10908,7 +10908,7 @@ body.setFixed [data-menu-games] a > span[data-jackpot] {
 }
 body.setFixed .top-menu .logo {
   position: fixed;
-  color: #008562;
+  color: royalblue;
   left: 0.5rem;
   z-index: 10001;
   top: 0.3rem;
@@ -11095,7 +11095,7 @@ body.setFixed #cart {
 }
 .menus-dropDown li:not([disabled]):hover a {
   transition: background-color 0.3s linear, color 0.1s linear;
-  background-color: #008562;
+  background-color: royalblue;
   color: #fff;
 }
 .menus-dropDown li:not([disabled]):hover a * {
@@ -11136,7 +11136,7 @@ body[data-app] #notifications.is-active {
   margin: 10px auto;
 }
 #notifications [data-loaderPro] .spinner * {
-  background-color: #008562;
+  background-color: royalblue;
 }
 #notifications button {
   color: #b7bdc1;
@@ -11153,7 +11153,7 @@ body[data-app] #notifications.is-active {
   left: -7px;
   font-size: 0.7rem;
   z-index: 1;
-  color: #008562;
+  color: royalblue;
   line-height: 1.1rem;
   animation-duration: 2s;
   animation-fill-mode: both;
@@ -11311,19 +11311,19 @@ button[data-notifications].hover {
   border-radius: 500px;
   width: 12px !important;
   height: 12px !important;
-  border: 1px solid #008562;
+  border: 1px solid royalblue;
   margin-top: 0px;
-  background-color: #008562;
+  background-color: royalblue;
 }
 #myConfig [data-notifyOptions] .slider,
 #myConfig [data-notifyOptions] .slider-fill {
   height: 2px;
 }
 #myConfig [data-notifyOptions] .slider-fill {
-  background-color: #008562;
+  background-color: royalblue;
 }
 #myConfig [data-notifyOptions] label.beautified.is-active > span {
-  background-color: #008562 !important;
+  background-color: royalblue !important;
   border-color: #00523c !important;
 }
 #myConfig [data-notifyOptions] table label.beautified {
@@ -12089,7 +12089,7 @@ button[data-notifications].hover {
   position: absolute;
   right: 2px;
   top: 2px;
-  background-color: #008562 !important;
+  background-color: royalblue !important;
 }
 .top-menu #purchaseSummary #cartSummaryButton {
   z-index: 10;
@@ -12550,9 +12550,9 @@ nav#mobileMenu.is-open {
 }
 #mobileGamesMenu li .label {
   border-radius: 5px;
-  border: 1px solid #008562;
+  border: 1px solid royalblue;
   background-color: transparent !important;
-  color: #008562;
+  color: royalblue;
   margin: 2px;
   border-radius: 5px;
 }
@@ -12566,7 +12566,7 @@ nav#mobileMenu.is-open {
 }
 #mobileGamesMenu li [data-jackpot] {
   font-weight: bold;
-  color: #008562;
+  color: royalblue;
 }
 #mobileGamesMenu li > a,
 #mobileGamesMenu li > p {
@@ -12712,7 +12712,7 @@ nav#mobileMenu.is-open {
   vertical-align: middle;
 }
 .sectionHeader:not(#miApuestaHeader)[data-gametype="grupo"] {
-  border-color: #008562;
+  border-color: royalblue;
 }
 .sectionHeader:not(#miApuestaHeader)[data-gametype="bonoloto"] {
   background-color: #458914;
@@ -13005,7 +13005,7 @@ nav#mobileMenu.is-open {
   background-color: white !important;
 }
 .beautifiedRadio.check.is-active:before {
-  color: #008562 !important;
+  color: royalblue !important;
 }
 .beautified input,
 .beautifiedRadio input {
@@ -13034,7 +13034,7 @@ nav#mobileMenu.is-open {
   animation-name: bounceIn;
   -webkit-animation-duration: 0.6s;
   animation-duration: 0.6s;
-  background-color: #008562;
+  background-color: royalblue;
   border-color: #006c4f !important;
   color: white;
 }
@@ -13353,7 +13353,7 @@ body#main-mini {
   margin-bottom: 0;
 }
 [data-recaptchaDisclaimer] a {
-  color: #008562 !important;
+  color: royalblue !important;
   text-decoration: underline;
 }
 @media print, screen and (min-width: 40em) {
@@ -13411,7 +13411,7 @@ body[data-framed] #sidebarMenus {
 }
 #login #logo,
 #welcome #logo {
-  color: #008562;
+  color: royalblue;
   font-size: 4rem;
   margin-left: 20px;
   margin-top: 20px;
@@ -13451,7 +13451,7 @@ body[data-framed] #sidebarMenus {
   margin-bottom: 0;
 }
 #login .validationBox [data-explanatoryBt] {
-  color: #008562 !important;
+  color: royalblue !important;
 }
 #login .validationBox [data-alternativeMethods] {
   border: 1px solid rgba(79, 87, 93, 0.2);
@@ -13491,7 +13491,7 @@ body[data-framed] #sidebarMenus {
   word-break: break-all;
 }
 #login .validationBox [data-alternativeMethods] button strong {
-  color: #008562 !important;
+  color: royalblue !important;
   display: inline-block;
   display: block;
   padding-top: 0.3rem;
@@ -13731,8 +13731,8 @@ body[data-framed] #sidebarMenus {
   text-align: center !important;
   font-size: 0.85rem;
   font-weight: 500;
-  color: #008562;
-  border: 1px solid #008562;
+  color: royalblue;
+  border: 1px solid royalblue;
   border-radius: 5px;
   padding: 0.5rem 0.6rem;
 }
@@ -13895,7 +13895,7 @@ body[data-framed] #sidebarMenus {
 [data-signupForm] [data-status-msg] a {
   display: block;
   text-decoration: underline;
-  color: #008562;
+  color: royalblue;
 }
 [data-signupForm] .disclaimer {
   font-size: 0.8rem;
@@ -14137,12 +14137,12 @@ body[data-framed] #sidebarMenus {
 @media print, screen and (max-width: 39.99875em) {
   #login [data-disclaimer] *,
   #login [data-disclaimer] ul li + li:before {
-    color: #008562 !important;
+    color: royalblue !important;
     text-shadow: none;
   }
 }
 #login.migrate #infoPanel p strong {
-  color: #008562;
+  color: royalblue;
 }
 #login.migrate #infoPanel p,
 #login.migrate #infoPanel ul li,
@@ -14167,7 +14167,7 @@ body[data-framed] #sidebarMenus {
   display: block;
   text-align: center;
   font-size: 3rem;
-  color: #008562;
+  color: royalblue;
 }
 #login.migrate #features p {
   line-height: 1em;
@@ -14196,7 +14196,7 @@ body[data-framed] #sidebarMenus {
   font-family: "hispaloto-iconset" !important;
   position: absolute;
   font-size: 60rem;
-  color: #008562;
+  color: royalblue;
   opacity: 0.05;
   top: -4rem;
   line-height: 1em;
@@ -14586,7 +14586,7 @@ ul.list li a > span strong {
 }
 ul.list li > span small strong,
 ul.list li a > span small strong {
-  color: #008562;
+  color: royalblue;
 }
 ul.list li .avatar {
   width: 25px;
@@ -14706,14 +14706,14 @@ ul.list li a > span:nth-child(1) {
   margin: 20px auto;
 }
 [data-reveal][data-reveal-source] [data-loaderPro] .spinner * {
-  background-color: #008562;
+  background-color: royalblue;
 }
 [data-reveal][data-reveal-source="betDetail"],
 [data-reveal][data-reveal-source="login"] {
   max-width: 550px !important;
 }
 [data-userDetailHeader] [data-userDetailInfo] {
-  background-color: #008562;
+  background-color: royalblue;
   color: white;
   padding-bottom: 0.5rem;
 }
@@ -14805,7 +14805,7 @@ ul.list li a > span:nth-child(1) {
 [data-userDetailHeader][data-myStats]
   [data-rankstats-summary]
   [data-upanel-stats-unit="1"] {
-  color: #32ae5d;
+  color: royalblue;
 }
 [data-userDetailHeader][data-myStats]
   [data-rankstats-summary]
@@ -15136,11 +15136,11 @@ ul.list li a > span:nth-child(1) {
 }
 #feedback [data-proRate] [data-proRating] label {
   font-size: 2.7rem !important;
-  color: #32ae5d !important;
+  color: royalblue !important;
 }
 #feedback [data-proRate] [data-userRating] {
   padding: 0.5rem !important;
-  border: 3px solid #32ae5d;
+  border: 3px solid royalblue;
   border-radius: 10px;
 }
 #feedback li {
@@ -15242,7 +15242,7 @@ body:not([data-isloaded]) [data-addrem] {
   font-size: 5rem;
   z-index: 0;
   opacity: 0.2;
-  color: #008562;
+  color: royalblue;
 }
 [data-oneClickPurchase] .column-block > div > span,
 [data-oneClickPurchase] .column-block > div > span small {
@@ -15260,7 +15260,7 @@ body:not([data-isloaded]) [data-addrem] {
   background-color: white;
 }
 [data-oneClickPurchase] .column-block > div * {
-  color: #008562 !important;
+  color: royalblue !important;
 }
 [data-oneClickPurchase] .tabs li a {
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -15275,7 +15275,7 @@ body:not([data-isloaded]) [data-addrem] {
 }
 [data-oneClickPurchase] .tabs li.is-active a {
   background-color: white;
-  color: #008562 !important;
+  color: royalblue !important;
 }
 [data-oneClickPurchase] .tabs-content {
   background-color: transparent;
@@ -15933,7 +15933,7 @@ ul[data-lottoResults] .numbersV2 dd {
 }
 [data-lr-actions] li a,
 [data-lr-actions] li button {
-  color: #32ae5d;
+  color: royalblue;
   text-decoration: u;
 }
 [data-lottoResults] [data-lr-combo] {
@@ -15975,7 +15975,7 @@ ul[data-lottoResults] .numbersV2 dd {
   line-height: 1em;
 }
 [data-lottoResults] [data-lr-play] p strong {
-  color: #32ae5d;
+  color: royalblue;
 }
 [data-lottoResults] [data-lr-play] [data-jackpot] {
   font-family: "IBM Plex Sans Condensed", Helvetica, Arial, sans-serif !important;
@@ -15985,7 +15985,7 @@ ul[data-lottoResults] .numbersV2 dd {
   line-height: 1em;
 }
 [data-lottoResults] [data-lr-playBt] {
-  background-color: #32ae5d;
+  background-color: royalblue;
   border-radius: 500px;
   padding: 0.65em 1.2em;
   color: white;
@@ -16077,7 +16077,7 @@ table.quiniela[data-inlineMatches] [data-matchdate] {
   width: 40px;
 }
 table.quiniela[data-inlineMatches] [data-matchdate] * {
-  color: #32ae5d;
+  color: royalblue;
   top: 0.1rem;
 }
 table.quiniela[data-inlineMatches] [data-matches-float] [data-m1] + span {
@@ -16278,7 +16278,7 @@ dl.numbersFlatVerticalV2 dd {
 }
 #lottoResultsModal [data-nav-leftbt]:hover,
 #lottoResultsModal [data-nav-rightbt]:hover {
-  color: #008562 !important;
+  color: royalblue !important;
 }
 #lottoResultsModal [data-nav-leftbt][disabled],
 #lottoResultsModal [data-nav-rightbt][disabled] {
@@ -16823,7 +16823,7 @@ ul.dropdown-pane li a:hover {
 }
 .label.inverted {
   background-color: #fff;
-  color: #008562;
+  color: royalblue;
 }
 .form-error {
   line-height: 1.3em;
@@ -17802,7 +17802,7 @@ body.setFixed #screenplayId {
 [data-ingameTutorials] #sorteoEspecialLayout .prizesFeatures li {
   font-size: 1.9rem;
   letter-spacing: -0.08rem;
-  color: #008562;
+  color: royalblue;
 }
 [data-ingameTutorials] #sorteoEspecialLayout .prizesFeatures li strong {
   font-size: 1.1rem;
@@ -17824,7 +17824,7 @@ body.setFixed #screenplayId {
   font-size: 1.8rem;
   margin-bottom: 0;
   border: none;
-  color: #008562;
+  color: royalblue;
 }
 [data-ingameTutorials]
   #sorteoEspecialLayout
@@ -17844,7 +17844,7 @@ body.setFixed #screenplayId {
   margin-bottom: 2rem;
 }
 [data-ingameTutorials] #sorteoEspecialLayout h3 strong {
-  color: #008562;
+  color: royalblue;
 }
 [data-ingameTutorials] #sorteoEspecialLayout .extraPrizesFeatures strong,
 [data-ingameTutorials] #sorteoEspecialLayout .extraPrizesFeatures small {
@@ -18241,7 +18241,7 @@ label[for="localUploadFile"] i,
   color: #4f575d;
 }
 .banderola {
-  background-color: #32ae5d;
+  background-color: royalblue;
   position: absolute;
   top: 0;
   left: -4.5rem;
@@ -18498,14 +18498,14 @@ label[for="localUploadFile"] i,
   content: "\257";
 }
 [data-proRate] [data-userRating] {
-  border: 1px solid #008562;
+  border: 1px solid royalblue;
   border-radius: 5px;
   margin-top: 0.5rem;
   padding: 0.3rem;
 }
 [data-proRate] [data-proRating] {
   display: block;
-  color: #008562;
+  color: royalblue;
 }
 [data-proRate] [data-proRating] label {
   position: relative;
@@ -18526,9 +18526,9 @@ label[for="localUploadFile"] i,
   top: 0.1rem;
 }
 [data-proRate] [data-currentRating] {
-  border: 1px solid #008562;
+  border: 1px solid royalblue;
   border-radius: 5px;
-  background: #008562;
+  background: royalblue;
   color: white;
 }
 [data-proRate] [data-currentRating] p {
@@ -19006,7 +19006,7 @@ label[for="localUploadFile"] i,
 [data-payManager-methods] li[data-showmore] button {
   padding: 1.1rem 0.5rem;
   text-align: left;
-  color: #32ae5d;
+  color: royalblue;
 }
 [data-payManager-methods] > li > button > p[data-title].has-desc img[data-art] {
   top: 0.2rem;
@@ -19071,7 +19071,7 @@ label[for="localUploadFile"] i,
   margin-right: 3px;
 }
 [data-payManager-methods] [data-limits] > dd {
-  color: #32ae5d;
+  color: royalblue;
   font-weight: bold;
 }
 [data-payManager-methods] [data-subMethodstabs] label {
@@ -19262,7 +19262,7 @@ body:not([data-isloaded]) [data-payManager] {
   [data-payManager] [data-addrem] button {
     transition: background-color 0.3s, color 0.3s;
     opacity: 1;
-    background-color: #008562 !important;
+    background-color: royalblue !important;
     color: white;
     border-radius: 500px;
     height: 1.8rem;
@@ -19492,7 +19492,7 @@ body:not([data-isloaded]) [data-payManager] {
 [data-payManager-methods] [data-msg-area] [data-forcemin-area] label {
   cursor: pointer;
   line-height: 1em;
-  background-color: #32ae5d;
+  background-color: royalblue;
   color: white;
   border-radius: 8px;
   padding: 0.5rem;
@@ -19524,7 +19524,7 @@ body:not([data-isloaded]) [data-payManager] {
   [data-forcemin-area]
   label.beautified.is-active
   > span:before {
-  color: #32ae5d;
+  color: royalblue;
 }
 [data-payManager-methods] [data-info-area]:not(.is-active):not(.force-show) {
   display: none;
@@ -19545,7 +19545,7 @@ body:not([data-isloaded]) [data-payManager] {
   line-height: 1.2em !important;
 }
 [data-payManager-methods] [data-info-area] [data-info-area-title] strong {
-  color: #008562;
+  color: royalblue;
 }
 [data-payManager-methods] [data-info-area] [data-info-area-message],
 [data-payManager-methods] .info-area-message {
@@ -19688,10 +19688,10 @@ body:not([data-isloaded]) [data-payManager] {
   border-radius: 5px;
   display: block;
   width: 100%;
-  background-color: #32ae5d !important;
+  background-color: royalblue !important;
   margin-bottom: 0;
   color: white !important;
-  border-color: #32ae5d !important;
+  border-color: royalblue !important;
 }
 [data-payManager-methods] [data-submit-payment]:focus {
   background-color: #278648 !important;
@@ -19798,7 +19798,7 @@ body:not([data-isloaded]) [data-payManager] {
 }
 [data-payManager-methods] [data-payment-storage-nav],
 [data-payManager-methods] [data-payment-nav] {
-  color: #32ae5d !important;
+  color: royalblue !important;
   font-size: 0.75rem;
   font-weight: 500;
   float: left;
@@ -19807,7 +19807,7 @@ body:not([data-isloaded]) [data-payManager] {
   display: inline-block;
   content: "\b4";
   font-family: "icomoon-slim";
-  color: #32ae5d;
+  color: royalblue;
   font-size: 0.9em;
   vertical-align: middle;
   top: -0.1em !important;
@@ -19820,7 +19820,7 @@ body:not([data-isloaded]) [data-payManager] {
   display: inline-block;
   content: "\b3";
   font-family: "icomoon-slim";
-  color: #32ae5d;
+  color: royalblue;
   font-size: 0.9em;
   vertical-align: middle;
   top: -0.1em;
@@ -19837,14 +19837,14 @@ body:not([data-isloaded]) [data-payManager] {
   display: inline-block;
   content: "\b4";
   font-family: "icomoon-slim";
-  color: #32ae5d;
+  color: royalblue;
   font-size: 0.9em;
   vertical-align: middle;
   top: -0.1em !important;
   position: relative;
 }
 [data-payment-storage-nav] {
-  border: 2px solid #32ae5d;
+  border: 2px solid royalblue;
   padding: 0.5em 0.6em;
   border-radius: 500px;
 }
@@ -19877,7 +19877,7 @@ body:not([data-isloaded]) [data-payManager] {
   padding-bottom: 0;
 }
 [data-payManager-methods] [data-autosubmethod-navigation] .switch > span {
-  color: #32ae5d;
+  color: royalblue;
   vertical-align: middle;
   display: inline-block;
   font-size: 0.65rem;
@@ -19891,13 +19891,13 @@ body:not([data-isloaded]) [data-payManager] {
   input:not(:checked)
   ~ .switch-paddle {
   background-color: transparent !important;
-  border: 1px solid #32ae5d;
+  border: 1px solid royalblue;
 }
 [data-payManager-methods]
   [data-autosubmethod-navigation]
   input:checked
   ~ .switch-paddle {
-  background-color: #32ae5d !important;
+  background-color: royalblue !important;
 }
 [data-payManager-methods]
   [data-autosubmethod-navigation]
@@ -19905,7 +19905,7 @@ body:not([data-isloaded]) [data-payManager] {
   .switch-paddle::after {
   width: 0.8rem;
   height: 0.8rem;
-  background-color: #32ae5d;
+  background-color: royalblue;
   top: 0.15rem;
 }
 [data-payManager-methods]
@@ -19927,7 +19927,7 @@ body:not([data-isloaded]) [data-payManager] {
   left: 14%;
 }
 [data-payManager-methods] [data-autosubmethod-navigation] .switch-inactive {
-  color: #32ae5d;
+  color: royalblue;
 }
 [data-payManager-methods] [data-autoSubMehod-nav] {
   font-size: 0.75rem;
@@ -20013,7 +20013,7 @@ body:not([data-isloaded]) [data-payManager] {
   margin-bottom: 0.5rem;
 }
 [data-payManager-methods] [data-status-msg].success {
-  color: #32ae5d;
+  color: royalblue;
   border-color: #278648;
   background-color: rgba(50, 174, 93, 0.1);
 }
@@ -20252,7 +20252,7 @@ body:not([data-isloaded]) [data-payManager] {
 [data-payManager-methods] [data-pcd-compliant] p a {
   display: block;
   text-align: right;
-  color: #32ae5d;
+  color: royalblue;
   position: relative;
   top: 0.5rem;
   left: 0.2rem;
@@ -20625,7 +20625,7 @@ table[data-mystoredpaymentmethods] input:checked ~ .switch-paddle::after {
     margin-bottom: 0;
   }
   [data-payManager-methods].flat > li.is-active:not([data-blocked]) {
-    border-color: #32ae5d !important;
+    border-color: royalblue !important;
     border-width: 3px !important;
   }
 }
@@ -20698,7 +20698,7 @@ table[data-mystoredpaymentmethods] input:checked ~ .switch-paddle::after {
 [data-payManager-methods].flat [data-hidden-info] [data-hidden-info-message] p {
   line-height: 1.2em;
   font-size: 0.9em;
-  color: #32ae5d !important;
+  color: royalblue !important;
 }
 [data-payManager-methods].flat
   [data-info-autopayment]
@@ -20769,13 +20769,13 @@ table[data-mystoredpaymentmethods] input:checked ~ .switch-paddle::after {
   > li[data-method][data-status="1"].is-active
   > button {
   background-color: #fff;
-  color: #008562;
+  color: royalblue;
 }
 [data-payManager-methods].flat
   > li[data-method][data-status="1"].is-active
   > button
   [data-title] {
-  color: #008562 !important;
+  color: royalblue !important;
 }
 [data-payManager-methods].flat
   > li[data-method][data-status="1"].is-active
@@ -20792,7 +20792,7 @@ table[data-mystoredpaymentmethods] input:checked ~ .switch-paddle::after {
   > li[data-method][data-status="0"].is-active
   > button
   [data-title] {
-  color: #008562 !important;
+  color: royalblue !important;
 }
 [data-payManager-methods].flat
   > li[data-method][data-status="2"].is-active
@@ -20803,7 +20803,7 @@ table[data-mystoredpaymentmethods] input:checked ~ .switch-paddle::after {
   > li[data-method][data-status="2"].is-active
   > button
   [data-title] {
-  color: #008562 !important;
+  color: royalblue !important;
 }
 [data-payManager-methods].flat
   > li[data-method][data-status="1"].is-active
@@ -20990,8 +20990,8 @@ table[data-mystoredpaymentmethods] input:checked ~ .switch-paddle::after {
   color: rgba(50, 53, 55, 0.5) !important;
 }
 [data-payManager-methods].flat .beautified.is-active > span {
-  border-color: #32ae5d !important;
-  background-color: #32ae5d !important;
+  border-color: royalblue !important;
+  background-color: royalblue !important;
 }
 [data-payManager-methods].flat .beautified.is-active > span:before {
   text-shadow: none !important;
@@ -21024,7 +21024,7 @@ table[data-mystoredpaymentmethods] input:checked ~ .switch-paddle::after {
   margin-bottom: 0.5rem;
 }
 [data-quickPaymanager] [data-status-msg].success {
-  color: #32ae5d;
+  color: royalblue;
   border-color: #278648;
   background-color: rgba(50, 174, 93, 0.1);
 }
@@ -21035,7 +21035,7 @@ table[data-mystoredpaymentmethods] input:checked ~ .switch-paddle::after {
 }
 [data-quickPaymanager] [data-quickPaymanager-content] {
   margin-bottom: 1rem !important;
-  border: 3px solid #32ae5d !important;
+  border: 3px solid royalblue !important;
   padding: 0.5rem;
   background-color: transparent;
   border-radius: 5px !important;
@@ -21194,7 +21194,7 @@ table[data-mystoredpaymentmethods] input:checked ~ .switch-paddle::after {
 [data-quickPaymanager] [data-payment-storage] [data-submit-payment] {
   width: 100%;
   margin-bottom: 0;
-  background-color: #32ae5d;
+  background-color: royalblue;
 }
 [data-quickPaymanager] [data-payment-storage] [data-submit-payment] strong {
   font-weight: 500;
@@ -21236,8 +21236,8 @@ table[data-mystoredpaymentmethods] input:checked ~ .switch-paddle::after {
   color: rgba(50, 53, 55, 0.5) !important;
 }
 [data-quickPaymanager] .beautified.is-active > span {
-  border-color: #32ae5d !important;
-  background-color: #32ae5d !important;
+  border-color: royalblue !important;
+  background-color: royalblue !important;
 }
 [data-quickPaymanager] .beautified.is-active > span:before {
   text-shadow: none !important;
@@ -21577,7 +21577,7 @@ table[data-mystoredpaymentmethods] input:checked ~ .switch-paddle::after {
   font-family: "Roboto", Helvetica, Arial, sans-serif !important;
 }
 #transferTypeContent form small {
-  color: #008562;
+  color: royalblue;
   display: inline-block;
   line-height: 1em;
 }
@@ -21719,13 +21719,13 @@ table.cash_movements [data-ccard] {
   color: #664a00;
 }
 table.cash_movements i[data-abono] {
-  color: #008562;
+  color: royalblue;
   vertical-align: middle;
 }
 table.cash_movements span[data-abono] {
   border: 1px solid rgba(0, 133, 98, 0.5) !important;
   background-color: rgba(0, 0, 0, 0) !important;
-  color: #008562 !important;
+  color: royalblue !important;
   margin: 2px;
   font-size: 0.6rem;
   border-radius: 3px;
@@ -21734,7 +21734,7 @@ table.cash_movements span[data-abono] {
   text-transform: uppercase;
 }
 table.cash_movements span[data-abono].active {
-  background-color: #008562 !important;
+  background-color: royalblue !important;
   color: #fff !important;
 }
 table.cash_movements span[data-abono].active * {
@@ -21742,7 +21742,7 @@ table.cash_movements span[data-abono].active * {
 }
 table.cash_movements span[data-abono]:hover:not(.label) {
   transition: background-color 0.5s ease, color 0.5s ease;
-  background-color: #008562 !important;
+  background-color: royalblue !important;
   color: #fff !important;
 }
 table.cash_movements span[data-abono]:hover:not(.label) * {
@@ -21755,7 +21755,7 @@ table.cash_movements span[data-abono].round {
   border-radius: 100px;
 }
 table.cash_movements span[data-abono].label {
-  color: #008562 !important;
+  color: royalblue !important;
 }
 table.cash_movements span[data-abono].a.label:hover {
   color: #fff !important;
@@ -21943,7 +21943,7 @@ table.cash_movements tr > *:nth-child(5) {
 [data-this-mark]:before {
   content: "●";
   font-size: 1.3rem;
-  color: #008562;
+  color: royalblue;
   text-shadow: 0px 0px 2px #00d29a;
 }
 [data-this-mark] {
@@ -22821,7 +22821,7 @@ div:not(.main-div) #myConfigOptions {
   border-bottom: 4px solid #d2d6d9;
 }
 #myConfigOptions .tabs.flatTabs > li.is-active a {
-  border-bottom: 4px solid #008562;
+  border-bottom: 4px solid royalblue;
 }
 #myConfigOptions .tabs.flatTabs > li:not(.is-active) a:hover {
   background-color: transparent;
@@ -22831,7 +22831,7 @@ div:not(.main-div) #myConfigOptions {
 }
 #myConfigOptions .tabs.flatTabs > li.is-active a:hover {
   background-color: transparent !important;
-  border-bottom: 4px solid #008562 !important;
+  border-bottom: 4px solid royalblue !important;
 }
 @media print, screen and (max-width: 39.99875em) {
   #myConfigOptions {
@@ -23553,7 +23553,7 @@ div:not(.main-div) #myConfigOptions {
 }
 #myPanel #infoPanel #infoPanel_statsEarn,
 #myPanel #infoPanel #infoPanel_balance {
-  color: #32ae5d;
+  color: royalblue;
 }
 #myPanel #infoPanel button {
   overflow: visible;
@@ -23703,14 +23703,14 @@ div:not(.main-div) #myConfigOptions {
 }
 #myPanel #summaryPanel.lightTheme .tabs-title:not(.is-active) a,
 .localModals.lightTheme .tabs-title:not(.is-active) a {
-  color: #32ae5d !important;
-  border-color: rgba(50, 174, 93, 0.5) !important;
+  color: royalblue !important;
+  border-color: royalblue !important;
 }
 #myPanel #summaryPanel.lightTheme .tabs.flatTabs > li.is-active a,
 .localModals.lightTheme .tabs.flatTabs > li.is-active a {
-  background-color: #32ae5d !important;
+  background-color: royalblue !important;
   color: #fff;
-  border-color: rgba(50, 174, 93, 0.5) !important;
+  border-color: royalblue !important;
 }
 @media print, screen and (max-width: 63.99875em) {
   #myPanel #summaryPanel.lightTheme > .row > .column:first-child,
@@ -23874,14 +23874,14 @@ div:not(.main-div) #myConfigOptions {
 #myPanel #summaryPanel .summaryPanel.box .pill,
 .localModals .summaryPanel.box .pill {
   text-shadow: none !important;
-  color: #32ae5d !important;
-  border-color: #32ae5d !important;
+  color: royalblue !important;
+  border-color: royalblue !important;
   font-weight: normal !important;
   font-family: "Roboto", Helvetica, Arial, sans-serif !important;
 }
 #myPanel #summaryPanel .summaryPanel.box .button.pill:hover,
 .localModals .summaryPanel.box .button.pill:hover {
-  background-color: #32ae5d !important;
+  background-color: royalblue !important;
   color: white !important;
 }
 @media print, screen and (max-width: 39.99875em) {
@@ -24291,7 +24291,7 @@ div:not(.main-div) #myConfigOptions {
   margin: 0;
 }
 .myPanel h2:before {
-  color: #008562;
+  color: royalblue;
 }
 .myPanel [data-user-contents] {
   background-color: #f4f4f4;
@@ -24386,9 +24386,9 @@ div:not(.main-div) #myConfigOptions {
   margin: 0;
   background-color: transparent;
   box-shadow: none !important;
-  border: 1px solid #008562;
+  border: 1px solid royalblue;
   border-radius: 5px;
-  color: #008562;
+  color: royalblue;
   letter-spacing: -0.03em;
   font-size: 0.9rem;
 }
@@ -24560,7 +24560,7 @@ div:not(.main-div) #myConfigOptions {
 }
 #myPanel.myPanel [data-actions] > *:before,
 .localModals [data-actions] > *:before {
-  color: #008562;
+  color: royalblue;
   font-size: 100%;
 }
 #myPanel.myPanel [data-actions],
@@ -24598,7 +24598,7 @@ div:not(.main-div) #myConfigOptions {
 [data-yourbets-summary] h2[data-title]:before,
 [data-yourbets-summary] [data-defaultmsgs] > i,
 [data-yourbets-summary] [data-defaultmsgs] a {
-  color: #32ae5d !important;
+  color: royalblue !important;
 }
 [data-yourbets-summary] [data-upanel-stats-unit] {
   display: inline-block;
@@ -24631,11 +24631,11 @@ div:not(.main-div) #myConfigOptions {
   text-align: right;
 }
 [data-yourbets-summary] td:last-child *:before {
-  color: #32ae5d !important;
+  color: royalblue !important;
 }
 [data-yourbets-summary] .button {
-  border: 1px solid #32ae5d !important;
-  color: #32ae5d !important;
+  border: 1px solid royalblue !important;
+  color: royalblue !important;
 }
 [data-yourbets-summary] [data-icon] {
   font-size: 140%;
@@ -24664,12 +24664,12 @@ div:not(.main-div) #myConfigOptions {
   margin-bottom: 0.3em;
 }
 [data-yourbets-summary] [data-type] {
-  border: 1px solid #32ae5d;
+  border: 1px solid royalblue;
   border-radius: 4px;
   padding: 0.1em 0.2em;
   line-height: 0;
   text-transform: uppercase;
-  color: #32ae5d;
+  color: royalblue;
   letter-spacing: -0.03em;
   font-size: 85%;
 }
@@ -24693,7 +24693,7 @@ div:not(.main-div) #myConfigOptions {
   line-height: 1em;
 }
 [data-yourbets-summary] [data-actions] a {
-  color: #32ae5d;
+  color: royalblue;
 }
 [data-yourbets-summary] .tabs#userBets .tabs-title {
   position: relative;
@@ -24705,13 +24705,13 @@ div:not(.main-div) #myConfigOptions {
 }
 [data-yourbets-summary]
   [data-prize]:not([data-prize="0,00"]):not([data-prize=""]) {
-  color: #32ae5d;
+  color: royalblue;
 }
 [data-yourbets-summary] tr[data-status="2"] span[data-status] {
   color: white;
 }
 [data-yourbets-summary] tr[data-status="1"] span[data-status] {
-  color: #32ae5d;
+  color: royalblue;
 }
 @media print, screen and (min-width: 64em) {
   [data-yourbets-summary] .tabs#userBets .tabs-title a {
@@ -24920,9 +24920,9 @@ ul[data-periodGrid] li.is-active {
 }
 ul[data-periodGrid] li.right {
   opacity: 1;
-  background-color: #32ae5d;
+  background-color: royalblue;
   color: white;
-  border-color: #32ae5d;
+  border-color: royalblue;
 }
 ul[data-periodGrid] li.wrong {
   opacity: 1;
@@ -25136,7 +25136,7 @@ ul[data-periodGrid] li.wrong {
   float: none;
 }
 #validateStuff [data-docsItems] li i {
-  color: #008562;
+  color: royalblue;
 }
 @media print, screen and (min-width: 64em) {
   #validateStuff {
@@ -25349,7 +25349,7 @@ ul[data-periodGrid] li.wrong {
 }
 #quickPicks #quickPicksContainer {
   text-align: center;
-  background-color: #32ae5d;
+  background-color: royalblue;
 }
 #quickPicksContent {
   margin-top: 0rem;
@@ -25394,7 +25394,7 @@ ul[data-periodGrid] li.wrong {
   letter-spacing: -0.03em;
 }
 #quickPicks [data-title] #quickPicksLogo {
-  color: #32ae5d;
+  color: royalblue;
   display: inline-block;
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -25860,7 +25860,7 @@ ul[data-periodGrid] li.wrong {
   letter-spacing: -0.1rem;
   border-radius: 10px;
   border: none;
-  box-shadow: 0px 0px 0px 14px #32ae5d;
+  box-shadow: 0px 0px 0px 14px royalblue;
   color: #164b28;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
@@ -25878,8 +25878,8 @@ ul[data-periodGrid] li.wrong {
   height: 2rem;
   border-radius: 500px;
   opacity: 1;
-  box-shadow: 0px 0px 0px 3px white, 0px 0px 0px 8px #32ae5d;
-  border: 2px solid #32ae5d;
+  box-shadow: 0px 0px 0px 3px white, 0px 0px 0px 8px royalblue;
+  border: 2px solid royalblue;
   background-color: white;
 }
 #quickPicks [data-addrem] button:hover {
@@ -25897,7 +25897,7 @@ ul[data-periodGrid] li.wrong {
 }
 #quickPicks [data-rem]:before,
 #quickPicks [data-add]:before {
-  color: #32ae5d;
+  color: royalblue;
   font-size: 1.8rem;
 }
 #quickPicks [data-total] {
@@ -26271,7 +26271,7 @@ body {
 .richBlock .richBlockActions .button {
   cursor: pointer;
   transition: background-color 0.4s;
-  background-color: #008562;
+  background-color: royalblue;
 }
 .richBlockActions > div p {
   font-family: "Roboto", Helvetica, Arial, sans-serif !important;
@@ -27297,10 +27297,10 @@ body {
   font-size: 0.85rem;
 }
 #pep small {
-  color: #008562;
+  color: royalblue;
 }
 #pep small a {
-  color: #008562;
+  color: royalblue;
   line-height: 1.2em;
   text-decoration: underline;
 }
@@ -27514,7 +27514,7 @@ body {
 @media print, screen and (max-width: 39.99875em) {
   #login.login [data-disclaimer] *,
   #login.login [data-disclaimer] ul li + li:before {
-    color: #008562 !important;
+    color: royalblue !important;
     text-shadow: none;
   }
   #login.register [data-disclaimer] *,
@@ -27605,8 +27605,8 @@ body:not([data-app]) .top-menu:before {
   width: 100%;
   content: "";
   opacity: 1;
-  background: #008562;
-  background: linear-gradient(180deg, #008562 0%, #005d45 100%);
+  background: royalblue;
+  background: linear-gradient(180deg, royalblue 0%, #005d45 100%);
 }
 @media print, screen and (min-width: 64em) {
   body:not([data-app]) .top-menu:before {
@@ -27715,7 +27715,7 @@ html.summer body:not(.setFixed) .top-menu [data-logo] i {
 .top-menu-gamesNav [data-hidden] {
   overflow: hidden;
   height: 0px;
-  background-color: #008562;
+  background-color: royalblue;
   padding: 0;
 }
 .top-menu-gamesNav [data-hidden] {
@@ -27729,7 +27729,7 @@ html.summer body:not(.setFixed) .top-menu [data-logo] i {
   background: linear-gradient(
     180deg,
     rgba(0, 103, 76, 0.95) 0%,
-    #008562 100%
+    royalblue 100%
   ) !important;
 }
 .top-subMenuPromo {
@@ -27773,7 +27773,7 @@ body[data-notShowingSubmenu].setFixed .top-menu #cartSummaryButton {
 }
 body[data-notShowingSubmenu].setFixed .top-menu #purchaseSummary .badge {
   background-color: white !important;
-  color: #008562 !important;
+  color: royalblue !important;
 }
 body[data-notShowingSubmenu].setFixed .top-subMenu[data-hidden] {
   height: 3.6rem;
@@ -28033,9 +28033,9 @@ body.setFixed [data-menu-games] [data-gameImg] {
     min-width: 100px;
     overflow: hidden;
     border: none;
-    background: #008562;
+    background: royalblue;
     margin-top: 0;
-    background: linear-gradient(180deg, #005d45 0%, #008562 100%);
+    background: linear-gradient(180deg, #005d45 0%, royalblue 100%);
     border-radius: 0px 0px 9px 9px;
   }
   #overflown-gamesCategories a {
@@ -28310,8 +28310,8 @@ body[data-nocasino] [data-top-menu-gamesNav] ul:not(:first-child) {
     background-color: transparent;
   }
   body [data-gamingtabs] {
-    background-color: #008562;
-    background: linear-gradient(180deg, #008562 0%, #006c4f 100%);
+    background-color: royalblue;
+    background: linear-gradient(180deg, royalblue 0%, #006c4f 100%);
   }
   body [data-gamingtabs] li {
     padding-left: 0px;
@@ -28340,7 +28340,7 @@ body[data-app] [data-gamingtabs] .tabs-title a {
 }
 body[data-app] [data-gamingtabs] {
   background-color: rgba(0, 133, 98, 0.9);
-  background: linear-gradient(180deg, #008562 0%, #006c4f 100%);
+  background: linear-gradient(180deg, royalblue 0%, #006c4f 100%);
 }
 body[data-app] [data-gamingtabs] li {
   padding-left: 0px;
@@ -28401,7 +28401,7 @@ footer #footerMenu li {
   font-size: 1.15rem !important;
 }
 footer #footerMenu li a {
-  color: #008562;
+  color: royalblue;
 }
 footer #footerTrust {
   padding: 1rem;
@@ -28616,7 +28616,7 @@ footer [data-disclaimer] ul li + li:before {
   font-size: 3.8rem;
   margin-bottom: 0.8rem;
   margin-top: 1rem;
-  color: #008562;
+  color: royalblue;
 }
 #unsupportedModal img {
   width: 180px;
@@ -28684,7 +28684,7 @@ footer [data-disclaimer] ul li + li:before {
   display: inline-block;
 }
 [data-ingameSupport] a {
-  color: #008562 !important;
+  color: royalblue !important;
 }
 [data-ingameSupport] img {
   position: relative;
@@ -28704,7 +28704,7 @@ footer [data-disclaimer] ul li + li:before {
   text-align: center;
 }
 [data-ingameSupport] [data-chatstatus] button {
-  color: #008562 !important;
+  color: royalblue !important;
 }
 [data-featuresBox] {
   padding-bottom: 1rem;

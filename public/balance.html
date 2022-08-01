@@ -1359,96 +1359,134 @@
         <span class="peek">▴</span>
       </div>
       <div class="row" style="position: relative">
-        <nav id="mobileMenu">
+       <nav id="mobileMenu" class="">
           <div id="mobileGamesMenu" class="" style="display: none">
             <button
               aria-label="Main menu"
               data-mobilegamesmenutoggle=""
               type="button"
-              class="white"
+              class="white is-closed"
               ><span>MENU</span
               ><i data-mobilemenuicon="" class="icon-slim-menu"
                 >&nbsp;</i
               ></button
             >
             <div id="mobileGamesMenuArt">
-              <img
-                src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
-                class="avatar"
-                alt="My account"
-              />
-              <div class="text-center core_spaceTThin">
-                <button
-                  data-logintrigger=""
-                  class="core_spaceBzero button round bg_blue"
-                  ><strong>Login</strong></button
-                >
-                <a class="core_spaceBzero button round" href="./signup.html"
-                  ><strong>Create your account</strong></a
-                >
+              <div class="text-center core_spaceBThin"
+                ><a href="https://www.lottofy.com/en/panel/"
+                  ><img
+                    src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
+                    class="avatar"
+                    alt="My account" /></a
+              ></div>
+              <div id="mobileVCashMenu" class="hide-for-large-up clearfix">
+                <div class="clearfix">
+                  <div class="float-left">Virtual Balance Available:</div>
+                  <div class="float-right"
+                    ><strong>0,00<small>€</small></strong></div
+                  >
+                </div>
+              </div>
+              <div class="text-center row collapse clearfix">
+                <div class="column small-5">
+                  <a
+                    class="core_full float-left core_spaceBzero button bg_blue"
+                    href="https://www.lottofy.com/en/balance/#add_cash"
+                    data-addbalance=""
+                    onclick="hideMobileMenu();$('[href=\'#add_cash\']').click()"
+                    ><strong>Add balance</strong></a
+                  >
+                </div>
+                <div class="column small-5">
+                  <a
+                    class="core_full float-right core_spaceBzero button bg_purpleRain"
+                    href="https://www.lottofy.com/en/balance/#withdraw_cash"
+                    data-withdrawbalance=""
+                    onclick="hideMobileMenu();$('[href=\'#withdraw_cash\']').click()"
+                    ><strong>Withdraw funds</strong></a
+                  >
+                </div>
               </div>
             </div>
             <ul>
-              <li class="has-submenu is-opened">
+              <li data-sectionsmenu="" class="has-submenu is-opened">
                 <a href="javascript:void(null)"
-                  ><i class="icon-games-lottery"></i> Lottery</a
+                  ><img
+                    src="https://d2dii1yqrc4zf3.cloudfront.net/lottofy/avatars/default-avatar-1.gif"
+                    class="avatar"
+                    alt="My account"
+                  />
+                  Hello @U059598!</a
                 >
-                <ul style="display: block">
-               
-                   
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-euromillones"
-                    >
-                      2D lottery</a
-                    >
-                     
-                  </li>
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-powerball"
-                    >
-                     3D lottery</a
-                    >
-                    
-                  </li>
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-megamillions"
-                    >
-                      Mangnum</a
-                    >
-                   
-                  </li>
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-superenalotto"
-                    >
-                      Da ma cai</a
-                    >
-                   
-                  </li>
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-primitiva"
-                    >
-                  Toto Malaysia</a
-                    >
-                   
-                  </li>
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-lotto6aus49"
-                    >
-                       5D Toto</a
-                    >
-                    <!-- <ul>
+                <ul>
+                  <li
+                    ><a href="./account.html"
+                      ><i class="icon-common-User-2"></i> My
+                      <strong>Account</strong></a
+                    ></li
+                  >
+                  <li
+                    ><a href="./bets.html"
+                      ><i class="icon-common-calendar2"></i> My
+                      <strong>Bets</strong></a
+                    ></li
+                  >
+                  <li
+                    ><a href="./balance.html"
+                      ><i class="icon-common-vcashpile"></i> My<strong
+                        >Balance</strong
+                      ></a
+                    ></li
+                  >
+                  <li
+                    ><a href="./settings.html" class=""
+                      ><i class="icon-slim-cog-outline"></i>
+                      <strong>Settings</strong></a
+                    ></li
+                  >
+                  <li
+                    ><a href="javascript:void(null)" data-open="closeSession"
+                      ><i class="icon-slim-switch"></i> Logout</a
+                    ></li
+                  >
+                </ul>
+              </li>
+            </ul>
+         <ul>
+            <li class="has-submenu has-lot">
+              <a href="javascript:void(null)"><i class="icon-games-lottery"></i> Lottery</a>
+              <ul style="display: none;">
+
+
+                <li class="">
+                  <a href="./2D/2d.html" class="icon-games-euromillones">
+                    2D lottery</a>
+
+                </li>
+                <li class="">
+                  <a href="./3d/3d.html" class="icon-games-powerball">
+                    3D lottery</a>
+
+                </li>
+                <li class="">
+                  <a href="./4d/4d.html" class="icon-games-megamillions">
+                    Mangnum</a>
+
+                </li>
+                <li class="">
+                  <a href="./4d/4d.html" class="icon-games-superenalotto">
+                    Da ma cai</a>
+
+                </li>
+                <li class="">
+                  <a href="./4d/4d.html" class="icon-games-primitiva">
+                    Toto Malaysia</a>
+
+                </li>
+                <li class="">
+                  <a href="./5d6d/5d6d.html" class="icon-games-lotto6aus49">
+                    5D Toto</a>
+                  <!-- <ul>
                       <li
                         ><a href="/en/lotto6aus49/play/"
                           ><i class="icon-slim-arrow-right2"></i> Play
@@ -1463,29 +1501,27 @@
                       >
                       
                     </ul> -->
-                  </li>
-                  <li class="has-submenu">
-                    <a
-                      href="javascript:void(null)"
-                      class="icon-games-eurojackpot"
-                    >
-                      6D Toto</a
-                    >
-                 
-                  </li>
-                  <li class="has-submenu">
-                    <a href="javascript:void(null)" class="icon-games-quiniela">
-                     3+3D bonus</a
-                    >
-         
-                  </li>
-                  
-                </ul>
-              </li>
-            </ul>
+                </li>
+                <li class=" ">
+                  <a href="./5d6d/5d6d.html" class="icon-games-eurojackpot">
+                    6D Toto</a>
+
+                </li>
+                <li class=" ">
+                  <a href="./5d6d/5d6d.html" class="icon-games-quiniela">
+                    Damacai 6D</a>
+
+                </li>
+
+              </ul>
+            </li>
+          </ul>
             <ul data-globalactions="">
               <li
-                ><a href="./contact.html" class="icon-common-bubble2">
+                ><a
+                  href="https://www.lottofy.com/en/helpdesk/"
+                  class="icon-common-bubble2"
+                >
                   Support &amp; Helpdesk</a
                 ></li
               >
@@ -1500,185 +1536,101 @@
                     />
                     EN</span
                   >
-                  <span class="label currency">USD</span>
+                  <span class="label currency">EUR</span>
                 </a>
                 <ul>
-                  <li>
-                    <div
-                      id="menu-lang-mobile"
-                      class="core_panel core_paddingTzero"
-                      data-menu-lang=""
-                    >
-                      <fieldset class="core_thin radius">
-                        <legend
-                          class="core_spaceBzero core_txtSize_sm2 core_normal"
-                          >Language</legend
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="ES"
-                          data-url="/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
-                            alt="es"
-                          />
-                          ES</button
-                        >
-                        <button
-                          type="button"
-                          class="label is-active"
-                          data-lang="EN"
-                          data-url="/en/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
-                            alt="gb"
-                          />
-                          EN</button
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="PT"
-                          data-url="/pt/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png"
-                            alt="pt"
-                          />
-                          PT</button
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="BR"
-                          data-url="/br/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png"
-                            alt="br"
-                          />
-                          BR</button
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="FR"
-                          data-url="/fr/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png"
-                            alt="fr"
-                          />
-                          FR</button
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="IT"
-                          data-url="/it/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png"
-                            alt="it"
-                          />
-                          IT</button
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="DE"
-                          data-url="/de/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png"
-                            alt="de"
-                          />
-                          DE</button
-                        >
-                        <button
-                          type="button"
-                          class="label"
-                          data-lang="IN"
-                          data-url="/in/?setlanguage=true"
-                          ><img
-                            class="imgSize size10 core_styleMiddle round"
-                            src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png"
-                            alt="in"
-                          />
-                          IN</button
-                        >
-                      </fieldset>
-                      <fieldset class="core_thin radius">
-                        <legend
-                          class="core_spaceBzero core_txtSize_sm2 core_normal"
-                          >Currency</legend
-                        >
-                        <button type="button" class="label" data-curr="eur"
-                          >EUR</button
-                        >
-                        <button
-                          type="button"
-                          class="label is-active"
-                          data-curr="usd"
-                          >USD</button
-                        >
-                        <button type="button" class="label" data-curr="brl"
-                          >BRL</button
-                        >
-                        <button type="button" class="label" data-curr="cny"
-                          >CNY</button
-                        >
-                        <button type="button" class="label" data-curr="inr"
-                          >INR</button
-                        >
-                        <button type="button" class="label" data-curr="cad"
-                          >CAD</button
-                        >
-                        <button type="button" class="label" data-curr="mxn"
-                          >MXN</button
-                        >
-                        <button type="button" class="label" data-curr="xof"
-                          >XOF</button
-                        >
-                        <button type="button" class="label" data-curr="clp"
-                          >CLP</button
-                        >
-                        <button type="button" class="label" data-curr="cop"
-                          >COP</button
-                        >
-                        <button type="button" class="label" data-curr="nok"
-                          >NOK</button
-                        >
-                        <button type="button" class="label" data-curr="pen"
-                          >PEN</button
-                        >
-                        <button type="button" class="label" data-curr="php"
-                          >PHP</button
-                        >
-                        <button type="button" class="label" data-curr="zar"
-                          >ZAR</button
-                        >
-                        <button type="button" class="label" data-curr="chf"
-                          >CHF</button
-                        >
-                        <button type="button" class="label" data-curr="gbp"
-                          >GBP</button
-                        >
-                        <button type="button" class="label" data-curr="ngn"
-                          >NGN</button
-                        >
-                      </fieldset>
-                      <button
-                        class="button core_full"
-                        data-save-lang=""
-                        disabled=""
-                        >Apply</button
+                  <div
+                    id="menu-lang-mobile"
+                    class="core_panel core_paddingTzero"
+                    data-menu-lang=""
+                  >
+                    <fieldset class="core_thin radius">
+                      <legend
+                        class="core_spaceBzero core_txtSize_sm2 core_normal"
+                        >Language</legend
                       >
-                    </div>
-                  </li>
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/panel/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/es.png"
+                          alt="es"
+                        />
+                        ES</a
+                      >
+                      <a
+                        class="label is-active"
+                        href="https://www.lottofy.com/en/panel/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/gb.png"
+                          alt="gb"
+                        />
+                        EN</a
+                      >
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/pt/painel/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/pt.png"
+                          alt="pt"
+                        />
+                        PT</a
+                      >
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/br/painel/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/br.png"
+                          alt="br"
+                        />
+                        BR</a
+                      >
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/fr/panneau/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/fr.png"
+                          alt="fr"
+                        />
+                        FR</a
+                      >
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/it/pannello/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/it.png"
+                          alt="it"
+                        />
+                        IT</a
+                      >
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/de/tafel/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/de.png"
+                          alt="de"
+                        />
+                        DE</a
+                      >
+                      <a
+                        class="label"
+                        href="https://www.lottofy.com/in/panel/?setlanguage=true"
+                        ><img
+                          class="flag"
+                          src="//d2oamtuj38i9pe.cloudfront.net/pro/common/images/flags/30/in.png"
+                          alt="in"
+                        />
+                        IN</a
+                      >
+                    </fieldset>
+                  </div>
                 </ul>
               </li>
             </ul>
