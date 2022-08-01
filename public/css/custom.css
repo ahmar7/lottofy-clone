@@ -149,6 +149,15 @@
 .core_inline-list1 {
   margin-left: 10px !important;
 }
+@media (max-width:420px) {
+  .core_inline-list1 {
+  margin-left: 0px !important;
+}
+.core_inline-list span{
+  font-size: 12px !important;
+}
+  
+}
 
 .main-bg {
   display: flex;

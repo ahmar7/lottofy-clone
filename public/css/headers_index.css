@@ -14997,7 +14997,7 @@ body .top-menu [data-vcDetail] span {
   line-height: 3rem;
   text-align: center;
   min-width: 3rem;
-  background: url("//cdn.inicium.com/images/common/loaders/loader2.svg") center
+  background: url("//cdn.inicium.com/images/common/loaders/menu1.svg") center
     center no-repeat transparent;
   background-size: 50% 50%;
 }
@@ -27839,4 +27839,7 @@ ul[data-latest-news] [data-ln-subTitle] {
   .log img {
     display: none;
   }
+}
+.show-it{
+  display: block !important;
 }

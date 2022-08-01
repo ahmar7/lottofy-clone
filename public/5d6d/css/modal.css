@@ -358,4 +358,7 @@
   .float-right .core_inline-list {
     margin-top: 0 !important;
   }
-}
+}@media (max-width: 419px){
+.core_inline-list span {
+    font-size: 10px !important;
+}}

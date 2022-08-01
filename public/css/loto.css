@@ -3986,3 +3986,15 @@
 }
 
 /*# sourceMappingURL=chartist-plugin-tooltip.css.map */
+.core_inline-list{
+  display: inline;
+}
+.collapse:not(.show){
+  display: inline !important;
+}
+@media (max-width:399px) {
+ .top-menu .float-left{
+    width: 120px !important;
+  }
+  
+}

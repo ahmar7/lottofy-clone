@@ -1,6 +1,7 @@
 /*======================================================================
 //Module File: core_cg_games.css
 //======================================================================*/
+
 @font-face {
     font-family: cg_games;
     font-weight: 400;
@@ -487,4 +488,9 @@
 .icon-brands-lottofy.after:after, .icon-brands-lottofy:not(.after):before {
     content: "\21";
     font-family: "lottofy-iconset" !important;
+}@media (min-width:1024px) {
+  .top-menu .float-right{
+    margin-top: 9px !important;
+  }
+  
 }

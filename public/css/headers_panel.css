@@ -23567,13 +23567,13 @@ div:not(.main-div) #myConfigOptions {
 }
 #myPanel #summaryPanel [data-summaryNav] button {
   width: 100%;
-  border: 1px solid #32ae89;
+  border: 1px solid royalblue;
   border-radius: 5px;
   color: white;
   padding: 0.5em 0.3em;
   height: 100%;
-  background-color: #32ae89;
-  background-image: -webkit-linear-gradient(top, #32ae89, #2c9a79);
+  background-color: royalblue;
+  background-image: -webkit-linear-gradient(top, royalblue, royalblue);
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
   font-family: "Roboto", Helvetica, Arial, sans-serif !important;
   font-size: calc(0.4rem + 1.2vw);
