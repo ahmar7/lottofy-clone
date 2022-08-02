@@ -129,7 +129,7 @@
   flex-direction: row;
   /* align-items: center; */
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .first-div {
   position: relative;
@@ -339,7 +339,7 @@
   right: -4000px;
 }
 .balance2 li {
-  margin-top: 10px !important;
+  margin-top: 13px !important;
   display: inline;
 }
 

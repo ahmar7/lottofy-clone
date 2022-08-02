@@ -26954,7 +26954,7 @@ body {
 }
 [data-top-menu-gamesnav] li[data-gametype="superlotto"] span[data-jackpot],
 [data-top-menu-gamesnav] li[data-gametype="superlotto"] span[data-date] {
-  background-color: #dd5f00 !important;
+  background-color: #dd5f00  ;
 }
 [data-top-menu-gamesnav] li[data-gametype="superlotto"]:not(.is-active) i {
   color: #dd5f00;

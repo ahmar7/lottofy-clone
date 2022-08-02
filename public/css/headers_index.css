@@ -12632,7 +12632,7 @@ hr.whiteTrans3 {
   font-size: 0.85rem;
   font-weight: bold;
   padding-top: 0;
-  color: white;
+  color: black;
   margin-top: -0.2rem;
   border-radius: 3px;
   height: 1.17rem;
@@ -13458,7 +13458,7 @@ body[data-app][data-debug] [data-mobileMenuArea] {
     margin-right: 0;
   }
   .top-menu-gamesNav li img {
-    height: 52px;
+    height: 27px !important;
   }
 }
 
@@ -23826,7 +23826,7 @@ body {
 
 [data-top-menu-gamesnav] li[data-gametype="superlotto"] span[data-jackpot],
 [data-top-menu-gamesnav] li[data-gametype="superlotto"] span[data-date] {
-  background-color: #dd5f00 !important;
+  background-color: #dd5f00  ;
 }
 
 [data-top-menu-gamesnav] li[data-gametype="superlotto"]:not(.is-active) i {
@@ -24311,7 +24311,7 @@ body {
 
 @media print, screen and (max-width: 39.99875em) {
   .top-menu-gamesNav ul {
-    height: 3.5rem;
+    height: 4.3rem;
     overflow-x: auto;
     overflow-y: hidden;
   }
@@ -27849,4 +27849,16 @@ ul[data-latest-news] [data-ln-subTitle] {
 }
 .show-it{
   display: block !important;
+}
+.bg-yellow{
+  background-color: #ffdf00  !important;
+}
+.bg-lyellow{
+  background-color: #ffc163 !important;
+}
+.bg-lblue{
+  background-color: #b1d0ff !important;
+}
+.bg-lpink{
+  background-color: #ff9a9a !important;
 }

@@ -3859,7 +3859,7 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
   flex-direction: row;
   /* align-items: center; */
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .first-div {
   position: relative;
@@ -3876,7 +3876,7 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
   right: -4000px;
 }
 .balance2 li {
-  margin-top: 10px !important;
+  margin-top: 13px !important;
   display: inline;
 }
 
