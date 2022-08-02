@@ -70,15 +70,28 @@ window.addEventListener("scroll", function () {
   if (window.pageYOffset > 80) {
     logo.classList.add("zero");
     right.classList.add("zero");
+    
+     header.classList.add("top-submenu-scroll");
     header.classList.add("sticky");
     console.log("sticky");
   } else if (window.pageYOffset < 50) {
     header.classList.remove("sticky");
     logo.classList.remove("zero");
+    
+    header.classList.remove("top-submenu-scroll");
     right.classList.remove("zero");
     console.log("nonsticky");
   }
 });
-
-  
  
+//     window.addEventListener("scroll", function () {
+//   let header = this.document.getElementById("strip2");
+  
+//   var value = header.offsetTop;
+//   if (window.pageYOffset > 80) {
+//      header.classList.add("top-submenu-scroll")
+//     } else if (window.pageYOffset < 50) {
+//     header.classList.remove("top-submenu-scroll")
+    
+//   }
+// }); 
