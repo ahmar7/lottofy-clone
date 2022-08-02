@@ -6,4 +6,5 @@ openLogin = () => {
 hideLogin = () => {
     let datamodal = document.getElementById("data_rev")
     datamodal.style.display = "none"
-}
+} 
+ 

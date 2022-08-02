@@ -1063,3 +1063,13 @@
       disabledClass: "disabled",
     });
 })(jQuery, window);
+   window.addEventListener("scroll", function () {
+     let header = this.document.getElementById("menu-scroll");
+
+     var value = header.offsetTop;
+     if (window.pageYOffset > 80) {
+       header.classList.add("top-submenu-scroll");
+     } else if (window.pageYOffset < 50) {
+       header.classList.remove("top-submenu-scroll");
+     }
+   }); 

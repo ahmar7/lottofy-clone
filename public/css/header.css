@@ -12388,9 +12388,11 @@ hr.whiteTrans3 {
   min-width: 35px;
   border-radius: 500px;
   margin-right: 5px;
-  margin-top: -5px !important;
+  margin-top: -5px;
 }
-
+.top-menu .avatar2 {
+  margin-top: -1px !important;
+}
 .top-menu a,
 .top-menu button {
   color: white;
@@ -12957,6 +12959,11 @@ body[data-notopbar] .off-canvas-wrap {
   display: block !important;
   width: 100%;
 }
+[data-menu-games] a {
+ 
+  height: 6.0rem !important;
+ 
+}
 
 [data-menu-games] button {
   overflow: hidden;
@@ -12969,7 +12976,7 @@ body[data-notopbar] .off-canvas-wrap {
   display: block;
   background-color: royalblue;
   color: white;
-  font-weight: bold;
+  font-weight: 550 !important;
   display: block;
   margin-top: 0.15rem;
   -webkit-font-smoothing: antialiased;
@@ -12982,7 +12989,6 @@ body[data-notopbar] .off-canvas-wrap {
   padding-right: 0.4rem;
   display: block;
 }
-
  
 
 [data-menu-games] [data-menu-viewmore] {
@@ -14002,7 +14008,7 @@ button[data-notifications].hover {
 
 [data-menu-games] li[data-gametype="primitiva"] span[data-jackpot],
 [data-menu-games] li[data-gametype="primitiva"] span[data-date] {
-  background-color: #19a47b !important;
+  background-color: #ff9a9a !important;
 }
 
 [data-menu-games] li[data-gametype="primitiva"]:not(.is-active) i {
@@ -14042,7 +14048,7 @@ button[data-notifications].hover {
 
 [data-menu-games] li[data-gametype="euromillones"] span[data-jackpot],
 [data-menu-games] li[data-gametype="euromillones"] span[data-date] {
-  background-color: #06629e !important;
+  background-color: #ffdf00   !important;
 }
 
 [data-menu-games] li[data-gametype="euromillones"]:not(.is-active) i {
@@ -14182,7 +14188,7 @@ button[data-notifications].hover {
 
 [data-menu-games] li[data-gametype="superloto"] span[data-jackpot],
 [data-menu-games] li[data-gametype="superloto"] span[data-date] {
-  background-color: #dd5f00 !important;
+  background-color: #ffdf00  !important;
 }
 
 [data-menu-games] li[data-gametype="superloto"]:not(.is-active) i {
@@ -14989,7 +14995,7 @@ body .top-menu [data-vcDetail] span {
   line-height: 3rem;
   text-align: center;
   min-width: 3rem;
-  background: url("//cdn.inicium.com/images/common/loaders/loader2.svg") center
+  background: url("//cdn.inicium.com/images/common/loaders/menu1.svg") center
     center no-repeat transparent;
   background-size: 50% 50%;
 }
@@ -15188,7 +15194,7 @@ nav#mobileMenu.is-open {
 }
 
 #mobileGamesMenu > ul:last-child {
-  border-top: 1px dotted rgba(255, 255, 255, 0.2);
+  border-top: none !important;
   padding-top: 2rem;
 }
 
@@ -15255,7 +15261,7 @@ nav#mobileMenu.is-open {
   padding-right: 2.5rem;
 }
 
-#mobileGamesMenu li.has-submenu > a:after {
+#mobileGamesMenu li.has-lot > a:after {
   font-family: icomoon-slim;
   transition: transform 0.3s;
   content: "\b3";
@@ -23448,7 +23454,7 @@ body {
 
 [data-menu-games] li[data-gametype="megamillions"] span[data-jackpot],
 [data-menu-games] li[data-gametype="megamillions"] span[data-date] {
-  background-color: #c71f00 !important;
+  background-color: #b1d0ff !important;
 }
 
 [data-menu-games] li[data-gametype="megamillions"]:not(.is-active) i {
@@ -23468,7 +23474,7 @@ body {
 
 [data-menu-games] li[data-gametype="powerball"] span[data-jackpot],
 [data-menu-games] li[data-gametype="powerball"] span[data-date] {
-  background-color: #c98820 !important;
+  background-color: #ffc163 !important;
 }
 
 [data-menu-games] li[data-gametype="powerball"]:not(.is-active) i {
@@ -23488,7 +23494,7 @@ body {
 
 [data-menu-games] li[data-gametype="lotto6aus49"] span[data-jackpot],
 [data-menu-games] li[data-gametype="lotto6aus49"] span[data-date] {
-  background-color: #0b88c3 !important;
+  background-color: #ff9a9a!important;
 }
 
 [data-menu-games] li[data-gametype="lotto6aus49"]:not(.is-active) i {
@@ -23508,7 +23514,7 @@ body {
 
 [data-menu-games] li[data-gametype="eurojackpot"] span[data-jackpot],
 [data-menu-games] li[data-gametype="eurojackpot"] span[data-date] {
-  background-color: #cd9100 !important;
+  background-color: #b1d0ff !important;
 }
 
 [data-menu-games] li[data-gametype="eurojackpot"]:not(.is-active) i {
@@ -23528,7 +23534,7 @@ body {
 
 [data-menu-games] li[data-gametype="superenalotto"] span[data-jackpot],
 [data-menu-games] li[data-gametype="superenalotto"] span[data-date] {
-  background-color: #db1d00 !important;
+  background-color: #ff9a9a !important;
 }
 
 [data-menu-games] li[data-gametype="superenalotto"]:not(.is-active) i {
@@ -24723,8 +24729,13 @@ html.summer body:not(.setFixed) .top-menu [data-logo] i {
 }
 
 .top-subMenu {
-  height: 4.4rem;
+  height: 6rem ;
   transition: all 0.3s ease;
+}
+.top-submenu-scroll{
+  
+  transition: all 0.3s ease;
+  height: 4.7rem !important;
 }
 
 .top-subMenu[data-hidden],
@@ -26595,7 +26606,11 @@ footer [data-disclaimer] ul li + li:before {
 #index.main .richBlock.big .richBlockContent .button span + i {
   margin-right: -0.5rem;
   display: inline-block;
-}
+} 
+                .core_styleTop li img{
+                  width: 90px !important;
+                }
+            
 
 #index.main .richBlock.big .richBlockContent .button span > * {
   display: block;
@@ -27775,9 +27790,8 @@ ul[data-latest-news] [data-ln-subTitle] {
     display: inline-block !important;
     margin-top: -7px !important;
   }
-  .index-mbl{
+  .index-mbl {
     margin-top: -3px !important;
-
   }
 }
 .log2 img {
@@ -27806,8 +27820,8 @@ ul[data-latest-news] [data-ln-subTitle] {
     height: 53px !important;
     width: 67px !important;
   }
-  .float-left .core_inline-list{
-    width: 100px !important;
+  .float-left .core_inline-list {
+    width: 120px !important;
   }
 }
 .log img {
@@ -27832,4 +27846,7 @@ ul[data-latest-news] [data-ln-subTitle] {
   .log img {
     display: none;
   }
+}
+.show-it{
+  display: block !important;
 }
