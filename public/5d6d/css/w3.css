@@ -1,33 +1,8 @@
-/* W3.CSS 2.65 by Jan Egil and Borge Refsnes */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+ 
 
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
+ 
+ 
 audio,
 canvas,
 video {
@@ -42,23 +17,8 @@ audio:not([controls]) {
 template {
   display: none;
 }
-a {
-  background-color: transparent;
-}
-a:active,
-a:hover {
-  outline: 0;
-}
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-dfn {
-  font-style: italic;
-}
-mark {
-  background: #ff0;
-  color: #000;
-}
+ 
+ 
 small {
   font-size: 80%;
 }
@@ -95,27 +55,9 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-button,
-input,
-select,
-textarea {
-  font: inherit;
-  margin: 0;
-}
-button {
-  overflow: visible;
-}
-button,
-select {
-  text-transform: none;
-}
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
+ 
+ 
+ 
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -164,23 +106,13 @@ body {
   font-size: 15px;
   line-height: 1.5;
 }
-html {
-  overflow-x: hidden;
-}
  
  
  
 .w3-wide {
   letter-spacing: 4px;
 }
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  font-weight: inherit;
-}
+ 
 hr {
   height: 0;
   border: 0;
