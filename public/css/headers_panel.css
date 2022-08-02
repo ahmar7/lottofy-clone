@@ -10584,7 +10584,7 @@ body[data-notopbar] .off-canvas-wrap {
   margin-top: -1.45rem !important;
 }
 [data-menu-games] li + li {
-  border-left: 1px dotted #ccc;
+  border-left: none;
 }
 [data-menu-games] {
   margin-bottom: 0.1rem;
@@ -10622,12 +10622,7 @@ body[data-notopbar] .off-canvas-wrap {
   padding-right: 0.4rem;
   display: block;
 }
-[data-menu-games] a.is-open {
-  background-color: #eeeff0;
-}
-[data-menu-games] a.is-open:hover {
-  color: #323537 !important;
-}
+ 
 [data-menu-games] [data-menu-viewmore] {
   position: absolute;
   right: -6.4rem;
@@ -15063,7 +15058,7 @@ ul.list li a > span:nth-child(1) {
 }
 #closeAccount li + li,
 #feedback li + li {
-  border-top: 1px dotted #b7bdc1;
+  border-top: none !important;
 }
 #closeAccount li,
 #feedback li {

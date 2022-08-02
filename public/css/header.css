@@ -12939,7 +12939,7 @@ body[data-notopbar] .off-canvas-wrap {
 }
 
 [data-menu-games] li + li {
-  border-left: 1px dotted #ccc;
+  border-left: none !important;
 }
 
 [data-menu-games] {
@@ -12983,13 +12983,7 @@ body[data-notopbar] .off-canvas-wrap {
   display: block;
 }
 
-[data-menu-games] a.is-open {
-  background-color: #eeeff0;
-}
-
-[data-menu-games] a.is-open:hover {
-  color: #323537 !important;
-}
+ 
 
 [data-menu-games] [data-menu-viewmore] {
   position: absolute;

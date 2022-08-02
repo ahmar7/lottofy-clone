@@ -349,3 +349,291 @@ body.setFixed .top-subMenu {
 .bets-section{
   margin-bottom: 30px;
 }
+/* Slider */
+.translate1{
+  transform: translateZ(0px) translateX(0px) !important;
+  transition:all 0.3s ease;
+    width: 3078px;
+}
+.translate2{
+  transform: translateZ(0px) translateX(-563px) !important;
+  transition:all 0.3s ease;
+    width: 3078px;
+}
+.translate3{
+  transform: translateZ(0px) translateX(-1126px) !important;
+  transition:all 0.3s ease;
+    width: 3078px;
+}
+/* .translate4{
+  transform: translateZ(0px) translateX(-1689px) !important;
+  transition:all 0.3s ease;
+    width: 3078px;
+}
+.translate5{
+  transform: translateZ(0px) translateX(-2252px) !important;
+  transition:all 0.3s ease;
+    width: 3078px;
+}
+.translate6{
+  transform: translateZ(0px) translateX(-2815px) !important;
+  transition:all 0.3s ease;
+    width: 3078px;
+} */
+.slideArea{
+ height: 177px; 
+ width: 563px !important;
+}
+@media (max-width:1024px) {
+  
+  .slideArea{
+  height: 222px;
+    width: 959px !important;
+  }
+  
+  .translate1{
+    transform: translateZ(0px) translateX(0px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate2{
+    transform: translateZ(0px) translateX(-959px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate3{
+    transform: translateZ(0px) translateX(-1918px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+}
+@media (max-width:900px) {
+  
+  .slideArea{
+     height: 222px;
+    width: 841px !important;
+  }
+  
+  .translate1{
+    transform: translateZ(0px) translateX(0px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate2{
+    transform: translateZ(0px) translateX(-841px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate3{
+    transform: translateZ(0px) translateX(-1682px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+}
+@media (max-width:800px) {
+  
+  .slideArea{
+     height: 222px;
+    width: 737px !important;
+  }
+  
+  .translate1{
+    transform: translateZ(0px) translateX(0px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate2{
+    transform: translateZ(0px) translateX(-737px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate3{
+    transform: translateZ(0px) translateX(-1474px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+}
+@media (max-width:720px) {
+  
+  .slideArea{
+     height: 222px;
+    width: 657px !important;
+  }
+  
+  .translate1{
+    transform: translateZ(0px) translateX(0px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate2{
+    transform: translateZ(0px) translateX(-657px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate3{
+    transform: translateZ(0px) translateX(-1314px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+}
+@media (max-width:640px) {
+  
+  .slideArea{
+     height: 222px;
+    width: 580px !important;
+  }
+  
+  .translate1{
+    transform: translateZ(0px) translateX(0px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate2{
+    transform: translateZ(0px) translateX(-580px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate3{
+    transform: translateZ(0px) translateX(-1160px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+}
+@media (max-width:535px) {
+  
+  .slideArea{
+     height: 222px;
+    width: 508px !important;
+  }
+  
+  .translate1{
+    transform: translateZ(0px) translateX(0px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate2{
+    transform: translateZ(0px) translateX(-508px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate3{
+    transform: translateZ(0px) translateX(-1016px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+}
+@media (max-width:480px) {
+  
+  .slideArea{
+     height: 222px;
+    width: 455px !important;
+  }
+  
+  .translate1{
+    transform: translateZ(0px) translateX(0px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate2{
+    transform: translateZ(0px) translateX(-455px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate3{
+    transform: translateZ(0px) translateX(-910px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+}
+@media (max-width:455px) {
+  
+  .slideArea{
+     height: 222px;
+    width: 420px !important;
+  }
+  
+  .translate1{
+    transform: translateZ(0px) translateX(0px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate2{
+    transform: translateZ(0px) translateX(-420px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate3{
+    transform: translateZ(0px) translateX(-840px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+}
+@media (max-width:425px) {
+  
+  .slideArea{
+     height: 222px;
+    width: 355px !important;
+  }
+  
+  .translate1{
+    transform: translateZ(0px) translateX(0px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate2{
+    transform: translateZ(0px) translateX(-355px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate3{
+    transform: translateZ(0px) translateX(-710px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+}
+@media (max-width:370px) {
+  
+  .slideArea{
+     height: 222px;
+    width: 320px !important;
+  }
+  
+  .translate1{
+    transform: translateZ(0px) translateX(0px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate2{
+    transform: translateZ(0px) translateX(-320px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate3{
+    transform: translateZ(0px) translateX(-640px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+}
+@media (max-width:330px) {
+  
+  .slideArea{
+     height: 222px;
+    width: 295px !important;
+  }
+  
+  .translate1{
+    transform: translateZ(0px) translateX(0px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate2{
+    transform: translateZ(0px) translateX(-295px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+  .translate3{
+    transform: translateZ(0px) translateX(-590px) !important;
+    transition:all 0.3s ease;
+      width: 3078px;
+  }
+}
