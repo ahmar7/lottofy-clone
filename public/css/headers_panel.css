@@ -27600,8 +27600,8 @@ body:not([data-app]) .top-menu:before {
   width: 100%;
   content: "";
   opacity: 1;
-  background: royalblue;
-  background: linear-gradient(180deg, royalblue 0%, #005d45 100%);
+  background: #5454C5;
+  background: linear-gradient(180deg, #5454C5 0%, #005d45 100%);
 }
 @media print, screen and (min-width: 64em) {
   body:not([data-app]) .top-menu:before {

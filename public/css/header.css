@@ -12374,7 +12374,7 @@ hr.whiteTrans3 {
 }
 
 .top-menu {
-  background-color: royalblue;
+  background-color: #5454C5;
   z-index: 1000;
   width: 100%;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -15429,7 +15429,7 @@ nav#mobileMenu.is-open {
   width: 1.5em;
   padding: 0.2em 0px;
   border-radius: 500px;
-  background-color: rgba(255, 255, 255, 0.28);
+  background-color: black;
   color: white;
   display: inline-block;
   height: 1.5em;
@@ -15488,7 +15488,7 @@ nav#mobileMenu.is-open {
   font-size: 123%;
   text-align: left;
   margin-top: 0.2em;
-  color: rgba(255, 255, 255, 0.8);
+  color:black;
 }
 
 .sectionHeader:not(#miApuestaHeader) [data-countdown] {
@@ -16760,7 +16760,7 @@ body[data-framed] #sidebarMenus {
   #login .loginBox form,
   #login .registerBox .registrationPanel,
   #login .validationBox form {
-    background-color: rgba(255, 255, 255, 0.94) !important;
+    background-color: #8ECCCC !important;
   }
 }
 
@@ -23390,7 +23390,7 @@ body {
 }
 
 .sectionHeader:not(#miApuestaHeader)[data-gametype="powerball"] {
-  background-color: #c98820;
+  background-color: #E6D465;
   border-bottom: 5px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -23398,7 +23398,7 @@ body {
 .sectionHeader:not(#miApuestaHeader)[data-gametype="powerball"]
   [data-gameName]
   * {
-  color: white;
+  color: black;
 }
 
 .sectionHeader:not(#miApuestaHeader)[data-gametype="lotto6aus49"] {
@@ -24604,8 +24604,8 @@ body:not([data-app]) .top-menu:before {
   width: 100%;
   content: "";
   opacity: 1;
-  background: royalblue;
-  background: linear-gradient(180deg, royalblue 0%, royalblue 100%);
+  background: #5454C5;
+  background: linear-gradient(180deg, #5454C5 0%, #5454C5 100%);
 }
 
 @media print, screen and (min-width: 64em) {
@@ -27861,4 +27861,26 @@ ul[data-latest-news] [data-ln-subTitle] {
 }
 .bg-lpink{
   background-color: #ff9a9a !important;
+}
+@media (min-width:1709px) {
+  [data-menu-games] li {
+  vertical-align: top !important;
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 1em;
+  min-width: 9.7rem;
+  position: relative;
+}
+  
+}
+@media (min-width:1509px) {
+  [data-menu-games] li {
+  vertical-align: top !important;
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 1em;
+  min-width:8rem;
+  position: relative;
+}
+  
 }

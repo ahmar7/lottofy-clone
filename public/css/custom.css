@@ -263,7 +263,10 @@ body.setFixed .top-subMenu {
 .top-m {
   margin-top: 8px !important;
 }
+#lotterySection{
 
+  background-image: url(../assets/bg/Lottery\ Pattern\ 1.png);
+}
 .right-join [data-userMenuLogin] a,
 .right-join [data-userMenuJoin] a {
   position: relative;

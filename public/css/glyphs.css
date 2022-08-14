@@ -490,7 +490,9 @@
     font-family: "lottofy-iconset" !important;
 }@media (min-width:1024px) {
   .top-menu .float-right{
-    margin-top: 3px !important;
+    margin-top:0px !important;
+    display: flex;
+    align-items: center;
   }
   .top-menu .floatta{
     margin-top: 9px !important;
