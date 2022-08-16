@@ -1524,8 +1524,8 @@ textarea {
 @media print, screen and (min-width: 40em) {
   .column,
   .columns {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
+    padding-right: 0.0;
+    padding-left: 0.0;
   }
 }
 
@@ -10522,7 +10522,7 @@ a.thumbnail image {
 }
 
 .pineGreen {
-  color: #32ae5d !important;
+  color: royalblue !important;
 }
 
 .purpleRain {
@@ -10595,12 +10595,12 @@ a.thumbnail image {
 }
 
 .bg_pine {
-  background-color: #32ae5d !important;
+  background-color: royalblue !important;
   color: white !important;
 }
 
 .bg_chlorophile {
-  background-color: #32ae5d !important;
+  background-color: royalblue !important;
   color: white !important;
 }
 
@@ -18018,7 +18018,7 @@ ul.list li a > span:nth-child(1) {
 [data-userDetailHeader][data-myStats]
   [data-rankstats-summary]
   [data-upanel-stats-unit="1"] {
-  color: #32ae5d;
+  color: royalblue;
 }
 
 [data-userDetailHeader][data-myStats]
@@ -18413,12 +18413,12 @@ ul.list li a > span:nth-child(1) {
 
 #feedback [data-proRate] [data-proRating] label {
   font-size: 2.7rem !important;
-  color: #32ae5d !important;
+  color: royalblue !important;
 }
 
 #feedback [data-proRate] [data-userRating] {
   padding: 0.5rem !important;
-  border: 3px solid #32ae5d;
+  border: 3px solid royalblue;
   border-radius: 10px;
 }
 
@@ -19365,7 +19365,7 @@ ul[data-lottoResults] .numbersV2 dd {
 
 [data-lr-actions] li a,
 [data-lr-actions] li button {
-  color: #32ae5d;
+  color: royalblue;
   text-decoration: u;
 }
 
@@ -19414,7 +19414,7 @@ ul[data-lottoResults] .numbersV2 dd {
 }
 
 [data-lottoResults] [data-lr-play] p strong {
-  color: #32ae5d;
+  color: royalblue;
 }
 
 [data-lottoResults] [data-lr-play] [data-jackpot] {
@@ -19426,7 +19426,7 @@ ul[data-lottoResults] .numbersV2 dd {
 }
 
 [data-lottoResults] [data-lr-playBt] {
-  background-color: #32ae5d;
+  background-color: royalblue;
   border-radius: 500px;
   padding: 0.65em 1.2em;
   color: white;
@@ -19533,7 +19533,7 @@ table.quiniela[data-inlineMatches] [data-matchdate] {
 }
 
 table.quiniela[data-inlineMatches] [data-matchdate] * {
-  color: #32ae5d;
+  color: royalblue;
   top: 0.1rem;
 }
 
@@ -22114,7 +22114,7 @@ label[for="localUploadFile"] i,
 }
 
 .banderola {
-  background-color: #32ae5d;
+  background-color: royalblue;
   position: absolute;
   top: 0;
   left: -4.5rem;
@@ -23013,9 +23013,9 @@ body {
 
 .richBlock.lottery .richBlockContent {
   width: 100%;
-  height: 150px;
+  height: 160px;
   display: table;
-  background-size: contain;
+  background-size: cover;
 }
 
 @media print, screen and (max-width: 63.99875em) {
@@ -26230,7 +26230,7 @@ footer [data-disclaimer] ul li + li:before {
 }
 
 .micrositeSection[data-testimonials] figure p[data-source] strong {
-  color: #4aab00;
+  color: royalblue;
 }
 
 .micrositeSection[data-testimonials] figure p[data-author]:before {
@@ -26915,7 +26915,7 @@ footer [data-disclaimer] ul li + li:before {
 
 @media print, screen and (min-width: 64em) {
   #index .richBlock.big .richBlockContent {
-    min-height: 20.5rem;
+    min-height: 82vh;
   }
 }
 
@@ -27321,13 +27321,13 @@ ul[data-latest-news] > li [data-ln-actions] {
 [data-ln-actions] .button {
   box-shadow: none;
   margin-bottom: 0px;
-  border: 1px solid #32ae5d !important;
+  border: 1px solid royalblue !important;
   background-color: transparent;
   border-radius: 3px;
   padding: 0.3em 0.7em;
   position: relative;
   overflow: visible;
-  color: #32ae5d;
+  color: royalblue;
   font-size: 0.85rem;
   font-family: "Roboto", Helvetica, Arial, sans-serif !important;
   text-transform: uppercase;
@@ -27350,7 +27350,7 @@ ul[data-latest-news] > li [data-ln-actions] {
 }
 
 ul[data-latest-news] [data-ln-title] a {
-  color: #32ae5d;
+  color: royalblue;
 }
 
 ul[data-latest-news] [data-ln-title],
@@ -27746,7 +27746,7 @@ ul[data-latest-news] [data-ln-subTitle] {
 }
 
 .banderola {
-  background-color: #32ae5d;
+  background-color: royalblue;
   position: absolute;
   top: 0;
   left: -4.5rem;
@@ -27889,8 +27889,25 @@ ul[data-latest-news] [data-ln-subTitle] {
   padding-left: 0;
   padding-right: 0;
   line-height: 1em;
-  min-width: 9.7rem;
+  min-width: 9.6rem;
   position: relative;
+}
+  
+}
+#recommendedGames{
+  background-image: url(../assets/bg/Lottery\ Pattern\ 1.png);
+}
+.bg-element{
+  
+  background-image: url(../assets/bg/userreview.png);
+}
+.hide-for-print{
+  background-image: url(../assets/bg/footer.png) !important;
+}
+@media (max-width:668px) {
+  richBlock.lottery .richBlockContent {
+    
+    background-size: cover;
 }
   
 }
