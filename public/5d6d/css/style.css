@@ -2237,26 +2237,32 @@ button#language-menu img {
 }
 
 .twobetbtn {
-  padding: 10px;
-  color: #fff;
-  background-color: #2456a6;
+  padding: 10px;  border: royalblue !important;
+  color: white;
+  /*background-color: transparent;*/
+  background-color: royalblue;
   border-radius: 5px;
-  border: none;
   /*min-width: 150px;*/
-  width: 150px;
+  outline: none !important;
+  width: 150px; font-weight: bolder;
+  font-size: 20px;
   border-radius: 5px;
 }
 
+
 .twobetbtn2 {
   padding: 10px;
-  color: #dc3545;
+  color: white;
   /*background-color: transparent;*/
-  background-color: white;
+  background-color: royalblue;
   border-radius: 5px;
   /*border: 1px solid #2456a6;*/
-  border: 1px solid #0054a6;
+  border: royalblue !important;
+  outline: none !important;
   /*min-width: 150px;*/
   width: 150px;
+  font-weight: bolder;
+  font-size: 20px;
   border-radius: 5px;
 }
 

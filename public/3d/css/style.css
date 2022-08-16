@@ -2166,28 +2166,32 @@ button#language-menu img {
   min-width: 107px;
   border-radius: 5px;
 }
-
 .twobetbtn {
-  padding: 10px;
-  color: rgb(0, 0, 0);
-  border: 1px solid black;
-  background-color: #ffffff;
+  padding: 10px;  border: royalblue !important;
+  color: white;
+  /*background-color: transparent;*/
+  background-color: royalblue;
   border-radius: 5px;
   /*min-width: 150px;*/
-  width: 150px;
+  outline: none !important;
+  width: 150px; font-weight: bolder;
+  font-size: 20px;
   border-radius: 5px;
 }
 
 .twobetbtn2 {
   padding: 10px;
-  color: black;
+  color: white;
   /*background-color: transparent;*/
-  background-color: white;
+  background-color: royalblue;
   border-radius: 5px;
   /*border: 1px solid #2456a6;*/
-  border: 1px solid #000000;
+  border: royalblue !important;
+  outline: none !important;
   /*min-width: 150px;*/
   width: 150px;
+  font-weight: bolder;
+  font-size: 20px;
   border-radius: 5px;
 }
 
@@ -3119,12 +3123,15 @@ threedbet_roll_wrap:nth-child(1) {
 }
 
 .betbtn {
+outline: none !important;
   padding: 10px;
-  color: #000000;
+  color: white;
   border-radius: 5px;
-  background-color: white;
+  background-color: royalblue;
   border-radius: 5px;
-  border: 1px solid black;
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
   min-width: 150px;
 }
 
