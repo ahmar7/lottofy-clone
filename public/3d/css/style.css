@@ -2124,20 +2124,18 @@ button#language-menu img {
   justify-content: space-between;
   align-items: center;
   /*padding: 10px;*/
-  padding: 10px 5% 10px 5%;
+  padding: 0;
   column-gap: 5px;
 }
 .twodbet_input img {
   width: 120px;
 }
-.twodbet_container {
-  padding: 10px 5% 10px 5%;
-}
-
+ 
 .twobet_select_container {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
   column-gap: 5px;
 }
 
@@ -2224,14 +2222,7 @@ input.twobetinput {
   padding: 10px;
 }
 
-.bodytwobet {
-  background-color: #fff;
-  /*padding: 10px 20px;*/
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+ 
 
 .twobet_grid {
   display: grid;
@@ -2250,16 +2241,17 @@ input.twobetinput {
 .twobet_wrap_box {
   width: 50px;
   height: 50px;
-  background-color: #e4e4e4;
+  background-color: #ffffff;
   border-radius: 5px;
   text-align: center;
   padding: 6px;
   font-weight: 900;
-  box-shadow: 0px 2px 2px 2px #88888859;
+  /* box-shadow: 0px 2px 2px 2px green; */
   margin: auto;
+  box-shadow: rgba(0, 165, 49, 0.137) 0px 54px 55px, rgba(0, 165, 49, 0.12) 0px -12px 30px, rgba(0, 165, 49, 0.12) 0px 4px 6px, rgba(0, 165, 49, 0.17) 0px 12px 13px, rgba(0, 165, 49, 0.09) 0px -3px 5px;
+  /* box-shadow: rgba(1, 226, 12, 0.24) 0px 3px 8px; */
   line-height: 2.2;
 }
-
 .twobet_wrap_box.selected,
 .bet_wrap_box.selected,
 .input-number.selected {
@@ -2280,6 +2272,7 @@ input.twobetinput {
   color: #000;
   background-color: #ffc107;
   height: 3px;
+
 }
 
 .r_bar {
@@ -2289,7 +2282,7 @@ input.twobetinput {
 }
 
 .bar_out {
-  background-color: #fff;
+  background-color: rgb(179, 179, 179);
 }
 
 .full_bet {
@@ -3263,12 +3256,7 @@ input.dreambook_select_model_twobetinput {
   font-weight: 700;
 }
 
-.hot_number_body_wrap {
-  /*background-color: #fff;*/
-  padding-left: 5%;
-  padding-right: 5%;
-  /*font-weight: 500;*/
-}
+ 
 
 .hot_number_color_container {
   display: flex;
