@@ -2188,10 +2188,19 @@ button#language-menu img {
   width: 120px;
 }
 .twodbet_input img {
+  width: 100px;
+}
+.twodbet_input_2 img {
+  width: 100px;
+}
+@media (max-width:768px) {
+  .twodbet_input img {
   width: 60px;
 }
 .twodbet_input_2 img {
   width: 60px;
+}
+  
 }
 .twodbet_container {
   padding: 10px 5% 10px 5%;

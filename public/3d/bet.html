@@ -643,128 +643,790 @@
       
       <div id="fb-root"></div>
     </div>
-<div class="t-body" style="min-height:calc(100vh); background-color: #FFF;">
-<div class="body_main">
-<div class="sticky-top" style="top:0px; background-color: #f4f4f4">
-<div class="twodbet_input">
-<img src="../assets/Brand Logos/Galaxy 3D.png" alt="">
+    <div class="sectionHeader playgam" data-gametype="powerball">
+           
+          <div class="row main-bg clearfix">
+            <div class="alignLeft">
+            <div class="float-left ">
+                            <i data-game-icon="" class="sectionIcon icon-games-powerball"></i>
+            </div>
+            <div class="float-left ">
+              <h1 data-gamename="">Galaxy 3D</h1>
+              <span data-drawdate="">Sunday, 24 jul 03:00
+                <span data-timelimit="">
+                  -
+                  <span data-countdown="">11<small>h </small>48<small>m </small>30<small>s</small></span></span></span>
+            </div>
+            </div>
+          <div class="alignRight">
+                          <div class="float-right" data-jackpotanouncer=""> <a href="./result.html" class="result-ico">
+              <div><i class="far fa-file-alt" aria-hidden="true"></i></div>
+              <div>Result </div>
+            </a></div>
+            <div></div>
+            </div>
+
+          </div>
+        </div>
+  <div class="bg-img">
+       <div class="extend row">
+        
+        <div class="body_main  ">
+          <div class="sticky-top" style="top: 0px; background-color: #f4f4f4">
+           
+            <div class="col-xs-12">
+              <div class="twodbet_container">
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 new p-1">
+                    <div class="twobet_select_container">
+                       <div class="twodbet_input">
+<img src="../assets/Brand Logos/Galaxy 2D.png" alt="">
 </div>
-<div class="twodbet_input">
-<button onclick="window.location.href='./dreambook.html';" style="margin-top: -15px;" class="twobetbtn"> DreamBook</button>
-<input type="text" pattern="\d*" inputmode="numeric" id="bet_amount" class="form-control twobetinput" style=" min-width: 70%;" placeholder="Bet Amount (Minimum 100 )">
-</div>
- 
-<script>
-
-    var x;
-    var countDownDate = 0;
-    var serverDate = 0;
-    var curGame = localStorage.getItem('currentBet');
-    $("document").ready(function () {
-
-        countDownDraw();
-
-    });
-
-    function countDownDraw(gameDraw) {
-        // Retrieve again
-        if (curGame == null || curGame == undefined) {
-            curGame = localStorage.getItem('currentBet');
-        }
-
-        $.ajax({
-            type: "POST",
-            url: "../THGame/GetGameDrawCountDown",
-            data: {
-                "AccessToken": token,
-                "GameCode": curGame,
-                "GameDrawNo": gameDraw
-            },
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'token': window.token
-            },
-            success: function (data) {
-
-                if (data.CountDownDate != null) {
-
-                    countDownDate = new Date(data.CountDownDate).getTime();
-
-                    serverDate = new Date(data.ServerDate).getTime();
-
-                    showBetCloseTime(countDownDate);
-                }
-            }
-        });
-    }
-
-    // Update the count down every 1 second
-    function betCloseTimer() {
-        // Get today's date and time
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - serverDate;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Output the result in an element with id="demo"
-        var dayString = days > 0 ? days + " days " : "";
-        document.getElementById("bet-close-time").innerHTML = dayString + hours.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }) + ":"
-            + minutes.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }) + ":" + seconds.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
-
-        serverDate += 1000;
-
-        // If the count down is over, write some text 
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("bet-close-time").innerHTML = "";
-            document.getElementById("bet-close-span").innerHTML = "Bet Closed";
-
-            // Popup Select Time Section
-            $("#section-select")[0].innerText = "Section Select";
-            loadSectionTime();
-            $("#modal").modal("show");
-
-        }
-    }
-
-    function showBetCloseTime(countdown) {
-        var now = new Date()
-        countDownDate = countdown;
-
-        if (x) {
-            clearInterval(x);
-        }
-        x = setInterval(betCloseTimer, 1000);
-    }
-
-</script>
-</div>
-<div class="bodytwobet bodythreebet">
-<div>
-<input id="number3d" type="text" pattern="\d*" maxlength="3" inputmode="numeric" class="form-control twobetinput" placeholder="Enter 3D Number (3 digits)">
-<div class="text-right"><span id="number3d_remain">0/3</span></div>
-<div id="ticker" class="threedbet_roll_wrap">
-<div class="rotator" style="opacity: 1;"><div style=""><div class="quota">8</div><div class="quota">9</div><div class="quota">0</div><div class="quota">1</div><div class="quota">2</div><div class="quota">3</div><div class="quota">4</div><div class="quota">5</div><div class="quota">6</div><div class="quota">7</div></div></div>
-<div class="rotator" style="opacity: 1;"><div style=""><div class="quota">8</div><div class="quota">9</div><div class="quota">0</div><div class="quota">1</div><div class="quota">2</div><div class="quota">3</div><div class="quota">4</div><div class="quota">5</div><div class="quota">6</div><div class="quota">7</div></div></div>
-<div class="rotator" style="opacity: 1;"><div style=""><div class="quota">8</div><div class="quota">9</div><div class="quota">0</div><div class="quota">1</div><div class="quota">2</div><div class="quota">3</div><div class="quota">4</div><div class="quota">5</div><div class="quota">6</div><div class="quota">7</div></div></div>
-<div id="result">000</div>
-</div>
-<div class="threebet_wrap" id="insert-box"></div>
-</div>
-<div class="threebet_wrap_btn">
-<button id="hotnumber-show" onclick="window.location.href='./hotnumber.html';" class="threebetbtn">Hot Number</button>
-<button onclick="window.location.href='quickselect.html';"class="threebetbtn">Quick Select</button>
-<button id="round-select" class="threebetbtn">Round</button>
-<button id="select-input" class="threebetbtn">Select</button>
-</div>
-</div>
-</div>
-</div>
+                      <button id="quick-select" onclick="showquick()" class="twodbet_btn">
+                        Quick Select</button
+                      >
+                      <button
+                        onclick="openSelect()"
+                        id="section-select"
+                        class="twodbet_btn"
+                        >Section Select</button
+                      >
+                      <button
+                        class="twodbet_btn"
+                        onclick="selectReverseNumber()"
+                        >Random Lucky Number</button
+                      >
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-1">
+                    <input
+                      type="text"
+                      id="bet_amount"
+                      inputmode="numeric"
+                      class="form-control twodbet_item"
+                      placeholder="Bet Amount (Minimum 100)"
+                    />
+                  </div>
+                </div>
+              </div>
+               
+            </div>
+            <div
+              class="circle"
+              style="padding-left: 5%; padding-right: 5%"
+              onclick="showColorMeaning()"
+            >
+              <i class="fas fa-question-circle" aria-hidden="true"></i>
+              color meaning
+            </div>
+          </div>
+          <div class="bodytwobet">
+            <div class="twobet_grid"
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="00"
+                onclick="changeClass(0)"
+                ><span id="input-box-0">00</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="01"
+                onclick="changeClass(1)"
+                ><span id="input-box-1">01</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="02"
+                onclick="changeClass(2)"
+                ><span id="input-box-2">02</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="03"
+                onclick="changeClass(3)"
+                ><span id="input-box-3">03</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="04"
+                onclick="changeClass(4)"
+                ><span id="input-box-4">04</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 10%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="05"
+                onclick="changeClass(5)"
+                ><span id="input-box-5">05</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 10%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="06"
+                onclick="changeClass(6)"
+                ><span id="input-box-6">06</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="07"
+                onclick="changeClass(7)"
+                ><span id="input-box-7">07</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 10%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="08"
+                onclick="changeClass(8)"
+                ><span id="input-box-8">08</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="09"
+                onclick="changeClass(9)"
+                ><span id="input-box-9">09</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="10"
+                onclick="changeClass(10)"
+                ><span id="input-box-10">10</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="11"
+                onclick="changeClass(11)"
+                ><span id="input-box-11">11</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="12"
+                onclick="changeClass(12)"
+                ><span id="input-box-12">12</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 10%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="13"
+                onclick="changeClass(13)"
+                ><span id="input-box-13">13</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="14"
+                onclick="changeClass(14)"
+                ><span id="input-box-14">14</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 10%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="15"
+                onclick="changeClass(15)"
+                ><span id="input-box-15">15</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="16"
+                onclick="changeClass(16)"
+                ><span id="input-box-16">16</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="17"
+                onclick="changeClass(17)"
+                ><span id="input-box-17">17</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="18"
+                onclick="changeClass(18)"
+                ><span id="input-box-18">18</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 10%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="19"
+                onclick="changeClass(19)"
+                ><span id="input-box-19">19</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 10%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="20"
+                onclick="changeClass(20)"
+                ><span id="input-box-20">20</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="21"
+                onclick="changeClass(21)"
+                ><span id="input-box-21">21</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="22"
+                onclick="changeClass(22)"
+                ><span id="input-box-22">22</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="23"
+                onclick="changeClass(23)"
+                ><span id="input-box-23">23</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="24"
+                onclick="changeClass(24)"
+                ><span id="input-box-24">24</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="25"
+                onclick="changeClass(25)"
+                ><span id="input-box-25">25</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="26"
+                onclick="changeClass(26)"
+                ><span id="input-box-26">26</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="27"
+                onclick="changeClass(27)"
+                ><span id="input-box-27">27</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="28"
+                onclick="changeClass(28)"
+                ><span id="input-box-28">28</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="29"
+                onclick="changeClass(29)"
+                ><span id="input-box-29">29</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="30"
+                onclick="changeClass(30)"
+                ><span id="input-box-30">30</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="31"
+                onclick="changeClass(31)"
+                ><span id="input-box-31">31</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="32"
+                onclick="changeClass(32)"
+                ><span id="input-box-32">32</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="33"
+                onclick="changeClass(33)"
+                ><span id="input-box-33">33</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="34"
+                onclick="changeClass(34)"
+                ><span id="input-box-34">34</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="35"
+                onclick="changeClass(35)"
+                ><span id="input-box-35">35</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="36"
+                onclick="changeClass(36)"
+                ><span id="input-box-36">36</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="37"
+                onclick="changeClass(37)"
+                ><span id="input-box-37">37</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="38"
+                onclick="changeClass(38)"
+                ><span id="input-box-38">38</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="39"
+                onclick="changeClass(39)"
+                ><span id="input-box-39">39</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="40"
+                onclick="changeClass(40)"
+                ><span id="input-box-40">40</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="41"
+                onclick="changeClass(41)"
+                ><span id="input-box-41">41</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="42"
+                onclick="changeClass(42)"
+                ><span id="input-box-42">42</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="43"
+                onclick="changeClass(43)"
+                ><span id="input-box-43">43</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="44"
+                onclick="changeClass(44)"
+                ><span id="input-box-44">44</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="45"
+                onclick="changeClass(45)"
+                ><span id="input-box-45">45</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="46"
+                onclick="changeClass(46)"
+                ><span id="input-box-46">46</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="47"
+                onclick="changeClass(47)"
+                ><span id="input-box-47">47</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="48"
+                onclick="changeClass(48)"
+                ><span id="input-box-48">48</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="49"
+                onclick="changeClass(49)"
+                ><span id="input-box-49">49</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="50"
+                onclick="changeClass(50)"
+                ><span id="input-box-50">50</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="51"
+                onclick="changeClass(51)"
+                ><span id="input-box-51">51</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="52"
+                onclick="changeClass(52)"
+                ><span id="input-box-52">52</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="53"
+                onclick="changeClass(53)"
+                ><span id="input-box-53">53</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="54"
+                onclick="changeClass(54)"
+                ><span id="input-box-54">54</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="55"
+                onclick="changeClass(55)"
+                ><span id="input-box-55">55</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="56"
+                onclick="changeClass(56)"
+                ><span id="input-box-56">56</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="57"
+                onclick="changeClass(57)"
+                ><span id="input-box-57">57</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="58"
+                onclick="changeClass(58)"
+                ><span id="input-box-58">58</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="59"
+                onclick="changeClass(59)"
+                ><span id="input-box-59">59</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="60"
+                onclick="changeClass(60)"
+                ><span id="input-box-60">60</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="61"
+                onclick="changeClass(61)"
+                ><span id="input-box-61">61</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="62"
+                onclick="changeClass(62)"
+                ><span id="input-box-62">62</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="63"
+                onclick="changeClass(63)"
+                ><span id="input-box-63">63</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="64"
+                onclick="changeClass(64)"
+                ><span id="input-box-64">64</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="65"
+                onclick="changeClass(65)"
+                ><span id="input-box-65">65</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="66"
+                onclick="changeClass(66)"
+                ><span id="input-box-66">66</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="67"
+                onclick="changeClass(67)"
+                ><span id="input-box-67">67</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="68"
+                onclick="changeClass(68)"
+                ><span id="input-box-68">68</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="69"
+                onclick="changeClass(69)"
+                ><span id="input-box-69">69</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="70"
+                onclick="changeClass(70)"
+                ><span id="input-box-70">70</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="71"
+                onclick="changeClass(71)"
+                ><span id="input-box-71">71</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="72"
+                onclick="changeClass(72)"
+                ><span id="input-box-72">72</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="73"
+                onclick="changeClass(73)"
+                ><span id="input-box-73">73</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="74"
+                onclick="changeClass(74)"
+                ><span id="input-box-74">74</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="75"
+                onclick="changeClass(75)"
+                ><span id="input-box-75">75</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="76"
+                onclick="changeClass(76)"
+                ><span id="input-box-76">76</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="77"
+                onclick="changeClass(77)"
+                ><span id="input-box-77">77</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="78"
+                onclick="changeClass(78)"
+                ><span id="input-box-78">78</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="79"
+                onclick="changeClass(79)"
+                ><span id="input-box-79">79</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="80"
+                onclick="changeClass(80)"
+                ><span id="input-box-80">80</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="81"
+                onclick="changeClass(81)"
+                ><span id="input-box-81">81</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="82"
+                onclick="changeClass(82)"
+                ><span id="input-box-82">82</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="83"
+                onclick="changeClass(83)"
+                ><span id="input-box-83">83</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="84"
+                onclick="changeClass(84)"
+                ><span id="input-box-84">84</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="85"
+                onclick="changeClass(85)"
+                ><span id="input-box-85">85</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="86"
+                onclick="changeClass(86)"
+                ><span id="input-box-86">86</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="87"
+                onclick="changeClass(87)"
+                ><span id="input-box-87">87</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="88"
+                onclick="changeClass(88)"
+                ><span id="input-box-88">88</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="89"
+                onclick="changeClass(89)"
+                ><span id="input-box-89">89</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="90"
+                onclick="changeClass(90)"
+                ><span id="input-box-90">90</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="91"
+                onclick="changeClass(91)"
+                ><span id="input-box-91">91</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="92"
+                onclick="changeClass(92)"
+                ><span id="input-box-92">92</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="93"
+                onclick="changeClass(93)"
+                ><span id="input-box-93">93</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="94"
+                onclick="changeClass(94)"
+                ><span id="input-box-94">94</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="95"
+                onclick="changeClass(95)"
+                ><span id="input-box-95">95</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="96"
+                onclick="changeClass(96)"
+                ><span id="input-box-96">96</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="97"
+                onclick="changeClass(97)"
+                ><span id="input-box-97">97</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="98"
+                onclick="changeClass(98)"
+                ><span id="input-box-98">98</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+              ><div
+                class="twobet_wrap_box input-box"
+                data-number="99"
+                onclick="changeClass(99)"
+                ><span id="input-box-99">99</span
+                ><div class="bar_out"
+                  ><div class="g_bar" style="width: 0%"></div></div></div
+            ></div>
+          </div>
+        </div>
+      </div>
+   </div>
 
 
 <div class="t-footer">

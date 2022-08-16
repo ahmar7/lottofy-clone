@@ -24380,7 +24380,7 @@ body {
 }
 
 #login.register .bg {
-  background: url("//cdn.inicium.com/images/common/art/scanlines_b.png");
+  background: url(../assets/bg/registration.png);
   width: 100%;
   height: 100%;
   z-index: 0;
@@ -24390,7 +24390,7 @@ body {
 
 @media print, screen and (min-width: 40em) {
   #login.register {
-    background-image: url("//cdn.inicium.com/images/lottofy/art/signup.jpg");
+    background-image: url(../assets/bg/registration.png);
     background-size: cover !important;
     background-position: center center !important;
     background-attachment: fixed;
@@ -27825,6 +27825,9 @@ ul[data-latest-news] [data-ln-subTitle] {
   height: 60px !important;
   width: 130px !important;
 }
+.log3 img { 
+  width: 200px !important;
+}
 .logb img {
   margin-top: 0px;
   height: 60px !important;
@@ -27839,6 +27842,10 @@ ul[data-latest-news] [data-ln-subTitle] {
     height: 44px !important;
     width: 103px !important;
 }
+   .log3 img {
+    margin-top: 3px; 
+    width: 150px !important;
+}
 }
 .log2 img {
   margin-top: 3px;
@@ -27849,6 +27856,10 @@ ul[data-latest-news] [data-ln-subTitle] {
   .log img {
     display: none;
   }
+  .log3 img {
+    display: none;
+  }
+  
 }
 @media (max-width: 410px) {
  .log2 img {
@@ -27910,4 +27921,8 @@ ul[data-latest-news] [data-ln-subTitle] {
     background-size: cover;
 }
   
+}
+.extend.row{
+flex-direction: column;
+margin: 0 auto;
 }

@@ -362,3 +362,9 @@
 .core_inline-list span {
     font-size: 10px !important;
 }}
+.day-main table{
+  font-size: 1.1rem;
+  
+ }.bg-img{
+  background-image: url(../../assets/bg/userreview.png);
+}

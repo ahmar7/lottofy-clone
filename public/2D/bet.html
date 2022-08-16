@@ -754,11 +754,33 @@
       
       <div id="fb-root"></div>
     </div>
-
-      <div class="t-body">
-         <div class="twodbet_input">
-<img src="../assets/Brand Logos/Galaxy 2D.png" alt="">
-</div>
+<div class="sectionHeader playgam" data-gametype="powerball">
+          <div class="row main-bg clearfix">
+            <div class="alignLeft">
+              <div class="float-left">
+                <i data-game-icon="" class="sectionIcon icon-games-powerball"></i>
+              </div>
+              <div class="float-left">
+                <h1 data-gamename="">Galaxy 2D</h1>
+                <span data-drawdate="">Sunday, 24 jul 03:00
+                  <span data-timelimit="">
+                    -
+                    <span data-countdown="">11<small>h </small>48<small>m </small>30<small>s</small></span></span></span>
+              </div>
+            </div>
+            <div class="alignRight">
+              <div class="float-right" data-jackpotanouncer="">
+                <a href="./result.html" class="result-ico">
+                  <div><i class="far fa-file-alt" aria-hidden="true"></i></div>
+                  <div>Result </div>
+                </a></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+   <div class="bg-img">
+       <div class="extend row">
+        
         <div class="body_main  ">
           <div class="sticky-top" style="top: 0px; background-color: #f4f4f4">
            
@@ -767,6 +789,9 @@
                 <div class="row justify-content-center align-items-center">
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 new p-1">
                     <div class="twobet_select_container">
+                       <div class="twodbet_input">
+<img src="../assets/Brand Logos/Galaxy 2D.png" alt="">
+</div>
                       <button id="quick-select" onclick="showquick()" class="twodbet_btn">
                         Quick Select</button
                       >
@@ -779,7 +804,7 @@
                       <button
                         class="twodbet_btn"
                         onclick="selectReverseNumber()"
-                        >R</button
+                        >Random Lucky Number</button
                       >
                     </div>
                   </div>
@@ -794,121 +819,7 @@
                   </div>
                 </div>
               </div>
-              <div>
-                <div class="top_balance_wrap">
-                   
-                  <div>
-                    <div>
-                      <i class="far fa-clock mr-2" aria-hidden="true"></i
-                      ><span id="bet-close-span">Bet Close </span>
-                    </div>
-                    <div id="bet-close-time">12:08:49</div>
-                  </div>
-                </div>
-                <script>
-                  var x;
-                  var countDownDate = 0;
-                  var serverDate = 0;
-                  var curGame = localStorage.getItem("currentBet");
-                  $("document").ready(function () {
-                    countDownDraw();
-                  });
-
-                  function countDownDraw(gameDraw) {
-                    // Retrieve again
-                    if (curGame == null || curGame == undefined) {
-                      curGame = localStorage.getItem("currentBet");
-                    }
-
-                    $.ajax({
-                      type: "POST",
-                      url: "../THGame/GetGameDrawCountDown",
-                      data: {
-                        AccessToken: token,
-                        GameCode: curGame,
-                        GameDrawNo: gameDraw,
-                      },
-                      headers: {
-                        "Content-Type": "application/x-www-form-urlencoded",
-                        token: window.token,
-                      },
-                      success: function (data) {
-                        if (data.CountDownDate != null) {
-                          countDownDate = new Date(
-                            data.CountDownDate
-                          ).getTime();
-
-                          serverDate = new Date(data.ServerDate).getTime();
-
-                          showBetCloseTime(countDownDate);
-                        }
-                      },
-                    });
-                  }
-
-                  // Update the count down every 1 second
-                  function betCloseTimer() {
-                    // Get today's date and time
-
-                    // Find the distance between now and the count down date
-                    var distance = countDownDate - serverDate;
-
-                    // Time calculations for days, hours, minutes and seconds
-                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    var hours = Math.floor(
-                      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-                    );
-                    var minutes = Math.floor(
-                      (distance % (1000 * 60 * 60)) / (1000 * 60)
-                    );
-                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                    // Output the result in an element with id="demo"
-                    var dayString = days > 0 ? days + " days " : "";
-                    document.getElementById("bet-close-time").innerHTML =
-                      dayString +
-                      hours.toLocaleString("en-US", {
-                        minimumIntegerDigits: 2,
-                        useGrouping: false,
-                      }) +
-                      ":" +
-                      minutes.toLocaleString("en-US", {
-                        minimumIntegerDigits: 2,
-                        useGrouping: false,
-                      }) +
-                      ":" +
-                      seconds.toLocaleString("en-US", {
-                        minimumIntegerDigits: 2,
-                        useGrouping: false,
-                      });
-
-                    serverDate += 1000;
-
-                    // If the count down is over, write some text
-                    if (distance < 0) {
-                      clearInterval(x);
-                      document.getElementById("bet-close-time").innerHTML = "";
-                      document.getElementById("bet-close-span").innerHTML =
-                        "Bet Closed";
-
-                      // Popup Select Time Section
-                      $("#section-select")[0].innerText = "Section Select";
-                      loadSectionTime();
-                      $("#modal").modal("show");
-                    }
-                  }
-
-                  function showBetCloseTime(countdown) {
-                    var now = new Date();
-                    countDownDate = countdown;
-
-                    if (x) {
-                      clearInterval(x);
-                    }
-                    x = setInterval(betCloseTimer, 1000);
-                  }
-                </script>
-              </div>
+               
             </div>
             <div
               class="circle"
@@ -1625,6 +1536,7 @@
           </div>
         </div>
       </div>
+   </div>
 
       <div class="t-footer">
         <section class="menu-btm-twodbet">
@@ -1640,12 +1552,13 @@
 <div class="modal-dialog  modal-dialog-centered modal-xl" role="document">
 <div class="modal-content">
 <div style="background-color: white !important; padding-right:5px; color: black;">
-<button onclick="hidequick()" style="color: black !important;" type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+<button onclick="hidequick()" style="color: black !important;" type="button" class="close " data-dismiss="modal" aria-label="Close">
 <span aria-hidden="true">×</span>
 </button>
 </div>
 <div class="modal-body body_main quick_select2d" style="padding-top:0px; background-color: white !important; color: black !important;">
-<div class="circle text-white pb-0">
+  <h3>Quick Select Option</h3>
+<div class="circle  pb-0">
 Single &amp; Double Size
 </div>
 <div class="bodytwobet quick_select2d quick_select2d">
@@ -1684,7 +1597,7 @@ Single &amp; Double Size
 </div>
 </div>
 </div>
-<div class="circle text-white pb-0">
+<div class="circle  pb-0">
 Round
 </div>
 <div class="bodytwobet quick_select2d quick_select2d">
@@ -1721,7 +1634,7 @@ Round
 </div>
 </div>
 </div>
-<div class="circle text-white pb-0">
+<div class="circle  pb-0">
 Head
 </div>
 <div class="bodytwobet quick_select2d quick_select2d">
@@ -1758,7 +1671,7 @@ Head
 </div>
 </div>
 </div>
-<div class="circle text-white pb-0">
+<div class="circle  pb-0">
 Tail
 </div>
 <div class="bodytwobet quick_select2d quick_select2d">
@@ -1795,7 +1708,7 @@ Tail
 </div>
 </div>
 </div>
-<div class="circle text-white pb-0">
+<div class="circle  pb-0">
 Brake
 </div>
 <div class="bodytwobet quick_select2d quick_select2d">
@@ -1832,36 +1745,8 @@ Brake
 </div>
 </div>
 </div>
-<div class="circle text-white pb-0">
-Constellation Power
-</div>
-<div class=""  onclick="hidequick()">
-<div id="MC1" class="bet_wrap_box">
-<span> Myanmar Constellation 07,18,24,35,69</span>
-</div>
-<div id="MC2" class="bet_wrap_box">
-<span> Myanmar Constellation R 70,81,42,53,96</span>
-</div>
-<div id="MP1" class="bet_wrap_box">
-<span> Myanmar Power 05,16,27,38,49</span>
-</div>
-<div id="MP2" class="bet_wrap_box">
-<span> Myanmar Power R 50,61,72,83,94</span>
-</div>
-<div id="TC1" class="bet_wrap_box">
-<span>Thai Constellation 07,19,23,48,56</span>
-</div>
-<div id="TC2" class="bet_wrap_box">
-<span>Thai Constellation R 70,91,32,84,65</span>
-</div>
-<div id="TP1" class="bet_wrap_box">
-<span>Thai Power 09,13,26,47,58</span>
-</div>
-<div id="TP2" class="bet_wrap_box">
-<span>Thai Power R 90,31,62,74,85</span>
-</div>
-</div>
-<div class="circle text-white">
+ 
+<div class="circle ">
 20 Selection Power
 </div>
 <div onclick="hidequick()" class="bodytwobet quick_select2d">
@@ -1888,11 +1773,19 @@ Constellation Power
 <script>
 let hidequick=()=>{
  let modalqucik = document.getElementById('modalqucik')
+   let body = document.querySelector("body")
+  body.style.overflow="auto"
  modalqucik.style.display ='none'
 }
 let showquick=()=>{
 let modalqucik = document.getElementById('modalqucik')
  modalqucik.style.display ='block'
+ if(modalqucik.style.display =='block'){
+  let body = document.querySelector("body")
+  body.style.overflow="hidden"
+ }else{
+    body.style.overflow="auto"
+ }
 }
         function selectNum(el) {
 

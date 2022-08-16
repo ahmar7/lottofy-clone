@@ -1829,23 +1829,15 @@ button#language-menu img {
   font-weight: 700;
 }
 
-.top_balance_menu {
-  background-color: #fff;
-  margin-top: 15px;
-  display: flex;
 
-  justify-content: space-around;
-  padding: 10px;
-}
 .new {
   margin-top: -15px !important;
 }
 .result-ico {
   text-align: center;
 }
-.result-ico img {
-  width: 100px;
-}
+
+ 
 .top_balance_menu a {
   color: #0054a6;
   font-size: 15px;
@@ -1933,20 +1925,6 @@ button#language-menu img {
   width: 90%;
 }
 
-.d_result_wrap_top {
-  text-align: center;
-  border: 1px solid black;
-  background-color: #fafafa;
-  color: black;
-  margin: 5px 5px;
-  border-radius: 15px;
-  padding: 6px;
-  text-align: -webkit-center;
-  margin-right: 5%;
-  margin-left: 5%;
-  padding-top: 26px;
-  padding-bottom: 46px;
-}
 
 .d_resultpage_wrap_top {
   text-align: center;
@@ -2146,23 +2124,15 @@ button#language-menu img {
   font-weight: 700;
 }
 
-.twodbet_input {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /*padding: 10px;*/
-  padding: 10px 5% 10px 5%;
-  column-gap: 5px;
-}
+
 .twodbet_input img {
   width: 120px;
 }
-.twodbet_container {
-  padding: 10px 5% 10px 5%;
-}
+
 
 .twobet_select_container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   column-gap: 5px;
@@ -2251,14 +2221,7 @@ input.twobetinput {
   padding: 10px;
 }
 
-.bodytwobet {
-  background-color: #fff;
-  /*padding: 10px 20px;*/
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+
 
 .twobet_grid {
   display: grid;
@@ -2277,13 +2240,15 @@ input.twobetinput {
 .twobet_wrap_box {
   width: 50px;
   height: 50px;
-  background-color: #e4e4e4;
+  background-color: #ffffff;
   border-radius: 5px;
   text-align: center;
   padding: 6px;
   font-weight: 900;
-  box-shadow: 0px 2px 2px 2px #88888859;
+  /* box-shadow: 0px 2px 2px 2px green; */
   margin: auto;
+  box-shadow: rgba(0, 165, 49, 0.137) 0px 54px 55px, rgba(0, 165, 49, 0.12) 0px -12px 30px, rgba(0, 165, 49, 0.12) 0px 4px 6px, rgba(0, 165, 49, 0.17) 0px 12px 13px, rgba(0, 165, 49, 0.09) 0px -3px 5px;
+  /* box-shadow: rgba(1, 226, 12, 0.24) 0px 3px 8px; */
   line-height: 2.2;
 }
 
@@ -2304,6 +2269,7 @@ input.twobetinput {
   color: #000;
   background-color: #ffc107;
   height: 3px;
+
 }
 
 .r_bar {
@@ -2313,7 +2279,7 @@ input.twobetinput {
 }
 
 .bar_out {
-  background-color: #fff;
+  background-color: rgb(219, 219, 219);
 }
 
 .full_bet {
@@ -2345,43 +2311,10 @@ input.twobetinput {
   /*padding: 5px 5% 5px 5%;*/
 }
 
-@media only screen and (max-width: 760px) {
-  .twodbet_footer {
-    justify-content: space-between;
-  }
-}
 
-.menu-btm-twodbet {
-  position: fixed;
-  /*max-width: 991px;*/
-  max-width: 867px;
-  /*max-width: 90%;*/
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  right: 0;
-  border-radius: 0;
-  background: linear-gradient(#d6d6d6, #e6e6e6);
-  padding: 5px;
-  /*padding: 5px 5% 5px 5%;*/
-}
 
-.menu-btm-bet {
-  position: fixed;
-  /*max-width: 991px;*/
-  max-width: 867px;
-  /*max-width: 90%;*/
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  right: 0;
-  border-radius: 0;
-  background: #fff;
-  padding: 5px;
-  /*padding: 5px 5% 5px 5%;*/
-}
+
+
 
 .threed_result_wrap {
   text-align: center;
