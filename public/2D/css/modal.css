@@ -34,6 +34,9 @@
   height: 100%;
   overflow-y: auto;
 }
+.modal-content{
+  border: none !important;
+}
 .modal.left.fade .modal-dialog {
   left: -320px;
   -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;

@@ -17089,7 +17089,7 @@ body[data-framed] #sidebarMenus {
   margin-bottom: 0rem;
   padding: 1rem;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #8ECCCC;
   border-radius: 10px;
   border: 1px solid #fff;
 }
@@ -27930,9 +27930,7 @@ margin: 0 auto;
 .d_result_wrap_top{
   box-shadow: rgba(0, 165, 49, 0.137) 0px 54px 55px, rgba(0, 165, 49, 0.12) 0px -12px 30px, rgba(0, 165, 49, 0.12) 0px 4px 6px, rgba(0, 165, 49, 0.17) 0px 12px 13px, rgba(0, 165, 49, 0.09) 0px -3px 5px;
   
-}.row.justify-content-center.align-items-center{
-  
-}
+} 
 .twodbet_btn{
   
   box-shadow: rgba(0, 165, 49, 0.137) 0px 54px 55px, rgba(0, 165, 49, 0.12) 0px -12px 30px, rgba(0, 165, 49, 0.12) 0px 4px 6px, rgba(0, 165, 49, 0.17) 0px 12px 13px, rgba(0, 165, 49, 0.09) 0px -3px 5px;
@@ -27940,4 +27938,15 @@ margin: 0 auto;
 #bet_amount{
   box-shadow: rgba(0, 165, 49, 0.137) 0px 54px 55px, rgba(0, 165, 49, 0.12) 0px -12px 30px, rgba(0, 165, 49, 0.12) 0px 4px 6px, rgba(0, 165, 49, 0.17) 0px 12px 13px, rgba(0, 165, 49, 0.09) 0px -3px 5px;
 
+}
+@media (max-width:400px) {
+  .twobet_select_container .twodbet_btn{
+font-size: 10px;
+}
+  .select-drop {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: 1px solid black !important;
+    background-color: #ffffff;
+    height: 47px;}
 }
