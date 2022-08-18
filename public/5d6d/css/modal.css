@@ -365,6 +365,16 @@
 .day-main table{
   font-size: 1.1rem;
   
- }.bg-img{
+ }
+  
+  @media (max-width:550px){
+.day-main table{
+    font-size:10px;
+    
+  }
+  
+
+  }
+ .bg-img{
   background-image: url(../../assets/bg/userreview.png);
 }

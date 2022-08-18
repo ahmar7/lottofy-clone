@@ -244,6 +244,13 @@
   display: none !important;
   visibility: hidden !important;
 }
+@media (max-width:590px) {
+  .hide-it {
+    display: inline-block !important;
+    visibility: hidden !important;
+}
+  
+}
 body.setFixed .top-subMenu {
   padding-left: 0 !important;
   padding-right: 0 !important;

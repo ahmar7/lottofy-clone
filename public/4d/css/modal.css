@@ -363,12 +363,23 @@
   }
 }
 @media (max-width: 419px){
-.core_inline-list span {
+  .core_inline-list span {
     font-size: 10px !important;
-}}
- .day-main table{
-  font-size: 1.1rem;
+  }}
+  .day-main table{
+    font-size: 1.1rem;
+    
+  }
   
- }.bg-img{
+  @media (max-width:550px){
+.day-main table{
+    font-size:10px;
+    
+  }
+  
+
+  }
+ 
+ .bg-img{
   background-image: url(../../assets/bg/userreview.png);
 }

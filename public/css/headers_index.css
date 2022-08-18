@@ -1164,7 +1164,7 @@ h5.core_ellipsis {
   background-repeat: no-repeat;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .reveal,
   .reveal.tiny,
   .reveal.small,
@@ -1353,7 +1353,7 @@ template {
 }
 
 .foundation-mq {
-  font-family: "small=0em&medium=40em&large=64em&xlarge=78.125em&xxlarge=90em";
+  font-family: "small=0em&medium=50em&large=64em&xlarge=78.125em&xxlarge=90em";
 }
 
 html {
@@ -1469,7 +1469,7 @@ textarea {
   margin-left: -0.625rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .row .row {
     margin-right: -0.9375rem;
     margin-left: -0.9375rem;
@@ -1521,7 +1521,7 @@ textarea {
   padding-left: 0.625rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .column,
   .columns {
     padding-right: 0.0;
@@ -2075,7 +2075,7 @@ textarea {
   float: right;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .medium-1 {
     width: 8.33333%;
   }
@@ -3117,7 +3117,7 @@ textarea {
   margin-bottom: 0;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .column-block {
     margin-bottom: 1.875rem;
   }
@@ -3135,7 +3135,7 @@ textarea {
   margin-right: auto;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-container {
     padding-right: 0.9375rem;
     padding-left: 0.9375rem;
@@ -3150,7 +3150,7 @@ textarea {
   margin-right: auto;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-container.fluid {
     padding-right: 0.9375rem;
     padding-left: 0.9375rem;
@@ -3210,7 +3210,7 @@ textarea {
   flex-basis: auto;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-x > .medium-shrink,
   .grid-x > .medium-full,
   .grid-x > .medium-1,
@@ -3311,7 +3311,7 @@ textarea {
   width: 100%;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-x > .medium-auto {
     flex: 1 1 0px;
     width: auto;
@@ -3474,7 +3474,7 @@ textarea {
   margin-right: -0.625rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-margin-x {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
@@ -3487,7 +3487,7 @@ textarea {
   margin-right: 0.625rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-margin-x > .cell {
     width: calc(100% - 1.875rem);
     margin-left: 0.9375rem;
@@ -3551,7 +3551,7 @@ textarea {
   width: calc(100% - 1.25rem);
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-margin-x > .auto {
     width: auto;
   }
@@ -3728,7 +3728,7 @@ textarea {
   margin-left: -0.625rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-padding-x .grid-padding-x {
     margin-right: -0.9375rem;
     margin-left: -0.9375rem;
@@ -3740,7 +3740,7 @@ textarea {
   margin-left: -0.625rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-container:not(.full) > .grid-padding-x {
     margin-right: -0.9375rem;
     margin-left: -0.9375rem;
@@ -3752,7 +3752,7 @@ textarea {
   padding-left: 0.625rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-padding-x > .cell {
     padding-right: 0.9375rem;
     padding-left: 0.9375rem;
@@ -3791,7 +3791,7 @@ textarea {
   width: 12.5%;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .medium-up-1 > .cell {
     width: 100%;
   }
@@ -3891,7 +3891,7 @@ textarea {
   width: calc(12.5% - 1.25rem);
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-margin-x.small-up-1 > .cell {
     width: calc(100% - 1.875rem);
   }
@@ -4049,7 +4049,7 @@ textarea {
   width: 100%;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .small-margin-collapse > .medium-1 {
     width: 8.33333%;
   }
@@ -4159,7 +4159,7 @@ textarea {
   padding-left: 0;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .medium-margin-collapse {
     margin-right: 0;
     margin-left: 0;
@@ -4171,7 +4171,7 @@ textarea {
   }
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .medium-margin-collapse > .small-1 {
     width: 8.33333%;
   }
@@ -4221,7 +4221,7 @@ textarea {
   }
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .medium-margin-collapse > .medium-1 {
     width: 8.33333%;
   }
@@ -4321,7 +4321,7 @@ textarea {
   }
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .medium-padding-collapse {
     margin-right: 0;
     margin-left: 0;
@@ -4603,7 +4603,7 @@ textarea {
   margin-left: calc(91.66667% + 0.625rem);
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .medium-offset-0 {
     margin-left: 0%;
   }
@@ -4834,7 +4834,7 @@ textarea {
   flex-basis: auto;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-y > .medium-shrink,
   .grid-y > .medium-full,
   .grid-y > .medium-1,
@@ -4935,7 +4935,7 @@ textarea {
   height: 100%;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-y > .medium-auto {
     flex: 1 1 0px;
     height: auto;
@@ -5090,7 +5090,7 @@ textarea {
   margin-bottom: -0.625rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-padding-y .grid-padding-y {
     margin-top: -0.9375rem;
     margin-bottom: -0.9375rem;
@@ -5102,7 +5102,7 @@ textarea {
   padding-bottom: 0.625rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-padding-y > .cell {
     padding-top: 0.9375rem;
     padding-bottom: 0.9375rem;
@@ -5114,7 +5114,7 @@ textarea {
   margin-bottom: -0.625rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-margin-y {
     margin-top: -0.9375rem;
     margin-bottom: -0.9375rem;
@@ -5127,7 +5127,7 @@ textarea {
   margin-bottom: 0.625rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-margin-y > .cell {
     height: calc(100% - 1.875rem);
     margin-top: 0.9375rem;
@@ -5191,7 +5191,7 @@ textarea {
   height: calc(100% - 1.25rem);
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-margin-y > .auto {
     height: auto;
   }
@@ -5401,7 +5401,7 @@ textarea {
   flex-wrap: nowrap;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .medium-grid-frame {
     overflow: hidden;
     position: relative;
@@ -5490,7 +5490,7 @@ textarea {
   height: 100vh;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-y.medium-grid-frame {
     width: auto;
     overflow: hidden;
@@ -5516,7 +5516,7 @@ textarea {
   height: 100%;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .cell .grid-y.medium-grid-frame {
     height: 100%;
   }
@@ -5533,7 +5533,7 @@ textarea {
   margin-bottom: -0.625rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-margin-y {
     margin-top: -0.9375rem;
     margin-bottom: -0.9375rem;
@@ -5546,7 +5546,7 @@ textarea {
   margin-bottom: 0.625rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-margin-y > .cell {
     height: calc(100% - 1.875rem);
     margin-top: 0.9375rem;
@@ -5610,7 +5610,7 @@ textarea {
   height: calc(100% - 1.25rem);
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-margin-y > .auto {
     height: auto;
   }
@@ -5786,7 +5786,7 @@ textarea {
   height: calc(100vh + 1.25rem);
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-frame.grid-margin-y {
     height: calc(100vh + 1.875rem);
   }
@@ -5798,7 +5798,7 @@ textarea {
   }
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .grid-margin-y.medium-grid-frame {
     height: calc(100vh + 1.875rem);
   }
@@ -5904,7 +5904,7 @@ textarea {
   order: 6;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .medium-order-1 {
     order: 1;
   }
@@ -5988,7 +5988,7 @@ textarea {
   flex-direction: column-reverse;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .medium-flex-container {
     display: flex;
   }
@@ -6186,7 +6186,7 @@ h6,
   margin-bottom: 0.5rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   h1,
   .h1 {
     font-size: 2.375rem;
@@ -6397,7 +6397,7 @@ code {
   text-align: justify;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .medium-text-left {
     text-align: left;
   }
@@ -8086,7 +8086,7 @@ a.button:focus {
   margin-right: -6px;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .button-group.stacked-for-small .button {
     width: auto;
     margin-bottom: 0;
@@ -8100,7 +8100,7 @@ a.button:focus {
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .button-group.stacked-for-small.expanded {
     display: block;
   }
@@ -8341,7 +8341,7 @@ a.button:focus {
   border-color: transparent transparent transparent #df0c00;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .dropdown.menu.medium-horizontal > li.opens-left > .is-dropdown-submenu {
     top: 100%;
     right: 0;
@@ -8730,7 +8730,7 @@ a.button:focus {
   margin-bottom: 0;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .stack-for-small .media-object-section {
     padding: 0;
     padding-bottom: 1rem;
@@ -8879,7 +8879,7 @@ a.button:focus {
   display: inline-block;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .pagination li {
     display: inline-block;
   }
@@ -9096,7 +9096,7 @@ html.is-reveal-open body {
   outline: 0;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .reveal {
     min-height: 0;
   }
@@ -9111,7 +9111,7 @@ html.is-reveal-open body {
   margin-bottom: 0;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .reveal {
     width: 600px;
     max-width: 78.125rem;
@@ -9122,21 +9122,21 @@ html.is-reveal-open body {
   padding: 0;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .reveal.tiny {
     width: 30%;
     max-width: 78.125rem;
   }
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .reveal.small {
     width: 50%;
     max-width: 78.125rem;
   }
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .reveal.large {
     width: 90%;
     max-width: 78.125rem;
@@ -9157,7 +9157,7 @@ html.is-reveal-open body {
   border-radius: 0;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .reveal {
     top: 0;
     right: 0;
@@ -9678,37 +9678,37 @@ a.thumbnail image {
   visibility: hidden;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .hide-for-small-only {
     display: none !important;
   }
 }
 
-@media screen and (max-width: 0em), screen and (min-width: 40em) {
+@media screen and (max-width: 0em), screen and (min-width: 50em) {
   .show-for-small-only {
     display: none !important;
   }
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .hide-for-medium {
     display: none !important;
   }
 }
 
-@media screen and (max-width: 39.99875em) {
+@media screen and (max-width: 49.99875em) {
   .show-for-medium {
     display: none !important;
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   .hide-for-medium-only {
     display: none !important;
   }
 }
 
-@media screen and (max-width: 39.99875em), screen and (min-width: 64em) {
+@media screen and (max-width: 49.99875em), screen and (min-width: 64em) {
   .show-for-medium-only {
     display: none !important;
   }
@@ -11465,7 +11465,7 @@ button .badge,
   margin-bottom: -1.5rem;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   h2 small {
     display: block;
     margin-top: 0.5em;
@@ -11713,7 +11713,7 @@ body[data-showingreveal] {
   overflow: hidden;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .reveal[data-reveal] {
     background-color: transparent;
     box-sizing: border-box;
@@ -11729,7 +11729,7 @@ body[data-showingreveal] {
   }
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .reveal {
     border-radius: 20px;
   }
@@ -11912,7 +11912,7 @@ hr.whiteTrans3 {
   background: transparent;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   nav.top-menu .searchArea {
     width: 100%;
     left: 0;
@@ -12184,13 +12184,13 @@ hr.whiteTrans3 {
   line-height: 1em;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   [data-alertsMarquee][data-priority="2"] {
     bottom: 5px;
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   [data-alertsMarquee][data-priority="2"] {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
@@ -12317,7 +12317,7 @@ hr.whiteTrans3 {
   top: 0.1rem;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #cookiesbar,
   #tzcookiesbar,
   #validationbar a {
@@ -12468,7 +12468,7 @@ hr.whiteTrans3 {
   color: royalblue;
   font-size: 0.85rem;
 }
-@media (max-width: 639px) {
+@media (max-width: 50rem) {
   .top-menu [data-userMenuLogin] button {
     margin-top: 12px !important;
   }
@@ -12559,7 +12559,7 @@ hr.whiteTrans3 {
   padding-right: 0.5rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   body[data-app] .top-menu-gamesNav {
     position: fixed;
     margin-top: -3.5rem;
@@ -12814,7 +12814,7 @@ hr.whiteTrans3 {
   color: #323537;
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   #navMenuGameMode[data-reveal] {
     top: 1rem !important;
   }
@@ -13089,14 +13089,14 @@ body[data-notopbar] .off-canvas-wrap {
   padding-top: 0.48rem !important;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .top-menu-gamesNav [data-date],
   [data-menu-games] [data-date] {
     border-radius: 0px !important;
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   [data-menu-games] [data-date] {
     border-radius: 0px;
   }
@@ -13163,7 +13163,7 @@ body.setFixed [data-menu-games] [data-date] {
   }
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   [data-menu-games] [data-menu-viewmore].is-active {
     display: block;
     animation-duration: 2s;
@@ -13402,7 +13402,7 @@ body[data-app][data-debug] [data-mobileMenuArea] {
   display: none;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   body.mobile[data-app] .off-canvas-wrap .inner-wrap {
     padding-top: 0rem;
   }
@@ -13462,7 +13462,7 @@ body[data-app][data-debug] [data-mobileMenuArea] {
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   [data-coreDropdown] {
     margin-top: 0 !important;
     width: 100% !important;
@@ -13691,7 +13691,7 @@ button[data-notifications].hover {
   color: white;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #notifications {
     width: 100%;
     left: 0 !important;
@@ -13911,7 +13911,7 @@ button[data-notifications].hover {
   color: #323537;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #myConfig [data-notifyOptions] {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
@@ -14532,7 +14532,7 @@ button[data-notifications].hover {
   margin-top: 0.3rem;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   [data-specialNotif] SMALL {
     display: block;
   }
@@ -14957,13 +14957,13 @@ body .top-menu [data-vcDetail] span {
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   body .off-canvas-wrap {
     padding-top: 7.3rem;
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   body .off-canvas-wrap {
     padding-top: 3rem;
   }
@@ -15133,14 +15133,14 @@ body[data-isloaded]
   font-size: 0.6rem;
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   nav#mobileMenu {
     width: 70%;
     max-width: 350px;
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   nav#mobileMenu {
     width: 98% !important;
   }
@@ -15769,7 +15769,7 @@ nav#mobileMenu.is-open {
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   .sectionHeader:not(#miApuestaHeader) {
     height: auto;
     padding: 0.7rem 0.5rem;
@@ -15777,7 +15777,7 @@ nav#mobileMenu.is-open {
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .sectionHeader:not(#miApuestaHeader) {
     padding: 0.4rem 0.3rem;
     font-size: 0.4rem !important;
@@ -15831,7 +15831,7 @@ nav#mobileMenu.is-open {
   letter-spacing: -0.1rem;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   [data-game-info] {
     padding: 0.4rem;
   }
@@ -16275,7 +16275,7 @@ body#main-mini {
   text-decoration: underline;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   #welcome #gameSelector {
     border: 1px solid #dadada;
     padding: 1rem;
@@ -16286,7 +16286,7 @@ body#main-mini {
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #welcome [data-title] {
     font-size: 2.4rem !important;
   }
@@ -16740,7 +16740,7 @@ body[data-framed] #sidebarMenus {
   opacity: 0.3;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   [data-signupForm] #signup_phoneCountry {
     width: 95%;
   }
@@ -17060,7 +17060,7 @@ body[data-framed] #sidebarMenus {
   margin-right: auto;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   [data-announcement="notificationsWithApp"] {
     max-width: 600px;
     margin-left: auto;
@@ -17130,7 +17130,7 @@ body[data-framed] #sidebarMenus {
   opacity: 0.3;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #login video {
     display: none;
   }
@@ -17184,7 +17184,7 @@ body[data-framed] #sidebarMenus {
 }
 
 #login #infoPanel ul li:before {
-  color: #4aab00;
+  color: lightgreen;
   font-size: 1.5rem;
 }
 
@@ -17209,7 +17209,7 @@ body[data-framed] #sidebarMenus {
   font-size: 0.75rem;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #login [data-disclaimer] *,
   #login [data-disclaimer] ul li + li:before {
     color: royalblue !important;
@@ -17482,7 +17482,7 @@ body[data-framed] #sidebarMenus {
   z-index: 1;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .mainTabs {
     margin-bottom: 0 !important;
   }
@@ -17610,7 +17610,7 @@ body[data-framed] #sidebarMenus {
   border-bottom: 2px solid #d2d6d9;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .tabs.flatTabs > li a {
     padding: 0.2rem 0.5rem;
     border: 1px solid rgba(50, 53, 55, 0.3);
@@ -17860,7 +17860,7 @@ ul.list li a > span:nth-child(1) {
   color: #1a7ddd;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   [data-floatingNotifier] {
     padding: 0.5rem;
     width: 100%;
@@ -17875,7 +17875,7 @@ ul.list li a > span:nth-child(1) {
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   body > [data-floatingnotifier] {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -17987,7 +17987,7 @@ ul.list li a > span:nth-child(1) {
   margin-bottom: 0.5rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   [data-userDetailHeader][data-myStats]
     [data-rankstats-summary]
     [data-upanel-value] {
@@ -18073,7 +18073,7 @@ ul.list li a > span:nth-child(1) {
   margin-bottom: 0 !important;
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   [data-reveal][data-reveal-source="login"] {
     min-width: 485px !important;
   }
@@ -18248,7 +18248,7 @@ ul.list li a > span:nth-child(1) {
   line-height: 1em;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   [data-reveal-source="migration"] {
     background: none !important;
   }
@@ -18663,7 +18663,7 @@ body:not([data-isloaded]) [data-addrem] {
   margin-right: auto;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   [data-oneClickPurchase] #firstPurchaseOneClick {
     max-width: none;
     transform: none;
@@ -19056,7 +19056,7 @@ ul.accordion {
   padding: 0;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .mobile .off-canvas-wrap {
     padding-top: 3.1rem !important;
     overflow-x: hidden;
@@ -19078,7 +19078,7 @@ ul.accordion {
   padding-left: 0px !important;
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns,
   .row.medium-uncollapse > .columns {
@@ -19087,7 +19087,7 @@ ul.accordion {
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   #sidebar,
   #gamesHeader > .row:nth-child(1) > .column:nth-child(2),
   #gamesHeader > .row:nth-child(1) > .columns:nth-child(2) {
@@ -19110,7 +19110,7 @@ ul.accordion {
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   #gamesList .top-bar {
     height: 3.8rem !important;
     line-height: 3.8rem !important;
@@ -19262,7 +19262,7 @@ ul.accordion {
   content: "\7d";
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #sidebarMenus {
     top: auto;
     bottom: 29%;
@@ -19291,7 +19291,7 @@ ul.accordion {
   }
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   #feedbackBt:before {
     padding-left: 0.5rem;
   }
@@ -19740,7 +19740,7 @@ dl.numbersFlatVerticalV2 dd {
   line-height: 1em;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   #lottoResultsModal {
     max-width: 700px;
   }
@@ -19812,7 +19812,7 @@ dl.numbersFlatVerticalV2 dd {
   max-width: 300px;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #lottoResultsModal select {
     width: 180px;
   }
@@ -19835,7 +19835,7 @@ dl.numbersFlatVerticalV2 dd {
   }
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   #lottoResultsModal {
     background-color: #323537;
   }
@@ -20274,19 +20274,19 @@ body[data-app]:not([data-logged]) [data-popup-notifier] {
   color: #e0e3e5;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   [data-featuresBlock] li {
     width: 32.6%;
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   [data-featuresBlock] li {
     width: 19.3%;
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #detachableSubMenu [data-tab] a span {
     font-size: 0.5rem;
     display: block;
@@ -20713,7 +20713,7 @@ strike {
   margin-left: 1rem;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .core_vAlign-for-small-only {
     width: 100% !important;
     table-layout: fixed !important;
@@ -20759,7 +20759,7 @@ strike {
   float: none !important;
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   .core_vAlign-for-medium-only {
     width: 100% !important;
     table-layout: fixed !important;
@@ -20785,7 +20785,7 @@ strike {
   }
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .core_vAlign-for-medium,
   #notifierAnnouncer {
     width: 100% !important;
@@ -20863,7 +20863,7 @@ strike {
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .core_txtSize_0,
   .core_txtSize_0 * {
     font-size: 1rem !important;
@@ -21002,7 +21002,7 @@ strike {
   margin-bottom: 0;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .docs#somos #discoverLotalia img {
     max-width: 40%;
     display: block;
@@ -21259,7 +21259,7 @@ body.setFixed #screenplayId {
   padding: 1rem;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .docs [data-staff] .avatar {
     max-width: 80px;
   }
@@ -21666,7 +21666,7 @@ body.setFixed #screenplayId {
   font-size: 3rem;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   [data-ingameDocs] [data-certs] {
     margin-top: 1rem;
   }
@@ -21694,14 +21694,14 @@ body.setFixed #screenplayId {
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   [data-ingameDocs] [data-ingameSupport] .row {
     width: 33% !important;
     display: inline-block;
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   [data-gameModes] {
     text-align: center;
   }
@@ -23052,7 +23052,7 @@ body {
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   .richBlock.lottery .richBlockContent {
     min-height: 180px !important;
   }
@@ -23065,7 +23065,7 @@ body {
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .richBlock {
     width: 203px;
   }
@@ -23342,7 +23342,7 @@ body {
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .micro-games-block.promos .miniCard img {
     max-width: 180px;
     margin-bottom: 1rem;
@@ -24249,7 +24249,7 @@ body {
   opacity: 1 !important;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #pep img {
     max-width: 90px;
   }
@@ -24309,7 +24309,7 @@ body {
   padding-bottom: 1rem;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .top-menu-gamesNav ul {
     height: 4.3rem;
     overflow-x: auto;
@@ -24329,7 +24329,7 @@ body {
   background: url(//cdn.inicium.com/images/common/art/scanlines_b.png);
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   #login.recommend,
   #welcome {
     background: url("//cdn.inicium.com/images/i7/art/bg_register_2.jpg")
@@ -24353,7 +24353,7 @@ body {
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .main-mini-div {
     padding: 0 !important;
   }
@@ -24388,7 +24388,7 @@ body {
   position: fixed;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   #login.register {
     background-image: url(../assets/bg/registration.png);
     background-size: cover !important;
@@ -24492,7 +24492,7 @@ body {
   color: white;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #login.login [data-disclaimer] *,
   #login.login [data-disclaimer] ul li + li:before {
     color: royalblue !important;
@@ -24550,7 +24550,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .docs#somos .media-object-section {
     text-align: center;
   }
@@ -24627,7 +24627,7 @@ html.summer body:not(.setFixed) .top-menu [data-logo] i {
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   html.summer .top-menu {
     background-position: center center;
   }
@@ -24641,7 +24641,7 @@ html.summer body:not(.setFixed) .top-menu [data-logo] i {
   background-color: rgba(50, 53, 55, 0.4);
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   .top-menu .logo {
     font-size: 2rem;
     position: relative;
@@ -25142,7 +25142,7 @@ body.setFixed [data-menu-games] [data-gameImg] {
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   body:not([data-app="ios"]) .top-menu-gamesNav {
     padding-top: 5.5rem !important;
   }
@@ -25168,7 +25168,7 @@ body.setFixed [data-menu-games] [data-gameImg] {
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   [data-gamingtabs] .tabs-title a {
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -25257,7 +25257,7 @@ body.setFixed [data-menu-games] [data-gameImg] {
   color: #323537 !important;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   [data-gamingtabs] {
     text-align: center !important;
   }
@@ -25385,7 +25385,7 @@ body.setFixed [data-menu-games] [data-gameImg] {
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   body[data-app="ios"] .off-canvas-wrap {
     padding-top: 4.4rem !important;
   }
@@ -25749,7 +25749,7 @@ footer > *:not(.bgIcon) {
   z-index: 1;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   footer [data-apps] {
     margin-top: 1rem;
   }
@@ -26004,7 +26004,7 @@ footer [data-disclaimer] ul li + li:before {
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   [data-ingameSupport] h4 {
     font-size: 4.5vw !important;
   }
@@ -26028,7 +26028,7 @@ footer [data-disclaimer] ul li + li:before {
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   [data-ingameSupport] h4 {
     font-size: 8vw !important;
   }
@@ -26297,7 +26297,7 @@ footer [data-disclaimer] ul li + li:before {
   font-family: "Roboto", Helvetica, Arial, sans-serif !important;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   .micrositeSection[data-testimonials] .column-block:not(:last-child) {
     border-bottom: 1px solid rgba(79, 87, 93, 0.1);
     padding-bottom: 1rem;
@@ -26349,7 +26349,7 @@ footer [data-disclaimer] ul li + li:before {
   background-attachment: fixed;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #index.main #microgamingSection,
   #index.microgaming {
     background-size: auto 100%;
@@ -26531,7 +26531,7 @@ footer [data-disclaimer] ul li + li:before {
   margin-top: 1rem;
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #index #breakerSection .column > div,
   #index #breakerSection .columns > div {
     display: block;
@@ -26919,7 +26919,7 @@ footer [data-disclaimer] ul li + li:before {
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   #index .richBlock.big .richBlockContent .richBlockSubtitle {
     font-size: 7vw;
     margin-bottom: -0.2em;
@@ -26993,7 +26993,7 @@ footer [data-disclaimer] ul li + li:before {
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #index .richBlock.big .richBlockContent .richBlockSubtitle {
     font-size: 7vw;
     margin-bottom: -0.2em;
@@ -27201,7 +27201,7 @@ footer [data-disclaimer] ul li + li:before {
   line-height: 2.2rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 50em) {
   #index #recommendedGames .column-block {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
@@ -27217,7 +27217,7 @@ footer [data-disclaimer] ul li + li:before {
   }
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print, screen and (min-width: 50em) and (max-width: 63.99875em) {
   #index.main .richBlock.big .richBlockContent .button {
     font-size: 2.5vw;
   }
@@ -27236,7 +27236,7 @@ footer [data-disclaimer] ul li + li:before {
   }
 }
 
-@media print, screen and (max-width: 39.99875em) {
+@media print, screen and (max-width: 49.99875em) {
   #index #recommendedGames .mini-games-block {
     text-align: center;
   }
@@ -27950,3 +27950,14 @@ font-size: 10px;
     background-color: #ffffff;
     height: 47px;}
 }
+/* @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+} */
